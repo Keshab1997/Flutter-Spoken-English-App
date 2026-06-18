@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../lessons/screens/lesson_list_screen.dart';
+import '../../vocabulary/screens/vocabulary_screen.dart';
 import '../../speaking/screens/speaking_screen.dart';
 import '../../ai_teacher/screens/ai_chat_screen.dart';
 import '../../profile/screens/profile_screen.dart';
@@ -26,9 +26,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     final screens = [
       HomeScreen(
         onNavigateToTab: _onTabChanged,
-        onNavigateToLessons: () => _onTabChanged(1), // Learn tab is index 1
+        onNavigateToLessons: () => _onTabChanged(1),
       ),
-      const LessonListScreen(),
+      const VocabularyScreen(),
       const SpeakingScreen(),
       const AiChatScreen(),
       const ProfileScreen(),
@@ -51,7 +51,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
           NavigationDestination(
             icon: Icon(Icons.menu_book_outlined),
             selectedIcon: Icon(Icons.menu_book_rounded),
-            label: 'Learn',
+            label: 'Vocabulary',
           ),
           NavigationDestination(
             icon: Icon(Icons.mic_none_outlined),

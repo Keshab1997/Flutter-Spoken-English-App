@@ -17,6 +17,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
   late AnimationController _animationController;
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
+  bool _navigated = false;
 
   @override
   void initState() {
@@ -33,30 +34,26 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
     );
 
     _animationController.forward();
-    
-    // Check auth status after showing splash screen for at least 2 seconds
-    Future.delayed(const Duration(seconds: 2), () {
-      if (mounted) {
-        _checkAuthStatus();
-      }
-    });
+
+    // Listen to auth state — navigate as soon as it resolves (not loading)
+    Future.delayed(const Duration(seconds: 2), _listenAndNavigate);
   }
 
-  void _checkAuthStatus() async {
-    final authState = ref.read(authProvider);
-    
-    // Wait max 3 seconds for auth to resolve
-    await Future.delayed(const Duration(seconds: 3));
-    
-    if (!mounted) return;
-    
-    authState.whenOrNull(
-      data: (user) => _navigateToNext(user),
-      error: (e, s) => _navigateToLogin(),
-    ) ?? _navigateToLogin(); // Fallback if still loading
+  void _listenAndNavigate() {
+    // Watch live; as soon as auth is no longer loading, navigate once
+    ref.listenManual(authProvider, (_, next) {
+      if (!next.isLoading && mounted) {
+        next.whenOrNull(
+          data: _navigateToNext,
+          error: (_, __) => _navigateToLogin(),
+        );
+      }
+    }, fireImmediately: true);
   }
 
   void _navigateToNext(UserModel? user) {
+    if (_navigated) return;
+    _navigated = true;
     if (user != null) {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (_) => const MainNavigationScreen()),
@@ -67,6 +64,8 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
   }
 
   void _navigateToLogin() {
+    if (_navigated) return;
+    _navigated = true;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(builder: (_) => const LoginScreen()),
     );

@@ -1,0 +1,77 @@
+{
+  "chapter": 1,
+  "level": "Beginner",
+  "title": "Greetings and Introductions",
+  "words": [
+    {
+      "word": "Hello",
+      "pronunciation": "/həˈloʊ/",
+      "meaning": "A greeting used when meeting someone",
+      "banglaMeaning": "হ্যালো / নমস্কার",
+      "exampleSentence": "Hello, how are you?"
+    },
+    {
+      "word": "Hi",
+      "pronunciation": "/haɪ/",
+      "meaning": "An informal greeting",
+      "banglaMeaning": "হাই",
+      "exampleSentence": "Hi! Nice to meet you."
+    },
+    {
+      "word": "Good Morning",
+      "pronunciation": "/ɡʊd ˈmɔːrnɪŋ/",
+      "meaning": "A greeting used in the morning",
+      "banglaMeaning": "শুভ সকাল",
+      "exampleSentence": "Good morning! Did you sleep well?"
+    },
+    {
+      "word": "Good Afternoon",
+      "pronunciation": "/ɡʊd ˌæftərˈnuːn/",
+      "meaning": "A greeting used in the afternoon",
+      "banglaMeaning": "শুভ অপরাহ্ন",
+      "exampleSentence": "Good afternoon, sir."
+    },
+    {
+      "word": "Good Evening",
+      "pronunciation": "/ɡʊd ˈiːvnɪŋ/",
+      "meaning": "A greeting used in the evening",
+      "banglaMeaning": "শুভ সন্ধ্যা",
+      "exampleSentence": "Good evening, everyone!"
+    },
+    {
+      "word": "Goodbye",
+      "pronunciation": "/ˌɡʊdˈbaɪ/",
+      "meaning": "Said when leaving or parting",
+      "banglaMeaning": "বিদায়",
+      "exampleSentence": "Goodbye! See you tomorrow."
+    },
+    {
+      "word": "Thank You",
+      "pronunciation": "/θæŋk juː/",
+      "meaning": "An expression of gratitude",
+      "banglaMeaning": "ধন্যবাদ",
+      "exampleSentence": "Thank you for your help."
+    },
+    {
+      "word": "Sorry",
+      "pronunciation": "/ˈsɒri/",
+      "meaning": "Used to apologize",
+      "banglaMeaning": "দুঃখিত",
+      "exampleSentence": "Sorry, I am late."
+    },
+    {
+      "word": "Please",
+      "pronunciation": "/pliːz/",
+      "meaning": "Used to make a polite request",
+      "banglaMeaning": "অনুগ্রহ করে / দয়া করে",
+      "exampleSentence": "Please help me."
+    },
+    {
+      "word": "Welcome",
+      "pronunciation": "/ˈwelkəm/",
+      "meaning": "Greeting someone who has arrived",
+      "banglaMeaning": "স্বাগতম",
+      "exampleSentence": "Welcome to our school!"
+    }
+  ]
+}
