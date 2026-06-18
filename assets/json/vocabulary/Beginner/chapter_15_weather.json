@@ -1,0 +1,147 @@
+{
+  "chapter": 15,
+  "level": "Beginner",
+  "title": "Weather",
+  "words": [
+    {
+      "word": "Sun",
+      "pronunciation": "/sʌn/",
+      "meaning": "The star that gives light and heat",
+      "banglaMeaning": "সূর্য",
+      "exampleSentence": "The sun is very bright today."
+    },
+    {
+      "word": "Rain",
+      "pronunciation": "/reɪn/",
+      "meaning": "Water falling from clouds",
+      "banglaMeaning": "বৃষ্টি",
+      "exampleSentence": "I like to walk in the rain."
+    },
+    {
+      "word": "Cloud",
+      "pronunciation": "/klaʊd/",
+      "meaning": "A grey or white mass in the sky",
+      "banglaMeaning": "মেঘ",
+      "exampleSentence": "There are white clouds in the sky."
+    },
+    {
+      "word": "Sunny",
+      "pronunciation": "/ˈsʌni/",
+      "meaning": "Bright with sunlight",
+      "banglaMeaning": "রোদেলা / রৌদ্রোজ্জ্বল",
+      "exampleSentence": "It is a beautiful sunny day."
+    },
+    {
+      "word": "Storm",
+      "pronunciation": "/stɔːrm/",
+      "meaning": "Very bad weather with strong wind",
+      "banglaMeaning": "ঝড়",
+      "exampleSentence": "A big storm is coming."
+    },
+    {
+      "word": "Wind",
+      "pronunciation": "/wɪnd/",
+      "meaning": "Moving air",
+      "banglaMeaning": "বাতাস / হাওয়া",
+      "exampleSentence": "The wind is blowing softly."
+    },
+    {
+      "word": "Snow",
+      "pronunciation": "/snoʊ/",
+      "meaning": "Soft white frozen water",
+      "banglaMeaning": "তুষার / বরফ",
+      "exampleSentence": "Children love to play in the snow."
+    },
+    {
+      "word": "Fog",
+      "pronunciation": "/fɒɡ/",
+      "meaning": "Thick mist that makes it hard to see",
+      "banglaMeaning": "কুয়াশা",
+      "exampleSentence": "It is difficult to drive in heavy fog."
+    },
+    {
+      "word": "Hot",
+      "pronunciation": "/hɒt/",
+      "meaning": "Having a high temperature",
+      "banglaMeaning": "গরম",
+      "exampleSentence": "It is very hot in the afternoon."
+    },
+    {
+      "word": "Cold",
+      "pronunciation": "/koʊld/",
+      "meaning": "Having a low temperature",
+      "banglaMeaning": "ঠান্ডা",
+      "exampleSentence": "I feel very cold today."
+    },
+    {
+      "word": "Warm",
+      "pronunciation": "/wɔːrm/",
+      "meaning": "Pleasantly hot",
+      "banglaMeaning": "উষ্ণ / হালকা গরম",
+      "exampleSentence": "The weather is nice and warm."
+    },
+    {
+      "word": "Cool",
+      "pronunciation": "/kuːl/",
+      "meaning": "Pleasantly cold",
+      "banglaMeaning": "শীতল / আরামদায়ক ঠান্ডা",
+      "exampleSentence": "A cool breeze is blowing."
+    },
+    {
+      "word": "Thunder",
+      "pronunciation": "/ˈθʌndər/",
+      "meaning": "Loud noise in the sky during a storm",
+      "banglaMeaning": "বজ্রপাত / মেঘের ডাক",
+      "exampleSentence": "The sound of thunder scared the cat."
+    },
+    {
+      "word": "Lightning",
+      "pronunciation": "/ˈlaɪtnɪŋ/",
+      "meaning": "A flash of bright light in the sky",
+      "banglaMeaning": "বিজলি / বিদ্যুৎ চমকানো",
+      "exampleSentence": "Lightning flashed across the sky."
+    },
+    {
+      "word": "Rainbow",
+      "pronunciation": "/ˈreɪnboʊ/",
+      "meaning": "Seven colors in the sky after rain",
+      "banglaMeaning": "রংধনু",
+      "exampleSentence": "Look! There is a rainbow in the sky."
+    },
+    {
+      "word": "Summer",
+      "pronunciation": "/ˈsʌmər/",
+      "meaning": "The hottest season",
+      "banglaMeaning": "গ্রীষ্মকাল",
+      "exampleSentence": "We eat mangoes in summer."
+    },
+    {
+      "word": "Winter",
+      "pronunciation": "/ˈwɪntər/",
+      "meaning": "The coldest season",
+      "banglaMeaning": "শীতকাল",
+      "exampleSentence": "We wear warm clothes in winter."
+    },
+    {
+      "word": "Monsoon",
+      "pronunciation": "/ˌmɒnˈsuːn/",
+      "meaning": "The rainy season",
+      "banglaMeaning": "বর্ষাকাল",
+      "exampleSentence": "The monsoon brings a lot of rain."
+    },
+    {
+      "word": "Sky",
+      "pronunciation": "/skaɪ/",
+      "meaning": "The space above the earth",
+      "banglaMeaning": "আকাশ",
+      "exampleSentence": "The sky is blue and clear."
+    },
+    {
+      "word": "Dry",
+      "pronunciation": "/draɪ/",
+      "meaning": "Without rain or water",
+      "banglaMeaning": "শুষ্ক",
+      "exampleSentence": "The ground is very dry."
+    }
+  ]
+}

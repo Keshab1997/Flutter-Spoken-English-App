@@ -1,0 +1,12 @@
+{"chapter": 3, "level": "Beginner", "title": "Numbers", "words": [
+  {"word": "One", "pronunciation": "/wʌn/", "meaning": "The number 1", "banglaMeaning": "এক", "exampleSentence": "I have one pen."},
+  {"word": "Two", "pronunciation": "/tuː/", "meaning": "The number 2", "banglaMeaning": "দুই", "exampleSentence": "She has two cats."},
+  {"word": "Three", "pronunciation": "/θriː/", "meaning": "The number 3", "banglaMeaning": "তিন", "exampleSentence": "There are three books."},
+  {"word": "Ten", "pronunciation": "/ten/", "meaning": "The number 10", "banglaMeaning": "দশ", "exampleSentence": "I have ten fingers."},
+  {"word": "Hundred", "pronunciation": "/ˈhʌndrəd/", "meaning": "The number 100", "banglaMeaning": "একশো", "exampleSentence": "There are a hundred students."},
+  {"word": "First", "pronunciation": "/fɜːrst/", "meaning": "Ordinal number 1", "banglaMeaning": "প্রথম", "exampleSentence": "He came first in the race."},
+  {"word": "Second", "pronunciation": "/ˈsekənd/", "meaning": "Ordinal number 2", "banglaMeaning": "দ্বিতীয়", "exampleSentence": "She finished second."},
+  {"word": "Half", "pronunciation": "/hæf/", "meaning": "One of two equal parts", "banglaMeaning": "অর্ধেক", "exampleSentence": "Give me half of the apple."},
+  {"word": "Double", "pronunciation": "/ˈdʌbəl/", "meaning": "Twice the amount", "banglaMeaning": "দ্বিগুণ", "exampleSentence": "The price is double now."},
+  {"word": "Zero", "pronunciation": "/ˈzɪroʊ/", "meaning": "The number 0", "banglaMeaning": "শূন্য", "exampleSentence": "The temperature is zero today."}
+]}

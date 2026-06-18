@@ -1,0 +1,12 @@
+{"chapter": 13, "level": "Beginner", "title": "Transportation", "words": [
+  {"word": "Car", "pronunciation": "/kɑːr/", "meaning": "A four-wheeled vehicle", "banglaMeaning": "গাড়ি / কার", "exampleSentence": "Father drives a car."},
+  {"word": "Bus", "pronunciation": "/bʌs/", "meaning": "A large passenger vehicle", "banglaMeaning": "বাস", "exampleSentence": "I go to school by bus."},
+  {"word": "Train", "pronunciation": "/treɪn/", "meaning": "A vehicle that runs on rails", "banglaMeaning": "ট্রেন / রেলগাড়ি", "exampleSentence": "The train is very fast."},
+  {"word": "Bicycle", "pronunciation": "/ˈbaɪsɪkəl/", "meaning": "A two-wheeled vehicle", "banglaMeaning": "সাইকেল", "exampleSentence": "He rides a bicycle to school."},
+  {"word": "Airplane", "pronunciation": "/ˈeərpleɪn/", "meaning": "A vehicle that flies", "banglaMeaning": "বিমান", "exampleSentence": "The airplane landed safely."},
+  {"word": "Ship", "pronunciation": "/ʃɪp/", "meaning": "A large water vehicle", "banglaMeaning": "জাহাজ", "exampleSentence": "The ship sailed across the ocean."},
+  {"word": "Rickshaw", "pronunciation": "/ˈrɪkʃɔː/", "meaning": "A three-wheeled vehicle", "banglaMeaning": "রিকশা", "exampleSentence": "We took a rickshaw to the market."},
+  {"word": "Motorcycle", "pronunciation": "/ˈmoʊtərsaɪkəl/", "meaning": "A two-wheeled motorized vehicle", "banglaMeaning": "মোটরসাইকেল", "exampleSentence": "He came by motorcycle."},
+  {"word": "Boat", "pronunciation": "/boʊt/", "meaning": "A small water vehicle", "banglaMeaning": "নৌকা", "exampleSentence": "We crossed the river by boat."},
+  {"word": "Truck", "pronunciation": "/trʌk/", "meaning": "A large vehicle for carrying goods", "banglaMeaning": "ট্রাক", "exampleSentence": "The truck carried heavy loads."}
+]}

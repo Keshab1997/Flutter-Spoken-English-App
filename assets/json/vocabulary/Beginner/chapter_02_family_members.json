@@ -1,0 +1,17 @@
+{
+  "chapter": 2,
+  "level": "Beginner",
+  "title": "Family Members",
+  "words": [
+    {"word": "Father", "pronunciation": "/ˈfɑːðər/", "meaning": "Male parent", "banglaMeaning": "বাবা / পিতা", "exampleSentence": "My father is a doctor."},
+    {"word": "Mother", "pronunciation": "/ˈmʌðər/", "meaning": "Female parent", "banglaMeaning": "মা / মাতা", "exampleSentence": "My mother cooks delicious food."},
+    {"word": "Brother", "pronunciation": "/ˈbrʌðər/", "meaning": "Male sibling", "banglaMeaning": "ভাই", "exampleSentence": "I have two brothers."},
+    {"word": "Sister", "pronunciation": "/ˈsɪstər/", "meaning": "Female sibling", "banglaMeaning": "বোন", "exampleSentence": "My sister is very kind."},
+    {"word": "Uncle", "pronunciation": "/ˈʌŋkəl/", "meaning": "Parent's brother", "banglaMeaning": "চাচা / মামা", "exampleSentence": "My uncle lives in Dhaka."},
+    {"word": "Aunt", "pronunciation": "/ænt/", "meaning": "Parent's sister", "banglaMeaning": "চাচি / মামি / খালা", "exampleSentence": "My aunt makes great sweets."},
+    {"word": "Son", "pronunciation": "/sʌn/", "meaning": "Male child", "banglaMeaning": "ছেলে / পুত্র", "exampleSentence": "He is a good son."},
+    {"word": "Daughter", "pronunciation": "/ˈdɔːtər/", "meaning": "Female child", "banglaMeaning": "মেয়ে / কন্যা", "exampleSentence": "She is his daughter."},
+    {"word": "Husband", "pronunciation": "/ˈhʌzbənd/", "meaning": "Male spouse", "banglaMeaning": "স্বামী", "exampleSentence": "Her husband is a teacher."},
+    {"word": "Wife", "pronunciation": "/waɪf/", "meaning": "Female spouse", "banglaMeaning": "স্ত্রী", "exampleSentence": "His wife is very helpful."}
+  ]
+}

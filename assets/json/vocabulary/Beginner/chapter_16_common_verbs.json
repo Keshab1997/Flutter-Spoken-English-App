@@ -1,0 +1,147 @@
+{
+  "chapter": 16,
+  "level": "Beginner",
+  "title": "Common Verbs",
+  "words": [
+    {
+      "word": "Go",
+      "pronunciation": "/ɡoʊ/",
+      "meaning": "To move from one place to another",
+      "banglaMeaning": "যাওয়া",
+      "exampleSentence": "I go to school every day."
+    },
+    {
+      "word": "Come",
+      "pronunciation": "/kʌm/",
+      "meaning": "To move towards a person or place",
+      "banglaMeaning": "আসা",
+      "exampleSentence": "Please come here."
+    },
+    {
+      "word": "Eat",
+      "pronunciation": "/iːt/",
+      "meaning": "To put food into the mouth and swallow it",
+      "banglaMeaning": "খাওয়া",
+      "exampleSentence": "I eat rice for lunch."
+    },
+    {
+      "word": "Drink",
+      "pronunciation": "/drɪŋk/",
+      "meaning": "To take liquid into the mouth and swallow it",
+      "banglaMeaning": "পান করা",
+      "exampleSentence": "Drink plenty of water."
+    },
+    {
+      "word": "Read",
+      "pronunciation": "/riːd/",
+      "meaning": "To look at and understand written words",
+      "banglaMeaning": "পড়া",
+      "exampleSentence": "She likes to read storybooks."
+    },
+    {
+      "word": "Write",
+      "pronunciation": "/raɪt/",
+      "meaning": "To mark letters or words on paper",
+      "banglaMeaning": "লেখা",
+      "exampleSentence": "I write a letter to my friend."
+    },
+    {
+      "word": "Speak",
+      "pronunciation": "/spiːk/",
+      "meaning": "To say something to express thoughts",
+      "banglaMeaning": "কথা বলা",
+      "exampleSentence": "He can speak English well."
+    },
+    {
+      "word": "Listen",
+      "pronunciation": "/ˈlɪsən/",
+      "meaning": "To give attention to a sound",
+      "banglaMeaning": "শোনা / মনোযোগ দেওয়া",
+      "exampleSentence": "Listen to your teacher carefully."
+    },
+    {
+      "word": "Sleep",
+      "pronunciation": "/sliːp/",
+      "meaning": "To rest with eyes closed",
+      "banglaMeaning": "ঘুমানো",
+      "exampleSentence": "I sleep eight hours every night."
+    },
+    {
+      "word": "Run",
+      "pronunciation": "/rʌn/",
+      "meaning": "To move fast on feet",
+      "banglaMeaning": "দৌড়ানো",
+      "exampleSentence": "The boy can run very fast."
+    },
+    {
+      "word": "Walk",
+      "pronunciation": "/wɔːk/",
+      "meaning": "To move by taking steps",
+      "banglaMeaning": "হাঁটা",
+      "exampleSentence": "We walk in the park every morning."
+    },
+    {
+      "word": "Play",
+      "pronunciation": "/pleɪ/",
+      "meaning": "To do activities for fun",
+      "banglaMeaning": "খেলা করা",
+      "exampleSentence": "They play football in the afternoon."
+    },
+    {
+      "word": "See",
+      "pronunciation": "/siː/",
+      "meaning": "To use eyes to look at something",
+      "banglaMeaning": "দেখা",
+      "exampleSentence": "I can see a bird on the tree."
+    },
+    {
+      "word": "Hear",
+      "pronunciation": "/hɪər/",
+      "meaning": "To perceive sound with ears",
+      "banglaMeaning": "শোনা",
+      "exampleSentence": "I hear a strange noise."
+    },
+    {
+      "word": "Give",
+      "pronunciation": "/ɡɪv/",
+      "meaning": "To hand over something to someone",
+      "banglaMeaning": "দেওয়া",
+      "exampleSentence": "Give me your pen, please."
+    },
+    {
+      "word": "Take",
+      "pronunciation": "/teɪk/",
+      "meaning": "To reach out and get something",
+      "banglaMeaning": "নেওয়া",
+      "exampleSentence": "Take your umbrella with you."
+    },
+    {
+      "word": "Buy",
+      "pronunciation": "/baɪ/",
+      "meaning": "To get something by paying money",
+      "banglaMeaning": "কেনা",
+      "exampleSentence": "I want to buy a new shirt."
+    },
+    {
+      "word": "Sell",
+      "pronunciation": "/sel/",
+      "meaning": "To give something in exchange for money",
+      "banglaMeaning": "বিক্রি করা",
+      "exampleSentence": "He sells vegetables in the market."
+    },
+    {
+      "word": "Open",
+      "pronunciation": "/ˈoʊpən/",
+      "meaning": "To move something to allow access",
+      "banglaMeaning": "খোলা",
+      "exampleSentence": "Please open the door."
+    },
+    {
+      "word": "Close",
+      "pronunciation": "/kloʊz/",
+      "meaning": "To move something to cover an opening",
+      "banglaMeaning": "বন্ধ করা",
+      "exampleSentence": "Close the window, it is cold."
+    }
+  ]
+}

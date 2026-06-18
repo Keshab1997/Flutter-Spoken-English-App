@@ -1,0 +1,12 @@
+{"chapter": 5, "level": "Beginner", "title": "Days and Months", "words": [
+  {"word": "Monday", "pronunciation": "/ˈmʌndeɪ/", "meaning": "First day of the week", "banglaMeaning": "সোমবার", "exampleSentence": "School starts on Monday."},
+  {"word": "Friday", "pronunciation": "/ˈfraɪdeɪ/", "meaning": "Fifth day of the week", "banglaMeaning": "শুক্রবার", "exampleSentence": "Friday is a holiday."},
+  {"word": "Sunday", "pronunciation": "/ˈsʌndeɪ/", "meaning": "Seventh day of the week", "banglaMeaning": "রবিবার", "exampleSentence": "We rest on Sunday."},
+  {"word": "January", "pronunciation": "/ˈdʒænjueri/", "meaning": "First month of the year", "banglaMeaning": "জানুয়ারি", "exampleSentence": "January is very cold."},
+  {"word": "June", "pronunciation": "/dʒuːn/", "meaning": "Sixth month of the year", "banglaMeaning": "জুন", "exampleSentence": "It rains a lot in June."},
+  {"word": "December", "pronunciation": "/dɪˈsembər/", "meaning": "Last month of the year", "banglaMeaning": "ডিসেম্বর", "exampleSentence": "December is winter month."},
+  {"word": "Spring", "pronunciation": "/sprɪŋ/", "meaning": "Season after winter", "banglaMeaning": "বসন্ত", "exampleSentence": "Flowers bloom in spring."},
+  {"word": "Summer", "pronunciation": "/ˈsʌmər/", "meaning": "Hottest season", "banglaMeaning": "গ্রীষ্মকাল", "exampleSentence": "Summer is very hot."},
+  {"word": "Autumn", "pronunciation": "/ˈɔːtəm/", "meaning": "Season before winter", "banglaMeaning": "শরৎকাল", "exampleSentence": "Leaves fall in autumn."},
+  {"word": "Winter", "pronunciation": "/ˈwɪntər/", "meaning": "Coldest season", "banglaMeaning": "শীতকাল", "exampleSentence": "Winter is cold and foggy."}
+]}

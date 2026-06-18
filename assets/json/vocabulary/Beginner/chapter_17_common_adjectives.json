@@ -1,0 +1,147 @@
+{
+  "chapter": 17,
+  "level": "Beginner",
+  "title": "Common Adjectives",
+  "words": [
+    {
+      "word": "Big",
+      "pronunciation": "/bɪɡ/",
+      "meaning": "Large in size",
+      "banglaMeaning": "বড়",
+      "exampleSentence": "This is a big house."
+    },
+    {
+      "word": "Small",
+      "pronunciation": "/smɔːl/",
+      "meaning": "Little in size",
+      "banglaMeaning": "ছোট",
+      "exampleSentence": "The mouse is very small."
+    },
+    {
+      "word": "Beautiful",
+      "pronunciation": "/ˈbjuːtɪfəl/",
+      "meaning": "Very attractive or pleasant to look at",
+      "banglaMeaning": "সুন্দর",
+      "exampleSentence": "The flower is very beautiful."
+    },
+    {
+      "word": "Good",
+      "pronunciation": "/ɡʊd/",
+      "meaning": "Of high quality or correct",
+      "banglaMeaning": "ভালো",
+      "exampleSentence": "He is a good student."
+    },
+    {
+      "word": "Bad",
+      "pronunciation": "/bæd/",
+      "meaning": "Not good or unpleasant",
+      "banglaMeaning": "খারাপ",
+      "exampleSentence": "Smoking is a bad habit."
+    },
+    {
+      "word": "Happy",
+      "pronunciation": "/ˈhæpi/",
+      "meaning": "Feeling or showing pleasure",
+      "banglaMeaning": "খুশি / সুখী",
+      "exampleSentence": "I am very happy today."
+    },
+    {
+      "word": "Sad",
+      "pronunciation": "/sæd/",
+      "meaning": "Feeling unhappy",
+      "banglaMeaning": "দুঃখিত / মন খারাপ",
+      "exampleSentence": "Why are you so sad?"
+    },
+    {
+      "word": "Tall",
+      "pronunciation": "/tɔːl/",
+      "meaning": "Greater than average height",
+      "banglaMeaning": "লম্বা",
+      "exampleSentence": "He is a tall man."
+    },
+    {
+      "word": "Short",
+      "pronunciation": "/ʃɔːrt/",
+      "meaning": "Not tall or not long",
+      "banglaMeaning": "খাটো / ছোট",
+      "exampleSentence": "The tree is very short."
+    },
+    {
+      "word": "Fast",
+      "pronunciation": "/fæst/",
+      "meaning": "Moving at high speed",
+      "banglaMeaning": "দ্রুত",
+      "exampleSentence": "A tiger is a fast animal."
+    },
+    {
+      "word": "Slow",
+      "pronunciation": "/sloʊ/",
+      "meaning": "Not moving quickly",
+      "banglaMeaning": "ধীর / ধীরগতি",
+      "exampleSentence": "The turtle is very slow."
+    },
+    {
+      "word": "New",
+      "pronunciation": "/njuː/",
+      "meaning": "Recently made or bought",
+      "banglaMeaning": "নতুন",
+      "exampleSentence": "I bought a new car."
+    },
+    {
+      "word": "Old",
+      "pronunciation": "/oʊld/",
+      "meaning": "Having lived or existed for a long time",
+      "banglaMeaning": "পুরনো / বৃদ্ধ",
+      "exampleSentence": "This is an old book."
+    },
+    {
+      "word": "Rich",
+      "pronunciation": "/rɪtʃ/",
+      "meaning": "Having a lot of money",
+      "banglaMeaning": "ধনী",
+      "exampleSentence": "He is a rich businessman."
+    },
+    {
+      "word": "Poor",
+      "pronunciation": "/pʊər/",
+      "meaning": "Having very little money",
+      "banglaMeaning": "গরিব",
+      "exampleSentence": "We should help poor people."
+    },
+    {
+      "word": "Easy",
+      "pronunciation": "/ˈiːzi/",
+      "meaning": "Not difficult",
+      "banglaMeaning": "সহজ",
+      "exampleSentence": "This math problem is very easy."
+    },
+    {
+      "word": "Difficult",
+      "pronunciation": "/ˈdɪfɪkəlt/",
+      "meaning": "Hard to do or understand",
+      "banglaMeaning": "কঠিন",
+      "exampleSentence": "English is not a difficult language."
+    },
+    {
+      "word": "Clean",
+      "pronunciation": "/kliːn/",
+      "meaning": "Not dirty",
+      "banglaMeaning": "পরিষ্কার",
+      "exampleSentence": "Keep your hands clean."
+    },
+    {
+      "word": "Dirty",
+      "pronunciation": "/ˈdɜːrti/",
+      "meaning": "Not clean",
+      "banglaMeaning": "নোংরা",
+      "exampleSentence": "Your shoes are very dirty."
+    },
+    {
+      "word": "Strong",
+      "pronunciation": "/strɔːŋ/",
+      "meaning": "Having physical power",
+      "banglaMeaning": "শক্তিশালী",
+      "exampleSentence": "He is a strong man."
+    }
+  ]
+}
