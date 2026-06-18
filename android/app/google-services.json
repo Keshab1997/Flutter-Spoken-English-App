@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858001624614",
+    "project_id": "flutter-spoken-english-app",
+    "storage_bucket": "flutter-spoken-english-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858001624614:android:c078d267d0bc75af16e0e7",
+        "android_client_info": {
+          "package_name": "com.example.spokenenglish.flutter_spoken_english_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeP3NpaLe2vN44HYKRdKgUw-RFepH0SG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
