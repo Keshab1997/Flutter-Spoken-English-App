@@ -1,1 +1,182 @@
-{"chapter": 28, "level": "Intermediate", "title": "Environment", "words": []}
+{
+  "chapter": 28,
+  "level": "Intermediate",
+  "title": "Environment",
+  "words": [
+    {
+      "word": "Environment",
+      "pronunciation": "/ɪnˈvaɪrənmənt/",
+      "meaning": "The natural world around us",
+      "banglaMeaning": "পরিবেশ",
+      "exampleSentence": "We must protect the environment."
+    },
+    {
+      "word": "Pollution",
+      "pronunciation": "/pəˈluːʃən/",
+      "meaning": "Harmful substances in air, water or land",
+      "banglaMeaning": "দূষণ",
+      "exampleSentence": "Air pollution is a serious problem in cities."
+    },
+    {
+      "word": "Climate",
+      "pronunciation": "/ˈklaɪmɪt/",
+      "meaning": "The usual weather pattern of a region",
+      "banglaMeaning": "জলবায়ু",
+      "exampleSentence": "The climate is changing rapidly."
+    },
+    {
+      "word": "Ecosystem",
+      "pronunciation": "/ˈiːkoʊsɪstəm/",
+      "meaning": "A community of living things interacting with their habitat",
+      "banglaMeaning": "পরিস্থিতন্ত্র",
+      "exampleSentence": "Coral reefs are a fragile ecosystem."
+    },
+    {
+      "word": "Deforestation",
+      "pronunciation": "/diːˌfɒrɪˈsteɪʃən/",
+      "meaning": "Cutting down large areas of forest",
+      "banglaMeaning": "বন উজাড়",
+      "exampleSentence": "Deforestation leads to loss of animal habitats."
+    },
+    {
+      "word": "Global Warming",
+      "pronunciation": "/ˈɡloʊbəl ˈwɔːrmɪŋ/",
+      "meaning": "The gradual heating of the earth's surface",
+      "banglaMeaning": "বৈশ্বিক উষ্ণতা",
+      "exampleSentence": "Global warming is causing ice caps to melt."
+    },
+    {
+      "word": "Carbon Footprint",
+      "pronunciation": "/ˈkɑːrbən ˈfʊtprɪnt/",
+      "meaning": "The amount of CO2 a person or activity produces",
+      "banglaMeaning": "কার্বন পদচিহ্ন",
+      "exampleSentence": "We should reduce our carbon footprint."
+    },
+    {
+      "word": "Renewable Energy",
+      "pronunciation": "/rɪˈnjuːəbəl ˈɛnərdʒi/",
+      "meaning": "Energy from sources that do not run out",
+      "banglaMeaning": "নবায়নযোগ্য শক্তি",
+      "exampleSentence": "Solar and wind are types of renewable energy."
+    },
+    {
+      "word": "Biodiversity",
+      "pronunciation": "/ˌbaɪoʊdaɪˈvɜːrsɪti/",
+      "meaning": "The variety of life in a habitat",
+      "banglaMeaning": "জীববৈচিত্র্য",
+      "exampleSentence": "Rainforests have rich biodiversity."
+    },
+    {
+      "word": "Conservation",
+      "pronunciation": "/ˌkɒnsərˈveɪʃən/",
+      "meaning": "Protection of nature and resources",
+      "banglaMeaning": "সংরক্ষণ",
+      "exampleSentence": "Wildlife conservation is crucial for future generations."
+    },
+    {
+      "word": "Recycle",
+      "pronunciation": "/ˌriːˈsaɪkəl/",
+      "meaning": "To convert waste into reusable material",
+      "banglaMeaning": "পুনর্ব্যবহার করা",
+      "exampleSentence": "Please recycle paper and plastic."
+    },
+    {
+      "word": "Greenhouse Gas",
+      "pronunciation": "/ˈɡriːnhaʊs ɡæs/",
+      "meaning": "Gases that trap heat in the atmosphere",
+      "banglaMeaning": "গ্রিনহাউস গ্যাস",
+      "exampleSentence": "Carbon dioxide is a major greenhouse gas."
+    },
+    {
+      "word": "Emissions",
+      "pronunciation": "/ɪˈmɪʃənz/",
+      "meaning": "Substances released into the air",
+      "banglaMeaning": "নিঃসরণ / নির্গমন",
+      "exampleSentence": "Vehicle emissions contribute to air pollution."
+    },
+    {
+      "word": "Habitat",
+      "pronunciation": "/ˈhæbɪtæt/",
+      "meaning": "The natural home of a plant or animal",
+      "banglaMeaning": "বাসস্থান",
+      "exampleSentence": "The forest is the habitat of many birds."
+    },
+    {
+      "word": "Endangered Species",
+      "pronunciation": "/ɪnˈdeɪndʒərd ˈspiːʃiːz/",
+      "meaning": "A species at risk of extinction",
+      "banglaMeaning": "বিপন্ন প্রজাতি",
+      "exampleSentence": "The Bengal tiger is an endangered species."
+    },
+    {
+      "word": "Extinction",
+      "pronunciation": "/ɪkˈstɪŋkʃən/",
+      "meaning": "When a species no longer exists",
+      "banglaMeaning": "বিলুপ্তি",
+      "exampleSentence": "Many species are on the brink of extinction."
+    },
+    {
+      "word": "Fossil Fuel",
+      "pronunciation": "/ˈfɒsəl ˈfjuːəl/",
+      "meaning": "Fuel from ancient organic matter",
+      "banglaMeaning": "জীবাশ্ম জ্বালানি",
+      "exampleSentence": "Burning fossil fuels contributes to global warming."
+    },
+    {
+      "word": "Sustainable",
+      "pronunciation": "/səˈsteɪnəbəl/",
+      "meaning": "Able to be maintained without harming the environment",
+      "banglaMeaning": "টেকসই",
+      "exampleSentence": "We need sustainable farming practices."
+    },
+    {
+      "word": "Ozone Layer",
+      "pronunciation": "/ˈoʊzoʊn ˈleɪər/",
+      "meaning": "A layer in the atmosphere that protects from UV rays",
+      "banglaMeaning": "ওজোন স্তর",
+      "exampleSentence": "The ozone layer shields us from harmful radiation."
+    },
+    {
+      "word": "Eco-friendly",
+      "pronunciation": "/ˈiːkoʊ ˈfrɛndli/",
+      "meaning": "Not harmful to the environment",
+      "banglaMeaning": "পরিবেশবান্ধব",
+      "exampleSentence": "Use eco-friendly bags instead of plastic."
+    },
+    {
+      "word": "Compost",
+      "pronunciation": "/ˈkɒmpɒst/",
+      "meaning": "Decayed organic matter used as fertilizer",
+      "banglaMeaning": "কম্পোস্ট / জৈব সার",
+      "exampleSentence": "We make compost from kitchen waste."
+    },
+    {
+      "word": "Drought",
+      "pronunciation": "/draʊt/",
+      "meaning": "A long period with no rain",
+      "banglaMeaning": "খরা",
+      "exampleSentence": "Drought causes severe damage to crops."
+    },
+    {
+      "word": "Flood",
+      "pronunciation": "/flʌd/",
+      "meaning": "Overflow of water onto dry land",
+      "banglaMeaning": "বন্যা",
+      "exampleSentence": "Heavy rain caused a flood in the village."
+    },
+    {
+      "word": "Landfill",
+      "pronunciation": "/ˈlændfɪl/",
+      "meaning": "A place where garbage is buried",
+      "banglaMeaning": "আবর্জনা ভরাট স্থান",
+      "exampleSentence": "Most of our waste ends up in landfills."
+    },
+    {
+      "word": "Toxic",
+      "pronunciation": "/ˈtɒksɪk/",
+      "meaning": "Poisonous or harmful",
+      "banglaMeaning": "বিষাক্ত",
+      "exampleSentence": "Toxic chemicals should be disposed of carefully."
+    }
+  ]
+}
