@@ -79,6 +79,77 @@ flutter:
     - assets/json/vocabulary/Intermediate/
     - assets/json/vocabulary/Advanced/
     - assets/json/vocabulary_manifest.json
+    - assets/json/grammar/
+    - assets/json/grammar/chapter_01_alphabet.json
+    - assets/json/grammar/chapter_02_word.json
+    - assets/json/grammar/chapter_03_sentence.json
+    - assets/json/grammar/chapter_04_parts_of_speech.json
+    - assets/json/grammar/chapter_05_noun.json
+    - assets/json/grammar/chapter_06_pronoun.json
+    - assets/json/grammar/chapter_07_adjective.json
+    - assets/json/grammar/chapter_08_verb.json
+    - assets/json/grammar/chapter_09_adverb.json
+    - assets/json/grammar/chapter_10_preposition.json
+    - assets/json/grammar/chapter_11_conjunction.json
+    - assets/json/grammar/chapter_12_article.json
+    - assets/json/grammar/chapter_13_determiners.json
+    - assets/json/grammar/chapter_14_quantifiers.json
+    - assets/json/grammar/chapter_15_numbers.json
+    - assets/json/grammar/chapter_16_gender.json
+    - assets/json/grammar/chapter_17_person.json
+    - assets/json/grammar/chapter_18_voice.json
+    - assets/json/grammar/chapter_19_punctuation_marks.json
+    - assets/json/grammar/chapter_20_capitalization_rules.json
+    - assets/json/grammar/chapter_21_introduction_to_tense.json
+    - assets/json/grammar/chapter_22_subject_and_predicate.json
+    - assets/json/grammar/chapter_23_subject-verb_agreement.json
+    - assets/json/grammar/chapter_24_types_of_sentences.json
+    - assets/json/grammar/chapter_25_negative_sentences.json
+    - assets/json/grammar/chapter_26_wh_questions.json
+    - assets/json/grammar/chapter_27_tag_questions.json
+    - assets/json/grammar/chapter_28_there_and_it.json
+    - assets/json/grammar/chapter_29_modal_verbs.json
+    - assets/json/grammar/chapter_30_infinitive.json
+    - assets/json/grammar/chapter_31_gerund.json
+    - assets/json/grammar/chapter_32_participle.json
+    - assets/json/grammar/chapter_33_phrases.json
+    - assets/json/grammar/chapter_34_clauses.json
+    - assets/json/grammar/chapter_35_phrase_vs_clause.json
+    - assets/json/grammar/chapter_36_simple_sentence.json
+    - assets/json/grammar/chapter_37_compound_sentence.json
+    - assets/json/grammar/chapter_38_complex_sentence.json
+    - assets/json/grammar/chapter_39_transformation_of_sentences.json
+    - assets/json/grammar/chapter_40_degree_change.json
+    - assets/json/grammar/chapter_41_affirmative_and_negative_transformation.json
+    - assets/json/grammar/chapter_42_assertive_and_interrogative_transformation.json
+    - assets/json/grammar/chapter_43_exclamatory_transformation.json
+    - assets/json/grammar/chapter_44_active_voice.json
+    - assets/json/grammar/chapter_45_passive_voice.json
+    - assets/json/grammar/chapter_46_direct_speech.json
+    - assets/json/grammar/chapter_47_indirect_speech.json
+    - assets/json/grammar/chapter_48_conditional_sentences.json
+    - assets/json/grammar/chapter_49_comparison.json
+    - assets/json/grammar/chapter_50_parallelism.json
+    - assets/json/grammar/chapter_51_advanced_modals.json
+    - assets/json/grammar/chapter_52_causative_verbs.json
+    - assets/json/grammar/chapter_53_inversion.json
+    - assets/json/grammar/chapter_54_emphasis.json
+    - assets/json/grammar/chapter_55_ellipsis.json
+    - assets/json/grammar/chapter_56_relative_pronouns.json
+    - assets/json/grammar/chapter_57_relative_clauses.json
+    - assets/json/grammar/chapter_58_reported_speech.json
+    - assets/json/grammar/chapter_59_subjunctive_mood.json
+    - assets/json/grammar/chapter_60_advanced_conditionals.json
+    - assets/json/grammar/chapter_61_complex_structures.json
+    - assets/json/grammar/chapter_62_nominalization.json
+    - assets/json/grammar/chapter_63_formal_and_informal_english.json
+    - assets/json/grammar/chapter_64_common_grammar_mistakes.json
+    - assets/json/grammar/chapter_65_confusing_words.json
+    - assets/json/grammar/chapter_66_idiomatic_expressions.json
+    - assets/json/grammar/chapter_67_phrasal_verbs.json
+    - assets/json/grammar/chapter_68_collocations.json
+    - assets/json/grammar/chapter_69_sentence_patterns.json
+    - assets/json/grammar/chapter_70_advanced_writing_structures.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

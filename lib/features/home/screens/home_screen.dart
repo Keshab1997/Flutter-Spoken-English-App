@@ -5,6 +5,7 @@ import '../../../providers/auth_provider.dart';
 import '../../../providers/lesson_provider.dart';
 import '../../../providers/progress_provider.dart';
 import '../../../providers/vocabulary_provider.dart';
+import '../../grammar/screens/grammar_list_screen.dart';
 import '../../vocabulary/screens/vocabulary_test_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -652,7 +653,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     final items = [
       {'title': 'Vocabulary', 'icon': Icons.menu_book_rounded, 'gradient': AppColors.primaryGradient, 'tab': 1},
       {'title': 'Vocab Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'tab': -1},
-      {'title': 'Grammar', 'icon': Icons.edit_note_rounded, 'gradient': AppColors.purpleGradient, 'tab': 1},
+      {'title': 'Grammar', 'icon': Icons.edit_note_rounded, 'gradient': AppColors.purpleGradient, 'tab': -2},
       {'title': 'Conversation', 'icon': Icons.forum_rounded, 'gradient': AppColors.secondaryGradient, 'tab': 2},
       {'title': 'Listening', 'icon': Icons.headset_rounded, 'gradient': AppColors.infoGradient, 'tab': 2},
       {'title': 'Speaking', 'icon': Icons.mic_rounded, 'gradient': AppColors.pinkGradient, 'tab': 2},
@@ -675,6 +676,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                 final tab = item['tab'] as int;
                 if (tab == -1) {
                   Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()));
+                } else if (tab == -2) {
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarListScreen()));
                 } else {
                   widget.onNavigateToTab?.call(tab);
                 }

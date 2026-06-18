@@ -3,6 +3,7 @@ import '../features/auth/screens/splash_screen.dart';
 import '../features/auth/screens/login_screen.dart';
 import '../features/auth/screens/signup_screen.dart';
 import '../features/home/screens/main_navigation_screen.dart';
+import '../features/grammar/screens/grammar_list_screen.dart';
 import '../features/grammar/screens/tense_screen.dart';
 import '../features/grammar/screens/article_screen.dart';
 import '../features/grammar/screens/preposition_screen.dart';
@@ -26,6 +27,8 @@ class AppRoutes {
         return MaterialPageRoute(builder: (_) => const MainNavigationScreen());
       case RouteNames.settings:
         return MaterialPageRoute(builder: (_) => const SettingsScreen());
+      case RouteNames.grammarList:
+        return MaterialPageRoute(builder: (_) => const GrammarListScreen());
       case RouteNames.grammarTense:
         return MaterialPageRoute(builder: (_) => const TenseScreen());
       case RouteNames.grammarArticle:

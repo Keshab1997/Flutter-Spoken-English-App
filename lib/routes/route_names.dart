@@ -6,6 +6,8 @@ class RouteNames {
   static const String lessonDetail = '/lesson-detail';
   static const String vocabulary = '/vocabulary';
   static const String wordDetails = '/word-details';
+  static const String grammarList = '/grammar';
+  static const String grammarDetail = '/grammar/detail';
   static const String grammarTense = '/grammar/tense';
   static const String grammarArticle = '/grammar/article';
   static const String grammarPreposition = '/grammar/preposition';
