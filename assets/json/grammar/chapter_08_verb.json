@@ -1,10 +1,265 @@
 {
   "chapter": 8,
   "level": "Beginner",
-  "title": "Verb",
+  "title": "Verb (ক্রিয়া)",
   "icon": "directions_run",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "A verb is a word that describes an action, occurrence, or state of being. Verbs are the heart of every sentence — no complete sentence is possible without a verb. Verbs tell us what the subject is doing, what is happening, or what state the subject is in. Understanding verbs is essential for forming correct sentences in English.",
+  "banglaDescription": "Verb (ক্রিয়া) হলো সেই শব্দ যা কোনো কাজ, ঘটনা, বা অবস্থা বর্ণনা করে। Verb প্রতিটি বাক্যের প্রাণ — কোনো সম্পূর্ণ বাক্য verb ছাড়া সম্ভব নয়। Verb আমাদের বলে subject কী করছে, কী ঘটছে, বা subject কী অবস্থায় আছে। ইংরেজিতে সঠিক বাক্য গঠনের জন্য verb বোঝা অপরিহার্য।",
+  "topics": [
+    {
+      "name": "What is a Verb?",
+      "banglaName": "ক্রিয়া কী?",
+      "definition": "A verb is a word that expresses an action (physical or mental), an occurrence, or a state of being. Every complete sentence in English must have at least one verb. Verbs change form to show tense (past, present, future), person (first, second, third), number (singular, plural), and voice (active, passive).",
+      "banglaDefinition": "Verb (ক্রিয়া) হলো সেই শব্দ যা একটি কাজ (শারীরিক বা মানসিক), একটি ঘটনা, বা একটি অবস্থা প্রকাশ করে। ইংরেজিতে প্রতিটি পূর্ণ বাক্যে অন্তত একটি verb থাকতে হবে। Verb tense (past, present, future), person (first, second, third), number (singular, plural), এবং voice (active, passive) দেখানোর জন্য রূপ বদলায়।",
+      "formula": "Sentence = Subject + Verb + (Object/Complement)\n\nAction: The children play in the park.\nState: The tea is hot.\nOccurrence: The train arrived at Howrah station.\n\nVerb shows:\n- What the subject does (I eat)\n- What happens (It rains)\n- What the subject is (He is a teacher)",
+      "rules": [
+        "প্রতি পূর্ণ বাক্যে একটি main verb থাকা আবশ্যক।",
+        "Verb subject-এর number (singular/plural) অনুযায়ী পরিবর্তিত হয়।",
+        "Verb tense অনুযায়ী রূপ বদলায়: play → played → will play।",
+        "Action verb শারীরিক বা মানসিক কাজ বোঝায়: run, think, eat, believe।",
+        "Linking verb subject-কে complement-এর সাথে যুক্ত করে: is, am, are, was, were, seem, become।",
+        "Auxiliary verb (helping verb) main verb-কে সাহায্য করে: is going, has eaten, will come।",
+        "একটি বাক্যে একাধিক verb থাকতে পারে: 'She sings and dances.'",
+        "Verb-এর সঠিক ব্যবহার বাক্যের অর্থ পরিষ্কার করে।"
+      ],
+      "examples": [
+        { "en": "Action: 'Rickshaw pullers work hard on Kolkata streets.'", "bn": "কাজ: 'রিকশাওয়ালারা কলকাতার রাস্তায় কঠোর পরিশ্রম করে।'" },
+        { "en": "Mental action: 'I think Chennai is a beautiful city.'", "bn": "মানসিক কাজ: 'আমি মনে করি চেন্নাই একটি সুন্দর শহর।'" },
+        { "en": "State: 'The Taj Mahal stands on the banks of the Yamuna.'", "bn": "অবস্থা: 'তাজমহল যমুনার তীরে অবস্থিত।'" },
+        { "en": "Occurrence: 'The monsoon arrives in Mumbai every June.'", "bn": "ঘটনা: 'প্রতি জুনে মুম্বাইয়ে মৌসুমি বৃষ্টি আসে।'" },
+        { "en": "Multiple verbs: 'She cooked biryani and served it with raita.'", "bn": "একাধিক verb: 'সে বিরিয়ানি রান্না করল এবং raita দিয়ে পরিবেশন করল।'" },
+        { "en": "State: 'I am from Kolkata.'", "bn": "অবস্থা: 'আমি কলকাতা থেকে এসেছি।'" }
+      ],
+      "tips": "Verb চেনার সবচেয়ে সহজ উপায়: বাক্যটিতে 'He/She/It' বা 'They' বসিয়ে দেখো — যে শব্দটি পরিবর্তিত হয় সেটিই verb। যেমন: 'They walk fast' → 'He walks fast' (walk → walks পরিবর্তিত হয়েছে, তাই walk verb)। এছাড়াও বাক্যে 'is/am/are/was/were' থাকলে সেগুলোও verb।"
+    },
+    {
+      "name": "Action Verbs",
+      "banglaName": "কর্মবাচক ক্রিয়া",
+      "definition": "Action verbs describe physical or mental actions. Physical actions are things we do with our body (run, eat, write, dance). Mental actions are things we do with our mind (think, believe, understand, remember). Action verbs can be transitive (need an object) or intransitive (do not need an object).",
+      "banglaDefinition": "Action verb (কর্মবাচক ক্রিয়া) শারীরিক বা মানসিক কাজ বর্ণনা করে। শারীরিক কাজ আমরা আমাদের শরীর দিয়ে করি (দৌড়ানো, খাওয়া, লেখা, নাচা)। মানসিক কাজ আমরা আমাদের মনের সাথে করি (ভাবা, বিশ্বাস করা, বোঝা, মনে রাখা)। Action verb transitive (object প্রয়োজন) বা intransitive (object প্রয়োজন নেই) হতে পারে।",
+      "formula": "Action Verb = Physical or Mental Action\n\nTransitive (needs object):\nSubject + Verb + Object\n→ Arjun eats mangoes. (mangoes = object)\n→ She reads a book.\n\nIntransitive (no object needed):\nSubject + Verb\n→ The baby sleeps.\n→ The train arrives.",
+      "rules": [
+        "Transitive verb-এর object প্রয়োজন: 'She bought a sari.' (sari = object)।",
+        "Intransitive verb-এর object প্রয়োজন নেই: 'The sun rises.'",
+        "কিছু verb transitive এবং intransitive উভয়ই হতে পারে: 'She sings' (intransitive) / 'She sings a song' (transitive)।",
+        "Mental action verb: think, know, believe, understand, remember, forget, want, hope।",
+        "Physical action verb: run, jump, eat, drink, write, cook, clean, build।",
+        "Action verb-এর continuous form (-ing) থাকতে পারে: 'I am eating biryani.'",
+        "Action verb-কে সাধারণত 'do' দিয়ে প্রশ্ন করা যায়: 'Do you like Kolkata?'"
+      ],
+      "examples": [
+        { "en": "Physical: 'The children play cricket in the field.'", "bn": "শারীরিক: 'শিশুরা মাঠে ক্রিকেট খেলে।'" },
+        { "en": "Physical: 'My grandmother knits sweaters every winter.'", "bn": "শারীরিক: 'আমার দাদী প্রতি শীতে সোয়েটার বুনেন।'" },
+        { "en": "Mental: 'I believe hard work leads to success.'", "bn": "মানসিক: 'আমি বিশ্বাস করি কঠোর পরিশ্রম সাফল্যের দিকে নিয়ে যায়।'" },
+        { "en": "Mental: 'Do you remember the story of the Taj Mahal?'", "bn": "মানসিক: 'তোমার কি তাজমহলের গল্প মনে আছে?'" },
+        { "en": "Transitive: 'She wrote a letter to her mother in Kerala.'", "bn": "Transitive: 'সে কেরালায় তার মাকে একটি চিঠি লিখেছে।'" },
+        { "en": "Intransitive: 'The sun rises in the east.'", "bn": "Intransitive: 'সূর্য পূর্ব দিকে উদিত হয়।'" }
+      ],
+      "tips": "Transitive vs Intransitive চেনার উপায়: verb-এর পরে 'what?' বা 'whom?' প্রশ্ন করো। উত্তর পেলে → transitive (object আছে)। উত্তর না পেলে → intransitive (object নেই)। যেমন: 'She sings a song' → sings what? → a song (transitive)। 'She sings' → sings what? → উত্তর নেই (intransitive)।"
+    },
+    {
+      "name": "Linking Verbs",
+      "banglaName": "সংযোগকারী ক্রিয়া",
+      "definition": "Linking verbs do not express action. Instead, they connect the subject of the sentence to a word or phrase that describes or identifies the subject. The most common linking verb is 'be' (is, am, are, was, were). Other linking verbs include seem, become, appear, look, feel, taste, smell, sound, grow, and remain.",
+      "banglaDefinition": "Linking verb কাজ প্রকাশ করে না। বরং, তারা বাক্যের subject-কে এমন একটি শব্দ বা phrase-এর সাথে সংযুক্ত করে যা subject-কে বর্ণনা বা চিহ্নিত করে। সবচেয়ে সাধারণ linking verb হলো 'be' (is, am, are, was, were)। অন্যান্য linking verbs: seem, become, appear, look, feel, taste, smell, sound, grow, এবং remain।",
+      "formula": "Subject + Linking Verb + Complement (noun/adjective)\n\nThe biryani smells delicious. (adjective)\nHe became a doctor. (noun)\nKolkata is a cultural hub. (noun)\nShe looks tired. (adjective)\n\nThe flowers smell sweet. (adjective)\nThe curry tastes spicy. (adjective)",
+      "rules": [
+        "Linking verb-এর পরে adjective বসে (not adverb): 'She looks beautiful' (not beautifully)।",
+        "Linking verb-এর পরে noun বসে subject-কে রি命名 করতে: 'He is a teacher'।",
+        "Be verb (is, am, are, was, were) সবচেয়ে সাধারণ linking verb।",
+        "Sense verbs (look, feel, taste, smell, sound) — linking verb হিসেবে কাজ করতে পারে।",
+        "'Become', 'seem', 'appear', 'remain', 'grow' — অবস্থা পরিবর্তন বোঝায়।",
+        "একই verb কখনও linking, কখনও action verb হতে পারে: 'He looked at the Ganges' (action) vs 'He looked tired' (linking)।",
+        "Linking verb-এর continuous form সাধারণত হয় না: 'She is being tired' — ভুল (stative verb)।"
+      ],
+      "examples": [
+        { "en": "Be: 'The Victoria Memorial is a famous landmark in Kolkata.'", "bn": "Be: 'ভিক্টোরিয়া মেমোরিয়াল কলকাতার একটি বিখ্যাত landmark।'" },
+        { "en": "Become: 'Mumbai became the financial capital of India.'", "bn": "Become: 'মুম্বাই ভারতের আর্থিক রাজধানী হয়ে ওঠে।'" },
+        { "en": "Look: 'The bride looked stunning in her red lehenga.'", "bn": "Look: 'কনে তার লাল লেহেঙ্গায় stunning দেখাচ্ছিল।'" },
+        { "en": "Taste: 'This Hyderabadi biryani tastes amazing.'", "bn": "Taste: 'এই হায়দরাবাদি বিরিয়ানির স্বাদ অসাধারণ।'" },
+        { "en": "Smell: 'The mogra flowers smell wonderful in the evening.'", "bn": "Smell: 'সন্ধ্যায় মোগরা ফুলের গন্ধ চমৎকার।'" },
+        { "en": "Sound: 'That plan sounds perfect for our trip to Goa.'", "bn": "Sound: 'গোয়া ভ্রমণের জন্য পরিকল্পনাটি perfect শোনাচ্ছে।'" }
+      ],
+      "tips": "Linking verb চেনার সহজ উপায়: verb-টিকে 'is'/'am'/'are' দিয়ে প্রতিস্থাপন করে দেখো। যদি অর্থ একই থাকে, তবে এটি linking verb। যেমন: 'She looks happy' → 'She is happy' (অর্থ একই → looks = linking)। 'She looks at the photo' → 'She is at the photo' (অর্থ বদলে গেছে → looks = action verb)।"
+    },
+    {
+      "name": "Auxiliary Verbs (Helping Verbs)",
+      "banglaName": "সহায়ক ক্রিয়া",
+      "definition": "Auxiliary verbs, also called helping verbs, are used together with a main verb to form different tenses, moods, voices, or to make questions and negatives. The primary auxiliary verbs are be, have, and do. The modal auxiliary verbs are can, could, may, might, shall, should, will, would, must, and ought to.",
+      "banglaDefinition": "Auxiliary verb (সহায়ক ক্রিয়া) main verb-এর সাথে ব্যবহার করে বিভিন্ন tense, mood, voice তৈরি করা হয়, বা প্রশ্ন ও negative বাক্য গঠন করা হয়। Primary auxiliary verbs: be, have, do। Modal auxiliary verbs: can, could, may, might, shall, should, will, would, must, ought to।",
+      "formula": "Auxiliary Verb + Main Verb = Complete Verb Phrase\n\nBe: is playing, are going, was eaten\nHave: has written, have seen, had left\nDo: do not like, does not work, did not come\nModals: can swim, must go, should study\n\nExample:\n'She is reading a book about Indian history.'\n'They have visited the Taj Mahal twice.'\n'I do not eat spicy food.'\n'You must see the sunset at Puri Beach.'",
+      "rules": [
+        "Auxiliary verb সবসময় main verb-এর আগে বসে।",
+        "Be verb (is, am, are, was, were) + present participle (-ing) = continuous tense।",
+        "Be verb + past participle = passive voice।",
+        "Have/has/had + past participle = perfect tense।",
+        "Do/does/did + base verb = questions এবং negatives (present/past simple)।",
+        "Modal verbs-এর পরে base verb (without 'to') বসে: 'She can sing' (not 'to sing')।",
+        "Modal verb সব person-এর জন্য একই রূপ: 'He can', 'She can', 'They can' (কোনো 's' যোগ হয় না)।",
+        "একটি verb phrase-এ একাধিক auxiliary verb থাকতে পারে: 'She must have been waiting for long.'"
+      ],
+      "examples": [
+        { "en": "Be: 'The metro is running from Kolkata to Salt Lake.'", "bn": "Be: 'মেট্রো কলকাতা থেকে সল্টলেক পর্যন্ত চলছে।'" },
+        { "en": "Have: 'I have lived in Delhi for five years.'", "bn": "Have: 'আমি পাঁচ বছর ধরে দিল্লিতে বসবাস করছি।'" },
+        { "en": "Do: 'Does this train go to Howrah station?'", "bn": "Do: 'এই ট্রেনটি কি হাওড়া স্টেশনে যায়?'" },
+        { "en": "Modal: 'You must visit the Ajanta Caves at least once.'", "bn": "Modal: 'তোমাকে অন্তত একবার অজন্তা গুহা দেখতে হবে।'" },
+        { "en": "Modal: 'Can you speak Hindi?'", "bn": "Modal: 'তুমি কি হিন্দি বলতে পারো?'" },
+        { "en": "Multiple: 'She has been learning Bharatanatyam since childhood.'", "bn": "একাধিক: 'সে শৈশব থেকে ভরতনাট্যম শিখছে।'" }
+      ],
+      "tips": "Auxiliary verb চেনার উপায়: বাক্যটিকে negative বা question বানাও। যে verb-টি negative-এ 'not'-এর আগে বা question-এ subject-এর আগে যায়, সেটিই auxiliary verb। যেমন: 'She is cooking' → 'She is not cooking' / 'Is she cooking?' — 'is' হলো auxiliary। কোনো auxiliary না থাকলে 'do' ব্যবহার করো: 'She cooks' → 'She does not cook' / 'Does she cook?'"
+    },
+    {
+      "name": "Modal Verbs",
+      "banglaName": "ভাবার্থক ক্রিয়া",
+      "definition": "Modal verbs are a special type of auxiliary verb that express possibility, ability, permission, obligation, necessity, or probability. The main modal verbs are: can, could, may, might, shall, should, will, would, must. Modals do not change form for different subjects and are always followed by the base form of the main verb.",
+      "banglaDefinition": "Modal verb (ভাবার্থক ক্রিয়া) একটি বিশেষ ধরনের auxiliary verb যা সম্ভাবনা, ক্ষমতা, অনুমতি, বাধ্যবাধকতা, প্রয়োজনীয়তা, বা সম্ভাব্যতা প্রকাশ করে। প্রধান modal verbs: can, could, may, might, shall, should, will, would, must। Modals ভিন্ন subject-এর জন্য রূপ বদলায় না এবং সবসময় main verb-এর base form-এর আগে বসে।",
+      "formula": "Modal + Base Verb (no 'to', no 's')\n\nAbility: I can speak Hindi.\nPermission: May I come in?\nObligation: You must wear a helmet on a bike.\nAdvice: You should visit Mysore Palace.\nPossibility: It might rain in Chennai today.\n\nSubject + Modal + Base Verb\n→ Arjun can swim in the Ganges.\n→ We should visit the Red Fort.",
+      "rules": [
+        "Modal verb-এর পরে সবসময় base verb (without 'to') বসে: 'She can dance' (not 'can to dance')।",
+        "Modal verb তৃতীয় person singular-এ 's' যোগ হয় না: 'He can' (not 'he cans'), 'She must' (not 'she musts')।",
+        "'Can' ক্ষমতা বা সামর্থ্য বোঝায়: 'I can cook biryani.'",
+        "'Could' অতীতের ক্ষমতা বা বিনীত অনুরোধ: 'Could you help me?'",
+        "'May' অনুমতি বা সম্ভাবনা: 'May I use your phone?' / 'It may rain today.'",
+        "'Must' বাধ্যবাধকতা বা নিশ্চিততা: 'You must see the Charminar in Hyderabad.'",
+        "'Should' পরামর্শ বা উচিত: 'You should try the street food in Kolkata.'",
+        "'Would' বিনীত অনুরোধ বা অভ্যাস: 'Would you like some chai?' / 'When I was young, I would visit my grandmother every summer.'"
+      ],
+      "examples": [
+        { "en": "Ability: 'Arjun can speak three languages — Hindi, English, and Bengali.'", "bn": "ক্ষমতা: 'অর্জুন তিনটি ভাষা বলতে পারে — হিন্দি, ইংরেজি এবং বাংলা।'" },
+        { "en": "Permission: 'May I come in, sir?'", "bn": "অনুমতি: 'আমি কি ভিতরে আসতে পারি, স্যার?'" },
+        { "en": "Obligation: 'You must visit the Golden Temple when you go to Amritsar.'", "bn": "বাধ্যবাধকতা: 'আমৃতসর গেলে তোমাকে স্বর্ণমন্দির দেখতে হবেই।'" },
+        { "en": "Advice: 'You should take the local train to explore Mumbai.'", "bn": "পরামর্শ: 'মুম্বাই ঘুরতে তোমার local ট্রেন নেওয়া উচিত।'" },
+        { "en": "Possibility: 'The Delhi metro might be crowded at this time.'", "bn": "সম্ভাবনা: 'এই সময় দিল্লি মেট্রোতে ভিড় থাকতে পারে।'" },
+        { "en": "Polite request: 'Would you please pass me the water?'", "bn": "বিনীত অনুরোধ: 'অনুগ্রহ করে আমাকে পানি দেবে?'" }
+      ],
+      "tips": "Modal verbs মনে রাখার সহজ উপায়: এদের কখনো 's' যোগ হয় না (he cans → ভুল), এদের পরে 'to' বসে না (must to go → ভুল), এবং এদের পরে সবসময় base verb বসে। প্রতিটি modal-এর একাধিক অর্থ হতে পারে — context দেখে বুঝতে হয়। যেমন 'Can' = ক্ষমতা (I can swim) বা অনুমতি (Can I go?)।"
+    },
+    {
+      "name": "Transitive and Intransitive Verbs",
+      "banglaName": "সকর্মক ও অকর্মক ক্রিয়া",
+      "definition": "Transitive verbs require a direct object to complete their meaning. The action is transferred from the subject to the object. Intransitive verbs do not need an object — the action is complete by itself. Some verbs can be both transitive and intransitive depending on how they are used in a sentence.",
+      "banglaDefinition": "Transitive verb (সকর্মক ক্রিয়া)-এর অর্থ সম্পূর্ণ করতে একটি direct object প্রয়োজন। কাজটি subject থেকে object-এ স্থানান্তরিত হয়। Intransitive verb (অকর্মক ক্রিয়া)-এর object প্রয়োজন নেই — কাজটি নিজেই সম্পূর্ণ। কিছু verb বাক্যে ব্যবহারের উপর নির্ভর করে transitive এবং intransitive উভয়ই হতে পারে।",
+      "formula": "Transitive: Subject + Verb + Object (Who? What?)\n→ Priya bought a sari. (bought what? → a sari)\n→ He ate biryani. (ate what? → biryani)\n\nIntransitive: Subject + Verb (Complete by itself)\n→ The baby sleeps. (sleeps what? → no answer)\n→ The sun rises. (rises what? → no answer)\n\nBoth:\n→ She reads (intransitive)\n→ She reads a book (transitive)",
+      "rules": [
+        "Transitive verb-এর object থাকে: 'She wrote a letter.' (letter = direct object)।",
+        "Intransitive verb-এর object থাকে না: 'The train arrived.'",
+        "কিছু verb সবসময় transitive: 'I like Kolkata.' (like কী? → Kolkata) — like সবসময় object চায়।",
+        "কিছু verb সবসময় intransitive: 'The baby laughed.' (laugh-এর object হয় না)।",
+        "একই verb বিভিন্ন বাক্যে ভিন্ন হতে পারে: 'She runs a business' (transitive) vs 'She runs every morning' (intransitive)।",
+        "Intransitive verb-এর পরে preposition + object আসতে পারে: 'She lives in Kolkata.' (in Kolkata = prepositional phrase, not direct object)।",
+        "Transitive verb passive voice-এ ব্যবহার করা যায়: 'The letter was written by her.'"
+      ],
+      "examples": [
+        { "en": "Transitive: 'The children fly kites on Makar Sankranti.'", "bn": "Transitive: 'শিশুরা মকর সংক্রান্তিতে ঘুড়ি ওড়ায়।'" },
+        { "en": "Transitive: 'My mother cooked a delicious meal.'", "bn": "Transitive: 'আমার মা একটি সুস্বাদু খাবার রান্না করেছেন।'" },
+        { "en": "Intransitive: 'The birds fly in the sky.' (fly what? → no object)", "bn": "Intransitive: 'পাখিরা আকাশে উড়ে।' (কী উড়ে? → কোনো object নেই)" },
+        { "en": "Intransitive: 'The students laughed loudly.'", "bn": "Intransitive: 'ছাত্ররা জোরে হাসল।'" },
+        { "en": "Both: 'She sings beautifully.' (intransitive) / 'She sings a Bengali folk song.' (transitive)", "bn": "Both: 'সে সুন্দর গান গায়।' (intransitive) / 'সে একটি বাংলা folk গান গায়।' (transitive)" },
+        { "en": "Intransitive with prep: 'He lives in Chennai.'", "bn": "Intransitive with prep: 'সে চেন্নাইতে থাকে।'" }
+      ],
+      "tips": "Transitive vs Intransitive চেনার সবথেকে সহজ পরীক্ষা: verb-এর পরে 'what?' বা 'whom?' প্রশ্ন করো। যদি বাক্য থেকে উত্তর পাওয়া যায়, তবে transitive। যদি উত্তর না পাওয়া যায়, তবে intransitive। যেমন: 'She bought ___ (what?) → a sari' (transitive)। 'She slept ___ (what?) → ?' (intransitive)।"
+    },
+    {
+      "name": "Regular and Irregular Verbs",
+      "banglaName": "নিয়মিত ও অনিয়মিত ক্রিয়া",
+      "definition": "Regular verbs form their past tense and past participle by adding -ed or -d to the base form (walk → walked, dance → danced). Irregular verbs change their form in different ways and do not follow a fixed pattern (go → went → gone, eat → ate → eaten, write → wrote → written). There are about 200 irregular verbs in English.",
+      "banglaDefinition": "Regular verb (নিয়মিত ক্রিয়া) past tense এবং past participle গঠন করে base form-এ -ed বা -d যোগ করে (walk → walked, dance → danced)। Irregular verb (অনিয়মিত ক্রিয়া) বিভিন্নভাবে তাদের রূপ পরিবর্তন করে এবং কোনো নির্দিষ্ট প্যাটার্ন অনুসরণ করে না (go → went → gone, eat → ate → eaten, write → wrote → written)। ইংরেজিতে প্রায় ২০০টি irregular verb আছে।",
+      "formula": "Regular: Base + -ed/-d\nV1 (Present) → V2 (Past) → V3 (Past Participle)\nwalk → walked → walked\ncook → cooked → cooked\nlive → lived → lived\n\nIrregular: Varies\ngo → went → gone\neat → ate → eaten\nwrite → wrote → written\n\nExample:\nRegular: 'I cooked biryani yesterday.'\nIrregular: 'I ate biryani yesterday.'",
+      "rules": [
+        "Regular verb-এর past tense এবং past participle একই: 'I walked to the market. I have walked a lot today.'",
+        "বেশিরভাগ verb ইংরেজিতে regular: add → added, play → played, visit → visited।",
+        "Irregular verb-এর তিনটি form (V1, V2, V3) মুখস্থ করতে হয়: sing → sang → sung।",
+        "কিছু irregular verb-এর সব তিনটি form একই: put → put → put, cut → cut → cut, set → set → set।",
+        "কিছু irregular verb-এর V2 এবং V3 একই: buy → bought → bought, bring → brought → brought।",
+        "কিছু irregular verb-এর তিনটি form আলাদা: ring → rang → rung, drink → drank → drunk।",
+        "Irregular verb list মুখস্থ করার সবচেয়ে ভালো উপায়: category অনুযায়ী group করে শেখা।"
+      ],
+      "examples": [
+        { "en": "Regular: 'I walked from Park Street to Esplanade.'", "bn": "Regular: 'আমি পার্ক স্ট্রিট থেকে এসপ্ল্যানেড পর্যন্ত হেঁটেছি।'" },
+        { "en": "Regular: 'She learned Kathak when she was young.'", "bn": "Regular: 'সে ছোটবেলায় কথক শিখেছিল।'" },
+        { "en": "Irregular: 'I went to Mysore last summer.' (go → went → gone)", "bn": "Irregular: 'আমি গত গ্রীষ্মে মহীশূর গিয়েছিলাম।' (go → went → gone)" },
+        { "en": "Irregular: 'She sang a beautiful Rabindra Sangeet.' (sing → sang → sung)", "bn": "Irregular: 'সে একটি সুন্দর রবীন্দ্র সঙ্গীত গেয়েছিল।' (sing → sang → sung)" },
+        { "en": "All same: 'I put the book on the table. I put it there yesterday.'", "bn": "একই: 'আমি বইটি টেবিলে রাখলাম। আমি এটি গতকাল সেখানে রেখেছিলাম।'" },
+        { "en": "V2 = V3: 'I bought a sari from Varanasi. I have bought many saris.'", "bn": "V2 = V3: 'আমি বারাণসী থেকে একটি শাড়ি কিনেছি। আমি অনেক শাড়ি কিনেছি।'" }
+      ],
+      "tips": "Irregular verbs মুখস্থ করার জন্য category অনুযায়ী group করে শেখো। যেমন: sing-sang-sung, ring-rang-rung, drink-drank-drunk (i-a-u pattern)। আরেকটি গ্রুপ: buy-bought-bought, bring-brought-brought, think-thought-thought (-ought pattern)। যত বেশি পড়বে ও ব্যবহার করবে, তত সহজে মনে থাকবে।"
+    },
+    {
+      "name": "Phrasal Verbs",
+      "banglaName": "বাক্যাংশগত ক্রিয়া",
+      "definition": "A phrasal verb is a verb combined with a preposition or an adverb (or both) that creates a new meaning different from the original verb. For example, 'give up' means 'quit', 'look after' means 'take care of', and 'run into' means 'meet unexpectedly'. Phrasal verbs are very common in everyday English conversation.",
+      "banglaDefinition": "Phrasal verb (বাক্যাংশগত ক্রিয়া) হলো একটি verb যা একটি preposition বা adverb (বা উভয়) এর সাথে যুক্ত হয়ে একটি নতুন অর্থ তৈরি করে যা মূল verb-এর অর্থ থেকে ভিন্ন। যেমন, 'give up' মানে 'ছেড়ে দেওয়া', 'look after' মানে 'যত্ন নেওয়া', 'run into' মানে 'হঠাৎ দেখা'। দৈনন্দিন ইংরেজি কথোপকথনে phrasal verb খুব সাধারণ।",
+      "formula": "Verb + Particle (Preposition/Adverb) = New Meaning\n\ngive + up = quit (ছেড়ে দেওয়া)\nlook + after = take care of (যত্ন নেওয়া)\nrun + into = meet unexpectedly (হঠাৎ দেখা)\n\nSeparable: 'She picked up her bag.' / 'She picked her bag up.'\nInseparable: 'He looks after his grandmother.' (cannot separate)\n\nExample:\n'Don't give up on your dreams.'\n'Can you look after my bag while I buy tickets?'",
+      "rules": [
+        "Phrasal verb-এর অর্থ মূল verb-এর অর্থ থেকে আলাদা: 'give up' ≠ 'give' + 'up'।",
+        "Separable phrasal verb-এ object verb এবং particle-এর মাঝে বসতে পারে: 'Turn off the light' বা 'Turn the light off'।",
+        "Inseparable phrasal verb-এ object সবসময় particle-এর পরে বসে: 'I ran into an old friend.' (not 'I ran an old friend into')।",
+        "Pronoun object separable phrasal verb-এ সবসময় মাঝে বসে: 'Pick it up' (not 'Pick up it')।",
+        "সাধারণ phrasal verbs: get up, wake up, turn on/off, put on, take off, look for, find out, come back, go out।",
+        "Phrasal verb-এর একাধিক অর্থ থাকতে পারে: 'pick up' = তুলে নেওয়া / শেখা / সংগ্রহ করা।",
+        "Formal writing-এ phrasal verb-এর পরিবর্তে এক-শব্দের synonym ব্যবহার করা ভালো: 'give up' → 'quit', 'find out' → 'discover'।"
+      ],
+      "examples": [
+        { "en": "Give up: 'Never give up on your goals.'", "bn": "Give up: 'নিজের লক্ষ্য কখনও ছেড়ো না।'" },
+        { "en": "Look after: 'She looks after her younger brother while their parents work.'", "bn": "Look after: " },
+        { "en": "Run into: 'I ran into my school teacher at the Kolkata Book Fair yesterday.'", "bn": "Run into: " },
+        { "en": "Turn off: 'Please turn off the fan before leaving the room.'", "bn": "Turn off: 'ঘর থেকে বের হওয়ার আগে ফ্যানটি বন্ধ করে দাও।'" },
+        { "en": "Put on: 'Put on a sweater — it's cold in Shimla.'", "bn": "Put on: 'একটি সোয়েটার পরো — শিমলায় ঠান্ডা।'" },
+        { "en": "Find out: 'I need to find out when the train to Varanasi departs.'", "bn": "Find out: 'ভারানসী行的 ট্রেন কখন ছাড়ে তা খুঁজে বের করতে হবে।'" }
+      ],
+      "tips": "Phrasal verb শেখার সবচেয়ে ভালো উপায়: এগুলোকে context-এ শেখো, আলাদাভাবে মুখস্থ করো না। প্রতিদিনের কথোপকথনে phrasal verb খুব সাধারণ। 'Get' এবং 'take' দিয়ে অনেক phrasal verb আছে — এগুলো প্রথমে শেখো। মনে রাখবে: pronoun থাকলে separable phrasal verb-এ pronoun মাঝে বসে (pick it up, turn it off)।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Subject-verb agreement error: 'He don't like spicy food.'",
+      "correct": "'He doesn't like spicy food.'",
+      "explanation": "Third person singular (he, she, it) এ 'do not' নয়, 'does not' (doesn't) ব্যবহার করতে হবে। 'He don't' একটি common error। মনে রাখবে: he/she/it → does not/doesn't, I/you/we/they → do not/don't। একই নিয়ম present simple tense-এর positive sentence-এর জন্য: 'He likes' (not 'he like')।"
+    },
+    {
+      "wrong": "Using 'have' instead of 'has': 'She have a car.'",
+      "correct": "'She has a car.'",
+      "explanation": "Third person singular (he, she, it) এ 'have' নয়, 'has' ব্যবহার করতে হবে। 'She have' ভুল। একই নিয়ম present perfect-এ: 'She has gone' (not 'she have gone')। I/you/we/they → have, he/she/it → has।"
+    },
+    {
+      "wrong": "Wrong past tense form: 'I seen that movie yesterday.'",
+      "correct": "'I saw that movie yesterday.' or 'I have seen that movie.'",
+      "explanation": "'Seen' past participle, যা perfect tense-এ ব্যবহৃত হয়: 'I have seen'। Past simple-এ 'saw' ব্যবহার করতে হবে: 'I saw'। 'I seen' ভুল। মনে রাখবে: see → saw (past simple), seen (past participle)। Past simple-এ V2, perfect tense-এ V3 ব্যবহার করো।"
+    },
+    {
+      "wrong": "Using 'to' after modal verbs: 'She can to speak Hindi.'",
+      "correct": "'She can speak Hindi.'",
+      "explanation": "Modal verb-এর পরে সবসময় base verb (without 'to') বসে: can speak, must go, should study। 'Can to speak' — এটি ভুল। 'Ought to' একটি exception — এতে 'to' আছে: 'You ought to visit Kerala.' কিন্তু অন্যান্য modals-এ 'to' বসে না।"
+    },
+    {
+      "wrong": "Confusing 'lie' and 'lay': 'I lay down for a nap yesterday.'",
+      "correct": "'I lay down for a nap yesterday.' — wait, this is correct for past tense of 'lie'. The confusion: 'I lie down' (present) → 'I lay down' (past) → 'I have lain down' (past participle). 'Lay' means to put something down: 'I lay the book on the table.' (present) → 'I laid the book' (past).",
+      "explanation": "'Lie' (শুয়ে পড়া): lie → lay → lain (intransitive, no object)। 'Lay' (কিছু রাখা): lay → laid → laid (transitive, needs object)। 'I lay on the bed' (past of lie) vs 'I lay the sari on the bed' (present of lay)। বিভ্রান্তিকর, কিন্তু মনে রাখবে: lie = recline, lay = place।"
+    },
+    {
+      "wrong": "Missing -s in third person singular: 'He drink tea every morning.'",
+      "correct": "'He drinks tea every morning.'",
+      "explanation": "Present simple tense-এ third person singular (he, she, it) subject-এর সাথে verb-এর শেষে -s যোগ করতে হবে: 'He drinks', 'She works', 'It rains'। 'He drink' ভুল। মনে রাখবে: I/you/we/they → drink, he/she/it → drinks। এটি সবচেয়ে সাধারণ grammar ভুলগুলোর একটি।"
+    },
+    {
+      "wrong": "Using 'will' after 'if': 'If it will rain tomorrow, I will stay home.'",
+      "correct": "'If it rains tomorrow, I will stay home.' ('will' only in the main clause, not in the 'if' clause)",
+      "explanation": "Conditional sentence-এ 'if' clause-এ future tense (will) ব্যবহার হয় না। 'If it will rain' ভুল — সঠিক হলো 'If it rains' (present simple)। 'Will' শুধু main clause-এ থাকে: 'If it rains, I will stay home.' একই নিয়ম 'when', 'as soon as', 'before', 'after'-এর জন্যও।"
+    },
+    {
+      "wrong": "Using 'since' with present tense: 'I am living in Kolkata since 2018.'",
+      "correct": "'I have been living in Kolkata since 2018.' or 'I have lived in Kolkata since 2018.'",
+      "explanation": "'Since' একটি নির্দিষ্ট সময় বিন্দু নির্দেশ করে (2018, Monday, June) এবং present perfect বা present perfect continuous tense-এর সাথে ব্যবহার হয়। 'I am living since 2018' ভুল — present continuous 'since'-এর সাথে যায় না। মনে রাখবে: since → perfect tense।"
+    },
+    {
+      "wrong": "Incorrect use of 'borrow' and 'lend': 'Can you borrow me your pen?'",
+      "correct": "'Can you lend me your pen?' or 'Can I borrow your pen?'",
+      "explanation": "'Borrow' = ধার নেওয়া (take something with permission): 'I borrow a book from the library.' 'Lend' = ধার দেওয়া (give something temporarily): 'Can you lend me your pen?' 'Can you borrow me?' ভুল — কারণ borrow মানে 'নেওয়া', 'দেওয়া' নয়।"
+    },
+    {
+      "wrong": "Double past tense: 'I didn't went to the market yesterday.'",
+      "correct": "'I didn't go to the market yesterday.'",
+      "explanation": "Negative past simple-এ 'did' ইতিমধ্যেই past tense দেখায়, তাই main verb-টি base form-এ থাকতে হবে: 'didn't go' (not 'didn't went')। 'Did not went' double past — ভুল। একই নিয়ম: 'Did you saw?' → 'Did you see?' 'I didn't ate' → 'I didn't eat'। 'Did'-এর সাথে সবসময় base verb।"
+    }
+  ]
 }
