@@ -1,10 +1,259 @@
 {
   "chapter": 14,
   "level": "Beginner",
-  "title": "Quantifiers",
+  "title": "Quantifiers (পরিমাণবাচক শব্দ)",
   "icon": "numbers",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Quantifiers are words that express quantity or amount. They answer questions like 'How much?' and 'How many?'. Quantifiers can be used with countable nouns (many friends), uncountable nouns (much water), or both (a lot of people, a lot of time). Choosing the right quantifier depends on whether the noun is countable or uncountable, and whether the sentence is positive, negative, or a question. Mastery of quantifiers makes your English more precise.",
+  "banglaDescription": "Quantifier (পরিমাণবাচক শব্দ) হলো সেই শব্দ যা পরিমাণ বা সংখ্যা প্রকাশ করে। এরা প্রশ্নের উত্তর দেয় যেমন 'কত?' এবং 'কয়টি?'। Quantifier countable noun (অনেক বন্ধু), uncountable noun (অনেক পানি), বা উভয়ের সাথে (অনেক মানুষ, অনেক সময়) ব্যবহার করা যায়। সঠিক quantifier বাছাই নির্ভর করে noun countable নাকি uncountable, এবং sentence positive, negative, নাকি question-এর উপর। Quantifier আয়ত্ত করলে আপনার ইংরেজি আরও নির্ভুল হয়।",
+  "topics": [
+    {
+      "name": "What are Quantifiers?",
+      "banglaName": "Quantifier কী?",
+      "definition": "Quantifiers are words or phrases that indicate the quantity or amount of something. They come before nouns and tell us how many or how much. Quantifiers are divided based on the type of noun: countable (things you can count), uncountable (things you cannot count individually), or both. Key quantifiers include: all, most, some, any, no, none, both, either, neither, each, every, much, many, a lot of, lots of, a little, a few, several, enough, plenty of.",
+      "banglaDefinition": "Quantifier হলো সেই শব্দ বা phrase যা কোনো কিছুর পরিমাণ বা সংখ্যা নির্দেশ করে। এরা noun-এর আগে বসে এবং জানায় কত বা কয়টি। Quantifier noun-এর ধরনের উপর ভিত্তি করে বিভক্ত: countable (যা গণনা করা যায়), uncountable (যা পৃথকভাবে গণনা করা যায় না), বা উভয়। মূল quantifiers: all, most, some, any, no, none, both, either, neither, each, every, much, many, a lot of, lots of, a little, a few, several, enough, plenty of।",
+      "formula": "Quantifier + (Adjective) + Noun\n\nFOR COUNTABLE NOUNS:\n'Many tourists visit the Taj Mahal.'\n'A few friends came to the party.'\n'Several students passed the exam.'\n\nFOR UNCOUNTABLE NOUNS:\n'Much time has passed since then.'\n'A little patience is all you need.'\n'Enough water for everyone.'\n\nFOR BOTH:\n'Some people like tea.' (countable)\n'Some water is left.' (uncountable)\n'A lot of tourists come here.' (countable)\n'A lot of time is wasted.' (uncountable)",
+      "rules": [
+        "Countable noun-এর সাথে: many, few, a few, several, a number of, both, each, every।",
+        "Uncountable noun-এর সাথে: much, little, a little, a bit of, a great deal of, a large amount of।",
+        "উভয়ের সাথে: some, any, no, none, all, most, enough, plenty of, a lot of, lots of।",
+        "Positive sentence-এ সাধারণত 'some', negative/question-এ 'any'।",
+        "'A lot of' এবং 'lots of' informal — formal writing-এ 'many' বা 'much' বেশি ভালো।",
+        "Quantifier + 'of' + determiner (the, my, these) + noun: 'Some of the books', 'Many of my friends'।",
+        "'No' = determiner (no water), 'none' = pronoun (none of the water is left)।"
+      ],
+      "examples": [
+        { "en": "Countable: 'Many students from India study abroad every year.'", "bn": "Countable: 'প্রতি বছর ভারত থেকে অনেক ছাত্র বিদেশে পড়তে যায়।'" },
+        { "en": "Uncountable: 'A little rice is enough for the biryani.'", "bn": "Uncountable: 'বিরিয়ানির জন্য একটু চালই যথেষ্ট।'" },
+        { "en": "Both: 'Some tourists visit Goa for the beaches, and some money is needed for the trip.'", "bn": "উভয়: 'কিছু পর্যটক গোয়ার সৈকতের জন্য যান, আর ভ্রমণের জন্য কিছু টাকা দরকার।'" },
+        { "en": "Countable: 'Several trains run between Howrah and Delhi every day.'", "bn": "Countable: 'হাওড়া এবং দিল্লির মধ্যে প্রতিদিন বেশ কয়েকটি ট্রেন চলে।'" },
+        { "en": "Uncountable: 'A great deal of research has been done on Indian classical music.'", "bn": "Uncountable: 'ভারতীয় শাস্ত্রীয় সঙ্গীত নিয়ে প্রচুর গবেষণা হয়েছে।'" }
+      ],
+      "tips": "Quantifier শেখার প্রথম ধাপ: noun-টা countable নাকি uncountable — এই পার্থক্য বুঝতে হবে। Countable = যার plural হয় (book/books, friend/friends, rupee/rupees)। Uncountable = যার plural হয় না (water, rice, information, money, advice)। অনেক বাংলা শব্দ countable কিন্তু ইংরেজিতে uncountable: তথ্য (information), উপদেশ (advice), আসবাব (furniture), জ্ঞান (knowledge), কাজ (work/homework), খবর (news), গবেষণা (research)। Dictionary check করে নিশ্চিত হওয়া ভালো।"
+    },
+    {
+      "name": "Large Quantity Quantifiers: Much, Many, A Lot Of",
+      "banglaName": "বড় পরিমাণের Quantifier: Much, Many, A Lot Of",
+      "definition": "Quantifiers for large quantities include: 'many' (countable), 'much' (uncountable), and 'a lot of'/'lots of' (both). 'Many' is used in positive, negative, and question forms. 'Much' is less common in positive sentences in informal English — 'a lot of' is preferred. In formal English, 'much' is fine in all forms. 'A lot of' and 'lots of' are more common in everyday speech. 'Plenty of' means more than enough.",
+      "banglaDefinition": "বড় পরিমাণের quantifiers: 'many' (countable), 'much' (uncountable), এবং 'a lot of'/'lots of' (উভয়)। 'Many' positive, negative, এবং question-এ ব্যবহৃত হয়। 'Much' informal English-এ positive sentence-এ কম ব্যবহৃত হয় — 'a lot of' বেশি পছন্দনীয়। Formal English-এ 'much' সব রূপেই ঠিক। 'A lot of' এবং 'lots of' দৈনন্দিন বক্তব্যে বেশি প্রচলিত। 'Plenty of' অর্থ প্রয়োজনের চেয়ে বেশি।",
+      "formula": "MANY + Plural Countable:\n'Many people visit the Durga Puja pandals.'\n'Not many tourists go to that village.'\n'How many languages do you speak?'\n\nMUCH + Uncountable:\n'There isn't much time left.'\n'How much does this sari cost?' (informal positive: 'I have much money' → 'I have a lot of money')\n\nA LOT OF / LOTS OF + Both:\n'A lot of tourists visit India every year.' (countable)\n'A lot of time is needed to explore Rajasthan.' (uncountable)\n\nPLENTY OF + Both (more than enough):\n'We have plenty of food for everyone.'\n'There are plenty of autos available near the station.'",
+      "rules": [
+        "'Many' countable noun-এর সাথে: many books, many people, many cities, many reasons।",
+        "'Much' uncountable noun-এর সাথে: much time, much money, much water, much effort।",
+        "Informal positive sentence-এ 'much' এর পরিবর্তে 'a lot of' বেশি ব্যবহৃত হয়: 'I have a lot of work' (not 'I have much work')।",
+        "Formal/academic English-এ 'much' positive sentence-এও ঠিক: 'Much research has been conducted.'",
+        "Negative এবং question-এ 'much' এবং 'many' উভয়ই স্বাভাবিক: 'I don't have much time. How many people are coming?'",
+        "'Too much' এবং 'too many' অতিরিক্ত বোঝায়: 'Too much sugar in the chai', 'Too many people in the metro।'",
+        "'A lot of' এবং 'lots of' informal — 'lots of' 'a lot of'-এর চেয়েও বেশি casual।"
+      ],
+      "examples": [
+        { "en": "Many: 'Many international tourists visit the Golden Temple in Amritsar.'", "bn": "Many: 'অনেক আন্তর্জাতিক পর্যটক অমৃতসরের স্বর্ণ মন্দির দেখতে যান।'" },
+        { "en": "Much: 'There isn't much pollution in this hill station.'", "bn": "Much: 'এই hill station-এ বেশি দূষণ নেই।'" },
+        { "en": "A lot of: 'A lot of people come to Kolkata during Durga Puja.'", "bn": "A lot of: 'দুর্গাপূজার সময় কলকাতায় অনেক লোক আসে।'" },
+        { "en": "Plenty of: 'Don't worry, there are plenty of autos near the metro station.'", "bn": "Plenty of: 'চিন্তা করো না, মেট্রো স্টেশনের কাছে প্রচুর অটো আছে।'" },
+        { "en": "Too many: 'There are too many vehicles on the road during rush hour.'", "bn": "Too many: 'পিক আওয়ারে রাস্তায় অনেক বেশি গাড়ি থাকে।'" },
+        { "en": "Too much: 'Don't add too much garam masala to the curry.'", "bn": "Too much: 'কারিতে বেশি গরম মসলা দিও না।'" }
+      ],
+      "tips": "Much vs Many-এর সহজ নিয়ম: 'Many' = plural noun-এর সাথে (যার শেষে 's' থাকে): many bookS, many friendS, many cityS। 'Much' = uncountable noun-এর সাথে (যার শেষে 's' হয় না): much water, much money, much time। 'How many' = countable (How many books?), 'How much' = uncountable (How much water?)। Informal positive-এ 'a lot of' ব্যবহার করো — এটা সবচেয়ে safe choice।"
+    },
+    {
+      "name": "Small Quantity Quantifiers: Few, A Few, Little, A Little",
+      "banglaName": "অল্প পরিমাণের Quantifier: Few, A Few, Little, A Little",
+      "definition": "Quantifiers for small quantities are often confused because the presence or absence of 'a' completely changes the meaning. 'Few' (countable) means 'almost none' — a negative idea. 'A few' means 'some' — a positive idea. Similarly, 'little' (uncountable) means 'almost none' — negative. 'A little' means 'some' — positive. 'Several' means 'more than a few but not many' (countable). This 'a' vs no 'a' distinction is crucial.",
+      "banglaDefinition": "অল্প পরিমাণের quantifiers প্রায়ই বিভ্রান্তিকর কারণ 'a'-এর উপস্থিতি বা অনুপস্থিতি অর্থ সম্পূর্ণ পরিবর্তন করে দেয়। 'Few' (countable) অর্থ 'প্রায় নেই' — নেতিবাচক ধারণা। 'A few' অর্থ 'কিছু' — ইতিবাচক ধারণা। একইভাবে, 'little' (uncountable) অর্থ 'প্রায় নেই' — নেতিবাচক। 'A little' অর্থ 'কিছু' — ইতিবাচক। 'Several' অর্থ 'কয়েকটি কিন্তু অনেক নয়' (countable)। এই 'a' বনাম 'a' নেই — পার্থক্যটি crucial।",
+      "formula": "FEW (Negative — প্রায় নেই, countable):\n'Few people attended the meeting.' (প্রায় কেউ আসেনি)\n'She has few friends in this city.' (তার খুব কম বন্ধু)\n\nA FEW (Positive — কিছু, countable):\n'A few people attended the meeting.' (কিছু লোক এসেছে)\n'She has a few friends here.' (তার কিছু বন্ধু আছে)\n\nLITTLE (Negative — প্রায় নেই, uncountable):\n'There is little hope of recovery.' (প্রায় কোনো আশা নেই)\n'I have little time for hobbies.' (সময় প্রায় নেই)\n\nA LITTLE (Positive — কিছু, uncountable):\n'A little patience will solve this.' (একটু ধৈর্য)\n'I have a little money saved.' (কিছু টাকা সঞ্চিত)\n\nSEVERAL (Countable — কয়েকটি):\n'Several people have complained about the bus service.'",
+      "rules": [
+        "'Few' = not many, almost none (negative meaning, though grammatically positive form)।",
+        "'A few' = some, a small number (positive meaning): 'a few friends', 'a few rupees'।",
+        "'Little' = not much, almost none (negative meaning): 'little time', 'little money'।",
+        "'A little' = some, a small amount (positive meaning): 'a little sugar', 'a little help'।",
+        "'Very few' এবং 'very little' জোর দিয়ে negative অর্থ: 'very few people know this'।",
+        "'Quite a few' = surprisingly many (positive): 'Quite a few people came to the show.'",
+        "'Several' সাধারণত 3-5 সংখ্যা বোঝায়: 'several options', 'several days'।"
+      ],
+      "examples": [
+        { "en": "Few (negative): 'Few cities in India have a metro system as extensive as Delhi.'", "bn": "Few (negative): 'ভারতের কয়েকটি শহরের দিল্লির মতো বিস্তৃত মেট্রো ব্যবস্থা আছে।'" },
+        { "en": "A few (positive): 'A few local shops near the temple sell authentic handicrafts.'", "bn": "A few (positive): 'মন্দিরের কাছে কয়েকটি স্থানীয় দোকান খাঁটি হস্তশিল্প বিক্রি করে।'" },
+        { "en": "Little (negative): 'There is little chance of rain during the wedding season.'", "bn": "Little (negative): 'বিয়ের মরসুমে বৃষ্টির সম্ভাবনা খুব কম।'" },
+        { "en": "A little (positive): 'Add a little more turmeric to the dal for color.'", "bn": "A little (positive): 'রঙের জন্য ডালে আরও একটু হলুদ দাও।'" },
+        { "en": "Several: 'I have visited Mysore several times and I love the palace there.'", "bn": "Several: 'আমি মহীশূর বেশ কয়েকবার গিয়েছি এবং সেখানের প্রাসাদ আমার খুব পছন্দ।'" },
+        { "en": "Quite a few: 'Quite a few startups have emerged in Bengaluru in the last decade.'", "bn": "Quite a few: 'গত দশকে বেঙ্গালুরুতে বেশ কিছু startup উঠে এসেছে।'" }
+      ],
+      "tips": "Few/A Few — Little/A Little মজার বিষয়: 'a' যোগ করলেই অর্থ positive হয়ে যায়! 'Few friends' = কম বন্ধু (দুঃখজনক), 'A few friends' = কিছু বন্ধু (ভালো লাগে)। 'Little money' = কম টাকা (অভাব), 'A little money' = কিছু টাকা (চলে)। মনে রাখার কৌশল: 'a' = অল্প কিন্তু আছে (positive), 'a' নেই = অল্প বলতে প্রায় নেই (negative)। এই পার্থক্যটা ইংরেজি level-কে অনেক উপরে নিয়ে যায়।"
+    },
+    {
+      "name": "Quantifiers for Zero Amount: No, None, Not Any",
+      "banglaName": "শূন্য পরিমাণের Quantifier: No, None, Not Any",
+      "definition": "To express zero quantity, English uses 'no' (determiner), 'none' (pronoun), and 'not any' (negative phrase). 'No' comes directly before a noun (no water, no friends). 'None' replaces the noun entirely (none is left). 'Not any' is a negative phrase used with uncountable and plural countable nouns. 'No' can be used with singular and plural nouns. The choice depends on sentence structure and emphasis.",
+      "banglaDefinition": "শূন্য পরিমাণ প্রকাশ করতে ইংরেজি ব্যবহার করে 'no' (determiner), 'none' (pronoun), এবং 'not any' (negative phrase)। 'No' সরাসরি noun-এর আগে বসে (no water, no friends)। 'None' noun-কে সম্পূর্ণভাবে প্রতিস্থাপন করে (none is left)। 'Not any' uncountable এবং plural countable noun-এর সাথে ব্যবহৃত negative phrase। 'No' singular এবং plural noun-এর সাথে ব্যবহার করা যায়। পছন্দ নির্ভর করে sentence structure এবং emphasis-এর উপর।",
+      "formula": "NO + Noun (zero quantity):\n'There is no water in the bottle.'\n'There are no trains to Howrah after midnight.'\n'No student has submitted the assignment.' (singular)\n'No students have submitted the assignment.' (plural)\n\nNONE (Pronoun — replaces noun):\n'How much water is left? None.'\n'How many tickets are left? None.'\n'None of the food was tasty.'\n'None of the guests have arrived yet.'\n\nNOT ANY + Noun:\n'There isn't any water left.'\n'There aren't any trains after midnight.'\n\nNOTE: 'No' = 'Not any' — same meaning, different structure.\n'No water' = 'Not any water'\n'No friends' = 'Not any friends'",
+      "rules": [
+        "'No' determiner হিসেবে noun-এর আগে বসে: 'no time', 'no money', 'no friends'।",
+        "'No' singular এবং plural উভয় noun-এর সাথে: 'No student is late' (singular verb), 'No students are late' (plural verb)।",
+        "'None' pronoun হিসেবে ব্যবহৃত হয় — noun-কে replace করে: 'I wanted water but there was none.'",
+        "'None of' + determiner (the, my, these) + noun: 'None of the food was good.'",
+        "'None of' + plural noun → singular বা plural verb উভয়ই ঠিক: 'None of the students is/are here.'",
+        "'Not any' 'no'-এর চেয়ে জোরালো: 'There is not any water at all.'",
+        "'No' দিয়ে sentence শুরু করা যায়: 'No smoking in the restaurant.' 'No problem!'"
+      ],
+      "examples": [
+        { "en": "No + noun: 'There is no electricity in the village after 10 PM.'", "bn": "No + noun: 'রাত ১০টার পর গ্রামে কোনো বিদ্যুৎ নেই।'" },
+        { "en": "None: 'I looked for authentic Banarasi saris, but there were none in this shop.'", "bn": "None: 'আমি খাঁটি বেনারসি শাড়ি খুঁজলাম, কিন্তু এই দোকানে কিছুই ছিল না।'" },
+        { "en": "Not any: 'There aren't any direct flights from Kolkata to this small town.'", "bn": "Not any: 'কলকাতা থেকে এই ছোট শহরে কোনো সরাসরি ফ্লাইট নেই।'" },
+        { "en": "No + singular: 'No hotel in this area has a good view of the lake.'", "bn": "No + singular: 'এই এলাকার কোনো হোটেলের হ্রদের ভালো দৃশ্য নেই।'" },
+        { "en": "None of: 'None of the passengers were injured in the accident.'", "bn": "None of: 'দুর্ঘটনায় কোনো যাত্রী আহত হয়নি।'" },
+        { "en": "No (prohibition): 'No photography is allowed inside the temple.'", "bn": "No (নিষেধাজ্ঞা): 'মন্দিরের ভিতরে ফটোগ্রাফি নিষিদ্ধ।'" }
+      ],
+      "tips": "No/None/Not Any-এর পার্থক্য: 'No' = determiner + noun (no water), 'None' = pronoun (none = no water), 'Not any' = negative phrase (not any water). সবচেয়ে সহজ: 'No' noun-এর আগে বসে, 'None' noun-কে সরিয়ে দেয়। 'How many books do you have?' → 'I have no books.' বা 'I don't have any books.' বা 'None.' 'No' আর 'not any' একই অর্থ, কিন্তু 'not any' একটু বেশি জোরালো। 'None' সবচেয়ে সংক্ষিপ্ত এবং direct।"
+    },
+    {
+      "name": "Sufficiency Quantifiers: Enough, Plenty, Sufficient",
+      "banglaName": "পর্যাপ্ততা বোঝানোর Quantifier: Enough, Plenty, Sufficient",
+      "definition": "Quantifiers of sufficiency indicate whether there is as much as needed. 'Enough' means 'as much as necessary'. 'Plenty of' means 'more than enough'. 'Sufficient' is a more formal version of 'enough'. 'Enough' has a unique position rule: before nouns (enough water) but after adjectives (big enough). 'Plenty of' is more emphatic and reassuring. 'Adequate' is another formal synonym.",
+      "banglaDefinition": "পর্যাপ্ততার quantifier নির্দেশ করে প্রয়োজন মতো আছে কিনা। 'Enough' অর্থ 'যতটা প্রয়োজন ততটা'। 'Plenty of' অর্থ 'প্রয়োজনের চেয়ে বেশি'। 'Sufficient' হলো 'enough'-এর আরও formal রূপ। 'Enough'-এর একটি অনন্য অবস্থান নিয়ম আছে: noun-এর আগে (যথেষ্ট পানি) কিন্তু adjective-এর পরে (যথেষ্ট বড়)। 'Plenty of' বেশি জোরালো এবং আশ্বস্তকর। 'Adequate' আরেকটি formal সমার্থক শব্দ।",
+      "formula": "Enough + Noun:\n'We have enough food for the party.'\n'There isn't enough time to visit all the temples.'\n\nAdjective + Enough:\n'The room is big enough for our family.'\n'This chai is not hot enough for me.'\n\nAdverb + Enough:\n'She doesn't speak Hindi well enough for this job.'\n\nPlenty of + Noun:\n'Don't worry, we have plenty of time.'\n'There are plenty of taxis available.'\n\nSufficient + Noun (formal):\n'The funds are sufficient for the project.'\n'There is sufficient evidence to prove the case.'",
+      "rules": [
+        "'Enough' noun-এর আগে বসে: 'enough money', 'enough time', 'enough food'।",
+        "'Enough' adjective-এর পরে বসে: 'big enough', 'old enough', 'good enough', 'fast enough'।",
+        "'Enough' adverb-এর পরেও বসে: 'fast enough', 'well enough', 'soon enough'।",
+        "'Plenty of' = 'more than enough' — প্রচুর পরিমাণ: 'plenty of options', 'plenty of space'।",
+        "'Sufficient' formal — written English-এ বেশি ব্যবহৃত: 'sufficient evidence', 'sufficient resources'।",
+        "'Adequate' = just enough, barely enough: 'The food was adequate but not great.'",
+        "'Enough' noun-কে modify করে, তাই determiner-এর পর বসে: 'enough money' (not 'the enough money')।"
+      ],
+      "examples": [
+        { "en": "Enough + noun: 'Do we have enough tickets for everyone going to the concert?'", "bn": "Enough + noun: 'কনসার্টে যাওয়া সবার জন্য কি আমাদের পর্যাপ্ত টিকিট আছে?'" },
+        { "en": "Adjective + enough: 'The Howrah Bridge is wide enough for six lanes of traffic.'", "bn": "Adjective + enough: 'হাওড়া ব্রিজ ছয় লেনের ট্রাফিকের জন্য যথেষ্ট চওড়া।'" },
+        { "en": "Plenty of: 'There are plenty of street food options near the Victoria Memorial.'", "bn": "Plenty of: 'ভিক্টোরিয়া মেমোরিয়ালের কাছে স্ট্রিট ফুডের প্রচুর অপশন আছে।'" },
+        { "en": "Adverb + enough: 'She doesn't know Hindi well enough to give a speech.'", "bn": "Adverb + enough: 'বক্তৃতা দেওয়ার মতো সে হিন্দি ভালো জানে না।'" },
+        { "en": "Sufficient: 'The salary is not sufficient to live in Mumbai comfortably.'", "bn": "Sufficient: 'মুম্বাইতে আরামে থাকার জন্য বেতন যথেষ্ট নয়।'" },
+        { "en": "Not enough: '500 rupees is not enough for a good meal at this restaurant.'", "bn": "Not enough: 'এই রেস্টুরেন্টে ভালো খাবারের জন্য ৫০০ টাকা যথেষ্ট নয়।'" }
+      ],
+      "tips": "'Enough'-এর অবস্থান মনে রাখার সহজ ট্রিক: 'Enough' আসে যা modify করে তার পরে বা আগে — NOUN-এর আগে (enough money), ADJECTIVE-এর পরে (tall enough), ADVERB-এর পরে (fast enough)। 'Enough money' = পর্যাপ্ত টাকা (টাকার পরিমাণ modify করছে)। 'Tall enough' = পর্যাপ্ত লম্বা (লম্বা হওয়ার মাত্রা modify করছে)। 'Plenty of' যখন ব্যবহার করবে, তখন বুঝবে প্রয়োজনের চেয়ে বেশি আছে — এটি positive এবং reassuring শব্দ।"
+    },
+    {
+      "name": "General Quantifiers: All, Most, Some, Any",
+      "banglaName": "সাধারণ Quantifier: All, Most, Some, Any",
+      "definition": "'All', 'most', 'some', and 'any' are general quantifiers that express proportions. 'All' = 100% (সব). 'Most' = more than 50% (অধিকাংশ). 'Some' = an unspecified amount (কিছু). 'Any' = an unspecified amount, used in negatives and questions. These quantifiers can be used with both countable and uncountable nouns. They are also frequently used with 'of' before determiners: 'all of the', 'most of my'.",
+      "banglaDefinition": "'All', 'most', 'some', এবং 'any' হলো সাধারণ quantifier যা অনুপাত প্রকাশ করে। 'All' = ১০০% (সব)। 'Most' = ৫০% এর বেশি (অধিকাংশ)। 'Some' = একটি অনির্দিষ্ট পরিমাণ (কিছু)। 'Any' = একটি অনির্দিষ্ট পরিমাণ, negative এবং question-এ ব্যবহৃত। এই quantifier countable এবং uncountable উভয় noun-এর সাথে ব্যবহার করা যায়। এরা প্রায়ই 'of'-এর সাথে determiner-এর আগে ব্যবহৃত হয়: 'all of the', 'most of my'।",
+      "formula": "ALL (+ of) + Noun:\n'All flights to Delhi are delayed.'\n'All of the guests have arrived.'\n'All the food was delicious.'\n\nMOST (+ of) + Noun:\n'Most people in India speak more than one language.'\n'Most of the students passed the exam.'\n'Most of the work is completed.'\n\nSOME (+ of) + Noun:\n'Some people prefer chai over coffee.'\n'Some of the mangoes from Ratnagiri are very sweet.'\n\nANY (+ of) + Noun:\n'Is there any water left?'\n'I don't have any money.'\n'Any of the options is fine.'",
+      "rules": [
+        "'All' plural noun-এর সাথে plural verb: 'All students are present.' Uncountable noun-এর সাথে singular verb: 'All the food is gone.'",
+        "'Most' plural countable → plural verb, uncountable → singular verb: 'Most people agree. Most of the work is done.'",
+        "'Some' সাধারণত positive sentence-এ: 'Some people like cold weather.'",
+        "'Any' negative এবং question-এ: 'I don't have any problem. Do you have any questions?'",
+        "'Some' offer/request-এ positive sentence-এর মতো: 'Would you like some tea?'",
+        "'Any' positive sentence-এ 'whichever/whomever' অর্থে: 'You can choose any book you like.'",
+        "'Some of', 'most of', 'all of' — 'of' ব্যবহার হয় যখন noun-এর আগে the/my/these/those ইত্যাদি determiner থাকে।"
+      ],
+      "examples": [
+        { "en": "All: 'All trains from Howrah are running on time today.'", "bn": "All: 'হাওড়া থেকে সব ট্রেন আজ সময়মতো চলছে।'" },
+        { "en": "Most: 'Most of the beaches in Goa are beautiful and clean.'", "bn": "Most: 'গোয়ার বেশিরভাগ সৈকত সুন্দর এবং পরিষ্কার।'" },
+        { "en": "Some: 'Some of the Rasgullas from Kolkata are famous worldwide.'", "bn": "Some: 'কলকাতার কিছু রসগোল্লা বিশ্বজুড়ে বিখ্যাত।'" },
+        { "en": "Any (negative): 'I don't have any information about the train delay.'", "bn": "Any (negative): 'ট্রেন দেরি সম্পর্কে আমার কোনো তথ্য নেই।'" },
+        { "en": "Any (any/whichever): 'You can buy any sari you like — it's my gift to you.'", "bn": "Any (যেকোনো): 'তুমি যেকোনো শাড়ি কিনতে পারো — এটি আমার উপহার তোমাকে।'" },
+        { "en": "Some (offer): 'Would you like some more biryani?'", "bn": "Some (আমন্ত্রণ): 'তুমি কি আরও কিছু বিরিয়ানি নেবে?'" }
+      ],
+      "tips": "All/Most/Some/Any মনে রাখার উপায়: এদেরকে percentage scale-এ ভাবো। All = 100%, Most = ~70-90%, Some = ~30-50%, (Not) Any = 0%। 'All' দিয়ে সব, 'most' দিয়ে অধিকাংশ, 'some' দিয়ে কিছু। 'Some' ব্যবহার করো positive sentence-এ, 'any' negative এবং question-এ। কিন্তু offer-এ 'some' ব্যবহার হয়: 'Would you like some water?' (positive offer, তাই 'any' নয়)। 'Any' positive sentence-এ 'whichever' অর্থে: 'Any color is fine.'"
+    },
+    {
+      "name": "Quantifiers with 'Of': Of-Phrases",
+      "banglaName": "'Of' সহ Quantifier: Of-Phrases",
+      "definition": "When quantifiers are followed by 'of', they require a determiner (the, my, these, those, etc.) before the noun. For example: 'some of the', 'many of my', 'most of these', 'all of those', 'none of the', 'both of the'. Without 'of', quantifiers come directly before the noun without a determiner. Compare: 'Some tourists' (general) vs 'Some of the tourists' (specific group). This distinction is important for precise expression.",
+      "banglaDefinition": "যখন quantifier-এর পরে 'of' আসে, তখন noun-এর আগে একটি determiner (the, my, these, those, ইত্যাদি) প্রয়োজন। যেমন: 'some of the', 'many of my', 'most of these', 'all of those', 'none of the', 'both of the'। 'Of' ছাড়া, quantifier সরাসরি noun-এর আগে আসে determiner ছাড়া। তুলনা করো: 'Some tourists' (সাধারণ) vs 'Some of the tourists' (নির্দিষ্ট গোষ্ঠী)। এই পার্থক্য নির্ভুল প্রকাশের জন্য গুরুত্বপূর্ণ।",
+      "formula": "Quantifier + NO 'OF' (general):\n'Some tourists visit India every year.' (all tourists in general)\n'Many students like cricket.' (students in general)\n\nQuantifier + 'OF' + the/my/these/those + Noun (specific):\n'Some of the tourists got lost in the market.' (specific group)\n'Many of my friends have visited Goa.' (specific — my friends)\n'Most of the trains were delayed.' (specific — the trains today)\n'All of these books belong to the library.'\n'None of the food was good.'\n\nNOTE:\n'Both of' + the/my/these + plural noun\n'Both of my parents are from Chennai.'\n'Either of' + the/my/these + plural noun\n'Either of the two routes will work.'\n'Neither of' + the/my/these + plural noun\n'Neither of the candidates was suitable.'",
+      "rules": [
+        "'Of' ব্যবহার করলে noun-এর আগে the, my, this, that, these, those ইত্যাদি লাগে: 'Some of the books' ✓, 'Some of books' ✗।",
+        "'Of' ছাড়া quantifier সরাসরি noun-এর আগে — determiner লাগে না: 'Some books' ✓, 'Some the books' ✗।",
+        "'Both of', 'all of', 'none of' — 'of' optional হলে নির্দিষ্ট/সাধারণ অর্থের পার্থক্য: 'Both brothers' vs 'Both of the brothers'।",
+        "Pronoun-এর আগে 'of' আবশ্যক: 'Some of us', 'Many of them', 'All of you', 'None of us'।",
+        "'Much of', 'little of', 'a little of' uncountable noun-এর সাথে: 'Much of the work is done.'",
+        "'Many of', 'few of', 'a few of', 'several of' countable plural noun-এর সাথে: 'Many of the guests have arrived.'"
+      ],
+      "examples": [
+        { "en": "No 'of' (general): 'Some trains from this station are always late.'", "bn": "'Of' ছাড়া (সাধারণ): 'এই স্টেশন থেকে কিছু ট্রেন সবসময় দেরি করে।'" },
+        { "en": "With 'of' (specific): 'Some of the trains from this station are delayed due to fog.'", "bn": "'Of' সহ (নির্দিষ্ট): 'এই স্টেশন থেকে কিছু ট্রেন কুয়াশার কারণে বিলম্বিত।'" },
+        { "en": "With pronoun: 'Most of us have faced this problem during the monsoon.'", "bn": "Pronoun সহ: 'বর্ষাকালে আমাদের বেশিরভাগই এই সমস্যার সম্মুখীন হয়েছে।'" },
+        { "en": "Both of: 'Both of my sisters are learning Bharatanatyam.'", "bn": "Both of: 'আমার দুই বোনই ভরতনাট্যম শিখছে।'" },
+        { "en": "None of: 'None of the hotels in this area have vacant rooms tonight.'", "bn": "None of: 'এই এলাকার কোনো হোটেলেই আজ রাতে খালি রুম নেই।'" },
+        { "en": "Several of: 'Several of the ancient temples in Tamil Nadu are UNESCO sites.'", "bn": "Several of: 'তামিলনাড়ুর বেশ কয়েকটি প্রাচীন মন্দির UNESCO সাইট।'" }
+      ],
+      "tips": "'Of' ব্যবহারের সোনালী নিয়ম: 'Of' আসে quantifier-এর পরে → তারপর 'the/my/these/those' → তারপর noun। 'Some OF THE tourists' (সঠিক)। 'Some tourists' এবং 'Some of the tourists' — পার্থক্য: প্রথমটি general tourist দের কথা, দ্বিতীয়টি নির্দিষ্ট কিছু tourist। Pronoun-এর আগে 'of' বাধ্যতামূলক: 'Some of us', 'Many of them', 'None of you' — কখনোই 'Some us' বা 'Many them' বলবে না।"
+    },
+    {
+      "name": "Quantifiers in Questions: How Much, How Many, Any",
+      "banglaName": "প্রশ্নে Quantifier: How Much, How Many, Any",
+      "definition": "Questions about quantity use 'how much' (uncountable) and 'how many' (countable). 'Any' is used in yes/no questions about quantity. 'Some' can be used in offers and requests. Special question forms include: 'How many of', 'How much of', 'How many times'. Learning the correct question pattern for each quantifier is essential for asking about quantities naturally.",
+      "banglaDefinition": "পরিমাণ সম্পর্কে প্রশ্নে 'how much' (uncountable) এবং 'how many' (countable) ব্যবহার হয়। 'Any' yes/no question-এ পরিমাণ সম্পর্কে জিজ্ঞাসা করতে ব্যবহৃত হয়। 'Some' offer এবং request-এ ব্যবহার করা যায়। বিশেষ প্রশ্ন ফর্ম: 'How many of', 'How much of', 'How many times'। প্রতিটি quantifier-এর সঠিক প্রশ্ন প্যাটার্ন শেখা প্রাকৃতিকভাবে পরিমাণ সম্পর্কে জিজ্ঞাসা করার জন্য অপরিহার্য।",
+      "formula": "HOW MANY + Plural Countable Noun:\n'How many people are coming to the wedding?'\n'How many tickets do you need?'\n'How many of your friends live in Mumbai?'\n\nHOW MUCH + Uncountable Noun:\n'How much does a metro ride cost in Delhi?'\n'How much time do we have before the train?'\n'How much of your salary goes to rent?'\n\nYES/NO QUESTIONS with ANY:\n'Is there any water left?'\n'Do you have any money?'\n'Are there any good restaurants near here?'\n\nOFFERS/REQUESTS with SOME:\n'Would you like some tea?'\n'Could you give me some advice?'\n'Can I have some water, please?'",
+      "rules": [
+        "'How many' → plural countable noun: 'How many books? How many cities? How many people?'",
+        "'How much' → uncountable noun: 'How much water? How much time? How much money?'",
+        "'How many of' এবং 'How much of' নির্দিষ্ট group সম্পর্কে: 'How many of you have been to Delhi?'",
+        "Yes/no question-এ 'any' ব্যবহার হয়: 'Is there any milk left? Do you have any questions?'",
+        "Offer/request-এ 'some' ব্যবহার হয়, 'any' নয়: 'Would you like some water?' (offer), 'Can I have some water?' (request)।",
+        "'Any' open question-এ: 'Is any doctor available?' (doesn't matter who), 'Is there any way to reach the station?'"
+      ],
+      "examples": [
+        { "en": "How many: 'How many stops are there from Park Street to Dum Dum?'", "bn": "How many: 'পার্ক স্ট্রিট থেকে দমদম পর্যন্ত কয়টি স্টেশন?'" },
+        { "en": "How much: 'How much does a ticket for the Durga Puja concert cost?'", "bn": "How much: 'দুর্গাপূজার কনসার্টের টিকিটের দাম কত?'" },
+        { "en": "Any: 'Is there any parking space near the Howrah station?'", "bn": "Any: 'হাওড়া স্টেশনের কাছে কী কোনো পার্কিংয়ের জায়গা আছে?'" },
+        { "en": "Some (offer): 'Would you like some more chai?'", "bn": "Some (আমন্ত্রণ): 'তুমি কি আরও কিছু চা নেবে?'" },
+        { "en": "How many of: 'How many of you have visited the Gateway of India?'", "bn": "How many of: 'তোমাদের মধ্যে কতজন গেটওয়ে অফ ইন্ডিয়া দেখেছ?'" },
+        { "en": "How much of: 'How much of your trip budget goes to accommodation in Mumbai?'", "bn": "How much of: 'মুম্বাইতে তোমার ভ্রমণ বাজেটের কতটুকু বাসস্থানে খরচ হয়?'" }
+      ],
+      "tips": "How much vs How many: 'Much' = uncountable (পানি, সময়, টাকা, তথ্য), 'Many' = countable (বই, মানুষ, টিকিট, দিন)। মনে রাখার সহজ উপায়: 'Many' শেষে 's' যুক্ত plural noun-এর সাথে: 'How many bookS?' 'Much' uncountable (no 's') noun-এর সাথে: 'How much water?' আরেকটি টিপস: offer-এ সবসময় 'some', question-এ 'any'। 'Would you like some tea?' (এটি offer, question হলেও 'any' নয়)। 'Do you have any tea?' (এটি information-seeking question, তাই 'any')।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "'There is many water in the Ganges.'",
+      "correct": "'There is much water in the Ganges.' or 'There is a lot of water in the Ganges.'",
+      "explanation": "'Many' countable noun-এর সাথে: many rivers, many temples, many people। 'Water' uncountable, তাই 'many water' ভুল। 'Much water' সঠিক কিন্তু formal শোনায়। দৈনন্দিন ইংরেজিতে 'a lot of water' বা 'plenty of water' বেশি natural। মনে রাখবে: 'many' = plural countable (many riverS), 'much' = uncountable (much water)। 'A lot of' সবসময় safe choice।"
+    },
+    {
+      "wrong": "'He has few money, so he cannot buy the book.'",
+      "correct": "'He has little money, so he cannot buy the book.'",
+      "explanation": "'Few' countable noun-এর জন্য: few friends, few books, few opportunities। 'Money' uncountable, তাই 'few money' ভুল। 'Little money' সঠিক (প্রায় নেই মানে)। 'A little money' হলে অর্থ different (কিছু টাকা আছে)। 'Little' uncountable-এর জন্য, 'few' countable-এর জন্য — এই নিয়মটা quantifier-এর সবচেয়ে গুরুত্বপূর্ণ ভিত্তি। 'Few rupees' (countable) vs 'Little money' (uncountable) — উভয়ই 'প্রায় নেই' অর্থে negative।"
+    },
+    {
+      "wrong": "'I don't have some time to visit the museum today.'",
+      "correct": "'I don't have any time to visit the museum today.'",
+      "explanation": "Negative sentence-এ 'some' ব্যবহার হয় না — 'any' ব্যবহার হয়। 'I don't have some time' ভুল। 'I don't have any time' সঠিক। 'Some' positive sentence-এ: 'I have some time.' 'Any' negative-এ: 'I don't have any time.' Question-এ 'any': 'Do you have any time?' কিন্তু offer/request-এ 'some': 'Would you like some time to explore?'"
+    },
+    {
+      "wrong": "'There are a lot of traffic in Mumbai during peak hours.'",
+      "correct": "'There is a lot of traffic in Mumbai during peak hours.'",
+      "explanation": "'A lot of'-এর পরে verb নির্ভর করে noun-এর সংখ্যার উপর — quantifier-এর উপর নয়। 'Traffic' uncountable, তাই singular verb 'is' হবে, plural 'are' নয়। 'A lot of people' → 'are' (people countable plural)। 'A lot of water' → 'is' (water uncountable)। একই নিয়ম 'plenty of', 'some of', 'most of'-এর ক্ষেত্রেও। Verb agrees with the noun, not 'a lot of'।"
+    },
+    {
+      "wrong": "'Enough big room is needed for the wedding ceremony.'",
+      "correct": "'A big enough room is needed for the wedding ceremony.' or 'The room needs to be big enough.'",
+      "explanation": "'Enough' adjective-এর পরে বসে, আগে নয়। 'Enough big' ভুল — 'big enough' সঠিক। 'Enough' noun-এর আগে বসে: 'enough room', 'enough food'। কিন্তু adjective-এর পরে: 'big enough', 'tall enough', 'long enough', 'hot enough', 'strong enough'। মনে রাখবে: 'enough room' (noun → enough + noun) vs 'big enough' (adjective → adjective + enough)।"
+    },
+    {
+      "wrong": "'Either of the three options are good.'",
+      "correct": "'Any of the three options is good.' or 'Either of the two options is good.'",
+      "explanation": "'Either' শুধু দুটি বিকল্পের জন্য। তিনটির জন্য 'either' ভুল — 'any' সঠিক। 'Either of the three' ভুল। 'Either of the two' সঠিক। 'Neither' ও শুধু দুটির জন্য: 'Neither of the two candidates was selected.' তিন বা ততোধিকের জন্য 'any' বা 'none': 'Any of the three is good' (three or more), 'None of the three is suitable'।"
+    },
+    {
+      "wrong": "'Most of students in our college are from West Bengal.'",
+      "correct": "'Most students in our college are from West Bengal.' or 'Most of the students in our college are from West Bengal.'",
+      "explanation": "দুটো সঠিক form আছে, কিন্তু মাঝেরটা ভুল। 'Most of the students' ('of' + 'the') → specific group। 'Most students' (no 'of', no 'the') → general। 'Most of students' — এখানে 'of' আছে কিন্তু 'the' নেই — ভুল। 'Of' ব্যবহার করলে noun-এর আগে determiner (the, my, this, etc.) লাগে: 'Most of the students', 'Most of my friends', 'Most of these books'। 'Of' ছাড়া determiner লাগে না: 'Most students', 'Most Indians'।"
+    },
+    {
+      "wrong": "'I have a lot money saved for the trip to Kerala.'",
+      "correct": "'I have a lot of money saved for the trip to Kerala.'",
+      "explanation": "'A lot'-এর পরে 'of' প্রয়োজন যখন noun আসে: 'a lot of money', 'a lot of people', 'a lot of time'। 'A lot money' — 'of' missing — ভুল। 'A lot' একা (adverb হিসেবে) verb-এর পরে বসে: 'I like it a lot.' 'I travel a lot.' কিন্তু noun-এর আগে 'a lot OF': 'a lot of friends'। 'Lots of'-ও একই: 'lots of fun' (not 'lots fun')। 'Plenty of'-ও: 'plenty of time' (not 'plenty time')।"
+    },
+    {
+      "wrong": "'There are no any trains to Chennai after 11 PM.'",
+      "correct": "'There are no trains to Chennai after 11 PM.' or 'There aren't any trains to Chennai after 11 PM.'",
+      "explanation": "'No' এবং 'any' একসাথে ব্যবহার করা যায় না — double negative। 'No trains' = 'Not any trains' — উভয়ের অর্থ একই। 'No any trains' ভুল কারণ 'no' ই negative। 'No' determiner হিসেবে noun-এর আগে: 'no water', 'no friends'। 'Not any' negative verb + 'any': 'There isn't any water', 'There aren't any friends'। দুটোর মধ্যে একটি বাছো।"
+    },
+    {
+      "wrong": "'All of students are excited about the festival.'",
+      "correct": "'All students are excited about the festival.' or 'All of the students are excited about the festival.'",
+      "explanation": "'All of'-এর পরে determiner প্রয়োজন। 'All of students' ভুল — 'of' আছে কিন্তু 'the' নেই। সঠিক: 'All of the students' (specific) বা 'All students' (general, no 'of')। 'All of them' (pronoun — 'of' mandatory)। 'All us' ভুল → 'All of us' সঠিক। 'All we' ভুল → 'All of us' সঠিক। মনে রাখবে: 'All of the + noun' বা 'All + noun' — 'of' + no determiner কখনোই নয়।"
+    }
+  ]
 }
