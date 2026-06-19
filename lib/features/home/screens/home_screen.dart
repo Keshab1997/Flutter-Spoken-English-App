@@ -5,12 +5,14 @@ import '../../../services/hive_service.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/lesson_provider.dart';
 import '../../../providers/progress_provider.dart';
+import '../../../providers/todo_list_provider.dart';
 import '../../../providers/vocabulary_provider.dart';
 import '../../../providers/theme_provider.dart';
 import '../../grammar/screens/grammar_list_screen.dart';
 import '../../grammar/screens/grammar_test_list_screen.dart';
 import '../../vocabulary/screens/vocabulary_test_screen.dart';
 import '../../conversation/screens/conversation_screen.dart';
+import '../widgets/study_plan_section.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   final Function(int)? onNavigateToTab;
@@ -84,6 +86,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     final progressAsync = ref.watch(progressProvider);
     final vocabAsync = ref.watch(vocabularyProvider);
     final lessonsAsync = ref.watch(lessonProvider);
+    final studyState = ref.watch(todoListProvider);
 
     final user = authAsync.asData?.value;
     if (user?.name != null && user!.name.isNotEmpty) {
@@ -93,10 +96,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     final allWords = vocabAsync.asData?.value ?? [];
     final allLessons = lessonsAsync.asData?.value ?? [];
 
-    // Derived values
+    // Derived values — progress from Study Plan (todo list)
     final streakDays = progress?.streakDays ?? 0;
-    final lessonsCompleted = progress?.completedLessonIds.length ?? 0;
-    final totalLessons = allLessons.isEmpty ? 1 : allLessons.length;
+    final lessonsCompleted = studyState.completedCount;
+    final totalLessons = studyState.totalCount > 0 ? studyState.totalCount : 1;
     final progressPct = (lessonsCompleted / totalLessons).clamp(0.0, 1.0);
     final favoritesCount = allWords.where((w) => w.isFavorite).length;
 
@@ -192,6 +195,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                 theme, isDark, allLessons, levels, levelGradients, levelEmojis,
                 progress?.completedLessonIds ?? [],
               ),
+              const SizedBox(height: 24),
+              const StudyPlanSection(),
               const SizedBox(height: 24),
               _buildDailyChallengeCard(theme, streakDays),
               const SizedBox(height: 24),
@@ -296,7 +301,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
             children: [
               const Text('📚 ', style: TextStyle(fontSize: 14)),
               Text(
-                '$lessonsCompleted Lessons Completed',
+                '$lessonsCompleted Chapters Completed',
                 style: TextStyle(color: Colors.white.withOpacity(0.9), fontSize: 13, fontWeight: FontWeight.w600),
               ),
               const Spacer(),

@@ -27,7 +27,7 @@ class _GrammarListScreenState extends ConsumerState<GrammarListScreen> {
     final levels = map.keys.toList();
     if (index >= levels.length) return;
 
-    double offset = 0;
+    double offset = 16; // ListView top padding
     for (int i = 0; i < index; i++) {
       offset += _sectionHeaderHeight;
       offset += map[levels[i]]!.length * _cardHeight;

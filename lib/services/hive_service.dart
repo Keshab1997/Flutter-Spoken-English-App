@@ -6,6 +6,8 @@ class HiveService {
   static const String _historyBox = 'history';
   static const String _vocabProgressBox = 'vocab_progress';
   static const String _vocabTestHistoryBox = 'vocab_test_history';
+  static const String _masterGuideHistoryBox = 'master_guide_history';
+  static const String _studyPlanBox = 'study_plan';
 
   static Future<void> initialize() async {
     await Hive.initFlutter();
@@ -14,6 +16,8 @@ class HiveService {
     await Hive.openBox(_historyBox);
     await Hive.openBox(_vocabProgressBox);
     await Hive.openBox('vocab_cache');
+    await Hive.openBox(_masterGuideHistoryBox);
+    await Hive.openBox(_studyPlanBox);
   }
 
   static Box get _vocabProgress => Hive.box(_vocabProgressBox);
@@ -76,6 +80,39 @@ class HiveService {
   static Future<void> clearAllTestSessions() async {
     if (!Hive.isBoxOpen(_vocabTestHistoryBox)) return;
     await Hive.box(_vocabTestHistoryBox).put('sessions', <Map<String, dynamic>>[]);
+  }
+
+  // Master Guide History
+  static Future<void> saveMasterGuideSession(Map<String, dynamic> session) async {
+    if (!Hive.isBoxOpen(_masterGuideHistoryBox)) {
+      await Hive.openBox(_masterGuideHistoryBox);
+    }
+    final box = Hive.box(_masterGuideHistoryBox);
+    final sessions = getMasterGuideHistory();
+    sessions.insert(0, session);
+    if (sessions.length > 30) sessions.removeLast();
+    await box.put('sessions', sessions);
+  }
+
+  static List<Map<String, dynamic>> getMasterGuideHistory() {
+    if (!Hive.isBoxOpen(_masterGuideHistoryBox)) return [];
+    final box = Hive.box(_masterGuideHistoryBox);
+    final raw = box.get('sessions', defaultValue: []) as List;
+    return raw.map((e) => Map<String, dynamic>.from(e as Map)).toList();
+  }
+
+  static Future<void> deleteMasterGuideSession(int index) async {
+    if (!Hive.isBoxOpen(_masterGuideHistoryBox)) return;
+    final box = Hive.box(_masterGuideHistoryBox);
+    final sessions = getMasterGuideHistory();
+    if (index < 0 || index >= sessions.length) return;
+    sessions.removeAt(index);
+    await box.put('sessions', sessions);
+  }
+
+  static Future<void> clearAllMasterGuideSessions() async {
+    if (!Hive.isBoxOpen(_masterGuideHistoryBox)) return;
+    await Hive.box(_masterGuideHistoryBox).put('sessions', <Map<String, dynamic>>[]);
   }
 
   static Box get _favorites => Hive.box(_favoritesBox);
@@ -215,6 +252,34 @@ class HiveService {
     return _settings.get('lastActiveChatId', defaultValue: '') as String;
   }
 
+  // API Key Form Draft (remember partial entries across dialog opens)
+  static Future<void> saveApiKeyDraft(Map<String, String> draft) async {
+    await _settings.put('api_key_draft', draft);
+  }
+
+  static Map<String, String> getApiKeyDraft() {
+    final raw = _settings.get('api_key_draft', defaultValue: <String, String>{}) as Map;
+    return raw.map((k, v) => MapEntry(k.toString(), v.toString()));
+  }
+
+  static Future<void> clearApiKeyDraft() async {
+    await _settings.put('api_key_draft', <String, String>{});
+  }
+
+  // Cached Free OpenRouter Models (with speed tier)
+  static Future<void> saveFreeOpenRouterModels(List<Map<String, dynamic>> models) async {
+    await _settings.put('free_or_models', models);
+  }
+
+  static List<Map<String, dynamic>> getFreeOpenRouterModels() {
+    final raw = _settings.get('free_or_models', defaultValue: <Map<String, dynamic>>[]) as List;
+    if (raw.isEmpty) return [];
+    if (raw.first is String) {
+      return (raw as List<String>).map((id) => {'id': id, 'tier': 'medium'}).toList();
+    }
+    return raw.map((e) => Map<String, dynamic>.from(e as Map)).toList();
+  }
+
   // History
   static Future<void> addToHistory(String lessonId) async {
     final history = _history.get('lessonIds', defaultValue: <String>[]) as List<String>;
@@ -226,5 +291,38 @@ class HiveService {
 
   static List<String> getHistory() {
     return _history.get('lessonIds', defaultValue: <String>[]) as List<String>;
+  }
+
+  // ── Study Plan (Todo List) ──
+
+  static Future<void> saveTodoItems(List<Map<String, dynamic>> items) async {
+    await Hive.box(_studyPlanBox).put('items', items);
+  }
+
+  static List<Map<String, dynamic>> getTodoItems() {
+    return (Hive.box(_studyPlanBox).get('items', defaultValue: <Map<String, dynamic>>[]) as List)
+        .map((e) => Map<String, dynamic>.from(e as Map))
+        .toList();
+  }
+
+  static Future<void> updateTodoItem(Map<String, dynamic> item) async {
+    final items = getTodoItems();
+    final idx = items.indexWhere((i) => i['id'] == item['id']);
+    if (idx >= 0) {
+      items[idx] = item;
+    } else {
+      items.add(item);
+    }
+    await saveTodoItems(items);
+  }
+
+  static Future<void> saveWeeklyTestInfo(Map<String, dynamic> info) async {
+    await Hive.box(_studyPlanBox).put('weekly_test', info);
+  }
+
+  static Map<String, dynamic>? getWeeklyTestInfo() {
+    final raw = Hive.box(_studyPlanBox).get('weekly_test');
+    if (raw == null) return null;
+    return Map<String, dynamic>.from(raw as Map);
   }
 }

@@ -19,18 +19,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   String _selectedLanguage = 'English (US)';
   List<Map<String, dynamic>> _aiKeys = [];
 
-  List<String> get _modelOptions => [
-    'gpt-4o-mini',
-    'gpt-4o',
-    'gpt-4.1-mini',
-    'gpt-5-mini',
-    'gpt-5-nano',
-    'deepseek-v3',
-    'deepseek-r1',
-    'gemini-2.5-flash',
-    'claude-sonnet-4-6',
-  ];
-
   @override
   void initState() {
     super.initState();
@@ -304,130 +292,15 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   }
 
   void _showAddKeyDialog({Map<String, dynamic>? existingKey}) {
-    final nameCtl = TextEditingController(text: existingKey?['name'] as String? ?? '');
-    final keyCtl = TextEditingController(text: existingKey?['key'] as String? ?? '');
-    final urlCtl = TextEditingController(text: existingKey?['baseUrl'] as String? ?? 'https://api.chatanywhere.tech/v1');
-    String selectedModel = existingKey?['model'] as String? ?? 'gpt-4o-mini';
-
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
       useSafeArea: true,
-      builder: (ctx) {
-        return StatefulBuilder(
-          builder: (ctx, setDialogState) => Padding(
-            padding: EdgeInsets.only(
-              left: 20, right: 20, top: 20,
-              bottom: MediaQuery.of(ctx).viewInsets.bottom + 20,
-            ),
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(existingKey != null ? 'Edit API Key' : 'Add API Key',
-                      style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                  const SizedBox(height: 20),
-                  TextField(
-                    controller: nameCtl,
-                    decoration: InputDecoration(
-                      labelText: 'Key Name',
-                      hintText: 'e.g. ChatAnywhere Free',
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: keyCtl,
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: 'API Key',
-                      hintText: 'sk-...',
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  TextField(
-                    controller: urlCtl,
-                    decoration: InputDecoration(
-                      labelText: 'Base URL',
-                      hintText: 'https://api.chatanywhere.tech/v1',
-                      border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                  InkWell(
-                    onTap: () {
-                      showModalBottomSheet(
-                        context: ctx,
-                        builder: (mctx) => Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: _modelOptions.map((m) {
-                            return ListTile(
-                              title: Text(m),
-                              trailing: m == selectedModel ? const Icon(Icons.check, color: AppColors.primary) : null,
-                              onTap: () {
-                                setDialogState(() => selectedModel = m);
-                                Navigator.pop(mctx);
-                              },
-                            );
-                          }).toList(),
-                        ),
-                      );
-                    },
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey.shade300),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Row(
-                        children: [
-                          const Icon(Icons.model_training_rounded, size: 18, color: AppColors.primary),
-                          const SizedBox(width: 8),
-                          Text(selectedModel, style: const TextStyle(fontSize: 14)),
-                          const Spacer(),
-                          const Icon(Icons.arrow_drop_down_rounded, size: 20),
-                        ],
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppColors.primary,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 14),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-                      ),
-                      onPressed: () async {
-                        final id = existingKey?['id'] as String? ?? DateTime.now().millisecondsSinceEpoch.toString();
-                        final config = {
-                          'id': id,
-                          'name': nameCtl.text.trim().isEmpty ? 'Key ${_aiKeys.length + 1}' : nameCtl.text.trim(),
-                          'key': keyCtl.text.trim(),
-                          'baseUrl': urlCtl.text.trim().isEmpty ? 'https://api.chatanywhere.tech/v1' : urlCtl.text.trim(),
-                          'model': selectedModel,
-                          'isActive': existingKey?['isActive'] == true || _aiKeys.isEmpty,
-                        };
-                        await HiveService.saveAiKey(config);
-                        if (_aiKeys.isEmpty && config['isActive'] == true) {
-                          await HiveService.setActiveAiKey(id);
-                        }
-                        Navigator.pop(ctx);
-                        _loadAiKeys();
-                      },
-                      child: Text(existingKey != null ? 'Save Changes' : 'Add Key'),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        );
-      },
+      builder: (ctx) => _ApiKeyForm(
+        existingKey: existingKey,
+        draft: existingKey == null ? HiveService.getApiKeyDraft() : null,
+        onSaved: _loadAiKeys,
+      ),
     );
   }
 
@@ -457,5 +330,396 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   String _maskKey(String key) {
     if (key.length <= 8) return '****';
     return '${key.substring(0, 4)}...${key.substring(key.length - 4)}';
+  }
+}
+
+class _ApiKeyForm extends StatefulWidget {
+  final Map<String, dynamic>? existingKey;
+  final Map<String, String>? draft;
+  final VoidCallback onSaved;
+
+  const _ApiKeyForm({required this.existingKey, this.draft, required this.onSaved});
+
+  @override
+  State<_ApiKeyForm> createState() => _ApiKeyFormState();
+}
+
+class _ApiKeyFormState extends State<_ApiKeyForm> {
+  late final TextEditingController _nameCtl;
+  late final TextEditingController _keyCtl;
+  late final TextEditingController _urlCtl;
+  late final TextEditingController _modelCtl;
+
+  @override
+  void initState() {
+    super.initState();
+    final d = widget.draft;
+    _nameCtl = TextEditingController(
+      text: widget.existingKey?['name'] as String? ?? d?['name'] ?? '',
+    );
+    _keyCtl = TextEditingController(
+      text: widget.existingKey?['key'] as String? ?? d?['key'] ?? '',
+    );
+    _urlCtl = TextEditingController(
+      text: widget.existingKey?['baseUrl'] as String? ?? d?['baseUrl'] ?? 'https://api.chatanywhere.tech/v1',
+    );
+    _modelCtl = TextEditingController(
+      text: widget.existingKey?['model'] as String? ?? d?['model'] ?? 'gpt-4o-mini',
+    );
+    _nameCtl.addListener(_onFieldChanged);
+    _keyCtl.addListener(_onFieldChanged);
+    _urlCtl.addListener(_onFieldChanged);
+    _modelCtl.addListener(_onFieldChanged);
+  }
+
+  void _onFieldChanged() {
+    if (widget.existingKey != null) return;
+    HiveService.saveApiKeyDraft({
+      'name': _nameCtl.text,
+      'key': _keyCtl.text,
+      'baseUrl': _urlCtl.text,
+      'model': _modelCtl.text,
+    });
+  }
+
+  @override
+  void dispose() {
+    _nameCtl.dispose();
+    _keyCtl.dispose();
+    _urlCtl.dispose();
+    _modelCtl.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+
+    return Padding(
+      padding: EdgeInsets.only(
+        left: 20, right: 20, top: 20,
+        bottom: MediaQuery.of(context).viewInsets.bottom + 20,
+      ),
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(widget.existingKey != null ? 'Edit API Key' : 'Add API Key',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+            const SizedBox(height: 20),
+            TextField(
+              controller: _nameCtl,
+              decoration: InputDecoration(
+                labelText: 'Key Name',
+                hintText: 'e.g. ChatAnywhere Free',
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _keyCtl,
+              obscureText: true,
+              decoration: InputDecoration(
+                labelText: 'API Key',
+                hintText: 'sk-...',
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _urlCtl,
+              decoration: InputDecoration(
+                labelText: 'Base URL',
+                hintText: 'https://api.chatanywhere.tech/v1',
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: _modelCtl,
+              decoration: InputDecoration(
+                labelText: 'Model',
+                hintText: 'e.g. gpt-4o-mini, ~openai/gpt-latest',
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                prefixIcon: const Icon(Icons.model_training_rounded, size: 18, color: AppColors.primary),
+              ),
+            ),
+            const SizedBox(height: 10),
+            _ModelChips(
+              selected: _modelCtl.text,
+              onTap: (model) => setState(() => _modelCtl.text = model),
+            ),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                ),
+                onPressed: _save,
+                child: Text(widget.existingKey != null ? 'Save Changes' : 'Add Key'),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _save() async {
+    final id = widget.existingKey?['id'] as String? ?? DateTime.now().millisecondsSinceEpoch.toString();
+    final name = _nameCtl.text.trim();
+    final key = _keyCtl.text.trim();
+    final url = _urlCtl.text.trim();
+    final model = _modelCtl.text.trim();
+
+    if (key.isEmpty) return;
+
+    final isActive = widget.existingKey?['isActive'] == true;
+
+    final config = {
+      'id': id,
+      'name': name.isEmpty ? 'Key ${id.substring(id.length - 4)}' : name,
+      'key': key,
+      'baseUrl': url.isEmpty ? 'https://api.chatanywhere.tech/v1' : url,
+      'model': model.isEmpty ? 'gpt-4o-mini' : model,
+      'isActive': isActive,
+    };
+
+    if (widget.existingKey == null) {
+      final keys = HiveService.getAiKeys();
+      config['isActive'] = keys.isEmpty;
+    }
+    await HiveService.saveAiKey(config);
+    await HiveService.clearApiKeyDraft();
+    if (!mounted) return;
+    Navigator.pop(context);
+    widget.onSaved();
+  }
+}
+
+class _ModelChips extends StatefulWidget {
+  final String selected;
+  final ValueChanged<String> onTap;
+
+  const _ModelChips({required this.selected, required this.onTap});
+
+  @override
+  State<_ModelChips> createState() => _ModelChipsState();
+}
+
+class _ModelChipsState extends State<_ModelChips> {
+  List<Map<String, dynamic>> _freeModels = [];
+  bool _loadingFree = false;
+  bool _fetchedOnce = false;
+
+  static const _models = {
+    'ChatAnywhere': [
+      'gpt-4o-mini',
+      'gpt-4o',
+      'gpt-4.1-mini',
+      'gpt-5-mini',
+      'gpt-5-nano',
+      'deepseek-v3',
+      'deepseek-r1',
+      'gemini-2.5-flash',
+      'claude-sonnet-4-6',
+    ],
+    'OpenRouter': [
+      '~openai/gpt-latest',
+      '~anthropic/claude-sonnet-latest',
+      '~google/gemini-latest',
+      'google/gemini-2.5-flash',
+      'openai/gpt-4o',
+      'anthropic/claude-sonnet-4',
+      'deepseek/deepseek-r1',
+      'deepseek/deepseek-v3',
+      'meta-llama/llama-4-maverick',
+      'mistral/mistral-large',
+      'qwen/qwen-2.5-72b',
+    ],
+  };
+
+  @override
+  void initState() {
+    super.initState();
+    _loadCachedFreeModels();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (_freeModels.isEmpty && !_loadingFree && !_fetchedOnce) {
+        _fetchFreeModels();
+      }
+    });
+  }
+
+  void _loadCachedFreeModels() {
+    final cached = HiveService.getFreeOpenRouterModels();
+    if (cached.isNotEmpty) {
+      _freeModels = cached;
+      _fetchedOnce = true;
+    }
+  }
+
+  String _tierEmoji(String tier) {
+    switch (tier) {
+      case 'fast':
+        return '🟢';
+      case 'medium':
+        return '🟡';
+      case 'slow':
+        return '🔴';
+      default:
+        return '';
+    }
+  }
+
+  Future<void> _fetchFreeModels() async {
+    if (_loadingFree) return;
+    setState(() => _loadingFree = true);
+    try {
+      final result = await AIService().fetchFreeOpenRouterModels();
+      if (result.isNotEmpty) {
+        await HiveService.saveFreeOpenRouterModels(result);
+        if (mounted) setState(() => _freeModels = result);
+      }
+    } catch (_) {
+      if (mounted) setState(() => _fetchedOnce = true);
+    }
+    if (mounted) {
+      setState(() {
+        _loadingFree = false;
+        _fetchedOnce = true;
+      });
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    return DefaultTabController(
+      length: _models.length + 1,
+      child: Column(
+        children: [
+          TabBar(
+            isScrollable: true,
+            tabAlignment: TabAlignment.start,
+            labelColor: AppColors.primary,
+            unselectedLabelColor: Colors.grey,
+            indicatorColor: AppColors.primary,
+            labelStyle: const TextStyle(fontWeight: FontWeight.w600, fontSize: 12),
+            tabs: [
+              ..._models.keys.map((k) => Tab(text: k)),
+              const Tab(text: 'Free (OpenRouter)'),
+            ],
+          ),
+          SizedBox(
+            height: 44,
+            child: TabBarView(
+              children: [
+                ..._models.values.map((models) => _buildChipRow(models, isDark)),
+                _buildFreeModelsTab(isDark),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildChipRow(List<dynamic> models, bool isDark) {
+    return ListView(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.symmetric(vertical: 4),
+      children: models.map((m) {
+        String id;
+        String? emoji;
+        if (m is String) {
+          id = m;
+        } else {
+          final map = m as Map<String, dynamic>;
+          id = map['id'] as String;
+          emoji = _tierEmoji(map['tier'] as String? ?? '');
+        }
+        final isSelected = id == widget.selected;
+        return Padding(
+          padding: const EdgeInsets.only(right: 6),
+          child: GestureDetector(
+            onTap: () => widget.onTap(id),
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+              decoration: BoxDecoration(
+                color: isSelected
+                    ? AppColors.primary
+                    : (isDark ? AppColors.surfaceDark : Colors.grey[100]),
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(
+                  color: isSelected
+                      ? AppColors.primary
+                      : (isDark ? AppColors.borderDark : Colors.grey[300]!),
+                ),
+              ),
+              child: Text(
+                emoji != null ? '$emoji $id' : id,
+                style: TextStyle(
+                  fontSize: 11,
+                  fontWeight: FontWeight.w500,
+                  color: isSelected ? Colors.white : null,
+                ),
+              ),
+            ),
+          ),
+        );
+      }).toList(),
+    );
+  }
+
+  Widget _buildFreeModelsTab(bool isDark) {
+    if (_loadingFree) {
+      return const Center(
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(
+              width: 14,
+              height: 14,
+              child: CircularProgressIndicator(strokeWidth: 2),
+            ),
+            SizedBox(width: 8),
+            Text('Fetching...', style: TextStyle(fontSize: 12)),
+          ],
+        ),
+      );
+    }
+    if (_freeModels.isEmpty) {
+      return Center(
+        child: GestureDetector(
+          onTap: _fetchFreeModels,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              color: AppColors.primary.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.cloud_download_rounded,
+                    size: 14, color: AppColors.primary),
+                const SizedBox(width: 6),
+                Text('Load free models',
+                    style: TextStyle(
+                        fontSize: 12,
+                        color: AppColors.primary,
+                        fontWeight: FontWeight.w600)),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
+    return _buildChipRow(_freeModels.cast<dynamic>(), isDark);
   }
 }

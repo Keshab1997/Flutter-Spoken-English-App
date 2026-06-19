@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../models/grammar_chapter_model.dart';
 import '../../../services/vocab_remote_service.dart';
+import 'grammar_master_screen.dart';
 
 class GrammarDetailScreen extends ConsumerStatefulWidget {
   final GrammarChapter chapter;
@@ -28,13 +29,22 @@ class _GrammarDetailScreenState extends ConsumerState<GrammarDetailScreen> {
     final box = await VocabRemoteService.getCacheBox();
     final saved =
         box.get('scroll_pos_chapter_${widget.chapter.chapter}') as double?;
-    if (saved != null && saved > 0 && _scrollController.hasClients) {
+    if (saved != null && saved > 0) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (_scrollController.hasClients) {
           _scrollController.jumpTo(saved.clamp(
             0,
             _scrollController.position.maxScrollExtent,
           ));
+        } else {
+          WidgetsBinding.instance.addPostFrameCallback((__) {
+            if (_scrollController.hasClients) {
+              _scrollController.jumpTo(saved.clamp(
+                0,
+                _scrollController.position.maxScrollExtent,
+              ));
+            }
+          });
         }
       });
     }
@@ -81,6 +91,10 @@ class _GrammarDetailScreenState extends ConsumerState<GrammarDetailScreen> {
               description: widget.chapter.description,
               banglaDescription: widget.chapter.banglaDescription,
             ),
+          if (widget.chapter.topics.isNotEmpty) ...[
+            const SizedBox(height: 16),
+            _MasterGuideCard(chapter: widget.chapter),
+          ],
           const SizedBox(height: 8),
           ...widget.chapter.topics
               .map((topic) => _TopicCard(topic: topic)),
@@ -389,6 +403,84 @@ class _TopicCard extends StatelessWidget {
             ),
           ],
         ],
+      ),
+    );
+  }
+}
+
+class _MasterGuideCard extends StatelessWidget {
+  final GrammarChapter chapter;
+  const _MasterGuideCard({required this.chapter});
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
+    return GestureDetector(
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (_) => GrammarMasterScreen(chapter: chapter),
+        ),
+      ),
+      child: Container(
+        padding: const EdgeInsets.all(18),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.primary.withOpacity(0.12),
+              AppColors.purpleGradient[0].withOpacity(0.06),
+            ],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+              color: AppColors.primary.withOpacity(0.15)),
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withOpacity(0.15),
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: const Icon(Icons.auto_awesome,
+                  color: AppColors.primary, size: 28),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Master Guide',
+                      style: theme.textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.w800,
+                      )),
+                  const SizedBox(height: 4),
+                  Text(
+                    'Interactive Q&A with detailed AI teacher explanations',
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: Colors.grey[500],
+                      height: 1.3,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: const Icon(Icons.arrow_forward_rounded,
+                  color: AppColors.primary, size: 20),
+            ),
+          ],
+        ),
       ),
     );
   }

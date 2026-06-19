@@ -22,6 +22,41 @@ class AIService {
     return active?['model'] as String? ?? 'gpt-4o-mini';
   }
 
+  Future<List<Map<String, dynamic>>> fetchFreeOpenRouterModels() async {
+    try {
+      final url = Uri.parse('https://openrouter.ai/api/v1/models?sort=latency-low-to-high');
+      final response = await http.get(url).timeout(const Duration(seconds: 10));
+      if (response.statusCode == 200) {
+        final data = jsonDecode(utf8.decode(response.bodyBytes)) as Map<String, dynamic>;
+        final allModels = data['data'] as List<dynamic>? ?? [];
+        final free = allModels.where((m) {
+          final map = m as Map<String, dynamic>;
+          final pricing = map['pricing'] as Map<String, dynamic>? ?? {};
+          final modality = (map['architecture'] as Map<String, dynamic>? ?? {})['modality'] as String? ?? '';
+          return modality == 'text->text'
+              && pricing['prompt'] == '0'
+              && pricing['completion'] == '0';
+        }).toList();
+
+        final total = free.length;
+        return free.asMap().entries.map((entry) {
+          final idx = entry.key;
+          final m = entry.value as Map<String, dynamic>;
+          final tier = idx < total ~/ 3
+              ? 'fast'
+              : idx < 2 * total ~/ 3
+                  ? 'medium'
+                  : 'slow';
+          return {
+            'id': m['id'] as String,
+            'tier': tier,
+          };
+        }).toList();
+      }
+    } catch (_) {}
+    return [];
+  }
+
   Future<bool> testConnection() async {
     if (_apiKey.isEmpty) return false;
     try {
