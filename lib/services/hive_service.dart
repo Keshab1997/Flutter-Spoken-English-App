@@ -170,6 +170,33 @@ class HiveService {
     return _settings.get('userName', defaultValue: '') as String;
   }
 
+  // Chat Sessions
+  static Future<void> saveChatSession(Map<String, dynamic> session) async {
+    final sessions = getChatSessions();
+    final idx = sessions.indexWhere((s) => s['id'] == session['id']);
+    if (idx >= 0) {
+      sessions[idx] = session;
+    } else {
+      sessions.insert(0, session);
+    }
+    await _settings.put('chatSessions', sessions);
+  }
+
+  static List<Map<String, dynamic>> getChatSessions() {
+    final raw = _settings.get('chatSessions', defaultValue: <Map<String, dynamic>>[]) as List;
+    return raw.map((e) => Map<String, dynamic>.from(e as Map)).toList();
+  }
+
+  static Future<void> deleteChatSession(String id) async {
+    final sessions = getChatSessions();
+    sessions.removeWhere((s) => s['id'] == id);
+    await _settings.put('chatSessions', sessions);
+  }
+
+  static Future<void> deleteAllChatSessions() async {
+    await _settings.put('chatSessions', <Map<String, dynamic>>[]);
+  }
+
   // History
   static Future<void> addToHistory(String lessonId) async {
     final history = _history.get('lessonIds', defaultValue: <String>[]) as List<String>;
