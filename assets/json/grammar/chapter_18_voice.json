@@ -1,10 +1,260 @@
 {
   "chapter": 18,
   "level": "Beginner",
-  "title": "Voice",
+  "title": "Voice (বাচ্য)",
   "icon": "record_voice_over",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Voice in English grammar tells us whether the subject performs the action (Active Voice) or receives the action (Passive Voice). In active voice, the subject is the doer: 'Ravi wrote the letter.' In passive voice, the subject is the receiver: 'The letter was written by Ravi.' Passive voice is formed using 'be' + past participle. Understanding voice helps you vary your sentence structure, emphasize different parts of information, and write in appropriate registers for different contexts.",
+  "banglaDescription": "ইংরেজি ব্যাকরণে Voice (বাচ্য) জানায় subject কাজটি করে নাকি কাজটি গ্রহণ করে। Active voice (কর্তৃবাচ্য)-এ subject কাজটি করে: 'রবি চিঠিটি লিখেছে।' Passive voice (কর্মবাচ্য)-এ subject কাজটি গ্রহণ করে: 'চিঠিটি রবির দ্বারা লেখা হয়েছে।' Passive voice 'be' + past participle দিয়ে গঠিত হয়। Voice বোঝা আপনাকে বাক্যের গঠন বৈচিত্র্যময় করতে, তথ্যের বিভিন্ন অংশে জোর দিতে, এবং বিভিন্ন প্রসঙ্গের জন্য উপযুক্ত রেজিস্টারে লিখতে সাহায্য করে।",
+  "topics": [
+    {
+      "name": "What is Voice? Active vs Passive",
+      "banglaName": "Voice কী? Active বনাম Passive",
+      "definition": "Voice shows the relationship between the subject and the verb in a sentence. In Active Voice, the subject performs the action (subject → verb → object). In Passive Voice, the subject receives the action, and the object of the active sentence becomes the subject (old object → be + past participle → by + old subject). Only transitive verbs (verbs that take an object) can be made passive. Intransitive verbs (sleep, arrive, happen) cannot be passive.",
+      "banglaDefinition": "Voice (বাচ্য) বাক্যে subject এবং verb-এর মধ্যে সম্পর্ক দেখায়। Active Voice (কর্তৃবাচ্য)-এ subject কাজটি করে (subject → verb → object)। Passive Voice (কর্মবাচ্য)-এ subject কাজটি গ্রহণ করে, এবং active sentence-এর object subject হয় (old object → be + past participle → by + old subject)। শুধু transitive verb (যে verb-এর object থাকে) passive করা যায়। Intransitive verb (sleep, arrive, happen) passive করা যায় না।",
+      "formula": "ACTIVE VOICE:\nSubject + Verb + Object\n'Ravi (subject) wrote (verb) a letter (object).'\n\nPASSIVE VOICE:\nOld Object + be + Past Participle + (by + Agent)\n'A letter (old object) was written (be + past participle) by Ravi (agent).'\n\nSTRUCTURE COMPARISON:\nActive: 'The chef prepares the meal.'\nPassive: 'The meal is prepared by the chef.'\n\nActive: 'Millions of people watch the IPL.'\nPassive: 'The IPL is watched by millions of people.'\n\nKEY: Only transitive verbs (verbs with direct object) can be passive.\n✓ 'She wrote a book.' → 'A book was written by her.' (transitive)\n✗ 'She slept.' → No passive possible. (intransitive — no object)",
+      "rules": [
+        "Active voice-এ subject work করে, passive-এ subject work গ্রহণ করে।",
+        "Passive voice গঠন: be verb (am/is/are/was/were/been/being) + past participle (V3)।",
+        "শুধু transitive verb (object-সহ verb) passive করা যায়: write, eat, build, see, love etc.",
+        "Intransitive verb (object ছাড়া verb) passive হয় না: sleep, go, come, arrive, happen, cry, laugh, die, live।",
+        "Passive sentence-এ 'by + agent' ঐচ্ছিক — agent জানা না থাকলে বা গুরুত্বপূর্ণ না হলে বাদ দেওয়া যায়।",
+        "Passive voice-এ tense be verb-এর মাধ্যমে দেখানো হয়: is written (present), was written (past), will be written (future)।",
+        "Passive voice সাধারণত formal writing, scientific writing, এবং news-এ বেশি ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "Active: 'The construction workers built the Howrah Bridge in 1943.'", "bn": "Active: 'নির্মাণ শ্রমিকরা ১৯৪৩ সালে হাওড়া ব্রিজ তৈরি করেছিল।'" },
+        { "en": "Passive: 'The Howrah Bridge was built in 1943.' (by the workers — optional)", "bn": "Passive: 'হাওড়া ব্রিজ ১৯৪৩ সালে তৈরি হয়েছিল।' (শ্রমিকদের দ্বারা — ঐচ্ছিক)" },
+        { "en": "Active: 'Rabindranath Tagore wrote the national anthem.'", "bn": "Active: 'রবীন্দ্রনাথ ঠাকুর জাতীয় সংগীত রচনা করেছিলেন।'" },
+        { "en": "Passive: 'The national anthem was written by Rabindranath Tagore.'", "bn": "Passive: 'জাতীয় সংগীত রবীন্দ্রনাথ ঠাকুর দ্বারা রচিত হয়েছিল।'" },
+        { "en": "Active: 'The government is building a new metro line.'", "bn": "Active: 'সরকার একটি নতুন মেট্রো লাইন তৈরি করছে।'" },
+        { "en": "Passive: 'A new metro line is being built by the government.'", "bn": "Passive: 'সরকারের দ্বারা একটি নতুন মেট্রো লাইন তৈরি করা হচ্ছে।'" }
+      ],
+      "tips": "Active vs Passive চেনার সহজ উপায়: Subject verb-এর action করছে? → Active। Subject-এর উপর action হচ্ছে? → Passive। 'Ravi wrote the letter' — Ravi action করছে (Active)। 'The letter was written by Ravi' — Letter-এর উপর action হচ্ছে (Passive)। মনে রাখবে: সব sentence passive করা যায় না — শুধু transitive verb দিয়ে। 'I sleep' → passive নেই (sleep intransitive)। 'I eat rice' → 'Rice is eaten by me' (eat transitive)।"
+    },
+    {
+      "name": "Active Voice: Subject as Doer",
+      "banglaName": "Active Voice: Subject-কর হিসেবে",
+      "definition": "Active voice is the most common and direct way to express an action. The subject performs the action: 'The chef cooks the food.' Active voice is clear, concise, and dynamic. Most everyday conversation, storytelling, and informal writing uses active voice. It puts the focus on who or what is doing the action. Active voice sentences are usually shorter and easier to understand than passive ones.",
+      "banglaDefinition": "Active voice একটি কাজ প্রকাশের সবচেয়ে সাধারণ এবং সরাসরি উপায়। Subject কাজটি করে: 'শেফ খাবার রান্না করে।' Active voice পরিষ্কার, সংক্ষিপ্ত, এবং গতিশীল। অধিকাংশ দৈনন্দিন কথোপকথন, গল্প বলা, এবং অনানুষ্ঠানিক লেখায় active voice ব্যবহৃত হয়। এটি focus রাখে কে বা কী কাজটি করছে তার উপর। Active voice sentence সাধারণত passive-এর চেয়ে ছোট এবং বোঝা সহজ।",
+      "formula": "ACTIVE VOICE STRUCTURE:\nSubject (Doer) + Verb + Object (Receiver)\n\nPRESENT SIMPLE:\n'The metro carries thousands of passengers daily.'\n\nPRESENT CONTINUOUS:\n'The workers are repairing the road.'\n\nPAST SIMPLE:\n'My grandmother told me a story.'\n\nFUTURE SIMPLE:\n'The company will launch a new product.'\n\nPRESENT PERFECT:\n'He has completed the project.'\n\nADVANTAGES OF ACTIVE VOICE:\n1. Clearer: 'The dog bit the man.' vs 'The man was bitten by the dog.'\n2. Shorter: Fewer words needed.\n3. More direct: Focus on the doer.\n4. More dynamic: Creates a sense of action.",
+      "rules": [
+        "Active voice-এ subject verb-এর আগে বসে এবং action করে।",
+        "Active voice সবচেয়ে natural — ৯০% সময় active voice ব্যবহার করো।",
+        "Active voice direct এবং personal — reader/listener সহজে বুঝতে পারে কে কী করছে।",
+        "Narration এবং storytelling-এ active voice বেশি কার্যকর: 'The hero saved the princess.'",
+        "Persuasive writing-এ active voice বেশি শক্তিশালী: 'We must act now.' (not 'Action must be taken now.')",
+        "Instructions এবং commands সবসময় active: 'Press the button. Mix the ingredients. Turn left.'",
+        "Active voice-এ subject omit করা যায় না — সবসময় স্পষ্টভাবে বলা হয় কে action করছে।"
+      ],
+      "examples": [
+        { "en": "'Millions of tourists visit the Taj Mahal every year.'", "bn": "'প্রতি বছর লক্ষ লক্ষ পর্যটক তাজমহল দেখতে যান।'" },
+        { "en": "'My mother cooks the most delicious biryani in Kolkata.'", "bn": "'আমার মা কলকাতার সবচেয়ে delicious বিরিয়ানি রান্না করেন।'" },
+        { "en": "'The Indian cricket team won the match by five wickets.'", "bn": "'ভারতীয় ক্রিকেট দল পাঁচ উইকেটে ম্যাচ জিতেছে।'" },
+        { "en": "'Students from across India apply to IIT every year.'", "bn": "'প্রতি বছর সারা ভারত থেকে ছাত্ররা IIT-তে আবেদন করে।'" },
+        { "en": "'The government launched a new healthcare scheme last month.'", "bn": "'সরকার গত মাসে একটি নতুন স্বাস্থ্যসেবা প্রকল্প চালু করেছে।'" }
+      ],
+      "tips": "বেশিরভাগ সময়ই active voice ব্যবহার করো। এটি direct, clear, এবং strong। প্রশ্ন করো: 'কে action করছে?' যদি উত্তর গুরুত্বপূর্ণ, active voice ব্যবহার করো। 'The cat ate the fish' vs 'The fish was eaten by the cat' — প্রথমটা direct এবং natural। Passive voice তখনই ব্যবহার করো যখন specific কারণে প্রয়োজন (agent不重要, formal context, বা action-এ focus করতে চাও)। Default = active।"
+    },
+    {
+      "name": "Passive Voice: Structure and Formation",
+      "banglaName": "Passive Voice: গঠন ও নির্মাণ",
+      "definition": "Passive voice is formed with the appropriate form of 'be' + past participle (V3). The object of the active sentence becomes the subject of the passive sentence. The subject of the active sentence becomes the agent introduced by 'by' (optional). The tense is shown by the 'be' verb: am/is/are (present), was/were (past), will be (future), has/have been (present perfect), was/were being (past continuous).",
+      "banglaDefinition": "Passive voice 'be' verb-এর উপযুক্ত form + past participle (V3) দিয়ে গঠিত হয়। Active sentence-এর object passive sentence-এর subject হয়। Active sentence-এর subject 'by' দ্বারা পরিচিত agent হয় (ঐচ্ছিক)। Tense 'be' verb-এর মাধ্যমে দেখানো হয়: am/is/are (present), was/were (past), will be (future), has/have been (present perfect), was/were being (past continuous)।",
+      "formula": "PASSIVE VOICE FORMULA:\nSubject (old object) + Be Verb + Past Participle (V3) + (by + Agent)\n\nTENSE CONVERSION TABLE:\n\nActive Tense        →  Passive Form\nPresent Simple       am/is/are + V3\n'She writes a letter.' → 'A letter is written by her.'\n\nPresent Continuous   am/is/are + being + V3\n'She is writing a letter.' → 'A letter is being written by her.'\n\nPast Simple          was/were + V3\n'She wrote a letter.' → 'A letter was written by her.'\n\nPast Continuous      was/were + being + V3\n'She was writing a letter.' → 'A letter was being written by her.'\n\nPresent Perfect      has/have + been + V3\n'She has written a letter.' → 'A letter has been written by her.'\n\nPast Perfect         had + been + V3\n'She had written a letter.' → 'A letter had been written by her.'\n\nFuture Simple        will + be + V3\n'She will write a letter.' → 'A letter will be written by her.'\n\nFuture Perfect       will + have + been + V3\n'She will have written a letter.' → 'A letter will have been written by her.'",
+      "rules": [
+        "Present simple passive: am/is/are + V3 — 'Rice is grown in West Bengal.'",
+        "Present continuous passive: am/is/are + being + V3 — 'The road is being repaired.'",
+        "Past simple passive: was/were + V3 — 'The Taj Mahal was built by Shah Jahan.'",
+        "Present perfect passive: has/have + been + V3 — 'The work has been completed.'",
+        "Future simple passive: will + be + V3 — 'The results will be announced tomorrow.'",
+        "Modal passive: modal + be + V3 — 'The work must be finished today.'",
+        "Perfect modal passive: modal + have + been + V3 — 'The letter should have been sent yesterday.'"
+      ],
+      "examples": [
+        { "en": "Present: 'English is spoken all over India.'", "bn": "Present: 'সারা ভারতে ইংরেজি বলা হয়।'" },
+        { "en": "Past: 'The Victoria Memorial was built in 1921.'", "bn": "Past: 'ভিক্টোরিয়া মেমোরিয়াল ১৯২১ সালে নির্মিত হয়েছিল।'" },
+        { "en": "Future: 'The new airport will be opened next year.'", "bn": "Future: 'নতুন বিমানবন্দর আগামী বছর খোলা হবে।'" },
+        { "en": "Present Continuous: 'The festival is being celebrated across the state.'", "bn": "Present Continuous: 'উৎসবটি সারা রাজ্য জুড়ে উদযাপন করা হচ্ছে।'" },
+        { "en": "Present Perfect: 'The project has been completed on time.'", "bn": "Present Perfect: 'প্রকল্পটি সময়মতো সম্পন্ন হয়েছে।'" },
+        { "en": "Modal: 'This form must be submitted by Friday.'", "bn": "Modal: 'এই ফর্মটি শুক্রবারের মধ্যে জমা দিতে হবে।'" }
+      ],
+      "tips": "Passive voice তৈরির সহজ নিয়ম: (১) Active sentence-এর object কে subject বানাও। (২) Tense অনুযায়ী 'be' verb বসাও। (৩) Main verb-এর past participle (V3) বসাও। (৪) 'By + original subject' যোগ করো (যদি দরকার হয়)। Active: 'Ravi (subject) wrote (verb) a letter (object).' → Passive: 'A letter (old object) was (be) written (V3) by Ravi (agent).' Tense be verb-এ আসে — V3 সবসময় একই থাকে।"
+    },
+    {
+      "name": "When to Use Passive Voice",
+      "banglaName": "কখন Passive Voice ব্যবহার করবে",
+      "definition": "Passive voice is used in specific situations: (1) When the agent is unknown — 'My phone was stolen.' (2) When the agent is obvious or unimportant — 'The roads are cleaned every day.' (3) When we want to emphasize the action or receiver — 'The injured were taken to the hospital.' (4) In formal, scientific, or academic writing — 'The experiment was conducted three times.' (5) To be polite or soften blame — 'A mistake was made.'",
+      "banglaDefinition": "Passive voice নির্দিষ্ট পরিস্থিতিতে ব্যবহৃত হয়: (১) যখন agent অজানা — 'আমার ফোন চুরি হয়েছে।' (২) যখন agent স্পষ্ট বা গুরুত্বপূর্ণ নয় — 'রাস্তা প্রতিদিন পরিষ্কার করা হয়।' (৩) যখন action বা receiver-এর উপর জোর দিতে চাই — 'আহতদের হাসপাতালে নেওয়া হয়েছিল।' (৪) আনুষ্ঠানিক, বৈজ্ঞানিক, বা একাডেমিক লেখায় — 'পরীক্ষাটি তিনবার পরিচালিত হয়েছিল।' (৫) ভদ্র হওয়া বা দোষ নরম করতে — 'একটি ভুল হয়েছে।'",
+      "formula": "WHEN TO USE PASSIVE VOICE:\n\n1. AGENT UNKNOWN:\n'My wallet was stolen at the market.' (who stole? unknown)\n'The window was broken last night.' (who broke? unknown)\n\n2. AGENT OBVIOUS/UNIMPORTANT:\n'The garbage is collected every Tuesday.' (by the municipal workers — obvious)\n'Rice is grown in West Bengal.' (by farmers — obvious)\n\n3. EMPHASIS ON RECEIVER/ACTION:\n'The injured were rushed to the hospital.' (focus on injured, not who rushed)\n'The Taj Mahal was built in the 17th century.' (focus on Taj Mahal, not builder)\n\n4. FORMAL/ACADEMIC/SCIENTIFIC WRITING:\n'The experiment was conducted under controlled conditions.'\n'It was observed that the temperature increased.'\n\n5. POLITENESS / SOFTENING BLAME:\n'A mistake was made in the report.' (instead of 'You made a mistake.')\n'Your suggestions are being considered.' (instead of 'We are considering your suggestions.')",
+      "rules": [
+        "Agent অজানা থাকলে passive ভালো: 'The letter was delivered this morning.' (কার delivery করেছে জানি না)",
+        "Agent স্পষ্ট হলে by-phrase বাদ দাও: 'The streets are cleaned daily.' (মিউনিসিপ্যালিটি স্পষ্ট)",
+        "Action-এ focus রাখতে passive: 'The new hospital was inaugurated yesterday.' (হাসপাতাল inaugurated গুরুত্বপূর্ণ)",
+        "Scientific writing-এ passive standard: 'The mixture was heated to 100°C.' (কী করা হলো, কে করল তা গুরুত্বপূর্ণ নয়)",
+        "News headlines প্রায়ই passive: 'Five killed in bus accident.' (সংক্ষিপ্ত এবং focus ঘটনায়)",
+        "Formal notices: 'Passengers are requested to keep their tickets ready.' (politeness)"
+      ],
+      "examples": [
+        { "en": "Unknown agent: 'My phone was stolen on the local train.'", "bn": "অজানা: 'লোকাল ট্রেনে আমার ফোন চুরি হয়েছে।'" },
+        { "en": "Obvious agent: 'The crops are harvested in November.' (by farmers)", "bn": "স্পষ্ট: 'নভেম্বরে ফসল কাটা হয়।' (কৃষকদের দ্বারা)" },
+        { "en": "Emphasis on receiver: 'The injured were taken to the nearest hospital.'", "bn": "Receiver-এ জোর: 'আহতদের নিকটস্থ হাসপাতালে নেওয়া হয়েছিল।'" },
+        { "en": "Scientific: 'The water sample was tested for contaminants.'", "bn": "বৈজ্ঞানিক: 'পানির নমুনা দূষণকারীর জন্য পরীক্ষা করা হয়েছিল।'" },
+        { "en": "Politeness: 'Unfortunately, your application could not be approved.'", "bn": "ভদ্রতা: 'দুঃখিত, আপনার আবেদন অনুমোদন করা সম্ভব হয়নি।'" },
+        { "en": "News: 'Three people were rescued from the flooded area.'", "bn": "খবর: 'বন্যাকবলিত এলাকা থেকে তিনজনকে উদ্ধার করা হয়েছে।'" }
+      ],
+      "tips": "Passive voice কখন ব্যবহার করবে তার সিদ্ধান্ত নেওয়ার ৩টি প্রশ্ন: (১) 'কে action করেছে?' — যদি জানি না বা unimportant, passive ব্যবহার করো। (২) 'Action-এর receiver কি doer-এর চেয়ে গুরুত্বপূর্ণ?' — যদি হ্যাঁ, passive ব্যবহার করো। (৩) 'এটি formal/academic context?' — যদি হ্যাঁ, passive বেশি উপযুক্ত। অন্য সব সময় active voice ব্যবহার করো। ৯০% সময় active, ১০% সময় passive — এই ratio মনে রাখবে।"
+    },
+    {
+      "name": "Passive Voice in Different Tenses",
+      "banglaName": "বিভিন্ন Tense-এ Passive Voice",
+      "definition": "Every tense has a corresponding passive form. The key is that the 'be' verb changes to show the tense, while the past participle remains the same. Continuous tenses add 'being' (is being, was being, will be being — rare). Perfect tenses add 'been' (has been, had been, will have been). Understanding how to form passive in each tense allows you to express any action in passive voice when needed.",
+      "banglaDefinition": "প্রত্যেক tense-এর একটি সংশ্লিষ্ট passive form আছে। মূল বিষয় হলো 'be' verb tense দেখানোর জন্য পরিবর্তিত হয়, যখন past participle একই থাকে। Continuous tenses-এ 'being' যোগ হয় (is being, was being, will be being — বিরল)। Perfect tenses-এ 'been' যোগ হয় (has been, had been, will have been)। প্রতিটি tense-এ passive গঠন জানা আপনাকে প্রয়োজন অনুযায়ী যেকোনো action passive voice-এ প্রকাশ করতে দেয়।",
+      "formula": "ALL TENSES — ACTIVE vs PASSIVE:\n\nPRESENT:\nSimple: 'I write / It is written'\nContinuous: 'I am writing / It is being written'\nPerfect: 'I have written / It has been written'\n\nPAST:\nSimple: 'I wrote / It was written'\nContinuous: 'I was writing / It was being written'\nPerfect: 'I had written / It had been written'\n\nFUTURE:\nSimple: 'I will write / It will be written'\nPerfect: 'I will have written / It will have been written'\n\nFUTURE (be going to):\n'It is going to be written' (rare but possible)\n\nMODALS:\nCan: 'It can be written'\nMust: 'It must be written'\nShould: 'It should be written'\nMay/Might: 'It may be written / It might be written'\nCould/Would: 'It could be written / It would be written'\n\nMODAL + PERFECT:\n'It should have been written / It must have been written'",
+      "rules": [
+        "Present simple passive: am/is/are + V3 — 'Chai is served everywhere in India.'",
+        "Past simple passive: was/were + V3 — 'The Red Fort was built by Shah Jahan.'",
+        "Future passive: will + be + V3 — 'The results will be announced tomorrow.'",
+        "Present continuous passive: am/is/are + being + V3 — 'The new bridge is being constructed.'",
+        "Past continuous passive: was/were + being + V3 — 'The festival was being celebrated.'",
+        "Present perfect passive: has/have + been + V3 — 'The tickets have been booked online.'",
+        "Past perfect passive: had + been + V3 — 'The work had been completed before the deadline.'"
+      ],
+      "examples": [
+        { "en": "Present Simple: 'Biryani is prepared with basmati rice and spices.'", "bn": "Present Simple: 'বিরিয়ানি বাসমতি চাল এবং মশলা দিয়ে প্রস্তুত করা হয়।'" },
+        { "en": "Present Continuous: 'The Durga Puja pandal is being decorated with lights.'", "bn": "Present Continuous: 'দুর্গাপূজার প্যান্ডেল আলো দিয়ে সাজানো হচ্ছে।'" },
+        { "en": "Present Perfect: 'The new airport has been opened in Navi Mumbai.'", "bn": "Present Perfect: 'নভি মুম্বাইতে নতুন বিমানবন্দর খোলা হয়েছে।'" },
+        { "en": "Past Simple: 'The Gateway of India was built to commemorate a royal visit.'", "bn": "Past Simple: 'রাজকীয় সফর স্মরণে গেটওয়ে অফ ইন্ডিয়া নির্মিত হয়েছিল।'" },
+        { "en": "Future Simple: 'The metro line will be extended to the airport.'", "bn": "Future Simple: 'মেট্রো লাইন বিমানবন্দর পর্যন্ত বাড়ানো হবে।'" },
+        { "en": "Modal: 'The application must be submitted before the deadline.'", "bn": "Modal: 'আবেদন সময়সীমার আগে জমা দিতে হবে।'" }
+      ],
+      "tips": "Tense-ভিত্তিক passive মনে রাখার কৌশল: Continuous tense-এ 'being' যোগ হয়, Perfect tense-এ 'been' যোগ হয়। Present: is/are+V3। Present Continuous: is/are+being+V3। Present Perfect: has/have+been+V3। Past: was/were+V3। Past Continuous: was/were+being+V3। Past Perfect: had+been+V3। Future: will+be+V3। Future Perfect: will+have+been+V3। Modal: modal+be+V3। Modal Perfect: modal+have+been+V3। 'Being' = চলমান, 'been' = সম্পন্ন।"
+    },
+    {
+      "name": "Passive Voice with Modal Verbs",
+      "banglaName": "Modal Verb-সহ Passive Voice",
+      "definition": "Modal verbs (can, could, may, might, must, should, would, ought to, need to, have to) can also be used in passive voice. The structure is: Modal + be + past participle (present/future) or Modal + have been + past participle (past). Examples: 'The work must be done.' 'The letter should have been sent yesterday.' Passive modals are common in rules, instructions, and formal communication.",
+      "banglaDefinition": "Modal verbs (can, could, may, might, must, should, would, ought to, need to, have to) passive voice-এও ব্যবহার করা যায়। গঠন: Modal + be + past participle (present/future) বা Modal + have been + past participle (past)। উদাহরণ: 'কাজটি করতে হবে।' 'চিঠিটি গতকাল পাঠানো উচিত ছিল।' Passive modals নিয়ম, নির্দেশনা, এবং আনুষ্ঠানিক যোগাযোগে সাধারণ।",
+      "formula": "PASSIVE WITH MODALS:\n\nPRESENT/FUTURE PASSIVE:\nModal + be + Past Participle\n'This can be done easily.'\n'The meeting must be attended by all members.'\n'This should be kept in a safe place.'\n'The form may be submitted online.'\n'The work has to be finished by Friday.'\n\nPAST PASSIVE:\nModal + have been + Past Participle\n'The work should have been finished yesterday.'\n'The letter must have been sent.'\n'The package could have been delivered earlier.'\n'The mistake might have been avoided.'\n\nCOMMON MODAL PASSIVES:\nCan be → 'English can be learned easily.'\nMust be → 'The rules must be followed.'\nShould be → 'The medicine should be taken after food.'\nMay be → 'The meeting may be postponed.'\nCould be → 'The problem could be solved.'\nHas to be → 'The report has to be prepared.'\n\nACTIVE vs PASSIVE MODAL:\nActive: 'You must submit the form.'\nPassive: 'The form must be submitted.' (focus on form)\nActive: 'Someone should have told me.'\nPassive: 'I should have been told.' (focus on 'I')",
+      "rules": [
+        "Modal passive Structure: Modal + be + V3 — 'This must be done immediately.'",
+        "Past modal passive: Modal + have been + V3 — 'This should have been done earlier.'",
+        "Modal-এর পরে সবসময় 'be' বসে (not 'is/are/was/were'): 'It must be done' (✓), 'It must is done' (✗)।",
+        "'Should be' এবং 'ought to be' একই অর্থ: 'The work should be completed today.'",
+        "'Can be' = possible: 'The problem can be solved easily.'",
+        "'Must be' = necessary/obligation: 'The law must be followed by everyone.'",
+        "'Might be' / 'could be' = possibility: 'The letter might be lost in the post.'"
+      ],
+      "examples": [
+        { "en": "Can be: 'The Howrah Bridge can be seen from this viewpoint.'", "bn": "Can be: 'এই দৃশ্যবিন্দু থেকে হাওড়া ব্রিজ দেখা যেতে পারে।'" },
+        { "en": "Must be: 'Tickets must be purchased at least one day in advance.'", "bn": "Must be: 'টিকিট কমপক্ষে একদিন আগে কিনতে হবে।'" },
+        { "en": "Should be: 'The patient should be taken to the hospital immediately.'", "bn": "Should be: 'রোগীকে অবিলম্বে হাসপাতালে নেওয়া উচিত।'" },
+        { "en": "Could have been: 'The accident could have been prevented with better safety measures.'", "bn": "Could have been: 'উত্তম নিরাপত্তা ব্যবস্থার সাথে দুর্ঘটনাটি প্রতিরোধ করা যেত।'" },
+        { "en": "Must have been: 'The package must have been delivered by now.'", "bn": "Must have been: 'প্যাকেজটি এখন নাগাদ delivery হয়ে গেছে।'" },
+        { "en": "May be: 'The flight may be delayed due to fog.'", "bn": "May be: 'কুয়াশার কারণে ফ্লাইটটি বিলম্বিত হতে পারে।'" }
+      ],
+      "tips": "Modal passive মনে রাখার সবচেয়ে সহজ উপায়: Active modal sentence-এ object টা কে subject বানাও, modal-এর পরে 'be' বা 'have been' + past participle যোগ করো। 'You must finish the work' → 'The work must be finished (by you).' 'They should have informed us' → 'We should have been informed (by them).' Modal + 'be' = present/future, Modal + 'have been' = past। 'Be' এবং 'have been'-এর পরে সবসময় V3 (past participle) লাগে।"
+    },
+    {
+      "name": "Passive Voice without Agent (By-Phrase)",
+      "banglaName": "Agent ছাড়া Passive Voice (By-Phrase)",
+      "definition": "In most passive sentences, the agent (the doer of the action) is either unknown, unimportant, or obvious, so the 'by + agent' phrase is omitted. This is called the 'agentless passive' or 'short passive'. For example: 'The letter was delivered.' (who delivered? unknown or unimportant). Agentless passive is more common than passive with agent. Only include 'by + agent' when it is important to know who did the action.",
+      "banglaDefinition": "অধিকাংশ passive sentence-এ agent (কাজের কর্তা) অজানা, গুরুত্বহীন, বা স্পষ্ট, তাই 'by + agent' phrase বাদ দেওয়া হয়। একে 'agentless passive' বা 'short passive' বলে। যেমন: 'চিঠিটি delivery করা হয়েছিল।' (কে delivery করেছে? অজানা বা গুরুত্বহীন)। Agentless passive agent-সহ passive-এর চেয়ে বেশি common। 'By + agent' শুধু অন্তর্ভুক্ত করো যখন জানা গুরুত্বপূর্ণ কে কাজটি করেছে।",
+      "formula": "FULL PASSIVE (with Agent):\nSubject + be + V3 + by + Agent\n'The Taj Mahal was built by Shah Jahan.'\n'The Mona Lisa was painted by Leonardo da Vinci.'\n\nAGENTLESS PASSIVE (no By-Phrase):\nSubject + be + V3 (no agent)\n'The Taj Mahal was built in the 17th century.' (when — not who — is important)\n'English is spoken all over the world.'\n'My phone was stolen.' (unknown agent)\n'The roads are cleaned daily.' (obvious agent — municipal workers)\n'The exam results will be announced next week.'\n\nWHEN TO INCLUDE AGENT:\n1. Agent is new/important information:\n   'This painting was painted by a little-known artist from Kerala.'\n2. Agent is surprising:\n   'The law was changed by a single activist.'\n\nWHEN TO OMIT AGENT:\n1. Agent is unknown: 'My bike was stolen.'\n2. Agent is obvious: 'The crops are harvested in October.' (by farmers)\n3. Agent is unimportant: 'The meeting was postponed.'\n4. Agent is 'people in general': 'Hindi is spoken widely.' (by people)",
+      "rules": [
+        "Agentless passive (no by-phrase) passive voice-এর সবচেয়ে সাধারণ রূপ।",
+        "Agent omit করো যখন: (ক) অজানা, (খ) স্পষ্ট, (গ) গুরুত্বহীন, (ঘ) সাধারণ মানুষ।",
+        "Agent include করো যখন agent-ই গুরুত্বপূর্ণ তথ্য: 'The book was written by a Bengali author.'",
+        "Agent omit করা sentence ছোট এবং cleaner করে: 'The window was broken' vs 'The window was broken by someone.'",
+        "কিছু verb-এর passive-এ agent omit করা খুব common: 'It is said that...', 'It is believed that...', 'It is reported that...'",
+        "'By' ছাড়া অন্য preposition (with, in, by means of) instrument/tool দেখাতে: 'The bread was cut with a knife.'",
+        "Agentless passive formal এবং impersonal tone তৈরি করে — scientific এবং academic writing-এ খুব সাধারণ।"
+      ],
+      "examples": [
+        { "en": "Unknown: 'My wallet was stolen at the Kolkata Book Fair.' (who? unknown)", "bn": "অজানা: 'কলকাতা বইমেলায় আমার মানিব্যাগ চুরি হয়েছে।' (কে? অজানা)" },
+        { "en": "Obvious: 'The train tickets can be booked online.' (by passengers — obvious)", "bn": "স্পষ্ট: 'ট্রেনের টিকিট অনলাইনে বুক করা যায়।' (যাত্রীদের দ্বারা — স্পষ্ট)" },
+        { "en": "Unimportant: 'The meeting has been postponed until next week.'", "bn": "গুরুত্বহীন: 'মিটিং আগামী সপ্তাহ পর্যন্ত স্থগিত করা হয়েছে।'" },
+        { "en": "General: 'Sanskrit is taught in many Indian schools.'", "bn": "সাধারণ: 'অনেক ভারতীয় স্কুলে সংস্কৃত পড়ানো হয়।'" },
+        { "en": "Important agent: 'The song 'Vande Mataram' was written by Bankim Chandra Chattopadhyay.'", "bn": "গুরুত্বপূর্ণ agent: "'বন্দে মাতরম' গানটি বঙ্কিমচন্দ্র চট্টোপাধ্যায় লিখেছিলেন।"" },
+        { "en": "Instrument: 'The letter was written with a fountain pen.'", "bn": "Instrument: 'চিঠিটি ফাউন্টেন পেন দিয়ে লেখা হয়েছিল।'" }
+      ],
+      "tips": "Agentless passive সবচেয়ে বেশি ব্যবহৃত হয়। মনে রাখবে: 'by-phrase' শুধু যোগ করো যখন agent জানা important। 'My car was stolen' — agentless (কার stole করেছে জানি না)। 'The Mona Lisa was painted by Leonardo da Vinci' — agent important (লিওনার্দো দা ভিঞ্চি বিখ্যাত শিল্পী)। 'Rice is grown in West Bengal' — agentless (obvious — farmers)। সাধারণ নিয়ম: agent না জানালে বা না বললেও চললে by-phrase বাদ দাও।"
+    },
+    {
+      "name": "Choosing Between Active and Passive Voice",
+      "banglaName": "Active এবং Passive Voice-এর মধ্যে পছন্দ",
+      "definition": "The choice between active and passive voice depends on what you want to emphasize, who your audience is, and the register of your communication. Active voice is direct, dynamic, and personal — good for conversation, stories, and persuasive writing. Passive voice is indirect, formal, and objective — good for scientific writing, news, and formal reports. Overusing either can make your writing weak — active can be aggressive, passive can be evasive. Balance is key.",
+      "banglaDefinition": "Active এবং passive voice-এর মধ্যে পছন্দ নির্ভর করে আপনি কী জোর দিতে চান, আপনার শ্রোতা কে, এবং যোগাযোগের রেজিস্টার কী তার উপর। Active voice direct, dynamic, এবং personal — কথোপকথন, গল্প, এবং প্ররোচক লেখার জন্য ভালো। Passive voice indirect, formal, এবং objective — বৈজ্ঞানিক লেখা, খবর, এবং আনুষ্ঠানিক রিপোর্টের জন্য ভালো। যেকোনোটির অতিরিক্ত ব্যবহার আপনার লেখাকে দুর্বল করতে পারে — active আক্রমণাত্মক, passive এড়িয়ে যাওয়ার মতো মনে হতে পারে। ভারসাম্য ключ।",
+      "formula": "DECISION GUIDE:\n\nUse ACTIVE VOICE when:\n✓ You want to be direct and clear.\n✓ The doer is important and should be emphasized.\n✓ You are telling a story or describing an event.\n✓ You want to persuade or inspire action.\n✓ Writing informally (emails, conversation, social media).\n✓ Giving instructions or commands.\n\nUse PASSIVE VOICE when:\n✓ The doer is unknown or unimportant.\n✓ The action or receiver is more important.\n✓ Writing scientific or academic papers.\n✓ You want to be polite or indirect.\n✓ Writing news reports (who did it is less important than what happened).\n✓ The agent is obvious from context.\n\nCOMPARISON:\nActive: 'The manager approved the proposal.' (direct, clear, personal)\nPassive: 'The proposal was approved.' (focus on proposal, indirect)\n\nActive: 'We made a mistake.' (takes responsibility)\nPassive: 'A mistake was made.' (avoids blame — politician's language!)",
+      "rules": [
+        "৯০% সময় active voice ব্যবহার করো — এটি ইংরেজির natural voice।",
+        "Passive voice সংরক্ষণ করো নির্দিষ্ট ৪টি situation-এর জন্য: unknown agent, receiver-এ focus, formal context, politeness।",
+        "Academic writing-এ passive গ্রহণযোগ্য কিন্তু too much passive writing lifeless করে: 'The experiment was conducted. Data was analyzed. Results were discussed.' Mix active and passive।",
+        "Scientific writing-এ passive standard: 'The mixture was heated to 100°C.' (procedure-এ focus, scientist-এ নয়)",
+        "News reporting-এ passive সাধারণ: 'Five killed in bus accident.' (ঘটনা গুরুত্বপূর্ণ, কে killed তা নয়)",
+        "Persuasive writing-এ active বেশি শক্তিশালী: 'We must act now.' (passive: 'Action must be taken now.' — weaker)",
+        "Overusing passive 'evasive' বা 'avoiding responsibility' মনে হতে পারে। 'A mistake was made' → 'I made a mistake' (সৎ এবং direct)।"
+      ],
+      "examples": [
+        { "en": "Active (better for story): 'A young engineer from Bengaluru built this app.'", "bn": "Active (গল্পের জন্য ভালো): 'বেঙ্গালুরুর একজন তরুণ ইঞ্জিনিয়ার এই অ্যাপটি তৈরি করেছে।'" },
+        { "en": "Passive (better for news): 'A new app was developed to help farmers.'", "bn": "Passive (খবরের জন্য ভালো): 'কৃষকদের সাহায্য করার জন্য একটি নতুন অ্যাপ তৈরি করা হয়েছে।'" },
+        { "en": "Active (persuasive): 'We can solve this problem together.'", "bn": "Active (প্ররোচক): 'আমরা একসাথে এই সমস্যার সমাধান করতে পারি।'" },
+        { "en": "Passive (academic): 'The study was conducted over a period of six months.'", "bn": "Passive (academic): 'অধ্যয়নটি ছয় মাসের সময়কাল ধরে পরিচালিত হয়েছিল।'" },
+        { "en": "Active (direct): 'You must submit the form by Friday.'", "bn": "Active (সরাসরি): 'তোমাকে শুক্রবারের মধ্যে ফর্ম জমা দিতে হবে।'" },
+        { "en": "Passive (polite): 'The form must be submitted by Friday.'", "bn": "Passive (ভদ্র): 'ফর্মটি শুক্রবারের মধ্যে জমা দিতে হবে।'" }
+      ],
+      "tips": "Active vs Passive বাছাই করার সময় ৩টি প্রশ্ন মনে রাখবে: (১) 'কে action করছে?' — যদি এটি গুরুত্বপূর্ণ, active ব্যবহার করো। (২) 'Action-এর receiver কি doer-এর চেয়ে গুরুত্বপূর্ণ?' — যদি হ্যাঁ, passive ব্যবহার করো। (৩) 'এটি কি formal/academic context?' — যদি হ্যাঁ, passive গ্রহণযোগ্য। Default = active। Passive = special tool — specific reason থাকলেই ব্যবহার করো। Too much passive writing boring এবং unclear হয়।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "'The letter was wrote by Ravi.'",
+      "correct": "'The letter was written by Ravi.'",
+      "explanation": "Passive voice-এ main verb সবসময় past participle (V3) হয়। 'Wrote' = past simple (V2), 'Written' = past participle (V3)। 'Was wrote' (✗) → 'Was written' (✓)। মনে রাখবে: passive = be verb + V3। 'Was build' (✗) → 'Was built' (✓)। 'Is take' (✗) → 'Is taken' (✓)। 'Will be do' (✗) → 'Will be done' (✓)। V2 (past simple) এবং V3 (past participle) আলাদা — V2 passive-এ ব্যবহার হয় না। Irregular verbs-এর V3 forms মুখস্থ করো: write/wrote/written, take/took/taken, eat/ate/eaten, see/saw/seen, go/went/gone।"
+    },
+    {
+      "wrong": "'The accident was happened yesterday.'",
+      "correct": "'The accident happened yesterday.' (Active — no passive possible)",
+      "explanation": "'Happen' একটি intransitive verb — এর object নেই, তাই passive করা যায় না। 'Was happened' (✗) → 'Happened' (✓)। অন্যান্য intransitive verbs: arrive, go, come, sleep, cry, laugh, die, live, fall, sit, stand, lie, rise, exist, occur। এগুলোর passive হয় না। 'The event was occurred' (✗) → 'The event occurred' (✓)। 'He was died' (✗) → 'He died' (✓)। 'She was arrived' (✗) → 'She arrived' (✓)। Intransitive verb চিনতে: verb-এর পরে object বসে কিনা দেখো। 'Something happens' — object নেই → no passive।"
+    },
+    {
+      "wrong": "'English is speaked all over the world.'",
+      "correct": "'English is spoken all over the world.'",
+      "explanation": "'Speak' একটি irregular verb — past participle 'spoken', 'speaked' নয়। Regular verb-এ -ed যোগ হয় (walk/walked, play/played), কিন্তু irregular verb-এর V3 আলাদা মুখস্থ করতে হবে। Common irregular past participles: speak/spoken, write/written, eat/eaten, take/taken, break/broken, choose/chosen, drive/driven, ride/ridden, sing/sung, swim/swum। 'Speaked' কোনো valid word নয়। List of irregular verbs মুখস্থ করো — বিশেষ করে যেগুলো passive-এ ঘন ঘন ব্যবহার হয় (spoken, written, built, made, done, taken, given, seen, known, grown)।"
+    },
+    {
+      "wrong": "'The new bridge is building since 2023.' (should be passive)",
+      "correct": "'The new bridge has been under construction since 2023.' or 'The new bridge is being built since last year.' (but this is awkward — better: 'The new bridge is under construction.')",
+      "explanation": "কিছু verb-এর passive form 'being + V3' দরকার। 'The bridge is building' (✗) — bridge নিজে building করছে না, building হচ্ছে। 'The bridge is being built' (✓)। 'The food is cooking' বলা যায় (active meaning, food cook itself?), কিন্তু সাধারণত 'being + V3' বেশি সঠিক। 'The book is reading' (✗) → 'The book is being read' (✓)। 'The house is constructing' (✗) → 'The house is being constructed' (✓)। Continuous passive = is/are/was/were + being + V3।"
+    },
+    {
+      "wrong": "'You are requested to please be seated.'",
+      "correct": "'You are requested to be seated.' or 'Please be seated.' (not both)",
+      "explanation": "'Requested' এবং 'please' একই অর্থ — redundant। 'You are requested to please be seated' (✗) — 'requested' ই polite, 'please'-ও polite — double politeness। Correct: 'You are requested to be seated' (formal) বা 'Please be seated' (less formal) বা 'Please take your seat'। একইভাবে: 'You are requested to please fill the form' → 'Please fill the form' বা 'You are requested to fill the form'। Double politeness এড়িয়ে চলো।"
+    },
+    {
+      "wrong": "'I was born in Kolkata.' — This is actually correct! But it looks passive.",
+      "correct": "'I was born in Kolkata.' is CORRECT. This is a passive structure, but 'born' is a special case.",
+      "explanation": "'I was born in Kolkata' সম্পূর্ণ সঠিক। 'Born' (bear-এর past participle) সবসময় passive-এ ব্যবহৃত হয়: 'I was born', 'He was born', 'They were born'। 'I born in Kolkata' (✗) — 'bore' বা 'born' active হিসেবে ব্যবহার হয় না এখানে। 'Birth' সম্পর্কিত সবসময় passive: 'Where were you born?' 'She was born on 26th January.' 'The baby was born at 3 AM.' 'Be born' একটি fixed passive expression — এর active form নেই (সম্ভবত: 'My mother bore me' = old-fashioned)।"
+    },
+    {
+      "wrong": "'It is raining outside. The match can be cancelled.' — Correct meaning but could be clearer.",
+      "correct": "'It is raining outside. The match might be cancelled.' or 'The match could be cancelled.'",
+      "explanation": "'Can be' সম্ভাব্যতা বোঝায় না — 'can' = ability/hability. 'Can be cancelled' = এটি বাতিল করা সম্ভব (is possible to cancel). 'Might be cancelled' / 'could be cancelled' = এটি বাতিল হতে পারে (possible that it will happen). সম্ভাব্যতা বোঝাতে 'can' নয়, 'may/might/could' ব্যবহার করো। 'Can be' সাধারণত general possibility: 'These problems can be solved easily.' (সাধারণভাবে)। 'May be postponed' = specific situation-এ সম্ভাবনা: 'The meeting may be postponed due to the strike.'"
+    },
+    {
+      "wrong": "'The project is needed to be completed by Friday.' (Double passive — awkward)",
+      "correct": "'The project needs to be completed by Friday.' or 'The project must be completed by Friday.'",
+      "explanation": "'Is needed to be completed' — double passive (is needed + to be completed), যা grammatically সম্ভব কিন্তু stylistically awkward। 'Needs to be completed' natural। 'Needs + V-ing' или 'Needs + to be + V3': 'The car needs washing' / 'The car needs to be washed' (উভয়ই সঠিক)। 'The work is required to be done' × → 'The work must be done' ✓ বা 'The work needs to be done' ✓। Double passive avoid করো — sentence unnecessary complicated এবং weak হয়।"
+    },
+    {
+      "wrong": "'The thief was caught by the police.' — This is correct. But many learners overuse 'by'.",
+      "correct": "'The thief was caught by the police.' (CORRECT if agent is important) or 'The thief was caught.' (if agent is obvious)",
+      "explanation": "'By the police' যোগ করা সঠিক যদি police-এর নাম গুরুত্বপূর্ণ হয়। কিন্তু সাধারণত 'thief caught' বললেই বোঝা যায় police ধরেছে। 'The thief was caught by the police' → ঠিক আছে, কিন্তু 'The thief was caught' যথেষ্ট এবং cleaner। 'Rice is grown by farmers' → unnecessary — 'Rice is grown in West Bengal' better। 'English is spoken by people' → 'English is spoken' sufficient। 'By-phrase' শুধু যোগ করো যখন agent new বা surprising না হলে omit করো।"
+    },
+    {
+      "wrong": "'He was died in a car accident.'",
+      "correct": "'He died in a car accident.' (active — 'die' intransitive, no passive)",
+      "explanation": "'Die' একটি intransitive verb — passive হয় না। 'Was died' (✗) → 'Died' (✓)। 'Many people were died' (✗) → 'Many people died' (✓) বা 'Many people were killed' (✓ — 'kill' transitive, তাই passive সম্ভব)। 'The soldier was died' (✗) → 'The soldier died' (✓) বা 'The soldier was killed in action' (✓)। 'Die' এবং 'kill'-এর পার্থক্য: 'die' = মরা (intransitive, no object, no passive), 'kill' = হত্যা করা (transitive, object লাগে, passive সম্ভব)। 'He killed' → কাকে? 'He killed a snake.' 'A snake was killed.'"
+    }
+  ]
 }
