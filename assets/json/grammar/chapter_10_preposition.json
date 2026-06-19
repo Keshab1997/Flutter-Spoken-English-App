@@ -1,10 +1,267 @@
 {
   "chapter": 10,
   "level": "Beginner",
-  "title": "Preposition",
+  "title": "Preposition (পদান্বয়ী অব্যয়)",
   "icon": "near_me",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "A preposition is a word that shows the relationship between a noun (or pronoun) and another word in the sentence. Prepositions usually indicate location (in, on, at), direction (to, towards, into), time (before, after, during), or other relationships (of, for, with, about, by). A preposition is always followed by a noun or pronoun called its object. Mastering prepositions is key to speaking natural English.",
+  "banglaDescription": "Preposition (পদান্বয়ী অব্যয়) হলো সেই শব্দ যা একটি noun (বা pronoun) এবং বাক্যের অন্য শব্দের মধ্যে সম্পর্ক দেখায়। Preposition সাধারণত অবস্থান (in, on, at), দিক (to, towards, into), সময় (before, after, during), বা অন্য সম্পর্ক (of, for, with, about, by) নির্দেশ করে। Preposition-এর পরে সবসময় একটি noun বা pronoun (তার object) থাকে। Preposition আয়ত্ত করা প্রাকৃতিক ইংরেজি বলার চাবিকাঠি।",
+  "topics": [
+    {
+      "name": "What is a Preposition?",
+      "banglaName": "পদান্বয়ী অব্যয় কী?",
+      "definition": "A preposition is a word that shows the relationship between a noun/pronoun and another word in the sentence. The noun or pronoun that follows a preposition is called its object. Together, the preposition, its object, and any modifiers form a prepositional phrase. Prepositions are essential for expressing location, time, direction, and other relationships.",
+      "banglaDefinition": "Preposition (পদান্বয়ী অব্যয়) হলো সেই শব্দ যা একটি noun/pronoun এবং বাক্যের অন্য শব্দের মধ্যে সম্পর্ক দেখায়। Preposition-এর পরে যে noun বা pronoun থাকে তাকে তার object বলে। Preposition, তার object, এবং যেকোনো modifier একসাথে একটি prepositional phrase গঠন করে। অবস্থান, সময়, দিক এবং অন্যান্য সম্পর্ক প্রকাশের জন্য preposition অপরিহার্য।",
+      "formula": "Preposition + Noun/Pronoun + (modifiers) = Prepositional Phrase\n\nin the room\non the table\nat the station\nwith my friend\n\n'Preposition shows:\nPlace: The book is on the table.\nTime: I will meet you at 5 PM.\nDirection: Walk towards the India Gate.\nOther: This is a gift for you.'",
+      "rules": [
+        "Preposition-এর পরে সবসময় একটি noun বা pronoun (object) থাকে।",
+        "Preposition + object = Prepositional Phrase।",
+        "Preposition-এর object noun, pronoun, gerund, বা noun phrase হতে পারে।",
+        "একটি বাক্যে একাধিক prepositional phrase থাকতে পারে।",
+        "Preposition সাধারণত বাক্যের শেষে বসে না (formal English-এ), কিন্তু কথোপকথনে বসতে পারে।",
+        "কিছু verb-এর সাথে নির্দিষ্ট preposition ব্যবহৃত হয়: listen to, look at, wait for, depend on।",
+        "কিছু adjective-এর সাথে নির্দিষ্ট preposition ব্যবহৃত হয়: interested in, afraid of, good at।"
+      ],
+      "examples": [
+        { "en": "Place: 'The Taj Mahal is in Agra.'", "bn": "স্থান: 'তাজমহল আগ্রায় অবস্থিত।'" },
+        { "en": "Time: 'The train arrives at 6 PM.'", "bn": "সময়: 'ট্রেনটি সন্ধ্যা ৬টায় পৌঁছায়।'" },
+        { "en": "Direction: 'Walk towards the Howrah Bridge.'", "bn": "দিক: 'হাওড়া ব্রিজের দিকে হাঁটুন।'" },
+        { "en": "Other: 'This sari is for my mother.'", "bn": "অন্যান্য: 'এই শাড়িটি আমার মায়ের জন্য।'" },
+        { "en": "Object relationship: 'She is afraid of spiders.'", "bn": "Obj সম্পর্ক: 'সে মাকড়সাকে ভয় পায়।'" },
+        { "en": "Multiple PPs: 'I met her at the metro station in the morning.'", "bn": "একাধিক PP: 'আমি সকালে মেট্রো স্টেশনে তার সাথে দেখা করলাম।'" }
+      ],
+      "tips": "Preposition চেনার সহজ উপায়: একটি 'box' এবং 'mouse' কল্পনা করো। মাউস বক্সের in (ভিতরে), on (উপরে), under (নিচে), behind (পিছনে), beside (পাশে) ইত্যাদি হতে পারে — এই শব্দগুলোকেই preposition বলে। Preposition ছাড়া বাক্যের সম্পর্ক বোঝা কঠিন।"
+    },
+    {
+      "name": "Prepositions of Place: In, On, At",
+      "banglaName": "স্থানবাচক Preposition: In, On, At",
+      "definition": "In, on, and at are the most common prepositions of place. 'In' is used for enclosed spaces and larger areas (in Kolkata, in a room). 'On' is used for surfaces (on the table, on the wall). 'At' is used for specific points or addresses (at the bus stop, at 123 Park Street). These three prepositions cause the most confusion for learners.",
+      "banglaDefinition": "In, on, এবং at হল সবচেয়ে সাধারণ place preposition। 'In' বদ্ধ স্থান এবং বড় এলাকার জন্য (কলকাতায়, ঘরে)। 'On' পৃষ্ঠ বা সারফেসের জন্য (টেবিলের ওপর, দেয়ালে)। 'At' নির্দিষ্ট পয়েন্ট বা ঠিকানার জন্য (বাস স্টপে, ১২৩ পার্ক স্ট্রিটে)। এই তিনটি preposition শিক্ষার্থীদের জন্য সবচেয়ে বেশি বিভ্রান্তিকর।",
+      "formula": "IN (inside/enclosed): in Kolkata, in a room, in the car, in a park, in India\nON (surface): on the table, on the wall, on the floor, on the page\nAT (specific point): at the bus stop, at the entrance, at the door, at 123 Park Street\n\nExamples:\n'I live in Kolkata.'\n'The book is on the table.'\n'I will wait for you at the metro station.'",
+      "rules": [
+        "'In' বড় এলাকা/অঞ্চলের জন্য: in India, in Kolkata, in Park Street area।",
+        "'In' বদ্ধ স্থানের জন্য: in the room, in the car, in the elevator, in the temple।",
+        "'In' শহর, দেশ, মহাদেশের নামের আগে: in Mumbai, in India, in Asia।",
+        "'On' সারফেসের জন্য: on the table, on the wall, on the floor, on the roof।",
+        "'On' রাস্তা/সড়কের নামের আগে (address): on Park Street, on MG Road।",
+        "'At' নির্দিষ্ট পয়েন্ট/ঠিকানার জন্য: at the door, at the bus stop, at 123 Main Road।",
+        "'At' ভবনের নামের আগে (function দেখাতে): at the airport, at the station, at the cinema।",
+        "'Work' এবং 'school'-এর আগে 'at': at work, at school, at the office।"
+      ],
+      "examples": [
+        { "en": "In: 'I live in a small flat in Kolkata.'", "bn": "In: 'আমি কলকাতার একটি ছোট ফ্ল্যাটে থাকি।'" },
+        { "en": "In: 'The festival is celebrated in many parts of India.'", "bn": "In: 'উৎসবটি ভারতের অনেক জায়গায় পালিত হয়।'" },
+        { "en": "On: 'The keys are on the kitchen counter.'", "bn": "On: 'চাবিগুলো রান্নাঘরের কাউন্টারের ওপর আছে।'" },
+        { "en": "On: 'Her house is on Ballygunge Circular Road.'", "bn": "On: 'তার বাড়ি বালিগঞ্জ সার্কুলার রোডে।'" },
+        { "en": "At: 'I will meet you at the entrance of Victoria Memorial.'", "bn": "At: 'আমি ভিক্টোরিয়া মেমোরিয়ালের প্রবেশপথে তোমার সাথে দেখা করব।'" },
+        { "en": "At: 'She is at the airport waiting for her flight to Delhi.'", "bn": "At: 'সে দিল্লি行的 ফ্লাইটের জন্য বিমানবন্দরে অপেক্ষা করছে।'" }
+      ],
+      "tips": "In/On/At মনে রাখার সহজ উপায়: **In = বড় এলাকা/বদ্ধ স্থান, On = সারফেস/রাস্তা, At = নির্দিষ্ট পয়েন্ট**। একটা pyramid কল্পনা করো: শীর্ষে 'at' (সবচেয়ে নির্দিষ্ট), মাঝে 'on', নিচে 'in' (সবচেয়ে সাধারণ)। যেমন: in India → on Park Street → at 123 Park Street।"
+    },
+    {
+      "name": "Prepositions of Time: In, On, At",
+      "banglaName": "সময়বাচক Preposition: In, On, At",
+      "definition": "In, on, and at are also used as prepositions of time. 'In' is used for longer periods (months, years, seasons, centuries). 'On' is used for specific days and dates. 'At' is used for specific times and points in time. Learning these three will help you express time accurately.",
+      "banglaDefinition": "In, on, এবং at সময়বাচক preposition হিসেবেও ব্যবহৃত হয়। 'In' দীর্ঘ সময়ের জন্য (মাস, বছর, ঋতু, শতাব্দী)। 'On' নির্দিষ্ট দিন এবং তারিখের জন্য। 'At' নির্দিষ্ট সময় এবং সময়ের বিন্দুর জন্য। এই তিনটি শেখা সময় সঠিকভাবে প্রকাশ করতে সাহায্য করে।",
+      "formula": "IN (long periods): in March, in 2024, in summer, in the 21st century\nON (days/dates): on Monday, on 15th August, on Diwali, on my birthday\nAT (specific time): at 5 o'clock, at midnight, at noon, at sunset\n\nExamples:\n'I was born in 1999.'\n'We celebrate Independence Day on 15th August.'\n'The train departs at 6 PM.'",
+      "rules": [
+        "'In' মাসের নামের আগে: in January, in March, in December।",
+        "'In' বছরের নামের আগে: in 1998, in 2024, in the 21st century।",
+        "'In' ঋতুর নামের আগে: in summer, in winter, in the monsoon।",
+        "'In' ভবিষ্যতে সময় বোঝাতে: in an hour, in two days, in a week।",
+        "'On' দিনের নামের আগে: on Monday, on Friday evening।",
+        "'On' তারিখের আগে: on 15th August, on 26th January (Republic Day)।",
+        "'On' বিশেষ দিনের আগে: on Diwali, on Holi, on my birthday।",
+        "'At' নির্দিষ্ট সময়ের আগে: at 5 PM, at midnight, at noon, at sunrise, at sunset।"
+      ],
+      "examples": [
+        { "en": "In: 'The monsoon season starts in June in Mumbai.'", "bn": "In: 'মুম্বাইয়ে জুন মাসে বর্ষাকাল শুরু হয়।'" },
+        { "en": "In: 'I will complete my studies in two years.'", "bn": "In: 'আমি দুই বছরে আমার পড়াশোনা শেষ করব।'" },
+        { "en": "On: 'We celebrate Diwali on 31st October this year.'", "bn": "On: 'আমরা এই বছর ৩১শে অক্টোবর দিওয়ালি উদযাপন করব।'" },
+        { "en": "On: 'The bookstore is closed on Sundays.'", "bn": "On: 'রবিবার বইয়ের দোকান বন্ধ থাকে।'" },
+        { "en": "At: 'The Durga Puja pandal opens at 8 AM.'", "bn": "At: 'দুর্গাপূজার প্যান্ডেল সকাল ৮টায় খোলে।'" },
+        { "en": "At: 'The train from Howrah arrives at midnight.'", "bn": "At: 'হাওড়া থেকে ট্রেনটি মধ্যরাতে পৌঁছায়।'" }
+      ],
+      "tips": "Time-এ In/On/At মনে রাখার কৌশল: **At = সবচেয়ে ছোট (ঘন্টা/মিনিট), On = মাঝারি (দিন/তারিখ), In = সবচেয়ে বড় (মাস/বছর/ঋতু)**। যেমন: at 5 PM → on Monday → in March। 'In the morning/afternoon/evening' কিন্তু 'at night' — এই ব্যতিক্রমটি মনে রাখবে।"
+    },
+    {
+      "name": "Prepositions of Movement and Direction",
+      "banglaName": "গতি ও দিকবাচক Preposition",
+      "definition": "Prepositions of movement and direction show how something moves from one place to another. Common ones include to, towards, into, onto, from, out of, through, across, along, around, up, down, over, under, and past. These prepositions help describe journeys, routes, and directions.",
+      "banglaDefinition": "গতি ও দিকবাচক preposition দেখায় কিভাবে কিছু এক স্থান থেকে অন্য স্থানে চলে। সাধারণগুলো: to, towards, into, onto, from, out of, through, across, along, around, up, down, over, under, past। এই prepositions ভ্রমণ, পথ, এবং দিক বর্ণনা করতে সাহায্য করে।",
+      "formula": "To (direction): 'I am going to the Taj Mahal.'\nTowards (direction, not reaching): 'Walk towards the India Gate.'\nInto (entering): 'She went into the temple.'\nOnto (moving to surface): 'The cat jumped onto the roof.'\nFrom (origin): 'This train is from Howrah.'\nOut of (exiting): 'He came out of the station.'\nThrough (from one side to another): 'The metro goes through the city.'\nAcross (from one side to other): 'Walk across the Howrah Bridge.'\nAlong (following a line): 'We walked along Marine Drive.'\nAround (circling): 'The bus goes around the market.'",
+      "rules": [
+        "'To' একটি স্থান থেকে অন্য স্থানে যাওয়া বোঝায়: 'I go to school by bus.'",
+        "'Towards' কোনো দিকে যাওয়া বোঝায় কিন্তু পৌঁছানো নয়: 'She walked towards the Red Fort.'",
+        "'Into' ভিতরে প্রবেশ: 'He went into the cinema hall.'",
+        "'Out of' বাইরে আসা: 'She came out of the metro station.'",
+        "'Through' ভিতর দিয়ে পার হওয়া: 'The Ganges flows through Varanasi.'",
+        "'Across' এক পাশ থেকে অন্য পাশে: 'Let's swim across the river.'",
+        "'Along' বরাবর: 'We walked along the Ganges ghats.'",
+        "'Around' চারপাশে/ঘুরে: 'The auto-rickshaw went around the roundabout.'"
+      ],
+      "examples": [
+        { "en": "To: 'I am going to the Gateway of India.'", "bn": "To: 'আমি গেটওয়ে অফ ইন্ডিয়া যাচ্ছি।'" },
+        { "en": "Towards: 'The procession moved towards the temple.'", "bn": "Towards: 'শোভাযাত্রাটি মন্দিরের দিকে এগিয়ে গেল।'" },
+        { "en": "Into: 'She walked into the crowded market.'", "bn": "Into: 'সে ভিড় বাজারের ভিতরে গেল।'" },
+        { "en": "Through: 'The local train passes through many stations.'", "bn": "Through: " },
+        { "en": "Across: 'The Howrah Bridge connects Kolkata across the Hooghly river.'", "bn": "Across: " },
+        { "en": "Along: 'We took a morning walk along Marine Drive in Mumbai.'", "bn": "Along: 'আমরা মুম্বাইতে মেরিন ড্রাইভ বরাবর সকালে হাঁটলাম।'" }
+      ],
+      "tips": "Movement preposition শেখার সময় ৩টি জোড়া মনে রাখবে: **To/From** (যাওয়া/আসা), **Into/Out of** (ভিতরে/বাইরে), **Onto/Off** (উপরে/নিচে)। 'To' = direction (I go TO Delhi), 'Towards' = direction without reaching (I walk TOWARDS Delhi but may not reach)।"
+    },
+    {
+      "name": "Prepositions of Time: Before, After, During, Since, For",
+      "banglaName": "সময়বাচক Preposition: Before, After, During, Since, For",
+      "definition": "These prepositions express more complex time relationships. 'Before' and 'after' show sequence. 'During' shows when something happens within a period. 'Since' shows a starting point continuing to now. 'For' shows duration. Understanding these will help you express time more precisely.",
+      "banglaDefinition": "এই prepositions আরও জটিল সময় সম্পর্ক প্রকাশ করে। 'Before' এবং 'after' ক্রম দেখায়। 'During' দেখায় একটি সময়ের মধ্যে কিছু ঘটে। 'Since' একটি শুরুর বিন্দু দেখায় যা এখন পর্যন্ত চলছে। 'For' সময়কাল দেখায়। এগুলো বোঝা সময় আরও সুনির্দিষ্টভাবে প্রকাশ করতে সাহায্য করে।",
+      "formula": "Before (আগে): 'I will meet you before the movie.'\nAfter (পরে): 'Let's have chai after the class.'\nDuring (মধ্যে): 'It rained during the night.'\nSince (থেকে): 'I have lived in Kolkata since 2015.'\nFor (ধর): 'I have lived in Kolkata for 8 years.'\n\nKey difference:\nSince + point in time (since Monday, since 2015)\nFor + duration (for two hours, for 8 years)",
+      "rules": [
+        "'Before' একটি event-এর আগে: 'Wash your hands before eating.'",
+        "'After' একটি event-এর পরে: 'We went for a walk after dinner.'",
+        "'During' একটি period-এর মধ্যে: 'During the monsoon, it rains heavily in Mumbai.'",
+        "'Since' একটি নির্দিষ্ট সময় বিন্দু থেকে (present perfect বা present perfect continuous tense-এর সাথে): 'I have worked here since 2020.'",
+        "'For' একটি সময়কাল (সব tense-এর সাথে): 'I worked there for two years.'",
+        "'Since' এবং 'for' এর পার্থক্য: since + point (since January), for + duration (for three months)।",
+        "'From...to/till/until' একটি range দেখায়: 'The shop is open from 10 AM to 8 PM.'"
+      ],
+      "examples": [
+        { "en": "Before: 'I always have tea before going to work.'", "bn": "Before: 'আমি কাজে যাওয়ার আগে সবসময় চা খাই।'" },
+        { "en": "After: 'We visited the Red Fort after lunch.'", "bn": "After: 'আমরা লাঞ্চের পরে লাল কেল্লা দেখতে গেলাম।'" },
+        { "en": "During: 'During Durga Puja, Kolkata comes alive with lights.'", "bn": "During: 'দুর্গাপূজার সময় কলকাতা আলোয় ভরে ওঠে।'" },
+        { "en": "Since: 'I have been learning Kathak since I was six years old.'", "bn": "Since: 'আমি ছয় বছর বয়স থেকে কথক শিখছি।'" },
+        { "en": "For: 'I have been waiting for the bus for half an hour.'", "bn": "For: 'আমি আধা ঘন্টা ধরে বাসের জন্য অপেক্ষা করছি।'" },
+        { "en": "From...to: 'The Kolkata Book Fair runs from January to February.'", "bn": "From...to: 'কলকাতা বইমেলা জানুয়ারি থেকে ফেব্রুয়ারি পর্যন্ত চলে।'" }
+      ],
+      "tips": "Since vs For মনে রাখার সবচেয়ে সহজ উপায়: 'Since' = একটি নির্দিষ্ট বিন্দু (since 2020, since Monday, since childhood) — এটা একটা STARTING POINT। 'For' = একটি সময়কাল (for 3 years, for 2 hours, for a long time) — এটা একটা DURATION। Since = কখন শুরু? For = কতক্ষণ? বুঝলে পার্থক্যটা পরিষ্কার।"
+    },
+    {
+      "name": "Prepositions with Verbs (Verb + Preposition)",
+      "banglaName": "ক্রিয়া + Preposition (Fixed Combinations)",
+      "definition": "Many English verbs are followed by specific prepositions. These combinations are fixed and cannot be changed. Common verb-preposition combinations include: listen to, look at, wait for, depend on, believe in, belong to, consist of, apply for, search for, pay for, laugh at, worry about, think about, talk about, and many more.",
+      "banglaDefinition": "অনেক ইংরেজি verb-এর পরে নির্দিষ্ট preposition থাকে। এই সমন্বয়গুলো fixed এবং পরিবর্তন করা যায় না। সাধারণ verb-preposition combinations: listen to, look at, wait for, depend on, believe in, belong to, consist of, apply for, search for, pay for, laugh at, worry about, think about, talk about, এবং আরও অনেক।",
+      "formula": "Verb + Preposition (fixed pair)\n\nlisten + to → 'Listen to this Bengali song.'\nlook + at → 'Look at the Howrah Bridge.'\nwait + for → 'I am waiting for the train.'\nbelieve + in → 'I believe in hard work.'\ndepend + on → 'It depends on the weather.'\n\nask + for → 'She asked for a glass of water.'\npay + for → 'I paid for the meal.'\nsearch + for → 'He is searching for a job in Mumbai.'",
+      "rules": [
+        "Verb + preposition combination-এর অর্থ dictionary-তে memorized করতে হয়।",
+        "'Listen' → 'listen to' (not 'listen at'): 'Listen to the bhajan carefully.'",
+        "'Wait' → 'wait for' (not 'wait on' in this context): 'Wait for me at the station.'",
+        "'Search' → 'search for' (not 'search' alone with object): 'I am searching for my keys.'",
+        "'Pay' → 'pay for' (something): 'I paid for the tickets.' কিন্তু 'pay' দিয়ে ব্যক্তির জন্য 'to': 'I paid the driver.'",
+        "'Explain' → 'explain to' (not 'explain me'): 'Please explain this to me.'",
+        "'Thank' → 'thank for': 'Thank you for your help.'",
+        "কিছু verb-এর preposition change হলে অর্থ change হয়: look at (দেখা), look for (খোঁজা), look after (যত্ন নেওয়া), look into (তদন্ত করা)।"
+      ],
+      "examples": [
+        { "en": "Listen to: 'Listen to the aarti at the Ganges.'", "bn": "Listen to: 'গঙ্গায় আরতি শোনো।'" },
+        { "en": "Look at: 'Look at the beautiful mehndi on her hands.'", "bn": "Look at: 'তার হাতের সুন্দর মেহেদি দেখো।'" },
+        { "en": "Wait for: 'We waited for the darshan for over an hour.'", "bn": "Wait for: 'আমরা এক ঘন্টার বেশি দর্শনের জন্য অপেক্ষা করলাম।'" },
+        { "en": "Believe in: 'Many people in India believe in karma.'", "bn": "Believe in: 'ভারতে অনেক মানুষ কর্মে বিশ্বাস করে।'" },
+        { "en": "Apply for: 'She applied for a job at the Mumbai office.'", "bn": "Apply for: 'সে মুম্বাই অফিসে একটি চাকরির জন্য আবেদন করেছে।'" },
+        { "en": "Worry about: 'Don't worry about the train — it will be on time.'", "bn": "Worry about: 'ট্রেন নিয়ে চিন্তা করো না — এটি সময়মতো আসবে।'" }
+      ],
+      "tips": "Verb + Preposition combinations শেখার সবচেয়ে ভালো উপায়: এগুলোকে group করে শেখো, আলাদাভাবে না। যেমন 'look' দিয়ে সবগুলো: look at (দেখা), look for (খোঁজা), look after (যত্ন নেওয়া), look into (তদন্ত করা), look forward to (প্রতীক্ষা করা)। প্রতিটি combination একটি ভিন্ন অর্থ তৈরি করে।"
+    },
+    {
+      "name": "Prepositions with Adjectives (Adjective + Preposition)",
+      "banglaName": "বিশেষণ + Preposition (Fixed Combinations)",
+      "definition": "Many adjectives are also followed by specific prepositions. Common adjective-preposition combinations include: interested in, afraid of, good at, bad at, famous for, proud of, fond of, responsible for, similar to, different from, married to, and excited about. These combinations must be memorized as fixed expressions.",
+      "banglaDefinition": "অনেক adjective-এর পরেও নির্দিষ্ট preposition থাকে। সাধারণ adjective-preposition combinations: interested in, afraid of, good at, bad at, famous for, proud of, fond of, responsible for, similar to, different from, married to, excited about। এই সমন্বয়গুলো fixed expression হিসেবে memorize করতে হবে।",
+      "formula": "Adjective + Preposition (fixed pair)\n\ninterested + in → 'I am interested in Indian classical music.'\nafraid + of → 'She is afraid of dogs.'\ngood + at → 'Arjun is good at cricket.'\nfamous + for → 'Kolkata is famous for its street food.'\nproud + of → 'We are proud of our culture.'\n\nsimilar + to → 'This temple is similar to the one in Odisha.'\ndifferent + from → 'North Indian food is different from South Indian food.'\nmarried + to → 'She is married to a doctor from Chennai.'",
+      "rules": [
+        "Adjective + Preposition combination fixed — পরিবর্তন করা যায় না।",
+        "'Interested' → 'interested in' (not 'interested about'): 'I am interested in history.'",
+        "'Afraid' → 'afraid of': 'Many children are afraid of the dark.'",
+        "'Good'/'bad'/'excellent'/'terrible' → 'at': 'She is excellent at Bharatanatyam.'",
+        "'Famous' → 'famous for': 'Hyderabad is famous for biryani.'",
+        "'Responsible' → 'responsible for': 'The conductor is responsible for the tickets.'",
+        "'Similar' → 'similar to': 'Your sari is similar to mine.'",
+        "'Different' → 'different from' (BrE) or 'different than' (AmE)।"
+      ],
+      "examples": [
+        { "en": "Interested in: 'I am very interested in Indian mythology.'", "bn": "Interested in: 'আমি ভারতীয় পৌরাণিক কাহিনীতে খুব আগ্রহী।'" },
+        { "en": "Afraid of: 'My grandmother is afraid of flying.'", "bn": "Afraid of: 'আমার দাদী উড়তে ভয় পান।'" },
+        { "en": "Famous for: 'Varanasi is famous for its ghats and temples.'", "bn": "Famous for: 'বারাণসী তার ঘাট ও মন্দিরের জন্য বিখ্যাত।'" },
+        { "en": "Proud of: 'Every Indian is proud of the country's diversity.'", "bn": "Proud of: 'প্রত্যেক ভারতীয় দেশের বৈচিত্র্যে গর্বিত।'" },
+        { "en": "Good at: 'She is very good at cooking Bengali sweets.'", "bn": "Good at: 'সে বাংলা মিষ্টি রান্নায় খুব ভালো।'" },
+        { "en": "Different from: 'The climate in Kerala is different from the climate in Rajasthan.'", "bn": "Different from: 'কেরালার জলবায়ু রাজস্থানের জলবায়ু থেকে ভিন্ন।'" }
+      ],
+      "tips": "Adjective + Preposition combinations শেখার সময় categories-এ ভাগ করে শেখো: 'of' দিয়ে: afraid of, proud of, fond of, tired of, jealous of। 'in' দিয়ে: interested in, involved in, successful in। 'at' দিয়ে: good at, bad at, excellent at, terrible at। 'for' দিয়ে: famous for, responsible for, known for, sorry for।"
+    },
+    {
+      "name": "Common Prepositional Phrases",
+      "banglaName": "প্রচলিত Prepositional Phrase",
+      "definition": "Prepositional phrases are groups of words that begin with a preposition and end with a noun or pronoun. They function as adjectives (describing a noun) or adverbs (describing a verb) in a sentence. Learning common prepositional phrases will help you sound more natural and fluent in English.",
+      "banglaDefinition": "Prepositional phrase হলো শব্দের একটি দল যা একটি preposition দিয়ে শুরু হয় এবং একটি noun বা pronoun দিয়ে শেষ হয়। এরা বাক্যে adjective (noun বর্ণনা) বা adverb (verb বর্ণনা) হিসেবে কাজ করে। সাধারণ prepositional phrases শেখা আপনাকে ইংরেজিতে আরও natural এবং fluent করে তুলবে।",
+      "formula": "Preposition + Modifier(s) + Noun/Pronoun = Prepositional Phrase\n\non the red bus\nin a small village\nwith great enthusiasm\nat the corner of the street\n\nAs adjective (answers 'which one?'):\n'The book on the table is mine.' (which book? → on the table)\n\nAs adverb (answers 'how/when/where?'):\n'She walked with confidence.' (how? → with confidence)",
+      "rules": [
+        "Prepositional phrase adjective হিসেবে কাজ করে — noun-কে describe করে।",
+        "Prepositional phrase adverb হিসেবে কাজ করে — verb-কে describe করে।",
+        "Adjective phrase noun-এর ঠিক পরে বসে: 'The temple near the river is very old.'",
+        "Adverb phrase বাক্যের বিভিন্ন জায়গায় বসতে পারে: 'In the morning, I go for a walk.'",
+        "সাধারণ prepositional phrases: in time, on time, in fact, on purpose, by chance, in trouble, at last, at least, in general, in public, on the way, out of order।",
+        "'In time' = যথাসময়ে (before deadline), 'on time' = সময়মতো (exactly at scheduled time)।",
+        "'By mistake' = ভুল করে, 'on purpose' = ইচ্ছাকৃতভাবে, 'by chance' = случайно, 'in a hurry' = তাড়াহুড়ো করে।"
+      ],
+      "examples": [
+        { "en": "Adjective: 'The man in the white kurta is my uncle.'", "bn": "Adjective: 'সাদা কুর্তার লোকটি আমার মামা।'" },
+        { "en": "Adverb: 'She completed the project with great dedication.'", "bn": "Adverb: 'সে প্রকল্পটি খুব নিষ্ঠার সাথে সম্পূর্ণ করল।'" },
+        { "en": "In time: 'We reached the station just in time to catch the train.'", "bn": "In time: 'আমরা ট্রেন ধরার জন্য সময়মতো স্টেশনে পৌঁছালাম।'" },
+        { "en": "On time: 'The Rajdhani Express always arrives on time.'", "bn": "On time: 'রাজধানী এক্সপ্রেস সবসময় সময়মতো পৌঁছায়।'" },
+        { "en": "By chance: 'I met my school friend by chance at the Kolkata Book Fair.'", "bn": "By chance: 'কলকাতা বইমেলায় случайно আমার স্কুল বন্ধুর সাথে দেখা হল।'" },
+        { "en": "In a hurry: 'He left for the airport in a hurry.'", "bn": "In a hurry: 'সে তাড়াহুড়ো করে বিমানবন্দরের উদ্দেশ্যে রওনা দিল।'" }
+      ],
+      "tips": "Prepositional phrase চেনার উপায়: একটি phrase যা preposition দিয়ে শুরু (in, on, at, with, by, for, etc.) এবং noun/pronoun দিয়ে শেষ। 'In the morning', 'on the train', 'with my family' — এগুলো সব prepositional phrase। এদের মধ্যে verb থাকে না — verb থাকলে সেটি clause হয়ে যাবে।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Confusing 'in' and 'at' for places: 'I am at Kolkata.'",
+      "correct": "'I am in Kolkata.' (city → in) 'I am at the airport in Kolkata.' (specific point → at + city → in)",
+      "explanation": "শহর/বড় এলাকার জন্য 'in' ব্যবহার হয়: in Kolkata, in Delhi, in India। 'At' শুধু নির্দিষ্ট পয়েন্ট/ঠিকানার জন্য: at the metro station, at 123 Park Street। 'I am at Kolkata' ভুল — সঠিক হলো 'I am in Kolkata'। মনে রাখবে: in = city/country, at = specific place/address।"
+    },
+    {
+      "wrong": "Confusing 'since' and 'for': 'I am learning Hindi since three years.'",
+      "correct": "'I have been learning Hindi for three years.' or 'I have been learning Hindi since 2021.'",
+      "explanation": "'Since' = একটি নির্দিষ্ট বিন্দু (since 2021, since Monday, since January)। 'For' = একটি সময়কাল (for three years, for two months, for a week)। 'Since three years' ভুল। মনে রাখবে: since + point (কখন শুরু?), for + duration (কতক্ষণ?)।"
+    },
+    {
+      "wrong": "Using 'at night' but 'in the morning' — this is correct! But wrong: 'In the night, I heard a noise.'",
+      "correct": "'At night, I heard a noise.' or 'In the morning, I heard a noise.' ('in the night' is possible but less common, 'at night' is standard)",
+      "explanation": "Standard: 'in the morning', 'in the afternoon', 'in the evening' কিন্তু 'at night'। 'In the night' কিছু নির্দিষ্ট প্রসঙ্গে ব্যবহার হয় (যেমন: 'in the dead of night') কিন্তু সাধারণত 'at night' বেশি প্রচলিত। মনে রাখবে: in the morning/afternoon/evening → at night।"
+    },
+    {
+      "wrong": "Ending a sentence with a preposition (considered informal): 'Who are you waiting for?' — This is actually fine in informal English.",
+      "correct": "Informal: 'Who are you waiting for?' Formal: 'For whom are you waiting?'",
+      "explanation": "বাক্য preposition দিয়ে শেষ করা নিয়ে বিতর্ক আছে। Formal writing-এ preposition avoidance ভালো: 'This is the book about which I told you.' কিন্তু কথোপকথনে 'This is the book I told you about' বেশি natural। দৈনন্দিন ইংরেজিতে preposition দিয়ে sentence শেষ করা সম্পূর্ণ গ্রহণযোগ্য।"
+    },
+    {
+      "wrong": "Using 'on' instead of 'in' for transportation: 'I came here on my car.'",
+      "correct": "'I came here in my car.' but 'I came here on my bike/bus/train.'",
+      "explanation": "Closed vehicles (car, taxi, auto-rickshaw) → 'in': 'I came in a taxi.' Open/public transport (bus, train, plane, bike) → 'on': 'I came on the bus.' 'On my car' ভুল — cars are enclosed। 'In the bus' বললেও হয়, তবে 'on the bus' বেশি common।"
+    },
+    {
+      "wrong": "Using 'at' instead of 'to' for destinations: 'I went at the market.'",
+      "correct": "'I went to the market.' but 'I am at the market.'",
+      "explanation": "Movement দেখাতে 'to' ব্যবহার হয়: 'I go to the temple', 'She came to the party'। 'At' অবস্থান দেখায়: 'I am at the temple', 'She is at the party'। 'I went at the market' ভুল — 'went' shows movement, so 'to' is needed। 'I am at the market' ঠিক কারণ 'am' shows position।"
+    },
+    {
+      "wrong": "Confusing 'between' and 'among': 'Share this food between the four of you.'",
+      "correct": "'Share this food among the four of you.' (among = three+) or 'Share this food between the two of you.' (between = two)",
+      "explanation": "'Between' দুই ব্যক্তি/বস্তুর জন্য: 'Between you and me, this is a secret.' 'Among' তিন বা ততোধিকের জন্য: 'The money was divided among the five siblings.' 'Between the four' — ভুল, 'among the four' সঠিক। কিন্তু 'between' ব্যবহার করা যায় যখন প্রতিটি জোড়ার সম্পর্ক বোঝায়: 'The treaty was signed between five countries.'"
+    },
+    {
+      "wrong": "Using 'on' for days but 'in' for dates: 'I was born in 15th August.'",
+      "correct": "'I was born on 15th August.'",
+      "explanation": "নির্দিষ্ট দিন/তারিখের জন্য 'on': on 15th August, on Monday, on Diwali, on my birthday। মাস/বছরের জন্য 'in': in August, in 1995। 'In 15th August' ভুল — সঠিক হলো 'on 15th August'। মনে রাখবে: on + day/date, in + month/year/season।"
+    },
+    {
+      "wrong": "Dropping 'to' after certain verbs: 'I replied him yesterday.'",
+      "correct": "'I replied to him yesterday.' or 'I answered him yesterday.'",
+      "explanation": "'Reply' → 'reply to' (someone): 'She replied to my message.' 'Answer' → 'answer' (without 'to'): 'She answered my question.' 'Discuss' → 'discuss' (without 'about'): 'We discussed the matter.' (not 'discussed about')। কিছু verb-এর preposition নেই, কিছু verb-এর আছে — এগুলো আলাদাভাবে মনে রাখতে হবে।"
+    },
+    {
+      "wrong": "Using 'from' instead of 'of': 'This is a picture from my grandmother.'",
+      "correct": "Meaning depends: 'This is a picture of my grandmother.' (গ্র্যানির ছবি) or 'This is a picture from my grandmother.' (গ্র্যানির পাঠানো ছবি)",
+      "explanation": "'Of' এবং 'from' এর অর্থ আলাদা। 'A picture of my grandmother' = এতে grandmother কে দেখা যাচ্ছে। 'A picture from my grandmother' = grandmother এটি পাঠিয়েছে/দিয়েছে (তবে এতে grandmother নাও থাকতে পারে)। 'A friend of mine' (not 'from mine')। 'Made of wood' (উপাদান) vs 'Made from wood' (পরিবর্তিত উপাদান)।"
+    }
+  ]
 }
