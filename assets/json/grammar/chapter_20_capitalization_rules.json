@@ -1,10 +1,262 @@
 {
   "chapter": 20,
   "level": "Beginner",
-  "title": "Capitalization Rules",
+  "title": "Capitalization Rules (বড় হাতের নিয়ম)",
   "icon": "title",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Capitalization means using capital (uppercase) letters for certain words. In English, we capitalize: the first word of a sentence, proper nouns (names of people, places, months, days, languages, nationalities), the pronoun 'I', titles before names, and important words in titles. Capitalization helps readers identify important words and understand sentence structure. Unlike Bengali, where capitalization doesn't exist, English capitalization is an important part of correct writing.",
+  "banglaDescription": "Capitalization (বড় হাতের অক্ষর ব্যবহার) মানে নির্দিষ্ট শব্দের জন্য capital (uppercase) letters ব্যবহার করা। ইংরেজিতে আমরা capitalize করি: sentence-এর প্রথম শব্দ, proper noun (মানুষ, স্থান, মাস, দিন, ভাষা, জাতীয়তার নাম), pronoun 'I', নামের আগে title, এবং title-এর গুরুত্বপূর্ণ শব্দ। Capitalization পাঠককে গুরুত্বপূর্ণ শব্দ চিহ্নিত করতে এবং sentence structure বুঝতে সাহায্য করে। বাংলার মতো নয় যেখানে capitalization নেই, ইংরেজি capitalization সঠিক লেখার একটি গুরুত্বপূর্ণ অংশ।",
+  "topics": [
+    {
+      "name": "What is Capitalization?",
+      "banglaName": "Capitalization কী?",
+      "definition": "Capitalization is the practice of writing a word with its first letter in uppercase (capital) and the remaining letters in lowercase. In English, capitalization serves several purposes: it marks the beginning of a sentence, identifies proper nouns (specific names), shows respect (God, the President), and helps readers navigate text. There are specific rules about when to capitalize — not all nouns are capitalized (as in German), only proper nouns and specific categories.",
+      "banglaDefinition": "Capitalization হলো একটি শব্দের প্রথম অক্ষর uppercase (capital) এবং বাকি অক্ষর lowercase-এ লেখার প্রথা। ইংরেজিতে, capitalization বিভিন্ন উদ্দেশ্য পূরণ করে: এটি sentence-এর শুরু চিহ্নিত করে, proper noun (নির্দিষ্ট নাম) শনাক্ত করে, সম্মান দেখায় (God, the President), এবং পাঠককে টেক্সট নেভিগেট করতে সাহায্য করে। কখন capitalize করতে হবে তার নির্দিষ্ট নিয়ম আছে — সব noun capitalize হয় না (জার্মানের মতো), শুধু proper noun এবং নির্দিষ্ট ক্যাটাগরি।",
+      "formula": "GENERAL RULE: Capitalize proper nouns, not common nouns.\n\nCapitalize → Proper Noun (specific):\n'Kolkata', 'Ravi', 'India', 'Monday', 'January', 'Diwali', 'Hindi', 'Indian'\n\nDo NOT capitalize → Common Noun (general):\n'city', 'boy', 'country', 'day', 'month', 'festival', 'language', 'nationality adjective'\n\nEXCEPT: Common noun becomes proper in specific context:\n'I study at the University of Kolkata.' (specific university — capitalized)\n'I go to a university.' (general — not capitalized)\n\nSENTENCE START: Always capitalize the first word.\n\nPRONOUN 'I': Always capitalize 'I', wherever it appears in a sentence.\n\nTITLES: Capitalize titles before names: Dr. Sen, Prime Minister Modi.\n\nQUOTATIONS: Capitalize the first word of a direct quotation: He said, \"Life is beautiful.\"",
+      "rules": [
+        "Sentence-এর প্রথম শব্দ সবসময় capitalize: 'The sun rises in the east.'",
+        "Pronoun 'I' সবসময় capitalize — sentence-এর মাঝখানেও: 'My friend and I went to the market.'",
+        "Proper noun (নির্দিষ্ট নাম) capitalize: 'Ravi', 'Priya', 'Kolkata', 'India', 'Ganges', 'Diwali'।",
+        "Common noun (সাধারণ নাম) capitalize নয়: 'man', 'city', 'river', 'festival'।",
+        "Days, months, holidays: 'Monday', 'January', 'Diwali', 'Eid', 'Christmas'।",
+        "Seasons capitalize নয়: 'spring', 'summer', 'autumn', 'winter' (ব্যতিক্রম: personified হলে)।",
+        "Languages এবং nationalities: 'Hindi', 'English', 'Indian', 'Bengali', 'French'।"
+      ],
+      "examples": [
+        { "en": "Sentence start: 'The Taj Mahal is one of the seven wonders of the world.'", "bn": "Sentence শুরু: 'তাজমহল বিশ্বের সপ্তাশ্চর্যের একটি।'" },
+        { "en": "Proper vs Common: 'I live in Kolkata. The city is known as the City of Joy.'", "bn": "Proper vs Common: 'আমি কলকাতায় থাকি। শহরটি সিটি অফ জয় নামে পরিচিত।'" },
+        { "en": "Pronoun I: 'Ravi and I are planning a trip to the Sundarbans.'", "bn": "Pronoun I: 'রবি এবং আমি সুন্দরবন ভ্রমণের পরিকল্পনা করছি।'" },
+        { "en": "Days/Months: 'The meeting is on Monday, 15th January.'", "bn": "Days/Months: 'মিটিংটি সোমবার, ১৫ই জানুয়ারি।'" },
+        { "en": "Languages: 'I speak Bengali, Hindi, and English.'", "bn": "Languages: 'আমি বাংলা, হিন্দি এবং ইংরেজি বলি।'" },
+        { "en": "Seasons (no cap): 'Spring in India is beautiful, especially in Kashmir.'", "bn": "Seasons (no cap): 'ভারতে বসন্ত সুন্দর, বিশেষ করে কাশ্মীরে।'" }
+      ],
+      "tips": "Bengali থেকে ইংরেজিতে আসার সময় capitalization নিয়ে সবচেয়ে বড় চ্যালেঞ্জ: বাংলায় capitalization নেই। তাই সব noun capitalize করা বা কোনো noun-ই না capitalize করা — দুটোই ভুল। মনে রাখবে: Proper noun (নির্দিষ্ট নাম) → capitalize: 'The Ganges flows through Varanasi.' Common noun (সাধারণ নাম) → no capitalize: 'The river flows through the city.' নিয়মটা আয়ত্ত করতে practice লাগবে। শুরুতে proper noun চিনতে শেখো: নির্দিষ্ট ব্যক্তি, স্থান, প্রতিষ্ঠান, ব্র্যান্ড, দিন, মাস, ভাষা, জাতীয়তা — সব capitalize।"
+    },
+    {
+      "name": "First Word of a Sentence",
+      "banglaName": "Sentence-এর প্রথম শব্দ",
+      "definition": "The first word of every sentence must begin with a capital letter. This applies to all types of sentences: declarative (statements), interrogative (questions), imperative (commands), and exclamatory (exclamations). Even if the first word is a proper noun that is normally capitalized or not, it must always be capitalized. This rule is the most basic and important capitalization rule in English.",
+      "banglaDefinition": "প্রত্যেক sentence-এর প্রথম শব্দ অবশ্যই capital letter দিয়ে শুরু করতে হবে। এটি সব ধরনের sentence-এর ক্ষেত্রে প্রযোজ্য: declarative (বিবৃতি), interrogative (প্রশ্ন), imperative (আদেশ), এবং exclamatory (বিস্ময়সূচক)। প্রথম শব্দটি সাধারণত capitalize হয় বা না হয়, sentence-এর শুরুতে এটি সবসময় capitalize হবে। এই নিয়মটি ইংরেজিতে সবচেয়ে মৌলিক এবং গুরুত্বপূর্ণ capitalization নিয়ম।",
+      "formula": "ALL SENTENCES START WITH CAPITAL:\n\nDeclarative: 'The weather in Kolkata is humid today.'\nInterrogative: 'What time does the train leave for Howrah?'\nImperative: 'Please close the door when you leave.'\nExclamatory: 'What a magnificent view of the Himalayas!'\n\nFRAGMENTS & ONE-WORD SENTENCES:\n'No.' 'Yes.' 'Help!' 'Wow!' 'Excellent!'\n\nAFTER PUNCTUATION:\nAfter . ! ? → new sentence starts with capital:\n'I went to Delhi. It was an amazing trip. Have you been there? You must go!'\n\nEXCEPTION: After a colon, the first word may or may not be capitalized.\n'He gave one reason: he was tired.' (UK — lowercase)\n'He gave one reason: He was tired.' (US — capital if complete sentence)\n\nAFTER ELLIPSIS (...):\n'I was thinking... maybe we should go.' (continuing thought — lowercase possible)\n'I was thinking... Maybe we should go.' (new sentence — capital)",
+      "rules": [
+        "Sentence-এর প্রথম অক্ষর সবসময় capital: 'The metro is very convenient in Kolkata.'",
+        "Question-এর প্রথম শব্দ capital: 'How do I get to the Victoria Memorial?'",
+        "Command-এর প্রথম শব্দ capital: 'Turn left at the next signal.'",
+        "Exclamation-এর প্রথম শব্দ capital: 'What a beautiful sunset on the Ganges!'",
+        "Full stop/period (. ), question mark (?), exclamation mark (!) — এদের পরে new sentence capital দিয়ে শুরু।",
+        "Colon (:) — এর পরে: US style-এ complete sentence হলে capital, UK style-এ lowercase (style guide follow করো)।",
+        "Ellipsis (...) — যদি thought continuation হয়, lowercase possible; যদি new sentence হয়, capital।"
+      ],
+      "examples": [
+        { "en": "Statement: 'The Howrah Bridge is also known as Rabindra Setu.'", "bn": "বিবৃতি: 'হাওড়া ব্রিজ রবীন্দ্র সেতু নামেও পরিচিত।'" },
+        { "en": "Question: 'Have you ever visited the Sundarbans mangrove forest?'", "bn": "প্রশ্ন: 'তুমি কি কখনো সুন্দরবনের ম্যানগ্রোভ বন দেখেছ?'" },
+        { "en": "Command: 'Take the metro from Park Street to Dum Dum junction.'", "bn": "আদেশ: 'পার্ক স্ট্রিট থেকে দমদম জংশন পর্যন্ত মেট্রো নিন।'" },
+        { "en": "Exclamation: 'What a fantastic Durga Puja celebration this year!'", "bn": "বিস্ময়: 'এ বছর কী চমৎকার দুর্গাপূজা উদযাপন!'" },
+        { "en": "After full stop: 'I visited the Indian Museum. It has a wonderful collection.'", "bn": "দাঁড়ির পর: 'আমি ইন্ডিয়ান মিউজিয়াম দেখলাম। এর একটি চমৎকার সংগ্রহ আছে।'" },
+        { "en": "After colon (US): 'The reason is simple: We did not have enough time.'", "bn": "Colon-এর পর (US): 'কারণটি সহজ: আমাদের যথেষ্ট সময় ছিল না।'" }
+      ],
+      "tips": "Sentence শুরুতে capitalize করার নিয়মটি সবচেয়ে সহজ — কিন্তু Bengali speakers-এর জন্য সবচেয়ে কঠিন, কারণ বাংলায় এই নিয়ম নেই। English typing করার সময় consciously মনে রাখবে: যেকোনো punctuation (. ! ?) এর পরে → নতুন sentence → capital letter। একটি সহজ কৌশল: sentence শেষে . দেওয়ার পর, Enter না চেপে Space দিলে, auto-capitalization চালু রাখো — ফোন এবং কম্পিউটারের auto-capitalization feature কাজে লাগাও।"
+    },
+    {
+      "name": "Proper Nouns: Names of People, Places, and Things",
+      "banglaName": "Proper Noun: মানুষ, স্থান ও জিনিসের নাম",
+      "definition": "Proper nouns are specific names of people, places, organizations, brands, and things. They are always capitalized. This includes: personal names (Ravi, Priya, Mahatma Gandhi), geographical names (India, Kolkata, the Ganges, the Himalayas), organizations (United Nations, Oxford University, Tata Group), companies (Google, Infosys, Reliance), brands (Coca-Cola, iPhone, Tata Salt), historical events (the Renaissance, the Quit India Movement), and documents (the Constitution of India, the Magna Carta).",
+      "banglaDefinition": "Proper noun হলো মানুষ, স্থান, সংস্থা, ব্র্যান্ড এবং জিনিসের নির্দিষ্ট নাম। এরা সবসময় capitalize হয়। এর মধ্যে অন্তর্ভুক্ত: ব্যক্তিগত নাম (রবি, প্রিয়া, মহাত্মা গান্ধী), ভৌগোলিক নাম (ভারত, কলকাতা, গঙ্গা, হিমালয়), সংস্থা (জাতিসংঘ, অক্সফোর্ড বিশ্ববিদ্যালয়, টাটা গ্রুপ), কোম্পানি (গুগল, ইনফোসিস, রিলায়েন্স), ব্র্যান্ড (কোকা-কোলা, আইফোন, টাটা সল্ট), ঐতিহাসিক ঘটনা (রেনেসাঁ, ভারত ছাড়ো আন্দোলন), এবং দলিল (ভারতের সংবিধান, ম্যাগনা কার্টা)।",
+      "formula": "TYPES OF PROPER NOUNS:\n\nPEOPLE:\n'Ravi', 'Priya', 'Mahatma Gandhi', 'Rabindranath Tagore', 'Narendra Modi', 'Dr. B. C. Roy'\n\nPLACES:\n'Kolkata', 'Delhi', 'Mumbai', 'the Ganges', 'the Himalayas', 'Park Street', 'Howrah Bridge'\n\nORGANIZATIONS:\n'United Nations', 'Oxford University', 'Indian Institute of Technology', 'Tata Sons'\n\nCOMPANIES / BRANDS:\n'Google', 'Infosys', 'Tata Consultancy Services', 'Reliance Industries', 'Maruti Suzuki'\n\nDAYS / MONTHS / HOLIDAYS:\n'Monday', 'January', 'Diwali', 'Eid', 'Christmas', 'Republic Day', 'Independence Day'\n\nLANGUAGES / NATIONALITIES:\n'Bengali', 'Hindi', 'English', 'Indian', 'Japanese', 'French'\n\nHISTORICAL EVENTS / DOCUMENTS:\n'The Quit India Movement', 'World War II', 'the Constitution of India', 'the Preamble'\n\nRELIGIONS / DEITIES:\n'Hinduism', 'Islam', 'Christianity', 'Sikhism', 'God', 'Allah', 'Vishnu', 'Buddha'",
+      "rules": [
+        "মানুষের নাম: 'Rabindranath Tagore', 'Mother Teresa', 'Sachin Tendulkar', 'Priya Sharma'।",
+        "স্থানের নাম: 'Kolkata', 'the Howrah Bridge', 'Dal Lake', 'Marine Drive', 'India Gate'।",
+        "দিন ও মাস: 'Monday', 'Tuesday', 'January', 'August', 'December'।",
+        "ছুটির দিন ও উৎসব: 'Diwali', 'Holi', 'Eid', 'Christmas', 'Republic Day', 'Durga Puja'।",
+        "ভাষা ও জাতীয়তা: 'Bengali', 'Hindi', 'Indian', 'Italian', 'Chinese'।",
+        "প্রতিষ্ঠান ও সংস্থা: 'University of Calcutta', 'Indian Space Research Organisation (ISRO)'।",
+        "ধর্ম ও দেবতা: 'Hinduism', 'Islam', 'Christianity', 'God', 'Allah', 'Krishna', 'Shiva'।",
+        "ব্র্যান্ড নাম: 'Tata', 'Reliance', 'Bajaj', 'Amul', 'Zomato', 'Swiggy' — সবসময় capital।"
+      ],
+      "examples": [
+        { "en": "Person: 'Sachin Tendulkar is known as the God of Cricket in India.'", "bn": "ব্যক্তি: 'সচিন তেন্ডুলকর ভারতে ক্রিকেটের ঈশ্বর নামে পরিচিত।'" },
+        { "en": "Place: 'The Ganges originates from the Gangotri Glacier in the Himalayas.'", "bn": "স্থান: 'গঙ্গা হিমালয়ের গঙ্গোত্রী হিমবাহ থেকে উৎপত্তি হয়েছে।'" },
+        { "en": "Holiday: 'Diwali, the festival of lights, is celebrated across India with great joy.'", "bn": "ছুটি: 'দীপাবলি, আলোর উৎসব, সারা ভারতে খুব আনন্দের সাথে উদযাপিত হয়।'" },
+        { "en": "Organization: 'ISRO is one of the most successful space agencies in the world.'", "bn": "সংস্থা: 'ISRO বিশ্বের সবচেয়ে সফল মহাকাশ সংস্থাগুলির একটি।'" },
+        { "en": "Language: 'I can speak Bengali, Hindi, and English fluently.'", "bn": "ভাষা: 'আমি বাংলা, হিন্দি এবং ইংরেজি সাবলীলভাবে বলতে পারি।'" },
+        { "en": "Brand: 'Amul is a popular dairy brand in India.'", "bn": "ব্র্যান্ড: 'আমুল ভারতের একটি জনপ্রিয় দুগ্ধ ব্র্যান্ড।'" }
+      ],
+      "tips": "Proper noun চেনার সবচেয়ে সহজ উপায়: প্রশ্ন করো — 'এটি কি কোনো নির্দিষ্ট ব্যক্তি, স্থান, বা জিনিসের নাম?' উত্তর 'হ্যাঁ' হলে capitalize করো। 'river' = common (capital নয়), 'the Ganges' = proper (capital)। 'city' = common, 'Kolkata' = proper। 'month' = common, 'January' = proper। 'festival' = common, 'Diwali' = proper। 'company' = common, 'Tata' = proper। কিন্তু 'river Ganges' — 'river' common, 'Ganges' proper। Proper noun সবসময় capitalize — এটি Golden Rule।"
+    },
+    {
+      "name": "Titles: Before and After Names",
+      "banglaName": "উপাধি: নামের আগে ও পরে",
+      "definition": "Titles and honorifics are capitalized when they come directly before a person's name. Examples: Dr. Sen, President Modi, Prime Minister Modi, Professor Roy, Queen Elizabeth, Prince William, Uncle Ravi, Aunt Priya. When titles are used alone (without a name) or after a name, they are usually not capitalized: 'the president gave a speech', 'Narendra Modi, the prime minister of India'. Family titles (mother, father, uncle) are capitalized when used as a name ('I asked Mother') but not with a possessive ('my mother').",
+      "banglaDefinition": "উপাধি এবং সম্মানসূচক শব্দ ব্যক্তির নামের ঠিক আগে এলে capitalize হয়। যেমন: ডা. সেন, রাষ্ট্রপতি মোদি, প্রধানমন্ত্রী মোদি, অধ্যাপক রায়, রানি এলিজাবেথ, প্রিন্স উইলিয়াম, আঙ্কেল রবি, আন্টি প্রিয়া। যখন উপাধি একা (নাম ছাড়া) বা নামের পরে ব্যবহৃত হয়, তখন সাধারণত capitalize হয় না: 'the president gave a speech', 'নরেন্দ্র মোদি, ভারতের প্রধানমন্ত্রী'। পারিবারিক উপাধি (মা, বাবা, চাচা) নাম হিসেবে ব্যবহৃত হলে capitalize ('I asked Mother'), কিন্তু possessive ('my mother')-এর সাথে নয়।",
+      "formula": "TITLES CAPITALIZED (BEFORE NAME):\n'Dr. Roy will see you now.'\n'President Murmu addressed the nation.'\n'Prime Minister Modi visited the flood-affected areas.'\n'Professor Sen teaches at Calcutta University.'\n'Aunt Priya is coming for dinner.'\n'Uncle Ravi brought sweets for everyone.'\n'Queen Elizabeth II ruled for 70 years.'\n\nTITLES NOT CAPITALIZED (AFTER NAME / ALONE):\n'Narendra Modi, the prime minister of India, spoke yesterday.'\n'The doctor will see you now.'\n'The president gave a speech.'\n'The professor is on leave today.'\n'My aunt is visiting from Delhi.'\n'His uncle works at the bank.'\n\nFAMILY TITLES:\nAs name (capital): 'I asked Mother if she needed help.'\nWith possessive (lowercase): 'My mother is a teacher.'\nAs name (capital): 'Please tell Father I will be late.'\nWith possessive (lowercase): 'Her father is a doctor.'",
+      "rules": [
+        "Title নামের আগে → capitalize: 'Dr. Sen', 'Professor Das', 'Principal Mukherjee', 'President Murmu'।",
+        "Title নামের পরে বা একা → lowercase: 'Narendra Modi, the prime minister', 'the doctor is waiting'।",
+        "Very formal titles always capitalize even alone: 'the President of India', 'the Queen of England' (specific office)।",
+        "Family titles (Mother, Father, Uncle, Aunt) → capitalize যখন নামের মতো ব্যবহার হয়: 'I told Uncle about the plan.'",
+        "Possessive-এর সাথে family title → lowercase: 'my uncle', 'her mother', 'his father'।",
+        "Professional titles: 'Professor', 'Doctor', 'Engineer', 'Advocate' — name-এর আগে capital।",
+        "Religious titles: 'Pope Francis', 'Cardinal', 'Swami Vivekananda', 'Maulana Azad' — name-এর আগে capital।"
+      ],
+      "examples": [
+        { "en": "Title before name: 'Dr. B. C. Roy was a famous physician and politician.'", "bn": "নামের আগে উপাধি: 'ডা. বিধানচন্দ্র রায় একজন বিখ্যাত চিকিৎসক এবং রাজনীতিবিদ ছিলেন।'" },
+        { "en": "Title alone (lowercase): 'The doctor examined the patient carefully.'", "bn": "একা উপাধি (lowercase): 'ডাক্তার রোগীকে সাবধানে পরীক্ষা করলেন।'" },
+        { "en": "Family as name: 'I asked Mother to make luchi for breakfast.'", "bn": "নাম হিসেবে পরিবার: 'আমি মাকে নাস্তায় লুচি বানাতে বললাম।'" },
+        { "en": "Family with possessive: 'My father works at the Kolkata Port Trust.'", "bn": "Possessive সহ পরিবার: 'আমার বাবা কলকাতা পোর্ট ট্রাস্টে কাজ করেন।'" },
+        { "en": "Title after name: 'Narendra Modi, the prime minister of India, inaugurated the project.'", "bn": "নামের পরে: 'ভারতের প্রধানমন্ত্রী নরেন্দ্র মোদি প্রকল্পটি উদ্বোধন করলেন।'" },
+        { "en": "Formal office: 'The President of India is the supreme commander of the armed forces.'", "bn": "আনুষ্ঠানিক পদ: 'ভারতের রাষ্ট্রপতি সশস্ত্র বাহিনীর সর্বাধিনায়ক।'" }
+      ],
+      "tips": "Title capitalization-এর মূল নিয়ম: Title + Name → Capitalize। 'Dr. Sen', 'Professor Das', 'President Murmu', 'Aunt Priya', 'Uncle Ravi'। Name alone বা Title alone (specific office ছাড়া) → lowercase। 'the doctor', 'my professor', 'the president said'। Family titles: 'I asked Mother' (মাকে নাম ধরে ডাকছি) vs 'my mother' (সম্পর্ক বলছি)। 'I called Uncle' vs 'my uncle called'। পার্থক্যটা বুঝলে আর ভুল হবে না।"
+    },
+    {
+      "name": "The Pronoun 'I' and Interjection 'O'",
+      "banglaName": "Pronoun 'I' এবং Interjection 'O'",
+      "definition": "The first-person singular pronoun 'I' is always capitalized in English, no matter where it appears in a sentence. This is a unique rule — other pronouns (you, he, she, it, we, they) are not capitalized unless they start a sentence. The interjection 'O' (used in poetry and religious texts to address someone) is also always capitalized. However, the interjection 'oh' is only capitalized at the start of a sentence.",
+      "banglaDefinition": "First-person singular pronoun 'I' ইংরেজিতে সবসময় capitalize হয়, sentence-এর যেখানেই থাকুক না কেন। এটি একটি অনন্য নিয়ম — অন্যান্য pronoun (you, he, she, it, we, they) sentence শুরু না করলে capitalize হয় না। Interjection 'O' (কবিতা এবং ধর্মীয় গ্রন্থে কাউকে সম্বোধন করতে ব্যবহৃত) সবসময় capitalize হয়। কিন্তু interjection 'oh' শুধু sentence-এর শুরুতে capitalize হয়।",
+      "formula": "PRONOUN 'I' — ALWAYS CAPITAL:\n'I am learning English.'\n'My friend and I are going to the market.'\n'Do you think I should apply for this job?'\n'The person I was talking to is my neighbour.'\n\nOTHER PRONOUNS — NOT CAPITALIZED (except sentence start):\n'You are my best friend.'\n'He works in Delhi.'\n'She lives in Mumbai.'\n'It is raining.'\n'We are going together.'\n'They are coming later.'\n\nINTERJECTION 'O' — ALWAYS CAPITAL (poetic/religious):\n'O Lord, bless this nation.'\n'O beautiful flower, how lovely you are!'\n'O say, can you see, by the dawn's early light...' (US national anthem)\n\nINTERJECTION 'OH' — CAPITAL ONLY AT SENTENCE START:\n'Oh! I forgot my keys.'\n'Oh, what a beautiful day!'\n'I said, oh no, I forgot the meeting.' (mid-sentence — lowercase)",
+      "rules": [
+        "Pronoun 'I' সবসময় capital: 'Ravi and I went to the cinema.' 'Do you know if I can take the metro?'",
+        "'I' sentence-এর মাঝখানে, শেষে, যেখানেই থাকুক — capital: 'The person I met was from Chennai.'",
+        "'I' contraction-এও capital: 'I'm', 'I'll', 'I've', 'I'd' (আশ্চর্যজনক: 'I'm' — 'I' capital, 'm' lowercase)।",
+        "Other pronouns: 'you', 'he', 'she', 'it', 'we', 'they' — শুধু sentence শুরু করলে capital।",
+        "Interjection 'O' (poetic) — সবসময় capital: 'O God, hear my prayer.'",
+        "Interjection 'oh' — sentence শুরু করলে capital, মাঝে lowercase: 'Oh, I see. He said, oh no.'",
+        "Texting/social media-তে 'i' lowercase লেখা common, কিন্তু formal English-এ 'i' ✓ always capitalize।"
+      ],
+      "examples": [
+        { "en": "I (start): 'I love visiting the Victoria Memorial during winter.'", "bn": "I (শুরু): 'আমি শীতকালে ভিক্টোরিয়া মেমোরিয়াল দেখতে ভালোবাসি।'" },
+        { "en": "I (middle): 'My sister and I went to watch a film at Nandan.'", "bn": "I (মাঝে): 'আমার বোন এবং আমি নন্দনে সিনেমা দেখতে গেলাম।'" },
+        { "en": "I (end): 'The person I admire most is my grandmother.'", "bn": "I (শেষে): 'যে ব্যক্তিকে আমি সবচেয়ে বেশি শ্রদ্ধা করি তিনি আমার দাদী।'" },
+        { "en": "Contraction: 'I'm planning to visit the Sundarbans next month.'", "bn": "Contraction: 'আমি আগামী মাসে সুন্দরবন দেখতে যাওয়ার পরিকল্পনা করছি।'" },
+        { "en": "O (poetic): 'O Ganga, you are the lifeline of North India.'", "bn": "O (কাব্যিক): 'হে গঙ্গা, তুমি উত্তর ভারতের জীবনরেখা।'" },
+        { "en": "Oh: 'Oh, what a beautiful sunrise over the Howrah Bridge!'", "bn": "Oh: 'ওহ, হাওড়া ব্রিজের উপর কী সুন্দর সূর্যোদয়!'" }
+      ],
+      "tips": "Pronoun 'I' সবসময় capitalize করার নিয়মটি ইংরেজির সবচেয়ে unique নিয়ম — অন্য কোনো ভাষায় pronoun capital হয় না। Bengali-তে 'আমি' কখনো capital হয় না। ইংরেজিতে text/casual chat-এ 'i' lowercase লেখা trend, কিন্তু formal/academic writing-এ সবসময় 'I' capital। নিজেকে প্রশ্ন করো: 'এটি কি formal writing?' হ্যাঁ হলে 'I'। 'I'-এর contraction-গুলোতেও 'I' capital: I'm, I'll, I've, I'd। 'O' vs 'oh': 'O' = very formal/poetic (সবসময় capital, এর পরে comma না দিয়ে সরাসরি word), 'oh' = common interjection (sentence শুরুতে capital, মাঝে lowercase, এর পরে comma)।"
+    },
+    {
+      "name": "Capitalization in Titles and Headlines",
+      "banglaName": "শিরোনামে Capitalization",
+      "definition": "Titles of books, movies, songs, articles, and other works follow specific capitalization rules. There are two main styles: Title Case (major words capitalized) and Sentence Case (only first word and proper nouns capitalized). In Title Case: capitalize the first and last word, all nouns, pronouns, verbs, adjectives, adverbs, and subordinating conjunctions (because, although). Do NOT capitalize articles (a, an, the), coordinating conjunctions (and, but, or), or short prepositions (in, on, at, for) unless they are the first or last word.",
+      "banglaDefinition": "বই, সিনেমা, গান, নিবন্ধ এবং অন্যান্য কাজের শিরোনাম নির্দিষ্ট capitalization নিয়ম অনুসরণ করে। দুটি প্রধান শৈলী আছে: Title Case (প্রধান শব্দ capitalize) এবং Sentence Case (শুধু প্রথম শব্দ এবং proper noun capitalize)। Title Case-এ: প্রথম এবং শেষ শব্দ, সব noun, pronoun, verb, adjective, adverb, এবং subordinating conjunction (because, although) capitalize করো। Article (a, an, the), coordinating conjunction (and, but, or), বা ছোট preposition (in, on, at, for) capitalize করো না — যদি না সেগুলি প্রথম বা শেষ শব্দ হয়।",
+      "formula": "TITLE CASE RULES:\n\nALWAYS CAPITALIZE:\n• First and last word\n• Nouns: 'The Last Leaf'\n• Pronouns: 'You and I'\n• Verbs: 'To Kill a Mockingbird'\n• Adjectives: 'The Great Gatsby'\n• Adverbs: 'Very Good'\n• Subordinating conjunctions: 'Because of You'\n\nDO NOT CAPITALIZE:\n• Articles: a, an, the (unless first/last)\n• Coordinating conjunctions: and, but, or, for, nor, yet, so\n• Short prepositions (under 4 letters): in, on, at, for, to, by, with, of, up, off\n\nEXAMPLES:\n✓ 'The Great Gatsby' (Gatsby = noun, Great = adjective, The = first word)\n✓ 'War and Peace' (And = short conjunction — lowercase)\n✓ 'One Hundred Years of Solitude' (Of = short preposition — lowercase)\n✓ 'Gone with the Wind' (With/The = short words — lowercase)\n\nSENTENCE CASE:\n'To kill a mockingbird' (only first word and proper nouns capitalized)\n'A tale of two cities'\n\nNEWS HEADLINES (often use Title Case, sometimes Sentence Case):\n'India Wins the Cricket World Cup' (Title Case)\n'Five killed in bus accident in Himachal' (Sentence Case — depends on style)",
+      "rules": [
+        "Title Case-এ প্রথম এবং শেষ শব্দ সবসময় capitalize।",
+        "Noun, pronoun, verb, adjective, adverb, subordinating conjunction → capitalize: 'The Old Man and the Sea' (And = conjunction — lowercase, The = first word — capital, The before Sea = article — lowercase, Sea = last word — capital)।",
+        "Article (a, an, the), coordinating conjunction (and, but, or, for, nor, yet, so), short preposition (in, on, at, for, to, by, with, of) → lowercase (unless first/last word)।",
+        "Sentence Case: শুধু প্রথম শব্দ এবং proper noun capitalize — academic writing-এ কখনও কখনও।",
+        "বই, মুভি, গান, অ্যালবাম, নিবন্ধের শিরোনাম → Title Case।",
+        "ব্লগ পোস্ট, নিউজ হেডলাইন → শৈলী অনুযায়ী (আমেরিকান নিউজ সাধারণত Title Case ব্যবহার করে)।"
+      ],
+      "examples": [
+        { "en": "Book: 'I recently read "The White Tiger" by Arvind Adiga.'", "bn": "বই: 'আমি সম্প্রতি অরবিন্দ অডিগার "The White Tiger" পড়েছি।'" },
+        { "en": "Movie: '"Three Idiots" is one of the most popular Indian films.'", "bn": "সিনেমা: '"থ্রি ইডিয়টস" সবচেয়ে জনপ্রিয় ভারতীয় চলচ্চিত্রগুলির একটি।'" },
+        { "en": "Song: '"Vande Mataram" is our national song.'", "bn": "গান: '"বন্দে মাতরম" আমাদের জাতীয় গান।'" },
+        { "en": "Article: 'Have you read the article "The Future of AI in India"? '", "bn": "নিবন্ধ: 'তুমি কি "ভারতে AI-এর ভবিষ্যত" নিবন্ধটি পড়েছ?'" },
+        { "en": "Newspaper headline: 'India Wins World Cup: A Historic Victory' (Title Case)", "bn": "সংবাদ শিরোনাম: 'ভারত বিশ্বকাপ জিতেছে: একটি ঐতিহাসিক বিজয়' (Title Case)" },
+        { "en": "Proper noun in title: '"Midnight's Children" is a novel about India's independence.'", "bn": "শিরোনামে proper noun: '"Midnight's Children" ভারতের স্বাধীনতা নিয়ে একটি উপন্যাস।'" }
+      ],
+      "tips": "Title capitalization-এর সহজ নিয়ম: প্রথম ও শেষ শব্দ capitalize + Major words (nouns, verbs, adjectives, adverbs) capitalize + Minor words (articles, conjunctions, short prepositions) lowercase। নিজেকে প্রশ্ন করো: 'শব্দটি কি major (গুরুত্বপূর্ণ) নাকি minor (ছোট)?' Major = capitalize; Minor = lowercase। 'The Old Man and the Sea' — 'The' (first = capital), 'Old' (adj), 'Man' (noun), 'and' (conj = lowercase), 'the' (article = lowercase), 'Sea' (last = capital) — perfect! Styles vary — some capitalize all prepositions, some only long ones. Pick a style and stay consistent।"
+    },
+    {
+      "name": "Capitalization in Quotations and Dialogue",
+      "banglaName": "উদ্ধৃতি এবং সংলাপে Capitalization",
+      "definition": "When writing direct quotations, the first word of the quoted sentence is capitalized. If a quotation is split (interrupted by 'he said'/'she said'), the second part does not start with a capital unless it begins a new sentence. Indirect quotations (reported speech) do not use quotation marks and follow normal sentence capitalization. Capitalization in dialogue follows the same rules as direct quotations.",
+      "banglaDefinition": "প্রত্যক্ষ উক্তি লেখার সময়, উদ্ধৃত sentence-এর প্রথম শব্দ capitalize হয়। যদি একটি উক্তি বিভক্ত হয় ('সে বলল' দ্বারা বাধাপ্রাপ্ত), দ্বিতীয় অংশটি capital দিয়ে শুরু হয় না যদি না এটি একটি নতুন sentence শুরু করে। পরোক্ষ উক্তি (reported speech) quotation marks ব্যবহার করে না এবং সাধারণ sentence capitalization অনুসরণ করে। সংলাপে capitalization প্রত্যক্ষ উক্তির মতো একই নিয়ম অনুসরণ করে।",
+      "formula": "DIRECT QUOTATION — CAPITALIZE FIRST WORD:\n'She said, \"The train is running late.\"'\n'Ravi asked, \"Have you booked the tickets?\"'\n\nSPLIT QUOTATION — SECOND PART LOWERCASE (if continuing sentence):\n'\"I am going to Delhi,\" she said, \"to visit my parents.\"'\n'\"If it rains,\" the guide said, \"the tour will be cancelled.\"'\n\nSPLIT QUOTATION — SECOND PART CAPITAL (if new sentence):\n'\"I love Kolkata,\" she said. \"It is my hometown.\"'\n'\"We have to leave now,\" he warned. \"The train leaves in ten minutes.\"'\n\nINDIRECT QUOTATION — NO QUOTES, NORMAL CAPITALIZATION:\n'She said that the train was running late.'\n'Ravi asked if I had booked the tickets.'\n\nQUOTATION WITHIN A SENTENCE:\n'His favorite quote is \"Carpe Diem.\"'\n'The concept of \"atman\" is central to Hindu philosophy.'\n\nLONG QUOTATIONS (Block quotes, 40+ words):\nNo quotation marks, but indented. First word capitalized if complete sentence.",
+      "rules": [
+        "Direct quotation-এর প্রথম শব্দ capitalize: 'He said, \"Life is beautiful.\"'",
+        "Split quotation-এর দ্বিতীয় অংশ lowercase (যদি একই sentence চালিয়ে যায়): '\"I am tired,\" he said, \"because I worked all day.\"'",
+        "Split quotation-এর দ্বিতীয় অংশ capital (যদি নতুন sentence শুরু হয়): '\"I am tired,\" he said. \"I worked all day.\"'",
+        "Indirect quotation-এ capitalization সাধারণ নিয়মে: 'He said that life is beautiful.' (no quotes, no special cap)",
+        "Quote-এর মধ্যে proper noun সবসময় capitalize: 'She said, \"My brother lives in Chennai.\"'",
+        "কলোনের পরে quotation শুরু হলে capital: 'The Prime Minister said: \"We stand with the people.\"'",
+        "Fragment quote sentence-এর অংশ হলে capital নাও হতে পারে: 'He described it as \"a once-in-a-lifetime opportunity.\"'"
+      ],
+      "examples": [
+        { "en": "Direct: 'The guide said, \"The Howrah Bridge is over 80 years old.\"'", "bn": "Direct: 'গাইড বলল, \"হাওড়া ব্রিজ ৮০ বছরেরও বেশি পুরনো।\"'" },
+        { "en": "Split (same sentence): '\"If you visit Agra,\" he said, \"you must see the Taj Mahal at sunset.\"'", "bn": "Split (একই sentence): '\"যদি তুমি আগ্রা যাও,\" সে বলল, \"তোমাকে সূর্যাস্তের সময় তাজমহল দেখতে হবে।\"'" },
+        { "en": "Split (new sentence): '\"I love this city,\" she said. \"I have lived here for 20 years.\"'", "bn": "Split (নতুন sentence): '\"আমি এই শহর ভালোবাসি,\" সে বলল। \"আমি এখানে ২০ বছর ধরে থাকছি।\"'" },
+        { "en": "Indirect: 'She said that she had lived in Kolkata for 20 years.'", "bn": "Indirect: 'সে বলল যে সে ২০ বছর ধরে কলকাতায় থাকে।'" },
+        { "en": "Fragment in sentence: 'Tagore described nature as \"the eternal source of inspiration.\"'", "bn": "Sentence-এ fragment: 'ঠাকুর প্রকৃতিকে \"অনন্ত অনুপ্রেরণার উৎস\" বলেছেন।'" },
+        { "en": "Quote with colon: 'The Chief Minister declared: \"Kolkata will get a new flyover.\"'", "bn": "Colon সহ quote: 'মুখ্যমন্ত্রী ঘোষণা করলেন: \"কলকাতা একটি নতুন ফ্লাইওভার পাবে।\"'" }
+      ],
+      "tips": "Quotation-এ capitalization-এর মূল নিয়ম: উদ্ধৃতি শুরুতে সবসময় capital (এটি একটি complete sentence)। Split quotation: 'He said,' এর পরে — মনে রাখবে comma-এর পরে continuation lowercase, period/full stop-এর পরে capital। '\"I am tired,\" he said, \"because I walked all day.\"' (comma = continuation) vs '\"I am tired,\" he said. \"I walked all day.\"' (period = নতুন sentence)। Indirect speech-এ কোনো quotation marks নেই — normal capitalization।"
+    },
+    {
+      "name": "Common Capitalization Mistakes",
+      "banglaName": "সাধারণ Capitalization ভুল",
+      "definition": "Even native speakers make capitalization mistakes. Common errors include: capitalizing common nouns (Bread, Water), not capitalizing proper nouns (india, monday, january), capitalizing seasons (Spring, Summer), capitalizing directions (North, South) when they refer to compass directions (not regions), over-capitalizing job titles ('He is a Doctor'), and inconsistent capitalization in titles. Understanding these pitfalls will help you write more accurately.",
+      "banglaDefinition": "নেটিভ স্পিকাররাও capitalization ভুল করে। সাধারণ ভুল অন্তর্ভুক্ত: common noun capitalize করা (Bread, Water), proper noun capitalize না করা (india, monday, january), ঋতু capitalize করা (Spring, Summer), দিক capitalize করা (North, South) যখন তারা কম্পাস দিক নির্দেশ করে (অঞ্চল নয়), job title বেশি capitalize করা ('He is a Doctor'), এবং শিরোনামে অসামঞ্জস্যপূর্ণ capitalization। এই সমস্যাগুলো বোঝা আপনাকে আরও নির্ভুলভাবে লিখতে সাহায্য করবে।",
+      "formula": "COMMON MISTAKES vs CORRECT:\n\n1. Common noun as proper: ✗ 'I bought some Bread.' → ✓ 'I bought some bread.'\n\n2. Proper noun lowercase: ✗ 'india is a beautiful country.' → ✓ 'India is a beautiful country.'\n\n3. Seasons: ✗ 'I love Spring in Kashmir.' → ✓ 'I love spring in Kashmir.'\n\n4. Directions vs Regions:\n   Compass direction: 'Go north on the highway.' (lowercase)\n   Region: 'I live in the North of India.' or 'North India' (capital — specific region)\n\n5. Job titles: ✗ 'She is a Doctor.' → ✓ 'She is a doctor.' (BUT 'Dr. Sen' ✓)\n\n6. School subjects: ✗ 'I study History and Mathematics.' → ✓ 'I study history and mathematics.' (BUT 'History 101' ✓ — specific course name)\n\n7. After colon: US style may capitalize, UK usually lowercase.\n\n8. Brand names as common: ✗ 'I need a Coke.' (specific brand) → ✓ 'I need a cola.' (generic) — BUT brand names always capital: 'Coca-Cola'",
+      "rules": [
+        "Common noun কখনো capitalize করো না: 'water', 'bread', 'rice', 'book', 'table', 'city', 'river' (সাধারণ অর্থে)।",
+        "Proper noun সবসময় capitalize: 'India', 'Kolkata', 'Ravi', 'Priya', 'Monday', 'January', 'Diwali'।",
+        "ঋতু (seasons) capitalize নয়: 'spring, summer, autumn, winter'।",
+        "Compass direction (north, south, east, west) → lowercase। Region name (the North, South India, the West) → capital।",
+        "Job title + name = capital: 'Professor Sen'। Job title alone = lowercase: 'The professor is on leave.'",
+        "School subjects সাধারণত lowercase: 'history', 'mathematics', 'physics'। Specific course = capital: 'History 101', 'Physics for Engineers'।",
+        "Brand names capital: 'iPhone', 'Tata', 'Amul' — কিন্তু generic term lowercase: 'mobile phone', 'salt', 'butter'।"
+      ],
+      "examples": [
+        { "en": "Common noun: ✗ 'I need some Water.' → ✓ 'I need some water.'", "bn": "Common noun: ✗ 'আমার কিছু পানি দরকার।' (Water capital) → ✓ 'আমার কিছু পানি দরকার।'" },
+        { "en": "Direction: 'Drive south for five kilometers, then turn east.' (lowercase)", "bn": "দিক: 'পাঁচ কিলোমিটার দক্ষিণে যান, তারপর পূর্বে মোড় নিন।' (lowercase)" },
+        { "en": "Region: 'The climate in South India is different from North India.' (capital — regions)", "bn": "অঞ্চল: 'দক্ষিণ ভারতের জলবায়ু উত্তর ভারতের থেকে ভিন্ন।' (capital — অঞ্চল)" },
+        { "en": "Job title: ✗ 'My uncle is a Professor.' → ✓ 'My uncle is a professor.' (BUT 'Professor Sen' ✓)", "bn": "Job title: ✗ 'আমার চাচা একজন অধ্যাপক।' (Professor capital) → ✓ 'আমার চাচা একজন অধ্যাপক।'" },
+        { "en": "Subject: 'I studied history and political science at university.' (lowercase — general)", "bn": "Subject: 'আমি বিশ্ববিদ্যালয়ে ইতিহাস এবং রাষ্ট্রবিজ্ঞান পড়েছি।' (lowercase — সাধারণ)" },
+        { "en": "Brand vs General: 'I bought an iPhone and a Samsung TV.' (brands capital) but 'I bought a phone and a television.' (generic)", "bn": "ব্র্যান্ড vs সাধারণ: 'আমি একটি iPhone এবং একটি Samsung TV কিনলাম।' (ব্র্যান্ড capital) কিন্তু 'আমি একটি ফোন এবং একটি টেলিভিশন কিনলাম।' (সাধারণ)" }
+      ],
+      "tips": "সবচেয়ে common ৩টি capitalization mistake: (১) Common noun capitalizing ✗ — 'water' নয় 'Water'। শুধু proper noun capitalize করো। (২) Days/Months/Languages capitalize করতে ভুলে যাওয়া ✗ — 'monday' নয় 'Monday', 'january' নয় 'January', 'hindi' নয় 'Hindi'। (৩) Seasons এবং directions capitalize করা ✗ — 'spring' নয় 'Spring', 'go north' নয় 'go North'। Seasons capitalize হয় না (except personified in poetry)। Directions capitalize হয় না (compass directions), কিন্তু regions capitalize হয়: 'North India', 'the South', 'the West'।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "'My friend and i went to the howrah bridge.'",
+      "correct": "'My friend and I went to the Howrah Bridge.'",
+      "explanation": "এখানে দুটি capitalization ভুল: (1) Pronoun 'i' সবসময় capital 'I' — 'my friend and I'। (2) 'Howrah Bridge' একটি proper noun (নির্দিষ্ট সেতুর নাম) — 'H' এবং 'B' capital। 'Howrah Bridge' একটি নির্দিষ্ট landmark, তাই এটি always capital। একইভাবে: 'Victoria Memorial', 'India Gate', 'Gateway of India', 'Park Street' — স্থানের নির্দিষ্ট নাম সবসময় capitalize করো। 'Bridge' সাধারণ noun কিন্তু 'Howrah Bridge' proper noun।"
+    },
+    {
+      "wrong": "'I love spring in India, especially in kashmir.'",
+      "correct": "'I love spring in India, especially in Kashmir.'",
+      "explanation": "'Spring' = season — capitalize হয় না (spring, summer, autumn, winter)। 'India' = দেশের নাম — proper noun, capitalize। 'Kashmir' = নির্দিষ্ট স্থানের নাম — proper noun, capitalize। 'kashmir' lowercase (✗) → 'Kashmir' (✓)। মনে রাখবে: Seasons → lowercase (spring, summer, monsoon, autumn, winter), Places → uppercase (India, Kashmir, Kerala, Mumbai, Delhi)। Proper noun সবসময় capitalize, common noun কখনো নয় (সাধারণ অর্থে)। 'Mountain' = common, 'The Himalayas' = proper।"
+    },
+    {
+      "wrong": "'The doctor said I need to take this medicine.' — This is correct! But many capitalize 'Doctor' unnecessarily.",
+      "correct": "'The doctor said I need to take this medicine.' (CORRECT — doctor is common noun here)",
+      "explanation": "'The doctor' — সাধারণভাবে পেশা বোঝাচ্ছে — lowercase ঠিক আছে। 'Doctor Sen' — নামের আগে title — capital 'Doctor'। 'The Doctor will see you now' (✗) → 'The doctor will see you now' (✓)। 'Doctor' (capital) শুধু name-এর আগে: 'Dr. Sen', 'Doctor Sen'। অথবা specific address: 'Thank you, Doctor.' (সম্বোধন)। 'My doctor is very kind.' — সাধারণ পেশা → lowercase। 'Dr. Roy is very kind.' — নামের আগে title → capital। পার্থক্যটা বোঝা জরুরি।"
+    },
+    {
+      "wrong": "'I am going to visit my Uncle in Delhi this summer.'",
+      "correct": "Depends on usage:\nAs name: 'I am going to visit Uncle in Delhi this summer.' (family member as name)\nAs relation: 'I am going to visit my uncle in Delhi this summer.' (lowercase — 'my uncle')",
+      "explanation": "'Uncle' capitalize হবে কিনা নির্ভর করে এটি নাম হিসেবে ব্যবহৃত হচ্ছে নাকি সম্পর্ক হিসেবে। 'My uncle' = সম্পর্ক → lowercase। 'Uncle Ravi' = নামের আগে → capital। 'I asked Uncle' = 'Uncle' নাম হিসেবে → capital। 'I asked my uncle' = সম্পর্ক → lowercase। 'My Uncle is coming' (✗) → 'My uncle is coming' (✓) — 'my' possessive থাকলে সাধারণত lowercase। 'Mother', 'Father', 'Aunt', 'Grandmother' — একই নিয়ম।"
+    },
+    {
+      "wrong": "'I study at the university of Calcutta.'",
+      "correct": "'I study at the University of Calcutta.'",
+      "explanation": "'University of Calcutta' একটি নির্দিষ্ট প্রতিষ্ঠানের নাম, তাই সব major word capitalize: 'University of Calcutta', 'University of Delhi', 'Indian Institute of Technology', 'Massachusetts Institute of Technology'। 'University' সাধারণ noun → 'I study at a university.' (lowercase)। কিন্তু নির্দিষ্ট প্রতিষ্ঠানের নামের অংশ হলে → 'I study at the University of Calcutta.' (capital 'U')। একই নিয়ম: 'I go to school' vs 'I go to South Point High School'। 'School' common, কিন্তু 'South Point High School' proper।"
+    },
+    {
+      "wrong": "'Go North on the highway for five kilometers.'",
+      "correct": "'Go north on the highway for five kilometers.' (direction — lowercase)",
+      "explanation": "Compass direction (north, south, east, west) → lowercase যখন দিক নির্দেশ করে: 'Go north. Drive east. The wind is from the west.' Region নাম → capital: 'North India', 'South India', 'the West', 'the East', 'the Middle East', 'North America'। 'Go North' (✗) → 'Go north' (✓) — direction। 'I live in North India' (✓) — region। 'The sun rises in the east' (✓ — direction lowercase) vs 'The East has a rich culture' (✓ — region capital)। পার্থক্য: দিক vs অঞ্চল।"
+    },
+    {
+      "wrong": "'I love reading history books. My favourite subject is History.'",
+      "correct": "'I love reading history books. My favourite subject is history.' (BUT 'I am taking History 101 this semester' ✓ — specific course)",
+      "explanation": "School subjects সাধারণত lowercase: 'history', 'mathematics', 'physics', 'chemistry', 'biology', 'economics', 'psychology', 'literature'। ব্যতিক্রম: ভাষার নাম capitalize: 'English', 'Hindi', 'French', 'Bengali'। Also: specific course titles capitalize: 'History of Modern India', 'Physics for Engineers', 'English Literature 201'। 'I study history' (✓ — general subject lowercase), 'I study History' (✗ — unless specific course)। 'I study English' (✓ — language always capital)।"
+    },
+    {
+      "wrong": "'She said, \"life is beautiful.\"' (Lowercase after opening quotes)",
+      "correct": "'She said, \"Life is beautiful.\"' (Capitalize first word of direct quotation)",
+      "explanation": "Direct quotation-এর প্রথম শব্দ সবসময় capitalize, কারণ এটি একটি সম্পূর্ণ sentence। 'She said, \"life is beautiful\"' (✗) → 'She said, \"Life is beautiful\"' (✓)। যদি quotation sentence-এর মাঝে fragment হয়, তাহলে capital নাও হতে পারে: 'He called it \"a wonderful opportunity.\"' (fragment — lowercase)। কিন্তু complete sentence quote হলে সবসময় capitalize: 'She said, \"I am going to Kolkata.\"' ব্যতিক্রম: split quotation-এ continuation: '\"If you study hard,\" she said, \"you will succeed.\"' — 'you' lowercase (continuation)।"
+    },
+    {
+      "wrong": "'The Prime Minister gave a speech. The prime minister of India addressed the nation.' — First one correct, second needs checking.",
+      "correct": "'The Prime Minister gave a speech.' (specific, before name — but here no name) Actually: 'The prime minister gave a speech.' (title alone — lowercase) or 'Prime Minister Modi gave a speech.' (before name — capital)",
+      "explanation": "খেয়াল করো: 'The Prime Minister gave a speech' — এখানে 'Prime Minister' capitalize করা হয়েছে, কিন্তু নামের পরে না থাকলে এটি lowercase হওয়া উচিত: 'The prime minister gave a speech.' (✓)। Title নামের আগে থাকলে capital: 'Prime Minister Modi addressed the nation.' (✓) Title নাম ছাড়া → lowercase (সাধারণত): 'The prime minister will visit Kolkata.' (✓) Very formal context-এ 'the Prime Minister' capitalize করা যায় (specific office হিসেবে), কিন্তু সাধারণত lowercase। 'The President' vs 'the president' — style guide অনুযায়ী।"
+    },
+    {
+      "wrong": "'I bought a Samsung TV and a Sony Camera.' — Brand name capital ✓, but generic noun should not be capital.",
+      "correct": "'I bought a Samsung TV and a Sony camera.' (TV = proper noun part of brand, camera = generic — lowercase)",
+      "explanation": "Brand name সবসময় capital: 'Samsung', 'Sony', 'Apple', 'Google', 'Toyota', 'Tata'। কিন্তু brand name-এর পরে generic product noun সাধারণত lowercase: 'Samsung TV' (TV = lowercase), 'Sony camera' (camera = lowercase), 'Apple iPhone' (iPhone = brand name, capital), 'Toyota car' (car = lowercase)। 'Sony Camera' (✗) → 'Sony camera' (✓)। ব্যতিক্রম: 'iPhone', 'iPad', 'YouTube', 'Spotify' — এরা brand name-ই product name, তাই capital। 'I need a Coke' vs 'I need a coke' — 'Coke' trademark হিসেবে capital, 'cola' generic lowercase।"
+    }
+  ]
 }
