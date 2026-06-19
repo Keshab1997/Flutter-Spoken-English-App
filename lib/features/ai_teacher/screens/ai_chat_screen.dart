@@ -1,24 +1,54 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../../providers/auth_provider.dart';
+import '../../../services/ai_service.dart';
+import '../../../services/hive_service.dart';
 
-class AiChatScreen extends StatefulWidget {
+class AiChatScreen extends ConsumerStatefulWidget {
   const AiChatScreen({super.key});
 
   @override
-  State<AiChatScreen> createState() => _AiChatScreenState();
+  ConsumerState<AiChatScreen> createState() => _AiChatScreenState();
 }
 
-class _AiChatScreenState extends State<AiChatScreen> {
+class _AiChatScreenState extends ConsumerState<AiChatScreen> {
   final TextEditingController _messageController = TextEditingController();
   final ScrollController _scrollController = ScrollController();
-  final List<Map<String, dynamic>> _messages = [
-    {
-      'text': 'Hello! I am your AI English Teacher. 🤖\n\nYou can chat with me in English. I will correct your mistakes and suggest better ways to express yourself. How are you doing today?',
+  final List<Map<String, dynamic>> _messages = [];
+  bool _isTyping = false;
+  String _userName = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _userName = HiveService.getUserName();
+    _addGreeting();
+  }
+
+  void _addGreeting() {
+    final displayName = _userName.isNotEmpty ? _userName : 'there';
+    _messages.add({
+      'text': 'Hello $displayName! 👋\n\nI am Keshab, your AI English Teacher. '
+          'You can ask me anything about English — grammar, vocabulary, '
+          'pronunciation, or just chat with me in English or Bangla. '
+          'I am here to help you improve!\n\n'
+          'How are you doing today?',
       'isMe': false,
       'time': '12:00 PM',
+    });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final authState = ref.read(authProvider);
+    final name = authState.valueOrNull?.name ?? '';
+    if (name.isNotEmpty && name != _userName) {
+      setState(() => _userName = name);
+      HiveService.setUserName(name);
     }
-  ];
-  bool _isTyping = false;
+  }
 
   void _sendMessage() {
     final text = _messageController.text.trim();
@@ -36,32 +66,50 @@ class _AiChatScreenState extends State<AiChatScreen> {
 
     _scrollToBottom();
 
-    // Simulated AI response
-    Future.delayed(const Duration(milliseconds: 1500), () {
-      if (!mounted) return;
-      String response = "That's interesting! Keep sharing. How would you like us to practice?";
-      
-      final lowerText = text.toLowerCase();
-      if (lowerText.contains('hello') || lowerText.contains('hi')) {
-        response = "Hello! Great to hear from you. Let's start practicing! Would you like to check grammar or talk about a topic?";
-      } else if (lowerText.contains('how are you')) {
-        response = "I am doing great, thank you! How are you getting on with your daily English streak?";
-      } else if (lowerText.contains('grammar') || lowerText.contains('mistake')) {
-        response = "Awesome. Write any sentence, and I will highlight grammar mistakes or suggest advanced alternatives!";
-      } else if (lowerText.contains('fluency')) {
-        response = "To build fluency, try speaking out loud for 5 minutes every day. Using simple, correct sentences is better than complex, incorrect ones.";
-      }
+    final systemPrompt = _userName.isNotEmpty
+        ? 'You are a friendly AI English teacher named Keshab. '
+            "Your student's name is $_userName. "
+            'Your job is to help the student learn and practice English in a natural, fun way. '
+            'The student can ask questions in English or Bangla (Bengali). '
+            'IMPORTANT: Always respond in English first, then immediately provide the Bangla translation below. '
+            'Format your response like this:\n'
+            '[Your English response here]\n\n'
+            'বাংলা: [Bangla translation]\n'
+            '---\n'
+            'When correcting grammar, first show the correction in English, then explain in Bangla. '
+            'When introducing new vocabulary, give the English word with meaning and example in English, '
+            'then translate the example to Bangla. '
+            'Keep responses friendly, concise, and encouraging. '
+            'Always address the student by name when possible.'
+        : null;
 
-      setState(() {
-        _isTyping = false;
-        _messages.add({
-          'text': response,
-          'isMe': false,
-          'time': 'Just Now',
+    if (systemPrompt != null) {
+      AIService().sendMessageWithSystem(text, systemPrompt: systemPrompt).then((response) {
+        if (!mounted) return;
+        setState(() {
+          _isTyping = false;
+          _messages.add({
+            'text': response,
+            'isMe': false,
+            'time': 'Just Now',
+          });
         });
+        _scrollToBottom();
       });
-      _scrollToBottom();
-    });
+    } else {
+      AIService().sendMessage(text).then((response) {
+        if (!mounted) return;
+        setState(() {
+          _isTyping = false;
+          _messages.add({
+            'text': response,
+            'isMe': false,
+            'time': 'Just Now',
+          });
+        });
+        _scrollToBottom();
+      });
+    }
   }
 
   void _scrollToBottom() {
@@ -91,7 +139,7 @@ class _AiChatScreenState extends State<AiChatScreen> {
     final quickTopics = [
       "Check my grammar",
       "Suggest vocabulary",
-      "How to improve fluency?",
+      "বাংলায় ইংরেজি শেখা",
       "Let's practice greetings",
     ];
 

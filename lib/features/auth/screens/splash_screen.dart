@@ -37,6 +37,15 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
 
     // Listen to auth state — navigate as soon as it resolves (not loading)
     Future.delayed(const Duration(seconds: 2), _listenAndNavigate);
+
+    // Safety timeout: if auth doesn't resolve within 10s, navigate to login
+    Future.delayed(const Duration(seconds: 10), _timeoutNavigate);
+  }
+
+  void _timeoutNavigate() {
+    if (!_navigated && mounted) {
+      _navigateToLogin();
+    }
   }
 
   void _listenAndNavigate() {
@@ -54,13 +63,13 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
   void _navigateToNext(UserModel? user) {
     if (_navigated) return;
     _navigated = true;
-    if (user != null) {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (_) => const MainNavigationScreen()),
-      );
-    } else {
-      _navigateToLogin();
-    }
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => user != null
+            ? const MainNavigationScreen()
+            : const LoginScreen(),
+      ),
+    );
   }
 
   void _navigateToLogin() {

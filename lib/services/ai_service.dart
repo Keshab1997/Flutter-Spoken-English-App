@@ -1,52 +1,95 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'hive_service.dart';
 
 class AIService {
-  String? _apiKey;
-  String _provider = 'gemini'; // 'gemini' or 'openai'
+  static final AIService _instance = AIService._();
+  factory AIService() => _instance;
+  AIService._();
 
-  void setApiKey(String key) {
-    _apiKey = key;
+  String get _apiKey {
+    final active = HiveService.getActiveAiKey();
+    return active?['key'] as String? ?? '';
   }
 
-  void setProvider(String provider) {
-    _provider = provider;
+  String get _baseUrl {
+    final active = HiveService.getActiveAiKey();
+    return active?['baseUrl'] as String? ?? 'https://api.chatanywhere.tech/v1';
+  }
+
+  String get _model {
+    final active = HiveService.getActiveAiKey();
+    return active?['model'] as String? ?? 'gpt-4o-mini';
+  }
+
+  Future<bool> testConnection() async {
+    if (_apiKey.isEmpty) return false;
+    try {
+      final url = Uri.parse('$_baseUrl/chat/completions');
+      final response = await http.post(
+        url,
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer $_apiKey',
+        },
+        body: jsonEncode({
+          'model': _model,
+          'messages': [{'role': 'user', 'content': 'Hi'}],
+          'max_tokens': 5,
+        }),
+      ).timeout(const Duration(seconds: 15));
+      return response.statusCode == 200;
+    } catch (_) {
+      return false;
+    }
   }
 
   Future<String> sendMessage(String message) async {
-    if (_apiKey == null || _apiKey!.isEmpty) {
-      return _getLocalResponse(message);
-    }
+    if (_apiKey.isEmpty) return _getLocalResponse(message);
 
     try {
-      if (_provider == 'gemini') {
-        return await _callGemini(message);
-      } else {
-        return await _callOpenAI(message);
-      }
+      return await _callOpenAI(message);
     } catch (_) {
       return _getLocalResponse(message);
     }
   }
 
-  Future<String> _callGemini(String message) async {
-    final url = Uri.parse('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=$_apiKey');
-    final response = await http.post(
-      url,
-      headers: {'Content-Type': 'application/json'},
-      body: jsonEncode({
-        'contents': [{'parts': [{'text': 'You are an English teacher. Correct the user\'s English, suggest improvements, and respond helpfully. User: $message'}]}]
-      }),
-    );
-    if (response.statusCode == 200) {
-      final data = jsonDecode(response.body);
-      return data['candidates']?[0]?['content']?['parts']?[0]?['text'] ?? 'I couldn\'t process that.';
+  Future<String> sendMessageWithSystem(String message, {String? systemPrompt}) async {
+    if (_apiKey.isEmpty) return _getLocalResponse(message);
+
+    try {
+      return await _callOpenAI(message, systemPrompt: systemPrompt);
+    } catch (_) {
+      return _getLocalResponse(message);
     }
-    return _getLocalResponse(message);
   }
 
-  Future<String> _callOpenAI(String message) async {
-    final url = Uri.parse('https://api.openai.com/v1/chat/completions');
+  Future<String> _callOpenAI(String message, {String? systemPrompt}) async {
+    final url = Uri.parse('$_baseUrl/chat/completions');
+    final userName = HiveService.getUserName();
+
+    final messages = <Map<String, String>>[];
+    messages.add({
+      'role': 'system',
+      'content': systemPrompt ??
+          'You are a friendly AI English teacher named Keshab. '
+          '${userName.isNotEmpty ? "Your student's name is $userName. " : ""}'
+          'Your job is to help the student learn and practice English in a natural, fun way. '
+          'The student can ask questions in English or Bangla (Bengali). '
+          'IMPORTANT: Always respond in English first, then immediately provide the Bangla translation below. '
+          'Format your response like this:\n'
+          '---\n'
+          '[Your English response here]\n\n'
+          'বাংলা: [Bangla translation]\n'
+          '---\n'
+          'When correcting grammar, first show the correction in English, then explain in Bangla. '
+          'When introducing new vocabulary, give the English word with meaning and example in English, '
+          'then translate the example to Bangla. '
+          'Keep responses friendly, concise, and encouraging. '
+          'Always address the student by name when possible.'
+    });
+    messages.add({'role': 'user', 'content': message});
+
     final response = await http.post(
       url,
       headers: {
@@ -54,15 +97,15 @@ class AIService {
         'Authorization': 'Bearer $_apiKey',
       },
       body: jsonEncode({
-        'model': 'gpt-3.5-turbo',
-        'messages': [
-          {'role': 'system', 'content': 'You are an English teacher. Correct grammar mistakes, suggest vocabulary improvements, and help the user practice English.'},
-          {'role': 'user', 'content': message},
-        ],
+        'model': _model,
+        'messages': messages,
+        'max_tokens': 1024,
       }),
     );
+
     if (response.statusCode == 200) {
-      final data = jsonDecode(response.body);
+      final bodyString = utf8.decode(response.bodyBytes);
+      final data = jsonDecode(bodyString);
       return data['choices']?[0]?['message']?['content'] ?? _getLocalResponse(message);
     }
     return _getLocalResponse(message);
@@ -71,16 +114,16 @@ class AIService {
   String _getLocalResponse(String message) {
     final lower = message.toLowerCase();
     if (lower.contains('hello') || lower.contains('hi')) {
-      return "Hello! Great to hear from you. Let's start practicing English. Would you like to check grammar or talk about a topic?";
+      return "Hello! Great to hear from you. Let's start practicing English. Would you like to check grammar or talk about a topic?\n\nবাংলা: হ্যালো! তোমার কাছ থেকে শুনে很开心। চলো ইংরেজি চর্চা শুরু করি। তুমি কি গ্রামার চেক করতে চাও নাকি কোনো বিষয় নিয়ে কথা বলতে চাও?";
     } else if (lower.contains('grammar') || lower.contains('mistake')) {
-      return "Write any sentence, and I will highlight grammar mistakes or suggest more natural alternatives!";
+      return "Write any sentence, and I will highlight grammar mistakes or suggest more natural alternatives!\n\nবাংলা: যেকোনো বাক্য লিখো, আমি গ্রামার ভুল দেখিয়ে দেব বা আরও স্বাভাবিক বিকল্প suggest করব!";
     } else if (lower.contains('vocabulary') || lower.contains('word')) {
-      return "Learning new words daily is key! Try using new words in sentences. What word would you like to learn about?";
+      return "Learning new words daily is key! Try using new words in sentences. What word would you like to learn about?\n\nবাংলা: প্রতিদিন নতুন শব্দ শেখা খুবই গুরুত্বপূর্ণ! বাক্যে নতুন শব্দ ব্যবহার করার চেষ্টা করো। তুমি কোন শব্দ সম্পর্কে জানতে চাও?";
     } else if (lower.contains('fluency') || lower.contains('speak')) {
-      return "To build fluency, try speaking out loud for 5 minutes every day. Use simple, correct sentences. Would you like to practice now?";
+      return "To build fluency, try speaking out loud for 5 minutes every day. Use simple, correct sentences. Would you like to practice now?\n\nবাংলা: সাবলীল হতে প্রতিদিন ৫ মিনিট জোরে জোরে কথা বলার চেষ্টা করো। সহজ, সঠিক বাক্য ব্যবহার করো। এখনই প্র্যাকটিস করতে চাও?";
     } else if (lower.contains('how are you')) {
-      return "I am doing great! How is your English learning journey going? Have you practiced today?";
+      return "I am doing great! How is your English learning journey going? Have you practiced today?\n\nবাংলা: আমি খুব ভালো আছি! তোমার ইংরেজি শেখার যাত্রা কেমন চলছে? আজ কি প্র্যাকটিস করেছ?";
     }
-    return "That's interesting! Keep practicing. Try to use complete sentences. How can I help you improve your English today?";
+    return "That's interesting! Keep practicing. Try to use complete sentences. How can I help you improve your English today?\n\nবাংলা: এটা মজার! প্র্যাকটিস চালিয়ে যাও। সম্পূর্ণ বাক্য ব্যবহার করার চেষ্টা করো। আজ আমি তোমার ইংরেজি উন্নতিতে কীভাবে সাহায্য করতে পারি?";
   }
 }

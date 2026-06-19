@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../constants/app_colors.dart';
 
 final ThemeData lightTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.light,
+  fontFamily: GoogleFonts.notoSansBengali().fontFamily,
   colorScheme: const ColorScheme.light(
     primary: AppColors.primary,
     secondary: AppColors.secondary,
@@ -63,7 +65,7 @@ final ThemeData lightTheme = ThemeData(
       );
     }),
   ),
-  textTheme: const TextTheme(
+  textTheme: GoogleFonts.notoSansBengaliTextTheme(const TextTheme(
     headlineLarge: TextStyle(
       fontSize: 28,
       fontWeight: FontWeight.bold,
@@ -87,5 +89,5 @@ final ThemeData lightTheme = ThemeData(
       fontSize: 14,
       color: AppColors.textSecondaryLight,
     ),
-  ),
+  )),
 );

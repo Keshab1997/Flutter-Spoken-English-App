@@ -4,6 +4,7 @@ import '../../../core/constants/app_colors.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/progress_provider.dart';
 import '../../auth/screens/login_screen.dart';
+import '../../settings/screens/settings_screen.dart';
 
 class ProfileScreen extends ConsumerStatefulWidget {
   const ProfileScreen({super.key});
@@ -177,7 +178,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (_) => const _SettingsRedirect()),
+                        MaterialPageRoute(builder: (_) => const SettingsScreen()),
                       );
                     },
                   ),
@@ -222,14 +223,4 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
   }
 }
 
-class _SettingsRedirect extends StatelessWidget {
-  const _SettingsRedirect();
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Settings')),
-      body: Center(child: Text('Settings screen - coming from Profile tab')),
-    );
-  }
-}

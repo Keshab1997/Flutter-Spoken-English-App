@@ -18,6 +18,14 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
   }
 
   void _init() {
+    // Synchronous check first (handles edge case where authStateChanges never fires)
+    final currentUser = _auth.currentUser;
+    if (currentUser == null) {
+      state = const AsyncValue.data(null);
+    } else {
+      fetchUserData(currentUser.uid);
+    }
+
     _auth.authStateChanges().listen((User? firebaseUser) async {
       if (firebaseUser == null) {
         state = const AsyncValue.data(null);

@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../../services/hive_service.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/lesson_provider.dart';
 import '../../../providers/progress_provider.dart';
 import '../../../providers/vocabulary_provider.dart';
+import '../../../providers/theme_provider.dart';
 import '../../grammar/screens/grammar_list_screen.dart';
+import '../../grammar/screens/grammar_test_list_screen.dart';
 import '../../vocabulary/screens/vocabulary_test_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -82,6 +85,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
     final lessonsAsync = ref.watch(lessonProvider);
 
     final user = authAsync.asData?.value;
+    if (user?.name != null && user!.name.isNotEmpty) {
+      HiveService.setUserName(user.name);
+    }
     final progress = progressAsync.asData?.value;
     final allWords = vocabAsync.asData?.value ?? [];
     final allLessons = lessonsAsync.asData?.value ?? [];
@@ -115,6 +121,18 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
           ],
         ),
         actions: [
+          IconButton(
+            icon: Icon(
+              isDark ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+              size: 26,
+            ),
+            onPressed: () {
+              final notifier = ref.read(themeModeProvider.notifier);
+              notifier.state =
+                  notifier.state == ThemeMode.dark ? ThemeMode.light : ThemeMode.dark;
+              HiveService.setDarkMode(notifier.state == ThemeMode.dark);
+            },
+          ),
           IconButton(
             onPressed: () => ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text('No new notifications'), behavior: SnackBarBehavior.floating),
@@ -194,9 +212,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       children: [
         Row(
           children: [
-            Text(
-              '${_getTimeGreeting()}, ${name ?? 'User'} ',
-              style: theme.textTheme.headlineLarge?.copyWith(fontWeight: FontWeight.w800, fontSize: 26),
+            Flexible(
+              child: Text(
+                '${_getTimeGreeting()}, ${name ?? 'User'} ',
+                style: theme.textTheme.headlineLarge?.copyWith(fontWeight: FontWeight.w800, fontSize: 26),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
             const Text('👋', style: TextStyle(fontSize: 26)),
           ],
@@ -654,6 +676,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
       {'title': 'Vocabulary', 'icon': Icons.menu_book_rounded, 'gradient': AppColors.primaryGradient, 'tab': 1},
       {'title': 'Vocab Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'tab': -1},
       {'title': 'Grammar', 'icon': Icons.edit_note_rounded, 'gradient': AppColors.purpleGradient, 'tab': -2},
+      {'title': 'Grammar Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'tab': -3},
       {'title': 'Conversation', 'icon': Icons.forum_rounded, 'gradient': AppColors.secondaryGradient, 'tab': 2},
       {'title': 'Listening', 'icon': Icons.headset_rounded, 'gradient': AppColors.infoGradient, 'tab': 2},
       {'title': 'Speaking', 'icon': Icons.mic_rounded, 'gradient': AppColors.pinkGradient, 'tab': 2},
@@ -678,6 +701,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen>
                   Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()));
                 } else if (tab == -2) {
                   Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarListScreen()));
+                } else if (tab == -3) {
+                  Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarTestListScreen()));
                 } else {
                   widget.onNavigateToTab?.call(tab);
                 }

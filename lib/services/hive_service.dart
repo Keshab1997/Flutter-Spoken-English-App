@@ -122,6 +122,54 @@ class HiveService {
     return _settings.get('notifications', defaultValue: true) as bool;
   }
 
+  // AI Settings — Multiple Keys
+  static Future<void> saveAiKey(Map<String, dynamic> keyConfig) async {
+    final keys = getAiKeys();
+    final idx = keys.indexWhere((k) => k['id'] == keyConfig['id']);
+    if (idx >= 0) {
+      keys[idx] = keyConfig;
+    } else {
+      keys.add(keyConfig);
+    }
+    await _settings.put('aiKeys', keys);
+  }
+
+  static List<Map<String, dynamic>> getAiKeys() {
+    final raw = _settings.get('aiKeys', defaultValue: <Map<String, dynamic>>[]) as List;
+    return raw.map((e) => Map<String, dynamic>.from(e as Map)).toList();
+  }
+
+  static Future<void> deleteAiKey(String id) async {
+    final keys = getAiKeys();
+    keys.removeWhere((k) => k['id'] == id);
+    await _settings.put('aiKeys', keys);
+  }
+
+  static Future<void> setActiveAiKey(String id) async {
+    final keys = getAiKeys();
+    for (final k in keys) {
+      k['isActive'] = k['id'] == id;
+    }
+    await _settings.put('aiKeys', keys);
+  }
+
+  static Map<String, dynamic>? getActiveAiKey() {
+    final keys = getAiKeys();
+    for (final k in keys) {
+      if (k['isActive'] == true) return Map<String, dynamic>.from(k as Map);
+    }
+    return keys.isNotEmpty ? Map<String, dynamic>.from(keys.first as Map) : null;
+  }
+
+  // User Profile
+  static Future<void> setUserName(String value) async {
+    await _settings.put('userName', value);
+  }
+
+  static String getUserName() {
+    return _settings.get('userName', defaultValue: '') as String;
+  }
+
   // History
   static Future<void> addToHistory(String lessonId) async {
     final history = _history.get('lessonIds', defaultValue: <String>[]) as List<String>;
