@@ -146,33 +146,37 @@ class _LevelTabs extends StatelessWidget {
     final emojis = {'Beginner': '🌱', 'Intermediate': '📖', 'Advanced': '🚀'};
     final tabs = levels.map((l) => '${emojis[l] ?? ''} $l').toList();
 
-    return Row(
-      children: List.generate(tabs.length, (i) {
-        final isSelected = i == selected;
-        return Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
-          child: GestureDetector(
-            onTap: () => onTap(i),
-            child: Container(
-              padding:
-                  const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              decoration: BoxDecoration(
-                color: isSelected ? AppColors.primary : Colors.transparent,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Text(
-                tabs[i],
-                style: TextStyle(
-                  color: isSelected ? Colors.white : Colors.grey,
-                  fontWeight:
-                      isSelected ? FontWeight.bold : FontWeight.w500,
-                  fontSize: 13,
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      padding: const EdgeInsets.symmetric(horizontal: 4),
+      child: Row(
+        children: List.generate(tabs.length, (i) {
+          final isSelected = i == selected;
+          return Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+            child: GestureDetector(
+              onTap: () => onTap(i),
+              child: Container(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(
+                  color: isSelected ? AppColors.primary : Colors.transparent,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Text(
+                  tabs[i],
+                  style: TextStyle(
+                    color: isSelected ? Colors.white : Colors.grey,
+                    fontWeight:
+                        isSelected ? FontWeight.bold : FontWeight.w500,
+                    fontSize: 13,
+                  ),
                 ),
               ),
             ),
-          ),
-        );
-      }),
+          );
+        }),
+      ),
     );
   }
 }
