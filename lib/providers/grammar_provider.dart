@@ -5,7 +5,7 @@ import '../models/grammar_chapter_model.dart';
 import '../services/vocab_remote_service.dart';
 
 const _grammarVersionKey = 'grammar_cache_version';
-const _currentGrammarVersion = 2;
+const _currentGrammarVersion = 3;
 
 final grammarAssetPathsProvider = FutureProvider<List<String>>((ref) async {
   final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
