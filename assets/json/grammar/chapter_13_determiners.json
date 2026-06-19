@@ -1,10 +1,258 @@
 {
   "chapter": 13,
   "level": "Beginner",
-  "title": "Determiners",
+  "title": "Determiners (নির্ধারক)",
   "icon": "checklist",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Determiners are words that come before nouns to clarify what the noun refers to. They indicate whether we are talking about something specific or general, whose it is, how many, or which one. The main types of determiners are: articles (a/an/the), demonstratives (this/that/these/those), possessives (my/your/his/her/its/our/their), quantifiers (some/any/many/much/few/little), distributives (each/every/either/neither), and numbers (one/two/first/second). Determiners are essential for making your meaning clear.",
+  "banglaDescription": "Determiner (নির্ধারক) হলো সেই শব্দ যা noun-এর আগে বসে noun-টি কী বোঝায় তা স্পষ্ট করে। এরা নির্দেশ করে আমরা নির্দিষ্ট না অনির্দিষ্ট কিছু নিয়ে কথা বলছি, কার জিনিস, কয়টি, বা কোনটি। Determiner-এর প্রধান প্রকার: articles (a/an/the), demonstratives (this/that/these/those), possessives (my/your/his/her/its/our/their), quantifiers (some/any/many/much/few/little), distributives (each/every/either/neither), এবং numbers (one/two/first/second)। আপনার অর্থ স্পষ্ট করার জন্য determiners অপরিহার্য।",
+  "topics": [
+    {
+      "name": "What is a Determiner?",
+      "banglaName": "Determiner কী?",
+      "definition": "A determiner is a word that introduces a noun and provides information about it. Determiners tell us which noun (specific or general), whose noun, how many, or how much. A noun almost always needs a determiner in singular countable form. Determiners always come before the noun and before any adjectives describing the noun. They are a closed class — there are only a limited number of them.",
+      "banglaDefinition": "Determiner হলো সেই শব্দ যা noun-কে পরিচয় করিয়ে দেয় এবং এটি সম্পর্কে তথ্য প্রদান করে। Determiner জানায় কোন noun (নির্দিষ্ট বা অনির্দিষ্ট), কার noun, কয়টি, বা কতটুকু। Singular countable noun-এর প্রায় সবসময় একটি determiner প্রয়োজন। Determiner সবসময় noun-এর আগে এবং noun-কে describe করা adjective-এর আগে বসে। এরা closed class — এদের সংখ্যা সীমিত।",
+      "formula": "Determiner + (Adjective) + Noun\n\nExamples:\n'An old temple' → Determiner (An) + Adjective (old) + Noun (temple)\n'My new car' → Determiner (My) + Adjective (new) + Noun (car)\n'Three red roses' → Determiner (Three) + Adjective (red) + Noun (roses)\n'This beautiful sari' → Determiner (This) + Adjective (beautiful) + Noun (sari)\n\nMain types:\n1. Articles: a, an, the\n2. Demonstratives: this, that, these, those\n3. Possessives: my, your, his, her, its, our, their\n4. Quantifiers: some, any, many, much, few, little, several\n5. Numbers: one, two, first, second\n6. Distributives: each, every, either, neither\n7. Interrogatives: which, what, whose\n8. Determiners of difference: other, another, the other",
+      "rules": [
+        "Singular countable noun-এর আগে determiners প্রয়োজন: × 'I bought book' → ✓ 'I bought a book.'",
+        "Determiner সবসময় adjective-এর আগে বসে: 'my new phone', 'the famous Taj Mahal'।",
+        "একটি noun-এর আগে সাধারণত একটি determiner ব্যবহার করা যায়: 'my that book' × → 'that book of mine' ✓।",
+        "Plural এবং uncountable noun-এর আগে determiner optional (general অর্থে) বা প্রয়োজন (specific অর্থে)।",
+        "Possessive determiner (my, your) এবং possessive pronoun (mine, yours) আলাদা — determiner noun-এর আগে বসে।",
+        "Interrogative determiners (which, what, whose) প্রশ্নের শুরুতে বসে: 'Which train goes to Howrah?'"
+      ],
+      "examples": [
+        { "en": "Article: 'I saw a beautiful temple in Bishnupur.'", "bn": "Article: 'আমি বিষ্ণুপুরে একটি সুন্দর মন্দির দেখলাম।'" },
+        { "en": "Demonstrative: 'This Kolkata biryani is the best I have ever had.'", "bn": "Demonstrative: 'এই কলকাতার বিরিয়ানি আমি এখন পর্যন্ত সবচেয়ে ভালো খেয়েছি।'" },
+        { "en": "Possessive: 'My grandmother lives in a village near Shantiniketan.'", "bn": "Possessive: 'আমার দাদী শান্তিনিকেতনের কাছে একটি গ্রামে থাকেন।'" },
+        { "en": "Quantifier: 'Some people prefer chai over coffee in India.'", "bn": "Quantifier: 'কিছু মানুষ ভারতে কফির চেয়ে চা পছন্দ করে।'" },
+        { "en": "Number: 'I have two tickets for the Durga Puja concert.'", "bn": "Number: 'দুর্গাপূজার কনসার্টের জন্য আমার দুটি টিকিট আছে।'" },
+        { "en": "Distributive: 'Every year, millions of pilgrims visit Varanasi.'", "bn": "Distributive: 'প্রতি বছর লক্ষ লক্ষ তীর্থযাত্রী বারাণসী যান।'" }
+      ],
+      "tips": "Determiner চেনার সহজ উপায়: noun-এর ঠিক আগে যে word বসে, adjective-এরও আগে, সেটাই determiner। 'A red car' → 'a' = determiner, 'red' = adjective, 'car' = noun। Determiner ছাড়া singular countable noun ইংরেজিতে অসম্পূর্ণ মনে হয়। বাংলা থেকে ইংরেজি করার সময় এই ভুল সবচেয়ে বেশি হয় — singular countable noun-এর আগে সবসময় determiner দিতে হবে।"
+    },
+    {
+      "name": "Demonstrative Determiners: This, That, These, Those",
+      "banglaName": "নির্দেশক Determiner: This, That, These, Those",
+      "definition": "Demonstrative determiners point to specific nouns. 'This' (এই) refers to something near in distance or time, singular. 'That' (সেই/ওই) refers to something far, singular. 'These' (এইগুলি) is the plural of 'this'. 'Those' (সেইগুলি/ওইগুলি) is the plural of 'that'. They agree in number with the noun that follows: 'this book' (singular), 'these books' (plural).",
+      "banglaDefinition": "Demonstrative determiners নির্দিষ্ট noun-কে নির্দেশ করে। 'This' (এই) দূরত্ব বা সময়ে কাছের কিছু বোঝায়, singular। 'That' (সেই/ওই) দূরের কিছু বোঝায়, singular। 'These' (এইগুলি) হলো 'this'-এর plural। 'Those' (সেইগুলি/ওইগুলি) হলো 'that'-এর plural। এরা noun-এর সাথে number-এ agree করে: 'this book' (singular), 'these books' (plural)।",
+      "formula": "NEAR (কাছে):\nSingular: This + Noun — 'This phone is from China.'\nPlural: These + Noun — 'These mangoes are from Malda.'\n\nFAR (দূরে):\nSingular: That + Noun — 'That Howrah Bridge is beautiful at night.'\nPlural: Those + Noun — 'Those hills are part of the Western Ghats.'\n\nTime reference:\n'This week' = this current week\n'That day' = some day in the past or future\n'These days' = nowadays\n'In those days' = in the past",
+      "rules": [
+        "'This' singular noun-এর সাথে: this book, this room, this train, this moment।",
+        "'These' plural noun-এর সাথে: these books, these rooms, these trains, these days।",
+        "'That' singular noun-এর সাথে (দূরের): that man, that temple, that year, that city।",
+        "'Those' plural noun-এর সাথে (দূরের): those people, those mountains, those festivals।",
+        "সময় বোঝাতে: 'this morning' (আজ সকালে), 'that year' (সেই বছর), 'these days' (এসব দিনে)।",
+        "Phone conversation-এ 'this' নিজের পরিচয়: 'This is Priya speaking.' 'That' অন্য ব্যক্তি: 'Is that Rahul?'"
+      ],
+      "examples": [
+        { "en": "This: 'This sari is made of pure Banarasi silk.'", "bn": "This: 'এই শাড়িটি খাঁটি বেনারসি সিল্কের তৈরি।'" },
+        { "en": "That: 'That temple on the hill is more than 500 years old.'", "bn": "That: 'পাহাড়ের ওই মন্দিরটি ৫০০ বছরেরও পুরনো।'" },
+        { "en": "These: 'These rasgullas from this shop are famous.'", "bn": "These: 'এই দোকানের এই রসগোল্লাগুলো বিখ্যাত।'" },
+        { "en": "Those: 'Those mountains in the distance are the Himalayas.'", "bn": "Those: 'দূরের ওই পর্বতগুলো হিমালয়।'" },
+        { "en": "Time: 'These days, many people use UPI for payments in India.'", "bn": "সময়: 'এই দিনগুলিতে, ভারতে অনেক মানুষ UPI ব্যবহার করে পেমেন্ট করে।'" },
+        { "en": "Time: 'In those days, people travelled by bullock carts.'", "bn": "সময়: 'সেই দিনগুলিতে, মানুষ বলদগাড়িতে ভ্রমণ করত।'" }
+      ],
+      "tips": "This/That/These/Those শেখার সবচেয়ে সহজ উপায়: দুইটি dimension মনে রাখবে — NUMBER (singular/plural) এবং DISTANCE (near/far)। This = singular + near, That = singular + far, These = plural + near, Those = plural + far। হাতের কাছের জিনিসের জন্য 'this', দূরের জন্য 'that'। 'This' দিয়ে শুরু করা conversation, 'that' দিয়ে continuation।"
+    },
+    {
+      "name": "Possessive Determiners",
+      "banglaName": "সম্বন্ধসূচক Determiner",
+      "definition": "Possessive determiners (also called possessive adjectives) show who owns or possesses something. They are: my (আমার), your (তোমার/আপনার), his (তার — পুরুষ), her (তার — নারী), its (এর — প্রাণী/বস্তু), our (আমাদের), their (তাদের). Possessive determiners always come before a noun and replace the article. They agree with the possessor, not the possessed item.",
+      "banglaDefinition": "Possessive determiners (possessive adjective-ও বলা হয়) দেখায় কার অধিকার বা possession আছে। এগুলি: my (আমার), your (তোমার/আপনার), his (তার — পুরুষ), her (তার — নারী), its (এর — প্রাণী/বস্তু), our (আমাদের), their (তাদের)। Possessive determiners সবসময় noun-এর আগে বসে এবং article-কে প্রতিস্থাপন করে। এরা possessor-এর সাথে agree করে, possessed item-এর সাথে নয়।",
+      "formula": "Possessive Determiner + Noun\n\nPerson: 1st person singular → my + noun\nPerson: 2nd person → your + noun\nPerson: 3rd person masculine → his + noun\nPerson: 3rd person feminine → her + noun\nPerson: 3rd person neuter → its + noun\nPerson: 1st person plural → our + noun\nPerson: 3rd person plural → their + noun\n\nExamples:\n'This is my house.' (আমার বাড়ি)\n'I like your kurta.' (তোমার kurta)\n'His office is in Delhi.' (তার অফিস)\n'Her family is from Chennai.' (তার পরিবার)\n'Our country is India.' (আমাদের দেশ)\n'Their shop is on Park Street.' (তাদের দোকান)",
+      "rules": [
+        "Possessive determiner article-কে replace করে: 'my book' (× 'the my book' বা 'a my book')।",
+        "Possessive determiner possessor-এর gender/number অনুযায়ী change হয়, possessed noun অনুযায়ী নয়।",
+        "'Its' (possessive determiner) এবং 'it's' (it is/has) আলাদা — এরা homophone কিন্তু ভিন্ন অর্থ।",
+        "'Your' singular এবং plural উভয়ের জন্য — context থেকে বুঝতে হবে।",
+        "Possessive determiner (my) এবং possessive pronoun (mine) আলাদা: 'This is my book' (determiner) vs 'This book is mine' (pronoun)।",
+        "শরীরের অঙ্গ-প্রত্যঙ্গ এবং ব্যক্তিগত জিনিসের আগে possessive determiner প্রায়ই ব্যবহৃত হয়: 'my head', 'your bag', 'his glasses'।"
+      ],
+      "examples": [
+        { "en": "My: 'My grandmother makes the best luchi in the family.'", "bn": "My: 'আমার দাদী পরিবারে সবচেয়ে ভালো লুচি বানান।'" },
+        { "en": "Your: 'Is your office in the Salt Lake sector?'", "bn": "Your: 'তোমার অফিস কি সল্টলেক সেক্টরে?'" },
+        { "en": "His: 'His father works at the Kolkata Port Trust.'", "bn": "His: 'তার বাবা কলকাতা পোর্ট ট্রাস্টে কাজ করেন।'" },
+        { "en": "Her: 'Her mehendi design was absolutely beautiful.'", "bn": "Her: 'তার মেহেদির ডিজাইন absolutely সুন্দর ছিল।'" },
+        { "en": "Its: 'India is famous for its diverse culture.'", "bn": "Its: 'ভারত তার বৈচিত্র্যময় সংস্কৃতির জন্য বিখ্যাত।'" },
+        { "en": "Their: 'Their house is near the Birla Temple in Bhopal.'", "bn": "Their: 'তাদের বাড়ি ভোপালের বির্লা মন্দিরের কাছে।'" }
+      ],
+      "tips": "Possessive determiners-এ সবচেয়ে বড় confusion: 'its' vs 'it's'। 'Its' = possessive (এর): 'India and its culture.' 'It's' = 'it is' বা 'it has': 'It's a beautiful day.' মনে রাখার কৌশল: যদি 'it is' বা 'it has' বসে, তাহলে apostrophe দিয়ে 'it's' লিখো। না হলে 'its' (apostrophe ছাড়া)। আরেকটি গুরুত্বপূর্ণ: 'their' (তাদের) vs 'there' (সেখানে) vs 'they're' (তারা)।"
+    },
+    {
+      "name": "Quantifiers: Some, Any, Many, Much, etc.",
+      "banglaName": "পরিমাণবাচক Determiner: Some, Any, Many, Much ইত্যাদি",
+      "definition": "Quantifiers are determiners that express quantity or amount. They answer 'how much?' or 'how many?'. Quantifiers for countable nouns: many, few, a few, several, a number of, each, every. Quantifiers for uncountable nouns: much, little, a little, a bit of, a great deal of. Quantifiers for both: some, any, no, enough, plenty of, a lot of, lots of, most, all. Choosing the right quantifier depends on the noun type.",
+      "banglaDefinition": "Quantifier হলো সেই determiners যা পরিমাণ বা সংখ্যা প্রকাশ করে। এরা 'কত?' বা 'কয়টি?' প্রশ্নের উত্তর দেয়। Countable noun-এর জন্য quantifiers: many, few, a few, several, a number of, each, every। Uncountable noun-এর জন্য quantifiers: much, little, a little, a bit of, a great deal of। উভয়ের জন্য: some, any, no, enough, plenty of, a lot of, lots of, most, all। সঠিক quantifier বাছাই noun-এর ধরনের উপর নির্ভর করে।",
+      "formula": "MUCH vs MANY:\nMuch + Uncountable: 'How much rice do you need?'\nMany + Plural Countable: 'How many people came to the festival?'\n\nSOME vs ANY:\nSome + Positive sentences: 'I have some money.'\nAny + Negative/Questions: 'I don't have any money. Do you have any?'\n\nFEW vs LITTLE:\nFew + Countable (not enough): 'Few people attended the meeting.' (প্রায় কেউ না)\nA few + Countable (some): 'A few people came.' (কিছু সংখ্যক)\nLittle + Uncountable (not enough): 'There is little water left.' (প্রায় নেই)\nA little + Uncountable (some): 'A little water is enough.' (কিছুটা)",
+      "rules": [
+        "'Many' and 'a few' → plural countable noun-এর সাথে: many books, a few books।",
+        "'Much' and 'a little' → uncountable noun-এর সাথে: much water, a little water।",
+        "'A lot of' / 'lots of' → countable এবং uncountable উভয়ের সাথে: a lot of people, a lot of time।",
+        "'Some' সাধারণত affirmative sentence-এ: 'I need some help.'",
+        "'Any' negative এবং question-এ: 'I don't have any idea. Do you have any money?'",
+        "'Some' offer/request-এ ব্যবহার করা যায়: 'Would you like some tea?'",
+        "'No' = not any: 'There is no water.' = 'There isn't any water.'"
+      ],
+      "examples": [
+        { "en": "Many: 'Many tourists visit the Taj Mahal every year.'", "bn": "Many: 'প্রতি বছর অনেক পর্যটক তাজমহল দেখতে যান।'" },
+        { "en": "Much: 'There isn't much time before the train departs.'", "bn": "Much: 'ট্রেন ছাড়ার আগে বেশি সময় নেই।'" },
+        { "en": "Some: 'I bought some sweets from the famous shop in Chandni Chowk.'", "bn": "Some: 'আমি চাঁদনি চকের বিখ্যাত দোকান থেকে কিছু মিষ্টি কিনলাম।'" },
+        { "en": "Any: 'Is there any good restaurant near the India Gate?'", "bn": "Any: 'ইন্ডিয়া গেটের কাছে কি কোনো ভালো রেস্টুরেন্ট আছে?'" },
+        { "en": "A few: 'A few guests have already arrived for the wedding.'", "bn": "A few: 'বিয়ের জন্য কিছু অতিথি ইতিমধ্যেই এসে গেছেন।'" },
+        { "en": "A little: 'Add a little more salt to the biryani.'", "bn": "A little: 'বিরিয়ানিতে আরও একটু লবণ দাও।'" }
+      ],
+      "tips": "Quantifier-এ সবচেয়ে গুরুত্বপূর্ণ পার্থক্য: Countable vs Uncountable। 'Many people' (countable), 'much water' (uncountable)। 'Few' = প্রায় নেই (নেতিবাচক), 'a few' = কিছু আছে (ইতিবাচক)। 'Little' = প্রায় নেই (নেতিবাচক), 'a little' = কিছু আছে (ইতিবাচক)। এই subtle পার্থক্যটা অর্থ completely change করে দিতে পারে। 'Few friends came' = খুব কম বন্ধু এসেছে (দুঃখজনক)। 'A few friends came' = কিছু বন্ধু এসেছে (ভালো)।"
+    },
+    {
+      "name": "Numbers as Determiners",
+      "banglaName": "সংখ্যাবাচক Determiner",
+      "definition": "Numbers can act as determiners when they come before a noun. There are two types: Cardinal numbers (one, two, three, hundred, thousand) and Ordinal numbers (first, second, third, last, next). Cardinal numbers answer 'how many?' while ordinal numbers answer 'which position?'. Numbers can combine with other determiners in specific patterns.",
+      "banglaDefinition": "সংখ্যা determiner হিসেবে কাজ করতে পারে যখন noun-এর আগে বসে। দুই ধরনের: Cardinal numbers (এক, দুই, তিন, শত, হাজার) এবং Ordinal numbers (প্রথম, দ্বিতীয়, তৃতীয়, শেষ, পরবর্তী)। Cardinal numbers উত্তর দেয় 'কয়টি?' আর ordinal numbers উত্তর দেয় 'কোন অবস্থান?'। সংখ্যা নির্দিষ্ট প্যাটার্নে অন্যান্য determiner-এর সাথে মিলিত হতে পারে।",
+      "formula": "CARDINAL NUMBERS (কয়টি):\nOne, two, three, four... + Plural Countable Noun\n'Three books' 'Two sari' 'Hundred people'\n\nORDINAL NUMBERS (কোন ক্রমে):\nFirst, second, third... + Singular/Plural Countable Noun\n'The first chapter' 'The third page' 'The last train'\n\nCombinations:\nThe + Ordinal + Cardinal + Noun: 'The first two chapters'\nMy + Ordinal + Noun: 'my first job'\nThe + Ordinal + 'time': 'This is the first time I am visiting Mysore.'\n\nCOMMON PATTERNS:\n'Another + Cardinal + Noun': 'another two weeks'\n'The + Ordinal + 'of' + Month': 'the first of January'",
+      "rules": [
+        "Cardinal number plural noun-এর সাথে: 'five students', 'ten rupees', 'hundred people'।",
+        "Ordinal number-এর আগে সাধারণত 'the' লাগে: 'the first day', 'the second floor', 'the last row'।",
+        "Possessive determiner ordinal-এর আগে বসতে পারে: my first job, his second wife, our third attempt।",
+        "'Next' এবং 'last' ordinal number-এর মতো কাজ করে: 'the next station is Esplanade', 'the last metro is at 10 PM'।",
+        "'Another' = 'an + other' → singular noun-এর সাথে: 'another cup of tea'।",
+        "'Another' + cardinal + plural হতে পারে: 'another five minutes', 'another two kilometers'।",
+        "বয়স বোঝাতে: 'a five-year-old child' (hyphenated, singular form of year)।"
+      ],
+      "examples": [
+        { "en": "Cardinal: 'There are seven wonders of the world, and the Taj Mahal is one of them.'", "bn": "Cardinal: 'পৃথিবীতে সপ্তাশ্চর্য আছে, এবং তাজমহল তাদের মধ্যে একটি।'" },
+        { "en": "Ordinal: 'The first Durga Puja I attended was in Kolkata.'", "bn": "Ordinal: 'আমি প্রথম যে দুর্গাপূজায় যোগ দিয়েছিলাম তা কলকাতায় ছিল।'" },
+        { "en": "Combined: 'The first two days of the book fair were very crowded.'", "bn": "Combined: 'বইমেলার প্রথম দুদিন খুব ভিড় ছিল।'" },
+        { "en": "Next: 'The next Howrah train arrives at platform 5.'", "bn": "Next: 'পরের হাওড়া ট্রেন প্ল্যাটফর্ম ৫-এ আসে।'" },
+        { "en": "Another: 'Could I have another glass of mango lassi?'", "bn": "Another: 'আমি কি আরও এক গ্লাস ম্যাঙ্গো লাচ্ছি নিতে পারি?'" },
+        { "en": "Age: 'My five-year-old nephew loves playing cricket.'", "bn": "বয়স: 'আমার পাঁচ বছরের ভাগনে ক্রিকেট খেলা পছন্দ করে।'" }
+      ],
+      "tips": "Cardinal এবং Ordinal সংখ্যার পার্থক্য: Cardinal = কয়টি (how many), Ordinal = কততম (which position)। 'Two books' (দুটি বই — cardinal, quantity), 'The second book' (দ্বিতীয় বই — ordinal, position)। Ordinal-এর আগে 'the' লাগে, cardinal-এর আগে লাগে না (যদি না specific হয়)। 'I bought two books' (general), 'I bought the two books you wanted' (specific)।"
+    },
+    {
+      "name": "Distributive Determiners: Each, Every, Either, Neither",
+      "banglaName": "বণ্টনমূলক Determiner: Each, Every, Either, Neither",
+      "definition": "Distributive determiners refer to individual members of a group. 'Each' focuses on every single person/thing individually. 'Every' focuses on all members as a group. 'Either' refers to one of two options. 'Neither' refers to none of two options. These determiners help express choices and inclusiveness precisely.",
+      "banglaDefinition": "বণ্টনমূলক determiners একটি গোষ্ঠীর পৃথক সদস্যদের নির্দেশ করে। 'Each' প্রতিটি ব্যক্তি/বস্তুকে পৃথকভাবে ফোকাস করে। 'Every' সমস্ত সদস্যকে একটি গোষ্ঠী হিসেবে ফোকাস করে। 'Either' দুটি বিকল্পের একটি নির্দেশ করে। 'Neither' দুটি বিকল্পের কোনোটিকেই নির্দেশ করে না। এই determiners পছন্দ এবং অন্তর্ভুক্তি স্পষ্টভাবে প্রকাশ করতে সাহায্য করে।",
+      "formula": "EACH vs EVERY:\nEach + Singular Noun: 'Each student has a different textbook.'\nEvery + Singular Noun: 'Every student must submit the assignment.'\n\nEITHER vs NEITHER:\nEither + Singular Noun: 'Either road leads to the station.'\nNeither + Singular Noun: 'Neither option is good.'\n\n'Each of' + Plural Noun/Pronoun: 'Each of the students has a laptop.'\n'Every one of' + Plural Noun/Pronoun: 'Every one of us is responsible.'\n'Either of' + Plural Noun/Pronoun: 'Either of the two trains goes to Delhi.'\n'Neither of' + Plural Noun/Pronoun: 'Neither of the answers is correct.'",
+      "rules": [
+        "'Each' এবং 'every' উভয়ের পরে singular noun এবং singular verb: 'Each student is...', 'Every student is...'।",
+        "'Each' ব্যক্তিগত/পৃথক focus: 'Each rose in the garden has a different fragrance.' (প্রিটি rose আলাদাভাবে)",
+        "'Every' গ্রুপ/general focus: 'Every rose has thorns.' (সকল rose-এর সাধারণ বৈশিষ্ট্য)",
+        "'Each' দুই বা ততোধিকের জন্য, 'every' তিন বা ততোধিকের জন্য।",
+        "'Either' এবং 'neither' শুধু দুটি জিনিসের জন্য।",
+        "'Either' = one or the other (যেকোনো একটি), 'neither' = not one nor the other (কোনোটিই নয়)।",
+        "'Either...or' এবং 'neither...nor' paired conjunction হিসেবে দীর্ঘ বাক্যে ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "Each: 'Each of these silk saris is handwoven in Banaras.'", "bn": "Each: 'এই সিল্কের শাড়িগুলোর প্রতিটি বেনারসে হাতে বোনা।'" },
+        { "en": "Every: 'Every year, thousands of devotees visit the Jagannath Temple in Puri.'", "bn": "Every: 'প্রতি বছর হাজার হাজার ভক্ত পুরীর জগন্নাথ মন্দিরে যান।'" },
+        { "en": "Either: 'You can take either the metro or the bus to reach Connaught Place.'", "bn": "Either: 'তুমি কনট প্লেস পৌঁছানোর জন্য মেট্রো বা বাস — যেকোনো একটি নিতে পারো।'" },
+        { "en": "Neither: 'Neither of the two restaurants served good Hyderabadi biryani.'", "bn": "Neither: 'দুটি রেস্টুরেন্টের কোনোটিই ভালো হায়দ্রাবাদি বিরিয়ানি পরিবেশন করেনি।'" },
+        { "en": "Each vs Every: 'Each child received a different gift' (individually) vs 'Every child received a gift' (nobody was left out).", "bn": "Each vs Every: 'প্রতিটি শিশু আলাদা উপহার পেয়েছে' (পৃথক) vs 'প্রত্যেক শিশু উপহার পেয়েছে' (কেউ বাদ পড়েনি)।" }
+      ],
+      "tips": "Each vs Every-এর পার্থক্য: 'Each' = প্রতিটি আলাদাভাবে দেখা (focus on individuals), 'Every' = সবাই মিলে (focus on the group as a whole)। 'Each one of you' (তোমাদের প্রত্যেকে, ব্যক্তিগত), 'Every one of you' (তোমাদের সবাই, collective)। 'Either' vs 'Neither': 'Either' = positive/choice (যেকোনো একটি), 'Neither' = negative (কোনোটিই নয়)। 'Either' দিয়ে সাধারণত affirmative, 'Neither' দিয়ে negative।"
+    },
+    {
+      "name": "Determiners of Difference: Other, Another, The Other",
+      "banglaName": "পার্থক্যসূচক Determiner: Other, Another, The Other",
+      "definition": "'Other', 'another', and 'the other' are determiners that indicate additional or alternative nouns. 'Another' means 'one more' or 'a different one' (singular). 'Other' means 'different' or 'additional' (plural). 'The other' means 'the remaining one' of two (singular) or 'the remaining ones' (plural). These determiners are often confused but have distinct uses.",
+      "banglaDefinition": "'Other', 'another', এবং 'the other' হলো সেই determiners যা অতিরিক্ত বা বিকল্প noun নির্দেশ করে। 'Another' অর্থ 'আরও একটি' বা 'ভিন্ন একটি' (singular)। 'Other' অর্থ 'ভিন্ন' বা 'অতিরিক্ত' (plural)। 'The other' অর্থ 'অবশিষ্টটি' (দুটির মধ্যে) বা 'অবশিষ্টগুলি' (plural)। এই determiners প্রায়ই বিভ্রান্তিকর কিন্তু আলাদা ব্যবহার আছে।",
+      "formula": "ANOTHER (Singular):\nAn + other = Another\n'Another cup of tea' (আরও এক কাপ চা)\n'Another person' (আরেক ব্যক্তি)\n\nOTHER (Plural):\n'Other people' (অন্য লোকেরা)\n'Other options' (অন্যান্য বিকল্প)\n\nTHE OTHER (Singular — the remaining of two):\n'I have two books. One is English, the other is Bengali.'\n\nTHE OTHER (Plural — the remaining ones):\n'Some students passed, but the other students failed.'\n\nOTHERS (Pronoun):\n'Some people like tea, others prefer coffee.'",
+      "rules": [
+        "'Another' singular countable noun-এর সাথে: another day, another chance, another person।",
+        "'Another' + number + plural হতে পারে: another five minutes, another two kilometers।",
+        "'Other' plural noun-এর সাথে: other people, other options, other countries।",
+        "'The other' নির্দিষ্ট remaining one/ones: 'I will take this kurta, you can take the other one.'",
+        "'Other' uncountable noun-এর সাথেও হতে পারে: other information, other advice।",
+        "'Each other' এবং 'one another' reciprocal pronoun: 'They help each other.'",
+        "'Another' এবং 'the other' এর পার্থক্য: 'Give me another book' (আরেকটি, যেকোনো) vs 'Give me the other book' (অন্যটি, নির্দিষ্ট)।"
+      ],
+      "examples": [
+        { "en": "Another: 'I need another week to complete this project.'", "bn": "Another: 'এই প্রকল্প শেষ করতে আমার আরও এক সপ্তাহ দরকার।'" },
+        { "en": "Other: 'Other cities in India like Jaipur and Udaipur are also beautiful.'", "bn": "Other: 'জয়পুর এবং উদয়পুরের মতো ভারতে অন্যান্য শহরও সুন্দর।'" },
+        { "en": "The other: 'One hand holds the flower, the other holds the offering.'", "bn": "The other: 'এক হাতে ফুল, অন্য হাতে প্রসাদ।'" },
+        { "en": "Another condition: 'We have visited Kolkata many times. Another trip would be nice.'", "bn": "আরও: 'আমরা কলকাতায় অনেকবার গিয়েছি। আরও একটি ভ্রমণ ভালো হবে।'" },
+        { "en": "The other plural: 'Some metro stations have escalators; the other stations have only stairs.'", "bn": "The other plural: 'কিছু মেট্রো স্টেশনে এসকেলেটর আছে; বাকি স্টেশনগুলোতে শুধু সিঁড়ি আছে।'" },
+        { "en": "Each other: 'In India, people from different cultures respect each other.'", "bn": "Each other: 'ভারতে, বিভিন্ন সংস্কৃতির মানুষ একে অপরকে সম্মান করে।'" }
+      ],
+      "tips": "Another vs Other vs The Other মনে রাখার কৌশল: 'Another' = an + other = 'আরও একটি' (অনির্দিষ্ট, singular)। 'Other' = 'অন্যান্য' (অনির্দিষ্ট, plural)। 'The other' = 'অন্যটি' (নির্দিষ্ট, দুটির মধ্যে)। 'Another' বলতে count-এ আরও একটি যোগ করা; 'the other' বলতে দুটির মধ্যে বাকিটা। 'I want another book' (আমার আরও একটি বই চাই, যেকোনো) vs 'I want the other book' (আমার অন্যটি চাই, specific)।"
+    },
+    {
+      "name": "Common Determiner Mistakes and Confusions",
+      "banglaName": "Determiner-এ সাধারণ ভুল ও বিভ্রান্তি",
+      "definition": "Determiners are a common source of errors for Bengali and other ESL learners. Frequent mistakes include: confusing 'its' and 'it's', using 'these' with singular nouns, mixing up 'much' and 'many', misunderstanding 'few/a few' and 'little/a little', wrong word order with 'such' and 'what', double determiners, and confusing 'every day' with 'everyday'. Understanding these pitfalls will dramatically improve your accuracy.",
+      "banglaDefinition": "Determiner বাংলাভাষী এবং অন্যান্য ESL শিক্ষার্থীদের জন্য ভুলের সাধারণ উৎস। ঘন ঘন ভুল: 'its' এবং 'it's' নিয়ে বিভ্রান্তি, singular noun-এর সাথে 'these' ব্যবহার, 'much' এবং 'many' মিশিয়ে ফেলা, 'few/a few' এবং 'little/a little' ভুল বোঝা, 'such' এবং 'what'-এর সাথে ভুল শব্দক্রম, double determiners, এবং 'every day' বনাম 'everyday' নিয়ে গুলি। এই সমস্যাগুলো বোঝা আপনার নির্ভুলতা dramatically উন্নত করবে।",
+      "formula": "CORRECT vs INCORRECT PATTERNS:\n\nIts vs It's:\n✓ 'India and its culture' (possessive)\n✓ 'It's a beautiful country' (it is)\n\nThese/Those + Singular Noun:\n× 'These book' → ✓ 'This book' or 'These books'\n\nMuch/Many:\n× 'Many water' → ✓ 'Much water' or 'A lot of water'\n× 'Much people' → ✓ 'Many people'\n\nDouble Determiners:\n× 'My that book' → ✓ 'That book of mine'\n\nSuch + Adjective + Noun:\n✓ 'Such a beautiful temple' (note: 'a' after 'such')\n× 'Such beautiful temple' (missing 'a')\n\nEvery day vs Everyday:\n'Every day' (প্রতিদিন — adverb) vs 'Everyday' (দৈনন্দিন — adjective)",
+      "rules": [
+        "'Its' (possessive) এবং 'it's' (it is) গুলিয়ে ফেলো না — 'its' কোনো apostrophe নেয় না।",
+        "'These' এবং 'those' সবসময় plural noun-এর সাথে — 'these book' ভুল, 'these books' সঠিক।",
+        "'Much' uncountable noun-এর সাথে, 'many' plural countable noun-এর সাথে।",
+        "'Few' = almost none (negative), 'a few' = some (positive) — অর্থ completely আলাদা।",
+        "'Little' = almost none (negative), 'a little' = some (positive) — একই পার্থক্য।",
+        "Determiner-এর পরে adjective-এর আগে 'such' আসে: 'such a hot day', 'such beautiful flowers'।",
+        "একটি noun-এর আগে একটির বেশি determiner ব্যবহার করা যায় না (few exceptions): 'my that book' ভুল।"
+      ],
+      "examples": [
+        { "en": "Its vs It's: 'India is proud of its heritage. It's a land of diversity.'", "bn": "Its vs It's: 'ভারত তার ঐতিহ্যে গর্বিত। এটি বৈচিত্র্যের দেশ।'" },
+        { "en": "Much/Many: 'How much rice do you need? How many people are coming?'", "bn": "Much/Many: 'তোমার কত চাল দরকার? কতজন লোক আসছে?'" },
+        { "en": "Few/A few: 'Few people know about this hidden temple' (almost nobody) vs 'A few people know about it' (some).", "bn": "Few/A few: 'এই লুকানো মন্দির সম্পর্কে কম লোক জানে' (প্রায় কেউ না) vs 'কিছু লোক জানে' (কিছু)।" },
+        { "en": "Such: 'It was such a beautiful sunrise at the Ganges ghats.'", "bn": "Such: 'গঙ্গার ঘাটে এত সুন্দর সূর্যোদয় ছিল।'" },
+        { "en": "Every day vs Everyday: 'I visit the temple every day. It is part of my everyday routine.'", "bn": "Every day vs Everyday: 'আমি প্রতিদিন মন্দিরে যাই। এটি আমার দৈনন্দিন রুটিনের অংশ।'" },
+        { "en": "Double determiner: × 'This my house' → ✓ 'This is my house' or 'This house of mine'.", "bn": "Double determiner: × 'এই আমার বাড়ি' → ✓ 'এটি আমার বাড়ি' বা 'আমার এই বাড়িটি'।" }
+      ],
+      "tips": "Determiner-এ সবচেয়ে বড় ৩টি ভুল: (১) Its/It's: apostrophe ছাড়া possessive — remember 'his' has no apostrophe, 'its' is the same. (২) Few/A few: 'few' = প্রায় নেই (complaint), 'a few' = কিছু আছে (positive surprise) — article ছাড়া নেতিবাচক। (৩) Much/Many: countable vs uncountable। এই তিনটি নিয়ম আয়ত্ত করলেই determiner-এর বেশিরভাগ ভুল এড়ানো যাবে।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "'Its a very famous temple in South India.'",
+      "correct": "'It's a very famous temple in South India.' (It is) or 'The temple is famous for its architecture.' (possessive)",
+      "explanation": "'Its' (apostrophe ছাড়া) = possessive determiner — 'its color', 'its history', 'its people'। 'It's' (apostrophe সহ) = 'it is' বা 'it has'। নিয়ম: 'It's' শুধু 'it is' বা 'it has'-এর সংক্ষিপ্ত রূপ হিসেবে ব্যবহার করো। অন্য সব ক্ষেত্রে 'its' (apostrophe ছাড়া)। 'Its' = তার, ঠিক যেমন 'his', 'her', 'my' — এগুলোর কখনো apostrophe লাগে না।"
+    },
+    {
+      "wrong": "'These book is very interesting.'",
+      "correct": "'This book is very interesting.' (singular) or 'These books are very interesting.' (plural)",
+      "explanation": "'These' (এইগুলি) plural determiner — সবসময় plural noun এবং plural verb-এর সাথে: 'These books are...', 'These shops are...', 'These people are...'। 'This' singular: 'This book is...', 'This shop is...'। 'These book' ভুল — 'these' plural, 'book' singular — mismatch। মনে রাখবে: this + singular, these + plural; that + singular, those + plural।"
+    },
+    {
+      "wrong": "'I have much friends in Kolkata.'",
+      "correct": "'I have many friends in Kolkata.' or 'I have a lot of friends in Kolkata.'",
+      "explanation": "'Much' uncountable noun-এর জন্য: much time, much water, much money, much patience। 'Many' countable plural noun-এর জন্য: many friends, many books, many people। 'Friends' countable, তাই 'many friends' সঠিক। 'Much friends' ভুল। 'A lot of' / 'lots of' উভয়ের সাথেই ব্যবহার করা যায়: 'a lot of friends' (countable), 'a lot of water' (uncountable)।"
+    },
+    {
+      "wrong": "'Few water was left in the bottle after the journey.'",
+      "correct": "'Little water was left in the bottle after the journey.'",
+      "explanation": "'Few' countable noun-এর সাথে: few books, few people, few opportunities। 'Little' uncountable noun-এর সাথে: little water, little time, little money, little patience। 'Water' uncountable, তাই 'little water' সঠিক। 'Few water' ভুল। এছাড়াও 'a few' (countable, positive) এবং 'a little' (uncountable, positive) — 'a few friends', 'a little patience'।"
+    },
+    {
+      "wrong": "'I bought some furniture's from the market.'",
+      "correct": "'I bought some furniture from the market.'",
+      "explanation": "'Furniture' uncountable noun — এর plural 'furnitures' হয় না, এবং possessive apostrophe 'furniture's' ভুলভাবে ব্যবহার করা হয়েছে। 'Some furniture' uncountable noun-এর সাথে সঠিক quantifier। নির্দিষ্ট টুকরো বোঝাতে: 'a piece of furniture', 'items of furniture'। 'Some' uncountable এবং plural countable উভয়ের সাথেই যায়: 'some water', 'some books', 'some furniture'।"
+    },
+    {
+      "wrong": "'Every students must bring their books tomorrow.'",
+      "correct": "'Every student must bring his or her book tomorrow.' or 'All students must bring their books tomorrow.'",
+      "explanation": "'Every' singular noun এবং singular verb নেয়: 'Every student is...', 'Every book is...', 'Every person has...'। 'Every students' ভুল — 'students' plural। 'Every student' সঠিক। আধুনিক English-এ 'Every student must bring their book' গ্রহণযোগ্য (singular they), কিন্তু formal grammar-এ 'his or her' বেশি সঠিক। সহজ সমাধান: 'All students must bring their books' — 'all' + plural।"
+    },
+    {
+      "wrong": "'I need an information about the train schedule.'",
+      "correct": "'I need some information about the train schedule.' or 'I need a piece of information about the train schedule.'",
+      "explanation": "'Information' uncountable noun — এর আগে 'a' বা 'an' বসে না। 'An information' ভুল। 'Some information', 'a piece of information', বা 'a bit of information' সঠিক। অন্যান্য uncountable nouns যেগুলো Bengali speakers ভুল করে: a news (×) → some news (✓), a research (×) → some research/a research study (✓), an advice (×) → some advice/a piece of advice (✓)।"
+    },
+    {
+      "wrong": "'Either of the two options are acceptable.'",
+      "correct": "'Either of the two options is acceptable.'",
+      "explanation": "'Either' singular — verb singular হয়: 'Either is acceptable', 'Either of the options is fine.' 'Either' = 'one of two' (দুটির মধ্যে একটি) — এটি singular concept। 'Neither' ও singular: 'Neither of the answers is correct.' কিন্তু 'Either...or' এবং 'neither...nor' paired conjunction-এর ক্ষেত্রে verb agrees with the nearest subject: 'Either the manager or the employees are responsible.'"
+    },
+    {
+      "wrong": "'What a beautiful scenery!' (This is actually correct, but 'scenery' is uncountable so: 'What beautiful scenery!')",
+      "correct": "'What beautiful scenery!' (uncountable, no 'a') or 'What a beautiful scene!' (countable, with 'a')",
+      "explanation": "একটি interesting case: 'Scenery' uncountable — 'a scenery' ভুল। 'What beautiful scenery!' সঠিক (no 'a')। কিন্তু 'scene' countable — 'What a beautiful scene!' সঠিক (with 'a')। 'What a + singular countable noun': 'What a beautiful temple!', 'What a nice day!' 'What + plural/uncountable': 'What beautiful flowers!', 'What wonderful advice!' 'Such'-এর ক্ষেত্রেও একই: 'Such beautiful scenery!' vs 'Such a beautiful scene!'"
+    },
+    {
+      "wrong": "'He is my that friend from college.'",
+      "correct": "'He is that friend of mine from college.' or 'He is my friend from college.'",
+      "explanation": "ইংরেজিতে দুইটি determiner একসাথে ব্যবহার করা যায় না। 'My that friend' — 'my' (possessive) এবং 'that' (demonstrative) দুটোই determiner — একসাথে নয়। সঠিক: 'That friend of mine' (demonstrative + 'of' + possessive pronoun) বা শুধু 'my friend' (possessive determiner) বা 'that friend' (demonstrative determiner)। একই নিয়ম: 'that my book' × → 'that book of mine' ✓, 'this your bag' × → 'this bag of yours' ✓।"
+    }
+  ]
 }
