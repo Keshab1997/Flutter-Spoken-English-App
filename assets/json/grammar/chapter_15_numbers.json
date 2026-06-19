@@ -1,10 +1,257 @@
 {
   "chapter": 15,
   "level": "Beginner",
-  "title": "Numbers",
+  "title": "Numbers (সংখ্যা)",
   "icon": "numbers",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Numbers are essential in everyday English for talking about quantities, prices, time, dates, and measurements. There are two main types: cardinal numbers (one, two, three — for counting) and ordinal numbers (first, second, third — for order/position). Indian English uses lakh (1,00,000) and crore (1,00,00,000) in addition to thousand and million. Numbers also appear in fractions, decimals, percentages, dates, phone numbers, and many fixed expressions.",
+  "banglaDescription": "পরিমাণ, দাম, সময়, তারিখ এবং মাপ নিয়ে কথা বলতে দৈনন্দিন ইংরেজিতে সংখ্যা অপরিহার্য। দুটি প্রধান প্রকার আছে: cardinal numbers (এক, দুই, তিন — গণনার জন্য) এবং ordinal numbers (প্রথম, দ্বিতীয়, তৃতীয় — ক্রম/অবস্থানের জন্য)। ভারতীয় ইংরেজি thousand এবং million-এর পাশাপাশি lakh (১,০০,০০০) এবং crore (১,০০,০০,০০০) ব্যবহার করে। ভগ্নাংশ, দশমিক, শতাংশ, তারিখ, ফোন নম্বর এবং অনেক স্থির অভিব্যক্তিতেও সংখ্যা ব্যবহৃত হয়।",
+  "topics": [
+    {
+      "name": "Cardinal Numbers: One to a Billion",
+      "banglaName": "গণনামূলক সংখ্যা: এক থেকে কোটি",
+      "definition": "Cardinal numbers are used for counting and expressing quantity. They answer 'how many?'. The basic numbers are: 0 = zero/nought, 1-10 (one to ten), 11-19 (eleven to nineteen), 20-90 (twenty to ninety in tens), and then hundred, thousand, lakh (Indian system), million (international system), crore, and billion. Compound numbers like 21 are hyphenated: twenty-one, thirty-two, ninety-nine.",
+      "banglaDefinition": "গণনামূলক সংখ্যা গণনা এবং পরিমাণ প্রকাশের জন্য ব্যবহৃত হয়। এরা 'কয়টি?' প্রশ্নের উত্তর দেয়। মৌলিক সংখ্যা: ০ = zero/nought, ১-১০ (one to ten), ১১-১৯ (eleven to nineteen), ২০-৯০ (twenty to ninety), এবং তারপর hundred, thousand, lakh (ভারতীয় পদ্ধতি), million (আন্তর্জাতিক পদ্ধতি), crore, এবং billion। ২১-এর মতো যৌগিক সংখ্যা hyphenated: twenty-one, thirty-two, ninety-nine।",
+      "formula": "INDIAN NUMBER SYSTEM (ভারতীয়):\n1 = One\n10 = Ten\n100 = Hundred\n1,000 = Thousand\n10,000 = Ten Thousand\n1,00,000 = One Lakh\n10,00,000 = Ten Lakh\n1,00,00,000 = One Crore\n\nINTERNATIONAL SYSTEM:\n1,000 = One Thousand\n10,000 = Ten Thousand\n100,000 = One Hundred Thousand\n1,000,000 = One Million\n10,000,000 = Ten Million\n1,000,000,000 = One Billion\n\nCOMPOUND NUMBERS (21-99):\n21 = twenty-one, 45 = forty-five, 87 = eighty-seven\n\nLARGE NUMBERS EXAMPLE:\n12,34,567 (Indian) → Twelve Lakh, Thirty-Four Thousand, Five Hundred and Sixty-Seven\n1,234,567 (International) → One Million, Two Hundred and Thirty-Four Thousand, Five Hundred and Sixty-Seven",
+      "rules": [
+        "সংখ্যা 21-99 এর মধ্যে hyphen ব্যবহার করো: twenty-one, thirty-three, sixty-seven, ninety-nine।",
+        "'Hundred', 'thousand', 'lakh', 'crore' singular থাকে যখন নির্দিষ্ট সংখ্যার আগে: two hundred, three thousand, ten lakh, five crore।",
+        "Plural 'hundreds of' / 'thousands of' / 'lakhs of' — অনির্দিষ্ট পরিমাণ বোঝায়: 'Hundreds of people came.'",
+        "'And' ব্যবহৃত হয় hundred-এর পরে: 101 = a hundred and one, 250 = two hundred and fifty।",
+        "Indian system-এ comma placement ভিন্ন: 1,00,000 (lakh) vs 100,000 (international hundred thousand)।",
+        "'Zero' = সাধারণ নাম, 'nought' = British English-এ গণিতে, 'oh' = phone number এবং year-এ।"
+      ],
+      "examples": [
+        { "en": "'The population of my town is about fifty thousand.'", "bn": "'আমার শহরের জনসংখ্যা প্রায় পঞ্চাশ হাজার।'" },
+        { "en": "'The wedding had two hundred and fifty guests.'", "bn": "'বিয়েতে আড়াইশো অতিথি ছিল।'" },
+        { "en": "'India's population is over one hundred and forty crores.'", "bn": "'ভারতের জনসংখ্যা একশো চল্লিশ কোটি ছাড়িয়েছে।'" },
+        { "en": "'She bought a flat for seventy-five lakh rupees in Kolkata.'", "bn": "'সে কলকাতায় পঁচাত্তর লাখ টাকায় একটি ফ্ল্যাট কিনেছে।'" },
+        { "en": "'The exam has thirty-five questions, and you need twenty-five correct to pass.'", "bn": "'পরীক্ষায় পঁয়ত্রিশটি প্রশ্ন আছে, এবং পাস করতে পঁচিশটি সঠিক দরকার।'" }
+      ],
+      "tips": "বাংলা থেকে ইংরেজিতে সংখ্যা বলার সময় comma-এর পার্থক্য মনে রাখবে। বাংলা/ভারতীয় পদ্ধতি: ১,০০,০০০ (এক লাখ)। আন্তর্জাতিক পদ্ধতি: ১০০,০০০ (one hundred thousand)। অনুশীলনের জন্য: '১,২৩,৪৫,৬৭৮' পড়ার চেষ্টা করো — 'Twelve crore, thirty-four lakh, fifty-six thousand, seven hundred and eighty-one'। বড় সংখ্যা বলার সময় 'and' এর ব্যবহার বিশেষভাবে মনে রাখবে।"
+    },
+    {
+      "name": "Ordinal Numbers: First, Second, Third",
+      "banglaName": "ক্রমবাচক সংখ্যা: প্রথম, দ্বিতীয়, তৃতীয়",
+      "definition": "Ordinal numbers show position, order, or rank. They answer 'which position?'. Most ordinals are formed by adding '-th' to the cardinal number (fourth, sixth, tenth, hundredth). Exceptions: first (1st), second (2nd), third (3rd), fifth (5th), eighth (8th), ninth (9th), twelfth (12th). Ordinals are used for dates (1st January), floors (5th floor), centuries (21st century), competitions (2nd prize), and sequences (the first step).",
+      "banglaDefinition": "ক্রমবাচক সংখ্যা অবস্থান, ক্রম, বা পদমর্যাদা দেখায়। এরা 'কততম?' প্রশ্নের উত্তর দেয়। অধিকাংশ ordinal cardinal-এর সাথে '-th' যোগ করে গঠিত (চতুর্থ, ষষ্ঠ, দশম, শততম)। ব্যতিক্রম: first (১ম), second (২য়), third (৩য়), fifth (৫ম), eighth (৮ম), ninth (৯ম), twelfth (১২তম)। Ordinal ব্যবহার হয় তারিখ (১লা জানুয়ারি), তলা (৫ম তলা), শতাব্দী (২১শ শতাব্দী), প্রতিযোগিতা (২য় পুরস্কার), এবং ক্রম (প্রথম ধাপ) বোঝাতে।",
+      "formula": "REGULAR ORDINALS (add -th):\n4 → fourth (4th)    6 → sixth (6th)\n7 → seventh (7th)   10 → tenth (10th)\n11 → eleventh (11th)  100 → hundredth (100th)\n1,000 → thousandth (1000th)\n\nIRREGULAR ORDINALS:\n1 → first (1st)      2 → second (2nd)      3 → third (3rd)\n5 → fifth (5th)      8 → eighth (8th)      9 → ninth (9th)\n12 → twelfth (12th)\n\n20 → twentieth (20th)   21 → twenty-first (21st)\n22 → twenty-second (22nd)   23 → twenty-third (23rd)\n30 → thirtieth (30th)   100 → hundredth (100th)\n\nUSAGE IN DATES:\n15th August (Independence Day)\n26th January (Republic Day)\n1st May (Labour Day)\n2nd October (Gandhi Jayanti)",
+      "rules": [
+        "Ordinal সংখ্যার আগে সাধারণত 'the' লাগে: 'the first time', 'the second floor', 'the 21st century'।",
+        "তারিখে ordinal ব্যবহৃত হয়: '15th August', '1st January', '2nd October'।",
+        "তলা বোঝাতে ordinal: 'ground floor', 'first floor', 'second floor' (ভারতে ground floor = নিচতলা)।",
+        "শতাব্দী বোঝাতে ordinal: 'the 21st century', 'the 19th century'।",
+        "'Last' এবং 'next' ordinal-এর মতো কাজ করে: 'the last train', 'the next station'।",
+        "Ordinal লেখার সময় শেষের two letters বসে: 1st, 2nd, 3rd, 4th, 11th, 12th, 13th, 21st, 22nd, 23rd, 31st।",
+        "বেশিরভাগ ordinal-এ 'the' ব্যবহার হয়, কিন্তু possessive determiner-এর পরেও: 'my first job', 'his second wife'।"
+      ],
+      "examples": [
+        { "en": "'India celebrates its 78th Independence Day on 15th August 2025.'", "bn": "'ভারত ১৫ই আগস্ট ২০২৫-এ তার ৭৮তম স্বাধীনতা দিবস উদযাপন করে।'" },
+        { "en": "'She lives on the 5th floor of a high-rise in Mumbai.'", "bn": "'সে মুম্বাইয়ের একটি উঁচু ভবনের ৫ম তলায় থাকে।'" },
+        { "en": "'He won the first prize in the national singing competition.'", "bn": "'সে জাতীয় সঙ্গীত প্রতিযোগিতায় প্রথম পুরস্কার জিতেছে।'" },
+        { "en": "'My office is on the 3rd floor of the building on Park Street.'", "bn": "'আমার অফিস পার্ক স্ট্রিটের ভবনের ৩য় তলায়।'" },
+        { "en": "'The 21st century has seen rapid technological growth in India.'", "bn": "'২১শ শতাব্দী ভারতে দ্রুত প্রযুক্তিগত বৃদ্ধি দেখেছে।'" },
+        { "en": "'This is my first visit to the Red Fort.'", "bn": "'এটি আমার লাল কেল্লায় প্রথম ভ্রমণ।'" }
+      ],
+      "tips": "Ordinal formation-এ কয়েকটি irregular মনে রাখবে: 1→first, 2→second, 3→third, 5→fifth (ve→f), 8→eighth (one t), 9→ninth (remove e), 12→twelfth (ve→f)। বড় সংখ্যার শেষের digits দেখে ordinal নির্ধারণ করো: 21st (twenty-first, 1→first), 32nd (thirty-second, 2→second), 43rd (forty-third, 3→third), 54th (fifty-fourth, 4→fourth)। কিন্তু 11th (eleventh), 12th (twelfth), 13th (thirteenth) — এরা ব্যতিক্রম।"
+    },
+    {
+      "name": "Numbers in Dates and Years",
+      "banglaName": "তারিখ ও বছরে সংখ্যা",
+      "definition": "Dates and years have specific pronunciation patterns in English. For dates: British English uses 'the' and 'of' (the 15th of August), while American English puts the month first (August 15th). For years: before 2000, split into two halves (1999 = nineteen ninety-nine). 2000 = two thousand, 2001-2009 = two thousand and one/two thousand and nine, 2010 onwards = twenty ten, twenty twenty-four. Writing dates correctly is important for forms and formal documents.",
+      "banglaDefinition": "ইংরেজিতে তারিখ এবং বছরের নির্দিষ্ট উচ্চারণ পদ্ধতি আছে। তারিখের জন্য: British English 'the' এবং 'of' ব্যবহার করে (the 15th of August), American English মাস প্রথমে রাখে (August 15th)। বছরের জন্য: ২০০০-এর আগে — দুভাগে ভাগ করে (১৯৯৯ = nineteen ninety-nine)। ২০০০ = two thousand, ২০০১-২০০৯ = two thousand and one/two thousand and nine, ২০১০ থেকে = twenty ten, twenty twenty-four। ফর্ম এবং আনুষ্ঠানিক নথির জন্য তারিখ সঠিকভাবে লেখা গুরুত্বপূর্ণ।",
+      "formula": "DATES:\n\nBritish English (DD/MM/YYYY):\n15th August 2025 → 'the fifteenth of August, twenty twenty-five'\n1st January 2024 → 'the first of January, twenty twenty-four'\n\nAmerican English (MM/DD/YYYY):\nAugust 15th, 2025 → 'August fifteenth, twenty twenty-five'\nJanuary 1st, 2024 → 'January first, twenty twenty-four'\n\nYEARS:\n1999 → nineteen ninety-nine\n2000 → two thousand\n2005 → two thousand and five / twenty oh five\n2010 → twenty ten\n2024 → twenty twenty-four\n1905 → nineteen oh five\n1800 → eighteen hundred\n\nCENTURIES:\n1900s → the nineteen hundreds / the 20th century\n2000s → the two thousands / the 21st century",
+      "rules": [
+        "British English-এ day/month/year: 15/08/2025 = 15th August 2025।",
+        "American English-এ month/day/year: 08/15/2025 = August 15th, 2025।",
+        "Year 2000-এর আগে two halves: 1987 = nineteen eighty-seven, 1066 = ten sixty-six।",
+        "Year 2000 = two thousand, 2000s = two thousands বা twenty hundreds।",
+        "Year 2001-2009 = two thousand and one/.../two thousand and nine বা twenty oh one/.../twenty oh nine।",
+        "Year 2010-2099 = twenty ten, twenty eleven, twenty twenty-four, etc.।",
+        "Century পড়ার সময় 'the + ordinal + century': the 20th century, the 21st century, the 18th century।",
+        "Decade পড়ার সময়: the 1990s (the nineteen nineties), the 2020s (the twenties বা the twenty twenties)।"
+      ],
+      "examples": [
+        { "en": "'India became independent on 15th August 1947. (the fifteenth of August, nineteen forty-seven)'", "bn": "'ভারত ১৫ই আগস্ট ১৯৪৭ সালে স্বাধীন হয়।'" },
+        { "en": "'The 2024 ICC Cricket World Cup was held in the West Indies and the USA.'", "bn": "'২০২৪ আইসিসি ক্রিকেট বিশ্বকাপ ওয়েস্ট ইন্ডিজ এবং মার্কিন যুক্তরাষ্ট্রে অনুষ্ঠিত হয়েছিল।'" },
+        { "en": "'She was born on 26th January 1999 — the same day as Republic Day.'", "bn": "'সে ২৬শে জানুয়ারি ১৯৯৯ সালে জন্মেছে — প্রজাতন্ত্র দিবসের একই দিনে।'" },
+        { "en": "'The 19th century saw major social reforms in India.'", "bn": "'১৯শ শতাব্দীতে ভারতে বড় সামাজিক সংস্কার হয়েছিল।'" },
+        { "en": "'I will graduate in the summer of 2026.'", "bn": "'আমি ২০২৬ সালের গ্রীষ্মে স্নাতক হব।'" },
+        { "en": "'The company was founded in the early 2000s.'", "bn": "'কোম্পানিটি ২০০০-এর দশকের শুরুতে প্রতিষ্ঠিত হয়েছিল।'" }
+      ],
+      "tips": "বছর উচ্চারণের নিয়ম: 2000-এর আগে — দু'ভাগ: 1947 = nineteen forty-seven, 1786 = seventeen eighty-six। 2000 = two thousand। 2001-2009 = two thousand (and) one/ nine বা twenty oh one/ nine। 2010-2099 = twenty ten, twenty twenty-four, twenty ninety-nine। 12-hour clock ব্যবহার সময়ের জন্য: 5:30 PM = five thirty in the evening, 8:15 AM = eight fifteen in the morning।"
+    },
+    {
+      "name": "Numbers in Time Expressions",
+      "banglaName": "সময় প্রকাশে সংখ্যা",
+      "definition": "Telling time in English uses numbers in specific patterns. There are two main systems: the 12-hour clock (used in everyday conversation) and the 24-hour clock (used in timetables, military, and formal contexts). Common time expressions include: o'clock, half past, quarter past/to, and minutes past/to. AM is used for morning (midnight to noon), PM for afternoon/evening (noon to midnight).",
+      "banglaDefinition": "ইংরেজিতে সময় বলা নির্দিষ্ট পদ্ধতিতে সংখ্যা ব্যবহার করে। দুটি প্রধান পদ্ধতি: ১২-ঘন্টা ঘড়ি (দৈনন্দিন কথোপকথনে ব্যবহৃত) এবং ২৪-ঘন্টা ঘড়ি (সময়সূচি, সামরিক এবং আনুষ্ঠানিক প্রসঙ্গে ব্যবহৃত)। সাধারণ সময় প্রকাশ: o'clock, half past, quarter past/to, এবং minutes past/to। AM সকালের জন্য (মধ্যরাত থেকে দুপুর), PM বিকেল/সন্ধ্যার জন্য (দুপুর থেকে মধ্যরাত)।",
+      "formula": "12-HOUR CLOCK:\n4:00 → four o'clock\n4:05 → five past four\n4:15 → quarter past four / four fifteen\n4:30 → half past four / four thirty\n4:45 → quarter to five / four forty-five\n4:50 → ten to five / four fifty\n\n24-HOUR CLOCK (timetables):\n06:30 → 'oh six thirty hours'\n14:15 → 'fourteen fifteen hours'\n21:45 → 'twenty-one forty-five'\n\nAM / PM DISTINCTIONS:\n6:00 AM → six in the morning\n12:00 PM → twelve noon\n3:00 PM → three in the afternoon\n6:00 PM → six in the evening\n9:00 PM → nine at night\n12:00 AM → twelve midnight",
+      "rules": [
+        "'O'clock' শুধু exact সময়ের জন্য: 5:00 = five o'clock (5:05 = five oh five বা five past five, not five o'clock)।",
+        "'Past' এবং 'to' ব্যবহার: minutes 1-30 → past (5 past, 20 past, half past), minutes 31-59 → to (10 to, 20 to, quarter to)।",
+        "15 minutes = quarter, 30 minutes = half: quarter past, half past, quarter to।",
+        "12-hour clock-এ AM/PM বা morning/afternoon/evening/night যোগ করতে হবে context clear না হলে।",
+        "24-hour clock formal context-এ: railway timetables, airport announcements, military, official documents।",
+        "Indian English-এ 'half past' মানে সাধারণত thirty minutes past: 'half past seven' = 7:30।"
+      ],
+      "examples": [
+        { "en": "'The train from Howrah departs at 8:15 AM.' (quarter past eight in the morning)", "bn": "'হাওড়া থেকে ট্রেনটি সকাল ৮:১৫-এ ছাড়ে।'" },
+        { "en": "'The Durga Puja pandal opens at 10 o'clock in the morning.'", "bn": "'দুর্গাপূজার প্যান্ডেল সকাল ১০টায় খোলে।'" },
+        { "en": "'The flight from Delhi arrives at half past nine in the evening.'", "bn": "'দিল্লি থেকে ফ্লাইটটি রাত সাড়ে নটায় arrives।'" },
+        { "en": "'The metro runs from 6:00 AM to 10:30 PM.' (ten thirty at night)", "bn": "'মেট্রো সকাল ৬:০০ থেকে রাত ১০:৩০ পর্যন্ত চলে।'" },
+        { "en": "'The exam starts at quarter to ten, so don't be late.'", "bn": "'পরীক্ষা দশটা বাজতে পনেরো মিনিট আগে শুরু হয়, তাই দেরি করো না।'" },
+        { "en": "'The 24-hour clock: The Rajdhani Express arrives at 17:45 hours (quarter to six in the evening).'", "bn": "'২৪-ঘন্টা ঘড়ি: রাজধানী এক্সপ্রেস ১৭:৪৫-এ আসে (সন্ধ্যা সাড়ে পাঁচটা বাজতে পনেরো মিনিট আগে)।'" }
+      ],
+      "tips": "সময় বলার সময় Bengali speakers-এর জন্য সবচেয়ে বড় চ্যালেঞ্জ হল 'past' এবং 'to'-এর ব্যবহার। বাংলায় 'সাড়ে পাঁচটা' = ইংরেজিতে 'half past five' (5:30)। বাংলায় 'পৌনে ছয়টা' = ইংরেজিতে 'quarter to six' (5:45)। মনে রাখবে: 30 minutes পর্যন্ত 'past' (5:10 = ten past five), 30 minutes-এর পর 'to' (5:50 = ten to six)। Quarter = 15 minutes, half = 30 minutes।"
+    },
+    {
+      "name": "Fractions, Decimals, and Percentages",
+      "banglaName": "ভগ্নাংশ, দশমিক এবং শতাংশ",
+      "definition": "Fractions, decimals, and percentages are used in measurements, statistics, recipes, and financial contexts. Fractions use ordinal numbers: 1/2 = a half, 1/3 = a third, 3/4 = three quarters. Decimals are read digit by digit: 0.5 = zero point five or point five. Percentages use 'percent': 25% = twenty-five percent. Understanding these is essential for shopping, cooking, reading news, and understanding data.",
+      "banglaDefinition": "ভগ্নাংশ, দশমিক এবং শতাংশ মাপ, পরিসংখ্যান, রেসিপি এবং আর্থিক প্রসঙ্গে ব্যবহৃত হয়। ভগ্নাংশে ordinal সংখ্যা ব্যবহার হয়: ১/২ = a half, ১/৩ = a third, ৩/৪ = three quarters। দশমিক digit-by-digit পড়া হয়: ০.৫ = zero point five বা point five। শতাংশে 'percent' ব্যবহার হয়: ২৫% = twenty-five percent। এগুলো বোঝা কেনাকাটা, রান্না, খবর পড়া এবং ডেটা বোঝার জন্য অপরিহার্য।",
+      "formula": "FRACTIONS:\n1/2 → a half (অর্ধেক)\n1/3 → a third (এক তৃতীয়াংশ)\n2/3 → two thirds (দুই তৃতীয়াংশ)\n1/4 → a quarter / a fourth (এক চতুর্থাংশ)\n3/4 → three quarters (তিন চতুর্থাংশ)\n1/5 → a fifth (এক পঞ্চমাংশ)\n1/10 → a tenth (এক দশমাংশ)\n1/100 → a hundredth (এক শতাংশ)\n3 1/2 → three and a half (সাড়ে তিন)\n\nDECIMALS:\n0.1 → zero point one / point one\n0.5 → zero point five / point five\n1.25 → one point two five\n3.75 → three point seven five\n\nPERCENTAGES:\n10% → ten percent\n25% → twenty-five percent\n50% → fifty percent\n75% → seventy-five percent\n100% → one hundred percent\n0.5% → zero point five percent",
+      "rules": [
+        "Fraction-এ numerator cardinal (one, two, three), denominator ordinal (third, fourth, fifth) — numerator 1-এর বেশি হলে denominator-এ 's': one fifth, two fifths, three sixths।",
+        "Half, quarter, third — সবচেয়ে সাধারণ fractions: a half (1/2), a quarter (1/4), a third (1/3)।",
+        "Decimal পড়ো digit by digit: 0.567 = zero point five six seven (not five hundred sixty-seven thousandths দৈনন্দিন ব্যবহারে)।",
+        "'Percent' singular: twenty-five percent (not percents)।",
+        "মিশ্র সংখ্যা: 2 1/2 = two and a half, 5 3/4 = five and three quarters।",
+        "Indian English-এ 'half' এবং 'quarter' রোজকার জীবনে বেশি ব্যবহৃত: half a kilo, quarter kg, three-quarters of an hour।"
+      ],
+      "examples": [
+        { "en": "'I bought half a kilogram of rasgullas from the sweet shop.'", "bn": "'আমি মিষ্টির দোকান থেকে আধা কেজি রসগোল্লা কিনলাম।'" },
+        { "en": "'Three-quarters of the students passed the final exam.'", "bn": "'শিক্ষার্থীদের তিন-চতুর্থাংশ চূড়ান্ত পরীক্ষায় পাস করেছে।'" },
+        { "en": "'The price of petrol increased by two point five percent this month.'", "bn": "'এই মাসে পেট্রলের দাম দশমিক পাঁচ শতাংশ বেড়েছে।'" },
+        { "en": "'Mix one and a half cups of flour with three-quarters of a cup of sugar.'", "bn": "'ডेঢ় কাপ ময়দার সাথে তিন-চতুর্থাংশ কাপ চিনি মেশান।'" },
+        { "en": "'The GST rate on this item is eighteen percent.'", "bn": "'এই পণ্যের উপর GST হার আঠারো শতাংশ।'" },
+        { "en": "'Over one-third of India's population is under the age of 25.'", "bn": "'ভারতের জনসংখ্যার এক-তৃতীয়াংশের বেশি ২৫ বছরের কম বয়সী।'" }
+      ],
+      "tips": "Fraction পড়ার নিয়ম: উপরের সংখ্যা (numerator) cardinal, নিচের সংখ্যা (denominator) ordinal plural (যখন numerator > 1)। 1/3 = one third, 2/3 = two thirds, 3/5 = three fifths। কিন্তু 1/2 = half (not second), 1/4 = quarter (not fourth)। Decimal পড়তে 'point' ব্যবহার করো: 0.75 = point seven five (not point seventy-five)। দৈনন্দিন জীবনে 'half a kilo', 'quarter kg', 'three-quarters' বেশি ব্যবহৃত।"
+    },
+    {
+      "name": "Numbers in Money and Prices",
+      "banglaName": "টাকা ও দামে সংখ্যা",
+      "definition": "Money and prices use numbers with currency symbols and names. Indian Rupees (₹) are written before the amount: ₹500. Decimal prices are read as: ₹125.50 = one hundred and twenty-five rupees and fifty paise, or simply one twenty-five. Large amounts use lakh and crore: ₹5 lakhs, ₹2 crores. In international contexts, dollars ($), pounds (£), and euros (€) follow similar patterns.",
+      "banglaDefinition": "টাকা এবং দামে মুদ্রা চিহ্ন এবং নাম সহ সংখ্যা ব্যবহৃত হয়। ভারতীয় রুপি (₹) পরিমাণের আগে লেখা হয়: ₹৫০০। দশমিক দাম পড়া হয়: ₹১২৫.৫০ = একশো পঁচিশ টাকা এবং পঞ্চাশ পয়সা, বা সহজভাবে one twenty-five। বড় অঙ্কে lakh এবং crore ব্যবহার হয়: ₹৫ লাখ, ₹২ কোটি। আন্তর্জাতিক প্রসঙ্গে dollar ($), pound (£), এবং euro (€) একই পদ্ধতি অনুসরণ করে।",
+      "formula": "INDIAN CURRENCY (Rupees and Paise):\n₹1 → one rupee\n₹5.50 → five rupees and fifty paise / five fifty\n₹100 → one hundred rupees\n₹500 → five hundred rupees\n₹1,000 → one thousand rupees\n₹1,00,000 → one lakh rupees\n₹1,00,00,000 → one crore rupees\n\nINTERNATIONAL CURRENCIES:\n$5 → five dollars\n$10.99 → ten dollars ninety-nine / ten ninety-nine\n£20 → twenty pounds\n€50 → fifty euros\n\nCOMMON PHRASES:\n'How much does this cost?'\n'It costs ₹500.'\n'That's too expensive!'\n'Can you give me a discount?'\n'Five hundred rupees is a good price.'",
+      "rules": [
+        "Rupees symbol (₹) অঙ্কের আগে বসে: ₹100, ₹500, ₹1,000।",
+        "'Rupees' plural: 1 rupee, 2 rupees, 100 rupees।",
+        "Paise সাধারণত বাদ দেওয়া হয় দৈনন্দিন কথায়: ₹125.50 = 'one twenty-five rupees' বা 'one hundred and twenty-five'।",
+        "Lakh এবং crore ভারতীয় ইংরেজিতে স্ট্যান্ডার্ড: ₹5 lakh, ₹10 crore, ₹3.5 lakh rupees।",
+        "International currency: dollar (plural dollars), pound (plural pounds), euro (plural euros)।",
+        "'Pence' = penny-এর plural: £1.50 = one pound fifty (pence usually omitted)।",
+        "'Bargaining' বা দরদাম ভারতীয় প্রেক্ষাপটে সাধারণ: 'Can you give it for ₹400?' 'Final price is ₹450.'"
+      ],
+      "examples": [
+        { "en": "'This Banarasi silk sari costs ₹8,000.' (eight thousand rupees)", "bn": "'এই বেনারসি সিল্কের শাড়ির দাম ₹৮,০০০।' (আট হাজার টাকা)" },
+        { "en": "'The rent for a one-bedroom flat in South Kolkata is about ₹25,000 per month.'", "bn": "'দক্ষিণ কলকাতায় এক বেডরুমের ফ্ল্যাটের ভাড়া মাসে প্রায় ₹২৫,০০০।'" },
+        { "en": "'I bought this phone for ₹15,500 — that's fifteen thousand five hundred rupees.'", "bn": "'আমি এই ফোন ₹১৫,৫০০-এ কিনেছি — পনেরো হাজার পাঁচশো টাকা।'" },
+        { "en": "'The wedding reception cost around ₹5 lakh.'", "bn": "'বিয়ের রিসেপশনের খরচ প্রায় ₹৫ লাখ।'" },
+        { "en": "'A ticket for the Rajdhani Express from Howrah to Delhi costs about ₹2,500.'", "bn": "'হাওড়া থেকে দিল্লির রাজধানী এক্সপ্রেসের টিকিটের দাম প্রায় ₹২,৫০০।'" },
+        { "en": "'She earns around ₹15 lakh per annum as a software engineer in Bangalore.'", "bn": "'সে বেঙ্গালুরুতে সফটওয়্যার ইঞ্জিনিয়ার হিসেবে বছরে প্রায় ₹১৫ লাখ আয় করে।'" }
+      ],
+      "tips": "টাকা নিয়ে কথা বলার সময় ভারতীয় ইংরেজিতে 'lakh' এবং 'crore' স্ট্যান্ডার্ড। 'One lakh' = 1,00,000, 'One crore' = 1,00,00,000। আন্তর্জাতিক প্রেক্ষাপটে 'hundred thousand' এবং 'ten million' বলতে পারো। দাম বলার সময়: ₹1,500 = fifteen hundred rupees (informal) বা one thousand five hundred rupees (formal)। ₹1,25,000 = one lakh twenty-five thousand rupees। দরদাম করার সময়: 'Can you reduce the price?' 'What is your final offer?'"
+    },
+    {
+      "name": "Number Expressions: Couple, Dozen, Score, etc.",
+      "banglaName": "সংখ্যাসূচক অভিব্যক্তি: Couple, Dozen, Score ইত্যাদি",
+      "definition": "English has many special words that represent specific or approximate numbers: 'a couple' = 2, 'a few' = 3-5, 'half a dozen' = 6, 'a dozen' = 12, 'a baker's dozen' = 13, 'a score' = 20, 'a gross' = 144. There are also general expressions for approximate numbers: 'hundreds of', 'thousands of', 'millions of', 'dozens of', 'scores of'. These expressions add color and variety to your English.",
+      "banglaDefinition": "ইংরেজিতে অনেক বিশেষ শব্দ আছে যা নির্দিষ্ট বা আনুমানিক সংখ্যা প্রকাশ করে: 'a couple' = ২, 'a few' = ৩-৫, 'half a dozen' = ৬, 'a dozen' = ১২, 'a baker's dozen' = ১৩, 'a score' = ২০, 'a gross' = ১৪৪। আনুমানিক সংখ্যার জন্য সাধারণ অভিব্যক্তি: 'hundreds of', 'thousands of', 'millions of', 'dozens of', 'scores of'। এই অভিব্যক্তিগুলো আপনার ইংরেজিতে রঙ এবং বৈচিত্র্য যোগ করে।",
+      "formula": "EXACT NUMBER WORDS:\nA couple = 2: 'I have a couple of tickets for the movie.'\nA dozen = 12: 'Please buy a dozen eggs from the market.'\nHalf a dozen = 6: 'She bought half a dozen mangoes.'\nA score = 20: 'A score of people attended the meeting.' (formal/old-fashioned)\nA gross = 144 (12 dozen): Used in wholesale.\nA baker's dozen = 13: Historical term.\n\nAPPROXIMATE NUMBER EXPRESSIONS:\nA couple of = 2 approximately: 'Wait a couple of minutes.'\nDozens of = many (24+): 'Dozens of students applied for the scholarship.'\nScores of = many (40+): 'Scores of tourists visit daily.' (literary)\nHundreds of = many (200+): 'Hundreds of devotees gathered at the temple.'\nThousands of = very many (2000+): 'Thousands of people watched the parade.'\nLakhs of = very many: 'Lakhs of pilgrims visit Varanasi every year.'\nCrores of = huge numbers: 'Crores of rupees were spent on the project.'",
+      "rules": [
+        "'A couple' = 2 (exact or approximate): 'a couple of days' = 2 days বা 'a few days'।",
+        "'A few' = 3-5, 'several' = 4-7, 'a dozen' = exactly 12।",
+        "'Dozens of', 'hundreds of', 'thousands of', 'lakhs of', 'crores of' — সব plural + 'of' + noun।",
+        "নির্দিষ্ট সংখ্যার আগে 'of' লাগে না: 'I have dozen eggs' × → 'I have a dozen eggs' বা 'dozens of eggs' ✓।",
+        "'Score' আধুনিক ইংরেজিতে বিরল, সাহিত্যে ব্যবহৃত: 'Four score and seven years ago...' (Abraham Lincoln)।",
+        "'Couple' এবং 'few'-এর মধ্যে পার্থক্য: couple = 2 (এক জোড়া), few = 3-5 (কয়েকটি)।",
+        "Indian English-এ 'lakhs of' এবং 'crores of' খুব সাধারণ: 'Lakhs of students appear for the exam every year.'"
+      ],
+      "examples": [
+        { "en": "A couple: 'I will be there in a couple of minutes.'", "bn": "A couple: 'আমি সেখানে কয়েক মিনিটের মধ্যে পৌঁছাব।'" },
+        { "en": "Dozen: 'We ordered two dozen samosas for the party.'", "bn": "Dozen: 'আমরা পার্টির জন্য দুই ডজন সমোসা অর্ডার করেছি।'" },
+        { "en": "Hundreds of: 'Hundreds of people gathered at the India Gate for the rally.'", "bn": "Hundreds of: 'র্যালির জন্য ইন্ডিয়া গেটে শত শত লোক জড়ো হয়েছিল।'" },
+        { "en": "Thousands of: 'Thousands of devotees take a dip in the Ganges during Kumbh Mela.'", "bn": "Thousands of: 'কুম্ভমেলার সময় হাজার হাজার ভক্ত গঙ্গায় স্নান করেন।'" },
+        { "en": "Lakhs of: 'Lakhs of spectators watch the Republic Day parade in Delhi every year.'", "bn": "Lakhs of: 'প্রতি বছর দিল্লিতে লক্ষ লক্ষ দর্শক প্রজাতন্ত্র দিবসের প্যারেড দেখেন।'" },
+        { "en": "Half a dozen: 'She bought half a dozen freshly baked bread from the bakery.'", "bn": "Half a dozen: 'সে বেকারি থেকে আধা ডজন তাজা বেকড রুটি কিনেছে।'" }
+      ],
+      "tips": "Indian English-এ number expressions খুব গুরুত্বপূর্ণ। 'Dozens of' বেশি casual, 'hundreds of' আনুমানিক বহু সংখ্যার জন্য, 'thousands of' আরও বেশি। 'Lakhs of' এবং 'crores of' খবর এবং দৈনন্দিন জীবনে খুব সাধারণ। 'A couple of' = ২ বা অল্প কয়েকটি (আনুমানিক)। 'A couple' বলতে বুঝায় 'এক জোড়া'। 'A few' = 'a couple'-এর চেয়ে বেশি কিন্তু 'several'-এর চেয়ে কম। 'Several' = 'a few'-এর চেয়ে বেশি কিন্তু 'many'-এর চেয়ে কম।"
+    },
+    {
+      "name": "Common Number Mistakes",
+      "banglaName": "সংখ্যা সংক্রান্ত সাধারণ ভুল",
+      "definition": "Numbers have many common pitfalls for learners: confusing -teen and -ty (13 vs 30, 14 vs 40), incorrect pluralization (two hundred vs two hundreds), wrong ordinal forms, dropping 'and' after hundred (two hundred and fifty VS two hundred fifty — both possible in different dialects), misreading decimals, and mixing up date formats. These mistakes can cause confusion in shopping, appointments, and formal communication.",
+      "banglaDefinition": "সংখ্যা নিয়ে শিক্ষার্থীদের অনেক সাধারণ ভুল আছে: -teen এবং -ty নিয়ে বিভ্রান্তি (১৩ বনাম ৩০, ১৪ বনাম ৪০), ভুল pluralization (two hundred বনাম two hundreds), ভুল ordinal form, hundred-এর পরে 'and' বাদ দেওয়া (two hundred and fifty VS two hundred fifty), দশমিক ভুল পড়া, এবং তারিখ ফরম্যাট মিশিয়ে ফেলা। এই ভুলগুলো কেনাকাটা, অ্যাপয়েন্টমেন্ট এবং আনুষ্ঠানিক যোগাযোগে বিভ্রান্তি সৃষ্টি করতে পারে।",
+      "formula": "COMMON NUMBER MISTAKES:\n\n1. -TEEN vs -TY:\n13 (thirteen) vs 30 (thirty)\n14 (fourteen) vs 40 (forty)\n15 (fifteen) vs 50 (fifty)\n16 (sixteen) vs 60 (sixty)\n\n2. PLURAL OF NUMBERS:\n× 'Two hundreds rupees'\n✓ 'Two hundred rupees'\n× 'Ten lakhs people' (informal but common in Indian English)\n✓ 'Ten lakh people'\n\n3. 'AND' AFTER HUNDRED:\nBritish: 'Two hundred and fifty rupees'\nAmerican: 'Two hundred fifty rupees'\n\n4. ORDINAL MISTAKES:\n× 'He came secondth in the race'\n✓ 'He came second'\n\n5. DATE CONFUSION:\n03/04/2025 = 3rd April (British) or March 4th (American)?\nAlways write month name to avoid confusion.",
+      "rules": [
+        "-teen (১৩-১৯) এবং -ty (২০-৯০) উচ্চারণে পার্থক্য: thirteen (thir-TEEN, stress শেষে), thirty (THIR-ty, stress শুরুতে)।",
+        "নির্দিষ্ট সংখ্যার সাথে hundred, thousand, lakh, crore singular থাকে: five hundred, six thousand, seven lakh, eight crore।",
+        "Plural form (hundreds of, thousands of) অনির্দিষ্ট পরিমাণের জন্য: 'hundreds of people', 'thousands of rupees'।",
+        "British English-এ hundred-এর পরে 'and' আবশ্যক: two hundred and ten (210) — American English-এ 'and' বাদ দেওয়া যায়।",
+        "Decimal পড়ার সময় 'point' বলো: 0.25 = 'point two five' (not 'point twenty-five')।",
+        "Fraction-এ numerator > 1 হলে denominator-এ 's' যোগ: 1/3 = one third, 2/3 = two thirds।"
+      ],
+      "examples": [
+        { "en": "-teen vs -ty: 'She is thirteen (13) years old, not thirty (30)!'", "bn": "-teen vs -ty: 'সে তেরো (১৩) বছর বয়সী, ত্রিশ (৩০) নয়!'" },
+        { "en": "Plural: 'There are five hundred students in this college.' (not 'five hundreds')", "bn": "Plural: 'এই কলেজে পাঁচশো ছাত্র আছে।' (not 'পাঁচশত')" },
+        { "en": "British vs American: 'British: one thousand two hundred and fifty. American: one thousand two hundred fifty.'", "bn": "British vs American: 'British: one thousand two hundred and fifty. American: one thousand two hundred fifty.'" },
+        { "en": "Date confusion: 'Always write 25th December 2025 instead of 12/25/2025 to be clear.'", "bn": "তারিখ বিভ্রান্তি: 'স্পষ্টতার জন্য 12/25/2025-এর পরিবর্তে 25th December 2025 লেখো।'" },
+        { "en": "Decimal: 'The price increased by 0.75% — point seven five percent.'", "bn": "দশমিক: 'দাম বেড়েছে ০.৭৫% — পয়েন্ট সেভেন ফাইভ পার্সেন্ট।'" }
+      ],
+      "tips": "সবচেয়ে গুরুত্বপূর্ণ ৩টি সংখ্যা ভুল: (১) Thirteen vs Thirty: শেষে 'teen' থাকলে 'teen' এর উপর জোর দাও (thirTEEN), 'ty' থাকলে প্রথম অংশে জোর দাও (THIRty)। (২) Hundred/Thousand/Lakh/Crore — নির্দিষ্ট সংখ্যার সাথে 's' যোগ করো না: 'two hundred' (not 'two hundreds'), 'ten lakh' (not 'ten lakhs')। (৩) Decimal বলো digit-by-digit: 0.456 = 'point four five six', not 'point four hundred fifty-six'।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "'There are five hundreds students in our school.'",
+      "correct": "'There are five hundred students in our school.'",
+      "explanation": "নির্দিষ্ট সংখ্যার (two, five, ten, etc.) পরে 'hundred', 'thousand', 'lakh', 'million', 'crore' plural হয় না — singular থাকে। 'Five hundreds' ভুল, 'five hundred' সঠিক। কিন্তু অনির্দিষ্ট পরিমাণ বোঝালে plural: 'Hundreds of students' (শত শত ছাত্র)। একই নিয়ম: 'ten thousand' (not 'ten thousands'), 'five lakh' (not 'five lakhs'), 'three crore' (not 'three crores')। Indian English-এ 'lakhs' এবং 'crores' plural কিছুটা সাধারণ কিন্তু grammatically singular পর্যন্ত better।"
+    },
+    {
+      "wrong": "'My birthday is on 22th September.'",
+      "correct": "'My birthday is on 22nd September.' (twenty-second)",
+      "explanation": "Ordinal number লেখার সময় শেষের digit দেখে suffix নির্ধারণ করো। 1 → st (first = 1st), 2 → nd (second = 2nd), 3 → rd (third = 3rd), 4-20 → th (fourth = 4th, eleventh = 11th, twelfth = 12th, thirteenth = 13th)। 22 → 22nd (twenty-second, 2 → nd)। 21 = 21st (twenty-first), 23 = 23rd (twenty-third), 31 = 31st (thirty-first)। '22th' ভুল কারণ 'twenty-second' এ 'second' (2 → nd)। সকল 'teen' সংখ্যা (11, 12, 13) 'th' নেয়: 11th, 12th, 13th। 'Twelfth' বানান মনে রাখবে (ve → f + th)।"
+    },
+    {
+      "wrong": "'I have lived in this city for 40 years.' — But mispronounced as 'fourteen years'.",
+      "correct": "'I have lived in this city for forty (40) years.' (not fourteen/14)",
+      "explanation": "-teen (13-19) এবং -ty (20-90) উচ্চারণের পার্থক্য crucial। Forty (40) = চারিশ, fourteen (14) = চোদ্দ। উচ্চারণে পার্থক্য: 'ty' দিয়ে শেষ হওয়া সংখ্যার জোর প্রথম syllable-এ (FOR-ty, SIX-ty, NINE-ty)। 'Teen' দিয়ে শেষ হওয়া সংখ্যার জোর 'teen' syllable-এ (thir-TEEN, six-TEEN, nine-TEEN)। বানানেও পার্থক্য: four + teen = fourteen (ur sound), four + ty = forty (or sound, 'u' বাদ যায়)। একই: five → fifteen (৫ম) vs fifty (৫০ম)।"
+    },
+    {
+      "wrong": "'The cost is ₹2,50,000. I read it as two hundred and fifty thousand.'",
+      "correct": "'₹2,50,000 = two lakh fifty thousand rupees.' (Indian system) or '₹2,50,000 = two hundred and fifty thousand rupees.' (International system)",
+      "explanation": "ভারতীয় এবং আন্তর্জাতিক সংখ্যা পদ্ধতি ভিন্ন। ভারতীয়: 2,50,000 = two lakh fifty thousand (comma positions: 2,50,000 → 2 lakh + 50 thousand)। আন্তর্জাতিক: 250,000 = two hundred and fifty thousand (comma positions: 250,000 → 250 thousand)। আন্তর্জাতিক প্রেক্ষাপটে '2,50,000' confusing হতে পারে। Always clarify: '2 lakh 50 thousand' ভারতীয়, '250 thousand' আন্তর্জাতিক। Indian English-এ 'lakh' এবং 'crore' understand করা উচিত।"
+    },
+    {
+      "wrong": "'Please meet me at 6 o'clock in the night.'",
+      "correct": "'Please meet me at 6 o'clock in the evening.' (5-8 PM) or '6 o'clock at night.' (after 8 PM)",
+      "explanation": "সময় বলার নির্দিষ্ট preposition: in the morning (সকাল), in the afternoon (দুপুর/বিকেল), in the evening (সন্ধ্যা/রাত ৮টা পর্যন্ত), at night (রাত)। 'In the night' সাধারণত বলা হয় না — 'at night' সঠিক। 6 PM = evening, 9 PM = night। আরেকটি সাধারণ ভুল: 'half past six' = 6:30; 'half six' = British slang (6:30), কিন্তু Indian English-এ 'half six' confusing — 'half past six' বলাই ভালো।"
+    },
+    {
+      "wrong": "'The 2005 Indian cricket team was very strong.' — But saying 'two thousand five' for the year 2005.",
+      "correct": "'The twenty oh five Indian cricket team was very strong.' or 'The two thousand and five Indian cricket team...'",
+      "explanation": "বছর উচ্চারণের নিয়ম: 2000 = two thousand। 2001-2009 = two thousand and one/two thousand and nine বা twenty oh one/twenty oh nine। 2010 onwards = twenty ten, twenty fourteen, twenty twenty-four। 'Two thousand five' বোঝায় 2005, কিন্তু উচ্চারণে 'twenty oh five' বেশি natural। 'Nineteen oh five' = 1905, 'nineteen ninety-nine' = 1999। 2000-এর পূর্বে year কে two halves-এ ভাগ করে বলো: 1789 = seventeen eighty-nine।"
+    },
+    {
+      "wrong": "'I bought 3 kgs of sugar from the shop.'",
+      "correct": "'I bought 3 kg of sugar from the shop.' or 'I bought 3 kilograms of sugar.'",
+      "explanation": "Measurement units-এর pluralization নিয়ে confusion: 'kg' = kilogram — 3 kg (symbol plural হয় না), কিন্তু 3 kilograms (full word plural)। একই নিয়ম: 5 km (kilometers), 10 L (liters), 2 m (meters)। Symbol লেখার সময় 's' যোগ করো না: 3 kg ✓, 3 kgs ✗। কিন্তু কথ্য ভাষায় 'three kilos', 'five kilos' বলা যায়। Full word লেখার সময়: 3 kilograms, 5 kilometers, 10 liters। 'Rs' বা '₹' symbol-এর সাথে 's' লাগে না: ₹500 (not ₹500s)।"
+    },
+    {
+      "wrong": "'The temperature reached 40 degree Celsius yesterday in Delhi.'",
+      "correct": "'The temperature reached 40 degrees Celsius yesterday in Delhi.'",
+      "explanation": "'Degree' plural হয় যখন সংখ্যা 1-এর বেশি: 1 degree, 2 degrees, 10 degrees, 40 degrees। একই নিয়ম rupee, dollar, pound-এর ক্ষেত্রে: 1 rupee, 2 rupees; 1 dollar, 5 dollars; 1 pound, 10 pounds। কিন্তু zero = plural: 0 degrees (not 0 degree)। Decimal-এ 1-এর কম হলেও plural: 0.5 degrees, 0.75 degrees। Minus-এও: minus 5 degrees, -10 degrees। শুধুমাত্র exactly 1-এর জন্য singular: 1 degree, 1 rupee, 1 kilometer।"
+    },
+    {
+      "wrong": "'There were more than 200 people in the party. I told my friend 'around two hundreds people came.''",
+      "correct": "'Around two hundred people came.'",
+      "explanation": "'Around', 'about', 'approximately', 'nearly', 'over', 'more than' — এগুলোর পরেও নির্দিষ্ট সংখ্যা লিখলে hundred/thousand/lakh/crore singular থাকে: about two hundred, around five thousand, nearly ten lakh, over one crore। 'Two hundreds' ভুল, 'two hundred' সঠিক। কিন্তু 'hundreds of' = অনির্দিষ্ট পরিমাণ (approximate without exact number)। 'Approximately two hundred' = নির্দিষ্ট 200-এর কাছাকাছি। 'Hundreds of people' = অনেক, কিন্তু exact সংখ্যা নেই।"
+    },
+    {
+      "wrong": "'The flight is at 14:00 PM. (redundant)'",
+      "correct": "'The flight is at 14:00.' (24-hour clock no AM/PM) or 'The flight is at 2:00 PM.' (12-hour clock with AM/PM)",
+      "explanation": "একই সময় দুভাবে বলা redundant: 24-hour clock (14:00) ইতিমধ্যে AM/PM নির্দেশ করে — PM যোগ করা redundant। 12-hour clock-এ (2:00 PM) AM/PM প্রয়োজন। '14:00 PM' ভুল — হয় '14:00' (24-hour) বা '2:00 PM' (12-hour)। একইভাবে '12:00 AM midnight' vs '00:00'। '12:00 PM noon' vs '12:00'। 24-hour clock formal context-এ: railway timetables, airport, military। 12-hour clock দৈনন্দিন কথোপকথনের জন্য।"
+    }
+  ]
 }
