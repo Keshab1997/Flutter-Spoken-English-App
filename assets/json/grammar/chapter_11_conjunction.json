@@ -1,10 +1,255 @@
 {
   "chapter": 11,
   "level": "Beginner",
-  "title": "Conjunction",
+  "title": "Conjunction (সংযোজক)",
   "icon": "link",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "A conjunction is a word that connects words, phrases, clauses, or sentences. Conjunctions are like bridges that join ideas together to form more complex and meaningful sentences. There are three main types: coordinating (FANBOYS), subordinating (because, although, when), and correlative (either...or, neither...nor). Using conjunctions correctly helps you speak and write more fluently.",
+  "banglaDescription": "Conjunction (সংযোজক) হলো সেই শব্দ যা শব্দ, phrase, clause, বা বাক্যকে সংযুক্ত করে। Conjunction হলো সেতুর মতো যা ধারণাগুলোকে একসাথে যুক্ত করে আরও জটিল এবং অর্থপূর্ণ বাক্য গঠন করে। তিনটি প্রধান প্রকার রয়েছে: coordinating (FANBOYS), subordinating (because, although, when), এবং correlative (either...or, neither...nor)। Conjunction সঠিকভাবে ব্যবহার করলে আপনি আরও সাবলীলভাবে কথা বলতে এবং লিখতে পারবেন।",
+  "topics": [
+    {
+      "name": "What is a Conjunction?",
+      "banglaName": "সংযোজক কী?",
+      "definition": "A conjunction is a word that joins together words, phrases, clauses, or sentences. Conjunctions help create smooth, logical connections between ideas. Without conjunctions, speech would be choppy and repetitive. For example: 'I went to Delhi. I visited the Red Fort. I ate biryani.' With conjunctions: 'I went to Delhi and visited the Red Fort, where I ate biryani.'",
+      "banglaDefinition": "Conjunction (সংযোজক) হলো সেই শব্দ যা শব্দ, phrase, clause, বা বাক্যকে একসাথে যুক্ত করে। Conjunctions ধারণাগুলোর মধ্যে মসৃণ এবং যৌক্তিক সংযোগ তৈরি করতে সাহায্য করে। Conjunction ছাড়া বক্তব্য খণ্ডিত এবং পুনরাবৃত্তিমূলক হয়। যেমন: 'আমি দিল্লি গেলাম। আমি লাল কেল্লা দেখলাম। আমি বিরিয়ানি খেলাম।' Conjunction সহ: 'আমি দিল্লি গিয়ে লাল কেল্লা দেখলাম, যেখানে বিরিয়ানি খেলাম।'",
+      "formula": "Word + Conjunction + Word: 'tea and biscuits'\nPhrase + Conjunction + Phrase: 'in the morning or in the evening'\nClause + Conjunction + Clause: 'I like Kolkata because it has rich culture.'\n\nThree types:\n1. Coordinating: for, and, nor, but, or, yet, so (FANBOYS)\n2. Subordinating: because, although, if, when, while, since, unless\n3. Correlative: either...or, neither...nor, both...and, not only...but also",
+      "rules": [
+        "Conjunction একই ধরনের grammatical element যুক্ত করে (word-word, phrase-phrase, clause-clause)।",
+        "Coordinating conjunction (FANBOYS) সমান গুরুত্বের দুটি clause যুক্ত করে।",
+        "Subordinating conjunction একটি dependent clause কে independent clause-এর সাথে যুক্ত করে।",
+        "Correlative conjunction জোড়ায় ব্যবহৃত হয় (either...or, neither...nor)।",
+        "Conjunction দিয়ে sentence শুরু করা informal English-এ গ্রহণযোগ্য (But, And, So দিয়ে শুরু)।",
+        "Comma সাধারণত FANBOYS-এর আগে বসে যখন দুটি independent clause যুক্ত হয়।",
+        "'Because' এবং 'so' একই sentence-এ ব্যবহার করা উচিত নয় (redundant)।"
+      ],
+      "examples": [
+        { "en": "'I bought tea and samosas from the stall.'", "bn": "'আমি স্টল থেকে চা এবং সমোসা কিনলাম।'" },
+        { "en": "'She was tired but she continued working.'", "bn": "'সে ক্লান্ত ছিল কিন্তু কাজ চালিয়ে গেল।'" },
+        { "en": "'We stayed home because it was raining heavily.'", "bn": "'আমরা বাড়িতে থাকলাম কারণ প্রবল বৃষ্টি হচ্ছিল।'" },
+        { "en": "'You can either take the metro or catch a bus to Connaught Place.'", "bn": "'তুমি কনট প্লেসের জন্য হয় মেট্রো নিতে পারো অথবা বাস ধরতে পারো।'" },
+        { "en": "'I studied in Mumbai, but my sister studied in Chennai.'", "bn": "'আমি মুম্বাইয়ে পড়াশোনা করেছি, কিন্তু আমার বোন চেন্নাইয়ে পড়েছে।'" }
+      ],
+      "tips": "Conjunction মনে রাখার সহজ উপায়: এরা sentence-এর 'glue' বা 'আঠা'। FANBOYS মনে রাখবে: For, And, Nor, But, Or, Yet, So। প্রতিদিনের বক্তব্যে 'and', 'but', 'because', 'so' — এই চারটি conjunction সবচেয়ে বেশি ব্যবহৃত হয়। এগুলো দিয়েই শুরু করো।"
+    },
+    {
+      "name": "Coordinating Conjunctions (FANBOYS)",
+      "banglaName": "সমন্বয়সূচক Conjunction (FANBOYS)",
+      "definition": "Coordinating conjunctions connect two equal grammatical elements — two words, two phrases, or two independent clauses. The seven coordinating conjunctions can be remembered with the acronym FANBOYS: For, And, Nor, But, Or, Yet, So. Each has a specific meaning: For (reason), And (addition), Nor (negative alternative), But (contrast), Or (choice), Yet (contrast), So (result).",
+      "banglaDefinition": "Coordinating conjunction দুটি সমান grammatical element যুক্ত করে — দুটি word, দুটি phrase, বা দুটি independent clause। সাতটি coordinating conjunction কে FANBOYS acronym দিয়ে মনে রাখা যায়: For, And, Nor, But, Or, Yet, So। প্রতিটির নির্দিষ্ট অর্থ আছে: For (কারণ), And (সংযোজন), Nor (নেতিবাচক বিকল্প), But (বিপরীত), Or (পছন্দ), Yet (বিপরীত), So (ফলাফল)।",
+      "formula": "FANBOYS:\nF — For (কারণ): 'I am happy, for I passed the exam.'\nA — And (এবং): 'I bought a kurta and a dhoti.'\nN — Nor (ও না): 'He didn't call, nor did he text.'\nB — But (কিন্তু): 'I tried my best, but I failed.'\nO — Or (অথবা): 'Do you want chai or coffee?'\nY — Yet (তবুও): 'She is young, yet very wise.'\nS — So (তাই): 'I was tired, so I went to bed.'\n\nRule: Comma + FANBOYS when joining two independent clauses.",
+      "rules": [
+        "দুটি independent clause FANBOYS দিয়ে যুক্ত হলে comma ব্যবহার হয়: 'I went to the market, and I bought vegetables.'",
+        "And দুটি word/phrase যুক্ত করলে comma প্রয়োজন নেই: 'I bought rice and dal.'",
+        "'For' = 'because' (কারণ), formal English-এ বেশি ব্যবহৃত হয়।",
+        "'Nor'-এর পরে inverted word order হয়: 'nor did I', 'nor was he'।",
+        "'But' এবং 'yet' উভয়ই contrast দেখায়, কিন্তু 'yet' strong contrast বোঝায়।",
+        "'So' ফলাফল দেখায় — 'because' এবং 'so' একসাথে ব্যবহার করো না।",
+        "কথোপকথনে sentence 'And', 'But', 'So' দিয়ে শুরু করা গ্রহণযোগ্য।"
+      ],
+      "examples": [
+        { "en": "And: 'I bought a silk sari and matching bangles from Banaras.'", "bn": "And: 'আমি বেনারস থেকে একটি সিল্কের শাড়ি এবং ম্যাচিং চুড়ি কিনলাম।'" },
+        { "en": "But: 'Kolkata is crowded, but it has a unique charm.'", "bn": "But: 'কলকাতা ভিড়পূর্ণ, কিন্তু এর একটি অনন্য আকর্ষণ আছে।'" },
+        { "en": "Or: 'Would you like to visit the Victoria Memorial or the Indian Museum?'", "bn": "Or: 'তুমি কি ভিক্টোরিয়া মেমোরিয়াল নাকি ইন্ডিয়ান মিউজিয়াম দেখতে চাও?'" },
+        { "en": "So: 'The train was late, so we missed the darshan.'", "bn": "So: 'ট্রেন দেরিতে ছিল, তাই আমরা দর্শন মিস করলাম।'" },
+        { "en": "Nor: 'She didn't eat biryani, nor did she try the rasgulla.'", "bn": "Nor: 'সে বিরিয়ানি খায়নি, আর রসগোল্লাও চেষ্টা করেনি।'" },
+        { "en": "Yet: 'He is a Bollywood star, yet he is very humble.'", "bn": "Yet: 'সে একজন বলিউড তারকা, তবুও সে খুব বিনয়ী।'" }
+      ],
+      "tips": "FANBOYS মনে রাখার ট্রিক: FANBOYS = F(For) + A(And) + N(Nor) + B(But) + O(Or) + Y(Yet) + S(So)। sentence 'I like biryani, ______ I don't eat it often' — এখানে কোন conjunction বসবে? 'But' বা 'Yet' (contrast)। 'I was hungry, ______ I ate' — এখানে 'So' (result)। practice করলে নিজেই বুঝতে পারবে।"
+    },
+    {
+      "name": "Subordinating Conjunctions",
+      "banglaName": "অধীনস্থ联合会 Conjunction",
+      "definition": "Subordinating conjunctions join a dependent clause (incomplete thought) to an independent clause (complete thought). Common subordinating conjunctions include: because, although/though, if, when, while, since, unless, until, after, before, as, wherever, whereas, and so that. The dependent clause cannot stand alone — it needs the independent clause to complete its meaning.",
+      "banglaDefinition": "Subordinating conjunction একটি dependent clause (অসম্পূর্ণ চিন্তা) কে independent clause (সম্পূর্ণ চিন্তা)-এর সাথে যুক্ত করে। সাধারণ subordinating conjunctions: because, although/though, if, when, while, since, unless, until, after, before, as, wherever, whereas, so that। Dependent clause একা দাঁড়াতে পারে না — এর অর্থ সম্পূর্ণ করতে independent clause প্রয়োজন।",
+      "formula": "Subordinating Conjunction + Dependent Clause + comma + Independent Clause\n'Although it was raining, we went to the market.'\n\nOR\n\nIndependent Clause + Subordinating Conjunction + Dependent Clause\n'We went to the market although it was raining.'\n\nCommon subordinators:\nCause/Reason: because, since, as\nTime: when, while, before, after, until, since\nCondition: if, unless, provided that\nContrast: although, though, whereas, even though\nPurpose: so that, in order that",
+      "rules": [
+        "Dependent clause sentence-এর শুরুতে থাকলে comma প্রয়োজন: 'If you study hard, you will pass.'",
+        "Dependent clause শেষে থাকলে comma প্রয়োজন নেই: 'You will pass if you study hard.'",
+        "'Because' এবং 'so' একসাথে ব্যবহার করা ভুল: 'Because I was tired, so I slept' ×",
+        "'Although' এবং 'but' একসাথে ব্যবহার করা ভুল: 'Although she was rich, but she was unhappy' ×",
+        "'When' নির্দিষ্ট সময়: 'When I reached Kolkata, it was raining.'",
+        "'While' একই সময়ে চলমান ঘটনা: 'While I was cooking, the power went out.'",
+        "'Unless' = 'if not': 'Unless you hurry, you will miss the bus.'"
+      ],
+      "examples": [
+        { "en": "Because: 'I love Kolkata because of its rich history and culture.'", "bn": "Because: 'আমি কলকাতাকে ভালোবাসি কারণ এর সমৃদ্ধ ইতিহাস ও সংস্কৃতি।'" },
+        { "en": "Although: 'Although the traffic was bad, we reached the airport on time.'", "bn": "Although: 'যদিও ট্রাফিক খারাপ ছিল, আমরা সময়মতো বিমানবন্দরে পৌঁছালাম।'" },
+        { "en": "When: 'When I was in Mumbai, I visited the Gateway of India.'", "bn": "When: 'যখন আমি মুম্বাইয়ে ছিলাম, গেটওয়ে অফ ইন্ডিয়া দেখতে গিয়েছিলাম।'" },
+        { "en": "If: 'If you go to Hyderabad, you must try the biryani there.'", "bn": "If: 'তুমি যদি হায়দ্রাবাদ যাও, সেখানের বিরিয়ানি обязательно চেষ্টা করবে।'" },
+        { "en": "Unless: 'Unless you book tickets in advance, you won't get a seat in the Rajdhani.'", "bn": "Unless: 'আগে টিকিট বুক না করলে রাজধানীতে সিট পাবে না।'" },
+        { "en": "While: 'While my mother cooked lunch, I set the table.'", "bn": "While: 'আমার মা লাঞ্চ রান্না করার সময় আমি টেবিল সাজালাম।'" }
+      ],
+      "tips": "Subordinating conjunction চেনার উপায়: এরা 'প্রশ্নের উত্তর' দেয়। Because = কেন? (কারণ), When/While = কখন? (সময়), If = কী শর্তে? (শর্ত), Although = কী সত্ত্বেও? (বিরোধ)। মনে রাখবে: subordinating conjunction + clause = dependent clause (অসম্পূর্ণ)। 'Although I tried' — এটা অসম্পূর্ণ, 'Although I tried, I failed' — সম্পূর্ণ।"
+    },
+    {
+      "name": "Correlative Conjunctions",
+      "banglaName": "সহসম্বন্ধীয় Conjunction",
+      "definition": "Correlative conjunctions are pairs of conjunctions that work together to join equal elements in a sentence. Common pairs: either...or (বিকল্প), neither...nor (নেতিবাচক বিকল্প), both...and (উভয়), not only...but also (শুধু নয়...বরং), whether...or (কিনা), as...as (ততটাই), such...that (এতটাই...যে). These pairs add emphasis and balance to sentences.",
+      "banglaDefinition": "Correlative conjunction হলো conjunction-এর জোড়া যা বাক্যে সমান উপাদান যুক্ত করতে একসাথে কাজ করে। সাধারণ জোড়া: either...or (বিকল্প), neither...nor (নেতিবাচক বিকল্প), both...and (উভয়), not only...but also (শুধু নয়...বরং), whether...or (কিনা), as...as (ততটাই), such...that (এতটাই...যে)। এই জোড়াগুলো বাক্যে জোর এবং সামঞ্জস্য যোগায়।",
+      "formula": "either + X + or + Y: 'You can either take the metro or take a bus.'\nneither + X + nor + Y: 'She neither called nor messaged.'\nboth + X + and + Y: 'He is both intelligent and hardworking.'\nnot only + X + but also + Y: 'She not only sings but also dances.'\nwhether + X + or + Y: 'I don't know whether to go or stay.'\n\nRule: X and Y must be parallel (same grammatical form).\n'He is not only rich but also he is famous.' ✗ (not parallel)\n'He is not only rich but also famous.' ✓ (parallel adjectives)",
+      "rules": [
+        "Correlative conjunction-এর দুটি অংশের পরে একই grammatical form থাকতে হবে (parallel structure)।",
+        "'Either...or' দুটি বিকল্পের জন্য: 'You can either pay by cash or by UPI.'",
+        "'Neither...nor' দুটি নেতিবাচক বিকল্পের জন্য: 'He neither ate nor drank anything.'",
+        "'Both...and' দুটি ইতিবাচক বিকল্পের জন্য: 'Both my brother and I love cricket.'",
+        "'Not only...but also' জোর দিয়ে দ্বিতীয় option তুলে ধরে।",
+        "'Whether...or' অনিশ্চয়তা বা দুটি বিকল্প দেখায়।",
+        "Subject-verb agreement: 'Neither the teacher nor the students were present.' (verb agrees with nearest subject)"
+      ],
+      "examples": [
+        { "en": "Either...or: 'We can either go to Delhi for the weekend or visit Agra.'", "bn": "Either...or: 'আমরা সপ্তাহান্তে হয় দিল্লি যেতে পারি অথবা আগ্রা দেখতে যেতে পারি।'" },
+        { "en": "Neither...nor: 'The train was neither on time nor comfortable.'", "bn": "Neither...nor: 'ট্রেনটি সময়মত ছিল না, আর আরামদায়কও ছিল না।'" },
+        { "en": "Both...and: 'Both Kolkata and Mumbai have famous street food.'", "bn": "Both...and: 'কলকাতা এবং মুম্বাই উভয়েরই বিখ্যাত স্ট্রিট ফুড আছে।'" },
+        { "en": "Not only...but also: 'She can not only speak Hindi but also write in Sanskrit.'", "bn": "Not only...but also: 'সে শুধু হিন্দি বলতে পারে না, সংস্কৃতেও লিখতে পারে।'" },
+        { "en": "Whether...or: 'I am unsure whether to take the morning train or the evening one.'", "bn": "Whether...or: 'আমি নিশ্চিত নই সকালের ট্রেন নেব নাকি সন্ধ্যার।'" },
+        { "en": "Such...that: 'It was such a hot day that we stayed indoors.'", "bn": "Such...that: 'এত গরম দিন ছিল যে আমরা ঘরের ভিতরে থাকলাম।'" }
+      ],
+      "tips": "Correlative conjunctions মনে রাখার উপায়: এরা জোড়ায় জোড়ায় আসে। সবচেয়ে গুরুত্বপূর্ণ নিয়ম হল **parallel structure** — 'either' এর পরের structure এবং 'or' এর পরের structure একই হতে হবে। যেমন: 'Either in Kolkata or in Delhi' (prepositional phrase + prepositional phrase), 'Either by train or by bus' (by + noun + by + noun)।"
+    },
+    {
+      "name": "Conjunctive Adverbs",
+      "banglaName": "সংযোজক ক্রিয়াবিশেষণ",
+      "definition": "Conjunctive adverbs are words that act as both conjunctions and adverbs. They connect independent clauses while also showing the relationship between them (result, contrast, addition, time). Common conjunctive adverbs: however (যাইহোক), therefore (অতএব), moreover (অধিকন্তু), furthermore (আরও), nevertheless (তবুও), consequently (ফলস্বরূপ), meanwhile (ইতিমধ্যে), otherwise (অন্যথায়), besides (এছাড়াও), instead (পরিবর্তে).",
+      "banglaDefinition": "Conjunctive adverb হলো সেই শব্দ যা conjunction এবং adverb উভয়ের মতো কাজ করে। এরা independent clause-কে সংযুক্ত করে এবং তাদের মধ্যে সম্পর্ক (ফলাফল, বিরোধিতা, সংযোজন, সময়) দেখায়। সাধারণ conjunctive adverbs: however, therefore, moreover, furthermore, nevertheless, consequently, meanwhile, otherwise, besides, instead।",
+      "formula": "Independent Clause + ; + Conjunctive Adverb + , + Independent Clause\n'I was tired; however, I continued working.'\n\nOR\n\nIndependent Clause. + Conjunctive Adverb + , + Independent Clause\n'I was tired. However, I continued working.'\n\nCommon conjunctive adverbs and their meanings:\nAddition: moreover, furthermore, besides\nContrast: however, nevertheless, nonetheless, instead\nResult: therefore, consequently, thus, hence\nTime: meanwhile, subsequently\nEmphasis: indeed, certainly",
+      "rules": [
+        "Conjunctive adverb দুটি independent clause-এর মধ্যে semi-colon (;) দিয়ে ব্যবহৃত হয়।",
+        "Conjunctive adverb-এর পরে সাধারণত comma বসে।",
+        "'However' = 'but' (কিন্তু), কিন্তু এটি বেশি formal।",
+        "'Therefore' = 'so' (তাই), formal লেখায় বেশি ব্যবহৃত।",
+        "'Moreover' এবং 'furthermore' = 'and' (এবং), অতিরিক্ত তথ্য যোগ করতে।",
+        "'Meanwhile' একই সময়ে ঘটছে এমন দুটি ঘটনার জন্য।",
+        "Conjunctive adverb sentence-এর মাঝে বা শেষেও বসতে পারে: 'I was, however, determined to finish.'"
+      ],
+      "examples": [
+        { "en": "However: 'The metro was crowded; however, we managed to get a seat.'", "bn": "However: 'মেট্রো ভিড়পূর্ণ ছিল; যাইহোক, আমরা একটি সিট পেতে সক্ষম হলাম।'" },
+        { "en": "Therefore: 'She missed the last bus; therefore, she took an auto-rickshaw home.'", "bn": "Therefore: 'সে শেষ বাস মিস করল; তাই সে অটোরিকশায় বাড়ি ফিরল।'" },
+        { "en": "Moreover: 'The hotel was affordable; moreover, it was near the railway station.'", "bn": "Moreover: 'হোটেলটি সাশ্রয়ী ছিল; অধিকন্তু, এটি রেলস্টেশনের কাছে ছিল।'" },
+        { "en": "Meanwhile: 'I was preparing for my exams; meanwhile, my brother was watching cricket.'", "bn": "Meanwhile: 'আমি পরীক্ষার প্রস্তুতি নিচ্ছিলাম; ইতিমধ্যে, আমার ভাই ক্রিকেট দেখছিল।'" },
+        { "en": "Consequently: 'He did not follow the recipe; consequently, the biryani was not good.'", "bn": "Consequently: 'সে রেসিপি অনুসরণ করেনি; ফলস্বরূপ, বিরিয়ানি ভালো হয়নি।'" },
+        { "en": "Nevertheless: 'The queue was very long; nevertheless, we waited for the darshan.'", "bn": "Nevertheless: 'লাইনটা খুব লম্বা ছিল; তবুও, আমরা দর্শনের জন্য অপেক্ষা করলাম।'" }
+      ],
+      "tips": "Conjunctive adverb এবং coordinating conjunction-এর পার্থক্য: 'But' (conjunction) এর পরে comma লাগে না: 'I tried but I failed.' 'However' (conjunctive adverb) এর পরে comma লাগে: 'I tried; however, I failed.' Conjunctive adverb-এর আগে semi-colon (;) বা full stop (.) ব্যবহার হয়, comma নয়। এই নিয়মটা মনে রাখবে।"
+    },
+    {
+      "name": "Common Mistakes with Conjunctions",
+      "banglaName": "Conjunction-এ সাধারণ ভুল",
+      "definition": "Conjunctions are often misused even by advanced learners. The most common mistakes include: using 'although' and 'but' together, using 'because' and 'so' together, comma splice errors, incorrect parallel structure with correlative conjunctions, confusing 'as' and 'since', and subject-verb agreement errors with 'either/or' and 'neither/nor'. Understanding these mistakes will dramatically improve your English accuracy.",
+      "banglaDefinition": "Conjunction প্রায়ই উন্নত শিক্ষার্থীদের দ্বারাও ভুলভাবে ব্যবহৃত হয়। সবচেয়ে সাধারণ ভুল: 'although' এবং 'but' একসাথে ব্যবহার, 'because' এবং 'so' একসাথে ব্যবহার, comma splice ত্রুটি, correlative conjunction-এর সাথে parallel structure ভুল, 'as' এবং 'since' নিয়ে বিভ্রান্তি, এবং 'either/or' ও 'neither/nor'-এর সাথে subject-verb agreement ত্রুটি। এই ভুলগুলো বোঝা আপনার ইংরেজি নির্ভুলতা dramatically উন্নত করবে।",
+      "formula": "CORRECT PATTERNS:\n\nAlthough + [clause] + [clause]: 'Although it rained, we went out.'\nBecause + [clause] + [clause]: 'Because I was sick, I stayed home.'\n\nWRONG PATTERNS:\n× 'Although it rained, but we went out.' (double conjunction)\n× 'Because I was sick, so I stayed home.' (redundant)\n\nCORRELATIVE PARALLEL STRUCTURE:\n✓ 'She is both intelligent and hardworking.' (adjective + adjective)\n× 'She is both intelligent and she works hard.' (not parallel)",
+      "rules": [
+        "'Although' এবং 'but' একসাথে ব্যবহার করো না — একটি suficiente।",
+        "'Because' এবং 'so' একসাথে ব্যবহার করো না — একটি suficiente।",
+        "Comma splice: দুটি independent clause শুধু comma দিয়ে যুক্ত করো না — conjunction বা semi-colon দরকার।",
+        "Correlative conjunction-এর সাথে parallel structure বজায় রাখো (same grammatical form)।",
+        "'Either/or' এবং 'neither/nor'-এর পরে verb agrees with the nearest subject।",
+        "'Since' সময় এবং কারণ উভয়ই বোঝাতে পারে — context থেকে বুঝতে হবে।",
+        "'As' কারণ বোঝাতে 'because'-এর চেয়ে দুর্বল — formal English-এ 'because' বা 'since' ব্যবহার করা ভালো।"
+      ],
+      "examples": [
+        { "en": "Comma splice: × 'I went to the market, I bought some vegetables.' ✓ 'I went to the market, and I bought some vegetables.'", "bn": "Comma splice: × 'আমি বাজারে গেলাম, আমি কিছু সবজি কিনলাম।' ✓ 'আমি বাজারে গেলাম, এবং আমি কিছু সবজি কিনলাম।'" },
+        { "en": "Double conjunction: × 'Although she was tired, but she went to work.' ✓ 'Although she was tired, she went to work.' or 'She was tired, but she went to work.'", "bn": "Double conjunction: × 'যদিও সে ক্লান্ত ছিল, কিন্তু সে কাজে গেল।' ✓ 'যদিও সে ক্লান্ত ছিল, সে কাজে গেল।' বা 'সে ক্লান্ত ছিল, কিন্তু সে কাজে গেল।'" },
+        { "en": "Subject-verb: × 'Neither the manager nor the employees was present.' ✓ 'Neither the manager nor the employees were present.' (agrees with 'employees')", "bn": "Subject-verb: × 'ম্যানেজার না কর্মচারীরা উপস্থিত ছিল না।' ✓ 'ম্যানেজার না কর্মচারীরা উপস্থিত ছিল না।' ('employees'-এর সাথে agreement)" }
+      ],
+      "tips": "সবচেয়ে সাধারণ ৩টি conjunction ভুল মনে রাখবে: (১) Although + But একসাথে নয় — একটি বাছো। (২) Because + So একসাথে নয় — একটি বাছো। (৩) দুটি independent clause শুধু comma দিয়ে join করো না — conjunction বা semi-colon ব্যবহার করো। এই তিনটি ভুল এড়ালেই তোমার লেখা অনেক উন্নত হবে।"
+    },
+    {
+      "name": "Using Conjunctions for Better Flow",
+      "banglaName": "উন্নত ধারা জন্য Conjunction ব্যবহার",
+      "definition": "Conjunctions are the key to moving from simple, choppy sentences to smooth, flowing English. By using a variety of conjunctions — coordinating, subordinating, and correlative — you can express complex ideas clearly. This topic shows how to combine short sentences into longer, more sophisticated ones while maintaining clarity.",
+      "banglaDefinition": "Conjunction সহজ, খণ্ডিত বাক্য থেকে মসৃণ, প্রবহমান ইংরেজিতে যাওয়ার চাবিকাঠি। বিভিন্ন ধরনের conjunction — coordinating, subordinating, এবং correlative — ব্যবহার করে আপনি জটিল ধারণা স্পষ্টভাবে প্রকাশ করতে পারেন। এই বিষয়টি দেখায় কিভাবে ছোট বাক্যগুলোকে দীর্ঘ, আরও পরিশীলিত বাক্যে রূপান্তর করা যায়, স্বচ্ছতা বজায় রেখে।",
+      "formula": "CHOPPY: 'I visited Delhi. I saw the Red Fort. I ate biryani. I came back.'\n\nCOMBINED: 'When I visited Delhi, I saw the Red Fort and ate biryani before coming back.'\n\nCOMBINED (more sophisticated):\n'During my visit to Delhi, not only did I see the Red Fort, but I also enjoyed authentic biryani before returning home.'\n\nTransitions:\nAddition: and, also, moreover, furthermore\nContrast: but, yet, however, although\nCause: because, since, as, therefore\nTime: when, while, after, before, as soon as",
+      "rules": [
+        "ছোট ছোট বাক্যের পরিবর্তে conjunction ব্যবহার করে বাক্য যুক্ত করো — বক্তব্য natural হবে।",
+        "একই conjunction বারবার ব্যবহার করো না — variety আনো (and → moreover, but → however)।",
+        "Complex sentence তৈরি করো, কিন্তু অর্থ স্পষ্ট রাখো — জটিলতার জন্য স্পষ্টতা বিসর্জন দিও না।",
+        "Coordinating conjunction (and, but, or) সাধারণ সংযোগের জন্য ভালো।",
+        "Subordinating conjunction (because, although, when) জটিল সম্পর্ক দেখানোর জন্য ভালো।",
+        "Correlative conjunction (both...and, not only...but also) emphasis যোগ করতে।",
+        "Conjunctive adverb (however, therefore, moreover) formal লেখায় sentence linking-এর জন্য।"
+      ],
+      "examples": [
+        { "en": "Choppy: 'I live in Kolkata. I work in a bank. I enjoy my job.' Combined: 'I live in Kolkata and work in a bank, and I enjoy my job.'", "bn": "খণ্ডিত: 'আমি কলকাতায় থাকি। আমি একটি ব্যাংকে কাজ করি। আমি আমার কাজ উপভোগ করি।' যুক্ত: 'আমি কলকাতায় থাকি এবং একটি ব্যাংকে কাজ করি, এবং আমি আমার কাজ উপভোগ করি।'" },
+        { "en": "Choppy: 'She went to the market. She bought vegetables. She came home. She cooked lunch.' Combined: 'She went to the market, bought vegetables, came home, and cooked lunch.'", "bn": "খণ্ডিত: 'সে বাজারে গেল। সে সবজি কিনল। সে বাড়ি এল। সে লাঞ্চ রান্না করল।' যুক্ত: 'সে বাজারে গিয়ে সবজি কিনে বাড়ি এসে লাঞ্চ রান্না করল।'" },
+        { "en": "Choppy: 'It was raining. I took an umbrella. I went to the office.' Combined: 'Since it was raining, I took an umbrella before going to the office.'", "bn": "খণ্ডিত: 'বৃষ্টি হচ্ছিল। আমি ছাতা নিলাম। আমি অফিস গেলাম।' যুক্ত: 'যেহেতু বৃষ্টি হচ্ছিল, আমি অফিস যাওয়ার আগে ছাতা নিলাম।'" }
+      ],
+      "tips": "Sentence combining-এর একটি সহজ কৌশল: প্রথমে তোমার চিন্তাগুলো ছোট ছোট বাক্যে লেখো। তারপর সম্পর্ক খুঁজে বের করো (একই বিষয়? কারণ-ফলাফল? সময়ের ক্রম? বিরোধিতা?)। সেই সম্পর্ক অনুযায়ী সঠিক conjunction বেছে নিয়ে বাক্যগুলো যুক্ত করো। practice করার সাথে সাথে এটা স্বাভাবিক হয়ে যাবে।"
+    },
+    {
+      "name": "Conjunctions in Questions and Conditional Sentences",
+      "banglaName": "প্রশ্ন ও শর্তসূচক বাক্যে Conjunction",
+      "definition": "Conjunctions play a special role in forming questions and conditional sentences. In questions, conjunctions like 'or', 'and', 'if/whether' help present choices and alternatives. In conditional sentences, 'if', 'unless', 'provided that', 'as long as', 'in case', 'even if', and 'whether...or' are essential. Understanding these patterns will help you ask better questions and express conditions accurately.",
+      "banglaDefinition": "Conjunction প্রশ্ন এবং শর্তসূচক বাক্য গঠনে বিশেষ ভূমিকা পালন করে। প্রশ্নে 'or', 'and', 'if/whether'-এর মতো conjunctions পছন্দ এবং বিকল্প উপস্থাপন করতে সাহায্য করে। শর্তসূচক বাক্যে 'if', 'unless', 'provided that', 'as long as', 'in case', 'even if', এবং 'whether...or' অপরিহার্য। এই প্যাটার্নগুলো বোঝা আপনাকে আরও ভালো প্রশ্ন করতে এবং শর্ত সঠিকভাবে প্রকাশ করতে সাহায্য করবে।",
+      "formula": "Alternative Questions with 'or':\n'Do you want chai or coffee?'\n'Will you take the metro or the bus?'\n\nEmbedded Questions with 'if/whether':\n'I don't know if he will come.'\n'She asked whether the train had left.'\n\nConditionals with 'if/unless':\n'If it rains, we will stay home.'\n'You will miss the train unless you hurry.'\n\nConditionals with 'as long as/provided that':\n'You can come as long as you finish your work.'\n'I will help you provided that you try your best.'",
+      "rules": [
+        "Alternative question-এ 'or' দুটি option join করে: 'Tea or coffee?'",
+        "Embedded question-এ 'if' বা 'whether' ব্যবহার হয়: 'I wonder if she is coming.'",
+        "'Whether' formal, 'if' informal — but 'whether' 'or not'-এর আগে বেশি ব্যবহৃত: 'whether or not'।",
+        "'Unless' = 'if not': 'Unless you study' = 'If you do not study'।",
+        "'As long as' এবং 'provided that' শর্ত দেখায় — 'if'-এর চেয়ে formal।",
+        "'Even if' একটি strong condition দেখায়: 'Even if you apologize, I won't forgive you.'",
+        "'In case' সতর্কতামূলক শর্ত: 'Take an umbrella in case it rains.'"
+      ],
+      "examples": [
+        { "en": "'Are you going to the Durga Puja pandal or staying home?'", "bn": "'তুমি কি দুর্গাপূজার প্যান্ডেলে যাচ্ছ নাকি বাড়িতে থাকছ?'" },
+        { "en": "'I asked the conductor whether the bus goes to Howrah station.'", "bn": "'আমি কন্ডাক্টরকে জিজ্ঞাসা করলাম বাসটি হাওড়া স্টেশনে যায় কিনা।'" },
+        { "en": "'If you visit India, you must see the Taj Mahal.'", "bn": "'তুমি যদি ভারত ভ্রমণ করো, তাজমহল অবশ্যই দেখবে।'" },
+        { "en": "'You can borrow my bike as long as you return it by evening.'", "bn": "'তুমি আমার বাইক নিতে পারো যতক্ষণ সন্ধ্যার মধ্যে ফেরত দাও।'" },
+        { "en": "'Unless the strike ends, the trains will not run tomorrow.'", "bn": "'ধর্মঘট শেষ না হলে, আগামীকাল ট্রেন চলবে না।'" },
+        { "en": "'Even if it rains, the cricket match will continue.'", "bn": "'বৃষ্টি হলেও ক্রিকেট ম্যাচ চলতে থাকবে।'" }
+      ],
+      "tips": "Conditional sentence-এ 'if' এবং 'unless'-এর পার্থক্য: 'If you study, you will pass' (ইতিবাচক শর্ত)। 'Unless you study, you will fail' (নেতিবাচক শর্ত = if you don't study)। দ্বিতীয়টা বেশি জোরালো। 'Provided that' এবং 'as long as' strong condition দেখায় — এগুলো formal writing-এ ব্যবহার করো।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Double conjunction: 'Although she was sick, but she went to office.'",
+      "correct": "'Although she was sick, she went to office.' or 'She was sick, but she went to office.'",
+      "explanation": "'Although' এবং 'but' দুটোই contrast দেখায় — একসাথে ব্যবহার করা redundant। একটি suffice। 'Although' subordinate clause তৈরি করে (অসম্পূর্ণ), 'but' দুটি independent clause যোগ করে। মনে রাখবে: 'Although + clause, clause' অথবা 'clause, but + clause' — একসাথে নয়।"
+    },
+    {
+      "wrong": "'Because I was tired, so I went to bed early.'",
+      "correct": "'Because I was tired, I went to bed early.' or 'I was tired, so I went to bed early.'",
+      "explanation": "'Because' এবং 'so' উভয়ই কারণ-ফলাফল দেখায় — একসাথে ব্যবহার করো না। 'Because' কারণ দেখায়, 'so' ফলাফল দেখায়। 'Because I was tired, so I went to bed' = কারণ + তাই + ফলাফল → এটা redundant। একটি বেছে নাও: either 'because' clause, or 'so' clause।"
+    },
+    {
+      "wrong": "Comma splice: 'I went to the market, I bought some vegetables.'",
+      "correct": "'I went to the market, and I bought some vegetables.' or 'I went to the market; I bought some vegetables.'",
+      "explanation": "Comma splice হলো দুটি independent clause শুধু comma দিয়ে join করা — এটা ভুল। দুটি independent clause join করতে conjunction (and, but, or, so) বা semi-colon (;) প্রয়োজন। বা separate sentence-এ ভাগ করতে পারো: 'I went to the market. I bought some vegetables.'"
+    },
+    {
+      "wrong": "Parallel structure error: 'She is not only intelligent but also she is hardworking.'",
+      "correct": "'She is not only intelligent but also hardworking.' (adjective + adjective)",
+      "explanation": "Correlative conjunction (not only...but also, either...or, etc.)-এর পরের structure parallel হতে হবে। 'Not only + adjective (intelligent), but also + clause (she is hardworking)' — এটা parallel নয়। Correct: 'Not only + adjective, but also + adjective' অথবা 'Not only + clause, but also + clause'।"
+    },
+    {
+      "wrong": "Subject-verb agreement: 'Neither the manager nor the employees was present.'",
+      "correct": "'Neither the manager nor the employees were present.'",
+      "explanation": "'Neither...nor' এবং 'either...or'-এর পরে verb agrees with the nearest subject। এখানে 'employees' (plural) nearer, তাই 'were'। যদি 'Neither the employees nor the manager' হতো, তাহলে 'was' (manager singular verb) সঠিক হতো। 'Both...and' সবসময় plural verb নেয়।"
+    },
+    {
+      "wrong": "Starting a sentence with 'Because' without completing the thought: 'Because I was late.' (fragment)",
+      "correct": "'Because I was late, I missed the train.' (complete sentence)",
+      "explanation": "'Because' একটি subordinating conjunction — এটি একটি dependent clause শুরু করে। 'Because I was late' একটি fragment (অসম্পূর্ণ বাক্য)। এটিকে একটি independent clause দিয়ে সম্পূর্ণ করতে হবে: 'Because I was late, I missed the train.' Fragment এড়াতে dependent clause-এর পরে সবসময় independent clause যোগ করো।"
+    },
+    {
+      "wrong": "Confusing 'then' and 'than': 'She is taller then me.'",
+      "correct": "'She is taller than me.' (comparison) BUT 'First I will eat, then I will go.' (time sequence)",
+      "explanation": "'Then' = তারপর (time sequence)। 'Than' = চেয়ে (comparison)। এই দুটি শব্দ প্রায়ই confusion সৃষ্টি করে। 'Then' conjunction নয় — এটি adverb। 'Than' conjunction ব্যবহৃত হয় comparison-এ। 'More than', 'better than', 'taller than' — সব comparison-এ 'than'। 'First...then' — sequence-এ 'then'।"
+    },
+    {
+      "wrong": "Using 'like' instead of 'as' or 'as if': 'She behaves like she owns the place.'",
+      "correct": "'She behaves as if she owns the place.' or 'She behaves like a queen.'",
+      "explanation": "'Like' preposition — এটি noun/pronoun-এর আগে বসে: 'She sings like a professional.' 'As if' / 'as though' conjunction — এটি clause-এর আগে বসে: 'She sings as if she is a professional.' কথোপকথনে 'like' clause-এর আগেও ব্যবহৃত হয় (informal), কিন্তু formal English-এ 'as if' বা 'as though' ব্যবহার করো।"
+    },
+    {
+      "wrong": "Missing comma before 'because' when needed for clarity: 'I didn't go to the party because I was sick.' (could mean: party reason was not my sickness)",
+      "correct": "'I didn't go to the party because I was sick.' or 'I didn't go to the party, because I was sick.' (comma makes it clear the sickness is the reason)",
+      "explanation": "একটি বিখ্যাত উদাহরণ: 'I didn't marry him because he was rich' — এর অর্থ হতে পারে 'আমি তাকে বিয়ে করিনি কারণ সে ধনী ছিল' (সে ধনী বলে বিয়ে করিনি) অথবা 'আমি তাকে বিয়ে করিনি কারণ সে ধনী ছিল' (সে ধনী, কিন্তু এটা কারণ নয়)। Comma যোগ করলে অর্থ পরিষ্কার হয়: 'I didn't marry him, because he was rich' = সে ধনী ছিল বলেই বিয়ে করিনি।"
+    },
+    {
+      "wrong": "Run-on sentence: 'He went to the store he bought milk he came home he made tea.'",
+      "correct": "'He went to the store, bought milk, came home, and made tea.' or 'He went to the store. He bought milk. He came home. He made tea.'",
+      "explanation": "Run-on sentence (fused sentence) হলো multiple independent clauses যুক্তিহীনভাবে একসাথে লেখা। Conjunction এবং punctuation সঠিকভাবে ব্যবহার করে এগুলো ঠিক করতে হবে। সংক্ষিপ্ত বক্তব্যের জন্য conjunctions (and, then), দীর্ঘ বক্তব্যের জন্য sentences ভাগ করে নাও।"
+    }
+  ]
 }
