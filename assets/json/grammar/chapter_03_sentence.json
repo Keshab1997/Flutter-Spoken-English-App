@@ -1,10 +1,273 @@
 {
   "chapter": 3,
   "level": "Beginner",
-  "title": "Sentence",
+  "title": "Sentence (বাক্য)",
   "icon": "article",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "A sentence is a group of words that expresses a complete thought. Every sentence begins with a capital letter and ends with a punctuation mark (., ?, or !). A sentence must have at least a subject and a verb to be complete. Sentences are the foundation of all communication in English.",
+  "banglaDescription": "বাক্য হলো শব্দের একটি দল যা একটি সম্পূর্ণ চিন্তা প্রকাশ করে। প্রতিটি বাক্য একটি capital letter দিয়ে শুরু হয় এবং একটি punctuation mark (., ?, বা !) দিয়ে শেষ হয়। একটি বাক্যে সম্পূর্ণ হতে অন্তত একটি subject এবং একটি verb থাকতে হবে। বাক্যই ইংরেজিতে সমস্ত যোগাযোগের ভিত্তি।",
+  "topics": [
+    {
+      "name": "What is a Sentence?",
+      "banglaName": "বাক্য কী?",
+      "definition": "A sentence is a group of words that makes complete sense. It expresses a complete thought, statement, question, command, or exclamation. A sentence always starts with a capital letter and ends with a full stop (.), question mark (?), or exclamation mark (!). Every sentence must contain a subject and a verb.",
+      "banglaDefinition": "বাক্য হলো শব্দের এমন একটি দল যা সম্পূর্ণ অর্থ প্রকাশ করে। এটি একটি সম্পূর্ণ চিন্তা, বিবৃতি, প্রশ্ন, আদেশ, বা আবেগ প্রকাশ করে। একটি বাক্য সবসময় capital letter দিয়ে শুরু হয় এবং full stop (.), question mark (?), বা exclamation mark (!) দিয়ে শেষ হয়। প্রতিটি বাক্যে একটি subject এবং একটি verb থাকা আবশ্যক।",
+      "formula": "Sentence = Subject + Verb + (Object/Complement)\n\nExamples:\nSubject + Verb → Birds fly.\nSubject + Verb + Object → I eat rice.\nSubject + Verb + Complement → She is happy.",
+      "rules": [
+        "একটি বাক্য সবসময় capital letter দিয়ে শুরু হয়।",
+        "একটি বাক্যের শেষে punctuation mark (., ?, !) থাকতে হয়।",
+        "প্রতি বাক্যে একটি subject (কর্তা) এবং একটি verb (ক্রিয়া) থাকতে হবে।",
+        "একটি বাক্য একটি সম্পূর্ণ চিন্তা (complete thought) প্রকাশ করে।",
+        "বাক্যের শব্দগুলো সঠিক ক্রমে (proper order) সাজাতে হয়।",
+        "একটি বাক্যে একাধিক clause থাকতে পারে।",
+        "বাক্যের দৈর্ঘ্য ছোট বা বড় হতে পারে, কিন্তু তা সম্পূর্ণ অর্থ প্রকাশ করতে হবে।"
+      ],
+      "examples": [
+        { "en": "The sun rises in the east.", "bn": "সূর্য পূর্ব দিকে উদয় হয়।" },
+        { "en": "She is reading a book.", "bn": "সে একটি বই পড়ছে।" },
+        { "en": "Do you like coffee?", "bn": "তুমি কি কফি পছন্দ করো?" },
+        { "en": "Please sit down.", "bn": "অনুগ্রহ করে বসো।" },
+        { "en": "What a beautiful flower!", "bn": "কী সুন্দর ফুল!" }
+      ],
+      "tips": "একটি বাক্য চেনার সহজ উপায়: দেখো এটি capital letter দিয়ে শুরু হয়েছে কিনা এবং শেষে punctuation আছে কিনা। আরও দেখো এটি পড়ে একটি সম্পূর্ণ অর্থ বোঝা যায় কিনা। \"Because I was tired\" — এটি একটি বাক্য নয় (এটি একটি fragment), কারণ এটি সম্পূর্ণ অর্থ প্রকাশ করে না।"
+    },
+    {
+      "name": "Subject and Predicate",
+      "banglaName": "উদ্দেশ্য ও বিধেয়",
+      "definition": "Every sentence has two main parts: the Subject and the Predicate. The Subject tells us who or what the sentence is about. The Predicate tells us something about the subject, and it always includes the verb. Finding the subject and predicate helps us understand sentence structure.",
+      "banglaDefinition": "প্রতি বাক্যের দুটি প্রধান অংশ আছে: Subject (উদ্দেশ্য) এবং Predicate (বিধেয়)। Subject告诉我们 বাক্যটি কাকে বা কী নিয়ে। Predicate আমাদের subject সম্পর্কে কিছু বলে, এবং এতে সবসময় verb অন্তর্ভুক্ত থাকে। Subject এবং predicate খুঁজে বের করা বাক্যের গঠন বুঝতে সাহায্য করে।",
+      "formula": "Sentence = Subject + Predicate\n\nSubject = Who/what the sentence is about (Noun/Pronoun)\nPredicate = What is said about the subject (Verb + rest)\n\nExample:\nRam (Subject) + plays football (Predicate).",
+      "rules": [
+        "Subject সাধারণত বাক্যের শুরুতে থাকে (declarative sentence-এ)।",
+        "Subject noun বা pronoun হয়।",
+        "Predicate-এ সবসময় একটি main verb থাকে।",
+        "Subject এক বা একাধিক শব্দের হতে পারে: 'The tall man' is my uncle.",
+        "Predicate এক বা একাধিক শব্দের হতে পারে: She 'sings very beautifully.'",
+        "Imperative sentence-এ subject উহ্য (understood) থাকে: '(You) Sit down.'",
+        "কখনও কখনও subject বাক্যের মাঝে বা শেষে আসে (questions-এ)।"
+      ],
+      "examples": [
+        { "en": "Subject: Birds | Predicate: fly in the sky.", "bn": "উদ্দেশ্য: পাখি | বিধেয়: আকাশে উড়ে।" },
+        { "en": "Subject: My mother | Predicate: cooks delicious food.", "bn": "উদ্দেশ্য: আমার মা | বিধেয়: সুস্বাদু খাবার রান্না করে।" },
+        { "en": "Subject: The little boy | Predicate: was crying loudly.", "bn": "উদ্দেশ্য: ছোট ছেলেটি | বিধেয়: জোরে কাঁদছিল।" },
+        { "en": "Subject: We | Predicate: went to the park yesterday.", "bn": "উদ্দেশ্য: আমরা | বিধেয়: গতকাল পার্কে গিয়েছিলাম।" },
+        { "en": "Subject: Education | Predicate: is the key to success.", "bn": "উদ্দেশ্য: শিক্ষা | বিধেয়: সাফল্যের চাবিকাঠি।" },
+        { "en": "Imperative: '(You) Close the door.' — Subject is understood.", "bn": "আদেশসূচক: '(তুমি) দরজাটি বন্ধ করো।' — Subject উহ্য আছে।" }
+      ],
+      "tips": "Subject খুঁজতে 'Who?' বা 'What?' প্রশ্ন করো বাক্যটির verb-কে নিয়ে। যেমন: 'The dog barks loudly.' — প্রশ্ন: Who barks? উত্তর: The dog (Subject)। তারপর বাকি অংশটুকুই Predicate: 'barks loudly'।"
+    },
+    {
+      "name": "Types of Sentences by Purpose",
+      "banglaName": "উদ্দেশ্য অনুযায়ী বাক্যের প্রকারভেদ",
+      "definition": "Sentences can be classified into four types based on their purpose: Declarative (makes a statement), Interrogative (asks a question), Imperative (gives a command or request), and Exclamatory (expresses strong emotion). Each type ends with a specific punctuation mark.",
+      "banglaDefinition": "উদ্দেশ্যের ভিত্তিতে বাক্যকে চার প্রকারে ভাগ করা যায়: Declarative (বিবৃতি দেয়), Interrogative (প্রশ্ন জিজ্ঞাসা করে), Imperative (আদেশ বা অনুরোধ জানায়), এবং Exclamatory (প্রবল আবেগ প্রকাশ করে)। প্রতিটি প্রকার নির্দিষ্ট punctuation mark দিয়ে শেষ হয়।",
+      "formula": "Declarative → Subject + Verb + Object. (.) — I like apples.\nInterrogative → Auxiliary + Subject + Verb? (?) — Do you like apples?\nImperative → Verb + Object. (.) — Eat your food.\nExclamatory → What/How + ...! (!) — What a beautiful day!",
+      "rules": [
+        "Declarative sentence বিবৃতি বা তথ্য দেয় এবং (.) দিয়ে শেষ হয়।",
+        "Interrogative sentence প্রশ্ন জিজ্ঞাসা করে এবং (?) দিয়ে শেষ হয়।",
+        "Imperative sentence আদেশ, অনুরোধ, বা নিষেধাজ্ঞা প্রকাশ করে এবং (.) বা (!) দিয়ে শেষ হয়।",
+        "Exclamatory sentence প্রবল আবেগ (আশ্চর্য, আনন্দ, দুঃখ) প্রকাশ করে এবং (!) দিয়ে শেষ হয়।",
+        "Declarative sentence-এ subject verb-এর আগে থাকে।",
+        "Interrogative sentence-এ auxiliary verb subject-এর আগে থাকে।",
+        "Imperative sentence-এর subject সাধারণত উহ্য (you) থাকে।",
+        "Exclamatory sentence প্রায়ই 'What' বা 'How' দিয়ে শুরু হয়।"
+      ],
+      "examples": [
+        { "en": "Declarative: The Earth revolves around the Sun.", "bn": "Declarative: পৃথিবী সূর্যের চারদিকে ঘোরে।" },
+        { "en": "Declarative: She works at a hospital.", "bn": "Declarative: সে একটি হাসপাতালে কাজ করে।" },
+        { "en": "Interrogative: Where do you live?", "bn": "Interrogative: তুমি কোথায় থাকো?" },
+        { "en": "Interrogative: Is he coming to the party?", "bn": "Interrogative: সে কি পার্টিতে আসছে?" },
+        { "en": "Imperative: Please help me with this bag.", "bn": "Imperative: অনুগ্রহ করে এই ব্যাগটি নিয়ে আমাকে সাহায্য করো।" },
+        { "en": "Imperative: Don't touch the hot stove.", "bn": "Imperative: গরম চুলা স্পর্শ করো না।" },
+        { "en": "Exclamatory: What a wonderful performance!", "bn": "Exclamatory: কী চমৎকার প্রদর্শন!" },
+        { "en": "Exclamatory: How beautiful the sunset is!", "bn": "Exclamatory: সূর্যাস্ত কত সুন্দর!" }
+      ],
+      "tips": "চার ধরনের বাক্য চেনার সহজ উপায়: ১) (.) দিয়ে শেষ = Declarative (সাধারণ বিবৃতি), ২) (?) দিয়ে শেষ = Interrogative (প্রশ্ন), ৩) (.) বা (!) দিয়ে শেষ, subject উহ্য = Imperative (আদেশ), ৪) (!) দিয়ে শেষ, 'What/How' দিয়ে শুরু = Exclamatory (আবেগ)। প্রতিদিনের কথোপকথনে এই চার ধরনের বাক্য ব্যবহারের অভ্যাস করো।"
+    },
+    {
+      "name": "Word Order in Sentences",
+      "banglaName": "বাক্যে শব্দের ক্রম",
+      "definition": "Word order refers to the arrangement of words in a sentence. In English, the standard word order is Subject-Verb-Object (SVO). Unlike Bengali, where the verb comes at the end (SOV), in English the verb comes right after the subject. Correct word order is essential for making clear and grammatical sentences.",
+      "banglaDefinition": "শব্দ ক্রম (word order) বলতে বাক্যে শব্দের বিন্যাসকে বোঝায়। ইংরেজিতে আদর্শ শব্দ ক্রম হলো Subject-Verb-Object (SVO)। বাংলায় যেখানে verb শেষে আসে (SOV), ইংরেজিতে verb subject-এর পরেই আসে। সঠিক শব্দ ক্রম স্পষ্ট এবং ব্যাকরণসম্মত বাক্য তৈরির জন্য অপরিহার্য।",
+      "formula": "English (SVO): Subject + Verb + Object\n→ I + eat + rice.\n\nBengali (SOV): Subject + Object + Verb\n→ আমি + ভাত + খাই।\n\nTime: Subject + Verb + Object + Time\n→ I eat rice every day.",
+      "rules": [
+        "ইংরেজিতে Subject সবসময় Verb-এর আগে আসে (questions ছাড়া)।",
+        "ইংরেজির আদর্শ ক্রম: Subject → Verb → Object (SVO)।",
+        "Adjective noun-এর আগে আসে: 'a red flower' (not 'a flower red')।",
+        "Adverb সাধারণত verb-এর পরে আসে: 'She sings beautifully.'",
+        "Time সাধারণত বাক্যের শেষে আসে: 'I go to school every day.'",
+        "Place time-এর আগে আসে: 'I met him at the park yesterday.'",
+        "বাংলা SOV (Subject-Object-Verb) ব্যবহার করে — ইংরেজিতে এটি উল্টো।",
+        "Negative sentence-এ 'not' auxiliary verb-এর পরে আসে: 'I do not like it.'"
+      ],
+      "examples": [
+        { "en": "English: I (S) eat (V) rice (O).", "bn": "ইংরেজি: I (S) eat (V) rice (O)." },
+        { "en": "Bengali: আমি (S) ভাত (O) খাই (V).", "bn": "বাংলা: আমি (S) ভাত (O) খাই (V)." },
+        { "en": "Correct: She reads a book.", "bn": "ঠিক: She reads a book." },
+        { "en": "Wrong: She a book reads. (Bengali word order in English)", "bn": "ভুল: She a book reads. (বাংলা শব্দ ক্রম ইংরেজিতে)" },
+        { "en": "Correct: He is a good teacher.", "bn": "ঠিক: He is a good teacher." },
+        { "en": "Correct: They played football in the field yesterday.", "bn": "ঠিক: They played football in the field yesterday." },
+        { "en": "Correct: She always comes on time.", "bn": "ঠিক: She always comes on time." },
+        { "en": "Correct: I do not like cold weather.", "bn": "ঠিক: I do not like cold weather." }
+      ],
+      "tips": "ইংরেজিতে বাক্য তৈরি করার সময় মনে রেখো: প্রথমে Subject, তারপর Verb, তারপর Object (SVO)। বাংলা থেকে ইংরেজি অনুবাদ করার সময় verb-এর অবস্থান পরিবর্তন করে ফেলো। SVO নিয়মটি মনে রাখার জন্য এই বাক্যটি মুখস্থ করো: 'I (S) love (V) you (O)' — তিনটি শব্দ, তিনটি অংশ।"
+    },
+    {
+      "name": "Positive and Negative Sentences",
+      "banglaName": "স্বীকৃতিমূলক ও নেতিবাচক বাক্য",
+      "definition": "A positive (affirmative) sentence states that something is true or exists. A negative sentence states that something is false, not true, or does not exist. Negative sentences are formed by adding 'not' after the auxiliary verb. If there is no auxiliary verb, we use 'do/does/did + not'.",
+      "banglaDefinition": "Positive (affirmative) বাক্য বলে যে কিছু সত্য বা বিদ্যমান। Negative বাক্য বলে যে কিছু মিথ্যা, সত্য নয়, বা বিদ্যমান নয়। Negative বাক্য auxiliary verb-এর পরে 'not' যোগ করে তৈরি হয়। যদি কোনো auxiliary verb না থাকে, তাহলে 'do/does/did + not' ব্যবহার করা হয়।",
+      "formula": "Positive: Subject + Verb + Object.\nNegative: Subject + Auxiliary + not + Verb + Object.\n\nExample:\nPositive: I like tea.\nNegative: I do not like tea.\n\nWith 'be' verb:\nPositive: She is a doctor.\nNegative: She is not a doctor.",
+      "rules": [
+        "Negative বাক্যে 'not' auxiliary verb-এর পরেই বসে।",
+        "Present simple-এ 'do not' (don't) / 'does not' (doesn't) + base verb।",
+        "Past simple-এ 'did not' (didn't) + base verb।",
+        "Be verb (am/is/are/was/were) থাকলে সরাসরি 'not' যোগ করো।",
+        "Modal verb (can, will, must, etc.) থাকলে modal + not + verb।",
+        "Present simple-এ he/she/it করলে 'does not' ব্যবহার করো, verb-এ 's' যাবে না।",
+        "একটি বাক্যে একাধিক negative (double negative) ব্যবহার করা ভুল।",
+        "Negative প্রশ্নে auxiliary + n't + subject: 'Don't you like it?'"
+      ],
+      "examples": [
+        { "en": "Positive: I like coffee.", "bn": "স্বীকৃতিমূলক: আমি কফি পছন্দ করি।" },
+        { "en": "Negative: I do not like coffee.", "bn": "নেতিবাচক: আমি কফি পছন্দ করি না।" },
+        { "en": "Positive: She works here.", "bn": "স্বীকৃতিমূলক: সে এখানে কাজ করে।" },
+        { "en": "Negative: She does not work here.", "bn": "নেতিবাচক: সে এখানে কাজ করে না।" },
+        { "en": "Positive: They were happy.", "bn": "স্বীকৃতিমূলক: তারা খুশি ছিল।" },
+        { "en": "Negative: They were not happy.", "bn": "নেতিবাচক: তারা খুশি ছিল না।" },
+        { "en": "Positive: He can swim.", "bn": "স্বীকৃতিমূলক: সে সাঁতার কাটতে পারে।" },
+        { "en": "Negative: He cannot swim.", "bn": "নেতিবাচক: সে সাঁতার কাটতে পারে না।" },
+        { "en": "Wrong (double negative): I don't have nothing.", "bn": "ভুল (double negative): I don't have nothing." },
+        { "en": "Correct: I don't have anything. / I have nothing.", "bn": "ঠিক: I don't have anything. / I have nothing." }
+      ],
+      "tips": "Negative বাক্য তৈরি করার সময় মনে রেখো: auxiliary verb থাকলে 'auxiliary + not', না থাকলে 'do/does/did + not'। Present simple-এ he/she/it করলে 'does not' ব্যবহার করবে এবং main verb-এ 's' যোগ হবে না। 'Don't', 'doesn't', 'didn't' হলো সংক্ষিপ্ত রূপ (contractions) — এগুলো কথোপকথনে বেশি ব্যবহার হয়।"
+    },
+    {
+      "name": "Simple Sentence",
+      "banglaName": "সরল বাক্য",
+      "definition": "A simple sentence is a sentence that has only one independent clause. It contains one subject and one verb (or compound subject/verb), and it expresses one complete thought. A simple sentence can be short or long, but it has only one clause.",
+      "banglaDefinition": "সরল বাক্য (simple sentence) হলো সেই বাক্য যাতে মাত্র একটি independent clause থাকে। এতে একটি subject এবং একটি verb থাকে (অথবা compound subject/verb), এবং এটি একটি সম্পূর্ণ চিন্তা প্রকাশ করে। একটি simple sentence ছোট বা বড় হতে পারে, কিন্তু এতে মাত্র একটি clause থাকে।",
+      "formula": "Simple Sentence = 1 Independent Clause\n= Subject + Verb + (Object/Complement)\n\nExamples:\nS + V → Birds sing.\nS + V + O → I love music.\nS + V + C → She is kind.\nS + V + O + Place + Time → He met her at the station yesterday.",
+      "rules": [
+        "Simple sentence-এ একটি মাত্র independent clause থাকে।",
+        "এতে কোনো dependent clause থাকে না।",
+        "একটি simple sentence-এ compound subject থাকতে পারে: 'John and Mary play tennis.'",
+        "একটি simple sentence-এ compound verb থাকতে পারে: 'She sang and danced.'",
+        "Simple sentence ছোট বা বড় হতে পারে, যতক্ষণ একটি clause থাকে।",
+        "Simple sentence একটিমাত্র সম্পূর্ণ চিন্তা প্রকাশ করে।",
+        "অনেকগুলো simple sentence পরপর ব্যবহার করলে writing childish লাগতে পারে।"
+      ],
+      "examples": [
+        { "en": "The baby is sleeping.", "bn": "শিশুটি ঘুমাচ্ছে।" },
+        { "en": "My father bought a new car.", "bn": "আমার বাবা একটি নতুন গাড়ি কিনেছেন।" },
+        { "en": "The sun rises in the east and sets in the west. (compound verb)", "bn": "সূর্য পূর্ব দিকে ওঠে এবং পশ্চিম দিকে অস্ত যায়। (যৌগিক ক্রিয়া)" },
+        { "en": "Rina and Mina are best friends. (compound subject)", "bn": "রিনা এবং মিনা是最好的 বন্ধু। (যৌগিক কর্তা)" },
+        { "en": "She walked slowly through the dark forest at midnight.", "bn": "সে মধ্যরাতে অন্ধকার বনের মধ্য দিয়ে ধীরে ধীরে হেঁটেছিল।" },
+        { "en": "The tall man with a black hat opened the door carefully.", "bn": "কালো টুপিওয়ালা লম্বা লোকটি সাবধানে দরজাটি খুলল।" }
+      ],
+      "tips": "Simple sentence চেনার সবচেয়ে সহজ উপায়: বাক্যটিতে একটি মাত্র finite verb আছে কিনা দেখো। একটি finite verb = একটি clause = simple sentence। যেমন: 'She sings' (1 verb) = simple। 'She sings and dances' (2 verbs but same subject) = এখনও simple (compound verb)."
+    },
+    {
+      "name": "Sentence Fragments and Run-on Sentences",
+      "banglaName": "অসম্পূর্ণ ও জোড়ালাগা বাক্য",
+      "definition": "A sentence fragment is an incomplete sentence that lacks a subject, a verb, or a complete thought. A run-on sentence is when two or more complete sentences are joined together without proper punctuation or conjunction. Both are common mistakes that should be avoided in writing.",
+      "banglaDefinition": "Sentence fragment হলো অসম্পূর্ণ বাক্য যাতে subject, verb, বা সম্পূর্ণ চিন্তার অভাব থাকে। Run-on sentence ঘটে যখন দুই বা ততোধিক সম্পূর্ণ বাক্য সঠিক punctuation বা conjunction ছাড়া একসঙ্গে জুড়ে দেওয়া হয়। এই দুটিই সাধারণ ভুল যা লেখার সময় এড়ানো উচিত।",
+      "formula": "Fragment = Missing Subject OR Missing Verb OR Incomplete Thought\n→ ❌ 'Because I was tired.' (incomplete thought)\n→ ✅ 'I went to bed because I was tired.'\n\nRun-on = Sentence 1 + Sentence 2 (no conjunction/punctuation)\n→ ❌ 'I like tea I drink it daily.'\n→ ✅ 'I like tea, and I drink it daily.'",
+      "rules": [
+        "Fragment এড়াতে প্রতিটি বাক্যে subject এবং verb আছে কিনা যাচাই করো।",
+        "Fragment এড়াতে বাক্যটি সম্পূর্ণ অর্থ প্রকাশ করে কিনা দেখো।",
+        "'Because', 'Although', 'When', 'If', 'Since' দিয়ে শুরু বাক্য fragment হতে পারে যদি main clause না থাকে।",
+        "Run-on sentence ঠিক করতে full stop (.) বা semicolon (;) ব্যবহার করো।",
+        "Run-on sentence ঠিক করতে conjunction (and, but, or, so) ব্যবহার করো।",
+        "Run-on sentence ঠিক করতে comma + conjunction একসঙ্গে ব্যবহার করো।",
+        "খুব লম্বা বাক্য না লিখে ছোট ছোট বাক্যে ভাগ করে লেখো।"
+      ],
+      "examples": [
+        { "en": "Fragment: 'When he arrived.' → Complete: 'When he arrived, the meeting started.'", "bn": "Fragment: 'When he arrived.' → সম্পূর্ণ: 'When he arrived, the meeting started.'" },
+        { "en": "Fragment: 'The man in the blue shirt.' → 'The man in the blue shirt is my uncle.'", "bn": "Fragment: 'The man in the blue shirt.' → 'The man in the blue shirt is my uncle.'" },
+        { "en": "Fragment: 'Running very fast.' → 'The boy was running very fast.'", "bn": "Fragment: 'Running very fast.' → 'The boy was running very fast.'" },
+        { "en": "Run-on: 'I love reading books I read every day.' → 'I love reading books. I read every day.'", "bn": "Run-on: 'I love reading books I read every day.' → 'I love reading books. I read every day.'" },
+        { "en": "Run-on: 'She is tall she plays basketball well.' → 'She is tall, so she plays basketball well.'", "bn": "Run-on: 'She is tall she plays basketball well.' → 'She is tall, so she plays basketball well.'" },
+        { "en": "Correct: 'I went to the market, and I bought some vegetables.'", "bn": "ঠিক: 'I went to the market, and I bought some vegetables.'" }
+      ],
+      "tips": "তোমার লেখা পরীক্ষা করার সময় প্রতিটি বাক্য জোরে জোরে পড়ো। যদি দেখো বাক্যটি অসম্পূর্ণ লাগছে, তবে তা fragment। আর যদি দেখো একসঙ্গে অনেকগুলো idea একটার পর একটা আসছে কোনো punctuation ছাড়া, তবে তা run-on। মনে রেখো: একটি বাক্যে একটি সম্পূর্ণ চিন্তা — এই নিয়ম মেনে চললে fragment এবং run-on সমস্যা হবে না।"
+    },
+    {
+      "name": "Capitalization and Punctuation in Sentences",
+      "banglaName": "বাক্যে বড় হাতের অক্ষর ও বিরামচিহ্ন",
+      "definition": "Every sentence must begin with a capital letter and end with an appropriate punctuation mark. Punctuation marks help readers understand where sentences begin and end, what type of sentence it is, and how to read it with proper intonation. Correct capitalization and punctuation are essential for clear writing.",
+      "banglaDefinition": "প্রতি বাক্য capital letter দিয়ে শুরু করতে হবে এবং উপযুক্ত punctuation mark দিয়ে শেষ করতে হবে। Punctuation marks পাঠকদের বুঝতে সাহায্য করে যে বাক্য কোথায় শুরু এবং শেষ হয়, এটি কী ধরনের বাক্য, এবং কীভাবে সঠিক সুরে পড়তে হয়। সঠিক capitalization এবং punctuation স্পষ্ট লেখার জন্য অপরিহার্য।",
+      "formula": "Start: Capital Letter (A, B, C...)\nEnd: . (statement) / ? (question) / ! (exclamation)\n\nExample:\n✓ She is a teacher.\n✓ Is she a teacher?\n✗ she is a teacher (no capital, no punctuation)",
+      "rules": [
+        "প্রতি বাক্যের প্রথম অক্ষর capital letter হয়।",
+        "Declarative sentence (.) দিয়ে শেষ হয়।",
+        "Interrogative sentence (?) দিয়ে শেষ হয়।",
+        "Exclamatory sentence (!) দিয়ে শেষ হয়।",
+        "Imperative sentence সাধারণত (.) দিয়ে শেষ হয়, জোরালো হলে (!) দিয়ে।",
+        "Proper noun (নাম) সবসময় capital letter দিয়ে শুরু হয়।",
+        "'I' (আমি) pronoun সবসময় capital I হয়।",
+        "সংক্ষিপ্ত রূপ (abbreviation) যেমন Dr., Mr., Mrs., ইত্যাদিতেও capital letter এবং period ব্যবহার হয়।"
+      ],
+      "examples": [
+        { "en": "Correct: 'The sun is shining brightly.'", "bn": "ঠিক: 'The sun is shining brightly.'" },
+        { "en": "Wrong: 'the sun is shining brightly' (no capital, no period)", "bn": "ভুল: 'the sun is shining brightly' (capital নাই, punctuation নাই)" },
+        { "en": "Correct: 'Are you coming to the party?'", "bn": "ঠিক: 'Are you coming to the party?'" },
+        { "en": "Correct: 'What a lovely garden!'", "bn": "ঠিক: 'What a lovely garden!'" },
+        { "en": "Correct: 'Mr. and Mrs. Khan live in Dhaka.'", "bn": "ঠিক: 'Mr. and Mrs. Khan live in Dhaka.'" },
+        { "en": "Correct: 'I think therefore I am.' — Descartes", "bn": "ঠিক: 'I think therefore I am.' — Descartes" }
+      ],
+      "tips": "ইংরেজিতে বাক্য লেখার সময় তিনটি জিনিস মনে রাখবে: ১) প্রথম letter capital, ২) শেষে proper punctuation, ৩) 'I' সবসময় capital। প্রতিদিন ইংরেজি লেখার সময় এই তিনটি নিয়ম মেনে চলার অভ্যাস করো। মোবাইল ফোনে typing করলেও এই নিয়মগুলো অনুসরণ করো।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Writing a sentence without a capital letter at the beginning.",
+      "correct": "Always begin a sentence with a capital letter.",
+      "explanation": "ইংরেজি ব্যাকরণের মৌলিক নিয়ম: প্রতিটি বাক্যের প্রথম অক্ষর capital letter হতে হবে। 'i am happy' না লিখে 'I am happy' লিখতে হবে। শুধু 'I' নয়, বাক্যের প্রথম শব্দেরও প্রথম অক্ষর capital হবে।"
+    },
+    {
+      "wrong": "Forgetting to put a punctuation mark at the end of a sentence.",
+      "correct": "Always end a sentence with . ? or !",
+      "explanation": "প্রতি বাক্যের শেষে একটি punctuation mark থাকা আবশ্যক। এটি ছাড়া বাক্য কোথায় শেষ হচ্ছে তা বোঝা যায় না। Statement-এর জন্য (.), question-এর জন্য (?), এবং exclamation-এর জন্য (!) ব্যবহার করো।"
+    },
+    {
+      "wrong": "Sentence fragment: 'Because I was late.'",
+      "correct": "Complete sentence: 'I missed the bus because I was late.'",
+      "explanation": "'Because I was late' একটি fragment — এটি একটি dependent clause যা সম্পূর্ণ অর্থ প্রকাশ করে না। এতে main clause নেই। fragment ঠিক করতে main clause যোগ করতে হবে অথবা 'Because' বাদ দিতে হবে: 'I was late.'"
+    },
+    {
+      "wrong": "Run-on sentence: 'I love swimming I go to the pool every weekend.'",
+      "correct": "'I love swimming. I go to the pool every weekend.' or 'I love swimming, so I go to the pool every weekend.'",
+      "explanation": "দুটি সম্পূর্ণ বাক্যকে কোনো conjunction বা punctuation ছাড়া একসঙ্গে জুড়ে দিলে run-on sentence হয়। এটি ঠিক করার দুটি উপায়: (১) দুটি আলাদা বাক্যে ভাগ করো, (২) comma + conjunction (and, but, so, etc.) ব্যবহার করো।"
+    },
+    {
+      "wrong": "Double negative: 'I don't have nothing.'",
+      "correct": "'I don't have anything.' or 'I have nothing.'",
+      "explanation": "ইংরেজিতে এক বাক্যে দুটি negative ব্যবহার করা ভুল। 'Don't' এবং 'nothing' দুটোই negative — একসঙ্গে ব্যবহার করলে অর্থ 'আমার কিছু আছে' হয়ে যায়। একটি negative ব্যবহার করো: 'not...anything' বা 'nothing'। বাংলায় 'আমার কিছুই নেই' বলতে double negative ঠিক, কিন্তু ইংরেজিতে নয়।"
+    },
+    {
+      "wrong": "Wrong word order: 'I rice eat.' (Bengali structure in English)",
+      "correct": "'I eat rice.' (Subject + Verb + Object)",
+      "explanation": "বাংলা বাক্যের গঠন SOV (Subject-Object-Verb) — 'আমি ভাত খাই'। কিন্তু ইংরেজির গঠন SVO (Subject-Verb-Object) — 'I eat rice'। বাংলা থেকে ইংরেজি করার সময় verb-এর অবস্থান পরিবর্তন করে Subject-এর পরেই বসাতে হবে।"
+    },
+    {
+      "wrong": "Using 'more better' in a sentence: 'This is more better.'",
+      "correct": "'This is better.' or 'This is much better.'",
+      "explanation": "'Better' ইতিমধ্যেই 'good'-এর comparative form। Comparative-এর সাথে 'more' ব্যবহার করা যায় না। 'More better' একটি সাধারণ ভুল। 'Much better' বলতে পারো (এখানে 'much' intensifier হিসেবে কাজ করে)।"
+    },
+    {
+      "wrong": "Starting a sentence with a lowercase letter after a full stop in the previous sentence.",
+      "correct": "After a full stop, the next sentence must start with a capital letter.",
+      "explanation": "একটি বাক্য (.) দিয়ে শেষ হলে পরবর্তী বাক্যটি capital letter দিয়ে শুরু হবে। এটি একটি মৌলিক নিয়ম যা অনেক beginner learner ভুলে যায়। যেমন: 'He is a student. he studies at Oxford.' — এখানে 'he' capital 'He' হবে।"
+    },
+    {
+      "wrong": "Confusing 'its' and 'it's': 'Its a beautiful day.'",
+      "correct": "'It's a beautiful day.' (It's = It is)",
+      "explanation": "'It's' সবসময় 'it is' বা 'it has'-এর সংক্ষিপ্ত রূপ (contraction)। 'Its' (apostrophe ছাড়া) possessive form — 'তার' অর্থে (যেমন: 'The dog wagged its tail')। মনে রাখবে: contraction-এ apostrophe থাকে, possessive-এ থাকে না।"
+    },
+    {
+      "wrong": "Writing a very long sentence without any punctuation: 'I went to the market and bought some apples and then I met my friend and we had tea together and then we went for a walk.'",
+      "correct": "'I went to the market and bought some apples. Then I met my friend, and we had tea together. After that, we went for a walk.'",
+      "explanation": "খুব লম্বা বাক্য ('and' দিয়ে যুক্ত) পড়তে এবং বুঝতে অসুবিধা হয়। বড় বাক্যগুলোকে ছোট ছোট বাক্যে ভাগ করো। প্রয়োজনমতো full stop এবং comma ব্যবহার করো। একটানা 'and' ব্যবহার না করে 'then', 'after that', 'later' ইত্যাদি transition word ব্যবহার করো।"
+    }
+  ]
 }
