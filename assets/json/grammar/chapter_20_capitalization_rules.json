@@ -147,12 +147,12 @@
         "ব্লগ পোস্ট, নিউজ হেডলাইন → শৈলী অনুযায়ী (আমেরিকান নিউজ সাধারণত Title Case ব্যবহার করে)।"
       ],
       "examples": [
-        { "en": "Book: 'I recently read "The White Tiger" by Arvind Adiga.'", "bn": "বই: 'আমি সম্প্রতি অরবিন্দ অডিগার "The White Tiger" পড়েছি।'" },
-        { "en": "Movie: '"Three Idiots" is one of the most popular Indian films.'", "bn": "সিনেমা: '"থ্রি ইডিয়টস" সবচেয়ে জনপ্রিয় ভারতীয় চলচ্চিত্রগুলির একটি।'" },
-        { "en": "Song: '"Vande Mataram" is our national song.'", "bn": "গান: '"বন্দে মাতরম" আমাদের জাতীয় গান।'" },
-        { "en": "Article: 'Have you read the article "The Future of AI in India"? '", "bn": "নিবন্ধ: 'তুমি কি "ভারতে AI-এর ভবিষ্যত" নিবন্ধটি পড়েছ?'" },
+        { "en": "Book: I recently read \"The White Tiger\" by Arvind Adiga.", "bn": "বই: আমি সম্প্রতি অরবিন্দ অডিগারের \"The White Tiger\" পড়েছি।" },
+        { "en": "Movie: \"Three Idiots\" is one of the most popular Indian films.", "bn": "সিনেমা: \"থ্রি ইডিয়টস\" সবচেয়ে জনপ্রিয় ভারতীয় চলচ্চিত্রগুলির একটি।" },
+        { "en": "Song: \"Vande Mataram\" is our national song.", "bn": "গান: \"বন্দে মাতরম\" আমাদের জাতীয় গান।" },
+        { "en": "Article: Have you read the article \"The Future of AI in India\"?", "bn": "নিবন্ধ: তুমি কি \"ভারতে AI-এর ভবিষ্যত\" নিবন্ধটি পড়েছ?" },
         { "en": "Newspaper headline: 'India Wins World Cup: A Historic Victory' (Title Case)", "bn": "সংবাদ শিরোনাম: 'ভারত বিশ্বকাপ জিতেছে: একটি ঐতিহাসিক বিজয়' (Title Case)" },
-        { "en": "Proper noun in title: '"Midnight's Children" is a novel about India's independence.'", "bn": "শিরোনামে proper noun: '"Midnight's Children" ভারতের স্বাধীনতা নিয়ে একটি উপন্যাস।'" }
+        { "en": "Proper noun in title: \"Midnight's Children\" is a novel about India's independence.", "bn": "শিরোনামে proper noun: \"Midnight's Children\" ভারতের স্বাধীনতা নিয়ে একটি উপন্যাস।" }
       ],
       "tips": "Title capitalization-এর সহজ নিয়ম: প্রথম ও শেষ শব্দ capitalize + Major words (nouns, verbs, adjectives, adverbs) capitalize + Minor words (articles, conjunctions, short prepositions) lowercase। নিজেকে প্রশ্ন করো: 'শব্দটি কি major (গুরুত্বপূর্ণ) নাকি minor (ছোট)?' Major = capitalize; Minor = lowercase। 'The Old Man and the Sea' — 'The' (first = capital), 'Old' (adj), 'Man' (noun), 'and' (conj = lowercase), 'the' (article = lowercase), 'Sea' (last = capital) — perfect! Styles vary — some capitalize all prepositions, some only long ones. Pick a style and stay consistent।"
     },
