@@ -1,10 +1,261 @@
 {
   "chapter": 12,
   "level": "Beginner",
-  "title": "Article",
+  "title": "Article (পদাশ্রিত নির্দেশক)",
   "icon": "article",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Articles are small words that come before nouns. English has three articles: 'a', 'an' (indefinite), and 'the' (definite). 'A' and 'an' introduce non-specific nouns, while 'the' refers to specific or known nouns. Articles are among the most challenging topics for Bengali speakers because Bengali does not use articles the same way. Mastering articles will make your English sound much more natural.",
+  "banglaDescription": "Article হলো সেই ছোট শব্দ যা noun-এর আগে বসে। ইংরেজিতে তিনটি article আছে: 'a', 'an' (অনির্দিষ্ট), এবং 'the' (নির্দিষ্ট)। 'A' এবং 'an' অনির্দিষ্ট noun নির্দেশ করে, আর 'the' নির্দিষ্ট বা পরিচিত noun বোঝায়। Article বাংলাভাষীদের জন্য সবচেয়ে কঠিন বিষয়গুলোর একটি কারণ বাংলায় article এভাবে ব্যবহৃত হয় না। Article আয়ত্ত করলে আপনার ইংরেজি অনেক বেশি natural শোনাবে।",
+  "topics": [
+    {
+      "name": "What is an Article?",
+      "banglaName": "Article কী?",
+      "definition": "Articles are determiners that modify nouns. There are two types: Indefinite Articles ('a' and 'an') and the Definite Article ('the'). 'A' and 'an' mean 'one among many' and are used with singular countable nouns that are not specific. 'The' points to a specific noun that both speaker and listener know. Articles help clarify whether we are talking about something general or specific.",
+      "banglaDefinition": "Article হলো নির্ধারক (determiner) যা noun-কে modify করে। দুই ধরনের article আছে: Indefinite Article ('a' এবং 'an') এবং Definite Article ('the')। 'A' এবং 'an' অর্থ 'অনেকের মধ্যে একটি' — এগুলি অনির্দিষ্ট singular countable noun-এর সাথে ব্যবহৃত হয়। 'The' একটি নির্দিষ্ট noun নির্দেশ করে যা বক্তা এবং শ্রোতা উভয়ই জানে। Article বুঝতে সাহায্য করে আমরা সাধারণ নাকি নির্দিষ্ট কোনো কিছু নিয়ে কথা বলছি।",
+      "formula": "Indefinite Articles:\nA + consonant sound: a book, a university (yu sound), a one-rupee coin (wu sound)\nAn + vowel sound: an apple, an hour (silent h, ow sound), an honest man\n\nDefinite Article:\nThe + any noun (specific/known): the Taj Mahal, the sun, the book I bought\n\nNo Article (Zero Article):\nPlural general: Books are useful.\nUncountable general: Water is life.\nProper nouns: I live in Kolkata.",
+      "rules": [
+        "'A' এবং 'an' শুধু singular countable noun-এর আগে বসে।",
+        "'A' consonant sound-এর আগে: a book, a university, a European, a one-day match।",
+        "'An' vowel sound-এর আগে: an apple, an hour, an honest man, an MBA।",
+        "'The' নির্দিষ্ট noun-এর আগে: 'I saw the man who works at the metro station.'",
+        "প্রথমবার কিছু উল্লেখ করলে 'a/an', দ্বিতীয়বার 'the': 'I saw a car. The car was red.'",
+        "সাধারণভাবে plural বা uncountable noun-এর আগে article লাগে না: 'Dogs are loyal. I like tea.'",
+        "Proper noun-এর আগে সাধারণত article লাগে না: 'Shah Rukh Khan is a famous actor.'"
+      ],
+      "examples": [
+        { "en": "A/An: 'I ate an apple and a banana for breakfast.'", "bn": "A/An: 'আমি নাস্তায় একটি আপেল এবং একটি কলা খেয়েছি।'" },
+        { "en": "The: 'The India Gate is a famous monument in Delhi.'", "bn": "The: 'ইন্ডিয়া গেট দিল্লির একটি বিখ্যাত স্মৃতিস্তম্ভ।'" },
+        { "en": "No article: 'Bengali sweets are very popular all over India.'", "bn": "No article: 'বাংলার মিষ্টি সারা ভারতে খুব জনপ্রিয়।'" },
+        { "en": "First mention vs specific: 'I saw a beautiful sari. The sari was from Banaras.'", "bn": "প্রথমবার vs নির্দিষ্ট: 'আমি একটি সুন্দর শাড়ি দেখলাম। শাড়িটি বেনারসের ছিল।'" },
+        { "en": "An before vowel sound: 'He is an honest businessman from Mumbai.'", "bn": "An vowel sound-এর আগে: 'সে মুম্বাই থেকে একজন সৎ ব্যবসায়ী।'" },
+        { "en": "A before 'university': 'She is a student at the University of Kolkata.'", "bn": "A 'university'-এর আগে: 'সে কলকাতা বিশ্ববিদ্যালয়ের একজন ছাত্রী।'" }
+      ],
+      "tips": "Bengali speakers-এর জন্য article সবচেয়ে কঠিন, কারণ বাংলায় 'একটি' শুধু সংখ্যার জন্য, আর 'টি' নির্দিষ্টতার জন্য — কিন্তু ইংরেজিতে নিয়ম জটিল। শুরুতে শুধু ৩টি নিয়ম মনে রাখবে: (1) প্রথমবার বলা nonspecific singular noun → a/an, (2) specific/known noun → the, (3) general plural/uncountable → no article। বাকিগুলো আয়ত্ত হবে practice-এর মাধ্যমে।"
+    },
+    {
+      "name": "Indefinite Article: A vs An",
+      "banglaName": "অনির্দিষ্ট Article: A বনাম An",
+      "definition": "The choice between 'a' and 'an' depends on the sound that follows, NOT the spelling. 'A' is used before words that begin with a consonant sound. 'An' is used before words that begin with a vowel sound. This is one of the most common sources of errors. Key: focus on pronunciation, not the first letter. For example: 'a university' (yu sound = consonant) but 'an umbrella' (um sound = vowel).",
+      "banglaDefinition": "'A' এবং 'an'-এর মধ্যে পছন্দ নির্ভর করে পরবর্তী শব্দের sound-এর উপর — বানানের উপর নয়। 'A' ব্যবহার হয় consonant sound-এর আগে। 'An' ব্যবহার হয় vowel sound-এর আগে। এটি ভুলের সবচেয়ে সাধারণ উৎসগুলোর একটি। মূল কথা: বানান নয়, উচ্চারণ দেখো। যেমন: 'a university' (ইউ = consonant), কিন্তু 'an umbrella' (আম = vowel)।",
+      "formula": "A + Consonant Sound:\na book, a table, a car, a house (h sound), a university (you), a European (you), a one-day match (wu), a unique idea (you)\n\nAn + Vowel Sound:\nan apple, an elephant, an orange, an hour (silent h = ow), an honest man, an umbrella, an MBA (em), an X-ray (ex), an SOS call (es)\n\nTRICKY CASES:\n'An hour' → h is silent → vowel sound (ow-er)\n'A hospital' → h is pronounced → consonant sound\n'An honest man' → silent h → vowel sound\n'A historical event' → h pronounced → both possible (but 'a' is more common)",
+      "rules": [
+        "Consonant sound-এর আগে 'a': a dog, a house, a uniform, a university, a one-way street।",
+        "Vowel sound-এর আগে 'an': an apple, an egg, an ice cream, an orange, an umbrella।",
+        "Silent 'h' দিয়ে শুরু শব্দে 'an': an hour, an honest man, an heir, an honor।",
+        "Pronounced 'h' দিয়ে শুরু শব্দে 'a': a house, a hospital, a history book, a hotel।",
+        "Acronym (সংক্ষিপ্ত রূপ) উচ্চারণ অনুযায়ী: an MBA (em), an FBI agent (ef), a NASA scientist (na-sa)।",
+        "Vowel letter কিন্তু consonant sound → 'a': a university, a European, a useful thing।",
+        "Consonant letter কিন্তু vowel sound → 'an': an honest man, an hour।"
+      ],
+      "examples": [
+        { "en": "A: 'I need a one-bedroom flat in Kolkata.'", "bn": "A: 'আমার কলকাতায় একটি ওয়ান-বেডরুম ফ্ল্যাট দরকার।'" },
+        { "en": "An: 'She is an engineer working at TCS in Hyderabad.'", "bn": "An: 'সে একজন ইঞ্জিনিয়ার যিনি হায়দ্রাবাদে TCS-এ কাজ করেন।'" },
+        { "en": "An (silent h): 'It took an hour to cross the Howrah Bridge.'", "bn": "An (নীরব h): 'হাওড়া ব্রিজ পার হতে এক ঘন্টা লেগেছে।'" },
+        { "en": "A (you sound): 'India is a union of 28 states.'", "bn": "A (you ধ্বনি): 'ভারত ২৮টি রাজ্যের একটি ইউনিয়ন।'" },
+        { "en": "An (acronym): 'He got an MSc degree from IIT Bombay.'", "bn": "An (acronym): 'সে IIT বম্বে থেকে একটি MSc ডিগ্রি পেয়েছে।'" },
+        { "en": "A vs An: 'A university is different from a school, but an umbrella is useful in the monsoon.'", "bn": "A vs An: 'একটি বিশ্ববিদ্যালয় স্কুল থেকে ভিন্ন, কিন্তু একটি ছাতা বর্ষাকালে উপযোগী।'" }
+      ],
+      "tips": "A vs An শেখার সবচেয়ে সহজ কৌশল: শব্দটা জোরে জোরে highারণ করো। 'University' → 'ইউনিভার্সিটি' (ইউ = consonant sound) → 'a university'। 'Umbrella' → 'আমব্রেলা' (আ = vowel sound) → 'an umbrella'। 'Hour' → 'আওয়ার' (আ = vowel sound) → 'an hour'। বানান নয়, কানই তোমার guide।"
+    },
+    {
+      "name": "Definite Article: The",
+      "banglaName": "নির্দিষ্ট Article: The",
+      "definition": "'The' is the definite article. It is used when both the speaker and the listener know which specific noun is being referred to. This can happen because: (1) the noun was mentioned before, (2) there is only one of something, (3) the context makes it clear, or (4) it is defined by a phrase or clause. 'The' can be used with singular, plural, countable, and uncountable nouns.",
+      "banglaDefinition": "'The' হলো নির্দিষ্ট article। এটি ব্যবহৃত হয় যখন বক্তা এবং শ্রোতা উভয়ই জানেন কোন নির্দিষ্ট noun-এর কথা বলা হচ্ছে। এটি হতে পারে কারণ: (১) noun আগে উল্লেখ করা হয়েছে, (২) জিনিসটি একটিই আছে, (৩) প্রসঙ্গ থেকে পরিষ্কার, বা (৪) একটি phrase/clause দিয়ে সংজ্ঞায়িত। 'The' singular, plural, countable, এবং uncountable — সব ধরনের noun-এর সাথে ব্যবহার করা যায়।",
+      "formula": "USES OF 'THE':\n\n1. Previously mentioned: 'I saw a dog. The dog was barking.'\n2. Unique things: the sun, the moon, the earth, the sky, the world\n3. Known from context: 'Please close the door.' (the door of this room)\n4. Defined by phrase/clause: 'The man who lives next door is a doctor.'\n5. Superlatives: the best, the tallest, the most expensive\n6. Ordinal numbers: the first, the second, the last\n7. Musical instruments: 'She plays the sitar.'\n8. Groups of people: the rich, the poor, the elderly, the young\n9. Nationality groups: the Indians, the French, the Chinese\n10. Rivers, seas, oceans: the Ganges, the Bay of Bengal, the Indian Ocean",
+      "rules": [
+        "'The' নির্দিষ্ট noun-এর আগে — বক্তা ও শ্রোতা জানে কোনটা: 'The metro station is near my house.'",
+        "একবার উল্লেখ করার পর 'a' → 'the': 'She bought a kurta. The kurta was very expensive.'",
+        "Superlative-এর আগে 'the': 'The Taj Mahal is the most beautiful building in India.'",
+        "Ordinal number-এর আগে 'the': 'She was the first woman to climb Mount Everest.'",
+        "সঙ্গীত যন্ত্র বাজানো বোঝাতে 'the': 'Rahul plays the tabla very well.'",
+        "সমুদ্র, নদী, পর্বতমালার নামের আগে 'the': the Ganges, the Himalayas, the Arabian Sea।",
+        "দেশের নাম plural বা যৌগিক হলে 'the': the United States, the United Kingdom, the Philippines।"
+      ],
+      "examples": [
+        { "en": "Known context: 'Please switch off the fan when you leave.'", "bn": "পরিচিত: 'তুমি চলে যাওয়ার সময় ফ্যানটা বন্ধ করে দাও।'" },
+        { "en": "Unique: 'The sun sets beautifully over the Arabian Sea in Mumbai.'", "bn": "অনন্য: 'মুম্বাইয়ে আরব সাগরের উপর সূর্যাস্ত খুব সুন্দর হয়।'" },
+        { "en": "Superlative: 'The Biryani at this restaurant is the best in Hyderabad.'", "bn": "Superlative: 'এই রেস্টুরেন্টের বিরিয়ানি হায়দ্রাবাদের সেরা।'" },
+        { "en": "Defined: 'The house that Tagore lived in is now a museum.'", "bn": "সংজ্ঞায়িত: 'ঠাকুর যে বাড়িতে থাকতেন সেটি এখন জাদুঘর।'" },
+        { "en": "Musical instrument: 'My sister is learning the veena.'", "bn": "বাদ্যযন্ত্র: 'আমার বোন বীণা শিখছে।'" },
+        { "en": "Groups: 'The government should help the poor and the elderly.'", "bn": "গোষ্ঠী: 'সরকারের দরিদ্র এবং বয়স্কদের সাহায্য করা উচিত।'" }
+      ],
+      "tips": "'The' ব্যবহার করবে যখন noun-টা specific। চেক করার উপায়: নিজেকে প্রশ্ন করো — 'কোনটা?' যদি উত্তর specific হয়, 'the' ব্যবহার করো। 'Please close door' → 'কোন দরজা?' → 'এই রুমের দরজা' → 'Please close THE door'। 'I love tea' → 'কোন চা?' → সাধারণ, নির্দিষ্ট নয় → 'I love tea' (no THE)।"
+    },
+    {
+      "name": "Zero Article (When to Use No Article)",
+      "banglaName": "শূন্য Article (কখন Article ব্যবহার করবে না)",
+      "definition": "In many situations, no article is used. This is called the 'zero article'. Zero article is used with: plural countable nouns used generally (Dogs are loyal), uncountable nouns used generally (Water is life), proper nouns (I live in Kolkata), meals (I had breakfast), sports/games (I play cricket), languages (She speaks Hindi), academic subjects (I study Physics), most countries/cities (India, Delhi), and names of people (Mahatma Gandhi).",
+      "banglaDefinition": "অনেক পরিস্থিতিতে কোনো article ব্যবহার করা হয় না। একে 'zero article' বলে। Zero article ব্যবহৃত হয়: সাধারণভাবে plural countable noun (কুকুর অনুগত), সাধারণভাবে uncountable noun (পানি জীবন), proper noun (আমি কলকাতায় থাকি), খাবার (আমি নাস্তা করেছি), খেলা (আমি ক্রিকেট খেলি), ভাষা (সে হিন্দি বলে), বিষয় (আমি পদার্থবিদ্যা পড়ি), অধিকাংশ দেশ/শহর (ভারত, দিল্লি), এবং মানুষের নাম (মহাত্মা গান্ধী)।",
+      "formula": "ZERO ARTICLE (No A/An/The):\n\nPlural general: 'Dogs are loyal animals.' (সব কুকুর)\nUncountable general: 'Rice is grown in West Bengal.' (সাধারণভাবে চাল)\nProper nouns: 'Narendra Modi is the Prime Minister of India.'\nMeals: 'I had lunch at 1 PM.' (but 'I had a light lunch' possible)\nSports/games: 'I love watching cricket.'\nLanguages: 'She speaks Tamil and English.'\nSubjects: 'He teaches History at Delhi University.'\nCountries (singular): 'France, India, Japan, Brazil'\nPeople: 'Dr. B. C. Roy was a great physician.'",
+      "rules": [
+        "Plural countable noun সাধারণ অর্থে — article নেই: 'Cats are independent animals.'",
+        "Uncountable noun সাধারণ অর্থে — article নেই: 'Information is power.'",
+        "Proper noun (নাম) — article নেই: 'Kolkata is the City of Joy.'",
+        "খাবার (breakfast, lunch, dinner) — article নেই: 'I had dinner at 8 PM.' (specific meal বোঝালে 'the' পারে: 'The dinner was delicious.')",
+        "খেলা/গেম — article নেই: 'Football, cricket, chess.'",
+        "ভাষা — article নেই: 'Bengali, Hindi, French.'",
+        "বিষয় — article নেই: 'Mathematics, Geography, Economics.'",
+        "'Home', 'school', 'college', 'hospital', 'prison', 'church' তাদের মূল purpose-এ থাকলে article নেই: 'She went to school.' (ছাত্রী হিসেবে) vs 'She went to the school.' (অভিভাবক হিসেবে)।"
+      ],
+      "examples": [
+        { "en": "Plural general: 'Temples in India have beautiful architecture.'", "bn": "Plural সাধারণ: 'ভারতের মন্দিরগুলোর স্থাপত্য সুন্দর।'" },
+        { "en": "Uncountable: 'I prefer chai to coffee.'", "bn": "Uncountable: 'আমি কফির চেয়ে চা পছন্দ করি।'" },
+        { "en": "Proper noun: 'Diwali is my favourite festival.'", "bn": "Proper noun: 'দিওয়ালি আমার প্রিয় উৎসব।'" },
+        { "en": "Sport: 'Sachin Tendulkar played cricket for 24 years.'", "bn": "খেলা: 'সচিন তেন্ডুলকর ২৪ বছর ক্রিকেট খেলেছেন।'" },
+        { "en": "Language: 'Can you speak Marathi?'", "bn": "ভাষা: 'তুমি কি মারাঠি বলতে পারো?'" },
+        { "en": "Purpose: 'My brother is still in hospital.' (patient) vs 'I went to the hospital to visit him.' (visitor)", "bn": "উদ্দেশ্য: 'আমার ভাই এখনও হাসপাতালে।' (রোগী) vs 'আমি তাকে দেখতে হাসপাতালে গিয়েছিলাম।' (দর্শনার্থী)" }
+      ],
+      "tips": "Zero article সবচেয়ে বেশি ব্যবহার হয় general idea নিয়ে কথা বলার সময়। Bengali speakers-এর জন্য টিপস: বাংলায় 'টি/টা' ব্যবহার করো না যেখানে general অর্থ — সেখানে article-ও লাগবে না। যেমন 'I like music' — বাংলা 'আমি সঙ্গীত পছন্দ করি' (general), 'I like the music' — বাংলা 'আমি সঙ্গীতটা পছন্দ করি' (specific)। পার্থক্যটা বোঝাই মূল চাবিকাঠি।"
+    },
+    {
+      "name": "Articles with Proper Nouns",
+      "banglaName": "Proper Noun-এর সাথে Article",
+      "definition": "Proper nouns (specific names) usually do not take articles, but there are important exceptions. Generally, names of people, most countries, cities, streets, parks, individual mountains, and lakes do not take 'the'. However, 'the' is used with: rivers (the Ganges), oceans/seas (the Bay of Bengal), mountain ranges (the Himalayas), deserts (the Thar Desert), groups of islands (the Andamans), and countries with plural or descriptive names (the United States, the Netherlands).",
+      "banglaDefinition": "Proper noun (নির্দিষ্ট নাম) সাধারণত article নেয় না, কিন্তু গুরুত্বপূর্ণ ব্যতিক্রম আছে। সাধারণত মানুষের নাম, অধিকাংশ দেশ, শহর, রাস্তা, পার্ক, একক পর্বত, এবং হ্রদ 'the' নেয় না। কিন্তু 'the' ব্যবহার হয়: নদী (গঙ্গা), মহাসাগর/সমুদ্র (বঙ্গোপসাগর), পর্বতমালা (হিমালয়), মরুভূমি (থর মরুভূমি), দ্বীপপুঞ্জ (আন্দামান), এবং plural বা বর্ণনামূলক নামের দেশ (মার্কিন যুক্তরাষ্ট্র, নেদারল্যান্ডস)।",
+      "formula": "NO 'THE' (Zero Article):\nPeople: Mahatma Gandhi, Rabindranath Tagore, Priya\nCities: Kolkata, Mumbai, Delhi, Chennai\nMost countries: India, Japan, France, Brazil\nIndividual mountains: Mount Everest, Mount Kanchenjunga\nLakes: Dal Lake, Chilika Lake\nParks: Sundarbans National Park\nStreets: Park Street, Marine Drive\n\nWITH 'THE':\nRivers: the Ganges, the Yamuna, the Brahmaputra\nOceans/Seas: the Indian Ocean, the Arabian Sea, the Bay of Bengal\nMountain ranges: the Himalayas, the Western Ghats\nDeserts: the Thar Desert, the Sahara\nIsland groups: the Andaman Islands, the Maldives\nCountries (plural/descriptive): the United States, the United Kingdom, the Netherlands, the Philippines\nRegions: the Middle East, the North-East of India",
+      "rules": [
+        "মানুষের নামের আগে 'the' নেই: 'Mother Teresa served the poor in Kolkata.'",
+        "Singular দেশের নামে 'the' নেই: 'India, Japan, France, Brazil, Australia.'",
+        "Plural/descriptive দেশের নামে 'the': 'the United States, the Netherlands, the Philippines.'",
+        "নদীর নামের আগে 'the': 'the Ganges, the Yamuna, the Hooghly.'",
+        "মহাসাগর/সমুদ্রের আগে 'the': 'the Pacific Ocean, the Arabian Sea.'",
+        "পর্বতমালার আগে 'the' কিন্তু একক পর্বতে 'the' নেই: 'the Himalayas' but 'Mount Everest'।",
+        "হোটেল/রেস্টুরেন্ট/সিনেমা/বইয়ের নামে 'the': 'the Taj Hotel, the Oberoi, the Grand Budapest Hotel।'"
+      ],
+      "examples": [
+        { "en": "No 'the': 'Kolkata is known as the City of Joy.'", "bn": "'The' নেই: 'কলকাতা সিটি অফ জয় নামে পরিচিত।'" },
+        { "en": "With 'the': 'The Ganges is considered sacred in Hinduism.'", "bn": "'The' সহ: 'গঙ্গা হিন্দুধর্মে পবিত্র বলে বিবেচিত।'" },
+        { "en": "With 'the': 'The Himalayas stretch across five Indian states.'", "bn": "'The' সহ: 'হিমালয় পাঁচটি ভারতীয় রাজ্য জুড়ে বিস্তৃত।'" },
+        { "en": "No 'the': 'Rabi and Shyam are common names in West Bengal.'", "bn": "'The' নেই: 'রবি এবং শ্যাম পশ্চিমবঙ্গে সাধারণ নাম।'" },
+        { "en": "With 'the': 'I stayed at the Taj Mahal Palace Hotel in Mumbai.'", "bn": "'The' সহ: 'আমি মুম্বাইতে তাজমহল প্যালেস হোটেলে ছিলাম।'" },
+        { "en": "No 'the': 'Dal Lake in Srinagar is famous for houseboats.'", "bn": "'The' নেই: 'শ্রীনগরের ডাল লেক হাউসবোটের জন্য বিখ্যাত।'" }
+      ],
+      "tips": "Proper noun-এ 'the' ব্যবহারের সহজ নিয়ম: 'The' দিয়ে names of geographical features that are plural or have a common noun: the Himalayas (plural), the Ganges River (common noun 'River'), the Bay of Bengal (common noun 'Bay')। একক proper noun-এ 'the' নেই: Mount Everest, Lake Chilika, India, Priya। হোটেল/সিনেমা/বই-এর নাম আলাদা নিয়মে চলে।"
+    },
+    {
+      "name": "Articles in Fixed Expressions",
+      "banglaName": "স্থির অভিব্যক্তিতে Article",
+      "definition": "Many common English expressions use articles in fixed ways that cannot be changed. Some expressions use 'a', others use 'the', and some use no article. Learning these as complete chunks will help you sound more fluent. Examples: 'in a hurry', 'on an average', 'all of a sudden', 'once upon a time', 'at the same time', 'by the way', 'in the morning', 'the day after tomorrow', 'go to bed', 'at home', 'go to work'.",
+      "banglaDefinition": "ইংরেজিতে অনেক সাধারণ অভিব্যক্তি নির্দিষ্ট article নিয়মে ব্যবহৃত হয় যা পরিবর্তন করা যায় না। কিছু expressions 'a' ব্যবহার করে, কিছু 'the', আর কিছু কোনো article ব্যবহার করে না। এগুলো সম্পূর্ণ chunk হিসেবে শেখা তোমাকে আরও fluent করে তুলবে। যেমন: 'in a hurry', 'on an average', 'all of a sudden', 'once upon a time', 'at the same time', 'by the way', 'in the morning', 'the day after tomorrow', 'go to bed', 'at home', 'go to work'।",
+      "formula": "FIXED EXPRESSIONS WITH 'A/AN':\nin a hurry, in a moment, in a word, as a rule, on an average\nall of a sudden, once upon a time, it's a pity, what a shame\nat a loss, at a glance, with a view to\n\nFIXED EXPRESSIONS WITH 'THE':\nin the morning/afternoon/evening, the day after tomorrow, the day before yesterday\nat the same time, by the way, on the whole, on the one hand...on the other hand\nout of the question, in the end, in the meantime\n\nFIXED EXPRESSIONS WITH ZERO ARTICLE:\nat home, at work, at school, at night\nby car/bus/train/plane/sea, go to bed/hospital/prison/school\nin fact, in trouble, in danger, on purpose, by mistake, by chance",
+      "rules": [
+        "সময়ের expressions: 'in the morning/afternoon/evening' কিন্তু 'at night', 'at noon', 'at midnight'।",
+        "পরিবহনের মাধ্যম: 'by bus/train/car/plane' (no article) কিন্তু 'on the bus', 'on the train' (specific)।",
+        "স্থান: 'at home', 'at work', 'at school' (no article — general purpose) কিন্তু 'at the school' (specific building)।",
+        "কিছু expression সবসময় 'the' সহ: 'by the way', 'the same', 'the day after', 'the only'।",
+        "কিছু expression সবসময় 'a' সহ: 'in a hurry', 'as a rule', 'once upon a time'।",
+        "'Go to bed' (sleep), 'go to the bed' (specific bed): 'I went to bed at 10 PM. I put my bag on the bed.'",
+        "'Go to sea' (sailor), 'go to the sea' (beach): 'The fisherman went to sea. We went to the sea for a picnic.'"
+      ],
+      "examples": [
+        { "en": "A: 'I am in a hurry. I need to catch the 6 PM train.'", "bn": "A: 'আমি তাড়াহুড়োয় আছি। আমার ৬টার ট্রেন ধরতে হবে।'" },
+        { "en": "The: 'By the way, have you tried the rasgulla from this shop?'", "bn": "The: 'যাইহোক, তুমি কি এই দোকানের রসগোল্লা খেয়েছ?'" },
+        { "en": "Zero: 'I go to work by bus every day.'", "bn": "Zero: 'আমি প্রতিদিন বাসে করে অফিস যাই।'" },
+        { "en": "The: 'On the one hand, I want to visit Mumbai; on the other hand, I have no leave.'", "bn": "The: 'একদিকে আমি মুম্বাই যেতে চাই, অন্যদিকে আমার ছুটি নেই।'" },
+        { "en": "A: 'It's a pity that you missed the Durga Puja celebration.'", "bn": "A: 'এটা দুঃখের যে তুমি দুর্গাপূজা উদযাপন মিস করেছ।'" },
+        { "en": "Zero: 'The students went to school by bus.' (as students)", "bn": "Zero: 'ছাত্ররা বাসে করে স্কুল গেল।' (ছাত্র হিসেবে)" }
+      ],
+      "tips": "Fixed expressions মুখস্থ করার সবচেয়ে কার্যকর উপায়: এগুলোকে 'chunks' বা 'blocks' আকারে শেখো, পৃথক শব্দ হিসেবে না। যেমন 'by the way' একটি chunk — এটি সবসময় 'the' নিয়ে আসে। 'in a hurry' একটি chunk — সবসময় 'a'। 'at work' একটি chunk — কোনো article নেই। যত বেশি chunks মুখস্থ করবে, article তত কম ভুল হবে।"
+    },
+    {
+      "name": "Articles Countable and Uncountable Nouns",
+      "banglaName": "Countable ও Uncountable Noun-এ Article",
+      "definition": "Articles behave differently with countable and uncountable nouns. Countable nouns (things you can count: book, apple, person) can take 'a/an' (singular) or no article (plural). Uncountable nouns (things you cannot count: water, rice, information) never take 'a/an'. They can take 'the' (specific) or zero article (general). Understanding this distinction is essential for correct article usage.",
+      "banglaDefinition": "Countable এবং uncountable noun-এর সাথে article ভিন্নভাবে আচরণ করে। Countable noun (যা গণনা করা যায়: book, apple, person) 'a/an' নিতে পারে (singular) বা no article (plural)। Uncountable noun (যা গণনা করা যায় না: water, rice, information) কখনো 'a/an' নেয় না। এরা 'the' (specific) বা zero article (general) নিতে পারে। এই পার্থক্য বোঝা সঠিক article ব্যবহারের জন্য অপরিহার্য।",
+      "formula": "COUNTABLE NOUNS:\nSingular: a/an (general) or the (specific)\n  'I need a pen.' (any pen)\n  'I need the pen.' (specific pen)\n\nPlural: zero article (general) or the (specific)\n  'I need pens.' (some pens, general)\n  'I need the pens.' (specific pens)\n\nUNCOUNTABLE NOUNS:\nZero article (general) or the (specific)\n  'I need water.' (general — any water)\n  'I need the water.' (specific — the water here)\n\n× 'I need a water.' (wrong!)\n✓ 'I need a glass of water.' (correct — using a counter)",
+      "rules": [
+        "Uncountable noun-এর আগে 'a/an' ব্যবহার করা যায় না: × 'a water', × 'a rice', × 'an information'।",
+        "Uncountable noun-কে countable করতে 'a piece of', 'a glass of', 'a cup of' ব্যবহার করো: 'a cup of tea', 'a piece of advice'।",
+        "কিছু noun countable এবং uncountable উভয়ই হতে পারে: 'I bought a paper' (সংবাদপত্র) vs 'I need some paper' (কাগজ)।",
+        "'The' countable এবং uncountable উভয়ের সাথেই specific অর্থে ব্যবহার করা যায়: 'The tea is cold' (specific চা), 'The water is dirty' (specific পানি)।",
+        "General অর্থে uncountable noun-এর আগে কোনো article নেই: 'Rice is the staple food of West Bengal.'",
+        "General অর্থে plural countable noun-এর আগেও কোনো article নেই: 'Books are my best friends.'"
+      ],
+      "examples": [
+        { "en": "Countable sing: 'I bought a kurta from Chandni Chowk.'", "bn": "Countable sing: 'আমি চাঁদনি চক থেকে একটি kurta কিনলাম।'" },
+        { "en": "Countable pl: 'Kurtas from this shop are very comfortable.' (general)", "bn": "Countable pl: 'এই দোকানের kurtas খুব আরামদায়ক।' (সাধারণ)" },
+        { "en": "Uncountable: 'I need some advice about my career.' (not 'an advice')", "bn": "Uncountable: 'আমার কেরিয়ার নিয়ে কিছু পরামর্শ দরকার।' (not 'an advice')" },
+        { "en": "Uncountable with counter: 'I had two cups of tea this morning.'", "bn": "Uncountable counter সহ: 'আমি আজ সকালে দুই কাপ চা খেয়েছি।'" },
+        { "en": "Dual nature: 'The chicken was delicious.' (food) vs 'A chicken crossed the road.' (animal)", "bn": "দ্বৈত: 'মুরগিটি delicious ছিল।' (খাদ্য) vs 'একটি মুরগি রাস্তা পার হল।' (প্রাণী)" }
+      ],
+      "tips": "Bengali speakers-এর জন্য সবচেয়ে important rule: Uncountable noun-এর আগে কখনো 'a/an' বসবে না। 'A water', 'a rice', 'an information', 'a furniture', 'a homework', 'a music', 'a news' — এই সব ভুল। 'Some water', 'some advice', 'a piece of information' — এগুলো সঠিক। Countable/uncountable পার্থক্যটা dictionary check করে নিশ্চিত হওয়া ভালো।"
+    },
+    {
+      "name": "Advanced Article Usage",
+      "banglaName": "উন্নত Article ব্যবহার",
+      "definition": "Advanced article usage covers special cases like: generic 'the' (the tiger = tigers in general), institutional 'the' (go to the doctor), 'the' with adjectives (the rich, the poor), 'the' with nationalities (the Indians), 'the' with decades (the 1990s), 'the' with inventions (the telephone was invented by), and the difference between 'a' and 'one'. These patterns will help you use articles like a native speaker.",
+      "banglaDefinition": "উন্নত article ব্যবহার বিশেষ কেস নিয়ে: generic 'the' (the tiger = সাধারণভাবে বাঘ), institutional 'the' (ডাক্তারের কাছে যাওয়া), adjective-এর সাথে 'the' (ধনীরা, গরিবরা), জাতীয়তার সাথে 'the' (ভারতীয়রা), দশকের সাথে 'the' (১৯৯০-এর দশক), আবিষ্কারের সাথে 'the' (টেলিফোন আবিষ্কৃত হয়), এবং 'a' ও 'one'-এর পার্থক্য। এই প্যাটার্নগুলো তোমাকে native speaker-এর মতো article ব্যবহার করতে সাহায্য করবে।",
+      "formula": "Advanced Uses:\n\n1. GENERIC 'THE': 'The tiger is an endangered species.' (= Tigers in general)\n   (vs 'A tiger is a dangerous animal.' = Any tiger)\n\n2. 'THE' + ADJECTIVE (group of people):\n   the rich, the poor, the young, the old, the unemployed, the homeless\n   'The government should help the poor.'\n\n3. 'THE' + NATIONALITIES:\n   the Indians, the British, the French, the Chinese\n   'The Indians celebrate Diwali with great enthusiasm.'\n\n4. 'THE' + DECADES:\n   the 1990s, the 1960s, the 21st century\n\n5. 'A' vs 'ONE':\n   'I have a car.' (focus: type/any car)\n   'I have one car.' (focus: quantity, not two)",
+      "rules": [
+        "Generic 'the' একটি সম্পূর্ণ species বা class বোঝাতে: 'The cheetah is the fastest land animal.'",
+        "'The' + adjective = group of people: 'The elderly need special care.' = 'Elderly people'",
+        "জাতীয়তা plural বোঝাতে 'the': 'The Japanese are known for their discipline.' (সব জাপানি মানুষ)",
+        "দশক/যুগ বোঝাতে 'the': 'The 1960s saw major cultural changes.'",
+        "আবিষ্কার/উদ্ভাবন বোঝাতে 'the': 'The mobile phone has changed our lives.'",
+        "'A' focus on type/category, 'one' focus on quantity: 'I need a pen' (any pen) vs 'I need one pen' (not two)।",
+        "Institutional 'the': 'I need to go to the doctor.' (specific doctor within the system)"
+      ],
+      "examples": [
+        { "en": "Generic: 'The lotus is the national flower of India.'", "bn": "Generic: 'পদ্ম ভারতের জাতীয় ফুল।'" },
+        { "en": "Group: 'The young should respect the elderly — it is our tradition.'", "bn": "গোষ্ঠী: 'তরুণদের বয়স্কদের সম্মান করা উচিত — এটি আমাদের ঐতিহ্য।'" },
+        { "en": "Nationality: 'The Indians have a rich cultural heritage.'", "bn": "জাতীয়তা: 'ভারতীয়দের একটি সমৃদ্ধ সাংস্কৃতিক ঐতিহ্য আছে।'" },
+        { "en": "Decade: 'The 1990s saw economic reforms in India.'", "bn": "দশক: '১৯৯০-এর দশকে ভারতে অর্থনৈতিক সংস্কার হয়েছিল।'" },
+        { "en": "A vs One: 'I have a brother.' (not sister) vs 'I have one brother.' (not two or three)", "bn": "A vs One: 'আমার একটি ভাই আছে।' (বোন নয়) vs 'আমার এক ভাই আছে।' (দুই বা তিন নয়)" },
+        { "en": "Invention: 'The internet has connected the world like never before.'", "bn": "আবিষ্কার: 'ইন্টারনেট পৃথিবীকে আগের মতো কখনো সংযুক্ত করেনি।'" }
+      ],
+      "tips": "Generic 'the' একটি advanced concept। 'The tiger is in danger' = species হিসেবে বাঘ বিপন্ন। 'A tiger is a dangerous animal' = যেকোনো একটি বাঘ বিপজ্জনক। 'Tigers are dangerous' = সব বাঘ (general plural, সবচেয়ে সাধারণ)। মনে রাখবে: ৩টি way তে general idea express করা যায় — plural zero article (commonest), 'a/an' + singular, বা 'the' + singular (formal/academic)।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "'I saw a elephant at the zoo.'",
+      "correct": "'I saw an elephant at the zoo.'",
+      "explanation": "'Elephant' শুরু হয় vowel sound ('এ'-লিফ্যান্ট) দিয়ে, তাই 'an' হবে: 'an elephant'। 'A' consonant sound-এর আগে: 'a tiger', 'a lion', 'a bear'। 'An' vowel sound-এর আগে: 'an elephant', 'an ape', 'an orangutan'। মনে রাখবে: বানান নয়, উচ্চারণ দেখতে হবে — 'an hour' (silent h) কিন্তু 'a hospital' (h pronounced)।"
+    },
+    {
+      "wrong": "'She is teacher at a school in Mumbai.'",
+      "correct": "'She is a teacher at a school in Mumbai.'",
+      "explanation": "পেশা (profession) বোঝাতে singular countable noun-এর আগে 'a/an' প্রয়োজন। 'She is teacher' → ভুল, 'She is a teacher' → সঠিক। 'He is engineer' → 'He is an engineer'। 'My mother is doctor' → 'My mother is a doctor'। Bengali speakers এই ভুল বেশি করে কারণ বাংলায় 'সে একজন শিক্ষক' — 'একজন' প্রায়ই বাদ পড়ে। কিন্তু ইংরেজিতে 'a/an' বাদ দেওয়া যায় না।"
+    },
+    {
+      "wrong": "'The rice is a staple food of West Bengal.'",
+      "correct": "'Rice is the staple food of West Bengal.'",
+      "explanation": "General অর্থে uncountable noun-এর আগে 'the' লাগে না। 'The rice' → specific rice (যেমন টেবিলের চাল), 'Rice' general → সাধারণভাবে চাল। এখানে সাধারণভাবে চালের কথা বলছি, তাই 'Rice is...'। 'The staple food' সঠিক কারণ 'staple food' singular countable যা নির্দিষ্ট। মনে রাখবে: general uncountable → no 'the', general plural → no 'the'।"
+    },
+    {
+      "wrong": "'I went to the Delhi for the work.'",
+      "correct": "'I went to Delhi for work.'",
+      "explanation": "দুটি ভুল: (১) শহরের নামের আগে 'the' বসে না — 'Delhi', 'Kolkata', 'Mumbai' — শুধু নাম। (২) 'for work' — সাধারণভাবে কাজের জন্য 'the' লাগে না। 'For the work' হবে যদি specific work বোঝায়: 'I went to Delhi for the work that my boss assigned.' কিন্তু সাধারণ অর্থে 'for work'। হ্যাঁ, 'the Netherlands', 'the United States' — এগুলো exception।"
+    },
+    {
+      "wrong": "'Can you give me a piece of advices?'",
+      "correct": "'Can you give me a piece of advice?' or 'Can you give me some advice?'",
+      "explanation": "'Advice' uncountable noun — এর plural হয় না। 'Advices' ভুল। 'A piece of advice' বা 'some advice' সঠিক। অন্যান্য uncountable nouns: information, knowledge, furniture, homework, luggage, equipment, news, music, research, traffic। 'A news' × → 'a piece of news' বা 'some news' ✓। 'A furniture' × → 'a piece of furniture' ✓।"
+    },
+    {
+      "wrong": "'The Himalayas is the most highest mountain range in the world.'",
+      "correct": "'The Himalayas are the highest mountain range in the world.'",
+      "explanation": "এখানে দুটি issue: (১) 'The Himalayas' plural নাম — verb 'are' হবে, 'is' নয়। (২) 'Most highest' double superlative — 'highest' ই superlative, 'most' unnecessary। 'The most highest' × → 'the highest' ✓। Superlative-এর আগে 'the' সবসময়: 'the best', 'the worst', 'the most beautiful', 'the tallest'।"
+    },
+    {
+      "wrong": "'I had a lunch with my colleagues at a restaurant.'",
+      "correct": "'I had lunch with my colleagues at a restaurant.'",
+      "explanation": "খাবার (breakfast, lunch, dinner) সাধারণ অর্থে 'a' নেয় না। 'A lunch' ভুল — 'I had lunch' সঠিক। কিন্তু খাবারকে adjective দিয়ে describe করলে 'a' ব্যবহার করা যায়: 'I had a heavy lunch', 'I had a quick breakfast', 'We had a lovely dinner'। আর specific meal বোঝালে 'the' পারে: 'The dinner at your house was amazing.'"
+    },
+    {
+      "wrong": "'The Shah Rukh Khan is my favourite actor.'",
+      "correct": "'Shah Rukh Khan is my favourite actor.'",
+      "explanation": "People's names-এর আগে 'the' বসে না। 'The Shah Rukh Khan' → ভুল। শুধু 'Shah Rukh Khan' → সঠিক। ব্যতিক্রম: family name plural বোঝাতে 'the': 'The Tagores were a prominent Bengali family.' বা 'the + adjective + name': 'the great Rabindranath Tagore' (এখানে 'great' adjective বলে 'the' ব্যবহার হয়েছে, 'Rabindranath Tagore' নিজে 'the' নেয় না)।"
+    },
+    {
+      "wrong": "'I need the information about the train schedule.'",
+      "correct": "Context dependent: General → 'I need information about the train schedule.' Specific → 'I need the information about the train schedule.'",
+      "explanation": "উভয়ই সঠিক হতে পারে, কিন্তু অর্থ ভিন্ন। 'I need information' = সাধারণভাবে তথ্য দরকার (কোনো নির্দিষ্ট তথ্য নয়, শুধু সাধারণ ধারণা)। 'I need the information' = নির্দিষ্ট তথ্য (যেমন আগে যে তথ্যের কথা হয়েছিল)। সাধারণ uncountable noun-এর আগে 'the' না দিলে general, 'the' দিলে specific — এই পার্থক্যটা article-এর core concept।"
+    },
+    {
+      "wrong": "'I like very much the biryani.'",
+      "correct": "'I like biryani very much.' or 'The biryani at this restaurant is very good.'",
+      "explanation": "দুটো ভিন্ন situation। 'I like biryani' = I like biryani in general (no article, uncountable general)। 'The biryani at this restaurant is good' = specific biryani (একটি নির্দিষ্ট রেস্টুরেন্টের)। General food items-এর আগে article লাগে না: 'I love dosa', 'I like chai', 'I enjoy pizza'। Specific restaurant বা meal-এর কথা বললে 'the' লাগে: 'The dosa at this place is excellent.'"
+    }
+  ]
 }
