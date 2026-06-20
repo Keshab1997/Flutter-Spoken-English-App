@@ -1,10 +1,156 @@
 {
   "chapter": 28,
   "level": "Intermediate",
-  "title": "There and It",
-  "icon": "pin_drop",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "title": "Introductory 'There' and 'It' (There এবং It এর ব্যবহার)",
+  "icon": "info_outline",
+  "description": "The words 'There' and 'It' are frequently used as introductory or 'dummy' subjects in English. They help us introduce new information, talk about the weather, time, distance, or state the existence of something. Mastering 'There' and 'It' is essential for speaking natural and grammatically correct English.",
+  "banglaDescription": "ইংরেজিতে বাক্য শুরু করার জন্য 'There' এবং 'It' শব্দ দুটি প্রায়ই প্রারম্ভিক বা ডামি সাবজেক্ট (Introductory/Dummy Subject) হিসেবে ব্যবহৃত হয়। এগুলো কোনো কিছুর অস্তিত্ব প্রকাশ করতে, আবহাওয়া, সময়, দূরত্ব নিয়ে কথা বলতে বা নতুন কোনো তথ্য উপস্থাপন করতে সাহায্য করে। স্বাভাবিক ও ব্যাকরণগতভাবে সঠিক ইংরেজিতে কথা বলার জন্য 'There' এবং 'It' এর ব্যবহার জানা অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "Introductory 'There' (প্রারম্ভিক There)",
+      "banglaName": "প্রারম্ভিক There",
+      "definition": "Introductory 'There' is used to show that something exists or is located in a particular place. In these sentences, 'There' has no real meaning of its own; it simply acts as a placeholder to start the sentence. The real subject of the sentence comes after the verb.",
+      "banglaDefinition": "Introductory 'There' কোনো স্থানে কোনো কিছুর অস্তিত্ব বা অবস্থান প্রকাশ করতে ব্যবহৃত হয়। এই ধরনের বাক্যে 'There'-এর নিজস্ব কোনো অর্থ থাকে না; এটি কেবল বাক্যটি শুরু করার জন্য ডামি সাবজেক্ট হিসেবে কাজ করে। বাক্যের আসল বা প্রকৃত সাবজেক্টটি সবসময় verb-এর পরে বসে।",
+      "formula": "There + is / are / was / were + Real Subject + Location / Time\n\nExample:\n- There is (Singular) + a book + on the table.\n- There are (Plural) + many books + on the table.",
+      "rules": [
+        "কোনো স্থানে কোনো কিছু 'আছে' বা 'ছিল' বোঝাতে 'There' দিয়ে বাক্য শুরু করতে হয়।",
+        "এখানে 'There' শব্দটির অর্থ 'সেখানে' নয়, এটি কেবল বাক্য শুরু করার একটি মাধ্যম মাত্র।",
+        "যদি স্থানটি বাক্যের শেষে উল্লেখ করা হয়, তবে 'There' শুরুতে বসে।"
+      ],
+      "examples": [
+        { "en": "There is a garden in front of our house.", "bn": "আমাদের বাড়ির সামনে একটি বাগান আছে।" },
+        { "en": "There were many people at the event yesterday.", "bn": "গতকাল অনুষ্ঠানে অনেক মানুষ ছিল।" },
+        { "en": "There is a mistake in your sentence.", "bn": "তোমার বাক্যে একটি ভুল আছে।" },
+        { "en": "There is no water in the glass.", "bn": "গ্লাসে কোনো পানি নেই।" }
+      ],
+      "tips": "বাংলা বাক্যে যখন 'কোনো কিছু কোথাও আছে বা ছিল' বোঝায়, তখন সরাসরি 'There' দিয়ে ইংরেজি বাক্য শুরু করুন। যেমন: 'আমাদের গ্রামে একটি স্কুল আছে' → 'There is a school in our village.'"
+    },
+    {
+      "name": "Subject-Verb Agreement with 'There' ('There'-এর পর Verb নির্ধারণের নিয়ম)",
+      "banglaName": "'There'-এর পর Verb নির্ধারণের নিয়ম",
+      "definition": "Because 'There' is not the real subject, the verb (is, are, was, were) must agree with the real subject that follows it. If the following noun is singular, use a singular verb. If it is plural, use a plural verb.",
+      "banglaDefinition": "যেহেতু 'There' বাক্যের আসল সাবজেক্ট নয়, তাই verb (is, are, was, were) নির্ধারিত হয় এর ঠিক পরে আসা প্রকৃত সাবজেক্টের ওপর ভিত্তি করে। verb-এর পরে আসা noun-টি যদি একবচন (singular) হয়, তবে singular verb বসবে। আর সেটি যদি বহুবচন (plural) হয়, তবে plural verb বসবে।",
+      "formula": "- There is / was + Singular Noun / Uncountable Noun\n- There are / were + Plural Noun",
+      "rules": [
+        "Uncountable noun (যেমন: water, milk, sugar, information) এর সাথে সবসময় singular verb (is/was) বসবে।",
+        "যদি 'and' দ্বারা যুক্ত একাধিক আলাদা নাউন থাকে, তবে প্রথম নাউনটি singular হলে সাধারণত singular verb-ই বসে (যদিও কথ্য ও লিখিত রূপের মধ্যে কিছুটা পার্থক্য দেখা যায়)।"
+      ],
+      "examples": [
+        { "en": "There is a cat on the wall. (a cat = singular → is)", "bn": "দেয়ালের ওপর একটি বিড়াল আছে।" },
+        { "en": "There are three cats on the wall. (three cats = plural → are)", "bn": "দেয়ালের ওপর তিনটি বিড়াল আছে।" },
+        { "en": "There is some milk in the fridge. (milk = uncountable → is)", "bn": "ফ্রিজে কিছুটা দুধ আছে।" },
+        { "en": "There is a pen and two books on the desk. (first noun 'a pen' is singular)", "bn": "ডেস্কে একটি কলম এবং দুটি বই আছে।" }
+      ],
+      "tips": "স্পোকেন ইংলিশে অনেকেই ভুল করে plural noun-এর সাথেও 'There is' বলে ফেলেন। সঠিক চর্চা করুন: 'There is a car' কিন্তু 'There are two cars'।"
+    },
+    {
+      "name": "Introductory 'It' (প্রারম্ভিক It)",
+      "banglaName": "প্রারম্ভিক It",
+      "definition": "Like 'There', 'It' can also be used as a dummy subject when a sentence does not have a real subject, or when we want to introduce an infinitive phrase (to + verb) or a clause. In these cases, 'It' does not refer to any specific object.",
+      "banglaDefinition": "There-এর মতো 'It' শব্দটিও ডামি সাবজেক্ট হিসেবে ব্যবহৃত হতে পারে যখন বাক্যে কোনো প্রকৃত সাবজেক্ট থাকে না, অথবা যখন আমরা কোনো infinitive phrase (to + verb) বা ক্লজকে উপস্থাপন করতে চাই। এই ক্ষেত্রগুলোতে 'It' নির্দিষ্ট কোনো বস্তু বা বিষয়কে নির্দেশ করে না।",
+      "formula": "It + is / was + Adjective / Noun + to + Verb (base form) + ...\n\nExample:\n- It is + easy + to learn + English.",
+      "rules": [
+        "প্রারম্ভিক 'It' সবসময় Singular Verb (is বা was) গ্রহণ করে, এটি কখনোই plural verb নেয় না।",
+        "কোনো কাজ করা কেমন (যেমন: সহজ, কঠিন, গুরুত্বপূর্ণ) তা বর্ণনা করতে এই প্যাটার্নটি বহুল ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "It is important to exercise every day.", "bn": "প্রতিদিন ব্যায়াম করা গুরুত্বপূর্ণ।" },
+        { "en": "It is not easy to get a good job.", "bn": "একটি ভালো চাকরি পাওয়া সহজ নয়।" },
+        { "en": "It was nice to meet you.", "bn": "তোমার সাথে দেখা হয়ে ভালো লাগল।" },
+        { "en": "It is true that she is coming.", "bn": "এটা সত্যি যে সে আসছে।" }
+      ],
+      "tips": "স্পোকেন ইংলিশে নিজের মতামত প্রকাশ করার জন্য 'It is + Adjective + to...' একটি দারুণ এবং চমৎকার কাঠামো। যেমন: 'It is good to...', 'It is bad to...'"
+    },
+    {
+      "name": "Using 'It' for Time, Weather, and Distance (সময়, আবহাওয়া ও দূরত্ব প্রকাশে It)",
+      "banglaName": "সময়, আবহাওয়া ও দূরত্ব প্রকাশে It",
+      "definition": "In English, we must use 'It' as the subject when talking about time, days, dates, weather conditions, temperature, and distance. It is incorrect to start these sentences with the time or weather word itself.",
+      "banglaDefinition": "ইংরেজিতে সময়, দিন, তারিখ, আবহাওয়া, তাপমাত্রা এবং দূরত্ব সম্পর্কে কথা বলার সময় 'It'-কে সাবজেক্ট হিসেবে ব্যবহার করা বাধ্যতামূলক। এই ধরনের বাক্য সরাসরি আবহাওয়া বা সময়ের শব্দ দিয়ে শুরু করা ব্যাকরণগতভাবে ভুল।",
+      "formula": "- It is + Time / Day / Date\n- It is + Weather condition\n- It is + Distance",
+      "rules": [
+        "সময় জানাতে: It is 10 o'clock.",
+        "দিন বা তারিখ জানাতে: It is Monday / It is the 5th of June.",
+        "আবহাওয়া বর্ণনা করতে: It is raining / It is hot.",
+        "দূরত্ব বোঝাতে: It is 5 kilometers to the station."
+      ],
+      "examples": [
+        { "en": "It is half past ten. (Time)", "bn": "এখন সাড়ে দশটা বাজে।" },
+        { "en": "It is very cold today. (Weather)", "bn": "আজ খুব ঠান্ডা।" },
+        { "en": "It is raining heavily outside. (Weather)", "bn": "বাইরে মুষলধারে বৃষ্টি হচ্ছে।" },
+        { "en": "It is a long way to the airport. (Distance)", "bn": "বিমানবন্দর এখান থেকে অনেক দূর।" },
+        { "en": "It was Sunday yesterday. (Day)", "bn": "গতকাল রবিবার ছিল।" }
+      ],
+      "tips": "বাঙালি শিক্ষার্থীরা প্রায়ই বলেন 'Today is very hot' যা ভুল। সঠিক বাক্য হবে: 'It is very hot today.' আবহাওয়া বোঝাতে সবসময় 'It is' দিয়ে বাক্য শুরু করুন।"
+    },
+    {
+      "name": "Difference Between 'There' and 'It' (There এবং It-এর মূল পার্থক্য)",
+      "banglaName": "There এবং It-এর মূল পার্থক্য",
+      "definition": "The main difference is that 'There' is used to state the existence or presence of something in a location, while 'It' is used to identify, describe, or refer to facts, time, weather, or distance.",
+      "banglaDefinition": "There এবং It-এর মূল পার্থক্য হলো: 'There' ব্যবহৃত হয় কোনো স্থানে কোনো কিছুর উপস্থিতি বা অস্তিত্ব প্রকাশ করতে। অন্যদিকে, 'It' ব্যবহৃত হয় কোনো নির্দিষ্ট বিষয়কে শনাক্ত করতে, বর্ণনা করতে, অথবা সময়, আবহাওয়া, দূরত্ব ও সাধারণ সত্য প্রকাশ করতে।",
+      "formula": "- There is... = Something exists (কিছু একটা আছে)\n- It is... = Identifies/describes that thing (জিনিসটি কেমন বা সেটি কী তা বর্ণনা করে)",
+      "rules": [
+        "অস্তিত্ব বনাম পরিচয়: 'There is a book on the table' (টেবিলে একটি বই আছে - অস্তিত্ব)। 'It is an English book' (এটি একটি ইংরেজি বই - পরিচয়)।",
+        "'There' এর পর plural verb বসতে পারে (are/were), কিন্তু ডামি সাবজেক্ট 'It' এর পর কেবল singular verb (is/was) বসে।"
+      ],
+      "examples": [
+        { "en": "There is a new car outside. (Existence)", "bn": "বাইরে একটি নতুন গাড়ি আছে।" },
+        { "en": "It is my new car. (Identification)", "bn": "এটি আমার নতুন গাড়ি।" },
+        { "en": "There is a problem. (A problem exists)", "bn": "একটি সমস্যা আছে।" },
+        { "en": "It is a big problem. (Describing the problem)", "bn": "এটি একটি বড় সমস্যা।" }
+      ],
+      "tips": "সহজভাবে ভাবুন: 'There' বলে জিনিসটি কোথায় আছে, আর 'It' বলে জিনিসটি আসলে কী বা কেমন।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "In our school has many students.",
+      "correct": "There are many students in our school.",
+      "explanation": "বাংলায় 'আমাদের স্কুলে অনেক ছাত্র আছে' বাক্যটি সরাসরি অনুবাদ করলে ভুল হবে। ইংরেজিতে কোনো স্থানে কোনো কিছু থাকা বোঝালে 'There are' দিয়ে বাক্য শুরু করতে হয়।"
+    },
+    {
+      "wrong": "There is many books on the desk.",
+      "correct": "There are many books on the desk.",
+      "explanation": "যেহেতু verb-এর পরের noun-টি 'many books' (plural), তাই singular 'is' এর পরিবর্তে plural 'are' বসাতে হবে।"
+    },
+    {
+      "wrong": "Today is raining.",
+      "correct": "It is raining today.",
+      "explanation": "বৃষ্টি হওয়া বা আবহাওয়া বোঝাতে 'Today' বাক্যের সাবজেক্ট হতে পারে না। আবহাওয়া প্রকাশের জন্য 'It is' সাবজেক্ট হিসেবে ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "There are some water in the glass.",
+      "correct": "There is some water in the glass.",
+      "explanation": "'Water' একটি uncountable noun। ইংরেজি ব্যাকরণে uncountable noun-কে সবসময় singular হিসেবে গণ্য করা হয়, তাই এর সাথে 'is' বসবে।"
+    },
+    {
+      "wrong": "They are a big playground near our house.",
+      "correct": "There is a big playground near our house.",
+      "explanation": "কোনো কিছুর অস্তিত্ব বা অবস্থান বোঝাতে 'They are' ব্যবহার করা ভুল। এক্ষেত্রে প্রারম্ভিক সাবজেক্ট হিসেবে 'There is' বলতে হবে।"
+    },
+    {
+      "wrong": "It is 5 miles to go.",
+      "correct": "It is 5 miles to the station. OR There are 5 miles left.",
+      "explanation": "দূরত্ব প্রকাশের ক্ষেত্রে 'It is' এর পর সরাসরি নির্দিষ্ট গন্তব্যটি উল্লেখ করতে হয় (যেমন: It is 5 miles to Dhaka)।"
+    },
+    {
+      "wrong": "Is a cat under the table.",
+      "correct": "There is a cat under the table.",
+      "explanation": "ডামি সাবজেক্ট ছাড়া কেবল 'Is' দিয়ে বাক্য শুরু করা ভুল। বাক্যটি সম্পূর্ণ করতে প্রারম্ভিক সাবজেক্ট 'There' যোগ করতে হবে।"
+    },
+    {
+      "wrong": "It is difficult learning English.",
+      "correct": "It is difficult to learn English.",
+      "explanation": "'It is + Adjective' কাঠামোর পর সাধারণত infinitive অর্থাৎ 'to + verb' (to learn) বসাতে হয়, gerund (learning) নয়।"
+    },
+    {
+      "wrong": "There is hot today.",
+      "correct": "It is hot today.",
+      "explanation": "আজ গরম—এটি আবহাওয়ার অবস্থা প্রকাশ করছে। আবহাওয়া প্রকাশের ক্ষেত্রে 'There' ব্যবহার করা যায় না, ডামি সাবজেক্ট 'It' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "It is some apples on the table.",
+      "correct": "There are some apples on the table.",
+      "explanation": "আপেলগুলোর অবস্থান বা অস্তিত্ব বোঝানো হচ্ছে এবং আপেলগুলো বহুবচন (apples)। তাই 'It is' এর পরিবর্তে 'There are' ব্যবহার করতে হবে।"
+    }
+  ]
 }

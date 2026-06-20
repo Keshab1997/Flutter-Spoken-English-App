@@ -1,10 +1,179 @@
 {
   "chapter": 24,
   "level": "Intermediate",
-  "title": "Types of Sentences",
+  "title": "Types of Sentences (বাক্যের প্রকারভেদ)",
   "icon": "category",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Sentences are the foundation of communication. Based on meaning and purpose, English sentences are classified into five main types: Assertive, Interrogative, Imperative, Optative, and Exclamatory. Understanding these types is essential for clear and effective spoken English.",
+  "banglaDescription": "বাক্য হলো যোগাযোগের মূল ভিত্তি। অর্থ এবং উদ্দেশ্যের ওপর ভিত্তি করে ইংরেজি বাক্যকে প্রধানত পাঁচটি ভাগে ভাগ করা হয়: Assertive (বিবৃতিমূলক), Interrogative (প্রশ্নবোধক), Imperative (অনুরোধ/আদেশসূচক), Optative (প্রার্থনাসূচক) এবং Exclamatory (আবেগসূচক)। স্পোকেন ইংলিশে স্পষ্টভাবে মনের ভাব প্রকাশের জন্য এই প্রকারভেদগুলো জানা জরুরি।",
+  "topics": [
+    {
+      "name": "What is a Sentence? (sentence বা বাক্য কী?)",
+      "banglaName": "Sentence বা বাক্য কী?",
+      "definition": "A sentence is a group of words put together in a specific order that expresses a complete thought or idea. A sentence must have a subject and a verb, and it must make complete sense. It starts with a capital letter and ends with a punctuation mark (., ?, or !).",
+      "banglaDefinition": "Sentence বা বাক্য হলো এমন একদল শব্দ যা একটি নির্দিষ্ট নিয়মে পাশাপাশি বসে সম্পূর্ণ মনের ভাব বা ধারণা প্রকাশ করে। একটি পূর্ণাঙ্গ বাক্যে অবশ্যই একটি subject (কর্তা) এবং একটি verb (ক্রিয়া) থাকতে হবে এবং এর একটি সম্পূর্ণ অর্থ থাকতে হবে। বাক্য সবসময় Capital letter দিয়ে শুরু হয় এবং শেষে বিরামচিহ্ন (., ?, বা !) বসে।",
+      "formula": "Sentence = Subject + Verb + Object/Extension (Complete Sense)",
+      "rules": [
+        "শব্দ সমষ্টির একটি স্পষ্ট এবং সম্পূর্ণ অর্থ থাকতে হবে।",
+        "শব্দগুলো সঠিক ব্যাকরণগত ক্রমানুসারে সাজানো থাকতে হবে।",
+        "বাক্যের শুরুতে Capital letter এবং শেষে Full stop (.), Question mark (?), বা Exclamation mark (!) বসে।"
+      ],
+      "examples": [
+        { "en": "English is easy to learn. (Complete Sentence)", "bn": "ইংরেজি শেখা সহজ। (সম্পূর্ণ বাক্য)" },
+        { "en": "Easy to learn English. (Incomplete Sentence - No Subject/Verb)", "bn": "সহজ ইংরেজি শিখতে। (অসম্পূর্ণ বাক্য)" },
+        { "en": "The boy flies a kite.", "bn": "ছেলেটি ঘুড়ি ওড়ায়।" }
+      ],
+      "tips": "শুধু কিছু শব্দ পাশাপাশি বসলেই বাক্য হয় না, যতক্ষণ না তা সম্পূর্ণ মনের ভাব প্রকাশ করে। যেমন: 'In the morning' একটি ফ্রেজ বা বাক্যাংশ, কিন্তু 'I walk in the morning' একটি পূর্ণাঙ্গ বাক্য।"
+    },
+    {
+      "name": "Assertive / Declarative Sentence (বিবৃতিমূলক বাক্য)",
+      "banglaName": "Assertive / Declarative Sentence",
+      "definition": "An Assertive Sentence (also called Declarative) is used to state a fact, describe a thing, report an event, or express an opinion. It simply declares or asserts something. It can be either positive (Affirmative) or negative (Negative) and always ends with a full stop (.).",
+      "banglaDefinition": "Assertive Sentence (বিবৃতিমূলক বাক্য) কোনো সাধারণ সত্য প্রকাশ করতে, কোনো কিছুর বর্ণনা দিতে, কোনো ঘটনার তথ্য দিতে বা মতামত প্রকাশ করতে ব্যবহৃত হয়। এটি সহজভাবে কোনো বিবৃতি প্রদান করে। এটি হ্যাঁ-বোধক (Affirmative) বা না-বোধক (Negative) হতে পারে এবং এর শেষে সবসময় full stop (.) বসে।",
+      "formula": "Affirmative: Subject + Verb + Object/Extension\nNegative: Subject + Auxiliary Verb + Not + Main Verb + Object/Extension",
+      "rules": [
+        "এটি সাধারণ ঘটনার বর্ণনা বা বিবৃতি দিতে ব্যবহৃত হয়।",
+        "এর দুটি রূপ রয়েছে: Affirmative (হ্যাঁ-বোধক) এবং Negative (না-বোধক)।",
+        "বাক্যের স্বাভাবিক গঠন Subject + Verb + Object অনুসরণ করে।"
+      ],
+      "examples": [
+        { "en": "She loves reading books. (Affirmative)", "bn": "সে বই পড়তে ভালোবাসে। (হ্যাঁ-বোধক)" },
+        { "en": "She does not love reading books. (Negative)", "bn": "সে বই পড়তে ভালোবাসে না। (না-বোধক)" },
+        { "en": "The earth moves around the sun. (Universal Truth)", "bn": "পৃথিবী সূর্যের চারদিকে ঘোরে। (সাধারণ সত্য)" },
+        { "en": "Honesty is the best policy.", "bn": "সততাই সর্বোত্তম পন্থা।" }
+      ],
+      "tips": "স্পোকেন ইংলিশে ৮০% এরও বেশি বাক্য Assertive হয়ে থাকে। যেকোনো সাধারণ তথ্য বা বিবরণ দেওয়ার সময় আমরা এই বাক্য ব্যবহার করি।"
+    },
+    {
+      "name": "Interrogative Sentence (প্রশ্নবোধক বাক্য)",
+      "banglaName": "Interrogative Sentence",
+      "definition": "An Interrogative Sentence is used to ask questions to gather information, clarify doubts, or make inquiries. It always ends with a question mark (?). There are two main types: Yes/No Questions (starting with helping verbs) and Wh- Questions (starting with question words like who, what, why, where, etc.).",
+      "banglaDefinition": "Interrogative Sentence (প্রশ্নবোধক বাক্য) কোনো তথ্য জানতে, সন্দেহ দূর করতে বা অনুসন্ধান করতে প্রশ্ন জিজ্ঞাসা করার জন্য ব্যবহৃত হয়। এই বাক্যের শেষে অবশ্যই একটি প্রশ্নবোধক চিহ্ন (?) বসে। এটি প্রধানত দুই ধরনের: Yes/No Question (সাহায্যকারী verb দিয়ে শুরু হয়) এবং Wh- Question (Wh- word যেমন: who, what, why, where ইত্যাদি দিয়ে শুরু হয়)।",
+      "formula": "Yes/No Question: Auxiliary Verb + Subject + Main Verb + Object + ?\nWh- Question: Wh-Word + Auxiliary Verb + Subject + Main Verb + Object + ?",
+      "rules": [
+        "প্রশ্নবোধক বাক্যে সাধারণ বাক্যের ক্রম উল্টে যায় (Auxiliary verb-টি subject-এর আগে আসে)।",
+        "Yes/No প্রশ্নের উত্তর শুধুমাত্র 'yes' বা 'no' দিয়ে দেওয়া যায়।",
+        "Wh- প্রশ্নের উত্তর দেওয়ার জন্য বিস্তারিত তথ্যের প্রয়োজন হয়।"
+      ],
+      "examples": [
+        { "en": "Do you speak English? (Yes/No Question)", "bn": "আপনি কি ইংরেজি বলেন? (উত্তর হ্যাঁ বা না হতে পারে)" },
+        { "en": "Why are you learning English? (Wh- Question)", "bn": "আপনি কেন ইংরেজি শিখছেন? (বিস্তারিত উত্তর প্রয়োজন)" },
+        { "en": "Is she coming to the party today?", "bn": "সে কি আজ পার্টিতে আসছে?" },
+        { "en": "Where do you live?", "bn": "আপনি কোথায় থাকেন?" }
+      ],
+      "tips": "কথা বলার সময় Yes/No প্রশ্নের ক্ষেত্রে বাক্যের শেষের দিকে কণ্ঠস্বর একটু উঁচুতে তুলতে হয় (rising intonation), আর Wh- প্রশ্নের ক্ষেত্রে কণ্ঠস্বর স্বাভাবিকভাবে নামিয়ে আনতে হয় (falling intonation)।"
+    },
+    {
+      "name": "Imperative Sentence (আদেশ, অনুরোধ ও উপদেশমূলক বাক্য)",
+      "banglaName": "Imperative Sentence",
+      "definition": "An Imperative Sentence is used to give a command, make a request, offer advice, make a suggestion, or issue a warning. In these sentences, the subject 'You' is usually understood (implied) and not spoken or written. It typically starts directly with a verb and ends with a full stop.",
+      "banglaDefinition": "Imperative Sentence (আদেশ, অনুরোধ ও উপদেশমূলক বাক্য) আদেশ দেওয়া, অনুরোধ করা, উপদেশ বা পরামর্শ দেওয়া, এবং কোনো বিষয়ে সতর্ক করতে ব্যবহৃত হয়। এই ধরনের বাক্যে সাধারণত 'You' (তুমি/তোমরা) উহ্য বা গোপন থাকে। বাক্যটি সরাসরি verb দিয়ে শুরু হয় এবং শেষে full stop (.) বসে।",
+      "formula": "Command/Advice: Verb + Object/Extension\nRequest: Please/Kindly + Verb + Object/Extension\nNegative: Do not / Don't + Verb + Object/Extension\nProposal: Let's (Let us) + Verb + Object/Extension",
+      "rules": [
+        "বাক্যের শুরুতে subject (You) থাকে না, সরাসরি verb এর base form দিয়ে শুরু হয়।",
+        "অনুরোধ বোঝাতে বাক্যের শুরুতে বা শেষে Please বা Kindly ব্যবহার করা হয়।",
+        "নিষেধ করতে বাক্যের শুরুতে Don't বা Never বসানো হয়।",
+        "প্রস্তাব বা অনুমতি বোঝাতে Let ব্যবহার করা হয়।"
+      ],
+      "examples": [
+        { "en": "Shut the door. (Command)", "bn": "দরজাটি বন্ধ করো। (আদেশ)" },
+        { "en": "Please give me a glass of water. (Request)", "bn": "দয়া করে আমাকে এক গ্লাস পানি দিন। (অনুরোধ)" },
+        { "en": "Always speak the truth. (Advice)", "bn": "সবসময় সত্য কথা বলবে। (উপদেশ)" },
+        { "en": "Don't waste your time. (Prohibition)", "bn": "তোমার সময় নষ্ট করো না। (নিষেধ)" },
+        { "en": "Let's go for a walk. (Proposal)", "bn": "চলো একটু হেঁটে আসি। (প্রস্তাব)" }
+      ],
+      "tips": "স্পোকেন ইংলিশে কাউকে নির্দেশ বা অনুরোধ করতে এই বাক্যের বহুল ব্যবহার রয়েছে। অনুরোধ করার সময় কণ্ঠস্বর নরম এবং 'Please' ব্যবহার করা উচিত।"
+    },
+    {
+      "name": "Optative Sentence (প্রার্থনা বা ইচ্ছাসূচক বাক্য)",
+      "banglaName": "Optative Sentence",
+      "definition": "An Optative Sentence is used to express a wish, desire, hope, prayer, or blessing for someone. These sentences usually start with 'May' or 'Wish' and end with a full stop (.).",
+      "banglaDefinition": "Optative Sentence (প্রার্থনা বা ইচ্ছাসূচক বাক্য) কারো জন্য প্রার্থনা, আশীর্বাদ, শুভকামনা, আশা বা নিজের মনের কোনো ইচ্ছা প্রকাশ করতে ব্যবহৃত হয়। এই ধরনের বাক্য সাধারণত 'May', 'Wish', বা 'Long' দিয়ে শুরু হয় এবং শেষে full stop (.) বসে।",
+      "formula": "Structure 1: May + Subject + Verb (base form) + Extension\nStructure 2: Long live + Subject\nStructure 3: Wish + Subject + Object/Extension",
+      "rules": [
+        "কারো জন্য আশীর্বাদ বা প্রার্থনা করতে 'May' দিয়ে বাক্য শুরু হয়।",
+        "ইচ্ছা বা শুভকামনা জানাতে 'Wish' বা 'Had I been...' ইত্যাদি ব্যবহার করা হয়।",
+        "এই বাক্যেও verb-এর base form ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "May you live long! (Blessing)", "bn": "তুমি দীর্ঘজীবী হও। (আশীর্বাদ)" },
+        { "en": "Long live our country. (Prayer)", "bn": "আমাদের দেশ দীর্ঘজীবী হোক।" },
+        { "en": "Wish you a very happy journey. (Wish)", "bn": "আপনার যাত্রা অত্যন্ত শুভ হোক।" },
+        { "en": "Had I been a king! (Desire)", "bn": "আমি যদি রাজা হতাম!" },
+        { "en": "May God bless you.", "bn": "ঈশ্বর তোমার মঙ্গল করুন।" }
+      ],
+      "tips": "মনে রাখবেন, 'May' দিয়ে শুরু বাক্যটি যদি প্রশ্ন জিজ্ঞাসা না করে কারো ভালো কামনা করে, তবে সেটি Interrogative নয়, বরং Optative বাক্য।"
+    },
+    {
+      "name": "Exclamatory Sentence (আবেগসূচক বাক্য)",
+      "banglaName": "Exclamatory Sentence",
+      "definition": "An Exclamatory Sentence is used to express sudden, strong, or deep emotions and feelings such as joy, sorrow, surprise, anger, wonder, or excitement. It always ends with an exclamation mark (!) which can be placed at the end of the sentence or after an interjection.",
+      "banglaDefinition": "Exclamatory Sentence (আবেগসূচক বাক্য) মনের আকস্মিক, তীব্র বা গভীর অনুভূতি যেমন: আনন্দ, দুঃখ, বিস্ময়, রাগ, বা উত্তেজনা প্রকাশ করতে ব্যবহৃত হয়। এই ধরনের বাক্যের শেষে বা আবেগসূচক শব্দের (Interjection) পরে অবশ্যই একটি বিস্ময়সূচক চিহ্ন (!) বসে।",
+      "formula": "Structure 1: What a/an + Adjective + Noun + Subject + Verb!\nStructure 2: How + Adjective/Adverb + Subject + Verb!\nStructure 3: Interjection (Hurrah!/Alas!/Wow!) + Assertive Sentence",
+      "rules": [
+        "বাক্যে তীব্র বিস্ময় প্রকাশ করতে 'What' বা 'How' দিয়ে শুরু করা হয়।",
+        "আবেগ প্রকাশক শব্দ বা Interjection (যেমন: Alas, Hurrah, Wow, Oh, Bravo) ব্যবহার করা যায়।",
+        "বিস্ময়সূচক চিহ্ন (!) বসানো বাধ্যতামূলক।"
+      ],
+      "examples": [
+        { "en": "What a beautiful bird it is! (Wonder)", "bn": "পাখিটি কী সুন্দর! (বিস্ময়)" },
+        { "en": "How fast she runs! (Surprise)", "bn": "সে কত দ্রুত দৌড়ায়! (অবাক হওয়া)" },
+        { "en": "Alas! We lost the game. (Sorrow)", "bn": "হাই! আমরা খেলায় হেরে গেলাম। (দুঃখ)" },
+        { "en": "Hurrah! We won the match. (Joy)", "bn": "কি আনন্দ! আমরা খেলায় জিতেছি। (আনন্দ)" },
+        { "en": "Wow! That is a great idea. (Excitement)", "bn": "বাহ! ওটা তো দারুণ বুদ্ধি। (উত্তেজনা)" }
+      ],
+      "tips": "স্পোকেন ইংলিশে সঠিক অনুভূতি প্রকাশের জন্য সঠিক intonation বা কণ্ঠস্বরের ওঠানামা জরুরি। 'Wow!' বলার সময় আমাদের কণ্ঠে যে উত্তেজনা থাকে, 'Alas!' বলার সময় তা বেদনাকাতর হতে হয়।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Why you are late?",
+      "correct": "Why are you late?",
+      "explanation": "Interrogative বা প্রশ্নবোধক বাক্যে Wh- word এর ঠিক পরেই auxiliary verb (are) বসাতে হবে, তারপর subject (you) বসবে। 'Why you are' বলা ভুল।"
+    },
+    {
+      "wrong": "What a beautiful flower is it!",
+      "correct": "What a beautiful flower it is!",
+      "explanation": "Exclamatory বাক্যে 'What/How' এর ক্ষেত্রে verb টি (is) বাক্যের একদম শেষে বসে। প্রশ্নবোধক বাক্যের মতো verb টি subject-এর আগে আসে না।"
+    },
+    {
+      "wrong": "Close the door?",
+      "correct": "Close the door.",
+      "explanation": "এটি একটি Imperative (আদেশমূলক) বাক্য, কোনো প্রশ্ন নয়। তাই বাক্যের শেষে Question mark (?) বসবে না, Full stop (.) বসবে।"
+    },
+    {
+      "wrong": "May you live long.",
+      "correct": "May you live long! or May you live long.",
+      "explanation": "Optative বা প্রার্থনাসূচক বাক্যে সাধারণত full stop বা কখনো বিস্ময়সূচক চিহ্ন (!) বসতে পারে, তবে কখনো question mark (?) বসে না, কারণ এটি প্রশ্ন নয়।"
+    },
+    {
+      "wrong": "Alas. I am ruined.",
+      "correct": "Alas! I am ruined.",
+      "explanation": "Interjection বা আবেগ প্রকাশক শব্দের (Alas, Hurrah, Oh) ঠিক পরে অবশ্যই Exclamation mark (!) বসাতে হবে, full stop বা comma নয়।"
+    },
+    {
+      "wrong": "Don't wrote on the wall.",
+      "correct": "Don't write on the wall.",
+      "explanation": "Imperative negative বাক্যে 'Don't' এর পর সর্বদা verb এর base form (V1) বসে। Past form (wrote) ব্যবহার করা ভুল।"
+    },
+    {
+      "wrong": "Where is your father. (Written)",
+      "correct": "Where is your father?",
+      "explanation": "যেকোনো Interrogative বা প্রশ্নবোধক বাক্যের শেষে প্রশ্নবোধক চিহ্ন (?) দেওয়া বাধ্যতামূলক। ফুলস্টপ দিলে বাক্যটি ভুল হবে।"
+    },
+    {
+      "wrong": "Please, you go there.",
+      "correct": "Please go there.",
+      "explanation": "Imperative বা অনুরোধমূলক বাক্যে subject 'you' বলার প্রয়োজন নেই, কারণ এটি সাধারণত উহ্য থাকে। সরাসরি 'Please go there' বলাই সঠিক।"
+    },
+    {
+      "wrong": "How a nice car!",
+      "correct": "What a nice car! OR How nice the car is!",
+      "explanation": "Noun এর সাথে বিস্ময় প্রকাশ করতে 'What a/an' বসে (What a nice car)। আর 'How' সরাসরি adjective এর সাথে বসে (How nice)।"
+    },
+    {
+      "wrong": "Who you met yesterday?",
+      "correct": "Who did you meet yesterday?",
+      "explanation": "অতীত কালের প্রশ্ন করার সময় subject-এর আগে auxiliary verb 'did' অবশ্যই বসাতে হবে এবং মূল verb-টির base form (meet) ব্যবহার করতে হবে।"
+    }
+  ]
 }

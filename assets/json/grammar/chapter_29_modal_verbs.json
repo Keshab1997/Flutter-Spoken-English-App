@@ -1,10 +1,157 @@
 {
   "chapter": 29,
   "level": "Intermediate",
-  "title": "Modal Verbs",
-  "icon": "verified",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "title": "Modal Verbs (মোডাল ভার্ব)",
+  "icon": "star_border",
+  "description": "Modal verbs are helping verbs used to express ability, permission, advice, possibility, or obligation. Words like Can, Could, May, Might, Will, Would, Shall, Should, and Must are modal verbs. They are incredibly common and vital for polite and natural communication in spoken English.",
+  "banglaDescription": "Modal Verbs হলো বিশেষ এক ধরনের সাহায্যকারী verb যা সামর্থ্য, অনুমতি, উপদেশ, সম্ভাবনা বা বাধ্যবাধকতা প্রকাশ করতে ব্যবহৃত হয়। Can, Could, May, Might, Will, Would, Shall, Should এবং Must হলো মোডাল ভার্ব। ইংরেজিতে নম্রতা প্রকাশ করতে এবং স্বাভাবিক কথোপকথন চালিয়ে যাওয়ার জন্য মোডাল ভার্বের সঠিক ব্যবহার জানা অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "What is a Modal Verb? (Modal Verb কী?)",
+      "banglaName": "Modal Verb কী?",
+      "definition": "A modal verb is a type of auxiliary (helping) verb that is used to express the speaker's attitude or mode of action (such as ability, permission, necessity, or possibility). Unlike regular verbs, modal verbs do not change form with different subjects and are always followed by the base form of the main verb.",
+      "banglaDefinition": "Modal Verb হলো এমন এক ধরণের সাহায্যকারী verb যা বক্তার মানসিক ভাব বা কাজের ধরন (যেমন: সামর্থ্য, অনুমতি, প্রয়োজনীয়তা বা সম্ভাবনা) প্রকাশ করে। সাধারণ verb-এর মতো মোডাল ভার্বগুলো সাবজেক্ট পরিবর্তন হলেও তাদের রূপ পরিবর্তন করে না এবং এদের পরে সর্বদা মূল verb-এর বেস ফর্ম (base form) বসে।",
+      "formula": "Subject + Modal Verb + Main Verb (Base Form / V1) + Object/Extension\n\nExample:\n- He can play football. (Not: He cans play / He can plays)",
+      "rules": [
+        "মোডাল ভার্বের পর কখনো 'to' বসে না (ব্যতিক্রম: ought to, have to)। যেমন: 'I must go', 'I must to go' নয়।",
+        "Subject যদি Third Person Singular-ও হয়, তবুও মোডাল ভার্বের সাথে 's' বা 'es' যুক্ত হয় না (যেমন: She can, She cans নয়)।",
+        "নেতিবাচক করতে মোডাল ভার্বের ঠিক পরেই সরাসরি 'not' বসে (যেমন: cannot, should not)।"
+      ],
+      "examples": [
+        { "en": "I can drive a car. (Ability)", "bn": "আমি গাড়ি চালাতে পারি।" },
+        { "en": "You should study hard. (Advice)", "bn": "তোমার কঠোর পড়াশোনা করা উচিত।" },
+        { "en": "He must follow the rules. (Obligation)", "bn": "তাকে অবশ্যই নিয়মগুলো মেনে চলতে হবে।" },
+        { "en": "It might rain today. (Possibility)", "bn": "আজ বৃষ্টি হতে পারে।" }
+      ],
+      "tips": "সহজ কথায় মনে রাখুন: মোডাল ভার্ব ব্যবহারের পর মূল ভার্বটির সাথে s/es, ing, বা ed—কোনো কিছুই যুক্ত করা যাবে না। ভার্বটি তার সবচেয়ে সাধারণ রূপে (V1) থাকবে।"
+    },
+    {
+      "name": "Expressing Ability: Can and Could (সামর্থ্য প্রকাশে Can এবং Could)",
+      "banglaName": "সামর্থ্য প্রকাশে Can এবং Could",
+      "definition": "We use 'Can' to talk about present ability or skills (what someone is able to do now). We use 'Could' to talk about past ability or skills (what someone was able to do in the past).",
+      "banglaDefinition": "বর্তমানে কোনো কিছু করার সামর্থ্য বা যোগ্যতা (কেউ এখন কী করতে পারে) বোঝাতে আমরা 'Can' ব্যবহার করি। আর অতীতে কোনো কিছু করার সামর্থ্য বা যোগ্যতা ছিল (কেউ অতীতে কী করতে পারত) বোঝাতে আমরা 'Could' ব্যবহার করি।",
+      "formula": "- Present Ability: Subject + can + Verb (V1)\n- Past Ability: Subject + could + Verb (V1)",
+      "rules": [
+        "বর্তমানে কোনো কাজ করতে পারা বোঝালে 'can' এবং না পারলে 'cannot' (can't) বসে।",
+        "অতীতে কোনো কাজ করতে পারতাম বোঝালে 'could' এবং না পারলে 'could not' (couldn't) বসে।"
+      ],
+      "examples": [
+        { "en": "I can speak three languages. (Present skill)", "bn": "আমি তিনটি ভাষায় কথা বলতে পারি।" },
+        { "en": "She cannot (can't) swim. (Present inability)", "bn": "সে সাঁতার কাটতে পারে না।" },
+        { "en": "My grandfather could run very fast when he was young. (Past ability)", "bn": "আমার দাদা যখন তরুণ ছিলেন তখন খুব দ্রুত দৌড়াতে পারতেন।" },
+        { "en": "I couldn't sleep last night. (Past inability)", "bn": "আমি গত রাতে ঘুমাতে পারিনি।" }
+      ],
+      "tips": "স্পোকেন ইংলিশে নেতিবাচক সামর্থ্য বোঝাতে সংক্ষিপ্ত রূপ 'can't' এবং 'couldn't' ব্যবহার করা অনেক বেশি সাবলীল দেখায়।"
+    },
+    {
+      "name": "Permission and Polite Requests: Can, Could, May, Would (অনুমতি ও নম্র অনুরোধ)",
+      "banglaName": "অনুমতি ও নম্র অনুরোধ",
+      "definition": "Modal verbs are extremely useful for making polite requests or asking for permission. 'Can' is informal, while 'Could' and 'May' are more polite and formal. 'Would' is used to make polite offers or invitations.",
+      "banglaDefinition": "নম্রভাবে কাউকে অনুরোধ করতে বা কারো কাছ থেকে অনুমতি চাইতে মোডাল ভার্ব অত্যন্ত উপযোগী। বন্ধুদের সাথে কথা বলার সময় বা অনানুষ্ঠানিক ক্ষেত্রে 'Can' ব্যবহৃত হয়, কিন্তু অপরিচিত বা প্রাতিষ্ঠানিক ক্ষেত্রে 'Could' এবং 'May' অনেক বেশি নম্র ও ভদ্র শোনায়। কোনো কিছুর প্রস্তাব বা আমন্ত্রণ জানাতে 'Would' ব্যবহার করা হয়।",
+      "formula": "- Informal Permission: Can I + Verb (V1) + ...?\n- Formal Permission: May I + Verb (V1) + ...?\n- Polite Request: Could you + Verb (V1) + ..., please?\n- Polite Offer: Would you like + Noun / to + Verb?"
+      ,
+      "rules": [
+        "অনুমতি চাইতে: 'May I come in?' (খুবই ভদ্র ও প্রাতিষ্ঠানিক)। 'Can I use your pen?' (বন্ধুত্বপূর্ণ/অনানুষ্ঠানিক)।",
+        "নম্র অনুরোধ করতে: 'Could you help me?' (সবচেয়ে প্রচলিত ও ভদ্র অনুরোধ)।",
+        "প্রস্তাব দিতে: 'Would you like some tea?' (আপনি কি চা খাবেন?)"
+      ],
+      "examples": [
+        { "en": "Can I borrow your notebook? (Informal)", "bn": "আমি কি তোমার নোটবুকটি ধার নিতে পারি?" },
+        { "en": "May I use your phone, sir? (Formal)", "bn": "আমি কি আপনার ফোনটি ব্যবহার করতে পারি, স্যার?" },
+        { "en": "Could you please open the window? (Polite request)", "bn": "দয়া করে আপনি কি জানালাটি একটু খুলে দেবেন?" },
+        { "en": "Would you like to join us for dinner?", "bn": "আপনি কি আমাদের সাথে রাতের খাবারে যোগ দিতে চান?" }
+      ],
+      "tips": "স্পোকেন ইংলিশে কারো সাহায্য চাওয়ার সময় 'Can you help me?' বলার চেয়ে 'Could you help me, please?' বলা অনেক বেশি ভদ্র ও চমৎকার শোনায়।"
+    },
+    {
+      "name": "Possibility and Deduction: May, Might, Must (সম্ভাবনা ও অনুমান)",
+      "banglaName": "সম্ভাবনা ও অনুমান",
+      "definition": "We use 'May' and 'Might' to express that something is possible but not certain. 'May' shows a stronger possibility, while 'Might' shows a weaker possibility. We use 'Must' when we are almost 100% sure about something based on evidence (strong deduction).",
+      "banglaDefinition": "কোনো কিছু ঘটার সম্ভাবনা আছে কিন্তু নিশ্চিত নয়—এমন বোঝাতে আমরা 'May' এবং 'Might' ব্যবহার করি। 'May' দিয়ে জোরালো সম্ভাবনা এবং 'Might' দিয়ে কিছুটা দুর্বল সম্ভাবনা বোঝানো হয়। আর যখন আমরা কোনো প্রমাণ বা পরিস্থিতি দেখে কোনো বিষয়ে প্রায় ১০০% নিশ্চিত হই (যুক্তিসঙ্গত অনুমান), তখন 'Must' ব্যবহার করি।",
+      "formula": "- Strong Possibility (৫০%): Subject + may + Verb (V1)\n- Weak Possibility (৩০%): Subject + might + Verb (V1)\n- Logical Certainty (১০০%): Subject + must + Verb (V1)",
+      "rules": [
+        "আজ বৃষ্টি হওয়ার ভালো সম্ভাবনা থাকলে বলুন: It may rain today.",
+        "সম্ভাবনা খুব কম বা আকাশ পরিষ্কার থাকলে বলুন: It might rain today.",
+        "কেউ কাজ করে ক্লান্ত হয়ে বাড়ি ফিরলে নিশ্চিত হয়ে বলুন: He must be tired (সে নিশ্চিতভাবেই ক্লান্ত)।"
+      ],
+      "examples": [
+        { "en": "The shops may be closed on Friday. (Normal possibility)", "bn": "শুক্রবার দোকানগুলো বন্ধ থাকতে পারে।" },
+        { "en": "I might go to the party, but I am not sure. (Weak possibility)", "bn": "আমি পার্টিতে যেতেও পারি, তবে আমি নিশ্চিত নই।" },
+        { "en": "You have been working all day; you must be hungry. (Logical deduction)", "bn": "তুমি সারাদিন কাজ করছ; তুমি নিশ্চিতভাবেই ক্ষুধার্ত।" },
+        { "en": "She isn't answering her phone; she must be busy.", "bn": "সে তার ফোনের উত্তর দিচ্ছে না; সে নিশ্চয়ই ব্যস্ত আছে।" }
+      ],
+      "tips": "কথ্য ইংরেজিতে মনের অনিশ্চয়তা বা দ্বিধা প্রকাশ করতে 'Might' ব্যবহার করুন। এটি বোঝায় যে কাজটি হওয়ার সুযোগ খুব কম।"
+    },
+    {
+      "name": "Advice and Obligation: Should, Must, Have to (উপদেশ ও বাধ্যবাধকতা)",
+      "banglaName": "উপদেশ ও বাধ্যবাধকতা",
+      "definition": "We use 'Should' to give advice, suggestions, or opinions (what is a good idea to do). We use 'Must' and 'Have to' to express strong obligation, rules, or absolute necessity (what is mandatory to do).",
+      "banglaDefinition": "কাউকে কোনো উপদেশ, পরামর্শ বা নিজের মতামত দিতে (কোন কাজটি করা ভালো হবে তা বোঝাতে) আমরা 'Should' ব্যবহার করি। আর কোনো অত্যন্ত জরুরি বাধ্যবাধকতা, নিয়ম বা প্রয়োজনীয়তা প্রকাশ করতে (কোন কাজটি করা বাধ্যতামূলক তা বোঝাতে) আমরা 'Must' এবং 'Have to' ব্যবহার করি।",
+      "formula": "- Advice: Subject + should + Verb (V1)\n- Personal Obligation (বক্তার নিজের মতে জরুরি): Subject + must + Verb (V1)\n- External Obligation (আইন বা বাইরের নিয়ম অনুযায়ী জরুরি): Subject + have to + Verb (V1)",
+      "rules": [
+        "কাউকে সাধারণ পরামর্শ দিতে 'Should' ব্যবহার করুন (যেমন: You should sleep early)।",
+        "বক্তার নিজের কাছে কোনো কাজ অত্যন্ত গুরুত্বপূর্ণ মনে হলে 'Must' ব্যবহার করুন (যেমন: I must call my mother)।",
+        "বাইরের কোনো নিয়ম, আইন বা পরিস্থিতির কারণে বাধ্য হলে 'Have to' ব্যবহার করুন (যেমন: We have to wear a uniform at school)।"
+      ],
+      "examples": [
+        { "en": "You should drink more water. (Advice/Suggestion)", "bn": "তোমার আরও বেশি পানি পান করা উচিত।" },
+        { "en": "We must protect our environment. (Moral obligation)", "bn": "আমাদের অবশ্যই আমাদের পরিবেশ রক্ষা করতে হবে।" },
+        { "en": "I have to wake up at 6 AM tomorrow for my flight. (External necessity)", "bn": "আমার ফ্লাইটের জন্য আগামীকাল সকাল ৬টায় আমাকে উঠতে হবে।" },
+        { "en": "Drivers must stop when the traffic light is red. (Strict law)", "bn": "ট্রাফিক লাইট লাল হলে চালকদের অবশ্যই থামতে হবে।" }
+      ],
+      "tips": "'Must' এবং 'Have to' এর অর্থ প্রায় কাছাকাছি হলেও স্পোকেন ইংরেজিতে দৈনন্দিন বাধ্যবাধকতা বোঝাতে 'Have to' এর ব্যবহার অনেক বেশি শোনা যায় (যেমন: I have to go now)।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I must to go now.",
+      "correct": "I must go now.",
+      "explanation": "মোডাল ভার্বের ঠিক পরেই সরাসরি মূল verb-এর base form বসে। মোডালের পর 'to' বসানো ব্যাকরণগতভাবে সম্পূর্ণ ভুল (have to/ought to ছাড়া)।"
+    },
+    {
+      "wrong": "She cans speak English very well.",
+      "correct": "She can speak English very well.",
+      "explanation": "Subject যদি third person singular (He, She, It) হয়, তবুও মোডাল ভার্বের (can, should, must) সাথে কখনও 's' বা 'es' যুক্ত হয় না।"
+    },
+    {
+      "wrong": "He should went to the doctor.",
+      "correct": "He should go to the doctor.",
+      "explanation": "মোডাল ভার্বের পর সর্বদা verb-এর বেস ফর্ম বা প্রেজেন্ট ফর্ম (V1) বসে। মোডালের পর past form (went) বা past participle form বসানো যাবে না।"
+    },
+    {
+      "wrong": "I am not can swim.",
+      "correct": "I cannot swim. OR I can't swim.",
+      "explanation": "মোডাল ভার্ব নিজেই একটি সাহায্যকারী verb। তাই নেতিবাচক করার জন্য আলাদা করে am not/is not বসানোর প্রয়োজন নেই। মোডালের সাথে সরাসরি 'not' যুক্ত করলেই চলে।"
+    },
+    {
+      "wrong": "They will can come tomorrow.",
+      "correct": "They will be able to come tomorrow.",
+      "explanation": "ইংরেজিতে দুটি মোডাল ভার্ব (will এবং can) কখনো পাশাপাশি একসাথে বসতে পারে না। ভবিষ্যৎ সামর্থ্য বোঝাতে 'will be able to' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "You don't must smoke here.",
+      "correct": "You must not smoke here. OR You shouldn't smoke here.",
+      "explanation": "নিষেধাজ্ঞা বোঝাতে 'don't must' বলে কিছু নেই। কঠোরভাবে নিষেধ করতে 'must not' (mustn't) ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "Could you please to help me?",
+      "correct": "Could you please help me?",
+      "explanation": "অনুরোধ করার সময় 'Could you please' এর পরে সরাসরি verb বসে, এর মাঝে 'to' বসানো যাবে না।"
+    },
+    {
+      "wrong": "He might comes tonight.",
+      "correct": "He might come tonight.",
+      "explanation": "'Might' একটি মোডাল ভার্ব, তাই এর পরের মূল verb-টির সাথে 's' (comes) যুক্ত করা যাবে না। সর্বদা বেস ফর্ম (come) হবে।"
+    },
+    {
+      "wrong": "We should obeying our parents.",
+      "correct": "We should obey our parents.",
+      "explanation": "মোডাল ভার্বের পরে সরাসরি verb-এর বেস ফর্ম বসে। মোডালের পর verb-এর সাথে '-ing' (obeying) যুক্ত করা ভুল।"
+    },
+    {
+      "wrong": "I would liked to ask a question.",
+      "correct": "I would like to ask a question.",
+      "explanation": "'Would like' একটি ভদ্র অভিব্যক্তি। 'Would' এর পর verb-এর সাথে '-ed' (liked) যুক্ত করা যাবে না, সর্বদা 'would like' হবে।"
+    }
+  ]
 }

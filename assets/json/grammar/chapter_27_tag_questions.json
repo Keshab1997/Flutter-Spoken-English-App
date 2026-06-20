@@ -1,10 +1,156 @@
 {
   "chapter": 27,
   "level": "Intermediate",
-  "title": "Tag Questions",
-  "icon": "help_outline",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "title": "Tag Questions (ট্যাগ কোশ্চেন)",
+  "icon": "flaky",
+  "description": "Tag questions are short questions added to the end of a statement. They are widely used in spoken English to confirm information, check if the listener agrees, or encourage someone to keep talking. Mastering tag questions will make your English sound more natural and engaging.",
+  "banglaDescription": "Tag Questions হলো কোনো সাধারণ বিবৃতির শেষে জুড়ে দেওয়া ছোট ছোট প্রশ্ন। স্পোকেন ইংলিশে এগুলো ব্যাপকভাবে ব্যবহৃত হয় কোনো তথ্যের সত্যতা নিশ্চিত করতে, শ্রোতার সম্মতি জানতে বা কথোপকথন চালিয়ে যেতে উৎসাহিত করতে। ট্যাগ কোশ্চেন ভালোভাবে আয়ত্ত করতে পারলে আপনার ইংরেজি অনেক বেশি স্বাভাবিক এবং আকর্ষণীয় শোনাবে।",
+  "topics": [
+    {
+      "name": "What is a Tag Question? (Tag Question কী?)",
+      "banglaName": "Tag Question কী?",
+      "definition": "A tag question is a very short question added to the end of a declarative (statement) or imperative sentence. It turns a statement into a question. In conversation, it is used when you expect the listener to agree with you or when you want to verify something.",
+      "banglaDefinition": "Tag Question হলো কোনো বিবৃতি বা আদেশসূচক বাক্যের শেষে জুড়ে দেওয়া অত্যন্ত সংক্ষিপ্ত একটি প্রশ্ন। এটি একটি সাধারণ বিবৃতিকে প্রশ্নে রূপান্তর করে। কথোপকথনের সময় শ্রোতা আপনার সাথে একমত হবেন এমনটি আশা করলে বা কোনো বিষয় নিশ্চিত করতে চাইলে এই ট্যাগ ব্যবহার করা হয়।",
+      "formula": "Statement (বিবৃতি) + , (কমা) + Tag (ট্যাগ) + ? (প্রশ্নবোধক চিহ্ন)\n\nExample:\n- You are hungry, aren't you?\n- She speaks English, doesn't she?",
+      "rules": [
+        "ট্যাগ কোশ্চেন গঠনের সময় প্রথমে পুরো বাক্যটি লিখতে হয়, তারপর একটি কমা (,) বসাতে হয়, এরপর ট্যাগ অংশ লিখে শেষে প্রশ্নবোধক চিহ্ন (?) দিতে হয়।",
+        "ট্যাগের subject হিসেবে সর্বদা Pronoun (যেমন: he, she, they, we, it) বসে, কখনো Noun বসতে পারে না।"
+      ],
+      "examples": [
+        { "en": "It is a beautiful day, isn't it?", "bn": "আজকের দিনটি সুন্দর, তাই না?" },
+        { "en": "You don't like coffee, do you?", "bn": "তুমি কফি পছন্দ করো না, তাই তো?" },
+        { "en": "Rimi is a doctor, isn't she? (Noun 'Rimi' becomes pronoun 'she')", "bn": "রিমি একজন ডাক্তার, তাই না?" }
+      ],
+      "tips": "বাংলা কথোপকথনে আমরা বাক্যের শেষে যে 'তাই না?', 'তাই তো?' বা 'বুঝলে?' বলি—ইংরেজিতে ঠিক সেই কাজটিই করে Tag Questions।"
+    },
+    {
+      "name": "The Golden Rule of Tags (ট্যাগের মূল সুবর্ণ নিয়ম)",
+      "banglaName": "ট্যাগের মূল সুবর্ণ নিয়ম",
+      "definition": "The basic and most important rule of forming a tag question is balance: if the main statement is positive (affirmative), the tag must be negative. If the main statement is negative, the tag must be positive.",
+      "banglaDefinition": "ট্যাগ কোশ্চেন গঠনের সবচেয়ে গুরুত্বপূর্ণ মৌলিক নিয়মটি হলো ভারসাম্য: যদি মূল বাক্যটি হ্যাঁ-বোধক (Positive) হয়, তবে ট্যাগটি অবশ্যই না-বোধক (Negative) হবে। আর মূল বাক্যটি যদি না-বোধক (Negative) হয়, তবে ট্যাগটি অবশ্যই হ্যাঁ-বোধক (Positive) হবে।",
+      "formula": "Positive Statement → Negative Tag (using contracted form like aren't, isn't, don't)\nNegative Statement → Positive Tag (using helper verb like are, is, do)",
+      "rules": [
+        "Positive বাক্য: You are a student → Negative Tag: aren't you?",
+        "Negative বাক্য: You are not a student → Positive Tag: are you?",
+        "Negative ট্যাগে সাহায্যকারী verb-এর সাথে 'not' যুক্ত করার সময় সর্বদা সংকুচিত রূপ (Contraction) যেমন: isn't, aren't, don't, can't ব্যবহার করতে হবে। 'is not he' বা 'do not you' বলা যাবে না।"
+      ],
+      "examples": [
+        { "en": "He is tired, isn't he? (Positive → Negative)", "bn": "সে ক্লান্ত, তাই না?" },
+        { "en": "He is not tired, is he? (Negative → Positive)", "bn": "সে ক্লান্ত নয়, তাই তো?" },
+        { "en": "They will come, won't they? (Positive → Negative, will not = won't)", "bn": "তারা আসবে, তাই না?" },
+        { "en": "They won't come, will they? (Negative → Positive)", "bn": "তারা আসবে না, তাই তো?" }
+      ],
+      "tips": "মনে রাখুন: ট্যাগের না-বোধক অংশটি সবসময় সংকুচিত বা শর্ট ফর্মে বলতে হবে (যেমন: don't, isn't, can't)।"
+    },
+    {
+      "name": "Tense and Auxiliary Matching (Tense ও Auxiliary-এর সামঞ্জস্যতা)",
+      "banglaName": "Tense ও Auxiliary-এর সামঞ্জস্যতা",
+      "definition": "The verb in the tag must match the tense and the auxiliary (helping) verb of the main sentence. If the sentence has an auxiliary verb, use the same verb. If the sentence has no auxiliary verb, use do, does, or did.",
+      "banglaDefinition": "ট্যাগের verb-টিকে অবশ্যই মূল বাক্যের tense এবং সাহায্যকারী (auxiliary) verb-এর সাথে মিল রেখে বসাতে হবে। বাক্যে যদি কোনো সাহায্যকারী verb থাকে, তবে ট্যাগ-এও সেটিই বসবে। আর যদি বাক্যে কোনো সাহায্যকারী verb না থাকে, তবে tense অনুযায়ী do, does বা did ব্যবহার করতে হবে।",
+      "formula": "Sentence with Helping Verb: [Helping Verb] + Not + Pronoun?\nSentence without Helping Verb: don't / doesn't / didn't + Pronoun?",
+      "rules": [
+        "বাক্যে am, is, are, was, were, have, has, can, will ইত্যাদি থাকলে ট্যাগ তৈরিতে এগুলোই ব্যবহৃত হয়।",
+        "Present Indefinite tense-এ সাহায্যকারী verb না থাকলে subject অনুযায়ী don't বা doesn't বসে।",
+        "Past Indefinite tense-এ সাহায্যকারী verb না থাকলে didn't বসে।"
+      ],
+      "examples": [
+        { "en": "You have a car, haven't you? (Or: don't you?)", "bn": "তোমার একটি গাড়ি আছে, তাই না?" },
+        { "en": "She plays guitar, doesn't she? (Present simple - singular)", "bn": "সে গিটার বাজায়, তাই না?" },
+        { "en": "We watched the movie, didn't we? (Past simple)", "bn": "আমরা সিনেমাটি দেখেছি, তাই না?" },
+        { "en": "He cannot swim, can he? (Using modal verb 'can')", "bn": "সে সাঁতার কাটতে পারে না, পারে কি?" }
+      ],
+      "tips": "বাক্যে কোনো helping verb না দেখলেই 'Do/Does/Did'-এর কথা চিন্তা করুন। verb-এর শেষে s/es থাকলে doesn't, past form থাকলে didn't, অন্যথায় don't ব্যবহার করুন।"
+    },
+    {
+      "name": "Special Exceptions (ট্যাগের কিছু ব্যতিক্রমী ও বিশেষ নিয়ম)",
+      "banglaName": "ট্যাগের কিছু ব্যতিক্রমী ও বিশেষ নিয়ম",
+      "definition": "There are several unique exceptions in English tag questions that do not follow the standard rules. These include sentences with 'I am', imperatives, let's, and indefinite pronouns.",
+      "banglaDefinition": "ইংরেজিতে ট্যাগ কোশ্চেনের এমন কিছু ব্যতিক্রমী নিয়ম রয়েছে যা সাধারণ নিয়মগুলো মেনে চলে না। এগুলোর মধ্যে 'I am' যুক্ত বাক্য, আদেশসূচক বাক্য, Let's এবং অনির্দিষ্ট সর্বনাম (indefinite pronouns) অন্যতম।",
+      "formula": "- I am... → aren't I?\n- Let's (Let us) ... → shall we?\n- Imperative (Request/Command) → will you / won't you?\n- Everyone/Somebody/Nobody → Tag pronoun: 'they'",
+      "rules": [
+        "I am-এর হ্যাঁ-বোধক বাক্যের ট্যাগ হবে 'aren't I?' (কখনো 'amn't I' হবে না)। তবে না-বোধক বাক্য 'I am not' এর ট্যাগ হবে 'am I?'।",
+        "Let's (Let us) দিয়ে শুরু হওয়া প্রস্তাববাচক বাক্যের ট্যাগ সবসময় 'shall we?' হয়।",
+        "অনুরোধ বা আদেশসূচক (Imperative) বাক্যের ক্ষেত্রে ট্যাগ সাধারণত 'will you?' বা 'won't you?' হয়।",
+        "Everybody, Everyone, Somebody, Nobody, No one ইত্যাদি থাকলে ট্যাগের subject হিসেবে 'they' বসে (এবং verb-টিও plural হয়, যেমন: don't they/did they)।"
+      ],
+      "examples": [
+        { "en": "I am late, aren't I? (Exception: I am → aren't I)", "bn": "আমার দেরি হয়ে গেছে, তাই না?" },
+        { "en": "I am not late, am I? (Regular: I am not → am I)", "bn": "আমার তো দেরি হয়নি, হয়েছে কি?" },
+        { "en": "Let's go for a walk, shall we?", "bn": "চলো একটু হেঁটে আসি, যাবে তো?" },
+        { "en": "Please sit down, will you?", "bn": "দয়া করে বসুন, বসবেন কি?" },
+        { "en": "Everyone was happy, weren't they? (Everyone becomes plural 'they')", "bn": "সবাই খুশি ছিল, তাই না?" }
+      ],
+      "tips": "স্পোকেন ইংলিশে এই ব্যতিক্রমগুলো অনেক বেশি ব্যবহৃত হয়। বিশেষ করে 'I am late, aren't I?' এবং 'Let's go, shall we?' প্রতিনিয়ত বলা হয়।"
+    },
+    {
+      "name": "Semi-Negative Words (অর্ধ-নেতিবাচক শব্দসমূহের ট্যাগ)",
+      "banglaName": "অর্ধ-নেতিবাচক শব্দসমূহের ট্যাগ",
+      "definition": "Some sentences appear positive because they do not contain 'not'. However, they contain semi-negative words like 'hardly', 'scarcely', 'rarely', 'seldom', 'few', or 'little'. Since these words carry a negative meaning, the tag must be positive.",
+      "banglaDefinition": "কিছু বাক্য দেখতে হ্যাঁ-বোধক মনে হতে পারে কারণ সেগুলোতে সরাসরি 'not' থাকে না। কিন্তু সেগুলোতে কিছু আংশিক নেতিবাচক শব্দ যেমন: 'hardly' (কদাচিৎ), 'scarcely', 'rarely', 'seldom' (খুবই কম), 'few' (নেই বললেই চলে) বা 'little' থাকে। যেহেতু এই শব্দগুলো নেতিবাচক অর্থ প্রকাশ করে, তাই এদের ট্যাগটি অবশ্যই হ্যাঁ-বোধক (Positive) হবে।",
+      "formula": "Statement with [hardly / seldom / rarely / barely] → Positive Tag",
+      "rules": [
+        "বাক্যে seldom, hardly, barely, scarcely, rarely থাকলে বাক্যটিকে negative হিসেবে ধরে নিয়ে positive ট্যাগ গঠন করতে হয়।",
+        "'few' এবং 'little' থাকলে positive ট্যাগ হবে, কিন্তু 'a few' এবং 'a little' (কিছুটা আছে) থাকলে তা হ্যাঁ-বোধক বাক্য হিসেবে গণ্য হবে এবং negative ট্যাগ হবে।"
+      ],
+      "examples": [
+        { "en": "He seldom comes here, does he? (Seldom is negative → Positive tag)", "bn": "সে এখানে কদাচিৎ আসে, তাই না?" },
+        { "en": "You hardly know him, do you?", "bn": "তুমি তাকে চেনো না বললেই চলে, চেনো কি?" },
+        { "en": "There is little water in the glass, is there? (Little = almost no water)", "bn": "গ্লাসে পানি নেই বললেই চলে, আছে কি?" },
+        { "en": "There is a little water in the glass, isn't there? (A little = some water, positive)", "bn": "গ্লাসে সামান্য পানি আছে, তাই না?" }
+      ],
+      "tips": "মনে রাখবেন, 'seldom', 'hardly'—এই শব্দগুলো নিজেই না-বোধক অর্থ প্রকাশ করে। তাই ট্যাগে আর 'not' বা n't বসানো যাবে না।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Rina is a good girl, isn't Rina?",
+      "correct": "Rina is a good girl, isn't she?",
+      "explanation": "ট্যাগ কোশ্চেনের সাবজেক্ট হিসেবে কখনো Noun (Rina) বসতে পারে না। সর্বদা Noun-এর পরিবর্তে তার উপযুক্ত Pronoun (she) বসাতে হবে।"
+    },
+    {
+      "wrong": "He plays football, isn't he?",
+      "correct": "He plays football, doesn't he?",
+      "explanation": "মূল বাক্যে কোনো auxiliary verb নেই এবং এটি Present Indefinite tense-এ আছে। Subject 'He' (third person singular) হওয়ায় ট্যাগ-এ 'doesn't' বসবে, 'isn't' নয়।"
+    },
+    {
+      "wrong": "I am right, amn't I?",
+      "correct": "I am right, aren't I?",
+      "explanation": "ইংরেজি ব্যাকরণে 'amn't I' বলে কোনো শব্দ নেই। 'I am'-এর নেতিবাচক ট্যাগের জন্য সর্বদা 'aren't I' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "You don't like meat, don't you?",
+      "correct": "You don't like meat, do you?",
+      "explanation": "এটি ডাবল নেগেটিভের ভুল। মূল বাক্যটি যদি না-বোধক (don't) হয়, তবে ট্যাগটি অবশ্যই হ্যাঁ-বোধক (do you) হতে হবে।"
+    },
+    {
+      "wrong": "He can run fast, can he?",
+      "correct": "He can run fast, can't he?",
+      "explanation": "মূল বাক্যটি হ্যাঁ-বোধক (positive)। তাই ট্যাগটি অবশ্যই না-বোধক (negative - can't) হতে হবে।"
+    },
+    {
+      "wrong": "Let's go out, will you?",
+      "correct": "Let's go out, shall we?",
+      "explanation": "'Let's' (Let us) দিয়ে শুরু হওয়া বাক্যে প্রস্তাব বোঝায়, তাই এর ট্যাগ সবসময় নির্দিষ্টভাবে 'shall we?' হবে।"
+    },
+    {
+      "wrong": "Nobody called me, didn't they?",
+      "correct": "Nobody called me, did they?",
+      "explanation": "'Nobody' একটি নেতিবাচক শব্দ, তাই বাক্যটি নেতিবাচক। এর ট্যাগটি হবে ইতিবাচক বা হ্যাঁ-বোধক (did they)।"
+    },
+    {
+      "wrong": "There are many trees, aren't there?",
+      "correct": "There are many trees, aren't there?",
+      "explanation": "যদি বাক্যের সাবজেক্ট 'There' দিয়ে শুরু হয়, তবে ট্যাগের প্রোনাউন হিসেবেও 'there' শব্দটিই অপরিবর্তিত থাকে।"
+    },
+    {
+      "wrong": "She didn't write the letter, did she.",
+      "correct": "She didn't write the letter, did she?",
+      "explanation": "ট্যাগ কোশ্চেনের মূল উদ্দেশ্য হলো প্রশ্ন করা। তাই পুরো বাক্যের একদম শেষে অবশ্যই একটি প্রশ্নবোধক চিহ্ন (?) দিতে হবে, ফুলস্টপ দেওয়া যাবে না।"
+    },
+    {
+      "wrong": "You barely know her, don't you?",
+      "correct": "You barely know her, do you?",
+      "explanation": "'Barely' একটি অর্ধ-নেতিবাচক (semi-negative) শব্দ যা বাক্যটিকে না-বোধক করে তোলে। তাই ট্যাগটি হবে হ্যাঁ-বোধক (do you)।"
+    }
+  ]
 }

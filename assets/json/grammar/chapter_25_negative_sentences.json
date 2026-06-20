@@ -1,10 +1,181 @@
 {
   "chapter": 25,
   "level": "Intermediate",
-  "title": "Negative Sentences",
+  "title": "Negative Sentences (না-বোধক বাক্য)",
   "icon": "do_not_disturb",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Negative sentences are used to deny statements, express disagreement, or state that something is not true. They are formed using words like 'not', 'no', 'never', 'nothing', or 'nobody'. Understanding negative sentence structures is essential for clear communication and expressing refusal or absence in spoken English.",
+  "banglaDescription": "Negative Sentence (না-বোধক বাক্য) কোনো কিছু অস্বীকার করতে, দ্বিমত পোষণ করতে বা কোনো বিষয় সত্য নয় তা বোঝাতে ব্যবহৃত হয়। বাক্যে 'not', 'no', 'never', 'nothing' বা 'nobody' এর মতো নেতিবাচক শব্দ ব্যবহার করে এগুলো গঠিত হয়। স্পোকেন ইংলিশে অস্বীকৃতি, অনুপস্থিতি বা নেতিবাচক মনোভাব প্রকাশের জন্য নেতিবাচক বাক্য গঠন জানা অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "What is a Negative Sentence? (Negative Sentence কী?)",
+      "banglaName": "Negative Sentence কী?",
+      "definition": "A negative sentence is a sentence that states that something is false, incorrect, or non-existent. It is the opposite of an affirmative (positive) sentence. The most common way to make a sentence negative is by adding the word 'not' after an auxiliary (helping) verb.",
+      "banglaDefinition": "Negative Sentence (না-বোধক বাক্য) হলো এমন একটি বাক্য যা নির্দেশ করে যে কোনো কিছু মিথ্যা, ভুল বা অনুপস্থিত। এটি Affirmative (হ্যাঁ-বোধক) বাক্যের ঠিক বিপরীত। বাক্যকে নেতিবাচক করার সবচেয়ে সাধারণ উপায় হলো auxiliary (সাহায্যকারী) verb-এর পরে 'not' শব্দটি যুক্ত করা।",
+      "formula": "Subject + Auxiliary Verb + Not + Main Verb + Object/Extension",
+      "rules": [
+        "বাক্যকে নেতিবাচক করতে প্রধানত 'not' শব্দটি ব্যবহার করা হয়।",
+        "সহজ নিয়ম হলো: সাহায্যকারী verb (am, is, are, was, were, has, have, had) এর ঠিক পরে 'not' বসে।",
+        "যদি বাক্যে কোনো সাহায্যকারী verb না থাকে, তবে tense অনুযায়ী do, does বা did ব্যবহার করতে হয়।"
+      ],
+      "examples": [
+        { "en": "I am a student. (Affirmative)", "bn": "আমি একজন ছাত্র। (হ্যাঁ-বোধক)" },
+        { "en": "I am not a student. (Negative)", "bn": "আমি একজন ছাত্র নই। (না-বোধক)" },
+        { "en": "They are playing. (Affirmative)", "bn": "তারা খেলছে।" },
+        { "en": "They are not playing. (Negative)", "bn": "তারা খেলছে না।" }
+      ],
+      "tips": "সহজ কথায়, হ্যাঁ-বোধক বাক্যে যে সাহায্যকারী verb থাকে, তার সাথে একটি 'not' বসিয়ে দিলেই তা না-বোধক বাক্যে রূপান্তরিত হয়।"
+    },
+    {
+      "name": "Negatives with Auxiliary and Modal Verbs (Auxiliary ও Modal Verb-এর সাথে Not)",
+      "banglaName": "Auxiliary ও Modal Verb-এর সাথে Not",
+      "definition": "When a sentence contains an auxiliary verb (am, is, are, was, were, have, has, had) or a modal verb (can, could, will, would, shall, should, may, might, must), forming a negative sentence is simple. You just insert 'not' directly after that verb.",
+      "banglaDefinition": "যখন কোনো বাক্যে auxiliary verb বা modal verb থাকে, তখন নেতিবাচক বাক্য গঠন করা খুবই সহজ। আপনাকে কেবল সেই verb-টির ঠিক পরেই সরাসরি 'not' বসিয়ে দিতে হবে।",
+      "formula": "Subject + [Auxiliary / Modal Verb] + Not + Main Verb + ...",
+      "rules": [
+        "Modal verb-এর সাথে 'not' যুক্ত করার পর মূল verb-এর বেস ফর্ম (V1) বসে।",
+        "'Cannot' শব্দটি লেখার সময় সাধারণত কোনো স্পেস ছাড়া একটি শব্দ হিসেবে লেখা হয় (cannot), তবে অন্য মডালগুলোর ক্ষেত্রে আলাদা লেখা হয় (will not, should not)।"
+      ],
+      "examples": [
+        { "en": "She can speak English.", "bn": "সে ইংরেজি বলতে পারে।" },
+        { "en": "She cannot speak English.", "bn": "সে ইংরেজি বলতে পারে না।" },
+        { "en": "We should go now.", "bn": "আমাদের এখন যাওয়া উচিত।" },
+        { "en": "We should not go now.", "bn": "আমাদের এখন যাওয়া উচিত নয়।" },
+        { "en": "He has finished the work.", "bn": "সে কাজটি শেষ করেছে।" },
+        { "en": "He has not finished the work.", "bn": "সে কাজটি শেষ করেনি।" }
+      ],
+      "tips": "মডাল verb দিয়ে নেতিবাচক বাক্য বলার সময় মুখের জড়তা কাটাতে বারবার চর্চা করুন: cannot, should not, will not, must not।"
+    },
+    {
+      "name": "Negatives in Present and Past Simple (Do/Does/Did-এর ব্যবহার)",
+      "banglaName": "Do/Does/Did-এর ব্যবহার",
+      "definition": "In the Simple Present and Simple Past tenses, there are usually no auxiliary verbs in affirmative sentences. To make them negative, we must introduce the helping verbs 'do not' (don't), 'does not' (doesn't), or 'did not' (didn't) followed by the base form of the main verb.",
+      "banglaDefinition": "Simple Present এবং Simple Past tense-এর হ্যাঁ-বোধক বাক্যে সাধারণত কোনো auxiliary verb থাকে না। এগুলোকে নেতিবাচক করতে আমাদের অবশ্যই সাহায্যকারী verb হিসেবে 'do not' (don't), 'does not' (doesn't) বা 'did not' (didn't) ব্যবহার করতে হবে এবং এরপর মূল verb-এর base form বসাতে হবে।",
+      "formula": "Present (Plural/I/You): Subject + do not (don't) + Verb (V1) + ...\nPresent (Singular): Subject + does not (doesn't) + Verb (V1) + ...\nPast (All Subjects): Subject + did not (didn't) + Verb (V1) + ...",
+      "rules": [
+        "Present Indefinite-এ Third Person Singular subject (He/She/It)-এর সাথে 'does not' বসে।",
+        "I, We, You, They এবং plural subject-এর সাথে 'do not' বসে।",
+        "Past Indefinite-এ সকল subject-এর সাথে 'did not' বসে।",
+        "মনে রাখবেন: 'does not' বা 'did not' ব্যবহার করলে মূল verb-এর সাথে আর s/es বা past form থাকে না, সেটি base form (V1) হয়ে যায়।"
+      ],
+      "examples": [
+        { "en": "I play football. (Affirmative)", "bn": "আমি ফুটবল খেলি।" },
+        { "en": "I do not play football. (Negative)", "bn": "আমি ফুটবল খেলি না।" },
+        { "en": "He lives in Dhaka. (Affirmative)", "bn": "সে ঢাকায় থাকে।" },
+        { "en": "He does not live in Dhaka. (Negative - 'lives' becomes 'live')", "bn": "সে ঢাকায় থাকে না।" },
+        { "en": "They went to school yesterday. (Affirmative)", "bn": "তারা গতকাল স্কুলে গিয়েছিল।" },
+        { "en": "They did not go to school yesterday. (Negative - 'went' becomes 'go')", "bn": "তারা গতকাল স্কুলে যায়নি।" }
+      ],
+      "tips": "এটি স্পোকেন ইংলিশের সবচেয়ে গুরুত্বপূর্ণ নিয়মগুলোর একটি। 'does not' বা 'did not' বসালে মূল verb-টিকে অবশ্যই তার সাধারণ রূপে (V1) ফিরিয়ে আনতে হবে। যেমন: He didn't went (ভুল) → He didn't go (সঠিক)।"
+    },
+    {
+      "name": "Other Negative Words (অন্যান্য নেতিবাচক শব্দ)",
+      "banglaName": "অন্যান্য নেতিবাচক শব্দ",
+      "definition": "A sentence can be made negative without using 'not'. We can use other negative words such as 'never' (কখনও না), 'no' (না/কোনো না), 'nothing' (কিছুই না), 'nobody/no one' (কেউ না), and 'nowhere' (কোথাও না). These words carry a negative meaning on their own.",
+      "banglaDefinition": "শুধু 'not' ব্যবহার না করেও একটি বাক্যকে নেতিবাচক করা যায়। আমরা অন্যান্য নেতিবাচক শব্দ যেমন: 'never', 'no', 'nothing', 'nobody/no one', এবং 'nowhere' ব্যবহার করতে পারি। এই শব্দগুলো নিজেই বাক্যের মধ্যে নেতিবাচক অর্থ প্রকাশ করে, তাই এদের সাথে আলাদা করে 'not' ব্যবহার করতে হয় না।",
+      "formula": "Subject + Negative Word (Never/Nothing/Nobody) + Affirmative Verb + ...",
+      "rules": [
+        "বাক্যে 'never', 'nobody', বা 'nothing' ব্যবহার করলে বাক্যটি স্বয়ংক্রিয়ভাবে নেতিবাচক হয়ে যায়।",
+        "এই শব্দগুলোর সাথে পুনরায় 'not' বা 'don't/doesn't' ব্যবহার করা যাবে না (ডাবল নেগেটিভের ভুল এড়াতে)।",
+        "'No' সাধারণত কোনো noun-এর আগে বসে (যেমন: I have no money)।"
+      ],
+      "examples": [
+        { "en": "I have no money. (Equivalent to: I don't have any money)", "bn": "আমার কাছে কোনো টাকা নেই।" },
+        { "en": "He never tells a lie.", "bn": "সে কখনও মিথ্যা কথা বলে না।" },
+        { "en": "Nobody came to the party.", "bn": "পার্টিতে কেউ আসেনি।" },
+        { "en": "There is nothing in the box.", "bn": "বাক্সটিতে কিছুই নেই।" },
+        { "en": "She went nowhere during the vacation.", "bn": "ছুটিতে সে কোথাও যায়নি।" }
+      ],
+      "tips": "'No' এবং 'Not' এর মধ্যে পার্থক্য মনে রাখুন: 'No' বসে noun-এর পূর্বে (No friends, No time), আর 'Not' বসে verb বা adjective-এর পূর্বে বা সাহায্যকারী verb-এর সাথে (Not happy, Is not)।"
+    },
+    {
+      "name": "Contractions in Spoken English (নেতিবাচক শব্দের সংকুচিত রূপ)",
+      "banglaName": "নেতিবাচক শব্দের সংকুচিত রূপ",
+      "definition": "In daily spoken English, native speakers rarely say the full form like 'do not' or 'cannot'. Instead, they use contractions (short forms) like 'don't', 'can't', or 'won't'. Learning and using contractions will make your spoken English sound much more natural and fluent.",
+      "banglaDefinition": "দৈনন্দিন সাধারণ ইংরেজিতে কথা বলার সময় সাধারণত পূর্ণ রূপ (যেমন: do not বা cannot) খুব একটা ব্যবহার করা হয় না। এর পরিবর্তে সংকুচিত রূপ বা short form (যেমন: don't, can't, won't) ব্যবহার করা হয়। সংকুচিত রূপের ব্যবহার আপনার স্পোকেন ইংলিশকে অনেক বেশি স্বাভাবিক এবং সাবলীল করে তুলবে।",
+      "formula": "do not → don't | does not → doesn't | did not → didn't\nis not → isn't | are not → aren't | was not → wasn't | were not → weren't\nhave not → haven't | has not → hasn't | had not → hadn't\ncannot → can't | will not → won't | should not → shouldn't",
+      "rules": [
+        "কথ্য ইংরেজিতে ফ্লুয়েন্সি বাড়াতে contractions ব্যবহার করা উচিত।",
+        "লিখিত আনুষ্ঠানিক বা প্রাতিষ্ঠানিক পত্রে (Formal writing) সাধারণত contractions ব্যবহার না করে পূর্ণ রূপ ব্যবহার করা ভালো।",
+        "'am not' এর কোনো সরাসরি স্ট্যান্ডার্ড সংকোচন নেই, তবে চলিত ভাষায় কখনো কখনো 'ain't' বলা হলেও ব্যাকরণে তা এড়িয়ে চলা হয় (সাধারণত 'I'm not' বলা হয়)।"
+      ],
+      "examples": [
+        { "en": "I don't know the answer. (Instead of: I do not know...)", "bn": "আমি উত্তরটি জানি না।" },
+        { "en": "She doesn't like tea. (Instead of: She does not like...)", "bn": "সে চা পছন্দ করে না।" },
+        { "en": "They won't come tomorrow. (won't = will not)", "bn": "তারা আগামীকাল আসবে না।" },
+        { "en": "I can't swim. (can't = cannot)", "bn": "আমি সাঁতার কাটতে পারি না।" }
+      ],
+      "tips": "স্পোকেন ইংলিশের চর্চা করার সময় সবসময় শর্ট ফর্মগুলো বলার অভ্যাস করুন। এটি আপনার কথা বলার গতি বাড়াতে দারুণ সাহায্য করবে।"
+    },
+    {
+      "name": "The Double Negatives Rule (ডাবল নেগেটিভের নিয়ম)",
+      "banglaName": "ডাবল নেগেটিভের নিয়ম",
+      "definition": "A double negative occurs when two negative words are used in the same sentence or clause. In standard English grammar, two negatives cancel each other out and make the sentence positive. Therefore, double negatives are considered incorrect and should be avoided in correct communication.",
+      "banglaDefinition": "যখন একই বাক্যে বা ক্লজে দুটি নেতিবাচক শব্দ ব্যবহার করা হয়, তখন তাকে Double Negative বলে। ইংরেজি ব্যাকরণের নিয়ম অনুযায়ী, দুটি নেতিবাচক শব্দ একে অপরকে খণ্ডন করে বাক্যটিকে হ্যাঁ-বোধক করে তোলে। তাই সঠিক ইংরেজি বলার জন্য ডাবল নেগেটিভের ব্যবহার এড়িয়ে চলতে হবে।",
+      "formula": "Incorrect: I don't know nothing. (Two negatives: don't + nothing)\nCorrect: I don't know anything. OR I know nothing.",
+      "rules": [
+        "একটি সাধারণ বাক্যে একটির বেশি নেতিবাচক শব্দ ব্যবহার করবেন না।",
+        "বাক্যে 'not' বা 'don't' থাকলে তার সাথে 'nothing', 'nobody', বা 'nowhere'-এর পরিবর্তে যথাক্রমে 'anything', 'anybody', বা 'anywhere' ব্যবহার করুন।"
+      ],
+      "examples": [
+        { "en": "I don't have any money. (Correct)", "bn": "আমার কাছে কোনো টাকা নেই।" },
+        { "en": "I have no money. (Correct)", "bn": "আমার কাছে টাকা নেই।" },
+        { "en": "I don't have no money. (Incorrect - double negative)", "bn": "আমার কাছে কোনো টাকা নেই। (ব্যাকরণগতভাবে ভুল বাক্য)" },
+        { "en": "She didn't see anyone. (Correct)", "bn": "সে কাউকে দেখেনি।" },
+        { "en": "She didn't see nobody. (Incorrect - double negative)", "bn": "সে কাউকে দেখেনি। (ভুল গঠন)" }
+      ],
+      "tips": "সহজ সূত্র: Not + Any = No। বাক্যে হয় 'Not... any' ব্যবহার করবেন, অথবা শুধু 'No' ব্যবহার করবেন। দুটি একসাথে ব্যবহার করবেন না।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I not like coffee.",
+      "correct": "I do not like coffee. OR I don't like coffee.",
+      "explanation": "Present Simple-এ সাহায্যকারী verb ছাড়া শুধু 'not' বসিয়ে বাক্য নেতিবাচক করা যায় না। Subject অনুযায়ী 'do not' বা 'does not' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "She doesn't likes apples.",
+      "correct": "She doesn't like apples.",
+      "explanation": "যখন বাক্যে 'doesn't' (বা does not) ব্যবহার করা হয়ে গেছে, তখন মূল verb-এর সাথে আর 's' বা 'es' যুক্ত হবে না। মূল verb-টি base form (like) হবে।"
+    },
+    {
+      "wrong": "They didn't went to the market.",
+      "correct": "They didn't go to the market.",
+      "explanation": "অতীত কালের নেতিবাচক বাক্যে 'didn't' ব্যবহার করার পর মূল verb-টির আর past form (went) হয় না। সেটির base form (go) ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "I don't know nothing about it.",
+      "correct": "I don't know anything about it. OR I know nothing about it.",
+      "explanation": "এটি একটি ডাবল নেগেটিভের ভুল। একই বাক্যে 'don't' এবং 'nothing' দুটি নেতিবাচক শব্দ একসাথে বসবে না। 'don't' এর সাথে 'anything' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "I have not money.",
+      "correct": "I have no money. OR I don't have any money.",
+      "explanation": "Noun (money)-এর পূর্বে সরাসরি 'not' বসে না। Noun-এর পূর্বে 'no' ব্যবহার করতে হয়, অথবা সাহায্যকারী verb-এর সাথে 'not' ও পরে 'any' ব্যবহার করতে হয়।"
+    },
+    {
+      "wrong": "She is not study now.",
+      "correct": "She is not studying now.",
+      "explanation": "চলমান কোনো কাজ (Present Continuous) নেতিবাচক করার সময় be-verb (is not) এর পর মূল verb-এর সাথে অবশ্যই 'ing' যুক্ত থাকতে হবে।"
+    },
+    {
+      "wrong": "He can to not drive.",
+      "correct": "He cannot drive. OR He can't drive.",
+      "explanation": "Modal verb-এর সাথে নেতিবাচক করার সময় 'not' শব্দটি মডালের ঠিক পরেই বসে এবং এর মাঝে কোনো 'to' বসে না।"
+    },
+    {
+      "wrong": "I never don't eat meat.",
+      "correct": "I never eat meat. OR I don't eat meat.",
+      "explanation": "'Never' এবং 'don't' দুটোই নেতিবাচক শব্দ। দুটি একসাথে ব্যবহার করলে অর্থ বদলে যায় বা বাক্যটি ভুল হয়। যেকোনো একটি শব্দ ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "We wasn't ready.",
+      "correct": "We weren't ready.",
+      "explanation": "Subject-verb agreement অনুযায়ী plural subject 'We'-এর সাথে 'wasn't' হয় না, 'weren't' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "He didn't called me.",
+      "correct": "He didn't call me.",
+      "explanation": "বাক্যে 'didn't' বা 'did not' থাকলে মূল verb-টি সবসময় base form (call) হয়, past form (called) ব্যবহার করা যাবে না।"
+    }
+  ]
 }

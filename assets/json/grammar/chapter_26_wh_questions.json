@@ -1,10 +1,184 @@
 {
   "chapter": 26,
   "level": "Intermediate",
-  "title": "WH Questions",
-  "icon": "question_answer",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "title": "WH Questions (Wh- প্রশ্নাবলী)",
+  "icon": "help_outline",
+  "description": "WH Questions are questions that begin with 'Wh-words' such as What, Who, Where, When, Why, Which, Whose, Whom, and How. They are used to ask for specific information rather than a simple 'yes' or 'no' answer. Mastering WH questions is one of the most important steps to having natural conversations in English.",
+  "banglaDescription": "WH Questions হলো এমন সব প্রশ্ন যা 'Wh-words' (যেমন: What, Who, Where, When, Why, Which, Whose, Whom এবং How) দিয়ে শুরু হয়। এগুলো সাধারণ 'হ্যাঁ' বা 'না' উত্তরের পরিবর্তে কোনো সুনির্দিষ্ট তথ্য জানতে ব্যবহার করা হয়। ইংরেজিতে স্বাভাবিকভাবে কথোপকথন চালিয়ে যাওয়ার জন্য Wh-questions গঠন করতে পারা অত্যন্ত গুরুত্বপূর্ণ একটি ধাপ।",
+  "topics": [
+    {
+      "name": "What are WH Questions? (WH Questions কী?)",
+      "banglaName": "WH Questions কী?",
+      "definition": "WH Questions are open-ended questions that seek information. Unlike closed questions (Yes/No questions), they cannot be answered with a simple 'yes' or 'no'. They require an explanation, description, or specific details. They always begin with a question word containing 'W' and 'H'.",
+      "banglaDefinition": "WH Questions হলো এমন কিছু প্রশ্ন যা কোনো তথ্য জানতে চায়। Yes/No প্রশ্নের মতো এগুলোকে কেবল 'হ্যাঁ' বা 'না' দিয়ে উত্তর দেওয়া যায় না। এগুলোর উত্তর দেওয়ার জন্য কোনো ব্যাখ্যা, বর্ণনা বা নির্দিষ্ট তথ্যের প্রয়োজন হয়। এগুলো সবসময় 'W' এবং 'H' যুক্ত প্রশ্নবোধক শব্দ দিয়ে শুরু হয়।",
+      "formula": "WH-Word + Auxiliary Verb + Subject + Main Verb + Object/Extension + ?",
+      "rules": [
+        "Wh-questions গঠনের সাধারণ নিয়ম হলো: প্রথমে Wh-word বসবে, তারপর সাহায্যকারী verb, তারপর subject এবং শেষে মূল verb বসবে।",
+        "এই প্রশ্নের উত্তর দেওয়ার সময় অবশ্যই পূর্ণাঙ্গ তথ্য প্রদান করতে হয়।",
+        "বাক্যের শেষে প্রশ্নবোধক চিহ্ন (?) বসানো বাধ্যতামূলক।"
+      ],
+      "examples": [
+        { "en": "Are you happy? (Yes/No Question)", "bn": "তুমি কি খুশি? (উত্তর: হ্যাঁ বা না)" },
+        { "en": "Why are you happy? (WH Question)", "bn": "তুমি কেন খুশি? (এখানে কারণ ব্যাখ্যা করতে হবে)" },
+        { "en": "What are you doing?", "bn": "তুমি কী করছ?" },
+        { "en": "Where do you live?", "bn": "তুমি কোথায় থাকো?" }
+      ],
+      "tips": "মনে রাখবেন, Wh-word দিয়ে শুরু হওয়া প্রশ্নের উত্তর কখনোই শুধু 'Yes' বা 'No' দিয়ে শেষ করা যায় না।"
+    },
+    {
+      "name": "The 9 WH-Words and Their Meanings (৯টি Wh-Word এবং তাদের ব্যবহার)",
+      "banglaName": "৯টি Wh-Word এবং তাদের ব্যবহার",
+      "definition": "There are nine primary WH-words used in English, each serving a specific purpose to ask about people, places, things, reasons, times, choices, possessions, or manners.",
+      "banglaDefinition": "ইংরেজিতে প্রধানত নয়টি Wh-word ব্যবহৃত হয়। ব্যক্তি, বস্তু, স্থান, সময়, কারণ, মালিকানা, পছন্দ বা পদ্ধতি সম্পর্কে জানতে একেকটি শব্দ নির্দিষ্ট উদ্দেশ্যে ব্যবহৃত হয়।",
+      "formula": "1. What (কী) - Ask about things/actions\n2. Who (কে) - Ask about people (subject)\n3. Where (কোথায়) - Ask about places\n4. When (কখন) - Ask about time\n5. Why (কেন) - Ask about reasons\n6. How (কীভাবে/কেমন) - Ask about manners/condition\n7. Which (কোনটি) - Ask about choices\n8. Whose (কার) - Ask about possession\n9. Whom (কাকে) - Ask about people (object)",
+      "rules": [
+        "What: কোনো বস্তু বা কাজ সম্পর্কে জানতে ব্যবহৃত হয় (যেমন: What is this?)।",
+        "Who: কে কাজটি করেছে বা কর্তা কে তা জানতে ব্যবহৃত হয় (যেমন: Who is that?)।",
+        "Where: স্থান বা অবস্থান জানতে ব্যবহৃত হয় (যেমন: Where is my key?)।",
+        "When: সময় বা তারিখ জানতে ব্যবহৃত হয় (যেমন: When is the meeting?)।",
+        "Why: কোনো কাজের কারণ বা উদ্দেশ্য জানতে ব্যবহৃত হয় (যেমন: Why are you crying?)।",
+        "How: কোনো কিছু কীভাবে ঘটে বা কেমন অবস্থায় আছে তা জানতে ব্যবহৃত হয় (যেমন: How are you?)।"
+      ],
+      "examples": [
+        { "en": "Who is your English teacher? (Asks about person)", "bn": "তোমার ইংরেজি শিক্ষক কে?" },
+        { "en": "Where is the nearest hospital? (Asks about location)", "bn": "সবচেয়ে কাছের হাসপাতালটি কোথায়?" },
+        { "en": "When does the train arrive? (Asks about time)", "bn": "ট্রেনটি কখন পৌঁছাবে?" },
+        { "en": "Why did you call me? (Asks about reason)", "bn": "তুমি আমাকে কেন ফোন করেছিলে?" },
+        { "en": "Which color do you prefer? (Asks about choice)", "bn": "তুমি কোন রঙটি বেশি পছন্দ করো?" },
+        { "en": "Whose bag is this? (Asks about possession)", "bn": "এটি কার ব্যাগ?" }
+      ],
+      "tips": "দৈনন্দিন কথোপকথনে এই ৯টি শব্দের অর্থ এবং ব্যবহার খুব ভালোভাবে আয়ত্ত করা অত্যন্ত জরুরি, কারণ এগুলো ছাড়া কোনো আলাপচারিতা শুরু বা বজায় রাখা সম্ভব নয়।"
+    },
+    {
+      "name": "Structure & Word Order (প্রশ্ন গঠনের ব্যাকরণগত নিয়ম)",
+      "banglaName": "প্রশ্ন গঠনের ব্যাকরণগত নিয়ম",
+      "definition": "In WH questions, the word order is inverted compared to normal sentences. The auxiliary (helping) verb must come before the subject. If there is no auxiliary verb in the sentence, we must use do, does, or did.",
+      "banglaDefinition": "Wh-questions-এর ক্ষেত্রে শব্দের ক্রম সাধারণ বাক্যের তুলনায় উল্টে যায়। সাহায্যকারী (helping) verb-টিকে অবশ্যই subject-এর আগে বসাতে হবে। যদি বাক্যে কোনো সাহায্যকারী verb না থাকে, তবে tense অনুযায়ী do, does বা did ব্যবহার করতে হবে।",
+      "formula": "Structure 1 (With Aux/Modal): WH-Word + is/are/can/should + Subject + Verb + ?\nStructure 2 (Without Aux): WH-Word + do/does/did + Subject + Verb (Base form) + ?",
+      "rules": [
+        "যখন বাক্যে be-verb বা modal verb থাকে, তখন তা সরাসরি subject-এর পূর্বে চলে আসে (যেমন: Where are you going?)।",
+        "Present Indefinite tense-এর ক্ষেত্রে subject অনুযায়ী do বা does ব্যবহার করা হয় এবং Past Indefinite-এর ক্ষেত্রে did ব্যবহার করা হয়।",
+        "do, does বা did ব্যবহার করলে মূল verb-টি সর্বদা base form (V1) হয়।"
+      ],
+      "examples": [
+        { "en": "Where are you going? (Using be-verb 'are')", "bn": "তুমি কোথায় যাচ্ছ?" },
+        { "en": "What can I do for you? (Using modal verb 'can')", "bn": "আমি আপনার জন্য কী করতে পারি?" },
+        { "en": "Where do you work? (Present simple - plural subject)", "bn": "তুমি কোথায় কাজ করো?" },
+        { "en": "Where does she work? (Present simple - singular subject)", "bn": "সে কোথায় কাজ করে?" },
+        { "en": "Where did you go yesterday? (Past simple - uses did + go)", "bn": "গতকাল তুমি কোথায় গিয়েছিলে?" }
+      ],
+      "tips": "সহজ ট্রিক: একটি সাধারণ প্রশ্নকে মনে মনে Yes/No প্রশ্ন করুন (যেমন: 'Do you live here?'), তারপর তার আগে একটি Wh-word বসিয়ে দিন (যেমন: 'Where do you live?')। প্রশ্ন গঠন সঠিক হয়ে যাবে।"
+    },
+    {
+      "name": "Subject Questions vs Object Questions (Subject বনাম Object প্রশ্ন)",
+      "banglaName": "Subject বনাম Object প্রশ্ন",
+      "definition": "Sometimes, the WH-word itself acts as the subject of the sentence. When a WH-word (usually Who or What) is the subject, we do not use helping verbs like do, does, or did. We use the normal word order of a statement.",
+      "banglaDefinition": "কখনও কখনও Wh-word নিজেই বাক্যের subject বা কর্তা হিসেবে কাজ করে। যখন কোনো Wh-word (সাধারণত Who বা What) বাক্যের subject হয়, তখন প্রশ্ন করার জন্য do, does বা did-এর মতো সাহায্যকারী verb ব্যবহার করা হয় না। বাক্যটি তখন সাধারণ বিবৃতির মতো স্বাভাবিক ক্রমানুসারেই গঠিত হয়।",
+      "formula": "Subject Question: WH-Word (Subject) + Verb + Object + ?\nObject Question: WH-Word (Object) + do/does/did + Subject + Verb + ?",
+      "rules": [
+        "যদি প্রশ্নটি কর্তাকে খোঁজার জন্য হয় (Who performed the action?), তবে do/does/did বসবে না।",
+        "যদি প্রশ্নটি কর্ম বা অবজেক্টকে খোঁজার জন্য হয় (Who did the subject act upon?), তবে do/does/did অবশ্যই বসবে।"
+      ],
+      "examples": [
+        { "en": "Who wrote this book? (Subject Question - Who is the subject, no 'did')", "bn": "এই বইটি কে লিখেছেন? (এখানে 'কে' নিজেই কর্তা)" },
+        { "en": "Who did you meet yesterday? (Object Question - You is the subject, did is used)", "bn": "গতকাল তুমি কার সাথে দেখা করেছিলে? (এখানে কর্তা হলো 'তুমি')" },
+        { "en": "What happened? (Subject Question - What is the subject)", "bn": "কী ঘটেছিল?" },
+        { "en": "What did you see? (Object Question - You is the subject)", "bn": "তুমি কী দেখেছিলে?" }
+      ],
+      "tips": "যখন উত্তরটি নিজেই বাক্যের শুরুতে বসানো যায়, তখন সেটি Subject Question। যেমন: 'Rina wrote this book' → 'Who wrote this book?' (কোনো did বসবে না)।"
+    },
+    {
+      "name": "Advanced Uses of 'How' (How-এর বিভিন্ন গুরুত্বপূর্ণ ব্যবহার)",
+      "banglaName": "How-এর বিভিন্ন গুরুত্বপূর্ণ ব্যবহার",
+      "definition": "The word 'How' is highly versatile in English. By combining 'How' with adjectives or adverbs, we can ask about quantity, frequency, distance, duration, age, and scale.",
+      "banglaDefinition": "'How' শব্দটি ইংরেজিতে অত্যন্ত বহুমুখী। How-এর সাথে বিভিন্ন adjective বা adverb যুক্ত করে আমরা সংখ্যা, পরিমাণ, পুনরাবৃত্তি বা ফ্রিকোয়েন্সি, দূরত্ব, সময়কাল, বয়স এবং তীব্রতা সম্পর্কে প্রশ্ন করতে পারি।",
+      "formula": "- How many + Countable Noun (সংখ্যা জানতে)\n- How much + Uncountable Noun (পরিমাণ/দাম জানতে)\n- How often (কত ঘন ঘন/ফ্রিকোয়েন্সি জানতে)\n- How long (সময়কাল/দৈর্ঘ্য জানতে)\n- How far (দূরত্ব জানতে)\n- How old (বয়স জানতে)",
+      "rules": [
+        "গণনা করা যায় এমন জিনিসের ক্ষেত্রে 'How many' বসবে (যেমন: How many books)।",
+        "গণনা করা যায় না এমন জিনিসের ক্ষেত্রে বা কোনো কিছুর দাম জানতে 'How much' বসবে (যেমন: How much milk/How much is this?)।",
+        "কত সময় ধরে কোনো কাজ চলছে তা জানতে 'How long' বসে।"
+      ],
+      "examples": [
+        { "en": "How many siblings do you have?", "bn": "তোমার কতজন ভাইবোন আছে?" },
+        { "en": "How much does this phone cost?", "bn": "এই ফোনটির দাম কত?" },
+        { "en": "How often do you go to the gym?", "bn": "তুমি কত ঘন ঘন জিমে যাও?" },
+        { "en": "How long have you been waiting?", "bn": "তুমি কতক্ষণ ধরে অপেক্ষা করছ?" },
+        { "en": "How far is the airport from here?", "bn": "এখান থেকে বিমানবন্দর কত দূরে?" },
+        { "en": "How old are you?", "bn": "তোমার বয়স কত?" }
+      ],
+      "tips": "স্পোকেন ইংলিশের জন্য 'How often' (কতবার/কত ঘন ঘন) এবং 'How long' (কতক্ষণ ধরে) শব্দদুটির ব্যবহার খুব বেশি প্রয়োজন হয়।"
+    },
+    {
+      "name": "Prepositions in WH Questions (WH Questions-এ Preposition-এর ব্যবহার)",
+      "banglaName": "WH Questions-এ Preposition-এর ব্যবহার",
+      "definition": "In formal English, prepositions are placed at the beginning of WH questions. However, in casual and natural spoken English, it is much more common and natural to place the preposition at the very end of the sentence.",
+      "banglaDefinition": "আনুষ্ঠানিক বা ফরমাল ইংরেজিতে preposition-কে সাধারণত Wh-questions-এর শুরুতে বসানো হয়। কিন্তু সাধারণ কথ্য বা স্পোকেন ইংরেজিতে preposition-টিকে বাক্যের একদম শেষে বসানো অনেক বেশি স্বাভাবিক এবং প্রচলিত।",
+      "formula": "Formal: Preposition + WH-Word + Auxiliary + Subject + Verb + ?\nInformal/Spoken: WH-Word + Auxiliary + Subject + Verb + Preposition + ?",
+      "rules": [
+        "কথা বলার সময় preposition সবসময় বাক্যের শেষে বসানোর চেষ্টা করুন, এটি আপনার ইংরেজিকে আরও সাবলীল দেখাবে।",
+        "Who-এর সাথে preposition শেষে বসলে 'Who' ই ব্যবহৃত হয়, কিন্তু শুরুতে বসলে ব্যাকরণগত নিয়মে 'Whom' বলতে হয় (যেমন: To whom vs Who to)।"
+      ],
+      "examples": [
+        { "en": "Where are you from? (Natural Spoken)", "bn": "তুমি কোথা থেকে এসেছ? (খুবই সাধারণ ব্যবহার)" },
+        { "en": "From where are you? (Very Formal/Stiff)", "bn": "তুমি কোথা হতে এসেছ? (অত্যন্ত আনুষ্ঠানিক)" },
+        { "en": "Who are you talking to? (Natural Spoken)", "bn": "তুমি কার সাথে কথা বলছ?" },
+        { "en": "To whom are you talking? (Very Formal)", "bn": "আপনি কার সাথে কথা বলিতেছেন?" },
+        { "en": "What are you looking for?", "bn": "তুমি কী খুঁজছ?" },
+        { "en": "Who did you go with?", "bn": "তুমি কার সাথে গিয়েছিলে?" }
+      ],
+      "tips": "স্পোকেন ইংলিশের জন্য 'Where are you from?' বা 'Who are you talking to?' এর মতো বাক্যগুলো হুবহু মুখস্থ করে রাখুন, কারণ এগুলো দৈনন্দিন জীবনে সারাক্ষণ ব্যবহার করতে হয়।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Where you are going?",
+      "correct": "Where are you going?",
+      "explanation": "প্রশ্নবোধক বাক্যে সাহায্যকারী verb (are) অবশ্যই subject (you)-এর আগে বসাতে হবে। সাধারণ বাক্যের মতো subject-এর পরে verb বসালে তা প্রশ্ন হবে না।"
+    },
+    {
+      "wrong": "Why she is crying?",
+      "correct": "Why is she crying?",
+      "explanation": "এখানেও একই ভুল। 'Why' এর পরেই সাহায্যকারী verb 'is' বসবে, তারপর subject 'she' বসবে।"
+    },
+    {
+      "wrong": "What did you saw yesterday?",
+      "correct": "What did you see yesterday?",
+      "explanation": "যখন বাক্যে অতীত নির্দেশক সাহায্যকারী verb 'did' ব্যবহার করা হয়, তখন মূল verb-টি সর্বদা তার সাধারণ বা base form (see)-এ ফিরে আসে। 'did saw' বলা ভুল।"
+    },
+    {
+      "wrong": "Where do you live? - Yes, I do.",
+      "correct": "Where do you live? - I live in Dhaka.",
+      "explanation": "Wh-questions-এর উত্তর কখনো 'Yes/No' দিয়ে দেওয়া যায় না। এর উত্তরে নির্দিষ্ট তথ্য (যেমন স্থানের নাম) উল্লেখ করতে হবে।"
+    },
+    {
+      "wrong": "Who did write this letter?",
+      "correct": "Who wrote this letter?",
+      "explanation": "এটি একটি Subject Question (কে লিখেছে)। যখন Wh-word নিজেই বাক্যের কর্তা হয়, তখন affirmative প্রশ্নে 'did' ব্যবহার করার প্রয়োজন নেই, সরাসরি মূল verb-এর past form বসে।"
+    },
+    {
+      "wrong": "How many money do you need?",
+      "correct": "How much money do you need?",
+      "explanation": "'Money' একটি uncountable noun (ব্যাকরণগতভাবে গণনা অযোগ্য)। তাই এর সাথে 'How many' না বসে 'How much' বসবে।"
+    },
+    {
+      "wrong": "How often do you go to school? - For 5 years.",
+      "correct": "How often do you go to school? - Five days a week.",
+      "explanation": "'How often' দিয়ে কাজের ফ্রিকোয়েন্সি বা কত ঘন ঘন করা হয় তা জানতে চাওয়া হয় (যেমন সপ্তাহে ৫ দিন)। কত সময় ধরে করা হচ্ছে (duration) তা জানতে 'How long' ব্যবহার করতে হয়।"
+    },
+    {
+      "wrong": "Who's book is this?",
+      "correct": "Whose book is this?",
+      "explanation": "'Who's' মানে হলো 'Who is' (কে হয়)। কিন্তু মালিকানা বা কার বই তা বোঝাতে 'Whose' (কার) ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "Why you didn't call me?",
+      "correct": "Why didn't you call me?",
+      "explanation": "নেতিবাচক প্রশ্নের ক্ষেত্রেও সংকুচিত সাহায্যকারী verb (didn't) টি subject (you)-এর আগে বসাতে হবে।"
+    },
+    {
+      "wrong": "What time it is?",
+      "correct": "What time is it?",
+      "explanation": "সময় জিজ্ঞেস করার জন্য ইংরেজিতে সঠিক শব্দক্রম হলো: 'What time is it?' যেখানে verb 'is' সাবজেক্ট 'it'-এর আগে বসে।"
+    }
+  ]
 }
