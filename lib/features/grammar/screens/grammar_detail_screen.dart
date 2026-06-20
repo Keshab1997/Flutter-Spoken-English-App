@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
@@ -18,6 +19,8 @@ class GrammarDetailScreen extends ConsumerStatefulWidget {
 
 class _GrammarDetailScreenState extends ConsumerState<GrammarDetailScreen> {
   final _scrollController = ScrollController();
+  double _lastScrollOffset = 0;
+  Timer? _debounceTimer;
 
   @override
   void initState() {
@@ -55,12 +58,16 @@ class _GrammarDetailScreenState extends ConsumerState<GrammarDetailScreen> {
   void _onScroll() {
     if (!_scrollController.hasClients) return;
     _lastScrollOffset = _scrollController.offset;
+    // Debounce: save scroll position 300ms after user stops scrolling
+    _debounceTimer?.cancel();
+    _debounceTimer = Timer(const Duration(milliseconds: 300), () {
+      _saveScrollPosition();
+    });
   }
-
-  double _lastScrollOffset = 0;
 
   @override
   void dispose() {
+    _debounceTimer?.cancel();
     _saveScrollPosition();
     _scrollController.removeListener(_onScroll);
     _scrollController.dispose();
