@@ -1,10 +1,61 @@
 {
   "chapter": 46,
   "level": "Intermediate",
-  "title": "Direct Speech",
+  "title": "Direct Speech (প্রত্যক্ষ উক্তি)",
   "icon": "format_quote",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Direct speech repeats or quotes the exact words spoken by someone. In spoken English, using direct speech makes storytelling more vivid, dramatic, and engaging.",
+  "banglaDescription": "Direct Speech (প্রত্যক্ষ উক্তি) বলতে কোনো ব্যক্তির মুখের অবিকল বা হুবহু কথা পুনরাবৃত্তি করা বা উদ্ধৃত করাকে বোঝায়। ইংরেজিতে গল্প বলার সময় বা কারও বক্তব্য হুবহু তুলে ধরার সময় ডিরেক্ট স্পিচ ব্যবহার করলে কথা অনেক বেশি আকর্ষণীয় ও প্রাণবন্ত শোনায়।",
+  "topics": [
+    {
+      "name": "Understanding Direct Speech (Direct Speech বোঝা)",
+      "banglaName": "Direct Speech বোঝা",
+      "definition": "Direct speech involves using the exact words of the speaker, enclosed within quotation marks ('...' or \"...\"), usually introduced by a reporting verb like 'say' or 'ask'.",
+      "banglaDefinition": "বক্তার কথাটিকে পরিবর্তন না করে তার নিজের মুখের হুবহু শব্দগুলোকে উদ্ধৃতি চিহ্নের (\"...\") ভেতরে রাখাই হলো Direct Speech। সাধারণত 'say' বা 'ask' জাতীয় reporting verb দিয়ে এটি শুরু হয়।",
+      "formula": "Reporting Clause (Subject + say/said) + , + \"Exact Speech of Speaker (Starting with Capital Letter)\"",
+      "rules": [
+        "উদ্ধৃত বাক্যটি (exact speech) শুরু করার আগে একটি কমা (,) বসাতে হয়।",
+        "বক্তার আসল বক্তব্যটি সর্বদা উদ্ধৃতি চিহ্নের (\"...\") ভেতরে থাকবে এবং এর প্রথম অক্ষরটি বড় হাতের (Capital Letter) হবে।"
+      ],
+      "examples": [
+        { "en": "He said, \"I am learning English.\"", "bn": "সে বলেছিল, \"আমি ইংরেজি শিখছি।\"" },
+        { "en": "Rita said to Rahul, \"I will meet you tomorrow.\"", "bn": "রিতা রাহুলকে বলেছিল, \"আমি আগামীকাল তোমার সাথে দেখা করব।\"" },
+        { "en": "\"Where are you going?\" asked my father.", "bn": "\"তুমি কোথায় যাচ্ছ?\" আমার বাবা জিজ্ঞেস করেছিলেন।" }
+      ],
+      "tips": "ইংরেজিতে কথা বলার সময় ডিরেক্ট স্পিচ প্রকাশের সময় আপনার গলার স্বরে কিছুটা পরিবর্তন আনুন অথবা উদ্ধৃতি চিহ্নের অংশের আগে সামান্য বিরতি (pause) দিন।"
+    },
+    {
+      "name": "Say vs. Tell in Direct Speech (Direct Speech-এ Say এবং Tell-এর ব্যবহার)",
+      "banglaName": "Direct Speech-এ Say এবং Tell-এর ব্যবহার",
+      "definition": "Choosing between 'say' and 'tell' is crucial in direct speech. 'Say' is used when we don't mention the listener, whereas 'tell' must be followed by a personal object (the listener).",
+      "banglaDefinition": "ডিরেক্ট স্পিচে 'say' এবং 'tell' ব্যবহারের ক্ষেত্রে সতর্ক হওয়া প্রয়োজন। শ্রোতার নাম উল্লেখ না থাকলে 'say' বসে, আর শ্রোতার নাম সরাসরি থাকলে 'tell' বা 'say to' ব্যবহার করতে হয়।",
+      "formula": "- Subject + say/said + , + \"...\"\n- Subject + tell/told + Object + , + \"...\"\n- Subject + say/said to + Object + , + \"...\"",
+      "rules": [
+        "'Tell' বা 'Told'-এর পরে কোনো 'to' বসে না, সরাসরি শ্রোতার নাম বা pronoun বসে।",
+        "'Say' বা 'Said' ব্যবহার করলে শ্রোতার পূর্বে 'to' বসানো বাধ্যতামূলক।"
+      ],
+      "examples": [
+        { "en": "He said, \"I am busy.\"", "bn": "সে বলেছিল, \"আমি ব্যস্ত।\"" },
+        { "en": "He told me, \"I am busy.\"", "bn": "সে আমাকে বলেছিল, \"আমি ব্যস্ত।\"" },
+        { "en": "He said to me, \"I am busy.\"", "bn": "সে আমাকে বলেছিল, \"আমি ব্যস্ত।\"" }
+      ],
+      "tips": "কথা বলার সময় 'He told me' ব্যবহার করাটা 'He said to me'-র চেয়ে বেশি সহজ, সংক্ষিপ্ত এবং ফ্লুয়েন্ট শোনায়।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "He told to me, \"I am tired.\"",
+      "correct": "He told me, \"I am tired.\" OR He said to me, \"I am tired.\"",
+      "explanation": "'Told'-এর পরে সরাসরি Object বসে, এর সাথে 'to' যুক্ত করা ব্যাকরণগতভাবে ভুল।"
+    },
+    {
+      "wrong": "She said, \"i am happy.\"",
+      "correct": "She said, \"I am happy.\"",
+      "explanation": "উদ্ধৃতি চিহ্নের ভেতরের প্রথম অক্ষরটি সর্বদা Capital letter দিয়ে শুরু হতে হবে, এমনকি সেটি যদি অন্য কোনো pronoun-ও হয়ে থাকে (এক্ষেত্রে 'I' সর্বদা ক্যাপিটাল হয়)।"
+    },
+    {
+      "wrong": "He said, I am ready.",
+      "correct": "He said, \"I am ready.\"",
+      "explanation": "বক্তার মুখের হুবহু বাক্য প্রকাশ করার সময় উদ্ধৃতি চিহ্ন বা Quotation mark ব্যবহার না করলে সেটি Direct Speech হিসেবে গণ্য হয় না।"
+    }
+  ]
 }

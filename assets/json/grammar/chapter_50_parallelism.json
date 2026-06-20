@@ -1,10 +1,80 @@
 {
   "chapter": 50,
   "level": "Intermediate",
-  "title": "Parallelism",
+  "title": "Parallelism (বাক্যের সমান্তরাল গঠন)",
   "icon": "linear_scale",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Parallelism is the use of matching grammatical structures for words, phrases, or clauses in a list or comparison. Applying parallelism makes your spoken English sound structured, balanced, and easy to follow.",
+  "banglaDescription": "Parallelism (সমান্তরাল গঠন) হলো একটি বাক্যের একাধিক শব্দ, ফ্রেজ বা ক্লজের মধ্যে একই ধরনের ব্যাকরণগত কাঠামো ব্যবহার করা। প্যারালালিজম মেনে কথা বললে আপনার স্পোকেন ইংলিশ শুনতে সুসংগঠিত, ভারসাম্যপূর্ণ এবং স্পষ্ট শোনায়।",
+  "topics": [
+    {
+      "name": "Parallelism with Gerunds and Infinitives (Gerund ও Infinitive-এর সমান্তরাল ব্যবহার)",
+      "banglaName": "Gerund ও Infinitive-এর সমান্তরাল ব্যবহার",
+      "definition": "When listing multiple activities, ensure that all items in the list are in the same form (either all gerunds with '-ing' or all infinitives with 'to').",
+      "banglaDefinition": "কোনো বাক্যে একাধিক কাজের তালিকা বা পছন্দের কথা উল্লেখ করার সময় সবগুলো কাজকে একই রূপে রাখতে হবে। অর্থাৎ সবগুলোকে হয় Gerund (verb+ing) অথবা সবগুলোকে Infinitive (to + verb) হিসেবে ব্যবহার করতে হবে; দুটি রূপ মিলিয়ে ফেলা যাবে না।",
+      "formula": "- Correct: Subject + like + Verb-ing, Verb-ing, and Verb-ing\n- Correct: Subject + like + to Verb, to Verb, and to Verb",
+      "rules": [
+        "যদি তালিকার প্রথম কাজটি 'ing' যুক্ত শব্দ দিয়ে শুরু করেন, তবে তালিকার বাকি কাজগুলোও 'ing' যুক্ত করতে হবে।",
+        "একই বাক্যে Gerund এবং Infinitive একসাথে মিলিয়ে ফেলে সমান্তরাল ভারসাম্য নষ্ট করা যাবে না।"
+      ],
+      "examples": [
+        { "en": "Incorrect: I like swimming, cooking, and to read.", "bn": "ভুল গঠন (swimming এবং cooking-এর পর to read ব্যবহার করায় সমান্তরালতা নষ্ট হয়েছে।)" },
+        { "en": "Correct: I like swimming, cooking, and reading.", "bn": "আমি সাঁতার কাটা, রান্না করা এবং বই পড়া পছন্দ করি। (সবগুলোই Gerund)" },
+        { "en": "Correct: I like to swim, to cook, and to read.", "bn": "আমি সাঁতার কাটতে, রান্না করতে এবং বই পড়তে পছন্দ করি। (সবগুলোই Infinitive)" }
+      ],
+      "tips": "স্পোকেন ইংলিশে নিজের শখ বা প্রতিদিনের কাজের তালিকা বলতে Gerund প্যাটার্নটি ব্যবহার করা সবচেয়ে বেশি সহজ ও স্বাভাবিক শোনায়।"
+    },
+    {
+      "name": "Parallelism in Lists and Series (তালিকা প্রকাশের সময় সমান্তরাল গঠন)",
+      "banglaName": "তালিকা প্রকাশের সময় সমান্তরাল গঠন",
+      "definition": "Items in a series (nouns, verbs, adjectives) must be in parallel form to maintain flow and clarity.",
+      "banglaDefinition": "কোনো বাক্যে একগুচ্ছ জিনিস, গুণ বা কাজের তালিকা দেওয়ার সময় প্রতিটি পদের ব্যাকরণগত শ্রেণী (যেমন: সবগুলো Noun, সবগুলো Adjective, বা সবগুলো Verb) এক হতে হবে।",
+      "formula": "Subject + is + Adjective, Adjective, and Adjective",
+      "rules": [
+        "কাউকে বর্ণনা করার সময় সবগুলো পদ Adjective হতে হবে। মাঝখানে হঠাৎ Noun বা Verb ক্লজ বসানো যাবে না।",
+        "অতীতে করা কয়েকটি কাজের তালিকা দেওয়ার সময় সবগুলো Verb-কে Past Tense-এ রাখতে হবে।"
+      ],
+      "examples": [
+        { "en": "Incorrect: He is smart, hardworking, and has patience.", "bn": "ভুল গঠন (smart ও hardworking বিশেষণ হলেও has patience একটি ক্লজ রূপ।)" },
+        { "en": "Correct: He is smart, hardworking, and patient.", "bn": "সে বুদ্ধিমান, কঠোর পরিশ্রমী এবং ধৈর্যশীল। (সবগুলোই Adjectives)" },
+        { "en": "Incorrect: She entered the room, sat down, and is writing a letter.", "bn": "ভুল গঠন (প্রথম দুটি কাজ অতীতে হলেও শেষেরটি বর্তমানে করা হয়েছে।)" },
+        { "en": "Correct: She entered the room, sat down, and wrote a letter.", "bn": "সে ঘরে প্রবেশ করল, বসল এবং একটি চিঠি লিখল। (সবগুলোই Past Verb)" }
+      ],
+      "tips": "চাকরির ইন্টারভিউতে নিজের স্কিল বা গুণাবলীর বর্ণনা দেওয়ার সময় সমান্তরাল গঠনে কথা বলুন। এটি আপনার পেশাদারিত্বের প্রকাশ ঘটায়।"
+    },
+    {
+      "name": "Parallelism with Correlative Conjunctions (কোরিলেটিভ কনজাংশনের সমান্তরাল ব্যবহার)",
+      "banglaName": "কোরিলেটিভ কনজাংশনের সমান্তরাল ব্যবহার",
+      "definition": "Words joined by correlative conjunctions (either...or, neither...nor, not only...but also) must have matching grammatical structures after each part.",
+      "banglaDefinition": "যুগ্ম সংযোগকারী শব্দ (যেমন: either...or, neither...nor, not only...but also) দ্বারা যুক্ত বাক্যের প্রথম অংশের পর যে ব্যাকরণগত গঠন (Noun/Verb/Adjective) বসবে, দ্বিতীয় অংশের পরেও ঠিক একই গঠন বসাতে হবে।",
+      "formula": "- Not only + Noun + but also + Noun\n- Either + Verb + or + Verb",
+      "rules": [
+        "not only-এর পর যদি সরাসরি noun বসে, তবে but also-এর পরেও noun বসাতে হবে।",
+        "সহজ কথায়, দুটি অংশের ভারসাম্য বজায় রাখা আবশ্যক।"
+      ],
+      "examples": [
+        { "en": "Incorrect: He wants either to buy a phone or buying a tablet.", "bn": "ভুল গঠন (either-এর পর to buy বসলেও or-এর পর buying বসানো হয়েছে।)" },
+        { "en": "Correct: He wants either to buy a phone or to buy a tablet.", "bn": "সে হয় একটি ফোন কিনতে চায় অথবা একটি ট্যাবলেট কিনতে চায়।" },
+        { "en": "Incorrect: She is not only talented but also she works hard.", "bn": "ভুল গঠন (talented একটি adjective কিন্তু she works hard একটি বাক্য অংশ।)" },
+        { "en": "Correct: She is not only talented but also hardworking.", "bn": "সে কেবল প্রতিভাবানই নয়, কঠোর পরিশ্রমীও।" }
+      ],
+      "tips": "কথোপকথনে কোনো বিষয়ের ওপর জোর দিতে 'not only...but also' ব্যবহার করতে পারেন, তবে খেয়াল রাখবেন যাতে দুই পাশের গঠন একই রকম থাকে।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She likes to sing and dancing.",
+      "correct": "She likes to sing and dance. OR She likes singing and dancing.",
+      "explanation": "একই বাক্যে 'to sing' (Infinitive) এবং 'dancing' (Gerund) একসাথে ব্যবহার করলে প্যারালালিজম নষ্ট হয়। হয় দুটিকেই Infinitive অথবা দুটিকেই Gerund করতে হবে।"
+    },
+    {
+      "wrong": "The movie was action-packed, exciting, and a comedy.",
+      "correct": "The movie was action-packed, exciting, and comedic.",
+      "explanation": "তালিকার প্রথম দুটি শব্দ বিশেষণ (Adjectives) হলেও শেষ শব্দটি বিশেষ্য (Noun - a comedy)। সমান্তরাল ভারসাম্য রাখতে শেষ শব্দটিকেও বিশেষণে (comedic) রূপান্তর করতে হবে।"
+    },
+    {
+      "wrong": "We need to analyze the data, write the report, and to present it.",
+      "correct": "We need to analyze the data, write the report, and present it.",
+      "explanation": "তালিকার প্রথম ক্রিয়াটির সাথে একবার 'to' যুক্ত করা হলে পরবর্তীগুলোর সাথে বারবার 'to' বসানোর প্রয়োজন নেই। সবগুলো মূল verb-এর বেস ফর্ম হিসেবে সরাসরি বসানো উচিত।"
+    }
+  ]
 }

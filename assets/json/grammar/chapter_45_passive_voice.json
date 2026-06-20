@@ -1,10 +1,84 @@
 {
   "chapter": 45,
   "level": "Intermediate",
-  "title": "Passive Voice",
+  "title": "Passive Voice (কর্মবাচ্য)",
   "icon": "hearing",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Passive Voice is used when we want to focus on the action or the receiver of the action rather than the person performing it. In spoken English, passive voice is crucial for polite, formal, or objective statements, especially when the doer is unknown or unimportant.",
+  "banglaDescription": "Passive Voice (কর্মবাচ্য) তখনই ব্যবহৃত হয় যখন আমরা কাজের কর্তা (doer)-এর চেয়ে কাজটি (action) বা যার ওপর কাজটি করা হয়েছে তার ওপর বেশি জোর দিতে চাই। ইংরেজিতে নম্রভাবে বা কোনো তথ্যপূর্ণ ক্ষেত্রে কথা বলার সময় প্যাসিভ ভয়েসের ব্যবহার জানা অপরিহার্য, বিশেষ করে যখন কাজটি কে করেছে তা অজানা বা অপ্রয়োজনীয় থাকে।",
+  "topics": [
+    {
+      "name": "What is Passive Voice? (Passive Voice কী?)",
+      "banglaName": "Passive Voice কী?",
+      "definition": "In Passive Voice, the subject receives the action of the verb. It is formed using a form of the verb 'be' (am, is, are, was, were, been, being) followed by the past participle (V3) of the main verb.",
+      "banglaDefinition": "Passive Voice-এ সাবজেক্ট নিজে কাজটি সরাসরি করে না, বরং অবজেক্ট বা অন্য কারও দ্বারা করা কাজ সাবজেক্টের ওপর এসে পড়ে। এটি গঠন করতে 'be' verb-এর সাহায্যকারী রূপ এবং মূল verb-এর Past Participle (V3) রূপ ব্যবহার করা হয়।",
+      "formula": "Object (acting as Subject) + Auxiliary Verb (be/is/are/was/were) + Past Participle (V3) + [by + Agent]",
+      "rules": [
+        "Active বাক্যের Object-টি Passive বাক্যের শুরুতে Subject হিসেবে বসে।",
+        "Tense ও Subject-এর বচন (Number) অনুযায়ী সঠিক auxiliary verb ব্যবহার করতে হবে।",
+        "মূল verb-টি সবসময় Past Participle (V3) ফর্মে পরিবর্তিত হয়।"
+      ],
+      "examples": [
+        { "en": "Active: He cleans the room every day.", "bn": "সে প্রতিদিন ঘরটি পরিষ্কার করে।" },
+        { "en": "Passive: The room is cleaned every day.", "bn": "ঘরটি প্রতিদিন পরিষ্কার করা হয়।" },
+        { "en": "Active: Shakespeare wrote Hamlet.", "bn": "শেক্সপিয়র হ্যামলেট লিখেছিলেন।" },
+        { "en": "Passive: Hamlet was written by Shakespeare.", "bn": "হ্যামলেট শেক্সপিয়র কর্তৃক লিখিত হয়েছিল।" }
+      ],
+      "tips": "স্পোকেন ইংলিশে প্যাসিভ করার সময় সাধারণত 'by him' বা 'by them' উল্লেখ করার প্রয়োজন হয় না, কারণ বক্তার মূল লক্ষ্য থাকে কাজটি বোঝানো, কে করেছে তা নয়।"
+    },
+    {
+      "name": "Passive in Tenses (টেন্স অনুযায়ী প্যাসিভ ভয়েস)",
+      "banglaName": "টেন্স অনুযায়ী প্যাসিভ ভয়েস",
+      "definition": "The auxiliary verb in passive voice changes depending on the tense of the active sentence. Continuous tenses use 'being', and Perfect tenses use 'been'.",
+      "banglaDefinition": "টেন্সের প্রকারভেদ অনুযায়ী প্যাসিভ ভয়েসের সাহায্যকারী ক্রিয়াটি পরিবর্তিত হয়। যেমন: চলমান বা Continuous টেন্সে 'being' এবং পুরাঘটিত বা Perfect টেন্সে 'been' অতিরিক্ত যুক্ত করতে হয়।",
+      "formula": "- Present Continuous: Subject + am/is/are + being + V3\n- Present Perfect: Subject + have/has + been + V3\n- Simple Past: Subject + was/were + V3",
+      "rules": [
+        "Continuous টেন্সে কাজটির চলমান অবস্থা বোঝাতে auxiliary-র পর 'being' যুক্ত করা আবশ্যক।",
+        "Perfect টেন্সে কাজ শেষ হওয়ার বিষয়টি প্রকাশ করতে have/has/had-এর পর 'been' ব্যবহার করতে হয়।"
+      ],
+      "examples": [
+        { "en": "My car is being repaired right now.", "bn": "আমার গাড়িটি এই মুহূর্তে মেরামত করা হচ্ছে।" },
+        { "en": "The final decision has been made.", "bn": "চূড়ান্ত সিদ্ধান্তটি নেওয়া হয়েছে।" },
+        { "en": "The mail was sent yesterday.", "bn": "চিঠিটি গতকাল পাঠানো হয়েছিল।" },
+        { "en": "The road will be closed tomorrow.", "bn": "রাস্তাটি আগামীকাল বন্ধ থাকবে (করা হবে)।" }
+      ],
+      "tips": "আপনি যখন কোনো অফিসে বা আনুষ্ঠানিক জায়গায় কথা বলছেন, তখন 'My car is being repaired' বলাটা 'Someone is repairing my car'-এর চেয়ে অনেক বেশি পেশাদার ও মার্জিত শোনায়।"
+    },
+    {
+      "name": "Passive with Imperative Sentences (অনুরোধ বা আদেশসূচক বাক্যে প্যাসিভ)",
+      "banglaName": "অনুরোধ বা আদেশসূচক বাক্যে প্যাসিভ",
+      "definition": "Imperative sentences (commands, requests, advice) can be changed into passive voice using 'Let' or 'should be' to make instructions sound more formal or polite.",
+      "banglaDefinition": "আদেশ, অনুরোধ বা উপদেশমূলক বাক্যগুলোকে প্যাসিভ ভয়েসে রূপান্তর করার জন্য 'Let' অথবা 'should be' ব্যবহার করা হয়। এটি নির্দেশাবলীকে আরও বেশি আনুষ্ঠানিক বা নম্র করতে সাহায্য করে।",
+      "formula": "- Command: Let + Object + be + V3\n- Advice: Subject + should be + V3\n- Request: You are requested to + Base Verb",
+      "rules": [
+        "আদেশ বা নির্দেশমূলক বাক্যে শুরুতে 'Let' ব্যবহার করতে হবে।",
+        "কোনো উপদেশ বা নৈতিক দায়িত্ব বোঝাতে 'should be' ব্যবহার করা উচিত।"
+      ],
+      "examples": [
+        { "en": "Active: Close the window.", "bn": "জানালাটি বন্ধ করো।" },
+        { "en": "Passive: Let the window be closed.", "bn": "জানালাটি বন্ধ করা হোক।" },
+        { "en": "Active: Obey your elders.", "bn": "গুরুজনদের মান্য করো।" },
+        { "en": "Passive: Your elders should be obeyed.", "bn": "তোমার গুরুজনদের মান্য করা উচিত।" },
+        { "en": "Active: Please help me.", "bn": "দয়া করে আমাকে সাহায্য করুন।" },
+        { "en": "Passive: You are requested to help me.", "bn": "আপনাকে আমাকে সাহায্য করার জন্য অনুরোধ করা হচ্ছে।" }
+      ],
+      "tips": "কাউকে কোনো উপদেশ দেওয়ার সময় 'You should obey rule' না বলে প্যাসিভ করে 'Rules should be obeyed' বললে সেটি অনেক বেশি বিনয়ী ও পেশাদার মনে হয়।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "The work was do by him.",
+      "correct": "The work was done by him.",
+      "explanation": "প্যাসিভ ভয়েসে সাহায্যকারী ক্রিয়া (was/were) এর পরে মূল ক্রিয়াটির অবশ্যই Past Participle (V3) ফর্ম বসাতে হবে।"
+    },
+    {
+      "wrong": "He was died in an accident.",
+      "correct": "He died in an accident.",
+      "explanation": "'Die' একটি অকর্মক ক্রিয়া (intransitive verb)। যেসব verb-এর কোনো object থাকে না, সেগুলোর প্যাসিভ ভয়েস গঠন করা যায় না।"
+    },
+    {
+      "wrong": "The house was building last year.",
+      "correct": "The house was being built last year.",
+      "explanation": "বাড়িটি নিজে নিজে কিছু তৈরি করছিল না, বরং বাড়িটি তৈরি করা হচ্ছিল। তাই এখানে continuous passive হিসেবে 'being built' ব্যবহার করা সঠিক।"
+    }
+  ]
 }

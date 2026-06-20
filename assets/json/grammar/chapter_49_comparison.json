@@ -1,10 +1,78 @@
 {
   "chapter": 49,
   "level": "Intermediate",
-  "title": "Comparison",
+  "title": "Comparison (তুলনা ও বৈসাদৃশ্য)",
   "icon": "compare",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Comparisons help us describe the similarities and differences between two or more people, places, things, or actions. Using proper structures like 'as...as', 'more...than', or 'like/unlike' is essential for expressive spoken English.",
+  "banglaDescription": "Comparison (তুলনা) আমাদের দুই বা ততোধিক ব্যক্তি, স্থান, বস্তু বা কাজের মধ্যে মিল ও অমিল বর্ণনা করতে সাহায্য করে। স্পোকেন ইংলিশে কোনো কিছুর তুলনা সুন্দরভাবে ফুটিয়ে তুলতে 'as...as', 'more...than', বা 'like/unlike'-এর মতো কাঠামোগুলো জানা অত্যন্ত প্রয়োজনীয়।",
+  "topics": [
+    {
+      "name": "Comparing Similarities (মিল বা সমতা তুলনা করা)",
+      "banglaName": "মিল বা সমতা তুলনা করা",
+      "definition": "To express that two things are equal or similar in a certain quality, we use the structure 'as + adjective + as' or phrase 'the same as'.",
+      "banglaDefinition": "দুটি ভিন্ন জিনিসের মধ্যে কোনো নির্দিষ্ট গুণের মিল বা সমতা প্রকাশ করতে আমরা 'as + adjective + as' বা 'the same as' (একই রকম) ব্যবহার করি।",
+      "formula": "- Pattern A: Subject + Verb + as + Adjective + as + Object\n- Pattern B: Subject + Verb + the same as + Object",
+      "rules": [
+        "'as...as' এর মাঝখানে সর্বদা Adjective-এর মূল রূপ (Positive Degree) বসে।",
+        "দুটি বিষয়ের মধ্যে কোনো পার্থক্য নেই তা সম্পূর্ণভাবে বোঝাতে 'the same as' ব্যবহার করতে হয়।"
+      ],
+      "examples": [
+        { "en": "He is as tall as his father.", "bn": "সে তার বাবার মতোই লম্বা।" },
+        { "en": "My phone is the same as yours.", "bn": "আমার ফোনটি তোমারটার মতোই একই রকম।" },
+        { "en": "She speaks English as fluently as a native speaker.", "bn": "সে একজন নেটিভ স্পিকারের মতোই সাবলীলভাবে ইংরেজি বলে।" }
+      ],
+      "tips": "দুটি জিনিস দেখতে হুবহু এক হলে আপনি অনানুষ্ঠানিক আলোচনায় 'just like' ব্যবহার করতে পারেন। যেমন: 'You look just like your brother.'"
+    },
+    {
+      "name": "Comparing Differences (অমিল বা বৈসাদৃশ্য তুলনা করা)",
+      "banglaName": "অমিল বা বৈসাদৃশ্য তুলনা করা",
+      "definition": "To show that two things are not equal, we use comparative adjectives with 'than', negative structures like 'not as...as', or the phrase 'different from'.",
+      "banglaDefinition": "দুটি জিনিসের মধ্যে অমিল বা তারতম্য প্রকাশ করার জন্য Comparative Adjective-এর সাথে 'than', নেতিবাচক ক্ষেত্রে 'not as...as' অথবা 'different from' ব্যবহার করা হয়।",
+      "formula": "- Pattern A: Subject + Verb + Comparative Adjective + than + Object\n- Pattern B: Subject + Verb + not as + Adjective + as + Object\n- Pattern C: Subject + Verb + different from + Object",
+      "rules": [
+        "তুলনা করতে Adjective-এর শেষে '-er' (যেমন: faster) অথবা শব্দের শুরুতে 'more' (যেমন: more beautiful) এর সাথে 'than' বসাতে হবে।",
+        "অন্যটির মতো অতটা ভালো বা খারাপ নয় তা বোঝাতে 'not as...as' ব্যবহার করা যায়।"
+      ],
+      "examples": [
+        { "en": "This laptop is faster than my old one.", "bn": "এই ল্যাপটপটি আমার পুরানোটির চেয়ে বেশি দ্রুতগামী।" },
+        { "en": "My room is not as big as yours.", "bn": "আমার ঘরটি তোমারটার মতো অত বড় নয়।" },
+        { "en": "Life in a village is quite different from city life.", "bn": "গ্রামের জীবন শহরের জীবন থেকে অনেকটাই আলাদা।" }
+      ],
+      "tips": "অনানুষ্ঠানিক স্পোকেন ইংলিশে অনেকেই 'different than' ব্যবহার করেন, তবে শুদ্ধ ও পেশাদার ইংরেজি বলতে 'different from' ব্যবহার করাটাই বেশি সঠিক।"
+    },
+    {
+      "name": "Making Comparisons Stronger (তুলনার মাত্রা বাড়ানো বা কমানো)",
+      "banglaName": "তুলনার মাত্রা বাড়ানো বা কমানো",
+      "definition": "We can modify comparative adjectives using words like 'much', 'far', 'slightly', or 'a bit' to show whether the difference is small or large.",
+      "banglaDefinition": "দুটি বিষয়ের মধ্যে পার্থক্যের পরিমাণ অনেক বেশি নাকি কম, তা সুনির্দিষ্টভাবে বোঝাতে আমরা Comparative Adjective-এর পূর্বে 'much', 'far' (অনেক বেশি) অথবা 'slightly', 'a bit' (সামান্য বা অল্প) ব্যবহার করি।",
+      "formula": "Subject + Verb + [much/far/slightly/a bit] + Comparative Adjective + than + Object",
+      "rules": [
+        "পার্থক্যের মাত্রা অনেক বেশি হলে Comparative Adjective-এর আগে 'much' বা 'far' বসাতে হবে।",
+        "পার্থক্য যখন খুব সামান্য হয়, তখন 'slightly' বা 'a bit' ব্যবহার করতে হয়।"
+      ],
+      "examples": [
+        { "en": "Travelling by plane is far more comfortable than by bus.", "bn": "বাসের চেয়ে বিমানে ভ্রমণ করা অনেক বেশি আরামদায়ক।" },
+        { "en": "This shirt is slightly cheaper than that one.", "bn": "এই শার্টটি ওই শার্টটির চেয়ে সামান্য সস্তা।" },
+        { "en": "Today is a bit hotter than yesterday.", "bn": "আজকের দিনটি গতকালের চেয়ে একটু বেশি গরম।" }
+      ],
+      "tips": "বন্ধুদের সাথে সাধারণ আড্ডায় 'much'-এর পরিবর্তে 'a lot' ব্যবহার করা যায়। যেমন: 'This movie is a lot better than the last one.'"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "This design is different than the old one.",
+      "correct": "This design is different from the old one.",
+      "explanation": "ইংরেজিতে তুলনা করার সময় 'different'-এর সাথে সংযোগকারী হিসেবে 'from' ব্যবহার করা ব্যাকরণগতভাবে সঠিক।"
+    },
+    {
+      "wrong": "My car is more faster than yours.",
+      "correct": "My car is faster than yours. OR My car is much faster than yours.",
+      "explanation": "'faster' নিজেই একটি comparative শব্দ, তাই এর পূর্বে পুনরায় 'more' ব্যবহার করা যাবে না (double comparative ভুল)। যদি জোর দিতে চান, তবে 'much' বসাতে পারেন।"
+    },
+    {
+      "wrong": "His salary is higher than my friend.",
+      "correct": "His salary is higher than my friend's. OR His salary is higher than that of my friend.",
+      "explanation": "এখানে তুলনাটি হওয়া উচিত তার বেতনের সাথে আমার বন্ধুর বেতনের, বন্ধুর নিজের সাথে নয়। তাই 'friend's' (বন্ধুর বেতন) ব্যবহার করতে হবে।"
+    }
+  ]
 }

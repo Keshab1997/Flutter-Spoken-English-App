@@ -1,10 +1,78 @@
 {
   "chapter": 48,
   "level": "Intermediate",
-  "title": "Conditional Sentences",
+  "title": "Conditional Sentences (শর্তযুক্ত বাক্য)",
   "icon": "call_split",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Conditional sentences discuss factual implications or hypothetical situations and their consequences. In spoken English, they are vital for expressing plans, possibilities, regrets, and hypothetical scenarios.",
+  "banglaDescription": "Conditional Sentences (শর্তযুক্ত বাক্য) মূলত কোনো শর্ত এবং তার সম্ভাব্য ফলাফল বা প্রভাব প্রকাশ করতে ব্যবহৃত হয়। ইংরেজিতে কথা বলার সময় বিভিন্ন পরিকল্পনা, সম্ভাবনা, অনুশোচনা বা কাল্পনিক পরিস্থিতি বর্ণনা করার জন্য কন্ডিশনাল সেন্টেন্স জানা খুবই গুরুত্বপূর্ণ।",
+  "topics": [
+    {
+      "name": "Zero and First Conditionals (জিরো এবং ফার্স্ট কন্ডিশনাল)",
+      "banglaName": "Zero এবং First Conditional",
+      "definition": "The Zero Conditional is used for general truths or scientific facts where the result is always certain. The First Conditional is used for real or highly possible future situations.",
+      "banglaDefinition": "Zero Conditional চিরন্তন সত্য বা বৈজ্ঞানিক সত্য প্রকাশে ব্যবহৃত হয় যার ফলাফল সবসময় নির্দিষ্ট থাকে। অপরদিকে, First Conditional ভবিষ্যতে কোনো কাজ ঘটার বাস্তব সম্ভাবনা বা পরিকল্পনার ক্ষেত্রে ব্যবহৃত হয়।",
+      "formula": "- Zero Conditional: If + Present Simple, Present Simple\n- First Conditional: If + Present Simple, Future Simple (will/can/may + Verb)",
+      "rules": [
+        "Zero Conditional-এর দুটি অংশই বর্তমান কাল বা Present Simple Tense-এ হয়।",
+        "First Conditional-এর 'If' যুক্ত অংশটি Present Simple এবং অপর অংশটি সাধারণত Future Simple (Subject + will + base verb) হয়।"
+      ],
+      "examples": [
+        { "en": "Zero: If you heat ice, it melts.", "bn": "যদি আপনি বরফে তাপ দেন, তবে তা গলে যায়।" },
+        { "en": "Zero: If you freeze water, it becomes ice.", "bn": "যদি আপনি পানি ফ্রিজে রাখেন, তবে তা বরফে পরিণত হয়।" },
+        { "en": "First: If it rains tomorrow, we will cancel the picnic.", "bn": "যদি আগামীকাল বৃষ্টি হয়, তবে আমরা পিকনিক বাতিল করব।" },
+        { "en": "First: If you work hard, you will succeed.", "bn": "যদি তুমি কঠোর পরিশ্রম করো, তবে তুমি সফল হবে।" }
+      ],
+      "tips": "স্পোকেন ইংলিশে কোনো শর্ত দিয়ে ভবিষ্যৎ পরিকল্পনা করতে চাইলে First Conditional-টি সবচেয়ে বেশি ব্যবহৃত হয়। যেমন: 'If I have time, I will call you.'"
+    },
+    {
+      "name": "Second Conditional (সেকেন্ড কন্ডিশনাল - অবাস্তব বা কাল্পনিক শর্ত)",
+      "banglaName": "Second Conditional (কাল্পনিক শর্ত)",
+      "definition": "The Second Conditional is used to talk about imaginary, hypothetical, or highly unlikely situations in the present or future and their imaginary results.",
+      "banglaDefinition": "বর্তমানে বা ভবিষ্যতে কোনো অবাস্তব বা সম্পূর্ণ কাল্পনিক পরিস্থিতি এবং তার সম্ভাব্য ফলাফল বর্ণনা করতে Second Conditional ব্যবহৃত হয়।",
+      "formula": "If + Past Simple, Subject + would/could/might + Verb (base form)",
+      "rules": [
+        "'If' যুক্ত অংশটি Past Simple Tense হলেও এটি অতীত কাল প্রকাশ করে না, বরং বর্তমানের একটি অবাস্তব বা কাল্পনিক অবস্থাকে নির্দেশ করে।",
+        "বাক্যে 'be' verb থাকলে Subject নির্বিশেষে সবার সাথে 'were' বসে (যেমন: If I were, If he were)।"
+      ],
+      "examples": [
+        { "en": "If I won the lottery, I would buy a big house.", "bn": "যদি আমি লটারি জিততাম, তবে আমি একটি বড় বাড়ি কিনতাম। (বাস্তবে লটারি জেতার সম্ভাবনা কম)" },
+        { "en": "If I were you, I would accept the job offer.", "bn": "আমি যদি তোমার জায়গায় হতাম, তবে আমি চাকরির অফারটি গ্রহণ করতাম। (কিন্তু আমি তো তুমি নই)" },
+        { "en": "If he had money, he would help us.", "bn": "যদি তার কাছে টাকা থাকত, সে আমাদের সাহায্য করত।" }
+      ],
+      "tips": "কাউকে কোনো মার্জিত উপদেশ দিতে চাইলে 'If I were you, I would...' ফ্রেজটি ব্যবহার করতে পারেন। স্পোকেন ইংলিশে উপদেশ দেওয়ার জন্য এটি অন্যতম জনপ্রিয় নিয়ম।"
+    },
+    {
+      "name": "Third Conditional (থার্ড কন্ডিশনাল - অতীতের অসম্ভব শর্ত বা আফসোস)",
+      "banglaName": "Third Conditional (অতীতের অবাস্তব শর্ত)",
+      "definition": "The Third Conditional is used to talk about an imaginary situation in the past that did not happen, and the hypothetical past result, often expressing regret.",
+      "banglaDefinition": "অতীতে ঘটে যাওয়া কোনো কাজ যা আর পরিবর্তন করা সম্ভব নয়, সেটি নিয়ে কোনো কাল্পনিক চিন্তা বা অনুশোচনা (regret) প্রকাশ করতে Third Conditional ব্যবহৃত হয়।",
+      "formula": "If + Past Perfect (had + V3), Subject + would have / could have + V3",
+      "rules": [
+        "'If' যুক্ত অংশে Past Perfect Tense (had + V3) ব্যবহার করতে হয়।",
+        "পরবর্তী অংশে Subject-এর সাথে 'would have', 'could have' বা 'might have' এবং verb-এর Past Participle (V3) রূপ বসাতে হয়।"
+      ],
+      "examples": [
+        { "en": "If you had studied harder, you would have passed the exam.", "bn": "তুমি যদি আরেকটু মনোযোগ দিয়ে পড়তে, তবে তুমি পরীক্ষায় পাস করতে। (কিন্তু বাস্তবে সে পড়েনি এবং পাসও করেনি)" },
+        { "en": "If I had known about the meeting, I would have attended.", "bn": "আমি যদি মিটিংয়ের কথা জানতাম, তবে আমি উপস্থিত থাকতাম।" }
+      ],
+      "tips": "অতীতে কোনো ভুল হয়ে গেছে এবং তার জন্য আপনি দুঃখ প্রকাশ করতে চান, তখন এই কন্ডিশনালটি খুবই কার্যকর। যেমন: 'If I had been careful, I wouldn't have lost it.'"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "If it will rain, I will stay at home.",
+      "correct": "If it rains, I will stay at home.",
+      "explanation": "শর্তযুক্ত ক্লজটির (If clause) ভেতরে কখনো 'will' বসে না। First conditional-এ 'If' অংশটি সর্বদা Present Simple Tense-এ হবে।"
+    },
+    {
+      "wrong": "If I was you, I would not do that.",
+      "correct": "If I were you, I would not do that.",
+      "explanation": "অবাস্তব বা কাল্পনিক শর্তের ক্ষেত্রে (Second conditional) সাবজেক্ট প্রথম পুরুষ বা একবচন হলেও 'was'-এর পরিবর্তে 'were' ব্যবহার করা ব্যাকরণগতভাবে সঠিক।"
+    },
+    {
+      "wrong": "If I had seen him, I would tell him.",
+      "correct": "If I had seen him, I would have told him.",
+      "explanation": "যেহেতু 'If' অংশটি Past Perfect-এ আছে (had seen), এটি Third conditional। তাই পরবর্তী অংশে 'would have' এবং verb-এর V3 (told) ব্যবহার করতে হবে।"
+    }
+  ]
 }

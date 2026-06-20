@@ -1,10 +1,81 @@
 {
   "chapter": 47,
   "level": "Intermediate",
-  "title": "Indirect Speech",
+  "title": "Indirect Speech (পরোক্ষ উক্তি)",
   "icon": "format_quote",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Indirect speech (or reported speech) is used to report what someone else said without using their exact words. It is essential in spoken English for sharing conversations, messages, and reporting events accurately.",
+  "banglaDescription": "Indirect Speech (পরোক্ষ উক্তি) বা Reported Speech হলো বক্তার হুবহু কথা পরিবর্তন করে নিজের ভাষায় প্রকাশ করা। কথোপকথনে অন্যের বার্তা, মেসেজ বা কোনো ঘটনার বর্ণনা সঠিকভাবে অন্যের কাছে পৌঁছে দেওয়ার জন্য এটি অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "Rules of Tense and Pronoun Changes (টেন্স ও প্রোনাউন পরিবর্তনের নিয়ম)",
+      "banglaName": "টেন্স ও প্রোনাউন পরিবর্তনের নিয়ম",
+      "definition": "When converting direct speech to indirect speech, if the reporting verb is in the past tense, the verbs in the reported speech must shift back in time (Present simple becomes past simple, etc.). Pronouns also change to reflect the speaker's perspective.",
+      "banglaDefinition": "Direct থেকে Indirect করার সময়, Reporting Verb-টি যদি Past Tense-এ থাকে, তবে রিপোর্টেড স্পিচের Tense-টি এক ধাপ অতীতে চলে যায় (যেমন: Present Simple থেকে Past Simple)। এছাড়া বক্তার দৃষ্টিভঙ্গি অনুযায়ী Pronoun-গুলো পরিবর্তিত হয়।",
+      "formula": "- Direct: Subject + said, \"Present Simple\"\n- Indirect: Subject + said + that + Subject + Past Simple",
+      "rules": [
+        "উদ্ধৃতি চিহ্নের কমা উঠে গিয়ে সাধারণত সংযোগকারী শব্দ হিসেবে 'that' বসে।",
+        "নৈকট্যবাচক শব্দগুলো দূরত্ববাচক শব্দে পরিণত হয় (যেমন: now -> then, today -> that day, here -> there)।"
+      ],
+      "examples": [
+        { "en": "Direct: She said, \"I like chocolate.\"", "bn": "সে বলেছিল, \"আমি চকলেট পছন্দ করি।\"" },
+        { "en": "Indirect: She said that she liked chocolate.", "bn": "সে বলেছিল যে সে চকলেট পছন্দ করত।" },
+        { "en": "Direct: Joy said, \"I am going now.\"", "bn": "জয় বলেছিল, \"আমি এখন যাচ্ছি।\"" },
+        { "en": "Indirect: Joy said that he was going then.", "bn": "জয় বলেছিল যে সে তখন যাচ্ছিল।" }
+      ],
+      "tips": "যদি বক্তার কথাটি চিরন্তন সত্য (universal truth) বা সাধারণ সত্য হয়, তবে Reporting verb অতীতে থাকলেও ভেতরের অংশের Tense পরিবর্তন করতে হয় না। যেমন: He said that the earth moves around the sun."
+    },
+    {
+      "name": "Reporting Questions (প্রশ্নবোধক বাক্য পরিবর্তন)",
+      "banglaName": "প্রশ্নবোধক বাক্য পরিবর্তন",
+      "definition": "When reporting questions, we change the reporting verb 'said' to 'asked'. For Yes/No questions, we use 'if' or 'whether'. For Wh-questions, we use the same Wh-word, and the sentence order becomes assertive.",
+      "banglaDefinition": "কোনো প্রশ্নকে পরোক্ষভাবে প্রকাশ করতে 'said'-এর পরিবর্তে 'asked' ব্যবহার করতে হয়। হ্যাঁ/না বা Yes/No প্রশ্নের ক্ষেত্রে 'if' অথবা 'whether' বসে। তবে Wh-প্রশ্নের ক্ষেত্রে Wh-word-টিই বসে এবং বাক্যটি সাধারণ বর্ণনামূলক বাক্যে রূপান্তর হয়।",
+      "formula": "- Yes/No Question: Subject + asked + if/whether + Subject + Verb\n- Wh-Question: Subject + asked + Wh-word + Subject + Verb",
+      "rules": [
+        "ইনডাইরেক্ট করার পর বাক্যটি আর প্রশ্নবোধক থাকে না, তাই বাক্যের শেষে প্রশ্নবোধক চিহ্ন (?) বসে না।",
+        "Wh-word-এর পরে সরাসরি সাহায্যকারী ক্রিয়া না বসিয়ে প্রথমে Subject এবং তারপরে Verb বসাতে হয়।"
+      ],
+      "examples": [
+        { "en": "Direct: He asked, \"Are you coming?\"", "bn": "সে জিজ্ঞেস করেছিল, \"তুমি কি আসছ?\"" },
+        { "en": "Indirect: He asked if I was coming.", "bn": "সে জিজ্ঞেস করেছিল আমি আসছি কিনা।" },
+        { "en": "Direct: She asked, \"Where do you live?\"", "bn": "সে জিজ্ঞেস করেছিল, \"তুমি কোথায় থাকো?\"" },
+        { "en": "Indirect: She asked where I lived.", "bn": "সে জিজ্ঞেস করেছিল আমি কোথায় থাকি।" }
+      ],
+      "tips": "কথোপকথনে কারও প্রশ্ন অন্যকে জানাতে 'asked' দিয়ে বাক্য গঠন করা খুবই সাধারণ ও সহজ মাধ্যম। যেমন: 'My mom asked where I was.'"
+    },
+    {
+      "name": "Reporting Imperative Sentences (আদেশ, অনুরোধ ও উপদেশ পরিবর্তন)",
+      "banglaName": "আদেশ, অনুরোধ ও উপদেশ পরিবর্তন",
+      "definition": "For imperative sentences (commands, requests, advice), 'said' is replaced with 'ordered', 'requested', 'advised', or 'told', and the main verb is preceded by 'to' (or 'not to' for negative sentences).",
+      "banglaDefinition": "আদেশ, অনুরোধ বা উপদেশমূলক বাক্যের ক্ষেত্রে অর্থানুযায়ী Reporting verb হিসেবে 'ordered', 'requested', 'advised' বা 'told' বসে। এরপর কমা উঠে গিয়ে মূল verb-এর পূর্বে 'to' (নেতিবাচক হলে 'not to') বসে।",
+      "formula": "Subject + ordered/requested/advised/told + Object + to / not to + Verb (base form)",
+      "rules": [
+        "আদেশ বোঝালে ordered, অনুরোধে requested এবং উপদেশে advised বসে।",
+        "যদি আদেশ/অনুরোধ স্পষ্ট না হয়, তবে সাধারণ কথা হিসেবে 'told' ব্যবহার করা নিরাপদ।"
+      ],
+      "examples": [
+        { "en": "Direct: The teacher said, \"Study hard.\"", "bn": "শিক্ষক বলেছিলেন, \"মনোযোগ দিয়ে পড়াশোনা করো।\"" },
+        { "en": "Indirect: The teacher advised us to study hard.", "bn": "শিক্ষক আমাদের মনোযোগ দিয়ে পড়াশোনা করার উপদেশ দিয়েছিলেন।" },
+        { "en": "Direct: She said, \"Please don't disturb me.\"", "bn": "সে বলেছিল, \"দয়া করে আমাকে বিরক্ত কোরো না।\"" },
+        { "en": "Indirect: She requested me not to disturb her.", "bn": "সে আমাকে অনুরোধ করেছিল তাকে বিরক্ত না করতে।" }
+      ],
+      "tips": "কারও কোনো অনুরোধ বা নির্দেশ তৃতীয় ব্যক্তির কাছে প্রকাশ করার জন্য 'not to' ব্যবহারের নিয়মটি স্পোকেন ইংলিশে খুবই কার্যকর। যেমন: 'He told me not to go there.'"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She asked me where was I going.",
+      "correct": "She asked me where I was going.",
+      "explanation": "Indirect Speech-এ প্রশ্নটি সাধারণ বর্ণনামূলক (assertive) বাক্যে রূপান্তর হয়। তাই 'where' এর পর verb (was) না বসিয়ে subject (I) বসাতে হবে।"
+    },
+    {
+      "wrong": "He asked me that if I liked coffee.",
+      "correct": "He asked me if I liked coffee.",
+      "explanation": "Indirect speech-এর প্রশ্নবোধক বাক্যে 'that' এবং 'if' বা 'whether' একসাথে বসে না। শুধুমাত্র 'if' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "Father told me not to waste time yesterday.",
+      "correct": "Father told me not to waste time the previous day.",
+      "explanation": "Reporting verb-টি past tense-এ থাকলে বাক্যের সময়ের নির্দেশক শব্দগুলোরও পরিবর্তন করতে হয়। তাই 'yesterday' পরিবর্তিত হয়ে 'the previous day' বা 'the day before' হবে।"
+    }
+  ]
 }
