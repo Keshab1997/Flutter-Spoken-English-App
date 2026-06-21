@@ -7,18 +7,65 @@ import '../models/game/game_question_model.dart';
 class GameRepository {
   static const String _boxName = 'game_cache';
   static const String _questionsKey = 'cached_questions';
-  static const String _jsonPath = 'assets/json/game/game_questions.json';
+  static const String _legacyJsonPath = 'assets/json/game/game_questions.json';
   static const String _firestoreCollection = 'game_questions';
+
+  /// Per-tense question files. Each file has shape:
+  /// `{ "tenseType": "...", "questions": [ ... ] }`.
+  /// New content is authored here (see assets/json/game/CONTENT_GUIDE.md).
+  static const List<String> _tenseQuestionFiles = [
+    'assets/json/game/questions/01_present_indefinite.json',
+    'assets/json/game/questions/02_present_continuous.json',
+    'assets/json/game/questions/03_present_perfect.json',
+    'assets/json/game/questions/04_present_perfect_continuous.json',
+    'assets/json/game/questions/05_past_indefinite.json',
+    'assets/json/game/questions/06_past_continuous.json',
+    'assets/json/game/questions/07_past_perfect.json',
+    'assets/json/game/questions/08_past_perfect_continuous.json',
+    'assets/json/game/questions/09_future_indefinite.json',
+    'assets/json/game/questions/10_future_continuous.json',
+    'assets/json/game/questions/11_future_perfect.json',
+    'assets/json/game/questions/12_future_perfect_continuous.json',
+  ];
 
   // ── JSON (Asset) ──
 
+  /// Loads questions from all per-tense files and merges them.
+  /// Falls back to the legacy single-file path if no per-tense files
+  /// contain questions.
   Future<List<GameQuestionModel>> loadFromJson() async {
-    final jsonString = await rootBundle.loadString(_jsonPath);
-    final data = json.decode(jsonString) as Map<String, dynamic>;
-    final questionsList = data['questions'] as List<dynamic>? ?? [];
-    return questionsList
-        .map((q) => GameQuestionModel.fromMap(q as Map<String, dynamic>, ''))
-        .toList();
+    final List<GameQuestionModel> all = [];
+
+    for (final path in _tenseQuestionFiles) {
+      try {
+        final jsonString = await rootBundle.loadString(path);
+        final data = json.decode(jsonString) as Map<String, dynamic>;
+        final questionsList = data['questions'] as List<dynamic>? ?? [];
+        all.addAll(
+          questionsList.map(
+            (q) => GameQuestionModel.fromMap(q as Map<String, dynamic>, ''),
+          ),
+        );
+      } catch (_) {
+        // File missing or invalid — skip silently and continue.
+      }
+    }
+
+    // Legacy fallback: if per-tense files yielded nothing, try the old path.
+    if (all.isEmpty) {
+      try {
+        final jsonString = await rootBundle.loadString(_legacyJsonPath);
+        final data = json.decode(jsonString) as Map<String, dynamic>;
+        final questionsList = data['questions'] as List<dynamic>? ?? [];
+        return questionsList
+            .map((q) => GameQuestionModel.fromMap(q as Map<String, dynamic>, ''))
+            .toList();
+      } catch (_) {
+        return [];
+      }
+    }
+
+    return all;
   }
 
   // ── Hive (Local Cache) ──

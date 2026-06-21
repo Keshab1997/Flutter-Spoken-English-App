@@ -47,16 +47,20 @@ class GameService {
       await _gameRepository.cacheQuestions(questions);
     }
 
+    // Map the game "mode" to a difficulty so it selects the right questions:
+    //   challenge → hard
+    // Other modes (practice/quiz/timed/endless) impose no difficulty filter.
+    // GameMode must NOT be compared against q.mode — q.mode stores the question
+    // content type (fill_blank, choose_tense, ...), not the play mode.
+    final effectiveDifficulty = difficulty ??
+        (mode == GameMode.challenge ? 'hard' : null);
+
     // Apply filters
     if (tenseType != null && tenseType.isNotEmpty) {
       questions = questions.where((q) => q.tenseType == tenseType).toList();
     }
-    if (difficulty != null && difficulty.isNotEmpty) {
-      questions = questions.where((q) => q.difficulty == difficulty).toList();
-    }
-    if (mode != null) {
-      final modeStr = mode.name;
-      questions = questions.where((q) => q.mode == modeStr).toList();
+    if (effectiveDifficulty != null && effectiveDifficulty.isNotEmpty) {
+      questions = questions.where((q) => q.difficulty == effectiveDifficulty).toList();
     }
 
     // Shuffle and limit

@@ -1,0 +1,882 @@
+{
+  "tenseType": "Present Indefinite",
+  "version": "1.0.0",
+  "lastUpdated": "2026-06-21",
+  "questions": [
+    {
+      "id": "pi_001",
+      "tenseType": "Present Indefinite",
+      "question": "She ____ tea every morning.",
+      "options": ["drink", "drinks", "drinking", "drank"],
+      "correctAnswer": "drinks",
+      "explanation": "Third person singular (she/he/it) এর সাথে verb এর শেষে s বসে। 'drink' → 'drinks'। 'every morning' ঘুরে ঘুরে হওয়া কাজ বোঝায় যা Present Indefinite এর চিহ্ন।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_002",
+      "tenseType": "Present Indefinite",
+      "question": "They ____ football on weekends.",
+      "options": ["plays", "play", "playing", "played"],
+      "correctAnswer": "play",
+      "explanation": "'They' plural subject, তাই base verb 'play' বসে — কোনো s যায় না। Plural subject এবং third person singular না হলে verb এর আকার অপরিবর্তিত থাকে।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_003",
+      "tenseType": "Present Indefinite",
+      "question": "My father ____ to the office by bus.",
+      "options": ["go", "goes", "going", "gone"],
+      "correctAnswer": "goes",
+      "explanation": "Third person singular (my father = he) এবং verb 'go' শেষে o আছে, তাই 'es' যুক্ত হয়ে 'goes' হয়। নিয়ম: o, s, x, ch, sh দিয়ে শেষ হলে 'es' বসে।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_004",
+      "tenseType": "Present Indefinite",
+      "question": "The earth ____ round the sun.",
+      "options": ["move", "moves", "moved", "moving"],
+      "correctAnswer": "moves",
+      "explanation": "Universal truth (সার্বজনীন সত্য) সবসময় Present Indefinite এ হয়। 'The earth' third person singular, তাই 'moves'। Universal truth, scientific facts এবং permanent truths এই tense এ ব্যবহৃত হয়।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_005",
+      "tenseType": "Present Indefinite",
+      "question": "Water ____ at 100 degrees Celsius.",
+      "options": ["boil", "boils", "boiled", "boiling"],
+      "correctAnswer": "boils",
+      "explanation": "বৈজ্ঞানিক সত্য (scientific fact) Present Indefinite এ বসে। 'Water' uncountable singular subject, তাই third person singular হিসেবে 'boils'। Scientific facts সবসময় এই tense এ।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_006",
+      "tenseType": "Present Indefinite",
+      "question": "He ____ in a bank.",
+      "options": ["work", "works", "working", "worked"],
+      "correctAnswer": "works",
+      "explanation": "Permanent situation / profession (স্থায়ী অবস্থা বা পেশা) Present Indefinite এ বোঝানো হয়। 'He' third person singular, তাই 'work' → 'works'।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_007",
+      "tenseType": "Present Indefinite",
+      "question": "I ____ in Dhaka.",
+      "options": ["live", "lives", "living", "lived"],
+      "correctAnswer": "live",
+      "explanation": "'I' first person singular, তাই base verb 'live' বসে — কোনো s যায় না। Permanent location বোঝাতে Present Indefinite ব্যবহৃত হয়েছে।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_008",
+      "tenseType": "Present Indefinite",
+      "question": "The baby ____ all the time.",
+      "options": ["cry", "cries", "cried", "crying"],
+      "correctAnswer": "cries",
+      "explanation": "Consonant + y দিয়ে শেষ হলে y উঠে ies বসে। 'cry' → 'cries'। 'The baby' third person singular, তাই এই পরিবর্তন হয়। নিয়ম: স্বরবর্ণ (vowel) ছাড়া y হলে ies।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_009",
+      "tenseType": "Present Indefinite",
+      "question": "She ____ her homework carefully.",
+      "options": ["do", "does", "doing", "did"],
+      "correctAnswer": "does",
+      "explanation": "Third person singular এবং verb 'do' শেষে o আছে, তাই 'es' বসে → 'does'। 'do' একটি irregular ধরনের third person change।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_010",
+      "tenseType": "Present Indefinite",
+      "question": "It ____ a lot in the monsoon.",
+      "options": ["rain", "rains", "rained", "raining"],
+      "correctAnswer": "rains",
+      "explanation": "'It' third person singular, তাই 'rain' → 'rains'। ঋতু ও আবহাওয়া সম্পর্কিত ঘটনা Present Indefinite এ বোঝানো হয়।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_011",
+      "tenseType": "Present Indefinite",
+      "question": "My mother ____ delicious food.",
+      "options": ["cook", "cooks", "cooking", "cooked"],
+      "correctAnswer": "cooks",
+      "explanation": "Habit / routine (অভ্যাস) বোঝাতে Present Indefinite। 'My mother' third person singular, তাই 'cook' → 'cooks'।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_012",
+      "tenseType": "Present Indefinite",
+      "question": "We ____ English on Mondays.",
+      "options": ["studies", "study", "studying", "studied"],
+      "correctAnswer": "study",
+      "explanation": "'We' plural first person, তাই base form 'study' বসে — কোনো s বা ies যায় না। মনে রাখো: শুধু third person singular এ y → ies হয়, বাকিদের ক্ষেত্রে base form থাকে।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_013",
+      "tenseType": "Present Indefinite",
+      "question": "He ____ a new car.",
+      "options": ["have", "has", "having", "had"],
+      "correctAnswer": "has",
+      "explanation": "'He' third person singular, তাই 'have' → 'has'। 'have' একটি irregular verb যা third person এ 'has' হয়।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_014",
+      "tenseType": "Present Indefinite",
+      "question": "I ____ two brothers.",
+      "options": ["has", "have", "having", "had"],
+      "correctAnswer": "have",
+      "explanation": "'I' first person, তাই base form 'have' বসে। 'have' third person এ 'has' হয় কিন্তু অন্য subject এ base form 'have' থাকে।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_015",
+      "tenseType": "Present Indefinite",
+      "question": "She ____ like spicy food.",
+      "options": ["don't", "doesn't", "isn't", "aren't"],
+      "correctAnswer": "doesn't",
+      "explanation": "Negative sentence এ third person singular এর আগে 'doesn't' বসে, তারপর base verb। 'She doesn't like' — verb থেকে s চলে যায়। 'don't' শুধু I/you/we/they এর সাথে।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_016",
+      "tenseType": "Present Indefinite",
+      "question": "They ____ play cricket on Sundays.",
+      "options": ["doesn't", "don't", "isn't", "aren't"],
+      "correctAnswer": "don't",
+      "explanation": "Negative sentence এ plural / non-third-person subject এর আগে 'don't' বসে। 'They don't play'। 'doesn't' শুধু he/she/it এর সাথে।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_017",
+      "tenseType": "Present Indefinite",
+      "question": "____ she like music?",
+      "options": ["Do", "Does", "Is", "Are"],
+      "correctAnswer": "Does",
+      "explanation": "Interrogative (প্রশ্নবোধক) sentence এ third person singular এর আগে 'Does' বসে, তারপর base verb। 'Does she like?'। verb থেকে s চলে যায়।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_018",
+      "tenseType": "Present Indefinite",
+      "question": "____ you speak English?",
+      "options": ["Do", "Does", "Is", "Are"],
+      "correctAnswer": "Do",
+      "explanation": "Interrogative sentence এ I/you/we/they এর আগে 'Do' বসে। 'Do you speak?'। 'Does' শুধু third person singular এর সাথে।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_019",
+      "tenseType": "Present Indefinite",
+      "question": "The cat ____ milk.",
+      "options": ["like", "likes", "liking", "liked"],
+      "correctAnswer": "likes",
+      "explanation": "'The cat' third person singular (it), তাই 'like' → 'likes'। Habitual action Present Indefinite এ বোঝানো হয়।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_020",
+      "tenseType": "Present Indefinite",
+      "question": "She ____ her hair every day.",
+      "options": ["wash", "washes", "washing", "washed"],
+      "correctAnswer": "washes",
+      "explanation": "Verb যদি ch, sh, ss, x, o দিয়ে শেষ হয় তবে 'es' বসে। 'wash' → 'washes' (শেষে sh আছে)। Third person singular নিয়ম।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_021",
+      "tenseType": "Present Indefinite",
+      "question": "He ____ chess well.",
+      "options": ["play", "plays", "playing", "played"],
+      "correctAnswer": "plays",
+      "explanation": "'He' third person singular, তাই 'play' → 'plays'। Skill বা ability বোঝাতেও Present Indefinite ব্যবহৃত হয়।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_022",
+      "tenseType": "Present Indefinite",
+      "question": "The train ____ at 9 am.",
+      "options": ["leave", "leaves", "left", "leaving"],
+      "correctAnswer": "leaves",
+      "explanation": "Fixed timetable / schedule (নির্দিষ্ট সময়সূচি) Present Indefinite এ বোঝানো হয়। 'The train' third person singular, তাই 'leaves'।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_023",
+      "tenseType": "Present Indefinite",
+      "question": "A mango ____ sweet.",
+      "options": ["taste", "tastes", "tasted", "tasting"],
+      "correctAnswer": "tastes",
+      "explanation": "Sensory perception / permanent quality (স্থায়ী গুণ) Present Indefinite এ বোঝানো হয়। 'A mango' third person singular, তাই 'tastes'।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_024",
+      "tenseType": "Present Indefinite",
+      "question": "He ____ in Allah.",
+      "options": ["believe", "believes", "believed", "believing"],
+      "correctAnswer": "believes",
+      "explanation": "Belief / permanent state Present Indefinite এ বোঝানো হয়। 'He' third person singular, তাই 'believe' → 'believes'। Stative verb 'believe' সাধারণত Continuous তে বসে না।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_025",
+      "tenseType": "Present Indefinite",
+      "question": "I ____ understand this question.",
+      "options": ["doesn't", "don't", "am not", "wasn't"],
+      "correctAnswer": "don't",
+      "explanation": "Negative sentence এ 'I' এর সাথে 'don't' বসে। 'I don't understand'। 'doesn't' শুধু third person singular এর সাথে।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_026",
+      "tenseType": "Present Indefinite",
+      "question": "This book ____ to me.",
+      "options": ["belong", "belongs", "belonged", "belonging"],
+      "correctAnswer": "belongs",
+      "explanation": "State verb (belong, own, possess) Present Indefinite এ ব্যবহৃত হয়। 'This book' third person singular, তাই 'belong' → 'belongs'। Possession ও ownership বোঝাতে এই tense।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_027",
+      "tenseType": "Present Indefinite",
+      "question": "She ____ a beautiful song.",
+      "options": ["sing", "sings", "sang", "singing"],
+      "correctAnswer": "sings",
+      "explanation": "'She' third person singular, তাই 'sing' → 'sings'। Regular habit বা action Present Indefinite এ বোঝানো হয়।",
+      "difficulty": "easy",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_028",
+      "tenseType": "Present Indefinite",
+      "question": "They usually ____ to school on foot.",
+      "options": ["goes", "go", "went", "going"],
+      "correctAnswer": "go",
+      "explanation": "'They' plural subject, তাই base form 'go'। Frequency adverb 'usually' subject এর পরে এবং main verb এর আগে বসে: 'They usually go'।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_029",
+      "tenseType": "Present Indefinite",
+      "question": "He ____ English very well.",
+      "options": ["know", "knows", "knew", "knowing"],
+      "correctAnswer": "knows",
+      "explanation": "State verb 'know' Present Indefinite এ বসে (Continuous তে নয়)। 'He' third person singular, তাই 'know' → 'knows'।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_030",
+      "tenseType": "Present Indefinite",
+      "question": "She ____ watching television.",
+      "options": ["love", "loves", "loved", "loving"],
+      "correctAnswer": "loves",
+      "explanation": "State verb 'love' (feeling/emotion) Present Indefinite এ বসে। 'She' third person singular, তাই 'love' → 'loves'। Emotion verbs Continuous তে বসে না।",
+      "difficulty": "intermediate",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_031",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'I go to school every day.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "'every day' ঘুরে ঘুরে হওয়া কাজ বোঝায় (habit) এবং base verb 'go' ব্যবহৃত হয়েছে — এটি Present Indefinite। Continuous হলে 'am going' হতো।",
+      "difficulty": "easy",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_032",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'She drinks tea every morning.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "'every morning' habitual time expression এবং 'drinks' (third person singular with s) — Present Indefinite। 'is drinking' হলে Continuous হতো।",
+      "difficulty": "easy",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_033",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'The sun rises in the east.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "Universal truth (সার্বজনীন সত্য) সবসময় Present Indefinite এ হয়। 'rises' (third person singular)। 'The sun rises in the east' একটি eternal fact।",
+      "difficulty": "intermediate",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_034",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'He works in a hospital.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "Permanent situation / profession (পেশা) Present Indefinite এ বোঝানো হয়। 'works' (third person singular)। এটি একটি স্থায়ী অবস্থা, সাময়িক নয়।",
+      "difficulty": "intermediate",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_035",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'Water boils at 100 degrees Celsius.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "Scientific fact Present Indefinite এ হয়। 'boils' (third person singular)। বৈজ্ঞানিক সত্য সবসময় এই tense এ বোঝানো হয়।",
+      "difficulty": "intermediate",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_036",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'They play football every weekend.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "'every weekend' habitual action এবং plural 'play' (base form) — Present Indefinite। 'are playing' হলে Continuous হতো।",
+      "difficulty": "easy",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_037",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'My brother doesn't like coffee.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "'doesn't like' — Present Indefinite negative form (does + not + base verb)। Dislike বা preference একটি permanent state।",
+      "difficulty": "intermediate",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_038",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'Do you speak English?'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "'Do you speak' — Present Indefinite interrogative (Do + subject + base verb)। Ability বোঝাতেও Present Indefinite ব্যবহৃত হয়।",
+      "difficulty": "intermediate",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_039",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'The train leaves at 7 pm.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "Fixed timetable / official schedule (নির্দিষ্ট সময়সূচি) Present Indefinite এ বোঝানো হয়। 'leaves' (third person singular)।",
+      "difficulty": "intermediate",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_040",
+      "tenseType": "Present Indefinite",
+      "question": "Arrange: (every / plays / cricket / day / he)",
+      "options": [
+        "He plays cricket every day.",
+        "He play cricket every day.",
+        "He plays cricket day every.",
+        "Every day he playing cricket."
+      ],
+      "correctAnswer": "He plays cricket every day.",
+      "explanation": "সঠিক ক্রম: Subject (He) + Verb (plays, কারণ third person singular) + Object (cricket) + Time (every day)। 'every day' সাধারণত বাক্যের শেষে বসে।",
+      "difficulty": "intermediate",
+      "mode": "sentence_builder"
+    },
+    {
+      "id": "pi_041",
+      "tenseType": "Present Indefinite",
+      "question": "Arrange: (sun / the / in / rises / east / the)",
+      "options": [
+        "The sun rises in the east.",
+        "The sun rise in the east.",
+        "The suns rises in east.",
+        "In the east the sun rising."
+      ],
+      "correctAnswer": "The sun rises in the east.",
+      "explanation": "Universal truth এর সঠিক কাঠামো: Subject (The sun) + Verb (rises) + Preposition phrase (in the east)। 'The sun' third person singular, তাই 'rises'।",
+      "difficulty": "hard",
+      "mode": "sentence_builder"
+    },
+    {
+      "id": "pi_042",
+      "tenseType": "Present Indefinite",
+      "question": "Arrange: (tea / she / every / drinks / morning)",
+      "options": [
+        "She drinks tea every morning.",
+        "She drink tea every morning.",
+        "She drinks tea morning every.",
+        "Every morning she drinking tea."
+      ],
+      "correctAnswer": "She drinks tea every morning.",
+      "explanation": "Subject (She) + Verb (drinks) + Object (tea) + Time (every morning)। 'She' third person singular, তাই 'drinks'। Time adverbial সাধারণত শেষে বসে।",
+      "difficulty": "intermediate",
+      "mode": "sentence_builder"
+    },
+    {
+      "id": "pi_043",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'He go to office every day.'",
+      "options": [
+        "He goes to office every day.",
+        "He going to office every day.",
+        "He gone to office every day.",
+        "He went to office every day."
+      ],
+      "correctAnswer": "He goes to office every day.",
+      "explanation": "'He' third person singular, তাই 'go' এর সাথে 'es' যুক্ত হয়ে 'goes' হবে। 'every day' habitual action যা Present Indefinite এ হয়।",
+      "difficulty": "intermediate",
+      "mode": "error_detection"
+    },
+    {
+      "id": "pi_044",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'She don't like coffee.'",
+      "options": [
+        "She doesn't like coffee.",
+        "She isn't like coffee.",
+        "She not like coffee.",
+        "She don't likes coffee."
+      ],
+      "correctAnswer": "She doesn't like coffee.",
+      "explanation": "Third person singular এর negative এ 'doesn't' বসে, 'don't' নয়। 'She doesn't like' — main verb base form এ থাকে।",
+      "difficulty": "intermediate",
+      "mode": "error_detection"
+    },
+    {
+      "id": "pi_045",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'They plays football on Sundays.'",
+      "options": [
+        "They play football on Sundays.",
+        "They plaies football on Sundays.",
+        "They playing football on Sundays.",
+        "They are play football on Sundays."
+      ],
+      "correctAnswer": "They play football on Sundays.",
+      "explanation": "'They' plural subject, তাই base verb 'play' বসে — কোনো s যায় না। 'plays' ভুল। Plural subject এর সাথে verb এর আকার অপরিবর্তিত থাকে।",
+      "difficulty": "intermediate",
+      "mode": "error_detection"
+    },
+    {
+      "id": "pi_046",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'Do she like music?'",
+      "options": [
+        "Does she like music?",
+        "Is she like music?",
+        "Do she likes music?",
+        "Does she likes music?"
+      ],
+      "correctAnswer": "Does she like music?",
+      "explanation": "Third person singular interrogative এ 'Does' বসে (Do নয়), এবং main verb base form 'like' এ থাকে (s ছাড়া)। 'Do she like' এবং 'Does she likes' দুটোই ভুল।",
+      "difficulty": "hard",
+      "mode": "error_detection"
+    },
+    {
+      "id": "pi_047",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'The baby cry all the time.'",
+      "options": [
+        "The baby cries all the time.",
+        "The baby crys all the time.",
+        "The baby crying all the time.",
+        "The baby is cry all the time."
+      ],
+      "correctAnswer": "The baby cries all the time.",
+      "explanation": "'The baby' third person singular এবং 'cry' শেষে consonant + y, তাই y উঠে 'ies' বসে → 'cries'। 'crys' ভুল বানান।",
+      "difficulty": "hard",
+      "mode": "error_detection"
+    },
+    {
+      "id": "pi_048",
+      "tenseType": "Present Indefinite",
+      "question": "Translate: 'সে প্রতিদিন স্কুলে যায়।'",
+      "options": [
+        "He goes to school every day.",
+        "He is going to school every day.",
+        "He went to school every day.",
+        "He has gone to school every day."
+      ],
+      "correctAnswer": "He goes to school every day.",
+      "explanation": "'প্রতিদিন যায়' মানে ঘুরে ঘুরে হওয়া কাজ — Present Indefinite। তাই 'goes' (third person singular) সঠিক। Continuous হলে 'এখন যাচ্ছে' হতো।",
+      "difficulty": "intermediate",
+      "mode": "translation_challenge"
+    },
+    {
+      "id": "pi_049",
+      "tenseType": "Present Indefinite",
+      "question": "Translate: 'আমি প্রতিদিন ভাত খাই।'",
+      "options": [
+        "I eat rice every day.",
+        "I eats rice every day.",
+        "I am eating rice every day.",
+        "I ate rice every day."
+      ],
+      "correctAnswer": "I eat rice every day.",
+      "explanation": "'প্রতিদিন খাই' অভ্যাস — Present Indefinite। 'I' first person, তাই base verb 'eat' (কোনো s নেই)। Continuous হলে 'am eating' হতো।",
+      "difficulty": "intermediate",
+      "mode": "translation_challenge"
+    },
+    {
+      "id": "pi_050",
+      "tenseType": "Present Indefinite",
+      "question": "Translate: 'সূর্য পূর্ব দিকে ওঠে।'",
+      "options": [
+        "The sun rises in the east.",
+        "The sun is rising in the east.",
+        "The sun rose in the east.",
+        "The sun has risen in the east."
+      ],
+      "correctAnswer": "The sun rises in the east.",
+      "explanation": "Universal truth (সার্বজনীন সত্য) Present Indefinite এ হয়। 'The sun' third person singular, তাই 'rises'। এটি একটি eternal fact।",
+      "difficulty": "hard",
+      "mode": "translation_challenge"
+    },
+    {
+      "id": "pi_051",
+      "tenseType": "Present Indefinite",
+      "question": "Translate: 'তারা ফুটবল খেলে।'",
+      "options": [
+        "They play football.",
+        "They plays football.",
+        "They are playing football.",
+        "They played football."
+      ],
+      "correctAnswer": "They play football.",
+      "explanation": "'খেলে' habitual action — Present Indefinite। 'They' plural subject, তাই base verb 'play' (কোনো s নেই)।",
+      "difficulty": "easy",
+      "mode": "translation_challenge"
+    },
+    {
+      "id": "pi_052",
+      "tenseType": "Present Indefinite",
+      "question": "Translate: 'পানি ১০০ ডিগ্রিতে ফোটে।'",
+      "options": [
+        "Water boils at 100 degrees.",
+        "Water is boiling at 100 degrees.",
+        "Water boiled at 100 degrees.",
+        "Water has boiled at 100 degrees."
+      ],
+      "correctAnswer": "Water boils at 100 degrees.",
+      "explanation": "বৈজ্ঞানিক সত্য (scientific fact) Present Indefinite এ হয়। 'Water' third person singular, তাই 'boils'। Scientific facts সবসময় এই tense এ।",
+      "difficulty": "hard",
+      "mode": "translation_challenge"
+    },
+    {
+      "id": "pi_053",
+      "tenseType": "Present Indefinite",
+      "question": "Choose the correct sentence:",
+      "options": [
+        "She goes to school every day.",
+        "She go to school every day.",
+        "She going to school every day.",
+        "She gone to school every day."
+      ],
+      "correctAnswer": "She goes to school every day.",
+      "explanation": "Quick rule: third person singular (she) + habitual 'every day' = Present Indefinite, 'go' → 'goes'। দ্রুত চিনতে শিখো — 'every day' দেখলে Present Indefinite ভাবো।",
+      "difficulty": "easy",
+      "mode": "speed_quiz"
+    },
+    {
+      "id": "pi_054",
+      "tenseType": "Present Indefinite",
+      "question": "Choose the correct form:",
+      "options": [
+        "He plays cricket.",
+        "He play cricket.",
+        "He playing cricket.",
+        "He played cricket."
+      ],
+      "correctAnswer": "He plays cricket.",
+      "explanation": "Quick: 'He' third person singular → verb এ s বসে → 'plays'। দ্রুত সিদ্ধান্ত নাও — he/she/it দেখলে verb এ s//es।",
+      "difficulty": "easy",
+      "mode": "speed_quiz"
+    },
+    {
+      "id": "pi_055",
+      "tenseType": "Present Indefinite",
+      "question": "Pick the correct negative:",
+      "options": [
+        "She doesn't like coffee.",
+        "She don't like coffee.",
+        "She isn't like coffee.",
+        "She not like coffee."
+      ],
+      "correctAnswer": "She doesn't like coffee.",
+      "explanation": "Quick: third person singular negative = doesn't + base verb। 'She doesn't like'। 'don't' শুধু I/you/we/they এর সাথে।",
+      "difficulty": "easy",
+      "mode": "speed_quiz"
+    },
+    {
+      "id": "pi_056",
+      "tenseType": "Present Indefinite",
+      "question": "Pick the correct question form:",
+      "options": [
+        "Does she sing?",
+        "Do she sing?",
+        "Is she sing?",
+        "Does she sings?"
+      ],
+      "correctAnswer": "Does she sing?",
+      "explanation": "Quick: third person singular প্রশ্ন = Does + subject + base verb। 'Does she sing?'। 'Does she sings' ভুল কারণ helper এ s থাকলে main verb এ s যায় না।",
+      "difficulty": "easy",
+      "mode": "speed_quiz"
+    },
+    {
+      "id": "pi_057",
+      "tenseType": "Present Indefinite",
+      "question": "Which is a universal truth?",
+      "options": [
+        "The earth moves round the sun.",
+        "The earth is moving round the sun.",
+        "The earth moved round the sun.",
+        "The earth has moved round the sun."
+      ],
+      "correctAnswer": "The earth moves round the sun.",
+      "explanation": "Quick: universal truth সবসময় Present Indefinite এ হয়। 'The earth moves'। দ্রুত চিনো — eternal fact দেখলে Present Indefinite।",
+      "difficulty": "intermediate",
+      "mode": "speed_quiz"
+    },
+    {
+      "id": "pi_058",
+      "tenseType": "Present Indefinite",
+      "question": "Choose the correct verb: 'Birds ____ in the sky.'",
+      "options": ["fly", "flies", "flew", "flying"],
+      "correctAnswer": "fly",
+      "explanation": "Quick: 'Birds' plural subject, তাই base verb 'fly'। দ্রুত নির্ণয় — plural হলে verb এ কিছু যায় না। (একটি পাখি হলে 'flies' হতো।)",
+      "difficulty": "easy",
+      "mode": "speed_quiz"
+    },
+    {
+      "id": "pi_059",
+      "tenseType": "Present Indefinite",
+      "question": "Choose the correct sentence (stative verb):",
+      "options": [
+        "I understand the lesson now.",
+        "I am understanding the lesson now.",
+        "I understands the lesson now.",
+        "I was understanding the lesson now."
+      ],
+      "correctAnswer": "I understand the lesson now.",
+      "explanation": "Stative verb 'understand' Continuous তে বসে না, তাই Present Indefinite 'I understand' সঠিক। 'am understanding' ভুল। Mental state verbs (understand, know, believe) সাধারণত simple tense এ থাকে।",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_060",
+      "tenseType": "Present Indefinite",
+      "question": "The news ____ shocking every day.",
+      "options": ["is", "are", "was", "were"],
+      "correctAnswer": "is",
+      "explanation": "'News' দেখতে plural মনে হলেও singular noun (uncountable), তাই 'is' বসে। এটি একটি tricky subject-verb agreement case। 'news', 'physics', 'mathematics', 'politics' সব singular।",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_061",
+      "tenseType": "Present Indefinite",
+      "question": "Mathematics ____ my favourite subject.",
+      "options": ["is", "are", "was", "were"],
+      "correctAnswer": "is",
+      "explanation": "'Mathematics' -s দিয়ে শেষ হলেও singular noun (school subject), তাই 'is' বসে। Tricky case: subjects ending in -ics (mathematics, physics, politics) সাধারণত singular।",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_062",
+      "tenseType": "Present Indefinite",
+      "question": "The police ____ investigating the case.",
+      "options": ["are", "is", "was", "has"],
+      "correctAnswer": "are",
+      "explanation": "'Police' দেখতে singular মনে হলেও plural collective noun, তাই 'are' বসে। Tricky case: police, people, cattle সবসময় plural verb নেয়। 'The police are' — এটাই সঠিক।",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_063",
+      "tenseType": "Present Indefinite",
+      "question": "Either of the boys ____ honest.",
+      "options": ["is", "are", "were", "have"],
+      "correctAnswer": "is",
+      "explanation": "'Either of' / 'Neither of' সবসময় singular verb নেয়, যদিও পরে plural noun আসে। 'Either of the boys is' — singular verb। এটি একটি advanced agreement rule।",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_064",
+      "tenseType": "Present Indefinite",
+      "question": "Each of the students ____ a book.",
+      "options": ["has", "have", "having", "are having"],
+      "correctAnswer": "has",
+      "explanation": "'Each of' সবসময় singular হিসেবে ধরা হয়, তাই singular verb 'has' বসে। 'Each of the students has'। যদিও 'students' plural, 'each' singular force করে।",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_065",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'He don't knows the answer.'",
+      "options": [
+        "He doesn't know the answer.",
+        "He don't know the answer.",
+        "He doesn't knows the answer.",
+        "He not know the answer."
+      ],
+      "correctAnswer": "He doesn't know the answer.",
+      "explanation": "দুটি ভুল ছিল: (1) 'don't' → 'doesn't' (third person singular), (2) 'knows' → 'know'। Helper এ s থাকলে main verb থেকে s চলে যায়। 'doesn't know' সঠিক।",
+      "difficulty": "hard",
+      "mode": "error_detection"
+    },
+    {
+      "id": "pi_066",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'The water boil at 100 degrees.'",
+      "options": [
+        "Water boils at 100 degrees.",
+        "The water boils at 100 degrees.",
+        "Water boil at 100 degrees.",
+        "The water boiling at 100 degrees."
+      ],
+      "correctAnswer": "Water boils at 100 degrees.",
+      "explanation": "দুটি বিষয়: scientific fact Present Indefinite এ হয়, এবং 'water' সাধারণত article ছাড়া বসে (generic)। 'Water boils' — singular verb কারণ water uncountable singular।",
+      "difficulty": "hard",
+      "mode": "error_detection"
+    },
+    {
+      "id": "pi_067",
+      "tenseType": "Present Indefinite",
+      "question": "Identify the tense: 'She always brushes her teeth before bed.'",
+      "options": ["Present Indefinite", "Present Continuous", "Present Perfect", "Past Indefinite"],
+      "correctAnswer": "Present Indefinite",
+      "explanation": "'always' frequency adverb + habitual action 'brushes' (third person singular) — Present Indefinite। Frequency adverbs (always, usually, often, sometimes) Present Indefinite এর চিহ্ন।",
+      "difficulty": "hard",
+      "mode": "choose_tense"
+    },
+    {
+      "id": "pi_068",
+      "tenseType": "Present Indefinite",
+      "question": "Arrange: (always / he / on / time / arrives)",
+      "options": [
+        "He always arrives on time.",
+        "He arrives always on time.",
+        "Always he arrives on time.",
+        "He arrives on time always."
+      ],
+      "correctAnswer": "He always arrives on time.",
+      "explanation": "Frequency adverb 'always' subject (He) এর পরে এবং main verb (arrives) এর আগে বসে। 'He always arrives'। এটি frequency adverb এর সঠিক position।",
+      "difficulty": "hard",
+      "mode": "sentence_builder"
+    },
+    {
+      "id": "pi_069",
+      "tenseType": "Present Indefinite",
+      "question": "Translate: 'সে সবসময় সত্য কথা বলে।'",
+      "options": [
+        "He always speaks the truth.",
+        "He always speak the truth.",
+        "He is always speaking the truth.",
+        "He always spoken the truth."
+      ],
+      "correctAnswer": "He always speaks the truth.",
+      "explanation": "'সবসময় বলে' habitual action + frequency — Present Indefinite। 'He' third person singular, তাই 'speaks'। 'always' subject এর পরে, verb এর আগে।",
+      "difficulty": "hard",
+      "mode": "translation_challenge"
+    },
+    {
+      "id": "pi_070",
+      "tenseType": "Present Indefinite",
+      "question": "Translate: 'প্রত্যেকটি ছেলে সৎ বলে।'",
+      "options": [
+        "Each of the boys is honest.",
+        "Each of the boys are honest.",
+        "Every boy are honest.",
+        "All boy is honest."
+      ],
+      "correctAnswer": "Each of the boys is honest.",
+      "explanation": "'প্রত্যেকটি' = 'Each of' যা singular verb নেয় → 'is'। 'Each of the boys is'। যদিও 'boys' plural, 'each' singular force করে।",
+      "difficulty": "hard",
+      "mode": "translation_challenge"
+    },
+    {
+      "id": "pi_071",
+      "tenseType": "Present Indefinite",
+      "question": "Choose the correct sentence (stative verb test):",
+      "options": [
+        "This soup tastes delicious.",
+        "This soup is tasting delicious.",
+        "This soup taste delicious.",
+        "This soup were tasting delicious."
+      ],
+      "correctAnswer": "This soup tastes delicious.",
+      "explanation": "Stative verb 'taste' (sense perception) Continuous তে বসে না, তাই 'tastes' (Present Indefinite) সঠিক। Sense verbs (taste, smell, sound, feel) সাধারণত simple tense এ।",
+      "difficulty": "hard",
+      "mode": "speed_quiz"
+    },
+    {
+      "id": "pi_072",
+      "tenseType": "Present Indefinite",
+      "question": "Which sentence is grammatically correct?",
+      "options": [
+        "The committee has reached a decision.",
+        "The committee have reached a decision.",
+        "The committee reaching a decision.",
+        "The committee are reached a decision."
+      ],
+      "correctAnswer": "The committee has reached a decision.",
+      "explanation": "'Committee' collective noun — একক অঙ্গ হিসেবে কাজ করলে singular verb 'has'। 'Committee has' সঠিক। (British English এ মাঝে মাঝে 'have' ও ব্যবহৃত হয় কিন্তু formal হলে 'has'।)",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_073",
+      "tenseType": "Present Indefinite",
+      "question": "One of my friends ____ in London.",
+      "options": ["lives", "live", "living", "are living"],
+      "correctAnswer": "lives",
+      "explanation": "'One of my friends' — subject হলো 'One' (singular), 'friends' নয়। তাই singular verb 'lives' বসে। Tricky: 'One of + plural noun + singular verb'।",
+      "difficulty": "hard",
+      "mode": "fill_blank"
+    },
+    {
+      "id": "pi_074",
+      "tenseType": "Present Indefinite",
+      "question": "Find the error: 'One of my friend live in Dhaka.'",
+      "options": [
+        "One of my friends lives in Dhaka.",
+        "One of my friend lives in Dhaka.",
+        "One of my friends live in Dhaka.",
+        "One of my friend living in Dhaka."
+      ],
+      "correctAnswer": "One of my friends lives in Dhaka.",
+      "explanation": "দুটি ভুল: (1) 'friend' → 'friends' ('One of' এর পরে plural noun বসে), (2) 'live' → 'lives' (subject 'One' singular, তাই singular verb)। 'One of my friends lives' সঠিক।",
+      "difficulty": "hard",
+      "mode": "error_detection"
+    }
+  ]
+}

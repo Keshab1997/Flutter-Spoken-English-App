@@ -5,6 +5,7 @@ import '../../../../providers/game/xp_provider.dart';
 import '../../../../providers/game/coin_provider.dart';
 import '../../../../providers/game/sound_provider.dart';
 import './game_home_screen.dart';
+import './answer_review_screen.dart';
 
 class ResultScreen extends ConsumerWidget {
   final int score;
@@ -52,7 +53,7 @@ class ResultScreen extends ConsumerWidget {
                 Container(
                   width: 150,
                   height: 150,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     shape: BoxShape.circle,
                     boxShadow: [BoxShadow(color: Colors.black26, blurRadius: 20, spreadRadius: 5)],
@@ -100,7 +101,35 @@ class ResultScreen extends ConsumerWidget {
 
                 const Spacer(),
 
-                // Buttons
+                // Review Answers Button (only if there are wrong answers)
+                if (wrongAnswers > 0)
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 12),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: OutlinedButton.icon(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) => const AnswerReviewScreen()),
+                          );
+                        },
+                        icon: const Icon(Icons.rate_review),
+                        label: const Text(
+                          'Review Wrong Answers',
+                          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: Colors.white,
+                          side: const BorderSide(color: Colors.white54),
+                          padding: const EdgeInsets.symmetric(vertical: 14),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                        ),
+                      ),
+                    ),
+                  ),
+
+                // Continue Button
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../core/constants/app_colors.dart';
 import '../../../providers/game/game_provider.dart';
 import '../../../services/game_service.dart';
 import 'question_screen.dart';
@@ -11,7 +10,6 @@ class ModeSelectionScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Select Mode', style: TextStyle(fontWeight: FontWeight.bold)),
@@ -48,7 +46,6 @@ class _ModeTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     final config = _getModeConfig();
 
     return InkWell(

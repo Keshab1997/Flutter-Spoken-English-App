@@ -154,6 +154,8 @@ flutter:
     - assets/json/grammar/chapter_68_collocations.json
     - assets/json/grammar/chapter_69_sentence_patterns.json
     - assets/json/grammar/chapter_70_advanced_writing_structures.json
+    - assets/json/game/
+    - assets/json/game/questions/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
