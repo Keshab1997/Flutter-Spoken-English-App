@@ -50,7 +50,7 @@ class StatisticsScreen extends ConsumerWidget {
               _PerformanceBanner(rating: stats.performanceRating),
               const SizedBox(height: 24),
 
-              _SectionHeader(
+              const _SectionHeader(
                 title: 'Overall Statistics',
                 icon: Icons.bar_chart,
               ),
@@ -98,7 +98,7 @@ class StatisticsScreen extends ConsumerWidget {
               ),
 
               const SizedBox(height: 24),
-              _SectionHeader(
+              const _SectionHeader(
                 title: 'Rewards',
                 icon: Icons.workspace_premium,
               ),
@@ -126,7 +126,7 @@ class StatisticsScreen extends ConsumerWidget {
               ),
 
               const SizedBox(height: 24),
-              _SectionHeader(
+              const _SectionHeader(
                 title: 'Special Wins',
                 icon: Icons.military_tech,
               ),
@@ -157,7 +157,7 @@ class StatisticsScreen extends ConsumerWidget {
               ),
 
               const SizedBox(height: 24),
-              _SectionHeader(
+              const _SectionHeader(
                 title: 'Streaks',
                 icon: Icons.local_fire_department,
               ),
@@ -169,7 +169,7 @@ class StatisticsScreen extends ConsumerWidget {
               ),
 
               const SizedBox(height: 24),
-              _SectionHeader(
+              const _SectionHeader(
                 title: 'Time Played',
                 icon: Icons.timer,
               ),
@@ -180,7 +180,7 @@ class StatisticsScreen extends ConsumerWidget {
               ),
 
               const SizedBox(height: 24),
-              _SectionHeader(
+              const _SectionHeader(
                 title: 'Current Status',
                 icon: Icons.person_outline,
               ),
@@ -211,7 +211,7 @@ class StatisticsScreen extends ConsumerWidget {
               ),
 
               const SizedBox(height: 24),
-              _SectionHeader(
+              const _SectionHeader(
                 title: 'Recent Form',
                 icon: Icons.history,
               ),

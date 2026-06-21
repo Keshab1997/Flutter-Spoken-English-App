@@ -1,0 +1,59 @@
+{
+  "tenseId": "future_perfect",
+  "tenseName": "Future Perfect Tense",
+  "banglaName": "পুরাঘটিত ভবিষ্যৎ কাল",
+  "color": "#059669",
+  "icon": "task_alt",
+  "shortDescription": "ভবিষ্যতে কোনো নির্দিষ্ট সময়ের আগে সম্পন্ন হয়ে যাবে এমন কাজ প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + will + have + Verb(V3) + Object",
+    "negative": "Subject + will + not + have + Verb(V3) + Object",
+    "interrogative": "Will + Subject + have + Verb(V3) + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "গঠন ও ব্যবহার",
+      "banglaTitle": "Structure সহজে মনে রাখো",
+      "icon": "schema",
+      "color": "#059669",
+      "explanation": "Future Perfect = will + have + V3 (Past Participle):",
+      "points": [
+        "সব subject এর জন্য will have + V3 ব্যবহার হয়",
+        "ভবিষ্যতের একটি নির্দিষ্ট সময়ের আগে কাজটি শেষ হয়ে যাবে",
+        "by + ভবিষ্যৎ সময় এর সাথে সচরাচর ব্যবহার হয়",
+        "সংক্ষিপ্ত: I'll have done, She'll have gone"
+      ],
+      "examples": [
+        { "english": "I will have finished the report by 5 PM.", "bangla": "বিকাল ৫টার মধ্যে আমি রিপোর্ট শেষ করে ফেলব।" },
+        { "english": "She will have graduated by next June.", "bangla": "আগামী জুনের মধ্যে সে গ্র্যাজুয়েট হয়ে যাবে।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "by ও by the time এর ব্যবহার",
+      "banglaTitle": "by কীভাবে ব্যবহার হয়",
+      "icon": "access_time",
+      "color": "#F59E0B",
+      "explanation": "Future Perfect সচরাচর by এর সাথে ব্যবহার হয়:",
+      "points": [
+        "by + সময়: by 9 PM, by next week, by tomorrow",
+        "by the time + clause: By the time you arrive, I will have left.",
+        "before + সময়: I will have done it before you wake up."
+      ],
+      "examples": [
+        { "english": "By next year, he will have saved enough money.", "bangla": "আগামী বছরের মধ্যে সে যথেষ্ট টাকা সঞ্চয় করে ফেলবে।" },
+        { "english": "By the time the guests arrive, we will have cooked everything.", "bangla": "অতিথিরা আসার আগেই আমরা সব রান্না করে ফেলব।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + will + have + V3",
+    "keyPoints": [
+      "সব subject এর জন্য will have ব্যবহার হয়",
+      "ভবিষ্যতের একটি সময়ের আগে সম্পন্ন কাজ",
+      "by + সময় → Future Perfect এর প্রধান চিহ্ন",
+      "will have + gone/done/eaten/written (V3)"
+    ]
+  }
+}

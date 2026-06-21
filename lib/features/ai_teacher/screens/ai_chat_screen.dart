@@ -611,11 +611,11 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
                         onLongPress: () {
                           Clipboard.setData(ClipboardData(text: msg['text'] as String));
                           ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(
-                              content: const Text('Message copied'),
-                              duration: const Duration(seconds: 2),
+                            const SnackBar(
+                              content: Text('Message copied'),
+                              duration: Duration(seconds: 2),
                               behavior: SnackBarBehavior.floating,
-                              margin: const EdgeInsets.all(16),
+                              margin: EdgeInsets.all(16),
                             ),
                           );
                         },
@@ -645,7 +645,7 @@ class _AiChatScreenState extends ConsumerState<AiChatScreen> {
                               if (isMe)
                                 Text(
                                   msg['text'] as String,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontSize: 15,
                                     height: 1.35,

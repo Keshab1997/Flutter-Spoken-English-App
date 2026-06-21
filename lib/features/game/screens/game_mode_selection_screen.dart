@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../core/constants/app_colors.dart';
 import '../../../services/game_mode_service.dart';
 import '../../../providers/game/sound_provider.dart';
 import 'mode_game_screen.dart';

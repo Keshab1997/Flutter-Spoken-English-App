@@ -1,0 +1,77 @@
+{
+  "tenseId": "past_perfect",
+  "tenseName": "Past Perfect Tense",
+  "banglaName": "পুরাঘটিত অতীত কাল",
+  "color": "#7C3AED",
+  "icon": "fast_rewind",
+  "shortDescription": "অতীতে দুটো কাজের মধ্যে যেটা আগে হয়েছিল তা প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + had + Verb(past participle/V3) + Object",
+    "negative": "Subject + had + not + Verb(V3) + Object",
+    "interrogative": "Had + Subject + Verb(V3) + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "গঠন ও ব্যবহার",
+      "banglaTitle": "Structure ও কখন ব্যবহার হয়",
+      "icon": "schema",
+      "color": "#7C3AED",
+      "explanation": "অতীতে দুটো ঘটনার মধ্যে আগেরটা Past Perfect এ হয়:",
+      "points": [
+        "সব subject এর জন্য had ব্যবহার হয় (I/we/you/he/she/they সবার জন্য)",
+        "had + V3 (Past Participle): had gone, had eaten, had written",
+        "অতীতে আগে ঘটা কাজ → Past Perfect",
+        "অতীতে পরে ঘটা কাজ → Past Indefinite"
+      ],
+      "examples": [
+        { "english": "She had left before I arrived.", "bangla": "আমি পৌঁছানোর আগেই সে চলে গিয়েছিল।" },
+        { "english": "When I reached the station, the train had already left.", "bangla": "আমি স্টেশনে পৌঁছালে ট্রেন ইতিমধ্যে চলে গিয়েছিল।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "before ও after এর ব্যবহার",
+      "banglaTitle": "before/after দিয়ে বাক্য",
+      "icon": "swap_vert",
+      "color": "#F59E0B",
+      "explanation": "before এবং after দিয়ে Past Perfect বাক্য গঠন:",
+      "points": [
+        "before → আগের কাজ Past Perfect: I had eaten before he came.",
+        "after → পরের কাজ Past Indefinite: After I had eaten, he came.",
+        "by the time → নির্দিষ্ট সময়ের আগে: By the time she arrived, we had finished.",
+        "as soon as + Past Perfect → Past Indefinite"
+      ],
+      "examples": [
+        { "english": "He had finished work before it rained.", "bangla": "বৃষ্টি হওয়ার আগেই সে কাজ শেষ করেছিল।" },
+        { "english": "After she had cooked, we ate together.", "bangla": "সে রান্না করার পর আমরা একসাথে খেলাম।" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#10B981",
+      "explanation": "এই শব্দগুলো দেখলে Past Perfect সন্দেহ করো:",
+      "points": [
+        "before, after, by the time, when (আগের কাজ)",
+        "already, just, never (অতীত প্রেক্ষাপটে)",
+        "by + অতীত সময়: by 5 PM, by last year"
+      ],
+      "examples": [
+        { "english": "I had never seen snow before that day.", "bangla": "সেদিনের আগে আমি কখনো তুষার দেখিনি।" },
+        { "english": "They had already left by the time we arrived.", "bangla": "আমরা পৌঁছানোর সময় তারা ইতিমধ্যে চলে গিয়েছিল।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + had + V3 (Past Participle)",
+    "keyPoints": [
+      "সব subject এ had ব্যবহার হয়",
+      "অতীতে আগে ঘটা কাজ → Past Perfect",
+      "before/after/by the time সাথে ব্যবহার হয়",
+      "had + gone/eaten/written (V3)"
+    ]
+  }
+}

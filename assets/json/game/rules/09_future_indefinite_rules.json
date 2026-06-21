@@ -1,0 +1,97 @@
+{
+  "tenseId": "future_indefinite",
+  "tenseName": "Future Indefinite Tense",
+  "banglaName": "সাধারণ ভবিষ্যৎ কাল",
+  "color": "#2563EB",
+  "icon": "schedule",
+  "shortDescription": "ভবিষ্যতে হবে এমন কাজ বা ঘটনা প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + will + Verb(base) + Object",
+    "negative": "Subject + will + not + Verb(base) + Object",
+    "interrogative": "Will + Subject + Verb(base) + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "will এর ব্যবহার",
+      "banglaTitle": "will কীভাবে ব্যবহার হয়",
+      "icon": "check_circle",
+      "color": "#2563EB",
+      "explanation": "সব subject এর জন্য will + Verb base form:",
+      "points": [
+        "I / We / You / He / She / They সবার জন্য will ব্যবহার হয়",
+        "সংক্ষিপ্ত: I'll, He'll, She'll, They'll, We'll",
+        "will এর পরে সবসময় Verb এর base form (V1) বসে",
+        "will + not = won't (সংক্ষিপ্ত রূপ)"
+      ],
+      "examples": [
+        { "english": "I will call you tomorrow.", "bangla": "আমি আগামীকাল তোমাকে ফোন করব।" },
+        { "english": "She will visit her parents next week.", "bangla": "সে আগামী সপ্তাহে তার বাবা-মার সাথে দেখা করবে।" },
+        { "english": "They won't come to the party.", "bangla": "তারা পার্টিতে আসবে না।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "shall এর ব্যবহার",
+      "banglaTitle": "shall কখন ব্যবহার হয়",
+      "icon": "info",
+      "color": "#8B5CF6",
+      "explanation": "shall মূলত I ও We এর সাথে formal ক্ষেত্রে ব্যবহার হয়:",
+      "points": [
+        "I / We → shall (formal/British English এ)",
+        "আধুনিক English এ shall এর বদলে will বেশি ব্যবহার হয়",
+        "Offer বা suggestion এ: Shall I help you? Shall we go?",
+        "Formal writing বা legal documents এ shall ব্যবহার হয়"
+      ],
+      "examples": [
+        { "english": "Shall I open the window?", "bangla": "আমি কি জানালা খুলব?" },
+        { "english": "We shall overcome all obstacles.", "bangla": "আমরা সব বাধা অতিক্রম করব।" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "will এর বিভিন্ন ব্যবহার",
+      "banglaTitle": "will দিয়ে কী কী বোঝানো হয়",
+      "icon": "lightbulb",
+      "color": "#10B981",
+      "explanation": "will শুধু ভবিষ্যৎ কাজই নয়, আরো কিছু বোঝায়:",
+      "points": [
+        "ভবিষ্যৎ কাজ: I will eat dinner at 8 PM.",
+        "হঠাৎ সিদ্ধান্ত: I'll take this one! (এইমাত্র সিদ্ধান্ত নিলাম)",
+        "প্রতিশ্রুতি: I will always love you.",
+        "পূর্বাভাস: It will rain tomorrow.",
+        "অনুরোধ: Will you please help me?"
+      ],
+      "examples": [
+        { "english": "I will be back in 5 minutes!", "bangla": "আমি ৫ মিনিটে ফিরব!" },
+        { "english": "It will be sunny tomorrow.", "bangla": "আগামীকাল রোদ থাকবে।" }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#F59E0B",
+      "explanation": "এই শব্দগুলো দেখলে Future Indefinite সন্দেহ করো:",
+      "points": [
+        "tomorrow, next week, next year, next month",
+        "in the future, soon, later, in + সময়কাল",
+        "someday, one day, eventually"
+      ],
+      "examples": [
+        { "english": "He will graduate next year.", "bangla": "সে আগামী বছর গ্র্যাজুয়েট হবে।" },
+        { "english": "They will meet soon.", "bangla": "তারা শীঘ্রই দেখা করবে।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + will + V1 (base form)",
+    "keyPoints": [
+      "সব subject এর জন্য will ব্যবহার হয়",
+      "will + not = won't",
+      "will এর পরে সবসময় base form (V1)",
+      "tomorrow, next week, soon → Future Indefinite এর চিহ্ন"
+    ]
+  }
+}

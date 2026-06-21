@@ -1,0 +1,99 @@
+{
+  "tenseId": "past_indefinite",
+  "tenseName": "Past Indefinite Tense",
+  "banglaName": "সাধারণ অতীত কাল",
+  "color": "#F59E0B",
+  "icon": "history",
+  "shortDescription": "অতীতে নির্দিষ্ট সময়ে সম্পন্ন হয়েছে এমন কাজ প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + Verb(past form/V2) + Object",
+    "negative": "Subject + did not + Verb(base) + Object",
+    "interrogative": "Did + Subject + Verb(base) + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "Affirmative: V2 (Past Form) ব্যবহার",
+      "banglaTitle": "স্বীকারবাচক বাক্যে V2",
+      "icon": "check_circle",
+      "color": "#F59E0B",
+      "explanation": "Affirmative বাক্যে verb এর past form (V2) ব্যবহার হয়:",
+      "points": [
+        "Regular verbs: verb + ed → work→worked, play→played, watch→watched",
+        "Spelling rule: silent e → শুধু d: love→loved, live→lived",
+        "Short vowel+consonant → double consonant+ed: stop→stopped, plan→planned",
+        "Consonant+y → ied: study→studied, carry→carried",
+        "Irregular verbs আলাদা: go→went, eat→ate, see→saw, come→came, take→took"
+      ],
+      "examples": [
+        { "english": "I played football yesterday.", "bangla": "আমি গতকাল ফুটবল খেলেছিলাম।" },
+        { "english": "She went to school this morning.", "bangla": "সে আজ সকালে স্কুলে গিয়েছিল।" },
+        { "english": "They ate rice for lunch.", "bangla": "তারা দুপুরে ভাত খেয়েছিল।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Negative ও Interrogative: did ব্যবহার",
+      "banglaTitle": "না-বাচক ও প্রশ্নবাচকে did",
+      "icon": "help",
+      "color": "#EF4444",
+      "explanation": "Negative এবং প্রশ্নবাচকে did আসলে verb base form হয়:",
+      "points": [
+        "Negative: Subject + did not (didn't) + Verb base form",
+        "Interrogative: Did + Subject + Verb base form?",
+        "গুরুত্বপূর্ণ: did ব্যবহার করলে verb আর past form হয় না",
+        "❌ He didn't went. → ✅ He didn't go.",
+        "❌ Did she ate? → ✅ Did she eat?"
+      ],
+      "examples": [
+        { "english": "I didn't watch TV last night.", "bangla": "আমি গতরাতে টিভি দেখিনি।" },
+        { "english": "Did you visit the museum?", "bangla": "তুমি কি জাদুঘর পরিদর্শন করেছিলে?" },
+        { "english": "Where did he go yesterday?", "bangla": "সে গতকাল কোথায় গিয়েছিল?" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#8B5CF6",
+      "explanation": "এই শব্দগুলো দেখলে Past Indefinite সন্দেহ করো:",
+      "points": [
+        "yesterday, last night, last week, last year, last month",
+        "ago: 2 days ago, 3 years ago, a long time ago",
+        "নির্দিষ্ট সময়: in 2010, on Monday, at 5 PM",
+        "once, then, when (অতীত প্রেক্ষাপটে)"
+      ],
+      "examples": [
+        { "english": "I saw him two days ago.", "bangla": "আমি দুদিন আগে তাকে দেখেছিলাম।" },
+        { "english": "She called me last night.", "bangla": "সে গতরাতে আমাকে ফোন করেছিল।" }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Present Perfect vs Past Indefinite",
+      "banglaTitle": "দুটোর পার্থক্য",
+      "icon": "compare_arrows",
+      "color": "#06B6D4",
+      "explanation": "এই দুটো tense গুলিয়ে না ফেলো:",
+      "points": [
+        "Past Indefinite: নির্দিষ্ট সময় উল্লেখ থাকে। I went there yesterday.",
+        "Present Perfect: নির্দিষ্ট সময় উল্লেখ নেই। I have gone there. (ever/already)",
+        "Yesterday/ago → Past Indefinite | Just/Already/Ever → Present Perfect"
+      ],
+      "examples": [
+        { "english": "I visited Paris last year. (Past Indefinite)", "bangla": "আমি গত বছর প্যারিস ভ্রমণ করেছিলাম।" },
+        { "english": "I have visited Paris. (Present Perfect)", "bangla": "আমি প্যারিস ভ্রমণ করেছি। (জীবনে কোনো এক সময়)" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + V2 | did not + V1 | Did + Subject + V1?",
+    "keyPoints": [
+      "Affirmative: V2 (past form) ব্যবহার করো",
+      "Negative/Question: did + V1 (base form)",
+      "did ব্যবহার হলে verb এ আর ed/past form হয় না",
+      "yesterday, ago, last week → Past Indefinite এর চিহ্ন"
+    ]
+  }
+}

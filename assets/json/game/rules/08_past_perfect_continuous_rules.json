@@ -1,0 +1,59 @@
+{
+  "tenseId": "past_perfect_continuous",
+  "tenseName": "Past Perfect Continuous Tense",
+  "banglaName": "পুরাঘটিত ঘটমান অতীত কাল",
+  "color": "#DB2777",
+  "icon": "history_toggle_off",
+  "shortDescription": "অতীতে একটি কাজ আর একটি ঘটনার আগে পর্যন্ত চলছিল তা প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + had + been + Verb-ing + Object",
+    "negative": "Subject + had + not + been + Verb-ing + Object",
+    "interrogative": "Had + Subject + been + Verb-ing + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "গঠন ও ব্যবহার",
+      "banglaTitle": "Structure সহজে মনে রাখো",
+      "icon": "schema",
+      "color": "#DB2777",
+      "explanation": "Past Perfect Continuous = had + been + Verb-ing",
+      "points": [
+        "সব subject এর জন্য had been + Verb-ing",
+        "অতীতে একটি ঘটনার আগে পর্যন্ত চলমান কাজ বোঝাতে ব্যবহার হয়",
+        "for ও since এর সাথে সচরাচর ব্যবহার হয়",
+        "Present Perfect Continuous এর past version"
+      ],
+      "examples": [
+        { "english": "She had been working for 3 hours when he arrived.", "bangla": "সে যখন এলো, তখন সে ৩ ঘণ্টা ধরে কাজ করছিল।" },
+        { "english": "I had been waiting since morning when the call finally came.", "bangla": "ফোনটি যখন এলো, তখন আমি সকাল থেকে অপেক্ষা করছিলাম।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Past Perfect vs Past Perfect Continuous",
+      "banglaTitle": "দুটোর পার্থক্য",
+      "icon": "compare_arrows",
+      "color": "#F59E0B",
+      "explanation": "কোনটা কোথায় ব্যবহার হবে বুঝে নাও:",
+      "points": [
+        "Past Perfect → কাজ সম্পন্ন হয়েছিল: He had eaten dinner before she came.",
+        "Past Perfect Continuous → কাজ চলমান ছিল: He had been eating when she came.",
+        "Duration emphasize → Continuous | Completion emphasize → Perfect"
+      ],
+      "examples": [
+        { "english": "They had played the game. (completed)", "bangla": "তারা খেলা খেলেছিল। (শেষ হয়েছিল)" },
+        { "english": "They had been playing for hours. (ongoing)", "bangla": "তারা ঘণ্টার পর ঘণ্টা খেলছিল। (চলমান ছিল)" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + had + been + Verb-ing",
+    "keyPoints": [
+      "সব subject এ had been ব্যবহার হয়",
+      "অতীতের একটি ঘটনার আগে পর্যন্ত চলমান কাজ",
+      "for (duration) ও since (starting point) সাথে ব্যবহার হয়",
+      "Past Perfect Continuous এর past version"
+    ]
+  }
+}

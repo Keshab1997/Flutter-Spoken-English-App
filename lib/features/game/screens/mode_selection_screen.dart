@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../providers/game/game_provider.dart';
 import '../../../services/game_service.dart';
 import 'question_screen.dart';
+import 'tense_categories_screen.dart';
 
 class ModeSelectionScreen extends ConsumerWidget {
   const ModeSelectionScreen({super.key});
@@ -24,6 +25,14 @@ class ModeSelectionScreen extends ConsumerWidget {
             ...GameMode.values.map((mode) => _ModeTile(
               mode: mode,
               onTap: () {
+                // Practice mode → show tense categories with Rules + Practice buttons
+                if (mode == GameMode.practice) {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const TenseCategoriesScreen()),
+                  );
+                  return;
+                }
                 ref.read(gameProvider.notifier).loadQuestions(
                   mode: mode,
                   limit: mode == GameMode.practice ? 10 : 20,

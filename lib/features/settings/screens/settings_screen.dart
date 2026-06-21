@@ -276,14 +276,14 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       InkWell(
         onTap: () => _showAddKeyDialog(),
         borderRadius: const BorderRadius.vertical(bottom: Radius.circular(16)),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 14),
+        child: const Padding(
+          padding: EdgeInsets.symmetric(vertical: 14),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(Icons.add_rounded, color: AppColors.primary, size: 20),
-              const SizedBox(width: 6),
-              const Text('Add API Key', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.w600, fontSize: 14)),
+              Icon(Icons.add_rounded, color: AppColors.primary, size: 20),
+              SizedBox(width: 6),
+              Text('Add API Key', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.w600, fontSize: 14)),
             ],
           ),
         ),
@@ -703,12 +703,12 @@ class _ModelChipsState extends State<_ModelChips> {
               color: AppColors.primary.withOpacity(0.1),
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Row(
+            child: const Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(Icons.cloud_download_rounded,
                     size: 14, color: AppColors.primary),
-                const SizedBox(width: 6),
+                SizedBox(width: 6),
                 Text('Load free models',
                     style: TextStyle(
                         fontSize: 12,

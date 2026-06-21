@@ -4,8 +4,6 @@ import '../../../core/constants/app_colors.dart';
 import '../../../providers/game/game_provider.dart';
 import '../../../providers/game/timer_provider.dart';
 import '../../../providers/game/score_provider.dart';
-import '../../../providers/game/xp_provider.dart';
-import '../../../providers/game/coin_provider.dart';
 import '../../../providers/game/sound_provider.dart';
 import 'result_screen.dart';
 
@@ -18,6 +16,8 @@ class BossBattleScreen extends ConsumerWidget {
     final timerState = ref.watch(timerProvider);
     final scoreState = ref.watch(scoreProvider);
     final theme = Theme.of(context);
+    const themeColor = Colors.deepPurple;
+    const themeGradient = [Color(0xFF7C3AED), Color(0xFF6D28D9)];
 
     // Start boss battle on first build
     ref.listen<GameState>(gameProvider, (previous, next) {
@@ -78,7 +78,7 @@ class BossBattleScreen extends ConsumerWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppColors.error,
+                  backgroundColor: themeColor,
                   foregroundColor: Colors.white,
                 ),
                 child: const Text('Start Boss Battle'),
@@ -95,7 +95,7 @@ class BossBattleScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Boss Battle', style: TextStyle(fontWeight: FontWeight.bold)),
-        backgroundColor: AppColors.error,
+        backgroundColor: themeColor,
         actions: [
           if (timerState.isRunning || timerState.isPaused)
             Padding(
@@ -116,7 +116,7 @@ class BossBattleScreen extends ConsumerWidget {
           // Boss Health Bar
           Container(
             padding: const EdgeInsets.all(16),
-            color: AppColors.error,
+            color: themeColor,
             child: Column(
               children: [
                 Row(
@@ -144,13 +144,13 @@ class BossBattleScreen extends ConsumerWidget {
           // Score Display
           Container(
             padding: const EdgeInsets.all(12),
-            color: AppColors.error.withOpacity(0.1),
+            color: themeColor.withOpacity(0.1),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _BossStat(label: 'Score', value: '${scoreState.currentScore}', icon: Icons.star),
-                _BossStat(label: 'Correct', value: '${scoreState.correctCount}', icon: Icons.check_circle, color: AppColors.success),
-                _BossStat(label: 'Wrong', value: '${scoreState.wrongCount}', icon: Icons.cancel, color: AppColors.error),
+                _BossStat(label: 'Score', value: '${scoreState.currentScore}', icon: Icons.star, themeColor: themeColor),
+                _BossStat(label: 'Correct', value: '${scoreState.correctCount}', icon: Icons.check_circle, color: AppColors.success, themeColor: themeColor),
+                _BossStat(label: 'Wrong', value: '${scoreState.wrongCount}', icon: Icons.cancel, color: AppColors.error, themeColor: themeColor),
               ],
             ),
           ),
@@ -166,7 +166,7 @@ class BossBattleScreen extends ConsumerWidget {
                     width: double.infinity,
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [AppColors.error, AppColors.error.withOpacity(0.8)]),
+                      gradient: const LinearGradient(colors: themeGradient),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
@@ -195,13 +195,13 @@ class BossBattleScreen extends ConsumerWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: AppColors.error.withOpacity(0.1),
+                      color: themeColor.withOpacity(0.1),
                       borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: AppColors.error),
+                      border: Border.all(color: themeColor),
                     ),
                     child: Text(
                       'HARD - ${question.tenseType}',
-                      style: const TextStyle(color: AppColors.error, fontWeight: FontWeight.w600, fontSize: 12),
+                      style: const TextStyle(color: themeColor, fontWeight: FontWeight.w600, fontSize: 12),
                     ),
                   ),
 
@@ -211,12 +211,21 @@ class BossBattleScreen extends ConsumerWidget {
                   ...question.options.asMap().entries.map((entry) {
                     final idx = entry.key;
                     final option = entry.value;
+
+                    final isAnswerChecked = gameState.isAnswerChecked;
+                    final isCorrect = option.trim().toLowerCase() == question.correctAnswer.trim().toLowerCase();
+                    final isSelected = gameState.selectedAnswer?.trim().toLowerCase() == option.trim().toLowerCase();
+
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 12),
                       child: _BossAnswerOption(
                         option: option,
                         index: idx,
-                        onTap: () => _selectAnswer(context, ref, option),
+                        isAnswerChecked: isAnswerChecked,
+                        isCorrect: isCorrect,
+                        isSelected: isSelected,
+                        themeColor: themeColor,
+                        onTap: isAnswerChecked ? () {} : () => _selectAnswer(context, ref, option),
                       ),
                     );
                   }),
@@ -224,6 +233,15 @@ class BossBattleScreen extends ConsumerWidget {
               ),
             ),
           ),
+
+          // Show explanation panel
+          if (gameState.isAnswerChecked)
+            _ExplanationPanel(
+              isCorrect: gameState.isCurrentAnswerCorrect ?? false,
+              explanation: question.explanation,
+              isLast: gameState.isLastQuestion,
+              onContinue: () => _handleContinue(context, ref),
+            ),
         ],
       ),
     );
@@ -240,20 +258,19 @@ class BossBattleScreen extends ConsumerWidget {
       ref.read(scoreProvider.notifier).addWrong();
       ref.read(soundProvider.notifier).playWrong();
     }
+  }
 
-    if (ref.read(gameProvider).isAnswerChecked && !ref.read(gameProvider).isGameOver) {
-      ref.read(gameProvider.notifier).continueToNext();
-    }
-
-    if (ref.read(gameProvider).isGameOver) {
+  void _handleContinue(BuildContext context, WidgetRef ref) {
+    ref.read(gameProvider.notifier).continueToNext();
+    final gameState = ref.read(gameProvider);
+    if (gameState.isGameOver) {
       ref.read(timerProvider.notifier).resetTimer();
-      final gs = ref.read(gameProvider);
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => ResultScreen(
-        score: gs.lastResult?.score ?? 0,
-        correctAnswers: gs.lastResult?.correctAnswers ?? 0,
-        wrongAnswers: gs.lastResult?.wrongAnswers ?? 0,
-        earnedXP: gs.lastResult?.earnedXP ?? 0,
-        earnedCoins: gs.lastResult?.earnedCoins ?? 0,
+        score: gameState.lastResult?.score ?? 0,
+        correctAnswers: gameState.lastResult?.correctAnswers ?? 0,
+        wrongAnswers: gameState.lastResult?.wrongAnswers ?? 0,
+        earnedXP: gameState.lastResult?.earnedXP ?? 0,
+        earnedCoins: gameState.lastResult?.earnedCoins ?? 0,
       )));
     }
   }
@@ -264,17 +281,18 @@ class _BossStat extends StatelessWidget {
   final String value;
   final IconData icon;
   final Color? color;
+  final Color themeColor;
 
-  const _BossStat({required this.label, required this.value, required this.icon, this.color});
+  const _BossStat({required this.label, required this.value, required this.icon, this.color, required this.themeColor});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Icon(icon, color: color ?? Colors.white, size: 24),
+        Icon(icon, color: color ?? themeColor, size: 24),
         const SizedBox(height: 4),
-        Text(value, style: TextStyle(color: color ?? Colors.white, fontSize: 18, fontWeight: FontWeight.bold)),
-        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 12)),
+        Text(value, style: TextStyle(color: color ?? themeColor, fontSize: 18, fontWeight: FontWeight.bold)),
+        Text(label, style: TextStyle(color: color != null ? color!.withOpacity(0.7) : themeColor.withOpacity(0.7), fontSize: 12)),
       ],
     );
   }
@@ -283,43 +301,254 @@ class _BossStat extends StatelessWidget {
 class _BossAnswerOption extends StatelessWidget {
   final String option;
   final int index;
+  final bool isAnswerChecked;
+  final bool isCorrect;
+  final bool isSelected;
+  final Color themeColor;
   final VoidCallback onTap;
 
-  const _BossAnswerOption({required this.option, required this.index, required this.onTap});
+  const _BossAnswerOption({
+    required this.option,
+    required this.index,
+    required this.isAnswerChecked,
+    required this.isCorrect,
+    required this.isSelected,
+    required this.themeColor,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
     final letters = ['A', 'B', 'C', 'D'];
 
-    return InkWell(
-      onTap: onTap,
-      borderRadius: BorderRadius.circular(16),
-      child: Container(
-        padding: const EdgeInsets.all(16),
-        decoration: BoxDecoration(
-          color: Colors.white,
+    Color cardBgColor = theme.cardColor;
+    Color borderColor = themeColor;
+    double borderWidth = 2.0;
+    Widget? suffixIcon;
+    Color letterBgColor = themeColor;
+    Color letterTextColor = Colors.white;
+    Color textColor = isDark ? Colors.white : Colors.black87;
+
+    if (isAnswerChecked) {
+      if (isCorrect) {
+        cardBgColor = isDark ? Colors.green.withOpacity(0.15) : Colors.green.shade50;
+        borderColor = Colors.green;
+        letterBgColor = Colors.green;
+        textColor = isDark ? Colors.white : Colors.green.shade900;
+        suffixIcon = const Icon(Icons.check_circle, color: Colors.green, size: 24);
+      } else if (isSelected) {
+        cardBgColor = isDark ? Colors.red.withOpacity(0.15) : Colors.red.shade50;
+        borderColor = Colors.red;
+        letterBgColor = Colors.red;
+        textColor = isDark ? Colors.white : Colors.red.shade900;
+        suffixIcon = const Icon(Icons.cancel, color: Colors.red, size: 24);
+      } else {
+        cardBgColor = (isDark ? theme.cardColor : Colors.grey.shade100).withOpacity(0.6);
+        borderColor = AppColors.borderLight.withOpacity(0.4);
+        letterBgColor = isDark ? Colors.white12 : Colors.grey.shade300;
+        letterTextColor = Colors.grey;
+        textColor = Colors.grey;
+      }
+    }
+
+    return AnimatedContainer(
+      duration: const Duration(milliseconds: 200),
+      curve: Curves.easeInOut,
+      decoration: BoxDecoration(
+        color: cardBgColor,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: borderColor, width: borderWidth),
+        boxShadow: isAnswerChecked && (isCorrect || isSelected)
+            ? [
+                BoxShadow(
+                  color: (isCorrect ? Colors.green : Colors.red).withOpacity(0.1),
+                  blurRadius: 8,
+                  offset: const Offset(0, 4),
+                )
+              ]
+            : null,
+      ),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: isAnswerChecked ? null : onTap,
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: AppColors.error, width: 2),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+            child: Row(
+              children: [
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 200),
+                  width: 32,
+                  height: 32,
+                  decoration: BoxDecoration(
+                    color: letterBgColor,
+                    shape: BoxShape.circle,
+                  ),
+                  child: Center(
+                    child: Text(
+                      letters[index],
+                      style: TextStyle(
+                        color: letterTextColor,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Text(
+                    option,
+                    style: TextStyle(
+                      color: textColor,
+                      fontSize: 15,
+                      fontWeight: isAnswerChecked && (isCorrect || isSelected) ? FontWeight.bold : FontWeight.w500,
+                    ),
+                  ),
+                ),
+                if (suffixIcon != null) ...[
+                  const SizedBox(width: 12),
+                  suffixIcon,
+                ],
+              ],
+            ),
+          ),
         ),
-        child: Row(
+      ),
+    );
+  }
+}
+
+class _ExplanationPanel extends StatelessWidget {
+  final bool isCorrect;
+  final String explanation;
+  final VoidCallback onContinue;
+  final bool isLast;
+
+  const _ExplanationPanel({
+    required this.isCorrect,
+    required this.explanation,
+    required this.onContinue,
+    required this.isLast,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
+    final bgColor = isCorrect
+        ? (isDark ? const Color(0xFF1E3A1E) : const Color(0xFFE8F5E9))
+        : (isDark ? const Color(0xFF3A1E1E) : const Color(0xFFFFEBEE));
+
+    final textColor = isCorrect
+        ? (isDark ? const Color(0xFF81C784) : const Color(0xFF2E7D32))
+        : (isDark ? const Color(0xFFE57373) : const Color(0xFFC62828));
+
+    final icon = isCorrect ? Icons.check_circle_outline : Icons.error_outline;
+    final title = isCorrect ? 'অসাধারণ! সঠিক উত্তর' : 'ভুল উত্তর হয়েছে';
+
+    return Container(
+      width: double.infinity,
+      decoration: BoxDecoration(
+        color: bgColor,
+        borderRadius: const BorderRadius.only(
+          topLeft: Radius.circular(24),
+          topRight: Radius.circular(24),
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.08),
+            blurRadius: 10,
+            offset: const Offset(0, -4),
+          ),
+        ],
+        border: Border(
+          top: BorderSide(
+            color: isCorrect
+                ? (isDark ? Colors.green.withOpacity(0.3) : Colors.green.shade200)
+                : (isDark ? Colors.red.withOpacity(0.3) : Colors.red.shade200),
+            width: 1.5,
+          ),
+        ),
+      ),
+      padding: const EdgeInsets.fromLTRB(20, 20, 20, 24),
+      child: SafeArea(
+        top: false,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              width: 32,
-              height: 32,
-              decoration: BoxDecoration(
-                color: AppColors.error,
-                shape: BoxShape.circle,
-              ),
-              child: Center(
-                child: Text(
-                  letters[index],
-                  style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),
+            Row(
+              children: [
+                Icon(icon, color: textColor, size: 28),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    title,
+                    style: TextStyle(
+                      color: textColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            ConstrainedBox(
+              constraints: const BoxConstraints(maxHeight: 180),
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'বিস্তারিত ব্যাখ্যা:',
+                      style: TextStyle(
+                        color: textColor.withOpacity(0.85),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      explanation,
+                      style: TextStyle(
+                        color: isDark ? Colors.white.withOpacity(0.9) : Colors.black87,
+                        fontSize: 15,
+                        height: 1.5,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
-            const SizedBox(width: 16),
-            Expanded(
-              child: Text(option, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500)),
+            const SizedBox(height: 20),
+            SizedBox(
+              width: double.infinity,
+              height: 52,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: isCorrect ? Colors.green : Colors.red,
+                  foregroundColor: Colors.white,
+                  elevation: 2,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                ),
+                onPressed: onContinue,
+                child: Text(
+                  isLast ? 'ফলাফল দেখুন' : 'পরবর্তী প্রশ্ন',
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

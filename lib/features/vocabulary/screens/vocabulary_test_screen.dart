@@ -203,7 +203,7 @@ class _VocabularyTestScreenState extends ConsumerState<VocabularyTestScreen> {
               width: double.infinity,
               padding: const EdgeInsets.all(28),
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: AppColors.primaryGradient),
+                gradient: const LinearGradient(colors: AppColors.primaryGradient),
                 borderRadius: BorderRadius.circular(24),
               ),
               child: Column(children: [
@@ -319,7 +319,7 @@ class _VocabularyTestScreenState extends ConsumerState<VocabularyTestScreen> {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 20),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: AppColors.primaryGradient),
+                  gradient: const LinearGradient(colors: AppColors.primaryGradient),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Text('$_score / ${_questions.length}',
@@ -495,7 +495,7 @@ class _HistorySheetState extends State<_HistorySheet> {
                                   color: AppColors.primary,
                                   fontWeight: FontWeight.bold)),
                         ),
-                        title: Text(words.take(4).join(', ') + '...',
+                        title: Text('${words.take(4).join(', ')}...',
                             maxLines: 1, overflow: TextOverflow.ellipsis),
                         subtitle: Text(dateStr,
                             style: const TextStyle(fontSize: 11)),

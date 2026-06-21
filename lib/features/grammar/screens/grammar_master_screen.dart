@@ -100,8 +100,9 @@ Format:
       final t = widget.chapter.topics[i];
       buf.writeln('--- Topic ${i + 1}: ${t.name} (${t.banglaName}) ---');
       if (t.definition.isNotEmpty) buf.writeln('Definition: ${t.definition}');
-      if (t.banglaDefinition.isNotEmpty)
+      if (t.banglaDefinition.isNotEmpty) {
         buf.writeln('বাংলা: ${t.banglaDefinition}');
+      }
       if (t.formula.isNotEmpty) buf.writeln('Formula: ${t.formula}');
       if (t.rules.isNotEmpty) {
         buf.writeln('Rules:');
@@ -798,7 +799,7 @@ Format:
                         ),
                         child: Text(
                           'Ch ${widget.chapter.chapter}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: AppColors.primary,
                             fontWeight: FontWeight.bold,
                             fontSize: 14,
@@ -912,7 +913,7 @@ Format:
                 ),
                 child: Text(
                   '${_currentIndex + 1}/${_questions.length}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: AppColors.primary,
                     fontWeight: FontWeight.bold,
                     fontSize: 13,
@@ -1039,7 +1040,7 @@ Format:
                   decoration: BoxDecoration(
                     color: bgColor,
                     borderRadius: BorderRadius.circular(14),
-                    border: Border.all(color: borderColor!, width: 1.5),
+                    border: Border.all(color: borderColor, width: 1.5),
                   ),
                   child: Row(
                     children: [
@@ -1326,12 +1327,12 @@ Format:
                             color: AppColors.primary.withOpacity(0.08),
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(Icons.school,
                                   size: 14, color: AppColors.primary),
-                              const SizedBox(width: 6),
+                              SizedBox(width: 6),
                               Text('View Explanation',
                                   style: TextStyle(
                                     color: AppColors.primary,
@@ -1363,7 +1364,7 @@ Format:
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
                     ),
-                    side: BorderSide(color: AppColors.primary),
+                    side: const BorderSide(color: AppColors.primary),
                   ),
                 ),
               ),

@@ -1,0 +1,77 @@
+{
+  "tenseId": "future_continuous",
+  "tenseName": "Future Continuous Tense",
+  "banglaName": "ঘটমান ভবিষ্যৎ কাল",
+  "color": "#0891B2",
+  "icon": "pending",
+  "shortDescription": "ভবিষ্যতে কোনো নির্দিষ্ট সময়ে চলমান থাকবে এমন কাজ প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + will + be + Verb-ing + Object",
+    "negative": "Subject + will + not + be + Verb-ing + Object",
+    "interrogative": "Will + Subject + be + Verb-ing + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "গঠন ও ব্যবহার",
+      "banglaTitle": "Structure সহজে মনে রাখো",
+      "icon": "schema",
+      "color": "#0891B2",
+      "explanation": "Future Continuous = will + be + Verb-ing:",
+      "points": [
+        "সব subject এর জন্য will be + Verb-ing ব্যবহার হয়",
+        "be সবসময় থাকবে — এটাই এই tense এর বিশেষ চিহ্ন",
+        "ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ বোঝায়",
+        "Negative: will not be + Verb-ing | Question: Will + Subject + be + Verb-ing?"
+      ],
+      "examples": [
+        { "english": "I will be sleeping at midnight.", "bangla": "আমি মধ্যরাতে ঘুমাচ্ছব।" },
+        { "english": "They will be working this time tomorrow.", "bangla": "আগামীকাল এই সময়ে তারা কাজ করছব।" },
+        { "english": "She will be cooking when you arrive.", "bangla": "তুমি যখন আসবে, সে রান্না করছব।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Future Simple vs Future Continuous",
+      "banglaTitle": "দুটোর পার্থক্য",
+      "icon": "compare_arrows",
+      "color": "#F59E0B",
+      "explanation": "কখন কোনটা ব্যবহার হবে বুঝে নাও:",
+      "points": [
+        "Future Simple: সাধারণ ভবিষ্যৎ কাজ: I will eat. (খাবো)",
+        "Future Continuous: নির্দিষ্ট সময়ে চলমান: At 8, I will be eating. (খাচ্ছব)",
+        "Future Continuous ব্যবহার হয় পরিকল্পিত বা নিশ্চিত ভবিষ্যৎ কাজে"
+      ],
+      "examples": [
+        { "english": "I will call at 9. (simple action)", "bangla": "আমি ৯টায় ফোন করব।" },
+        { "english": "At 9, I will be studying. (ongoing at that time)", "bangla": "৯টায় আমি পড়াশোনা করছব।" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#8B5CF6",
+      "explanation": "এই শব্দগুলো দেখলে Future Continuous সন্দেহ করো:",
+      "points": [
+        "this time tomorrow, at this time next week",
+        "at + ভবিষ্যৎ সময়: at 5 PM tomorrow, at noon next Monday",
+        "when + ভবিষ্যৎ কাজ (চলমান প্রেক্ষাপটে)"
+      ],
+      "examples": [
+        { "english": "This time next week, I will be flying to London.", "bangla": "আগামী সপ্তাহ এই সময়ে আমি লন্ডনে যাচ্ছব।" },
+        { "english": "Will you be working tomorrow at 3 PM?", "bangla": "আগামীকাল বিকাল ৩টায় তুমি কি কাজ করছব?" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + will + be + Verb-ing",
+    "keyPoints": [
+      "সব subject এর জন্য will be ব্যবহার হয়",
+      "be সবসময় থাকবে",
+      "ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ",
+      "this time tomorrow, at + time → Future Continuous এর চিহ্ন"
+    ]
+  }
+}

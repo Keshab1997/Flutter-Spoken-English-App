@@ -45,7 +45,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
               width: double.infinity,
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: AppColors.infoGradient),
+                gradient: const LinearGradient(colors: AppColors.infoGradient),
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(
@@ -65,7 +65,7 @@ class _ListeningScreenState extends State<ListeningScreen> {
                       ),
                       const SizedBox(width: 8),
                       Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
                           shape: BoxShape.circle,
                         ),
@@ -141,9 +141,9 @@ class _ListeningScreenState extends State<ListeningScreen> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(t['title']!, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13), maxLines: 2, overflow: TextOverflow.ellipsis),
+                          Text(t['title']!, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13), maxLines: 2, overflow: TextOverflow.ellipsis),
                           const SizedBox(height: 4),
-                          Text('${t['duration']!}  •  ${t['level']!}', style: TextStyle(color: Colors.grey, fontSize: 11)),
+                          Text('${t['duration']!}  •  ${t['level']!}', style: const TextStyle(color: Colors.grey, fontSize: 11)),
                         ],
                       ),
                     ),

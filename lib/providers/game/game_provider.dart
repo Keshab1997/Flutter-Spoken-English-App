@@ -51,6 +51,8 @@ class GameState {
   /// Wall-clock start of the round. Captured when the first question
   /// is loaded; used to compute [GameResultModel.durationSeconds].
   final DateTime? startedAt;
+  
+  final GameMode? gameMode;
 
   const GameState({
     this.questions = const [],
@@ -65,6 +67,7 @@ class GameState {
     this.isAnswerChecked = false,
     this.gameType = 'normal',
     this.startedAt,
+    this.gameMode,
   });
 
   GameState copyWith({
@@ -80,6 +83,7 @@ class GameState {
     bool? isAnswerChecked,
     String? gameType,
     DateTime? startedAt,
+    GameMode? gameMode,
     bool clearError = false,
   }) {
     return GameState(
@@ -95,6 +99,7 @@ class GameState {
       isAnswerChecked: isAnswerChecked ?? this.isAnswerChecked,
       gameType: gameType ?? this.gameType,
       startedAt: startedAt ?? this.startedAt,
+      gameMode: gameMode ?? this.gameMode,
     );
   }
 
@@ -149,6 +154,7 @@ class GameNotifier extends StateNotifier<GameState> {
         isLoading: false,
         lastResult: null,
         gameType: gameType,
+        gameMode: mode,
         startedAt: DateTime.now(),
       );
     } catch (e) {

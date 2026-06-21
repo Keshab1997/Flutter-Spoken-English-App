@@ -234,14 +234,14 @@ class _StudyPlanSectionState extends ConsumerState<StudyPlanSection> {
                   child: const Icon(Icons.quiz_rounded, color: Colors.white, size: 22),
                 ),
                 const SizedBox(width: 12),
-                Expanded(
+                const Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text('WEEKLY TEST',
+                      Text('WEEKLY TEST',
                           style: TextStyle(color: Colors.white70, fontSize: 10, fontWeight: FontWeight.bold, letterSpacing: 1.0)),
-                      const SizedBox(height: 2),
-                      const Text('Time for your weekly mock test!',
+                      SizedBox(height: 2),
+                      Text('Time for your weekly mock test!',
                           style: TextStyle(color: Colors.white, fontSize: 13, fontWeight: FontWeight.w600)),
                     ],
                   ),

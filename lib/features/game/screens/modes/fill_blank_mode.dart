@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../providers/game/game_provider.dart';
 import '../../../../providers/game/sound_provider.dart';
-import '../../../../services/sound_service.dart';
 import '../../../../models/game/game_question_model.dart';
-import '../mode_game_screen.dart';
 import '../result_screen.dart';
 
 class FillBlankMode extends ConsumerWidget {
@@ -44,15 +42,15 @@ class FillBlankMode extends ConsumerWidget {
             padding: const EdgeInsets.all(24),
             margin: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [Colors.blue, Colors.lightBlue]),
+              gradient: const LinearGradient(colors: [Colors.blue, Colors.lightBlue]),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Complete the sentence:',
-                  style: const TextStyle(color: Colors.white70, fontSize: 14),
+                  style: TextStyle(color: Colors.white70, fontSize: 14),
                 ),
                 const SizedBox(height: 12),
                 RichText(
@@ -84,7 +82,7 @@ class FillBlankMode extends ConsumerWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: gameState.showExplanation && question.explanation != null
+              child: gameState.showExplanation
                   ? _buildExplanation(context, ref, question)
                   : _buildAnswerOptions(context, ref, question),
             ),
@@ -239,7 +237,7 @@ class FillBlankMode extends ConsumerWidget {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => ResultScreen(
+                      builder: (_) => const ResultScreen(
                         score: 0, // Will be calculated
                         correctAnswers: 0,
                         wrongAnswers: 0,

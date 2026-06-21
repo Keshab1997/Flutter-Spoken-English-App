@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../providers/game/game_provider.dart';
 import '../../../../providers/game/sound_provider.dart';
-import '../../../../services/sound_service.dart';
 import '../../../../models/game/game_question_model.dart';
-import '../mode_game_screen.dart';
 import '../result_screen.dart';
 
 class TranslationChallengeMode extends ConsumerWidget {
@@ -43,15 +41,15 @@ class TranslationChallengeMode extends ConsumerWidget {
             padding: const EdgeInsets.all(24),
             margin: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [Colors.purple, Colors.deepPurple]),
+              gradient: const LinearGradient(colors: [Colors.purple, Colors.deepPurple]),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
+                const Text(
                   'Translate the sentence:',
-                  style: const TextStyle(color: Colors.white70, fontSize: 14),
+                  style: TextStyle(color: Colors.white70, fontSize: 14),
                 ),
                 const SizedBox(height: 12),
                 Text(
@@ -66,7 +64,7 @@ class TranslationChallengeMode extends ConsumerWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: gameState.showExplanation && question.explanation != null
+              child: gameState.showExplanation
                   ? _buildExplanation(context, ref, question)
                   : _buildAnswerOptions(context, ref, question),
             ),
@@ -221,7 +219,7 @@ class TranslationChallengeMode extends ConsumerWidget {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => ResultScreen(
+                      builder: (_) => const ResultScreen(
                         score: 0,
                         correctAnswers: 0,
                         wrongAnswers: 0,

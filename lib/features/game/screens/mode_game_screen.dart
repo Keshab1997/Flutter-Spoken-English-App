@@ -461,9 +461,9 @@ class _ModeGameScreenState extends ConsumerState<ModeGameScreen> with TickerProv
                           ),
                         ),
                       ),
-                  ] else if (gameState.showExplanation && question.explanation != null) ...[
+                  ] else if (gameState.showExplanation) ...[
                     ExplanationWidget(
-                      explanation: question.explanation!,
+                      explanation: question.explanation,
                       isCorrect: gameState.isCurrentAnswerCorrect ?? false,
                       onContinue: _continueToNext,
                     ),

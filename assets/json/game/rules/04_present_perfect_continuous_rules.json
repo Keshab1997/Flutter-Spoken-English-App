@@ -1,0 +1,77 @@
+{
+  "tenseId": "present_perfect_continuous",
+  "tenseName": "Present Perfect Continuous Tense",
+  "banglaName": "পুরাঘটিত ঘটমান বর্তমান কাল",
+  "color": "#EC4899",
+  "icon": "timelapse",
+  "shortDescription": "অতীতে শুরু হয়ে এখনো চলছে এমন কাজ প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + have/has + been + Verb-ing + Object",
+    "negative": "Subject + have/has + not + been + Verb-ing + Object",
+    "interrogative": "Have/Has + Subject + been + Verb-ing + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "গঠন মনে রাখার উপায়",
+      "banglaTitle": "Structure সহজে মনে রাখো",
+      "icon": "schema",
+      "color": "#EC4899",
+      "explanation": "Present Perfect Continuous = have/has + been + Verb-ing",
+      "points": [
+        "I / We / You / They → have been + Verb-ing",
+        "He / She / It → has been + Verb-ing",
+        "been সবসময় থাকবে — এটাই এই tense এর বিশেষ চিহ্ন",
+        "Verb-এ ing যোগ হবে Present Continuous এর মতোই"
+      ],
+      "examples": [
+        { "english": "I have been waiting for an hour.", "bangla": "আমি এক ঘণ্টা ধরে অপেক্ষা করছি।" },
+        { "english": "She has been studying all night.", "bangla": "সে সারারাত ধরে পড়াশোনা করছে।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Present Perfect vs Present Perfect Continuous",
+      "banglaTitle": "দুটোর পার্থক্য",
+      "icon": "compare_arrows",
+      "color": "#F59E0B",
+      "explanation": "দুটো tense এর মধ্যে পার্থক্য বোঝো:",
+      "points": [
+        "Present Perfect → কাজ সম্পন্ন হয়েছে: I have read the book. (পড়া শেষ)",
+        "Present Perfect Continuous → কাজ এখনো চলছে: I have been reading for 2 hours. (এখনো পড়ছি)",
+        "Continuous tense কাজের duration (সময়কাল) emphasize করে",
+        "Result emphasize করতে Perfect, Process emphasize করতে Continuous"
+      ],
+      "examples": [
+        { "english": "He has painted the wall. (finished)", "bangla": "সে দেয়াল রং করেছে। (শেষ হয়েছে)" },
+        { "english": "He has been painting since morning. (still going)", "bangla": "সে সকাল থেকে রং করছে। (এখনো চলছে)" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "for ও since এর ব্যবহার",
+      "banglaTitle": "for এবং since এর পার্থক্য",
+      "icon": "access_time",
+      "color": "#10B981",
+      "explanation": "এই tense এ for এবং since প্রায়ই ব্যবহার হয়:",
+      "points": [
+        "for → সময়কাল বোঝায়: for 3 hours, for 2 days, for a week, for years",
+        "since → শুরুর সময় বোঝায়: since morning, since 2020, since last week",
+        "for → কতক্ষণ ধরে? | since → কখন থেকে?"
+      ],
+      "examples": [
+        { "english": "They have been playing for two hours.", "bangla": "তারা দুই ঘণ্টা ধরে খেলছে।" },
+        { "english": "I have been learning English since 2020.", "bangla": "আমি ২০২০ সাল থেকে ইংরেজি শিখছি।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + have/has + been + Verb-ing",
+    "keyPoints": [
+      "I/We/You/They → have been | He/She/It → has been",
+      "been সবসময় থাকবে",
+      "for (duration) ও since (starting point) ব্যবহার হয়",
+      "কাজ এখনো চলছে এটা emphasize করে"
+    ]
+  }
+}

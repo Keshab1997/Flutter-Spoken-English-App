@@ -54,7 +54,7 @@ class _BanglishTranslatorScreenState extends ConsumerState<BanglishTranslatorScr
     });
 
     try {
-      final systemPrompt = '''
+      const systemPrompt = '''
 You are a Bangla/Banglish-to-English translator and English grammar teacher.
 
 The user can write in either Bangla (Bengali script) or Banglish (Bengali words using English alphabets).
@@ -320,10 +320,10 @@ Respond ONLY in this exact JSON format, no other text:
                 topRight: Radius.circular(20),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
-                const Icon(Icons.edit_rounded, color: AppColors.primary, size: 18),
-                const SizedBox(width: 8),
+                Icon(Icons.edit_rounded, color: AppColors.primary, size: 18),
+                SizedBox(width: 8),
                 Text(
                   'Write in Bangla / Banglish',
                   style: TextStyle(
@@ -465,7 +465,7 @@ Respond ONLY in this exact JSON format, no other text:
     return Container(
       width: double.infinity,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           colors: AppColors.primaryGradient,
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,

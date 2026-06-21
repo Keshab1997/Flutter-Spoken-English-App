@@ -23,7 +23,7 @@ class LessonDetailScreen extends StatelessWidget {
               width: double.infinity,
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                gradient: LinearGradient(
+                gradient: const LinearGradient(
                   colors: AppColors.primaryGradient,
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,

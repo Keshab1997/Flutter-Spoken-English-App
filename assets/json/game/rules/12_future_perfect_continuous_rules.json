@@ -1,0 +1,59 @@
+{
+  "tenseId": "future_perfect_continuous",
+  "tenseName": "Future Perfect Continuous Tense",
+  "banglaName": "পুরাঘটিত ঘটমান ভবিষ্যৎ কাল",
+  "color": "#D97706",
+  "icon": "hourglass_top",
+  "shortDescription": "ভবিষ্যতে কোনো সময় পর্যন্ত একটানা চলমান থাকবে এমন কাজ প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + will + have + been + Verb-ing + Object",
+    "negative": "Subject + will + not + have + been + Verb-ing + Object",
+    "interrogative": "Will + Subject + have + been + Verb-ing + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "গঠন ও ব্যবহার",
+      "banglaTitle": "Structure সহজে মনে রাখো",
+      "icon": "schema",
+      "color": "#D97706",
+      "explanation": "Future Perfect Continuous = will + have + been + Verb-ing:",
+      "points": [
+        "সব subject এর জন্য will have been + Verb-ing ব্যবহার হয়",
+        "ভবিষ্যতের একটি নির্দিষ্ট সময় পর্যন্ত কাজটি চলমান থাকবে",
+        "for + সময়কাল এর সাথে সচরাচর ব্যবহার হয়",
+        "এটি সবচেয়ে জটিল tense — কিন্তু গঠন মনে রাখলে সহজ"
+      ],
+      "examples": [
+        { "english": "By 2030, I will have been teaching for 20 years.", "bangla": "২০৩০ সালের মধ্যে আমি ২০ বছর ধরে পড়াচ্ছব।" },
+        { "english": "When he arrives, I will have been waiting for 2 hours.", "bangla": "সে যখন আসবে, তখন আমি ২ ঘণ্টা ধরে অপেক্ষা করছব।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "সব Future Tense এর তুলনা",
+      "banglaTitle": "চারটি Future Tense পার্থক্য",
+      "icon": "compare",
+      "color": "#8B5CF6",
+      "explanation": "চারটি Future Tense এর পার্থক্য এক নজরে দেখো:",
+      "points": [
+        "Future Simple: I will eat. → সাধারণ ভবিষ্যৎ",
+        "Future Continuous: I will be eating at 8. → নির্দিষ্ট সময়ে চলমান",
+        "Future Perfect: I will have eaten by 8. → নির্দিষ্ট সময়ের আগে শেষ",
+        "Future Perfect Continuous: I will have been eating for 2 hours by 8. → নির্দিষ্ট সময় পর্যন্ত চলমান"
+      ],
+      "examples": [
+        { "english": "By next year, they will have been running the company for a decade.", "bangla": "আগামী বছরের মধ্যে তারা এক দশক ধরে কোম্পানি চালাচ্ছব।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + will + have + been + Verb-ing",
+    "keyPoints": [
+      "সব subject এর জন্য will have been ব্যবহার হয়",
+      "ভবিষ্যতের একটি সময় পর্যন্ত চলমান কাজ",
+      "for + সময়কাল → Future Perfect Continuous এর প্রধান চিহ্ন",
+      "১২টি Tense এর মধ্যে সবচেয়ে জটিল — কিন্তু বিরল ব্যবহার"
+    ]
+  }
+}

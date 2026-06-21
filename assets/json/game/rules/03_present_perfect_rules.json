@@ -1,0 +1,96 @@
+{
+  "tenseId": "present_perfect",
+  "tenseName": "Present Perfect Tense",
+  "banglaName": "পুরাঘটিত বর্তমান কাল",
+  "color": "#8B5CF6",
+  "icon": "done_all",
+  "shortDescription": "অতীতে সম্পন্ন হয়েছে কিন্তু বর্তমানের সাথে সম্পর্কিত।",
+  "structure": {
+    "affirmative": "Subject + have/has + Verb(past participle) + Object",
+    "negative": "Subject + have/has + not + Verb(past participle) + Object",
+    "interrogative": "Have/Has + Subject + Verb(past participle) + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "have এবং has এর ব্যবহার",
+      "banglaTitle": "have/has কখন কোথায়",
+      "icon": "check_circle",
+      "color": "#8B5CF6",
+      "explanation": "Subject অনুযায়ী have বা has বেছে নাও:",
+      "points": [
+        "I / We / You / They → have ব্যবহার করো",
+        "He / She / It / Singular noun → has ব্যবহার করো",
+        "সংক্ষিপ্ত: I've, He's, She's, They've"
+      ],
+      "examples": [
+        { "english": "I have eaten breakfast.", "bangla": "আমি নাস্তা খেয়েছি।" },
+        { "english": "She has finished her homework.", "bangla": "সে তার হোমওয়ার্ক শেষ করেছে।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Past Participle (V3) তৈরির নিয়ম",
+      "banglaTitle": "V3 কীভাবে তৈরি হয়",
+      "icon": "transform",
+      "color": "#10B981",
+      "explanation": "Regular এবং Irregular verb এর V3 আলাদাভাবে তৈরি হয়:",
+      "points": [
+        "Regular verbs: verb + ed → work→worked, play→played, watch→watched",
+        "Irregular verbs: আলাদাভাবে মুখস্থ করতে হয়",
+        "go→gone, eat→eaten, write→written, see→seen, do→done",
+        "take→taken, give→given, come→come, run→run, read→read"
+      ],
+      "examples": [
+        { "english": "They have played football.", "bangla": "তারা ফুটবল খেলেছে।" },
+        { "english": "He has written a letter.", "bangla": "সে একটি চিঠি লিখেছে।" },
+        { "english": "We have eaten dinner.", "bangla": "আমরা রাতের খাবার খেয়েছি।" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "কখন Present Perfect ব্যবহার হয়",
+      "banglaTitle": "ব্যবহারের পরিস্থিতি",
+      "icon": "lightbulb",
+      "color": "#F59E0B",
+      "explanation": "৪টি প্রধান পরিস্থিতিতে Present Perfect ব্যবহার হয়:",
+      "points": [
+        "অতীতের কাজ যার ফল এখনো আছে: I have lost my keys. (এখনো পাইনি)",
+        "জীবনের অভিজ্ঞতা: I have visited London. (কখনো গিয়েছি)",
+        "সদ্য সম্পন্ন কাজ: She has just arrived. (এইমাত্র এসেছে)",
+        "অব্যাহত পরিস্থিতি: He has lived here for 5 years. (এখনো থাকছে)"
+      ],
+      "examples": [
+        { "english": "I have never seen snow.", "bangla": "আমি কখনো তুষার দেখিনি।" },
+        { "english": "She has just called me.", "bangla": "সে এইমাত্র আমাকে ফোন করেছে।" }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#06B6D4",
+      "explanation": "এই শব্দগুলো দেখলে Present Perfect সন্দেহ করো:",
+      "points": [
+        "just, already, yet, recently, lately",
+        "ever, never, before, so far",
+        "for (সময়কাল): for 3 years, for a week",
+        "since (শুরু থেকে): since 2020, since Monday"
+      ],
+      "examples": [
+        { "english": "Have you ever tried sushi?", "bangla": "তুমি কি কখনো সুশি খেয়েছো?" },
+        { "english": "I have already done my homework.", "bangla": "আমি ইতিমধ্যে আমার হোমওয়ার্ক করেছি।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + have/has + V3 (Past Participle)",
+    "keyPoints": [
+      "I/We/You/They → have | He/She/It → has",
+      "Regular V3: verb+ed | Irregular: আলাদাভাবে মুখস্থ",
+      "just, already, yet, ever, never → Present Perfect এর চিহ্ন",
+      "for/since → অব্যাহত অবস্থা বোঝাতে"
+    ]
+  }
+}

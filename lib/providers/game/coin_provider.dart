@@ -1,6 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../services/coin_service.dart';
-import '../../repositories/progress_repository.dart';
 import 'game_provider.dart';
 
 // ── Coin State ──

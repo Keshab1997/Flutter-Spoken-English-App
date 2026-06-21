@@ -95,13 +95,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                     floating: false,
                     pinned: true,
                     backgroundColor: Colors.transparent,
-                    flexibleSpace: FlexibleSpaceBar(
-                      title: const Text(
+                    flexibleSpace: const FlexibleSpaceBar(
+                      title: Text(
                         'Tense Mastery',
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
                       ),
                       centerTitle: false,
-                      titlePadding: const EdgeInsets.only(left: 20, bottom: 16),
+                      titlePadding: EdgeInsets.only(left: 20, bottom: 16),
                     ),
                     actions: [
                       IconButton(
@@ -170,7 +170,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                             action: Container(
                               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                               decoration: BoxDecoration(
-                                gradient: LinearGradient(colors: [Colors.amber, Colors.orange]),
+                                gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Row(
@@ -202,7 +202,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                           const SizedBox(height: 32),
 
                           // Current Level & XP Progress
-                          _SectionHeader(title: 'Current Level'),
+                          const _SectionHeader(title: 'Current Level'),
                           const SizedBox(height: 12),
                           _LevelProgressCard(
                             level: xpState.currentLevel,
@@ -215,7 +215,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                           const SizedBox(height: 32),
 
                           // Streak Section
-                          _SectionHeader(title: 'Streak'),
+                          const _SectionHeader(title: 'Streak'),
                           const SizedBox(height: 12),
                           _StreakCard(
                             streak: streakState.currentStreak,
@@ -271,7 +271,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                                 child: _ActionButton(
                                   label: 'Leaderboard',
                                   icon: Icons.leaderboard,
-                                  gradient: [Colors.purple, Colors.deepPurple],
+                                  gradient: const [Colors.purple, Colors.deepPurple],
                                   onTap: () {
                                     ref.read(soundProvider.notifier).playButtonTap();
                                     Navigator.push(
@@ -291,7 +291,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                             child: _ActionButton(
                               label: 'Statistics',
                               icon: Icons.bar_chart,
-                              gradient: [Colors.teal, Colors.cyan],
+                              gradient: const [Colors.teal, Colors.cyan],
                               onTap: () {
                                 ref.read(soundProvider.notifier).playButtonTap();
                                 Navigator.push(
@@ -345,7 +345,7 @@ class _PlayerStatsCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: AppColors.primaryGradient),
+        gradient: const LinearGradient(colors: AppColors.primaryGradient),
         borderRadius: BorderRadius.circular(24),
         boxShadow: [
           BoxShadow(
@@ -489,7 +489,7 @@ class _ContinuePlayingCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [Colors.blue, Colors.lightBlue]),
+          gradient: const LinearGradient(colors: [Colors.blue, Colors.lightBlue]),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
@@ -566,7 +566,7 @@ class _DailyChallengeCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [Colors.amber, Colors.orange]),
+          gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
@@ -677,7 +677,7 @@ class _LevelProgressCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: AppColors.primaryGradient),
+                  gradient: const LinearGradient(colors: AppColors.primaryGradient),
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Text(
@@ -729,7 +729,7 @@ class _StreakCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Colors.orange, Colors.deepOrange]),
+        gradient: const LinearGradient(colors: [Colors.orange, Colors.deepOrange]),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Row(
@@ -824,7 +824,7 @@ class _AchievementsPreview extends StatelessWidget {
               width: 56,
               height: 56,
               decoration: BoxDecoration(
-                gradient: LinearGradient(colors: [Colors.amber, Colors.orange]),
+                gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: const Icon(Icons.emoji_events, color: Colors.white, size: 32),

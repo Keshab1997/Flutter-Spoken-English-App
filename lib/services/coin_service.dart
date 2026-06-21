@@ -9,7 +9,7 @@ class CoinService {
   // ── Coin Calculation ──
 
   int calculateCorrectAnswerCoins({int streak = 0}) {
-    final baseCoins = 5;
+    const baseCoins = 5;
     final streakBonus = (streak ~/ 5) * 2; // +2 coins every 5 streak
     return baseCoins + streakBonus;
   }

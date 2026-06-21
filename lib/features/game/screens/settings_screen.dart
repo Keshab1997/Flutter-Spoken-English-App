@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../providers/theme_provider.dart';
 import '../../../providers/game/sound_provider.dart';
-import '../../../services/sound_service.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -148,10 +147,10 @@ class SettingsScreen extends ConsumerWidget {
           _SettingsSection(
             title: 'About',
             children: [
-              ListTile(
-                leading: const Icon(Icons.info, color: AppColors.primary),
-                title: const Text('Version'),
-                subtitle: const Text('1.0.0'),
+              const ListTile(
+                leading: Icon(Icons.info, color: AppColors.primary),
+                title: Text('Version'),
+                subtitle: Text('1.0.0'),
               ),
               const Divider(),
               ListTile(

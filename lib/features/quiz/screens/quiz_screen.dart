@@ -134,7 +134,7 @@ class _QuizScreenState extends State<QuizScreen> {
                     width: double.infinity,
                     padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: AppColors.primaryGradient),
+                      gradient: const LinearGradient(colors: AppColors.primaryGradient),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Text(

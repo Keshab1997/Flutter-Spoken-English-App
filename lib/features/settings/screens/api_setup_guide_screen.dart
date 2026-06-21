@@ -186,7 +186,7 @@ class _StepCard extends StatelessWidget {
           Container(
             width: 32,
             height: 32,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: AppColors.primary,
               shape: BoxShape.circle,
             ),
@@ -225,7 +225,7 @@ class _StepCard extends StatelessWidget {
                     ),
                     child: SelectableText(
                       code!,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontFamily: 'monospace',
                         fontSize: 13,
                         color: AppColors.primary,

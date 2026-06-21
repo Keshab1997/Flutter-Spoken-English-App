@@ -1,0 +1,138 @@
+{
+  "tenseId": "present_indefinite",
+  "tenseName": "Present Indefinite Tense",
+  "banglaName": "সাধারণ বর্তমান কাল",
+  "color": "#10B981",
+  "icon": "today",
+  "shortDescription": "অভ্যাস, সাধারণ সত্য এবং বর্তমানের ঘটনা প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + Verb(base/s/es) + Object",
+    "negative": "Subject + do/does + not + Verb(base) + Object",
+    "interrogative": "Do/Does + Subject + Verb(base) + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "Affirmative বাক্যের নিয়ম",
+      "banglaTitle": "স্বীকারবাচক বাক্যের নিয়ম",
+      "icon": "check_circle",
+      "color": "#10B981",
+      "explanation": "Subject অনুযায়ী verb এর রূপ পরিবর্তন হয়।",
+      "points": [
+        "I / We / You / They → Verb এর base form ব্যবহার হয়। যেমন: I eat, They play",
+        "He / She / It / Singular noun → Verb এর শেষে s বা es যোগ হয়। যেমন: He eats, She plays",
+        "Verb শেষে o, s, x, ch, sh থাকলে es যোগ হয়। যেমন: goes, watches, washes",
+        "Consonant + y দিয়ে শেষ হলে y বাদ দিয়ে ies যোগ হয়। যেমন: study → studies, carry → carries"
+      ],
+      "examples": [
+        { "english": "I drink coffee every morning.", "bangla": "আমি প্রতিদিন সকালে কফি পান করি।" },
+        { "english": "She drinks tea every evening.", "bangla": "সে প্রতিদিন সন্ধ্যায় চা পান করে।" },
+        { "english": "He goes to school daily.", "bangla": "সে প্রতিদিন স্কুলে যায়।" },
+        { "english": "She studies English every night.", "bangla": "সে প্রতিদিন রাতে ইংরেজি পড়ে।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Negative বাক্যের নিয়ম",
+      "banglaTitle": "নেতিবাচক বাক্যের নিয়ম",
+      "icon": "cancel",
+      "color": "#EF4444",
+      "explanation": "Negative বাক্যে do not / does not ব্যবহার করতে হয়।",
+      "points": [
+        "I / We / You / They → do not (don't) + Verb base form",
+        "He / She / It → does not (doesn't) + Verb base form",
+        "সতর্কতা: does ব্যবহার করলে verb এ আর s/es যোগ হয় না",
+        "He doesn't goes ❌ → He doesn't go ✅"
+      ],
+      "examples": [
+        { "english": "I do not eat meat.", "bangla": "আমি মাংস খাই না।" },
+        { "english": "She does not like cold weather.", "bangla": "সে ঠান্ডা আবহাওয়া পছন্দ করে না।" },
+        { "english": "They don't play cricket.", "bangla": "তারা ক্রিকেট খেলে না।" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Interrogative বাক্যের নিয়ম",
+      "banglaTitle": "প্রশ্নবাচক বাক্যের নিয়ম",
+      "icon": "help_outline",
+      "color": "#F59E0B",
+      "explanation": "প্রশ্ন করতে Do বা Does দিয়ে শুরু করতে হয়।",
+      "points": [
+        "I / We / You / They → Do + Subject + Verb base form?",
+        "He / She / It → Does + Subject + Verb base form?",
+        "Does ব্যবহার করলে verb এ s/es যোগ হয় না",
+        "WH-প্রশ্নে: What / When / Where + do/does + Subject + Verb?"
+      ],
+      "examples": [
+        { "english": "Do you speak English?", "bangla": "তুমি কি ইংরেজি বলো?" },
+        { "english": "Does she go to school?", "bangla": "সে কি স্কুলে যায়?" },
+        { "english": "Where do they live?", "bangla": "তারা কোথায় থাকে?" }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "কখন Present Indefinite ব্যবহার হয়",
+      "banglaTitle": "এই Tense ব্যবহারের সময়",
+      "icon": "lightbulb",
+      "color": "#8B5CF6",
+      "explanation": "নিচের পরিস্থিতিতে Present Indefinite Tense ব্যবহার হয়:",
+      "points": [
+        "অভ্যাস বা নিয়মিত কাজ → I wake up at 6 AM every day.",
+        "সার্বজনীন সত্য → The sun rises in the east.",
+        "বৈজ্ঞানিক তথ্য → Water boils at 100 degrees.",
+        "ভবিষ্যৎ সূচি (timetable) → The train leaves at 9 AM.",
+        "খবর বা গল্পে → The hero saves the world.",
+        "নির্দেশনা বা পদক্ষেপ → First, you open the app."
+      ],
+      "examples": [
+        { "english": "The sun rises in the east.", "bangla": "সূর্য পূর্বে ওঠে। (সার্বজনীন সত্য)" },
+        { "english": "The train leaves at 9 AM tomorrow.", "bangla": "ট্রেন আগামীকাল সকাল ৯টায় ছাড়ে। (সূচি)" }
+      ]
+    },
+    {
+      "step": 5,
+      "title": "গুরুত্বপূর্ণ Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#06B6D4",
+      "explanation": "এই শব্দগুলো দেখলে Present Indefinite Tense সন্দেহ করো:",
+      "points": [
+        "সময়-সূচক: always, usually, often, sometimes, never, rarely",
+        "পুনরাবৃত্তি: every day, every week, every morning, daily",
+        "সাধারণত: generally, normally, regularly, frequently",
+        "উদাহরণ: 'He always tells the truth.' → always দেখলে Present Indefinite"
+      ],
+      "examples": [
+        { "english": "She always smiles at strangers.", "bangla": "সে সবসময় অপরিচিতদের দিকে হাসে।" },
+        { "english": "They never eat junk food.", "bangla": "তারা কখনো জাঙ্ক ফুড খায় না।" }
+      ]
+    },
+    {
+      "step": 6,
+      "title": "সাধারণ ভুল ও সতর্কতা",
+      "banglaTitle": "Common Mistakes",
+      "icon": "warning",
+      "color": "#EF4444",
+      "explanation": "এই ভুলগুলো এড়িয়ে চলো:",
+      "points": [
+        "He drink milk ❌ → He drinks milk ✅ (3rd person singular)",
+        "She does not drinks ❌ → She does not drink ✅ (does এর পরে base form)",
+        "Do he go? ❌ → Does he go? ✅ (3rd person singular এ Does)",
+        "I am go ❌ → I go ✅ (Present Indefinite এ am/is/are নয়)"
+      ],
+      "examples": [
+        { "english": "He drinks milk every morning. ✅", "bangla": "সে প্রতিদিন সকালে দুধ পান করে।" },
+        { "english": "She does not drink coffee. ✅", "bangla": "সে কফি পান করে না।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + V1 (s/es for 3rd person) | do/does + not + V1 | Do/Does + Subject + V1?",
+    "keyPoints": [
+      "3rd person singular → s/es যোগ করো",
+      "Negative → do/does + not + base verb",
+      "Question → Do/Does দিয়ে শুরু করো",
+      "Always, usually, often → Present Indefinite এর চিহ্ন"
+    ]
+  }
+}

@@ -1,13 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/constants/app_colors.dart';
-import '../../providers/game/timer_provider.dart';
-import '../../providers/game/score_provider.dart';
-import '../../providers/game/xp_provider.dart';
-import '../../providers/game/coin_provider.dart';
-import '../../providers/game/streak_provider.dart';
-import '../../providers/game/achievement_provider.dart';
-import '../../services/sound_service.dart';
 
 // ── Question Card ──
 
@@ -341,7 +334,7 @@ class ScoreCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Colors.amber, Colors.orange]),
+        gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -366,11 +359,11 @@ class ScoreCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Icon(Icons.check_circle, color: AppColors.success, size: 16),
+                const Icon(Icons.check_circle, color: AppColors.success, size: 16),
                 const SizedBox(width: 4),
                 Text('$correctCount', style: const TextStyle(color: Colors.white70, fontSize: 12)),
                 const SizedBox(width: 16),
-                Icon(Icons.cancel, color: AppColors.error, size: 16),
+                const Icon(Icons.cancel, color: AppColors.error, size: 16),
                 const SizedBox(width: 4),
                 Text('$wrongCount', style: const TextStyle(color: Colors.white70, fontSize: 12)),
               ],
@@ -561,7 +554,7 @@ class AchievementCard extends StatelessWidget {
             height: 56,
             decoration: BoxDecoration(
               gradient: isUnlocked
-                  ? LinearGradient(colors: [Colors.amber, Colors.orange])
+                  ? const LinearGradient(colors: [Colors.amber, Colors.orange])
                   : null,
               color: isUnlocked ? null : Colors.grey[300],
               shape: BoxShape.circle,
@@ -704,7 +697,7 @@ class CoinCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Colors.amber, Colors.orange]),
+        gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Column(
@@ -730,12 +723,12 @@ class CoinCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 if (earned != null && earned! > 0) ...[
-                  Icon(Icons.arrow_upward, color: AppColors.success, size: 16),
+                  const Icon(Icons.arrow_upward, color: AppColors.success, size: 16),
                   const SizedBox(width: 4),
                   Text('+$earned', style: const TextStyle(color: AppColors.success, fontSize: 12)),
                 ],
                 if (spent != null && spent! > 0) ...[
-                  Icon(Icons.arrow_downward, color: AppColors.error, size: 16),
+                  const Icon(Icons.arrow_downward, color: AppColors.error, size: 16),
                   const SizedBox(width: 4),
                   Text('-$spent', style: const TextStyle(color: AppColors.error, fontSize: 12)),
                 ],
@@ -840,7 +833,7 @@ class LevelCard extends StatelessWidget {
               ),
             ),
             if (isUnlocked)
-              Icon(
+              const Icon(
                 Icons.arrow_forward_ios,
                 color: Colors.white70,
                 size: 18,
@@ -1016,7 +1009,7 @@ class StreakCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        gradient: LinearGradient(colors: [Colors.orange, Colors.deepOrange]),
+        gradient: const LinearGradient(colors: [Colors.orange, Colors.deepOrange]),
         borderRadius: BorderRadius.circular(16),
       ),
       child: Row(
@@ -1102,7 +1095,7 @@ class DailyChallengeCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [Colors.amber, Colors.orange]),
+          gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
           borderRadius: BorderRadius.circular(16),
         ),
         child: Row(
@@ -1201,7 +1194,7 @@ class BossBattleCard extends StatelessWidget {
         padding: const EdgeInsets.all(24),
         decoration: BoxDecoration(
           gradient: isUnlocked
-              ? LinearGradient(colors: [Colors.red, Colors.deepOrange])
+              ? const LinearGradient(colors: [Colors.red, Colors.deepOrange])
               : null,
           color: isUnlocked ? null : Colors.grey[300],
           borderRadius: BorderRadius.circular(20),
@@ -1213,7 +1206,7 @@ class BossBattleCard extends StatelessWidget {
               height: 72,
               decoration: BoxDecoration(
                 gradient: isUnlocked
-                    ? LinearGradient(colors: [Colors.red, Colors.deepOrange])
+                    ? const LinearGradient(colors: [Colors.red, Colors.deepOrange])
                     : null,
                 color: isUnlocked ? null : Colors.grey[400],
                 shape: BoxShape.circle,

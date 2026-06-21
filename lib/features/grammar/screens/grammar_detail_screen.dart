@@ -264,7 +264,7 @@ class _TopicCard extends StatelessWidget {
             ],
           ),
           if (topic.definition.isNotEmpty) ...[
-            _SectionLabel(bangla: 'সংজ্ঞা', english: 'Definition'),
+            const _SectionLabel(bangla: 'সংজ্ঞা', english: 'Definition'),
             Text(topic.definition,
                 style: theme.textTheme.bodyMedium
                     ?.copyWith(height: 1.7, fontWeight: FontWeight.w500)),
@@ -285,7 +285,7 @@ class _TopicCard extends StatelessWidget {
             ),
           ],
           if (topic.formula.isNotEmpty) ...[
-            _SectionLabel(bangla: 'সূত্র', english: 'Formula'),
+            const _SectionLabel(bangla: 'সূত্র', english: 'Formula'),
             Container(
               width: double.infinity,
               padding: const EdgeInsets.all(12),
@@ -296,7 +296,7 @@ class _TopicCard extends StatelessWidget {
                     Border.all(color: AppColors.accent.withOpacity(0.15)),
               ),
               child: Text(topic.formula,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontFamily: 'monospace',
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
@@ -305,7 +305,7 @@ class _TopicCard extends StatelessWidget {
             ),
           ],
           if (topic.rules.isNotEmpty) ...[
-            _SectionLabel(bangla: 'নিয়মসমূহ', english: 'Rules'),
+            const _SectionLabel(bangla: 'নিয়মসমূহ', english: 'Rules'),
             ...topic.rules.asMap().entries.map((e) => Padding(
                   padding: const EdgeInsets.only(bottom: 6),
                   child: Row(
@@ -321,7 +321,7 @@ class _TopicCard extends StatelessWidget {
                         ),
                         child: Center(
                           child: Text('${e.key + 1}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                   color: AppColors.primary,
                                   fontSize: 11,
                                   fontWeight: FontWeight.w700)),
@@ -337,7 +337,7 @@ class _TopicCard extends StatelessWidget {
                 )),
           ],
           if (topic.examples.isNotEmpty) ...[
-            _SectionLabel(bangla: 'উদাহরণ', english: 'Examples'),
+            const _SectionLabel(bangla: 'উদাহরণ', english: 'Examples'),
             ...topic.examples.map((ex) => Container(
                   margin: const EdgeInsets.only(bottom: 6),
                   padding: const EdgeInsets.all(12),
@@ -355,7 +355,7 @@ class _TopicCard extends StatelessWidget {
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('EN ',
+                          const Text('EN ',
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w800,
@@ -374,7 +374,7 @@ class _TopicCard extends StatelessWidget {
                       Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('বাং ',
+                          const Text('বাং ',
                               style: TextStyle(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w800,
@@ -394,7 +394,7 @@ class _TopicCard extends StatelessWidget {
                 )),
           ],
           if (topic.tips.isNotEmpty) ...[
-            _SectionLabel(bangla: 'পরামর্শ', english: 'Tips'),
+            const _SectionLabel(bangla: 'পরামর্শ', english: 'Tips'),
             Container(
               padding: const EdgeInsets.all(14),
               decoration: BoxDecoration(

@@ -1,0 +1,77 @@
+{
+  "tenseId": "past_continuous",
+  "tenseName": "Past Continuous Tense",
+  "banglaName": "ঘটমান অতীত কাল",
+  "color": "#06B6D4",
+  "icon": "loop",
+  "shortDescription": "অতীতে কোনো নির্দিষ্ট সময়ে চলমান ছিল এমন কাজ প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + was/were + Verb-ing + Object",
+    "negative": "Subject + was/were + not + Verb-ing + Object",
+    "interrogative": "Was/Were + Subject + Verb-ing + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "was এবং were এর ব্যবহার",
+      "banglaTitle": "was/were কখন কোথায়",
+      "icon": "check_circle",
+      "color": "#06B6D4",
+      "explanation": "Subject অনুযায়ী was বা were বেছে নাও:",
+      "points": [
+        "I / He / She / It → was ব্যবহার করো",
+        "We / You / They → were ব্যবহার করো",
+        "Singular nouns → was | Plural nouns → were"
+      ],
+      "examples": [
+        { "english": "I was sleeping at 10 PM.", "bangla": "রাত ১০টায় আমি ঘুমাচ্ছিলাম।" },
+        { "english": "They were playing in the park.", "bangla": "তারা পার্কে খেলছিল।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "দুটো কাজ একসাথে (When/While)",
+      "banglaTitle": "when ও while এর ব্যবহার",
+      "icon": "merge_type",
+      "color": "#10B981",
+      "explanation": "অতীতে দুটো কাজ একই সময়ে বা একটার মধ্যে অন্যটা হলে:",
+      "points": [
+        "while + Past Continuous (চলমান) + when + Past Indefinite (হঠাৎ ঘটল)",
+        "While I was sleeping, the phone rang. (ঘুমাচ্ছিলাম + হঠাৎ ফোন বাজল)",
+        "When he arrived, I was cooking. (সে এলো + রান্না চলছিল)",
+        "দুটো চলমান কাজ: While she was reading, he was writing."
+      ],
+      "examples": [
+        { "english": "While I was studying, the light went out.", "bangla": "আমি পড়াশোনা করছিলাম, তখন বিদ্যুৎ চলে গেল।" },
+        { "english": "When it started raining, we were playing.", "bangla": "বৃষ্টি শুরু হলে আমরা খেলছিলাম।" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#8B5CF6",
+      "explanation": "এই শব্দগুলো দেখলে Past Continuous সন্দেহ করো:",
+      "points": [
+        "while, when (চলমান কাজের প্রেক্ষাপটে)",
+        "at that time, at this time yesterday",
+        "all day long, the whole morning, throughout",
+        "নির্দিষ্ট অতীত সময়: at 8 AM yesterday, at that moment"
+      ],
+      "examples": [
+        { "english": "She was watching TV all evening.", "bangla": "সে সারা সন্ধ্যা টিভি দেখছিল।" },
+        { "english": "What were you doing at 5 PM?", "bangla": "বিকাল ৫টায় তুমি কী করছিলে?" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + was/were + Verb-ing",
+    "keyPoints": [
+      "I/He/She/It → was | We/You/They → were",
+      "While + Past Continuous + when + Past Simple",
+      "Verb-ing তৈরির নিয়ম Present Continuous এর মতো",
+      "while, at that time → Past Continuous এর চিহ্ন"
+    ]
+  }
+}

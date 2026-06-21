@@ -248,7 +248,7 @@ class _CategoryCard extends StatelessWidget {
             ),
             // Arrow
             if (isUnlocked)
-              Icon(
+              const Icon(
                 Icons.arrow_forward_ios,
                 color: Colors.white70,
                 size: 16,

@@ -1,0 +1,115 @@
+{
+  "tenseId": "present_continuous",
+  "tenseName": "Present Continuous Tense",
+  "banglaName": "ঘটমান বর্তমান কাল",
+  "color": "#3B82F6",
+  "icon": "sync",
+  "shortDescription": "এই মুহূর্তে চলমান কাজ প্রকাশ করে।",
+  "structure": {
+    "affirmative": "Subject + am/is/are + Verb-ing + Object",
+    "negative": "Subject + am/is/are + not + Verb-ing + Object",
+    "interrogative": "Am/Is/Are + Subject + Verb-ing + Object?"
+  },
+  "rules": [
+    {
+      "step": 1,
+      "title": "Auxiliary Verb এর ব্যবহার",
+      "banglaTitle": "am/is/are কখন কোথায়",
+      "icon": "check_circle",
+      "color": "#3B82F6",
+      "explanation": "Subject অনুযায়ী am, is, are বেছে নাও:",
+      "points": [
+        "I → am ব্যবহার করো। যেমন: I am eating.",
+        "He / She / It / Singular noun → is ব্যবহার করো। যেমন: She is reading.",
+        "We / You / They / Plural noun → are ব্যবহার করো। যেমন: They are playing."
+      ],
+      "examples": [
+        { "english": "I am writing a letter.", "bangla": "আমি একটি চিঠি লিখছি।" },
+        { "english": "She is cooking dinner.", "bangla": "সে রাতের খাবার রান্না করছে।" },
+        { "english": "They are watching TV.", "bangla": "তারা টিভি দেখছে।" }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Verb-ing তৈরির নিয়ম",
+      "banglaTitle": "ing যোগ করার পদ্ধতি",
+      "icon": "edit",
+      "color": "#10B981",
+      "explanation": "Verb-এ ing যোগ করার সময় কিছু নিয়ম মেনে চলতে হয়:",
+      "points": [
+        "সাধারণত শুধু ing যোগ করো: eat→eating, go→going, play→playing",
+        "Silent 'e' দিয়ে শেষ হলে e বাদ দিয়ে ing যোগ করো: write→writing, make→making",
+        "Short vowel + consonant দিয়ে শেষ হলে শেষ consonant double করো: run→running, sit→sitting, swim→swimming",
+        "ie দিয়ে শেষ হলে ie কে y তে পরিবর্তন করে ing যোগ করো: lie→lying, die→dying"
+      ],
+      "examples": [
+        { "english": "He is running fast.", "bangla": "সে দ্রুত দৌড়াচ্ছে।" },
+        { "english": "She is making tea.", "bangla": "সে চা বানাচ্ছে।" },
+        { "english": "They are lying on the grass.", "bangla": "তারা ঘাসে শুয়ে আছে।" }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Negative ও Interrogative",
+      "banglaTitle": "না-বাচক ও প্রশ্নবাচক",
+      "icon": "swap_horiz",
+      "color": "#F59E0B",
+      "explanation": "Negative এবং প্রশ্নবাচক বাক্যে am/is/are এর অবস্থান পরিবর্তন হয়:",
+      "points": [
+        "Negative: am/is/are এর পরে not বসে। যেমন: He is not sleeping.",
+        "Interrogative: am/is/are subject এর আগে আসে। যেমন: Is he sleeping?",
+        "সংক্ষিপ্ত: isn't, aren't, am not ব্যবহার করা যায়"
+      ],
+      "examples": [
+        { "english": "I am not watching TV.", "bangla": "আমি টিভি দেখছি না।" },
+        { "english": "Are you listening to me?", "bangla": "তুমি কি আমার কথা শুনছো?" },
+        { "english": "What are they doing?", "bangla": "তারা কী করছে?" }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Signal Words",
+      "banglaTitle": "চেনার সংকেত শব্দ",
+      "icon": "bookmark",
+      "color": "#8B5CF6",
+      "explanation": "এই শব্দগুলো দেখলে Present Continuous Tense সন্দেহ করো:",
+      "points": [
+        "now, right now, at the moment, currently, at present",
+        "still, today, this week, this year (চলমান অর্থে)",
+        "Look! Listen! (হঠাৎ মনোযোগ আকর্ষণ করতে)"
+      ],
+      "examples": [
+        { "english": "Look! The bird is flying.", "bangla": "দেখো! পাখিটি উড়ছে।" },
+        { "english": "He is still sleeping right now.", "bangla": "সে এখনো ঘুমাচ্ছে।" }
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Non-continuous Verbs (গুরুত্বপূর্ণ)",
+      "banglaTitle": "যেসব Verb এ ing হয় না",
+      "icon": "block",
+      "color": "#EF4444",
+      "explanation": "কিছু Verb Present Continuous এ ব্যবহার হয় না:",
+      "points": [
+        "অনুভূতি: love, like, hate, prefer, want, need",
+        "মানসিক অবস্থা: know, understand, believe, remember, forget",
+        "ইন্দ্রিয়: see, hear, smell, taste, feel (অনিচ্ছাকৃত)",
+        "মালিকানা: have, own, belong, possess",
+        "❌ I am knowing the answer. → ✅ I know the answer."
+      ],
+      "examples": [
+        { "english": "I know the answer. ✅", "bangla": "আমি উত্তর জানি।" },
+        { "english": "She loves music. ✅", "bangla": "সে সংগীত ভালোবাসে।" }
+      ]
+    }
+  ],
+  "quickSummary": {
+    "formula": "Subject + am/is/are + Verb-ing",
+    "keyPoints": [
+      "I → am, He/She/It → is, We/You/They → are",
+      "Silent e বাদ দিয়ে ing যোগ করো",
+      "Short vowel+consonant → consonant double করে ing",
+      "now, right now, at the moment → Present Continuous এর চিহ্ন"
+    ]
+  }
+}

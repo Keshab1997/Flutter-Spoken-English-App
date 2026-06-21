@@ -9,7 +9,7 @@ class XpService {
   // ── XP Calculation ──
 
   int calculateCorrectAnswerXP({int streak = 0}) {
-    final baseXP = 10;
+    const baseXP = 10;
     final streakBonus = (streak ~/ 5) * 5; // +5 XP every 5 streak
     return baseXP + streakBonus;
   }

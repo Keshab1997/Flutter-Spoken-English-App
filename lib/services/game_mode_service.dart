@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../models/game/game_question_model.dart';
 
 enum GameModeType {
   fillInBlank,
@@ -158,5 +157,5 @@ class GameModeState {
 }
 
 class GameModeNotifier extends GameModeState {
-  GameModeNotifier({required GameModeType type}) : super(type: type);
+  GameModeNotifier({required super.type});
 }

@@ -80,7 +80,7 @@ class VocabularyScreen extends ConsumerWidget {
                 margin: const EdgeInsets.only(bottom: 16, top: 8),
                 padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: AppColors.primaryGradient),
+                  gradient: const LinearGradient(colors: AppColors.primaryGradient),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(
