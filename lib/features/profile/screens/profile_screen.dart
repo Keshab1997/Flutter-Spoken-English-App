@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/progress_provider.dart';
+import '../../../services/hive_service.dart';
 import '../../auth/screens/login_screen.dart';
 import '../../settings/screens/settings_screen.dart';
 
@@ -172,6 +173,60 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     subtitle: const Text('English (US)'),
                     trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 14),
                     onTap: () {},
+                  ),
+                  const Divider(height: 1),
+                  ListTile(
+                    leading: const Icon(Icons.delete_sweep_rounded, color: Colors.redAccent),
+                    title: const Text('Clear All Cache'),
+                    subtitle: const Text('Reset local stored data'),
+                    trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 14),
+                    onTap: () async {
+                      final confirmed = await showDialog<bool>(
+                        context: context,
+                        builder: (ctx) => AlertDialog(
+                          title: const Text('Clear cache?'),
+                          content: const Text(
+                            'This will clear all locally stored learning/settings/cache data. Your Firestore data will reload again.',
+                          ),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(ctx, false),
+                              child: const Text('Cancel'),
+                            ),
+                            TextButton(
+                              onPressed: () => Navigator.pop(ctx, true),
+                              child: const Text(
+                                'Clear',
+                                style: TextStyle(color: Colors.redAccent),
+                              ),
+                            ),
+                          ],
+                        ),
+                      );
+
+                      if (confirmed != true) return;
+
+                      try {
+                        await HiveService.clearAllCaches();
+                        await ref.read(progressProvider.notifier).fetchProgress();
+
+                        if (!mounted) return;
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            content: Text('Cache cleared successfully'),
+                            behavior: SnackBarBehavior.floating,
+                          ),
+                        );
+                      } catch (_) {
+                        if (!mounted) return;
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            content: Text('Failed to clear cache'),
+                            behavior: SnackBarBehavior.floating,
+                          ),
+                        );
+                      }
+                    },
                   ),
                   const Divider(height: 1),
                   ListTile(

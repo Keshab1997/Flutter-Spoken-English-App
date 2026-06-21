@@ -385,4 +385,51 @@ class HiveService {
     final key = 'chapter_progress_${type}_$chapterNumber';
     return _settings.get(key, defaultValue: 0.0) as double;
   }
+
+  /// Clears all locally cached/stored data used by the app (Hive boxes).
+  /// Note: Firebase-backed progress will reload/sync again on next fetch/login.
+  static Future<void> clearAllCaches() async {
+    // Favorites
+    if (Hive.isBoxOpen(_favoritesBox)) {
+      await Hive.box(_favoritesBox).clear();
+    }
+
+    // Settings (includes user prefs + AI keys + chat sessions + last opened chapter, etc.)
+    if (Hive.isBoxOpen(_settingsBox)) {
+      await Hive.box(_settingsBox).clear();
+    }
+
+    // History
+    if (Hive.isBoxOpen(_historyBox)) {
+      await Hive.box(_historyBox).clear();
+    }
+
+    // Vocabulary progress/cache
+    if (Hive.isBoxOpen(_vocabProgressBox)) {
+      await Hive.box(_vocabProgressBox).clear();
+    }
+    if (Hive.isBoxOpen('vocab_cache')) {
+      await Hive.box('vocab_cache').clear();
+    }
+
+    // Master guide history
+    if (Hive.isBoxOpen(_masterGuideHistoryBox)) {
+      await Hive.box(_masterGuideHistoryBox).clear();
+    }
+
+    // Study plan (todo items + weekly test info)
+    if (Hive.isBoxOpen(_studyPlanBox)) {
+      await Hive.box(_studyPlanBox).clear();
+    }
+
+    // Translator history
+    if (Hive.isBoxOpen(_translatorHistoryBox)) {
+      await Hive.box(_translatorHistoryBox).clear();
+    }
+
+    // Vocabulary test history
+    if (Hive.isBoxOpen(_vocabTestHistoryBox)) {
+      await Hive.box(_vocabTestHistoryBox).clear();
+    }
+  }
 }
