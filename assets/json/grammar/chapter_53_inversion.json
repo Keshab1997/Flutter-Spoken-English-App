@@ -1,10 +1,232 @@
 {
   "chapter": 53,
   "level": "Advanced",
-  "title": "Inversion",
+  "title": "Inversion (বিপরীত ক্রম)",
   "icon": "swap_vert",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Inversion in English grammar refers to the reversal of the normal subject-verb order. It is commonly used in questions, but also in various other structures for emphasis, formality, or specific grammatical conditions. Mastering inversion is essential for advanced writing, formal speech, and understanding complex sentence structures.",
+  "banglaDescription": "ইংরেজি ব্যাকরণে inversion বলতে স্বাভাবিক subject-verb ক্রমের বিপরীতকরণ বোঝায়। এটি সাধারণত প্রশ্নে ব্যবহৃত হয়, তবে জোর দেওয়া, আনুষ্ঠানিকতা বা নির্দিষ্ট ব্যাকরণগত শর্তের জন্য বিভিন্ন কাঠামোতেও ব্যবহৃত হয়। উন্নত লেখালেখি, আনুষ্ঠানিক বক্তৃতা এবং জটিল বাক্য গঠন বোঝার জন্য inversion আয়ত্ত করা অপরিহার্য।",
+  "topics": [
+    {
+      "name": "Negative Adverbials at the Beginning (শুরুতে নেতিবাচক ক্রিয়াবিশেষণ)",
+      "banglaName": "শুরুতে নেতিবাচক ক্রিয়াবিশেষণ",
+      "definition": "When negative or restrictive adverbial expressions (e.g., never, rarely, seldom, hardly, scarcely, no sooner, not only, nowhere, little) are placed at the beginning of a sentence for emphasis, the subject and auxiliary verb are inverted. This is a formal structure common in writing.",
+      "banglaDefinition": "যখন জোর দেওয়ার জন্য নেতিবাচক বা সীমাবদ্ধ ক্রিয়াবিশেষণ অভিব্যক্তি (যেমন: never, rarely, seldom, hardly, scarcely, no sooner, not only, nowhere, little) একটি বাক্যের শুরুতে রাখা হয়, তখন subject এবং auxiliary verb বিপরীত হয়। এটি একটি আনুষ্ঠানিক কাঠামো যা লেখায় সাধারণ।",
+      "formula": "Negative / Restrictive Adverb + Auxiliary Verb + Subject + Main Verb\n\nExamples:\n• Never have I seen such a beautiful sunset.\n• Rarely does she arrive late for work.\n• No sooner had we left than it started raining.\n• Not only did he pass the exam, but he also got a scholarship.",
+      "rules": [
+        "শুধুমাত্র auxiliary verb (do, does, did, have, has, had, can, could, will, would, etc.) subject-এর আগে বসে।",
+        "যদি বাক্যে কোনো auxiliary verb না থাকে, তবে tense এবং subject অনুযায়ী 'do/does/did' যোগ করতে হবে।",
+        "'Never', 'rarely', 'seldom' ইত্যাদি সাধারণত present simple বা past simple tense-এ inversion ঘটায়।",
+        "'No sooner...than' এবং 'Hardly/Scarcely...when' কাঠামো past perfect tense-এ inversion ঘটায়।",
+        "'Not only...but also' কাঠামো প্রথম অংশে inversion ঘটায়, দ্বিতীয় অংশে নয়।",
+        "'Little' যখন negative অর্থে (='not at all') ব্যবহৃত হয়, তখন inversion ঘটায়।",
+        "'Nowhere', 'in no way', 'on no account', 'under no circumstances' ইত্যাদি শুরুতেও inversion ঘটায়।",
+        "এটি একটি অত্যন্ত আনুষ্ঠানিক কাঠামো; কথ্য ইংরেজিতে সাধারণত এড়ানো হয়।"
+      ],
+      "examples": [
+        { "en": "Never have I experienced such kindness.", "bn": "আমি কখনও এমন দয়া অনুভব করিনি।" },
+        { "en": "Rarely does he complain about anything.", "bn": "সে খুব কমই কোনো বিষয়ে অভিযোগ করে।" },
+        { "en": "Seldom do we see such dedication in young people.", "bn": "আমরা তরুণদের মধ্যে খুব কমই এমন নিষ্ঠা দেখতে পাই।" },
+        { "en": "Hardly had she finished her speech when the audience started clapping.", "bn": "সে সবেমাত্র তার বক্তৃতা শেষ করেছে, অডিয়েন্স হাততালি দেওয়া শুরু করল।" },
+        { "en": "No sooner had we arrived at the station than the train left.", "bn": "আমরা স্টেশনে পৌঁছানোর সাথে সাথেই ট্রেন ছেড়ে দিল।" },
+        { "en": "Not only did he win the race, but he also broke the record.", "bn": "সে শুধু রেস জিতল না, বরং রেকর্ডও ভাঙল।" },
+        { "en": "Little did they know that their lives were about to change.", "bn": "তারা সামান্যও জানত না যে তাদের জীবন বদলাতে চলেছে।" },
+        { "en": "Under no circumstances should you open this door.", "bn": "কোনো অবস্থাতেই আপনার এই দরজা খোলা উচিত নয়।" },
+        { "en": "Nowhere else will you find such a peaceful environment.", "bn": "আর কোথাও আপনি এমন শান্তিপূর্ণ পরিবেশ পাবেন না।" },
+        { "en": "On no account must this medicine be taken without a prescription.", "bn": "প্রেসক্রিপশন ছাড়া এই ওষুধ কোনো অবস্থাতেই খাওয়া যাবে না।" }
+      ],
+      "tips": "মনে রাখবেন: inversion তখনই হয় যখন negative adverb বাক্যের শুরুতে থাকে। যদি এটি মাঝখানে বা শেষে থাকে, তাহলে inversion হয় না (যেমন: 'I have never seen...')। 'No sooner'-এর পর past perfect ('had + V3') ব্যবহার করুন। 'Not only'-এর পর inverted clause আসে, তারপর 'but also' দিয়ে normal clause।"
+    },
+    {
+      "name": "Inversion with 'So' and 'Such' ('So' ও 'Such' দিয়ে Inversion)",
+      "banglaName": "'So' ও 'Such' দিয়ে Inversion",
+      "definition": "When 'so' (meaning 'to such a degree') or 'such' (meaning 'of such a kind/degree') is placed at the beginning of a sentence for emphasis, the subject and auxiliary verb are inverted. This structure highlights the extreme degree or quality of something.",
+      "banglaDefinition": "যখন জোর দেওয়ার জন্য 'so' (অর্থ 'এত বেশি পরিমাণে') বা 'such' (অর্থ 'এরকম ধরনের/পরিমাণের') বাক্যের শুরুতে রাখা হয়, তখন subject এবং auxiliary verb বিপরীত হয়। এই কাঠামো কোনো কিছুর চরম মাত্রা বা গুণমানকে হাইলাইট করে।",
+      "formula": "So + Adjective/Adverb + Auxiliary Verb + Subject + that + Clause\nSuch + (a/an) + (Adjective) + Noun + Auxiliary Verb + Subject + that + Clause\n\nExamples:\n• So beautiful was the sunset that we stopped to watch it.\n• Such a talented musician is she that everyone admires her.\n• So quickly did he run that no one could catch him.",
+      "rules": [
+        "'So'-এর পরে adjective বা adverb বসে, তারপর inversion, তারপর 'that clause'।",
+        "'Such'-এর পরে (a/an) + (adjective) + noun বসে, তারপর inversion, তারপর 'that clause'।",
+        "Present simple বা past simple tense-এ 'do/does/did' ব্যবহার করে inversion করতে হয়।",
+        "যদি main verb 'be' হয়, তাহলে 'be' verb-টি subject-এর আগে চলে যায়।",
+        "এই কাঠামো 'so/such...that'-এর জোরালো সংস্করণ।",
+        "'Such'-এর পরে uncountable noun থাকলে 'a/an' ব্যবহার হয় না: 'Such courage did he show...'।",
+        "এটি খুবই আনুষ্ঠানিক এবং সাহিত্যিক কাঠামো।",
+        "'That' clause-এ inversion হয় না; শুধুমাত্র প্রথম অংশে inversion হয়।"
+      ],
+      "examples": [
+        { "en": "So loud was the noise that we couldn't sleep.", "bn": "আওয়াজ এত জোরে ছিল যে আমরা ঘুমাতে পারিনি।" },
+        { "en": "So quickly did the fire spread that everyone had to evacuate.", "bn": "আগুন এত দ্রুত ছড়িয়ে পড়ল যে সবাইকে সরিয়ে নিতে হয়েছিল।" },
+        { "en": "So interesting was the lecture that nobody wanted to leave.", "bn": "বক্তৃতাটি এত আকর্ষণীয় ছিল যে কেউ চলে যেতে চায়নি।" },
+        { "en": "Such a wonderful opportunity is this that you must not miss it.", "bn": "এটি এমন একটি চমৎকার সুযোগ যে আপনার এটি মিস করা উচিত নয়।" },
+        { "en": "Such was her dedication to work that she rarely took a day off.", "bn": "কাজের প্রতি তার নিষ্ঠা এমন ছিল যে সে খুব কমই ছুটি নিত।" },
+        { "en": "So deeply did he sleep that he didn't hear the alarm.", "bn": "সে এত গভীরভাবে ঘুমিয়েছিল যে সে অ্যালার্ম শুনতে পায়নি।" },
+        { "en": "Such a difficult problem was it that nobody could solve it.", "bn": "এটি এত কঠিন একটি সমস্যা ছিল যে কেউ এটি সমাধান করতে পারেনি।" },
+        { "en": "So rarely does it snow here that people get very excited.", "bn": "এখানে এত কম তুষারপাত হয় যে লোকেরা খুব উত্তেজিত হয়।" },
+        { "en": "Such courage did the soldier display that he was awarded a medal.", "bn": "সৈনিক এমন সাহস দেখিয়েছিল যে তাকে পদক দেওয়া হয়েছিল।" },
+        { "en": "So exhausted was the team after the match that they collapsed on the field.", "bn": "ম্যাচের পর দল এত ক্লান্ত ছিল যে তারা মাঠেই ঢলে পড়েছিল।" }
+      ],
+      "tips": "মনে রাখবেন: 'so'-এর পরে adjective/adverb বসে, 'such'-এর পরে noun phrase বসে। 'So beautiful was the day...' (adjective) বনাম 'Such a beautiful day was it...' (noun phrase)। 'Such'-এর পরে 'a/an' বসে যদি noun countable singular হয়। সাহিত্যিক লেখায় এই কাঠামো ব্যবহার করুন।"
+    },
+    {
+      "name": "Inversion with Conditional Sentences (শর্তবাচক বাক্যে Inversion)",
+      "banglaName": "শর্তবাচক বাক্যে Inversion",
+      "definition": "In formal English, conditional sentences (especially type 2 and type 3) can be formed without 'if' by inverting the subject and auxiliary verb. This structure, known as 'inverted conditionals' or 'conditional without if', is more formal and emphatic.",
+      "banglaDefinition": "আনুষ্ঠানিক ইংরেজিতে, 'if' ছাড়াই subject এবং auxiliary verb বিপরীত করে শর্তবাচক বাক্য (বিশেষ করে type 2 এবং type 3) গঠন করা যায়। এই কাঠামো, যা 'inverted conditionals' বা 'conditional without if' নামে পরিচিত, বেশি আনুষ্ঠানিক এবং জোরালো।",
+      "formula": "Type 1 (Should): Should + Subject + V1, Subject + will/can/may + V1\nType 2 (Were): Were + Subject + to + V1 / Were + Subject + (complement), Subject + would/could + V1\nType 3 (Had): Had + Subject + V3, Subject + would/could + have + V3\n\nExamples:\n• Should you need help, please call me. (If you need help...)\n• Were I you, I would accept the offer. (If I were you...)\n• Had he been careful, he wouldn't have crashed the car. (If he had been careful...)",
+      "rules": [
+        "Type 1 conditional-এ 'if' এর পরিবর্তে 'should' ব্যবহার করে inversion করা হয়। ('Should + subject + V1')",
+        "Type 2 conditional-এ 'if I were' / 'if I were to' এর পরিবর্তে 'Were I' / 'Were I to' ব্যবহার করা হয়।",
+        "Type 3 conditional-এ 'if + had' এর পরিবর্তে 'Had + subject + V3' ব্যবহার করা হয়।",
+        "Inverted conditional-এ negative form তৈরি করতে 'not' subject-এর পরে বসে: 'Had he not helped...'",
+        "'Were it not for...' (যদি না থাকত) একটি সাধারণ inverted expression।",
+        "'Should you change your mind...' অর্থ 'If you should change your mind...'",
+        "এই কাঠামো খুবই আনুষ্ঠানিক; কথ্য ইংরেজিতে 'if' ব্যবহার করাই বেশি স্বাভাবিক।",
+        "Inverted conditional-এ comma ব্যবহার বাধ্যতামূলক নয়, তবে সাধারণত ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "Should you have any questions, please do not hesitate to ask.", "bn": "যদি আপনার কোনো প্রশ্ন থাকে, দয়া করে জিজ্ঞাসা করতে দ্বিধা করবেন না।" },
+        { "en": "Were I in your position, I would apply for the job.", "bn": "আমি যদি আপনার অবস্থানে থাকতাম, তাহলে আমি চাকরির জন্য আবেদন করতাম।" },
+        { "en": "Had we known about the traffic, we would have left earlier.", "bn": "আমরা যদি ট্রাফিক সম্পর্কে জানতাম, তাহলে আমরা আগে বের হতাম।" },
+        { "en": "Should the weather be bad, the event will be cancelled.", "bn": "যদি আবহাওয়া খারাপ হয়, তাহলে অনুষ্ঠানটি বাতিল করা হবে।" },
+        { "en": "Were she to win the lottery, she would travel the world.", "bn": "সে যদি লটারি জিতত, তাহলে সে বিশ্ব ভ্রমণ করত।" },
+        { "en": "Had it not been for your help, I would have failed.", "bn": "যদি আপনার সাহায্য না থাকত, তাহলে আমি ব্যর্থ হতাম।" },
+        { "en": "Were it not for the scholarship, she couldn't have studied abroad.", "bn": "স্কলারশিপ না থাকলে সে বিদেশে পড়তে পারত না।" },
+        { "en": "Should you decide to join us, we would be delighted.", "bn": "আপনি যদি আমাদের সাথে যোগ দেওয়ার সিদ্ধান্ত নেন, তাহলে আমরা আনন্দিত হব।" },
+        { "en": "Had the police arrived earlier, they would have caught the thief.", "bn": "পুলিশ যদি আগে পৌঁছাত, তাহলে তারা চোরকে ধরতে পারত।" },
+        { "en": "Were he honest, he would return the money.", "bn": "সে যদি সৎ হত, তাহলে টাকা ফিরিয়ে দিত।" }
+      ],
+      "tips": "Inverted conditional মনে রাখার সহজ উপায়: Type 1-এ 'should' + subject, Type 2-এ 'were' + subject, Type 3-এ 'had' + subject। নেগেটিভ ফর্মে 'not' subject-এর পরে বসে: 'Had she not helped...', 'Were he not so kind...'। কথোপকথনে এগুলো ব্যবহার না করাই ভালো; শুধুমাত্র আনুষ্ঠানিক লেখায় ব্যবহার করুন।"
+    },
+    {
+      "name": "Inversion after 'Here', 'There', and Place Adverbials ('Here', 'There' ও স্থানসূচক ক্রিয়াবিশেষণের পর Inversion)",
+      "banglaName": "'Here', 'There' ও স্থানসূচক ক্রিয়াবিশেষণের পর Inversion",
+      "definition": "When sentences begin with 'here', 'there', or other place adverbials (e.g., in the corner, on the table, through the window) for dramatic or descriptive effect, the subject and verb are often inverted, especially when the subject is a noun (not a pronoun).",
+      "banglaDefinition": "যখন নাটকীয় বা বর্ণনামূলক প্রভাবের জন্য 'here', 'there' বা অন্যান্য স্থানসূচক ক্রিয়াবিশেষণ (যেমন: কোণায়, টেবিলের উপর, জানালা দিয়ে) দিয়ে বাক্য শুরু হয়, তখন subject এবং verb প্রায়ই বিপরীত হয়, বিশেষ করে যখন subject একটি noun হয় (pronoun নয়)।",
+      "formula": "Place Adverbial / Here / There + Verb + Subject (Noun)\nPlace Adverbial / Here / There + Subject (Pronoun) + Verb\n\nExamples:\n• Here comes the bus. (Noun - inversion)\n• Here he comes. (Pronoun - no inversion)\n• On the table stood a beautiful vase.\n• Down the hill rolled the ball.",
+      "rules": [
+        "যদি subject একটি noun (বিশেষ্য) হয়, তাহলে inversion ঘটে: verb + subject।",
+        "যদি subject একটি pronoun (সর্বনাম - he, she, it, they, we) হয়, তাহলে inversion ঘটে না।",
+        "'Here' এবং 'there' শুধু 'be' verb-এর সাথেই নয়, অন্যান্য motion verb-এর সাথেও ব্যবহৃত হয় (come, go, stand, lie, sit, etc.)।",
+        "এই কাঠামো বর্ণনামূলক এবং নাটকীয় প্রভাব ফেলে।",
+        "Present simple এবং past simple tense-এ এই inversion বেশি দেখা যায়।",
+        "'There' + 'be' structure ('there is/are') একটি বিশেষ ধরনের inversion।",
+        "কথোপকথনে 'Here you are' (pronoun + verb) inversion নয়, তবে 'Here is your coffee' (noun - inversion)।",
+        "সাহিত্যিক বর্ণনায় স্থানসূচক adverbial দিয়ে inversion খুবই সাধারণ।"
+      ],
+      "examples": [
+        { "en": "Here comes the bride.", "bn": "এখানে আসছে বরযাত্রী।" },
+        { "en": "There goes our last chance.", "bn": "সেখানে চলে গেল আমাদের শেষ সুযোগ।" },
+        { "en": "In the middle of the room sat an old man.", "bn": "ঘরের মাঝখানে একজন বৃদ্ধ লোক বসেছিলেন।" },
+        { "en": "On the top of the hill stood a magnificent castle.", "bn": "পাহাড়ের চূড়ায় একটি দর্শনীয় দুর্গ দাঁড়িয়ে ছিল।" },
+        { "en": "Down the street ran a little girl.", "bn": "রাস্তার নিচে একটি ছোট মেয়ে দৌড়াচ্ছিল।" },
+        { "en": "Under the bed was a dusty old box.", "bn": "বিছানার নিচে একটি ধুলোময় পুরনো বাক্স ছিল।" },
+        { "en": "Here comes the sun.", "bn": "এখানে আসছে সূর্য।" },
+        { "en": "There goes our bus. We missed it!", "bn": "আমাদের বাস চলে গেল। আমরা মিস করলাম!" },
+        { "en": "Inside the cave lived a wise old hermit.", "bn": "গুহার ভিতরে একজন জ্ঞানী বৃদ্ধ সন্ন্যাসী থাকতেন।" },
+        { "en": "Behind the door hung a beautiful painting.", "bn": "দরজার পিছনে একটি সুন্দর ছবি ঝুলছিল।" }
+      ],
+      "tips": "সহজ নিয়ম: Noun subject হলে inversion ('Here comes the bus'), pronoun subject হলে no inversion ('Here it comes')। 'There goes...' একটি common fixed expression। বর্ণনামূলক লেখায় স্থান দিয়ে শুরু করে inversion ব্যবহার করলে লেখা আরও প্রাণবন্ত হয়।"
+    },
+    {
+      "name": "Inversion with 'Not Until', 'Only After', 'Only When' ('Not Until', 'Only After', 'Only When' দিয়ে Inversion)",
+      "banglaName": "'Not Until', 'Only After', 'Only When' দিয়ে Inversion",
+      "definition": "When a sentence begins with expressions like 'not until', 'only after', 'only when', 'only by', 'only then', 'not since', etc., the main clause following them undergoes inversion. The introductory phrase itself does not have inversion; it's the main clause that is inverted.",
+      "banglaDefinition": "যখন 'not until', 'only after', 'only when', 'only by', 'only then', 'not since' ইত্যাদি অভিব্যক্তি দিয়ে বাক্য শুরু হয়, তখন তাদের পরে আসা main clause-এ inversion ঘটে। প্রারম্ভিক phrase-এ নিজে inversion হয় না; এটি main clause যা বিপরীত হয়।",
+      "formula": "Not until / Only after / Only when / Only by + Time/Clause + Auxiliary Verb + Subject + Main Verb\n\nExamples:\n• Not until I saw the report did I realize the severity of the situation.\n• Only after the meeting did we understand the problem.\n• Only when you apologize will she forgive you.\n• Only by working hard can you achieve success.",
+      "rules": [
+        "Inversion শুধুমাত্র main clause-এ ঘটে, introductory phrase-এ নয়।",
+        "যদি 'only' একটি phrase-এর সাথে adverb ছাড়া অন্য কিছু নিয়ে শুরু হয় (যেমন 'only John'), তাহলে inversion হয় না।",
+        "'Not until'-এর পরে একটি clause বা time expression আসে, তারপর inverted main clause।",
+        "Present simple বা past simple tense-এ 'do/does/did' ব্যবহার করে inversion করতে হয়।",
+        "'Only after', 'only when', 'only if'-এর পরে clause আসে, তারপর inversion।",
+        "'Only by'-এর পরে gerund বা noun phrase আসে, তারপর inversion।",
+        "'Not since'-এর পরে time expression বা clause আসে, তারপর inversion।",
+        "এই কাঠামো জোর দেয় যে action/condition ঘটার আগে পর্যন্ত কিছু ঘটেনি।"
+      ],
+      "examples": [
+        { "en": "Not until she arrived did the party really start.", "bn": "সে না আসা পর্যন্ত পার্টি সত্যিই শুরু হয়নি।" },
+        { "en": "Only after the exam did I realize how easy it was.", "bn": "পরীক্ষার পরেই আমি বুঝতে পারলাম এটি কত সহজ ছিল।" },
+        { "en": "Only when he apologizes will I speak to him again.", "bn": "সে ক্ষমা চাইলেই কেবল আমি তার সাথে আবার কথা বলব।" },
+        { "en": "Only by working together can we solve this problem.", "bn": "একসাথে কাজ করলেই আমরা এই সমস্যা সমাধান করতে পারি।" },
+        { "en": "Not since I was a child have I seen such a beautiful rainbow.", "bn": "শিশু হওয়ার পর থেকে আমি এমন সুন্দর রংধনু দেখিনি।" },
+        { "en": "Only then did I understand the importance of time management.", "bn": "তখনই আমি সময় ব্যবস্থাপনার গুরুত্ব বুঝতে পেরেছিলাম।" },
+        { "en": "Not until the teacher explained it again did the students understand.", "bn": "শিক্ষক আবার ব্যাখ্যা না করা পর্যন্ত ছাত্ররা বুঝতে পারেনি।" },
+        { "en": "Only after the storm had passed could we go outside.", "bn": "ঝড় থামার পরেই আমরা বাইরে যেতে পারলাম।" },
+        { "en": "Only if you promise to be careful will I let you go.", "bn": "তুমি যদি সাবধান থাকার প্রতিশ্রুতি দাও তবেই আমি তোমাকে যেতে দেব।" },
+        { "en": "Not once did she complain about the difficult situation.", "bn": "সে কঠিন পরিস্থিতি সম্পর্কে একবারও অভিযোগ করেনি।" }
+      ],
+      "tips": "মনে রাখবেন: 'not until', 'only after' ইত্যাদি phrase-এর পরেই inversion আসে, আগে নয়। 'Not until he came did I leave' — এখানে 'Not until he came' অংশে কোনো inversion নেই; inversion আছে 'did I leave' অংশে। 'Only' যদি noun-এর আগে বসে ('Only John knew'), তাহলে inversion হয় না।"
+    },
+    {
+      "name": "Inversion in Comparisons and Exclamations (তুলনা ও আবেগসূচক বাক্যে Inversion)",
+      "banglaName": "তুলনা ও আবেগসূচক বাক্যে Inversion",
+      "definition": "Inversion can occur in comparative structures (using 'as' or 'than') and in exclamatory sentences. In comparisons, inversion adds formality and emphasis. In exclamations, it's used in certain set phrases like 'How + adjective + subject + verb' or with 'such'.",
+      "banglaDefinition": "তুলনামূলক কাঠামোতে ('as' বা 'than' ব্যবহার করে) এবং আবেগসূচক বাক্যে inversion ঘটতে পারে। তুলনায়, inversion আনুষ্ঠানিকতা এবং জোর যোগ করে। আবেগসূচক বাক্যে, এটি নির্দিষ্ট সেট phrase-এ ব্যবহৃত হয় যেমন 'How + adjective + subject + verb' বা 'such'-এর সাথে।",
+      "formula": "Comparative with 'as': ...as + Auxiliary + Subject\nComparative with 'than': ...than + Auxiliary + Subject\nExclamatory: How + Adjective/Adverb + Subject + Verb! / Such + (a/an) + Noun + Verb!\n\nExamples:\n• He was a better student than were his classmates.\n• She works as hard as does her colleague.\n• How beautiful is the sunset!\n• Such a talented artist was he!",
+      "rules": [
+        "তুলনামূলক বাক্যে 'as' বা 'than'-এর পরে inversion সাধারণত formal style-এ ব্যবহৃত হয়।",
+        "'As' দিয়ে তুলনায় inversion optional; 'as does she' বা 'as she does' উভয়ই চলে।",
+        "'Than' দিয়ে তুলনায় inversion বেশি formal এবং literary।",
+        "Abbreviations/Contractions (e.g., does not -> doesn't) inversion-এ ব্যবহার করা যায়।",
+        "Exclamatory inversion: 'How + adjective + subject + verb!' — 'How wonderful she is!'",
+        "'What a/an + adjective + noun + subject + verb!' — 'What a beautiful voice she has!' (কম inversion)।",
+        "'Such + noun + verb!' — 'Such a mess it was!' (কম আনুষ্ঠানিক)।",
+        "'So + adjective + auxiliary + subject!' — 'So happy was I!' (পূর্বের topic থেকে)।"
+      ],
+      "examples": [
+        { "en": "She is more intelligent than are her classmates.", "bn": "সে তার সহপাঠীদের চেয়ে বেশি বুদ্ধিমান।" },
+        { "en": "He works as diligently as does his brother.", "bn": "সে তার ভাইয়ের মতোই অধ্যবসায়ীভাবে কাজ করে।" },
+        { "en": "How amazing was the performance last night!", "bn": "গতরাতের পারফরম্যান্সটি কতটা আশ্চর্যজনক ছিল!" },
+        { "en": "Such a wonderful opportunity was it that I couldn't refuse.", "bn": "এটি এমন একটি চমৎকার সুযোগ ছিল যে আমি প্রত্যাখ্যান করতে পারিনি।" },
+        { "en": "Never have I seen such a breathtaking view!", "bn": "আমি কখনও এমন শ্বাসরুদ্ধকর দৃশ্য দেখিনি!" },
+        { "en": "So quickly did the years pass that we didn't realize.", "bn": "বছরগুলি এত দ্রুত কেটে গেল যে আমরা বুঝতেও পারিনি।" },
+        { "en": "Than whom is there a more respected leader?", "bn": "কার চেয়ে আরও বেশি সম্মানিত নেতা আছে?" },
+        { "en": "How beautiful is the countryside in spring!", "bn": "বসন্তে গ্রামাঞ্চল কত সুন্দর!" },
+        { "en": "Such courage did he display that he received a medal.", "bn": "সে এমন সাহস দেখিয়েছিল যে সে একটি পদক পেয়েছিল।" },
+        { "en": "As was expected, the company performed very well this year.", "bn": "যেমনটা প্রত্যাশিত ছিল, কোম্পানি এ বছর খুব ভালো পারফর্ম করেছে।" }
+      ],
+      "tips": "তুলনামূলক inversion মনে রাখবেন formal writing-এ ব্যবহার করতে। Exclamatory inversion-এ 'How'-এর পর adjective আসে ('How beautiful the sky is!')। 'Such'-এর ক্ষেত্রে noun আসে ('Such a day it was!')। এই কাঠামোগুলো সাহিত্যিক এবং আনুষ্ঠানিক লেখায় প্রাণবন্ততা যোগ করে।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Inverting when the negative adverb is not at the beginning (e.g., 'I never have seen such a thing')",
+      "correct": "Inversion only happens when the negative adverb is at the start of the sentence: 'Never have I seen such a thing.' In the middle, no inversion: 'I have never seen such a thing.'",
+      "explanation": "Inversion তখনই ঘটে যখন negative adverb বাক্যের শুরুতে থাকে। মাঝখানে বা শেষে থাকলে স্বাভাবিক subject-verb order বজায় থাকে। 'I never have seen...' ভুল; সঠিক হলো 'I have never seen...' (no inversion, 'have'-এর পর 'never')।"
+    },
+    {
+      "wrong": "Forgetting to add 'do/does/did' when there is no auxiliary verb (e.g., 'Never I saw such beauty')",
+      "correct": "When there is no auxiliary verb, insert 'do/does/did': 'Never did I see such beauty'",
+      "explanation": "Present simple বা past simple tense-এ কোনো auxiliary verb নেই। তাই inversion-এ 'do/does/did' যোগ করতে হবে। 'Never I saw' ভুল; সঠিক হলো 'Never did I see'। 'Rarely she comes' ভুল; সঠিক হলো 'Rarely does she come'। মনে রাখবেন: inversion-এর জন্য সবসময় একটি auxiliary verb প্রয়োজন।"
+    },
+    {
+      "wrong": "Inverting the wrong part of 'Not only...but also' (e.g., 'Not only he passed but also he got a scholarship')",
+      "correct": "Invert only after 'Not only', not after 'but also': 'Not only did he pass, but he also got a scholarship'",
+      "explanation": "'Not only...but also' structure-এ inversion শুধুমাত্র 'not only'-এর পরের clause-এ ঘটে। 'But also'-এর পরের clause normal order-এ থাকে। 'Not only he passed' ভুল; সঠিক হলো 'Not only did he pass'। 'But also'-এর পর inversion করার প্রয়োজন নেই।"
+    },
+    {
+      "wrong": "Using inversion after 'here/there' with a pronoun (e.g., 'Here comes he')",
+      "correct": "Use inversion with a noun subject, but not with a pronoun subject: 'Here comes John' but 'Here he comes'",
+      "explanation": "যখন subject একটি noun (like John, the bus), তখন inversion হয়: 'Here comes the bus'। কিন্তু যখন subject একটি pronoun (he, she, it, they), তখন inversion হয় না: 'Here he comes'। 'Here comes he' ভুল। মনে রাখবেন: noun + inversion, pronoun + no inversion।"
+    },
+    {
+      "wrong": "Confusing 'it's' and 'its' in exclamatory inversion (e.g., 'How beautiful its!' instead of 'How beautiful it is!')",
+      "correct": "Use the correct pronoun and verb order: 'How beautiful it is!' (not 'How beautiful its!')",
+      "explanation": "'Its' একটি possessive pronoun (my, his, her, its), আর 'it's' হলো 'it is' বা 'it has'-এর contraction। Exclamatory inversion-এ 'How + adjective + subject + verb' structure ব্যবহার হয়: 'How beautiful it is!'। 'How beautiful its' সম্পূর্ণ অর্থহীন। বানান এবং structure নিয়ে সতর্ক থাকুন।"
+    },
+    {
+      "wrong": "Using inversion in 'if' clause of conditional sentences (e.g., 'If had I known, I would have come')",
+      "correct": "Either use 'if' with normal order ('If I had known...') OR use inversion without 'if' ('Had I known...'). Never use both.",
+      "explanation": "একটি সাধারণ ভুল: 'If had I known' — এটি 'if' এবং inversion উভয়ই ব্যবহার করছে, যা ভুল। দুটি অপশন আছে: (1) 'If I had known...' (normal) অথবা (2) 'Had I known...' (inversion without 'if')। উভয় একসাথে ব্যবহার করা যাবে না। 'If had I known' ভুল।"
+    },
+    {
+      "wrong": "Trying to invert 'only' when it modifies the subject (e.g., 'Only John did come' instead of 'Only John came')",
+      "correct": "When 'only' modifies the subject, there is no inversion: 'Only John came to the party'",
+      "explanation": "'Only' যখন subject-কে modifies করে (অর্থাৎ 'শুধু জন'), তখন কোনো inversion হয় না। 'Only John came' সঠিক; 'Only John did come' ভুল এবং অপ্রয়োজনীয়। Inversion তখনই হয় যখন 'only' + adverbial phrase/ clause বাক্যের শুরুতে থাকে।"
+    },
+    {
+      "wrong": "Using the wrong auxiliary verb in inverted conditionals (e.g., 'Were I to would know...')",
+      "correct": "Use the correct structure: 'Were I to know' (Type 2) or 'Had I known' (Type 3). Do not mix them.",
+      "explanation": "Inverted conditional-এ নির্দিষ্ট structure আছে। Type 2-এর জন্য 'Were + subject + to + V1' ('Were I to know')। Type 3-এর জন্য 'Had + subject + V3' ('Had I known')। 'Were I to would know' মিশ্রিত এবং ভুল। Type 1-এর জন্য 'Should + subject + V1' ('Should you need')। এগুলো মিশিয়ে ফেলবেন না।"
+    }
+  ]
 }

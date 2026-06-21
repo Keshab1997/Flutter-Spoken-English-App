@@ -1,10 +1,202 @@
 {
   "chapter": 52,
   "level": "Advanced",
-  "title": "Causative Verbs",
+  "title": "Causative Verbs (কার্যকারক ক্রিয়া)",
   "icon": "causal",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Causative verbs (make, have, get, let, help) are used to indicate that one person causes another person to do something. They differ in strength (force, request, permission, or assistance) and structure (some take a bare infinitive, others a to-infinitive, and some a past participle). Mastering causative structures is crucial for expressing agency and delegation in English.",
+  "banglaDescription": "Causative verbs (make, have, get, let, help) ব্যবহার করা হয় বোঝাতে যে একজন ব্যক্তি অন্য একজনকে কিছু করতে কারণ বা প্রভাবিত করে। এরা শক্তি (জোরাজুরি, অনুরোধ, অনুমতি, বা সাহায্য) এবং গঠন (কিছু bare infinitive নেয়, কিছু to-infinitive নেয়, এবং কিছু past participle নেয়) অনুসারে ভিন্ন। ইংরেজিতে কর্তৃত্ব এবং কাজ অর্পণ প্রকাশের জন্য causative structures আয়ত্ত করা অত্যন্ত গুরুত্বপূর্ণ।",
+  "topics": [
+    {
+      "name": "Make (জোর করে করানো/বাধ্য করা)",
+      "banglaName": "Make (জোর করে করানো/বাধ্য করা)",
+      "definition": "The verb 'make' means to force or compel someone to do something. It has a very strong causative meaning. The structure is: Subject + make + person + base verb (bare infinitive). In the passive voice, it takes a 'to-infinitive'.",
+      "banglaDefinition": "'Make' ক্রিয়ার অর্থ কাউকে কিছু করতে বাধ্য করা বা জোর করা। এর একটি খুব শক্তিশালী কার্যকারক অর্থ আছে। গঠন হলো: Subject + make + person + base verb (bare infinitive)। Passive voice-এ এটি 'to-infinitive' নেয়।",
+      "formula": "Active: Subject + make(s)/made + Person + Base Verb (V1)\nPassive: Subject + be (is/are/was/were) + made + to + Base Verb (V1)\n\nExamples:\n• The teacher made the students do the homework.\n• She was made to apologize for her mistake.",
+      "rules": [
+        "Active voice-এ 'make'-এর পরে object এবং তারপর bare infinitive (to ছাড়া verb) বসে।",
+        "Passive voice-এ 'make' হয়ে যায় 'be made' এবং তারপর 'to-infinitive' বসে (to + V1)।",
+        "'Make' সাধারণত involuntary action (অনিচ্ছাকৃত কাজ) বোঝায়, যেখানে subject-এর কোনো পছন্দ নেই।",
+        "'Make' বিভিন্ন tense-এ ব্যবহার করা যায়: make, makes, made, will make।",
+        "যদি object একটি clause হয় তবে 'make it + adjective + to-infinitive' কাঠামো ব্যবহার করা হয়।",
+        "'Make' শারীরিক বা মানসিক চাপ বোঝাতে পারে, যেমন 'The movie made me cry.'",
+        "Reflexive pronoun ব্যবহার করা যায়: 'He made himself heard.'",
+        "'Make' একটি strong causative: 'cause' বা 'force'-এর সমতুল্য।"
+      ],
+      "examples": [
+        { "en": "My parents made me clean my room every day.", "bn": "আমার বাবা-মা আমাকে প্রতিদিন আমার ঘর পরিষ্কার করতে বাধ্য করতেন।" },
+        { "en": "The sad movie made her cry.", "bn": "দুঃখজনক সিনেমাটি তাকে কাঁদিয়েছে।" },
+        { "en": "The boss made him work overtime last night.", "bn": "বস তাকে গতরাতে ওভারটাইম কাজ করতে বাধ্য করেছেন।" },
+        { "en": "What made you change your mind?", "bn": "কী আপনাকে আপনার মন পরিবর্তন করতে বাধ্য করল?" },
+        { "en": "The comedian made the audience laugh throughout the show.", "bn": "কমেডিয়ান পুরো শো জুড়ে দর্শকদের হাসাতে বাধ্য করেছেন।" },
+        { "en": "She was made to wait for two hours at the airport.", "bn": "তাকে বিমানবন্দরে দুই ঘন্টা অপেক্ষা করতে বাধ্য করা হয়েছিল।" },
+        { "en": "The teacher made the students rewrite the essay.", "bn": "শিক্ষক ছাত্রদের প্রবন্ধটি পুনরায় লিখতে বাধ্য করলেন।" },
+        { "en": "He couldn't make himself understood in the foreign language.", "bn": "সে বিদেশী ভাষায় নিজেকে বোঝাতে পারেনি।" },
+        { "en": "The government made the company pay a huge fine.", "bn": "সরকার কোম্পানিটিকে একটি বিশাল জরিমানা দিতে বাধ্য করেছিল।" },
+        { "en": "This song always makes me feel happy.", "bn": "এই গানটি সবসময় আমাকে খুশি বোধ করায়।" }
+      ],
+      "tips": "মনে রাখবেন, 'make'-এর active form-এ Verb-এর আগে 'to' বসে না। কিন্তু passive-এ 'to' অবশ্যই বসবে ('He was made to go')। 'Make' সাধারণত voluntary action-এর জন্য 'let'-এর বিপরীত। দৈনন্দিন জীবনে 'make' ব্যবহার করে নিজের বাক্য তৈরি করুন।"
+    },
+    {
+      "name": "Have (কাউ দিয়ে কাজ করানো/অর্পণ করা)",
+      "banglaName": "Have (কাউ দিয়ে কাজ করানো/অর্পণ করা)",
+      "definition": "The verb 'have' as a causative means to arrange for someone to do something for you, or to ask someone to do something. It is less forceful than 'make'. The structure varies depending on whether it is active (have + person + V1) or passive (have + object + V3).",
+      "banglaDefinition": "Causative হিসেবে 'have' ক্রিয়ার অর্থ কারো জন্য কিছু করার ব্যবস্থা করা, বা কাউকে কিছু করতে বলা। এটি 'make'-এর চেয়ে কম জোরালো। গঠন নির্ভর করে এটি active (have + person + V1) নাকি passive (have + object + V3) তার উপর।",
+      "formula": "Active (Arrange for someone): Subject + have/has/had + Person + Base Verb (V1)\nPassive (Arrange for something): Subject + have/has/had + Object + Past Participle (V3)\n\nExamples:\n• I will have my assistant send the email. (Active)\n• I will have the email sent by my assistant. (Passive)",
+      "rules": [
+        "Active causative 'have'-এ (have + person + V1) অর্থ হচ্ছে কাউকে দিয়ে কাজ করানো; ব্যক্তি কাজটি সম্পাদন করে।",
+        "Passive causative 'have'-এ (have + object + V3) অর্থ হচ্ছে কারও জন্য কাজটি করা; কাজটির উপর ফোকাস।",
+        "প্রায়ই 'get'-এর সাথে তুলনা করা হয়; 'have' বেশি আনুষ্ঠানিক এবং 'get' বেশি অনানুষ্ঠানিক।",
+        "'Have' imply করে যে কাজটি করার ব্যবস্থা subject নিজে করে, সাধারণত অর্থ বা অনুরোধের বিনিময়ে।",
+        "'Have' বিভিন্ন tense-এ চলে: have, has, had, will have, having।",
+        "Negative form: 'I won't have you staying out late' (অনুমতি না দেওয়া)।",
+        "Causative 'have' এবং possessive 'have'-এর মধ্যে পার্থক্য বুঝতে হবে (যেমন 'I have a car' = possessive)।",
+        "কিছু ক্ষেত্রে 'have' 'experience' অর্থেও ব্যবহৃত হয়: 'He had his car stolen' (তার গাড়ি চুরি হয়েছিল - অভিজ্ঞতা)।"
+      ],
+      "examples": [
+        { "en": "I had my brother fix my laptop.", "bn": "আমি আমার ভাইকে দিয়ে আমার ল্যাপটপ মেরামত করিয়েছি।" },
+        { "en": "She had her hair cut yesterday.", "bn": "সে গতকাল তার চুল কাটিয়েছে।" },
+        { "en": "We are having the house painted next week.", "bn": "আমরা আগামী সপ্তাহে বাড়ি রঙ করাচ্ছি।" },
+        { "en": "The manager had the report submitted on time.", "bn": "ম্যানেজার সময়মতো রিপোর্ট জমা দেওয়ার ব্যবস্থা করলেন।" },
+        { "en": "Please have the documents delivered to my office.", "bn": "অনুগ্রহ করে ডকুমেন্টগুলো আমার অফিসে পৌঁছে দেওয়ার ব্যবস্থা করুন।" },
+        { "en": "He had his assistant book the flight tickets.", "bn": "সে তার সহকারীকে দিয়ে ফ্লাইটের টিকিট বুক করিয়েছে।" },
+        { "en": "I will have the car washed this afternoon.", "bn": "আমি আজ বিকেলে গাড়ি ধোয়াব।" },
+        { "en": "She had her wedding dress designed by a famous designer.", "bn": "সে তার বিয়ের পোশাক একজন বিখ্যাত ডিজাইনার দিয়ে ডিজাইন করিয়েছে।" },
+        { "en": "We had our photograph taken together.", "bn": "আমরা একসাথে আমাদের ছবি তুলিয়েছি।" },
+        { "en": "The CEO had the new policy explained to all employees.", "bn": "সিইও সমস্ত কর্মচারীকে নতুন নীতি ব্যাখ্যা করানোর ব্যবস্থা করলেন।" }
+      ],
+      "tips": "Causative 'have' মনে রাখার সবচেয়ে সহজ উপায়: active-এ 'have + person + V1' (ব্যক্তি কাজ করবে) এবং passive-এ 'have + object + V3' (কাজটি করা হবে)। 'Have something done' কাঠামোটি খুবই সাধারণ, যেমন 'have my hair cut'। মনে রাখবেন 'have' এখানে 'arrange for' বোঝায়, 'possess' নয়।"
+    },
+    {
+      "name": "Get (কাউ দিয়ে কাজ করানো/সম্মত করানো)",
+      "banglaName": "Get (কাউ দিয়ে কাজ করানো/সম্মত করানো)",
+      "definition": "The verb 'get' as a causative is similar to 'have' but is more informal and often implies persuading or convincing someone to do something, rather than just arranging. It is very common in spoken English.",
+      "banglaDefinition": "Causative হিসেবে 'get' ক্রিয়া 'have'-এর মতোই কিন্তু বেশি অনানুষ্ঠানিক এবং প্রায়ই কাউকে কিছু করতে রাজি করানো বা বোঝানোর অর্থ বহন করে, শুধু ব্যবস্থা করার চেয়ে বেশি। কথ্য ইংরেজিতে এটি খুবই সাধারণ।",
+      "formula": "Active (Persuade someone): Subject + get/got + Person + to + Base Verb (V1)\nPassive (Arrange something): Subject + get/got + Object + Past Participle (V3)\n\nExamples:\n• I got my friend to help me with the project. (Active - persuade)\n• I finally got my car repaired yesterday. (Passive - arrange)",
+      "rules": [
+        "Active causative 'get'-এ (get + person + to + V1) ব্যক্তিকে কাজ করতে রাজি করানো বা বোঝানো বোঝায়।",
+        "Passive causative 'get'-এ (get + object + V3) 'have'-এর মতোই কাজ করার ব্যবস্থা করা বোঝায়, কিন্তু কম আনুষ্ঠানিক।",
+        "'Get' বেশি effort বা difficulty ইঙ্গিত করতে পারে যে কাজটি সম্পন্ন করতে হয়েছে।",
+        "'Get' বিভিন্ন tense-এ চলে: get, gets, got, will get, getting, gotten (US) / got (UK)।",
+        "Active এবং passive 'get'-এর মধ্যে পার্থক্য: active-এ 'to-infinitive' এবং passive-এ 'past participle'।",
+        "'Get something done' বনাম 'have something done': 'get' বেশি কথ্য এবং প্রায়ই নিজের উদ্যোগে করা কাজ বোঝায়।",
+        "Negative form: 'I couldn't get him to understand the problem.'",
+        "'Get' reflexive pronoun-এর সাথেও ব্যবহার করা যায়: 'I got myself ready for the party.'"
+      ],
+      "examples": [
+        { "en": "I got my brother to drive me to the airport.", "bn": "আমি আমার ভাইকে রাজি করালাম আমাকে বিমানবন্দরে ছেড়ে দিতে।" },
+        { "en": "She got her hair done at the new salon.", "bn": "সে নতুন সেলুনে তার চুল করিয়েছে।" },
+        { "en": "We need to get the report finished by Friday.", "bn": "আমাদের শুক্রবারের মধ্যে রিপোর্ট শেষ করতে হবে।" },
+        { "en": "He got the mechanic to check the engine.", "bn": "সে মেকানিককে দিয়ে ইঞ্জিন চেক করিয়েছে।" },
+        { "en": "I can't get this printer to work properly.", "bn": "আমি এই প্রিন্টারটি ঠিকমতো কাজ করাতে পারছি না।" },
+        { "en": "She finally got her passport renewed.", "bn": "সে অবশেষে তার পাসপোর্ট নবায়ন করিয়েছে।" },
+        { "en": "They got their house renovated last summer.", "bn": "তারা গত গ্রীষ্মে তাদের বাড়ি সংস্কার করিয়েছে।" },
+        { "en": "The teacher got the students to participate in the discussion.", "bn": "শিক্ষক ছাত্রদের আলোচনায় অংশগ্রহণ করতে রাজি করালেন।" },
+        { "en": "I will get the documents signed by the manager.", "bn": "আমি ম্যানেজার দিয়ে ডকুমেন্ট সই করাব।" },
+        { "en": "How did you get him to change his mind?", "bn": "তুমি কীভাবে তাকে তার মন পরিবর্তন করতে রাজি করালে?" }
+      ],
+      "tips": "মনে রাখবেন, 'get'-এর active causative-এ 'to' যোগ হয় ('get someone to do'), কিন্তু 'have'-এর ক্ষেত্রে 'to' লাগে না ('have someone do')। 'Get' সাধারণত persuasion বোঝায়, যেখানে 'have' বেশি arrangement বোঝায়। 'Get something done' খুব সাধারণ একটি structure, যেমন 'get the car washed'।"
+    },
+    {
+      "name": "Let (অনুমতি দেওয়া)",
+      "banglaName": "Let (অনুমতি দেওয়া)",
+      "definition": "The verb 'let' means to allow or permit someone to do something. It is a permissive causative. The structure is simple: Subject + let + person + base verb (bare infinitive). It is the opposite of 'make' in terms of compulsion.",
+      "banglaDefinition": "'Let' ক্রিয়ার অর্থ কাউকে কিছু করতে অনুমতি দেওয়া বা দেওয়া। এটি একটি অনুমতিমূলক কার্যকারক। গঠন সহজ: Subject + let + person + base verb (bare infinitive)। বাধ্যতামূলক অর্থে এটি 'make'-এর বিপরীত।",
+      "formula": "Active: Subject + let/lets/let (past) + Person + Base Verb (V1)\nPassive (rare/formal): Subject + be + let + Verb... (not common; usually 'be allowed to' is used)\n\nExamples:\n• My parents let me stay out until midnight.\n• Please let me know if you have any questions.",
+      "rules": [
+        "'Let'-এর পরে সবসময় bare infinitive (to ছাড়া verb) বসে।",
+        "'Let'-এর passive form খুবই বিরল; 'be allowed to' বেশি ব্যবহার করা হয়। যেমন: 'I was allowed to go' (not 'I was let go')।",
+        "'Let' বিভিন্ন tense-এ ব্যবহার করা যায়: let, lets, let (past), will let, letting।",
+        "'Let' negative form-এ 'not' নেয়: 'She won't let me borrow her car.'",
+        "Common fixed expressions: 'Let me know', 'Let's go', 'Let him be'।",
+        "'Let' permission বোঝায়, obligation নয়। 'I let him go' মানে আমি তাকে যেতে অনুমতি দিলাম; 'I made him go' মানে আমি তাকে যেতে বাধ্য করলাম।",
+        "'Let' এর পরে object এবং তারপর verb-এ কোনো 'to' যোগ হয় না। এটি একটি বড় নিয়ম।",
+        "কখনও কখনও 'let' 'allow' এর তুলনায় কম আনুষ্ঠানিক।"
+      ],
+      "examples": [
+        { "en": "My mother let me go to the party.", "bn": "আমার মা আমাকে পার্টিতে যেতে দিয়েছেন।" },
+        { "en": "Please let me know your decision by tomorrow.", "bn": "অনুগ্রহ করে আগামীকালের মধ্যে আপনার সিদ্ধান্ত আমাকে জানান।" },
+        { "en": "The teacher didn't let the students leave early.", "bn": "শিক্ষক ছাত্রদের তাড়াতাড়ি চলে যেতে দেননি।" },
+        { "en": "Let me help you with the luggage.", "bn": "আমাকে তোমাকে লাগেজ বহন করতে সাহায্য করতে দাও।" },
+        { "en": "He lets his children watch TV for an hour every evening.", "bn": "সে তার বাচ্চাদের প্রতি সন্ধ্যায় এক ঘন্টা টিভি দেখতে দেয়।" },
+        { "en": "Don't let the dog run into the street.", "bn": "কুকুরটিকে রাস্তায় দৌড়াতে দিও না।" },
+        { "en": "She let her friend borrow her dress for the wedding.", "bn": "সে তার বান্ধবীকে বিয়ের জন্য তার পোশাক ধার নিতে দিয়েছে।" },
+        { "en": "Let us begin the meeting now.", "bn": "আমাদের এখন মিটিং শুরু করতে দিন।" },
+        { "en": "The security guard let us enter the building.", "bn": "সিকিউরিটি গার্ড আমাদের বিল্ডিংয়ে প্রবেশ করতে দিয়েছেন।" },
+        { "en": "I won't let this opportunity slip away.", "bn": "আমি এই সুযোগটি হাতছাড়া হতে দেব না।" }
+      ],
+      "tips": "সবচেয়ে গুরুত্বপূর্ণ নিয়ম: 'let'-এর পরে 'to' কখনো বসে না। 'Let me to go' বলা সম্পূর্ণ ভুল; সঠিক হলো 'Let me go'। 'Allow' শব্দটি formal, 'let' informal। Common phrases যেমন 'let me know', 'let's see' মুখস্থ করে ফেলুন।"
+    },
+    {
+      "name": "Help (সাহায্য করা)",
+      "banglaName": "Help (সাহায্য করা)",
+      "definition": "The verb 'help' as a causative means to assist someone in doing something. It has a flexible structure: it can be followed by either a bare infinitive or a to-infinitive without changing the meaning. 'Help' is unique because it can take both forms.",
+      "banglaDefinition": "Causative হিসেবে 'help' ক্রিয়ার অর্থ কাউকে কিছু করতে সহায়তা করা। এর একটি নমনীয় গঠন আছে: এটি অর্থ পরিবর্তন না করেই bare infinitive বা to-infinitive উভয়ই নিতে পারে। 'Help' অনন্য কারণ এটি উভয় রূপ নিতে পারে।",
+      "formula": "Subject + help/helps/helped + Person + (to) + Base Verb (V1)\n\nExamples:\n• Could you help me (to) carry these boxes?\n• She helped her son (to) finish his homework.",
+      "rules": [
+        "'Help'-এর পরে infinitive-এর 'to' ব্যবহার করা বা না করা — উভয়ই সঠিক এবং অর্থ একই থাকে।",
+        "'Help' সবচেয়ে কম জোরালো causative; এটি সহযোগিতা বোঝায়, বাধ্যতা বা অনুমতি নয়।",
+        "'Help'-এর পরে object ছাড়াও সরাসরি infinitive বসতে পারে: 'This book will help improve your English.'",
+        "Help with + noun: 'Can you help me with this problem?' — এটি একটি বিকল্প কাঠামো।",
+        "'Help somebody in doing something' — formal এবং কম সাধারণ।",
+        "'Can't help doing' একটি fixed phrase যার অর্থ 'কিছু করা ছাড়া আর কিছু করার নেই'।",
+        "'Help oneself to something' অর্থ 'নিজে নিজে নেওয়া'।",
+        "Help-এর passive form: 'I was helped (to) find the address.'"
+      ],
+      "examples": [
+        { "en": "Could you help me carry this heavy bag?", "bn": "তুমি কি আমাকে এই ভারী ব্যাগটি বহন করতে সাহায্য করতে পারো?" },
+        { "en": "She helped her daughter (to) prepare for the exam.", "bn": "সে তার মেয়েকে পরীক্ষার প্রস্তুতিতে সাহায্য করেছে।" },
+        { "en": "This app helps users learn new languages quickly.", "bn": "এই অ্যাপটি ব্যবহারকারীদের দ্রুত নতুন ভাষা শিখতে সাহায্য করে।" },
+        { "en": "My brother helped me (to) fix my bicycle.", "bn": "আমার ভাই আমাকে আমার সাইকেল ঠিক করতে সাহায্য করেছে।" },
+        { "en": "Can you help me with the dishes?", "bn": "তুমি কি আমাকে থালাবাসন পরিষ্কার করতে সাহায্য করতে পারো?" },
+        { "en": "The guide helped us (to) find the hidden trail.", "bn": "গাইড আমাদের লুকানো পথ খুঁজে পেতে সাহায্য করেছে।" },
+        { "en": "I can't help feeling sorry for him.", "bn": "আমি ওর জন্য দুঃখিত বোধ করা ছাড়া কিছুই করতে পারি না।" },
+        { "en": "Please help yourself to some coffee and cookies.", "bn": "অনুগ্রহ করে কিছু কফি এবং কুকিজ নিন।" },
+        { "en": "The scholarship helped her (to) continue her studies.", "bn": "স্কলারশিপটি তাকে তার পড়াশোনা চালিয়ে যেতে সাহায্য করেছে।" },
+        { "en": "He helped me understand the complex theory better.", "bn": "সে আমাকে জটিল তত্ত্বটি আরও ভালোভাবে বুঝতে সাহায্য করেছে।" }
+      ],
+      "tips": "'Help'-এর পরে 'to' ব্যবহার করা বা না করা সম্পূর্ণ আপনার পছন্দ। 'Help someone do' এবং 'help someone to do' — উভয়ই grammatically correct। 'Help' সবচেয়ে 'friendly' causative verb। মনে রাখবেন 'can't help + V-ing' একটি বিশেষ ব্যবহার।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Saying 'I made him to go' or 'I let him to go'",
+      "correct": "Use bare infinitive after 'make' and 'let': 'I made him go', 'I let him go'",
+      "explanation": "Make এবং let-এর পরে সবসময় 'to' ছাড়া base verb বসে। এটি একটি সাধারণ ভুল। 'She made me to cry' ভুল; সঠিক হলো 'She made me cry'। 'Let me to know' ভুল; সঠিক হলো 'Let me know'। শুধুমাত্র 'get' এবং 'help' (optional) 'to' নিতে পারে।"
+    },
+    {
+      "wrong": "Using 'have' and 'get' interchangeably in the active form (e.g., 'I had him to help me')",
+      "correct": "'Have' takes bare infinitive ('I had him help me'), while 'get' takes to-infinitive ('I got him to help me')",
+      "explanation": "'Have' এবং 'get'-এর গঠন ভিন্ন। 'Have someone do' (to ছাড়া) এবং 'get someone to do' (to সহ)। 'I had him to carry the bag' ভুল; সঠিক হলো 'I had him carry the bag'। 'I got him to carry the bag' সঠিক। এই পার্থক্যটি মনে রাখা গুরুত্বপূর্ণ।"
+    },
+    {
+      "wrong": "Using passive 'let' instead of 'be allowed to' (e.g., 'I was let to go')",
+      "correct": "For passive meaning, use 'be allowed to' instead of passive 'let': 'I was allowed to go'",
+      "explanation": "'Let'-এর passive form (be let) অত্যন্ত বিরল এবং অস্বাভাবিক শোনায়। 'I was let to go' সঠিক নয়। পরিবর্তে 'be allowed to' ব্যবহার করা উচিত: 'I was allowed to go'। 'Let' সাধারণত active voice-এ সীমাবদ্ধ।"
+    },
+    {
+      "wrong": "Confusing 'make' and 'cause' (e.g., 'The storm made the bridge to collapse')",
+      "correct": "'Make' takes bare infinitive: 'The storm made the bridge collapse'. 'Cause' is followed by to-infinitive: 'The storm caused the bridge to collapse'.",
+      "explanation": "Make এবং cause একই অর্থ বহন করলেও গঠন ভিন্ন। Make-এর পরে bare infinitive বসে ('made the bridge collapse'), আর cause-এর পরে to-infinitive ('caused the bridge to collapse')। 'The noise made me to jump' ভুল; সঠিক হলো 'The noise made me jump'।"
+    },
+    {
+      "wrong": "Using 'help' with 'to' in negative imperative (e.g., 'Don't help him to do it')",
+      "correct": "Both forms are acceptable, but the bare infinitive is more common in imperatives: 'Don't help him do it'",
+      "explanation": "'Help'-এর ক্ষেত্রে 'to' ব্যবহার করা বা না করা উভয়ই সঠিক, তবে imperative বাক্যে (Don't help) 'to' ছাড়া bare infinitive বেশি স্বাভাবিক। 'Don't help him to do it' সঠিক হলেও 'Don't help him do it' বেশি সাধারণ। কোনো ভুল নয়, তবে একটি পছন্দ।"
+    },
+    {
+      "wrong": "Saying 'I got my hair cutting' instead of 'I got my hair cut'",
+      "correct": "In the passive causative, use past participle (V3): 'I got my hair cut' or 'I had my hair cut'",
+      "explanation": "Passive causative (have/get + object + V3) কাঠামোতে object-এর পরে সবসময় past participle (V3) বসে, present participle (V-ing) নয়। 'I got my hair cutting' ভুল; সঠিক হলো 'I got my hair cut'। 'I had my car washing' ভুল; সঠিক 'I had my car washed'। মনে রাখবেন: something is done (V3), not doing (V-ing)।"
+    },
+    {
+      "wrong": "Confusing 'let's' with 'lets' (e.g., 'Lets go to the park')",
+      "correct": "'Let's' is a contraction of 'let us' for suggestions. 'Lets' is the third person singular of 'let'. 'Let's go to the park' is correct.",
+      "explanation": "এই দুটি সম্পূর্ণ ভিন্ন। 'Let's' (একক উদ্ধৃতি সহ) হলো 'let us'-এর সংক্ষিপ্ত রূপ যা suggestion বা proposal বোঝায়। 'Lets' (উদ্ধৃতি ছাড়া) হলো 'let'-এর third person singular present tense। 'Lets go' ভুল; সঠিক হলো 'Let's go'। 'He lets the dog out' সঠিক।"
+    },
+    {
+      "wrong": "Using 'make' for permission instead of 'let' (e.g., 'My mom made me go to the party' when meaning permission)",
+      "correct": "Use 'let' for permission and 'make' for force: 'My mom let me go to the party' (permission) vs 'My mom made me go to the party' (force)",
+      "explanation": "এটি একটি অর্থগত ভুল। 'Make' বাধ্যতা (force) বোঝায়, আর 'let' অনুমতি (permission) বোঝায়। যদি আপনার মা আপনাকে পার্টিতে যাওয়ার অনুমতি দেন, তাহলে 'My mom let me go' বলুন। যদি তিনি আপনাকে যেতে বাধ্য করেন (যদিও আপনি চান না), তাহলে 'My mom made me go' বলুন। অর্থ বুঝে ব্যবহার করুন।"
+    }
+  ]
 }

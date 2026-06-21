@@ -1,10 +1,223 @@
 {
   "chapter": 51,
   "level": "Advanced",
-  "title": "Advanced Modals",
+  "title": "Advanced Modals (উন্নত মোডাল)",
   "icon": "verified",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Advanced modals are special verbs that express possibility, necessity, permission, ability, and obligation in more complex ways. They include modal perfects (have + past participle), modal continuous forms, and modal passives. Mastering these will help you express subtle meanings in English with precision and sophistication.",
+  "banglaDescription": "Advanced modals হলো বিশেষ ক্রিয়াপদ যা সম্ভাবনা, প্রয়োজনীয়তা, অনুমতি, সামর্থ্য এবং বাধ্যবাধকতা আরও জটিল উপায়ে প্রকাশ করে। এতে modal perfect (have + past participle), modal continuous forms এবং modal passives অন্তর্ভুক্ত। এগুলো আয়ত্ত করলে আপনি ইংরেজিতে সূক্ষ্ম অর্থ নির্ভুলতা এবং পরিশীলিতভাবে প্রকাশ করতে পারবেন।",
+  "topics": [
+    {
+      "name": "Modal Perfects: Past Possibility and Regret (মডাল পারফেক্ট)",
+      "banglaName": "মডাল পারফেক্ট: অতীতের সম্ভাবনা ও অনুশোচনা",
+      "definition": "Modal perfects are formed with modal + have + past participle. They are used to talk about past possibilities, regrets, criticisms, or speculations about past events that did not happen. The main forms are must have, might/may have, could have, should have, would have, and needn't have.",
+      "banglaDefinition": "Modal perfect গঠিত হয় modal + have + past participle দিয়ে। এগুলো অতীতের সম্ভাবনা, অনুশোচনা, সমালোচনা বা অতীতের ঘটনা সম্পর্কে অনুমান প্রকাশ করতে ব্যবহৃত হয় যা ঘটেনি। প্রধান রূপগুলো হলো: must have, might/may have, could have, should have, would have এবং needn't have।",
+      "formula": "Subject + Modal (must/might/may/could/should/would/needn't) + have + Past Participle (V3)\n\nExamples:\n• must + have + V3 (নিশ্চিত অনুমান)\n• might/may + have + V3 (সম্ভাবনা)\n• could + have + V3 (সক্ষমতা কিন্তু করেনি)\n• should + have + V3 (উচিত ছিল কিন্তু করেনি → অনুশোচনা)\n• would + have + V3 (শর্তযুক্ত ফলাফল)\n• needn't + have + V3 (অপ্রয়োজনীয় কাজ যা করা হয়েছে)",
+      "rules": [
+        "must have + V3: অতীতের কোনো ঘটনা সম্পর্কে নিশ্চিত অনুমান বোঝায়। speaker প্রায় নিশ্চিত।",
+        "might/may have + V3: অতীতের কোনো ঘটনা সম্পর্কে অনিশ্চিত সম্ভাবনা বোঝায়।",
+        "could have + V3: অতীতে কিছু করার সক্ষমতা ছিল কিন্তু করা হয়নি বোঝায়। এছাড়াও অতীতের অনিশ্চিত অনুমান।",
+        "should have + V3: অতীতে কিছু করা উচিত ছিল কিন্তু করা হয়নি → অনুশোচনা বা সমালোচনা।",
+        "would have + V3: শর্তাধীন বাক্যে (third conditional) অতীতের অ-বাস্তব ফলাফল বোঝায়।",
+        "needn't have + V3: অতীতে কিছু অপ্রয়োজনীয় কাজ করা হয়েছে কিন্তু তা জরুরি ছিল না।",
+        "cannot/couldn't have + V3: অতীতে কিছু অসম্ভব ছিল বোঝায় (নেতিবাচক নিশ্চিততা)।",
+        "Modal perfect-এ 'have' কখনো 'has' বা 'had' হয় না; subject-এর সাথে modal-এর কোনো পরিবর্তন হয় না।"
+      ],
+      "examples": [
+        { "en": "He must have left already. His bag is not here.", "bn": "সে ইতিমধ্যে চলে গেছে নিশ্চয়ই। তার ব্যাগ এখানে নেই।" },
+        { "en": "She might have missed the train. That's why she is late.", "bn": "সে ট্রেন মিস করেছে হতে পারে। তাই সে দেরি করছে।" },
+        { "en": "I could have passed the exam if I had studied harder.", "bn": "আমি যদি আরও ভালোভাবে পড়তাম তাহলে পরীক্ষায় পাস করতে পারতাম।" },
+        { "en": "You should have told me earlier. Now it's too late.", "bn": "তোমার আগেই বলা উচিত ছিল। এখন খুব দেরি হয়ে গেছে।" },
+        { "en": "If I had known, I would have come to help you.", "bn": "যদি আমি জানতাম, তাহলে তোমাকে সাহায্য করতে আসতাম।" },
+        { "en": "You needn't have bought so much food. We have plenty.", "bn": "তোমার এত খাবার কেনার দরকার ছিল না। আমাদের কাছে প্রচুর আছে।" },
+        { "en": "He can't have finished the project in one day. It's impossible.", "bn": "সে একদিনে প্রজেক্ট শেষ করতে পারেনি। এটা অসম্ভব।" }
+      ],
+      "tips": "Modal perfect শেখার সবচেয়ে ভালো উপায় হলো প্রতিটি modal-এর ভিন্ন অর্থ মনে রাখা। 'Should have' মানে অনুশোচনা, 'could have' মানে সুযোগ হাতছাড়া, 'must have' মানে নিশ্চিত অনুমান, 'might have' মানে অনিশ্চিত অনুমান। প্রতিদিন ৫টি করে বাক্য তৈরি করো।"
+    },
+    {
+      "name": "Modal Continuous Forms (মডাল কন্টিনিউয়াস)",
+      "banglaName": "মডাল কন্টিনিউয়াস ফর্ম",
+      "definition": "Modal continuous forms are used to talk about actions that are ongoing or were ongoing at a specific time. They are formed with modal + be + present participle (-ing form). These forms express possibility, certainty, or speculation about an action in progress.",
+      "banglaDefinition": "Modal continuous forms চলমান ক্রিয়া বা নির্দিষ্ট সময়ে চলমান ছিল এমন ক্রিয়া সম্পর্কে বলতে ব্যবহৃত হয়। এগুলো modal + be + present participle (-ing form) দিয়ে গঠিত হয়। এই ফর্মগুলো চলমান ক্রিয়া সম্পর্কে সম্ভাবনা, নিশ্চিততা বা অনুমান প্রকাশ করে।",
+      "formula": "Subject + Modal (must/might/may/could/should/would) + be + Verb-ing\n\nPresent Continuous Modal: modal + be + V-ing\nPast Continuous Modal: modal + have + been + V-ing\n\nExamples:\n• must be doing (নিশ্চিত যে এখন করছে)\n• might be doing (সম্ভবত এখন করছে)\n• should be doing (এখন করা উচিত)\n• must have been doing (অতীতে নিশ্চিতভাবে করছিল)",
+      "rules": [
+        "Present possibility (বর্তমান সম্ভাবনা): modal + be + V-ing — কোনো ক্রিয়া এখন চলছে বলে অনুমান।",
+        "Past possibility (অতীত সম্ভাবনা): modal + have + been + V-ing — অতীতে কোনো ক্রিয়া চলছিল বলে অনুমান।",
+        "must be doing: speaker নিশ্চিত যে action এখন happening।",
+        "might/may be doing: speaker অনিশ্চিত কিন্তু সম্ভাবনা আছে।",
+        "could be doing: speaker-এর অনুমান কিন্তু নিশ্চিত নয়।",
+        "should be doing: speaker-এর মতে action happening হওয়া উচিত।",
+        "Future possibility: modal + be + V-ing — ভবিষ্যতে কোনো নির্দিষ্ট সময়ে action চলবে বলে অনুমান।",
+        "Continuous forms সাধারণত stative verbs (know, believe, love) এর সাথে ব্যবহার হয় না।"
+      ],
+      "examples": [
+        { "en": "He must be sleeping now. Don't call him.", "bn": "সে এখন নিশ্চয়ই ঘুমাচ্ছে। তাকে ডেকো না।" },
+        { "en": "She might be working on the report right now.", "bn": "সে এখন রিপোর্ট নিয়ে কাজ করছে হতে পারে।" },
+        { "en": "They could be waiting for us at the station.", "bn": "তারা স্টেশনে আমাদের জন্য অপেক্ষা করছে হতে পারে।" },
+        { "en": "You should be studying instead of playing games.", "bn": "তোমার খেলা না করে পড়া উচিত।" },
+        { "en": "He must have been driving all night to reach here.", "bn": "এখানে পৌঁছাতে সে নিশ্চয়ই সারারাত গাড়ি চালিয়েছে।" },
+        { "en": "She might have been sleeping when I called.", "bn": "আমি যখন ফোন করি তখন সে ঘুমাচ্ছিল হতে পারে।" },
+        { "en": "By this time tomorrow, I will be flying to London.", "bn": "আগামীকাল এই সময়ে আমি লন্ডনের উদ্দেশ্যে উড়ছি থাকব।" }
+      ],
+      "tips": "Continuous forms-এ সবসময় 'be' ব্যবহার করো এবং main verb-এর সাথে -ing যোগ করো। Present continuous modal বর্তমান action বোঝায়, past continuous modal-এ 'have been' যোগ হয়। মনে রাখবে: stative verbs (know, like, need) সাধারণত continuous হয় না।"
+    },
+    {
+      "name": "Modal Passives (মডাল প্যাসিভ)",
+      "banglaName": "মডাল প্যাসিভ",
+      "definition": "Modal passives are used when the focus is on the action and not on who performs the action. They are formed with modal + be + past participle (for present/future) or modal + have + been + past participle (for past). These allow you to express necessity, possibility, or obligation in a passive voice.",
+      "banglaDefinition": "Modal passive ব্যবহৃত হয় যখন ক্রিয়ার উপর জোর দেওয়া হয়, ক্রিয়া সম্পাদনকারীর উপর নয়। এগুলো modal + be + past participle (বর্তমান/ভবিষ্যতের জন্য) বা modal + have + been + past participle (অতীতের জন্য) দিয়ে গঠিত হয়। এগুলো প্যাসিভ ভয়েসে প্রয়োজনীয়তা, সম্ভাবনা বা বাধ্যবাধকতা প্রকাশ করে।",
+      "formula": "Present/Future Passive: Subject + Modal + be + Past Participle (V3)\nPast Passive: Subject + Modal + have + been + Past Participle (V3)\n\nActive: We must complete the project.\nPassive: The project must be completed.\n\nActive: Someone should have informed us.\nPassive: We should have been informed.",
+      "rules": [
+        "Present passive possibility: may/might/can/could + be + V3 — কোনো কিছু করা যেতে পারে।",
+        "Present passive necessity: must/have to + be + V3 — কিছু করা প্রয়োজন।",
+        "Present passive obligation: should/ought to + be + V3 — কিছু করা উচিত।",
+        "Past passive possibility: might/may/could + have + been + V3 — অতীতে কিছু করা যেতে পারত।",
+        "Past passive necessity: must/had to + have + been + V3 — অতীতে কিছু করা প্রয়োজন ছিল।",
+        "Past passive obligation: should/ought to + have + been + V3 — অতীতে কিছু করা উচিত ছিল কিন্তু হয়নি।",
+        "Passive voice ব্যবহার করো যখন doer (কর্তা) অজানা, অপ্রাসঙ্গিক, বা স্পষ্ট।",
+        "Passive voice-এ কর্ম (object) subject হয়ে যায়।"
+      ],
+      "examples": [
+        { "en": "The work must be finished by Friday.", "bn": "শুক্রবারের মধ্যে কাজ শেষ করতে হবে।" },
+        { "en": "The report can be submitted online.", "bn": "রিপোর্ট অনলাইনে জমা দেওয়া যেতে পারে।" },
+        { "en": "The package should be delivered tomorrow.", "bn": "প্যাকেজটি আগামীকাল ডেলিভারি দেওয়া উচিত।" },
+        { "en": "The letter might have been lost in the mail.", "bn": "চিঠিটি ডাকযোগে হারিয়ে গেছে হতে পারে।" },
+        { "en": "The building must have been constructed in 1990.", "bn": "ভবনটি ১৯৯০ সালে নির্মিত হয়েছিল নিশ্চয়ই।" },
+        { "en": "The test results should have been announced yesterday.", "bn": "পরীক্ষার ফলাফল গতকাল ঘোষণা করা উচিত ছিল।" },
+        { "en": "The documents could have been stolen from the office.", "bn": "ডকুমেন্টগুলো অফিস থেকে চুরি হয়ে গেছে হতে পারে।" },
+        { "en": "Smoking is not allowed. It must be prohibited here.", "bn": "ধূমপান অনুমোদিত নয়। এখানে এটি নিষিদ্ধ হতে হবে।" }
+      ],
+      "tips": "Passive voice-এ subject-এর পরে modal, তারপর 'be' বা 'have been', তারপর V3 (past participle) বসে। মনে রাখবে: 'be' সবসময় present/future-এর জন্য, 'have been' অতীতের জন্য। Doer (by + agent) উল্লেখ করতে চাইলে শেষে যোগ করতে পারো।"
+    },
+    {
+      "name": "Dare and Need as Modals (মডাল হিসেবে Dare ও Need)",
+      "banglaName": "মডাল হিসেবে Dare ও Need",
+      "definition": "Dare and need can function both as main verbs and as modal verbs. As modal verbs, they are used primarily in negative and interrogative sentences. They do not take -s in the third person singular and are followed by bare infinitive (without 'to').",
+      "banglaDefinition": "Dare এবং Need উভয়ই main verb এবং modal verb হিসেবে কাজ করতে পারে। Modal verb হিসেবে এগুলো প্রধানত negative এবং interrogative বাক্যে ব্যবহৃত হয়। এগুলো third person singular-এ -s যোগ করে না এবং এদের পরে bare infinitive ('to' ছাড়া) বসে।",
+      "formula": "Modal Dare: Subject + dare (not) + bare infinitive\nModal Need: Subject + need (not) + bare infinitive\n\nAffirmative (rare): He dare go. (সে যেতে সাহস পায়)\nNegative: He dare not go. (সে যেতে সাহস পায় না)\nInterrogative: Dare he go? (সে কি যেতে সাহস পায়?)\n\nAffirmative (rare): You need go. (তোমার যেতে হবে)\nNegative: You need not (needn't) go. (তোমার যেতে হবে না)\nInterrogative: Need I go? (আমার কি যেতে হবে?)",
+      "rules": [
+        "Modal dare মূলত negative ('dare not') এবং interrogative বাক্যে ব্যবহৃত হয়।",
+        "Modal dare-এর পরে সবসময় bare infinitive (to ছাড়া verb) বসে।",
+        "Modal dare-এর third person singular-এ -s যোগ হয় না: 'He dare not say that' (He dares not নয়)।",
+        "Modal need প্রধানত negative ('need not/needn't') বাক্যে ব্যবহৃত হয়।",
+        "Modal need-এর পরে সবসময় bare infinitive বসে।",
+        "Modal need-এর third person singular-এ -s যোগ হয় না: 'He need not worry'।",
+        "Need-এর negative form 'needn't' বা 'need not' — উভয়ই চলে।",
+        "Dare এবং need-এর main verb form-এর পরে 'to-infinitive' বসে: 'He dares to go', 'He needs to go'।"
+      ],
+      "examples": [
+        { "en": "He dare not (daren't) speak in front of the audience.", "bn": "সে দর্শকের সামনে কথা বলতে সাহস পায় না।" },
+        { "en": "How dare you talk to me like that!", "bn": "তুমি আমার সাথে এভাবে কথা বলার সাহস করো কী করে!" },
+        { "en": "Dare she challenge the boss?", "bn": "সে কি বসকে চ্যালেঞ্জ করার সাহস পায়?" },
+        { "en": "I dare say he will win the election.", "bn": "আমি সাহস করে বলতে পারি সে নির্বাচনে জিতবে।" },
+        { "en": "You needn't (need not) worry about the exam.", "bn": "তোমার পরীক্ষা নিয়ে চিন্তা করার দরকার নেই।" },
+        { "en": "Need I bring my own laptop to the meeting?", "bn": "মিটিংয়ে কি আমি নিজের ল্যাপটপ আনতে হবে?" },
+        { "en": "He need not (needn't) come early tomorrow.", "bn": "তার আগামীকাল তাড়াতাড়ি আসার দরকার নেই।" },
+        { "en": "Nobody dare (dares) enter the haunted house.", "bn": "কেউ ভূতুড়ে বাড়িতে ঢোকার সাহস পায় না।" }
+      ],
+      "tips": "Modal dare এবং need-তে মনে রাখবে: negative বাক্যে 'not' দিয়ে এবং question-এ subject-এর আগে বসে। Main verb হিসেবে ব্যবহার করতে চাইলে 'to' যোগ করো: 'He needs to go' (modal না, main verb) বনাম 'He need not go' (modal)। 'How dare you!' একটি fixed expression।"
+    },
+    {
+      "name": "Modal Expressions: Had Better, Would Rather, Be Supposed To (মডাল এক্সপ্রেশন)",
+      "banglaName": "মডাল এক্সপ্রেশন",
+      "definition": "Modal expressions are phrases that function like modals but are not true modal verbs. They include had better (strong advice), would rather (preference), and be supposed to (expectation/obligation). These expressions are common in spoken English and add nuance to your speech.",
+      "banglaDefinition": "Modal expressions হল এমন phrase যা modal-এর মতো কাজ করে কিন্তু প্রকৃত modal verb নয়। এদের মধ্যে আছে had better (জোরালো উপদেশ), would rather (পছন্দ) এবং be supposed to (প্রত্যাশা/বাধ্যবাধকতা)। এই এক্সপ্রেশনগুলো কথ্য ইংরেজিতে সাধারণ এবং কথা বলা আরও সূক্ষ্মতা যোগ করে।",
+      "formula": "Had Better: Subject + had better (not) + bare infinitive\nWould Rather: Subject + would rather (not) + bare infinitive (same subject)\nWould Rather: Subject + would rather + subject + past tense (different subject)\nBe Supposed To: Subject + be (am/is/are/was/were) + supposed to + bare infinitive\n\nExamples:\n• You had better study now. (উপদেশ)\n• I would rather stay home. (পছন্দ)\n• I would rather you stayed home. (অন্য subject-এর সাথে)\n• She is supposed to arrive at 5 PM. (প্রত্যাশা)",
+      "rules": [
+        "Had better (not) + bare infinitive: জোরালো উপদেশ বা সতর্কতা। 'You had better go' — 'তোমার যাওয়া উচিত'।",
+        "Had better-এ 'had' সবসময় same থাকে, subject বা tense পরিবর্তনে পরিবর্তন হয় না।",
+        "Had better-এর negative form: 'had better not' — 'You had better not tell her'।",
+        "Would rather (not) + bare infinitive: নিজের পছন্দ প্রকাশ করে (একই subject)।",
+        "Would rather + subject + past tense: ভিন্ন subject-এর পছন্দ প্রকাশ করে ('I would rather you came tomorrow')।",
+        "Would rather-এ 'rather' কখনো 'then' হয় না। 'Would rather than' ভুল।",
+        "Be supposed to + bare infinitive: নিয়ম, প্রত্যাশা বা পরিকল্পনা বোঝায়।",
+        "Be supposed to-এর negative: 'not supposed to' — কিছু করা নিষেধ বা প্রত্যাশিত নয়।"
+      ],
+      "examples": [
+        { "en": "You had better see a doctor immediately.", "bn": "তোমার এখনই ডাক্তার দেখা উচিত।" },
+        { "en": "We had better not be late for the meeting.", "bn": "মিটিংয়ে আমাদের দেরি না করাই ভালো।" },
+        { "en": "He had better apologize before it's too late.", "bn": "দেরি হওয়ার আগেই তার ক্ষমা চাওয়া উচিত।" },
+        { "en": "I would rather drink tea than coffee.", "bn": "আমি কফির চেয়ে চা পান করতে পছন্দ করি।" },
+        { "en": "She would rather not talk about it.", "bn": "সে এ বিষয়ে কথা না বলতে পছন্দ করবে।" },
+        { "en": "I would rather you didn't smoke in the house.", "bn": "আমি চাই তুমি বাড়িতে ধূমপান না করো।" },
+        { "en": "The train is supposed to arrive at 6:30.", "bn": "ট্রেনটি ৬:৩০-এ arrive করার কথা।" },
+        { "en": "You are not supposed to enter this room.", "bn": "তোমার এই ঘরে ঢোকার কথা নয়।" },
+        { "en": "She was supposed to submit the report yesterday.", "bn": "তার গতকাল রিপোর্ট জমা দেওয়ার কথা ছিল।" },
+        { "en": "He is supposed to be the best doctor in town.", "bn": "সে শহরের সেরা ডাক্তার বলে মনে করা হয়।" }
+      ],
+      "tips": "Had better খুব strong advice — এটা 'should'-এর চেয়ে অনেক জোরালো। Would rather ব্যবহার করে পছন্দ প্রকাশ করো এবং মনে রাখবে ভিন্ন subject-এর জন্য past tense। Be supposed to দিয়ে প্রত্যাশা বা নিয়ম বোঝাও। 'Supposed to' এবং 'meant to' প্রায় সমান।"
+    },
+    {
+      "name": "Modals of Deduction: Degrees of Certainty (অনুমানের মোডাল)",
+      "banglaName": "অনুমানের মোডাল: নিশ্চিততার মাত্রা",
+      "definition": "Modals of deduction allow you to make logical guesses about past, present, or future situations. They express different degrees of certainty: 100% certain (must/can't), very likely (should/ought to), possible (may/might/could), and unlikely (might not). These are essential for logical reasoning and inference.",
+      "banglaDefinition": "Modals of deduction বর্তমান, অতীত বা ভবিষ্যতের পরিস্থিতি সম্পর্কে যৌক্তিক অনুমান করতে দেয়। এগুলো নিশ্চিততার বিভিন্ন মাত্রা প্রকাশ করে: ১০০% নিশ্চিত (must/can't), খুব সম্ভবত (should/ought to), সম্ভব (may/might/could), এবং অসম্ভাব্য (might not)। যৌক্তিক যুক্তি এবং অনুমানের জন্য এগুলো অপরিহার্য।",
+      "formula": "100% Certain (positive): must + be/V1 → He must be home.\n100% Certain (negative): can't/couldn't + be/V1 → He can't be home.\nVery Likely: should/ought to + be/V1 → He should be home by now.\nPossible: may/might/could + be/V1 → He may be home.\nUnlikely: might not + be/V1 → He might not be home.\n\nFor Past: modal + have + been/V3/V-ing\n\nScale of Certainty:\nMost Certain ← must → should → may → might → could → might not → can't → Most Certain (negative)",
+      "rules": [
+        "must + base verb: 95-100% নিশ্চিত। Speaker-এর কাছে যৌক্তিক প্রমাণ আছে।",
+        "can't/couldn't + base verb: 95-100% নিশ্চিত যে কিছু সত্য নয় (নেতিবাচক deduction)।",
+        "should/ought to + base verb: 75-90% নিশ্চিত। যৌক্তিক expectation।",
+        "may + base verb: 40-60% সম্ভাবনা। বর্তমান বা ভবিষ্যৎ অনুমান।",
+        "might + base verb: 30-50% সম্ভাবনা। may-এর চেয়ে কম নিশ্চিত।",
+        "could + base verb: তাত্ত্বিক সম্ভাবনা। সাধারণত কম নির্দিষ্ট।",
+        "might not + base verb: 30-50% নিশ্চিত যে কিছু সত্য নয়।",
+        "Past deduction: must/can't/might/could + have + been/V3 — অতীত অনুমানের জন্য।",
+        "Present continuous deduction: modal + be + V-ing — এখন চলমান অনুমান।"
+      ],
+      "examples": [
+        { "en": "He must be at work. His car is in the parking lot.", "bn": "সে নিশ্চয়ই অফিসে আছে। তার গাড়ি পার্কিং লটে আছে।" },
+        { "en": "She can't be sick. I saw her playing football an hour ago.", "bn": "সে অসুস্থ হতে পারে না। আমি এক ঘণ্টা আগে তাকে ফুটবল খেলতে দেখেছি।" },
+        { "en": "They should be home by now. It's already 8 PM.", "bn": "তাদের এখন বাসায় থাকার কথা। ইতিমধ্যে রাত ৮টা।" },
+        { "en": "He might be stuck in traffic. That's why he is late.", "bn": "সে ট্র্যাফিক জ্যামে আটকে থাকতে পারে। তাই সে দেরি করছে।" },
+        { "en": "The exam could be difficult. We should prepare well.", "bn": "পরীক্ষাটি কঠিন হতে পারে। আমাদের ভালোভাবে প্রস্তুতি নেওয়া উচিত।" },
+        { "en": "She must have left early. I don't see her here.", "bn": "সে নিশ্চয়ই তাড়াতাড়ি চলে গেছে। আমি এখানে তাকে দেখছি না।" },
+        { "en": "He can't have stolen the money. He is very honest.", "bn": "সে টাকা চুরি করতে পারে না। সে খুব সৎ।" },
+        { "en": "They might have forgotten our appointment.", "bn": "তারা আমাদের অ্যাপয়েন্টমেন্ট ভুলে গেছে হতে পারে।" },
+        { "en": "She should have received my letter by now.", "bn": "তার এখন আমার চিঠি পাওয়ার কথা।" },
+        { "en": "He could be lying. I'm not sure what to believe.", "bn": "সে মিথ্যা বলতে পারে। আমি নিশ্চিত নই কী বিশ্বাস করব।" }
+      ],
+      "tips": "Certainty scale মনে রাখবে: must (অনুমিত নিশ্চিত) > should (প্রত্যাশিত) > may (সম্ভব) > might (কম সম্ভব) > could (তাত্ত্বিক)। নেগেটিভ deduction-এর জন্য 'can't' ব্যবহার করো, 'mustn't' নয় ('mustn't' মানে prohibited)। প্রমাণ (evidence) দেখিয়ে deduction করো।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Using 'must have' for negative deduction (e.g., 'He must have not gone.')",
+      "correct": "Use 'can't have' or 'couldn't have' for negative deduction (e.g., 'He can't have gone.')",
+      "explanation": "Negative deduction-এর জন্য 'must not have' ব্যবহার করা ভুল। 'Must not' মানে নিষেধাজ্ঞা, deduction নয়। Deduction-এ নেতিবাচকতার জন্য 'can't have' বা 'couldn't have' ব্যবহার করা সঠিক। যেমন: 'He can't have left already' — 'সে ইতিমধ্যে চলে যেতে পারে না'।"
+    },
+    {
+      "wrong": "Saying 'She should to go' or 'He must to come'",
+      "correct": "Modals are followed by bare infinitive (without 'to'): 'She should go', 'He must come'",
+      "explanation": "Modal verbs (can, could, may, might, must, shall, should, will, would) এর পরে সবসময় 'to' ছাড়া base verb বসে। 'She should to go' ভুল; সঠিক হলো 'She should go'। শুধুমাত্র 'ought to' এবং 'have to' modal expressions-এ 'to' ব্যবহার হয়।"
+    },
+    {
+      "wrong": "Using 'had better' in past tense (e.g., 'He had better went')",
+      "correct": "'Had better' is always followed by bare infinitive, regardless of time: 'He had better go'",
+      "explanation": "'Had better'-এ 'had' অতীতের মতো দেখালেও এটি বর্তমান বা ভবিষ্যতের জন্য জোরালো উপদেশ বোঝায়। এর পরে সবসময় bare infinitive (V1) বসে, past tense নয়। 'He had better went' ভুল; সঠিক হলো 'He had better go'।"
+    },
+    {
+      "wrong": "Confusing 'would rather' with 'had better' (e.g., 'I had rather drink coffee')",
+      "correct": "Use 'would rather' for preference and 'had better' for advice: 'I would rather drink coffee'",
+      "explanation": "This is a common confusion. 'Had rather' is not standard English. 'Would rather' expresses personal preference (পছন্দ), while 'had better' expresses strong advice or warning (উপদেশ/সতর্কতা)। 'I would rather stay home' (আমি বাসায় থাকতে পছন্দ করি) বনাম 'You had better stay home' (তোমার বাসায় থাকা উচিত)।"
+    },
+    {
+      "wrong": "Using 'needn't have done' and 'didn't need to do' interchangeably without understanding the difference",
+      "correct": "'Needn't have done' = unnecessary action that was done; 'Didn't need to do' = unnecessary action, may or may not have been done",
+      "explanation": "এই দুটির অর্থ ভিন্ন। 'Needn't have done' (modal perfect) বোঝায় অতীতে কিছু করা হয়েছে যা অপ্রয়োজনীয় ছিল। 'Didn't need to do' (main verb past) বোঝায় অতীতে কিছু করার প্রয়োজন ছিল না — এটা করা হতে পারে বা নাও হতে পারে। যেমন: 'I needn't have bought milk' (কিনেছি কিন্তু দরকার ছিল না) বনাম 'I didn't need to buy milk' (কিনতে হয়নি, হতে পারে কিনিনি বা কিনেছি)।"
+    },
+    {
+      "wrong": "Adding -s to modal verbs in third person singular (e.g., 'He cans swim', 'She musts go')",
+      "correct": "Modal verbs never take -s in third person singular: 'He can swim', 'She must go'",
+      "explanation": "Modal verbs-এর কোনো conjugation হয় না। Third person singular-এও modal-এর সাথে -s যোগ হয় না। 'He cans swim' ভুল; সঠিক হলো 'He can swim'। 'She must go' ঠিক আছে, 'She musts go' ভুল। Main verb হিসেবে ব্যবহার করলেই কেবল -s যোগ হয়: 'He needs to go' (এখানে need main verb) বনাম 'He need not go' (এখানে need modal)।"
+    },
+    {
+      "wrong": "Using 'can' instead of 'be able to' for past ability with specific achievement",
+      "correct": "For past specific achievement, use 'was/were able to' or 'managed to': 'I was able to pass the exam' (not 'I could pass the exam')",
+      "explanation": "General past ability-র জন্য 'could' ব্যবহার হয় ('I could swim when I was 5'), কিন্তু নির্দিষ্ট কোনো সফলতা (specific achievement) বোঝাতে 'was/were able to' বা 'managed to' ব্যবহার হয়। 'I could pass the exam' ভুল (এটা general ability বোঝায়); সঠিক হলো 'I was able to pass the exam' বা 'I managed to pass the exam'। নেগেটিভ ফর্মে 'couldn't' উভয় ক্ষেত্রেই চলে।"
+    },
+    {
+      "wrong": "Saying 'must not' when you mean 'doesn't have to' (e.g., 'You must not go' meaning 'You don't need to go')",
+      "correct": "'Must not' = prohibition (নিষেধ); 'Don't have to' = no necessity (প্রয়োজন নেই): 'You must not smoke here' vs 'You don't have to come if you are busy'",
+      "explanation": "This is a critical distinction. 'Must not' (mustn't) means something is prohibited or forbidden — it is not allowed. 'Don't have to' means something is not necessary or not required — you have a choice. 'You must not go' মানে 'তোমার যাওয়া নিষেধ'; 'You don't have to go' মানে 'তোমার যাওয়ার প্রয়োজন নেই'। এরা সম্পূর্ণ ভিন্ন অর্থ প্রকাশ করে।"
+    }
+  ]
 }

@@ -1,10 +1,232 @@
 {
   "chapter": 54,
   "level": "Advanced",
-  "title": "Emphasis",
+  "title": "Emphasis (জোর দেওয়া)",
   "icon": "format_bold",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Emphasis in English refers to the various ways speakers and writers highlight specific information in a sentence. This can be achieved through cleft sentences (It is... that..., What... is...), inversion, auxiliary verb stress (do/does/did), fronting, and other structures. Mastering emphasis allows you to control the focus of your message and sound more natural and persuasive in English.",
+  "banglaDescription": "ইংরেজিতে Emphasis বলতে বক্তা বা লেখক বাক্যের নির্দিষ্ট তথ্য হাইলাইট করার বিভিন্ন উপায়কে বোঝায়। এটি cleft sentences (It is... that..., What... is...), inversion, auxiliary verb stress (do/does/did), fronting এবং অন্যান্য কাঠামোর মাধ্যমে অর্জন করা যায়। Emphasis আয়ত্ত করলে আপনি আপনার বার্তার ফোকাস নিয়ন্ত্রণ করতে পারবেন এবং ইংরেজিতে আরও স্বাভাবিক ও প্ররোচক শোনাবেন।",
+  "topics": [
+    {
+      "name": "Cleft Sentences: 'It' Clefts (ক্লেফ্ট সেন্টেন্স: 'It' ক্লেফ্ট)",
+      "banglaName": "ক্লেফ্ট সেন্টেন্স: 'It' ক্লেফ্ট",
+      "definition": "An 'It' cleft sentence is used to emphasize a particular part of a sentence. It follows the structure: 'It is/was + emphasized element + that/who + rest of the sentence.' This structure allows you to focus on the subject, object, adverb, or any other element.",
+      "banglaDefinition": "'It' cleft sentence বাক্যের একটি নির্দিষ্ট অংশের উপর জোর দিতে ব্যবহৃত হয়। এটি কাঠামো অনুসরণ করে: 'It is/was + জোর দেওয়া উপাদান + that/who + বাক্যের বাকি অংশ।' এই কাঠামো আপনাকে subject, object, adverb বা অন্য কোনো উপাদানের উপর ফোকাস করতে দেয়।",
+      "formula": "It + is/was + Emphasized Element + that/who + Rest of the Sentence\n\nOriginal: John bought a car yesterday.\n\nEmphasis on Subject: It was John who bought a car yesterday.\nEmphasis on Object: It was a car that John bought yesterday.\nEmphasis on Time: It was yesterday that John bought a car.\n\nNote: Use 'who' for people, 'that' for things and also for people (less formal).",
+      "rules": [
+        "'It' cleft সবসময় 'It is' (present) বা 'It was' (past) দিয়ে শুরু হয়।",
+        "জোর দেওয়া উপাদানটি 'It is/was'-এর পরেই বসে।",
+        "ব্যক্তির জন্য 'who' ব্যবহার করা হয়; জিনিস বা সময়ের জন্য 'that' ব্যবহার করা হয়।",
+        "'That' ব্যক্তির জন্যও ব্যবহার করা যায় (কম আনুষ্ঠানিক)।",
+        "Cleft sentence-এর বাকি অংশ 'that/who'-এর পরে স্বাভাবিক order-এ থাকে।",
+        "Future tense-এ 'It will be' ব্যবহার করা যায়: 'It will be next week that we announce the results.'",
+        "Modal verb-এর সাথেও ব্যবহার করা যায়: 'It must be John who is responsible.'",
+        "'It' cleft-এর negative form: 'It was not John who broke the window.'"
+      ],
+      "examples": [
+        { "en": "It was Mary who won the first prize.", "bn": "এটি মেরিই ছিলেন যিনি প্রথম পুরস্কার জিতেছিলেন।" },
+        { "en": "It is English that I want to learn, not French.", "bn": "এটি ইংরেজিই যা আমি শিখতে চাই, ফ্রেঞ্চ নয়।" },
+        { "en": "It was yesterday that we received the news.", "bn": "এটি গতকালই ছিল যখন আমরা খবরটি পেয়েছিলাম।" },
+        { "en": "It is the manager who makes all the decisions.", "bn": "এটি ম্যানেজারই যিনি সমস্ত সিদ্ধান্ত নেন।" },
+        { "en": "It was because of the rain that the match was cancelled.", "bn": "এটি বৃষ্টির কারণেই ছিল যে ম্যাচটি বাতিল করা হয়েছিল।" },
+        { "en": "It is not you who is to blame; it is me.", "bn": "এটি আপনি নন যাকে দোষ দেওয়া উচিত; এটি আমি।" },
+        { "en": "It was in 2020 that the pandemic started.", "bn": "এটি ২০২০ সালেই ছিল যখন মহামারী শুরু হয়েছিল।" },
+        { "en": "It is your dedication that makes you successful.", "bn": "এটি আপনার নিষ্ঠাই যা আপনাকে সফল করে তোলে।" },
+        { "en": "It was my brother who fixed the computer.", "bn": "এটি আমার ভাইই ছিলেন যিনি কম্পিউটারটি মেরামত করেছিলেন।" },
+        { "en": "It is not what you say but what you do that matters.", "bn": "আপনি কী বলেন তা নয়, আপনি কী করেন সেটাই গুরুত্বপূর্ণ।" }
+      ],
+      "tips": "'It' cleft-এ remember: জোর দেওয়া element-এর পর 'that' বসে (people-এর জন্য 'who' optional)। 'It is I who am responsible' — grammatically correct but formal; 'It is me who is responsible' বেশি common। Cleft sentences writing-এ focus বাড়াতে খুব useful।"
+    },
+    {
+      "name": "Cleft Sentences: 'What' Clefts / Pseudo-Clefts ('What' ক্লেফ্ট / সিউডো-ক্লেফ্ট)",
+      "banglaName": "'What' ক্লেফ্ট / সিউডো-ক্লেফ্ট",
+      "definition": "A 'What' cleft (or pseudo-cleft) sentence is used to emphasize an action or a thing. It follows the structure: 'What + subject + verb + is/was + emphasized element.' This structure is particularly useful for focusing on an action or what happened.",
+      "banglaDefinition": "'What' cleft (বা pseudo-cleft) sentence একটি কাজ বা জিনিসের উপর জোর দিতে ব্যবহৃত হয়। এটি কাঠামো অনুসরণ করে: 'What + subject + verb + is/was + জোর দেওয়া উপাদান।' এই কাঠামো একটি কাজ বা কী ঘটেছে তার উপর ফোকাস করার জন্য বিশেষভাবে উপযোগী।",
+      "formula": "What + Subject + Verb + is/was + Emphasized Element\n\nOriginal: I need a good rest.\n\nWhat Cleft: What I need is a good rest.\n\nOriginal: She wants to travel the world.\n\nWhat Cleft: What she wants is to travel the world.\n\nOther wh-words can also be used: Where, When, Why, How.",
+      "rules": [
+        "'What' cleft সাধারণত 'What + subject + verb + be' কাঠামো অনুসরণ করে।",
+        "এই কাঠামো action বা thing-এর উপর জোর দেয়।",
+        "'All' দিয়েও similar structure তৈরি করা যায়: 'All I want is peace.'",
+        "'What' clause-এর verb সাধারণত singular হয় (যেমন 'What I need is...')।",
+        "Past tense-এ 'was' ব্যবহার হয়: 'What I wanted was a break.'",
+        "'What' cleft-এ 'that' ব্যবহার করার প্রয়োজন নেই।",
+        "Other wh-words (where, when, why, how) দিয়েও cleft sentence তৈরি করা যায়।",
+        "এই কাঠামো 'It' cleft-এর চেয়ে বেশি natural এবং common কথ্য ইংরেজিতে।"
+      ],
+      "examples": [
+        { "en": "What I need right now is a cup of coffee.", "bn": "আমার এখন যা দরকার তা হল এক কাপ কফি।" },
+        { "en": "What she really wants is to start her own business.", "bn": "সে সত্যিই যা চায় তা হল নিজের ব্যবসা শুরু করা।" },
+        { "en": "What surprised me most was his honesty.", "bn": "যা আমাকে সবচেয়ে বেশি অবাক করেছিল তা ছিল তার সততা।" },
+        { "en": "What we should do is focus on our goals.", "bn": "আমাদের যা করা উচিত তা হল আমাদের লক্ষ্যগুলিতে ফোকাস করা।" },
+        { "en": "What the children need is more outdoor activities.", "bn": "বাচ্চাদের যা দরকার তা হল আরও আউটডোর কার্যক্রম।" },
+        { "en": "Where we decided to meet was at the park.", "bn": "আমরা যেখানে দেখা করার সিদ্ধান্ত নিয়েছিলাম তা ছিল পার্কে।" },
+        { "en": "Why he left is still a mystery to everyone.", "bn": "কেন সে চলে গেল তা এখনও সবার কাছে একটি রহস্য।" },
+        { "en": "All I ask for is a little respect.", "bn": "আমি যা চাই তা হল একটু সম্মান।" },
+        { "en": "What really matters is not winning but participating.", "bn": "যা সত্যিই গুরুত্বপূর্ণ তা হল জেতা নয়, অংশগ্রহণ করা।" },
+        { "en": "What the company needs is a fresh new strategy.", "bn": "কোম্পানির যা প্রয়োজন তা হল একটি নতুন কৌশল।" }
+      ],
+      "tips": "'What' cleft-এ মনে রাখবেন: 'what + clause' singular verb নেয় ('What I need is...' not 'are...')। 'All' দিয়ে 'what'-এর মতোই emphasis: 'All I want is...'। এই structure 'It' cleft-এর চেয়ে বেশি natural শোনায় spoken English-এ।"
+    },
+    {
+      "name": "Emphatic 'Do/Does/Did' (জোরালো 'Do/Does/Did')",
+      "banglaName": "জোরালো 'Do/Does/Did'",
+      "definition": "In affirmative sentences, the auxiliary verbs 'do', 'does', and 'did' can be used to add emphasis to the main verb. This structure is used to strongly assert a fact, contradict a negative statement, or express surprise. The stressed auxiliary is pronounced more loudly in speech.",
+      "banglaDefinition": "Affirmative বাক্যে, auxiliary verb 'do', 'does', এবং 'did' main verb-এ জোর যোগ করতে ব্যবহার করা যায়। এই কাঠামোটি দৃঢ়ভাবে একটি সত্য জাহির করতে, একটি নেতিবাচক বক্তব্যের বিরোধিতা করতে বা বিস্ময় প্রকাশ করতে ব্যবহৃত হয়। কথোপকথনে stressed auxiliary জোরে উচ্চারিত হয়।",
+      "formula": "Subject + do/does/did + Base Verb (V1)\n\nPresent: I do understand your concern.\nPresent (3rd person): She does work very hard.\nPast: They did finish the project on time.\n\nImperative: Do sit down! (একটি polite invitation)\nNegative Question: Why don't you tell me the truth? (Emphatic request)",
+      "rules": [
+        "'Do/does/did' শুধুমাত্র affirmative (positive) বাক্যে emphasis-এর জন্য ব্যবহার করা হয়।",
+        "Main verb সবসময় base form (V1) হয়, tense 'do/does/did'-এ থাকে।",
+        "কথোপকথনে 'do' উচ্চারণ জোরে করা হয় (নিচে দাগ দিয়ে)।",
+        "Contradict করার জন্য: 'You didn't call me!' — 'I did call you!'",
+        "Surprise বা emphasis: 'You do look beautiful today!'",
+        "Imperative বাক্যে 'do' polite request বা invitation বোঝায়: 'Do come in.'",
+        "Negative question-এ: 'Why don't you listen?' (জোরালো অনুরোধ/সমালোচনা)।",
+        "বাংলায় 'নিশ্চয়ই', 'সত্যিই', 'আসলেই' ইত্যাদি শব্দ দিয়ে এটি অনুবাদ করা যায়।"
+      ],
+      "examples": [
+        { "en": "I do believe you are right about this matter.", "bn": "আমি নিশ্চয়ই বিশ্বাস করি যে আপনি এই বিষয়ে সঠিক।" },
+        { "en": "She does work very hard every single day.", "bn": "সে সত্যিই প্রতিদিন খুব পরিশ্রম করে।" },
+        { "en": "He did finish the report before the deadline.", "bn": "সে নির্ধারিত সময়ের আগেই রিপোর্ট শেষ করেছিল সত্যিই।" },
+        { "en": "You do look stunning in that dress!", "bn": "তুমি সেই পোশাকে সত্যিই দারুণ দেখাচ্ছে!" },
+        { "en": "I do apologize for the inconvenience caused.", "bn": "আমি সৃষ্ট অসুবিধার জন্য সত্যিই ক্ষমা চাইছি।" },
+        { "en": "Do sit down and make yourself comfortable.", "bn": "অবশ্যই বসুন এবং নিজেকে আরামদায়ক করুন।" },
+        { "en": "A: You didn't lock the door. B: I did lock it!", "bn": "A: তুমি দরজা লক করোনি। B: আমি সত্যিই লক করেছি!" },
+        { "en": "We do appreciate all your hard work.", "bn": "আমরা আপনার সমস্ত কঠোর পরিশ্রমের সত্যিই প্রশংসা করি।" },
+        { "en": "Do be careful when you cross the road.", "bn": "অবশ্যই রাস্তা পার হওয়ার সময় সাবধান থাকবেন।" },
+        { "en": "She does know the truth, but she is not telling us.", "bn": "সে সত্যিই সত্য জানে, কিন্তু সে আমাদের বলছে না।" }
+      ],
+      "tips": "Emphatic 'do' শুধুমাত্র affirmative বাক্যে use করুন। Negative বা question-এ এটি normal auxiliary-এর কাজ করে। Contradict করার সময় 'did'-এর উপর জোর দিন: 'I DID study for the exam!' মনে রাখবেন: এটি spoken English-এ খুব common, কিন্তু formal writing-এ কম ব্যবহার হয়।"
+    },
+    {
+      "name": "Fronting for Emphasis (জোর দিতে Fronting)",
+      "banglaName": "জোর দিতে Fronting",
+      "definition": "Fronting is the technique of moving a word, phrase, or clause to the beginning of a sentence (its default position is later) to give it special emphasis. This changes the normal word order and draws attention to the fronted element.",
+      "banglaDefinition": "Fronting হল একটি শব্দ, phrase বা clause কে বাক্যের শুরুতে সরানোর কৌশল (এর ডিফল্ট অবস্থান পরে) যাতে এটি বিশেষ জোর পায়। এটি স্বাভাবিক শব্দক্রম পরিবর্তন করে এবং fronted উপাদানের প্রতি দৃষ্টি আকর্ষণ করে।",
+      "formula": "Fronted Element + Subject + Verb (+ Rest of Sentence)\n\nOriginal: I have never seen such a beautiful place.\nFronted: Never have I seen such a beautiful place. (with inversion)\n\nOriginal: He is an honest man.\nFronted: An honest man he is.\n\nOriginal: She walked slowly out of the room.\nFronted: Slowly, she walked out of the room.",
+      "rules": [
+        "Fronting-এ সাধারণত object, complement, adverbial বা adjective বাক্যের শুরুতে আনা হয়।",
+        "কিছু fronting-এর সাথে inversion (subject-verb reversal) প্রয়োজন হয় (যেমন negative adverbials)।",
+        "Fronting inversion ছাড়াও হতে পারে: 'That book, I have read already.'",
+        "Fronting formal এবং literary context-এ বেশি দেখা যায়।",
+        "Object fronting: 'Such behavior I will not tolerate.'",
+        "Adjective fronting: 'Beautiful was the sight we saw.'",
+        "Adverbial fronting: 'In the corner of the room sat a little girl.' (inversion সহ)",
+        "Fronting spoken English-এ high emotion বা strong opinion প্রকাশ করে।"
+      ],
+      "examples": [
+        { "en": "Never in my life have I seen such rudeness.", "bn": "আমার জীবনে কখনও এমন অভদ্রতা দেখিনি।" },
+        { "en": "Such a difficult problem it was that nobody could solve it.", "bn": "এত কঠিন একটি সমস্যা ছিল যে কেউ এটি সমাধান করতে পারেনি।" },
+        { "en": "Into the room walked a tall, mysterious stranger.", "bn": "ঘরের ভিতরে একজন লম্বা, রহস্যময় অপরিচিত ব্যক্তি হেঁটে আসলেন।" },
+        { "en": "A complete fool he must think I am.", "bn": "একজন সম্পূর্ণ বোকা সে আমাকে মনে করছে নিশ্চয়ই।" },
+        { "en": "On the table lay a beautiful handwritten letter.", "bn": "টেবিলের উপর একটি সুন্দর হাতে লেখা চিঠি পড়েছিল।" },
+        { "en": "Not a single word did she say during the meeting.", "bn": "মিটিং চলাকালীন সে একটি কথাও বলেনি।" },
+        { "en": "Terrible as the weather was, we continued our journey.", "bn": "আবহাওয়া ভয়ানক ছিল, তবুও আমরা আমাদের যাত্রা চালিয়ে গিয়েছিলাম।" },
+        { "en": "This book, I have been wanting to read for months.", "bn": "এই বইটি, আমি মাসখানেক ধরে পড়তে চাচ্ছিলাম।" },
+        { "en": "Through the window came a gentle breeze.", "bn": "জানালা দিয়ে একটি মৃদু বাতাস এসেছিল।" },
+        { "en": "Only then did I realize my mistake.", "bn": "তখনই আমি আমার ভুল বুঝতে পেরেছিলাম।" }
+      ],
+      "tips": "Fronting-এ মনে রাখবেন: যদি negative adverbial front করেন, তাহলে inversion বাধ্যতামূলক। Positive element front করলে inversion optional। Fronting writing-এ variety এবং emphasis যোগ করে। Spoken English-এ carefully use করুন, কারণ এটি খুব formal শোনাতে পারে।"
+    },
+    {
+      "name": "Emphasis through Intensifiers and Reflexive Pronouns (তীব্রকারী ও রিফ্লেক্সিভ সর্বনাম দিয়ে Emphasis)",
+      "banglaName": "তীব্রকারী ও রিফ্লেক্সিভ সর্বনাম দিয়ে Emphasis",
+      "definition": "Intensifiers (very, really, absolutely, extremely, completely, totally, etc.) are adverbs that strengthen the meaning of adjectives or verbs. Reflexive pronouns (myself, yourself, himself, etc.) can be used for emphasis to mean 'personally' or 'without help'.",
+      "banglaDefinition": "Intensifiers (very, really, absolutely, extremely, completely, totally, ইত্যাদি) হল ক্রিয়াবিশেষণ যা adjective বা verb-এর অর্থ শক্তিশালী করে। Reflexive pronouns (myself, yourself, himself, ইত্যাদি) 'ব্যক্তিগতভাবে' বা 'কারও সাহায্য ছাড়া' অর্থে জোর দিতে ব্যবহার করা যায়।",
+      "formula": "Intensifiers: Subject + Verb + Intensifier + Adjective/Adverb/Verb\nReflexive Emphasis: Subject + Verb + Object + Reflexive Pronoun / Subject + Reflexive Pronoun + Verb\n\nExamples:\n• The movie was absolutely fantastic.\n• I myself saw the accident.\n• She made the dress herself.\n• He is extremely talented.",
+      "rules": [
+        "Intensifiers সাধারণত adjective-এর আগে বসে: 'very good', 'absolutely amazing'।",
+        "Some intensifiers (really, absolutely) verb-এর আগেও বসে: 'I really like it.'",
+        "Gradable adjectives (big, good, hot) 'very'-এর সাথে যায়; non-gradable adjectives (perfect, impossible, freezing) 'absolutely'-এর সাথে যায়।",
+        "Reflexive pronouns emphasis-এর জন্য object-এর পরে বসে: 'I did it myself.'",
+        "Reflexive pronouns subject-এর পরে বসে emphasis দিতে: 'The manager himself approved the project.'",
+        "'By + reflexive pronoun' মানে 'একা/কারও সাহায্য ছাড়া': 'She did it by herself.'",
+        "Intensifier 'so' এবং 'such' খুব common: 'It was so hot.', 'It was such a hot day.'",
+        "Modifiers like 'even', 'just', 'only' also add emphasis: 'Even he couldn't solve it.'"
+      ],
+      "examples": [
+        { "en": "The food at the restaurant was absolutely delicious.", "bn": "রেস্টুরেন্টের খাবারটি একেবারে সুস্বাদু ছিল।" },
+        { "en": "I myself completed the entire project on my own.", "bn": "আমি নিজেই পুরো প্রকল্পটি নিজে নিজে সম্পন্ন করেছি।" },
+        { "en": "She is extremely talented in playing the piano.", "bn": "সে পিয়ানো বাজাতে অত্যন্ত প্রতিভাবান।" },
+        { "en": "The CEO himself attended the meeting.", "bn": "সিইও নিজেই মিটিংয়ে উপস্থিত ছিলেন।" },
+        { "en": "You should do it yourself; don't depend on others.", "bn": "তোমার নিজেই এটি করা উচিত; অন্যদের উপর নির্ভর করো না।" },
+        { "en": "This is the very book I was looking for.", "bn": "এটি সেই একই বই যা আমি খুঁজছিলাম।" },
+        { "en": "We ourselves were surprised by the result.", "bn": "আমরা নিজেরাই ফলাফলে অবাক হয়েছিলাম।" },
+        { "en": "He is so kind that everyone loves him.", "bn": "সে এত দয়ালু যে সবাই তাকে ভালোবাসে।" },
+        { "en": "I really don't understand why you are upset.", "bn": "আমি সত্যিই বুঝতে পারছি না কেন তুমি বিরক্ত।" },
+        { "en": "The view from the mountain was truly breathtaking.", "bn": "পাহাড় থেকে দৃশ্যটি সত্যিই শ্বাসরুদ্ধকর ছিল।" }
+      ],
+      "tips": "Intensifier ব্যবহারের সময় gradable vs non-gradable adjective মনে রাখবেন: 'very perfect' ভুল; 'absolutely perfect' সঠিক। Reflexive pronoun দিয়ে emphasis দিতে 'myself/yourself/himself' object বা subject-এর পরে বসে। 'By myself' মানে 'alone' বা 'without help'।"
+    },
+    {
+      "name": "Emphasis through Repetition and Parallel Structures (পুনরাবৃত্তি ও সমান্তরাল কাঠামো দিয়ে Emphasis)",
+      "banglaName": "পুনরাবৃত্তি ও সমান্তরাল কাঠামো দিয়ে Emphasis",
+      "definition": "Repetition of key words, phrases, or structures can be a powerful rhetorical device to emphasize a point. Parallel structures (using the same grammatical form for similar ideas) also create rhythm and emphasis, especially in speeches and persuasive writing.",
+      "banglaDefinition": "মূল শব্দ, phrase বা কাঠামোর পুনরাবৃত্তি একটি বিন্দুতে জোর দেওয়ার জন্য একটি শক্তিশালী অলঙ্কারিক কৌশল হতে পারে। সমান্তরাল কাঠামো (একই ব্যাকরণগত ফর্ম ব্যবহার করে) তাল এবং জোর তৈরি করে, বিশেষ করে বক্তৃতা এবং প্ররোচক লেখায়।",
+      "formula": "Repetition: Repeat key word/phrase at the beginning (anaphora) or end (epistrophe).\nParallelism: Use the same grammatical form (noun + noun, verb + verb, clause + clause).\n\nExamples:\n• We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields. (Anaphora)\n• She likes reading, writing, and painting. (Parallelism)\n• Government of the people, by the people, for the people. (Parallelism)",
+      "rules": [
+        "Repetition একটি শব্দ বা phrase multiple times ব্যবহার করে emphasis তৈরি করে।",
+        "Anaphora: একই শব্দ/ phrase বারবার বাক্যের শুরুতে ব্যবহার।",
+        "Epistrophe: একই শব্দ/ phrase বারবার বাক্যের শেষে ব্যবহার।",
+        "Parallelism: একই grammatical structure ব্যবহার করে ideas সংযুক্ত করা।",
+        "Parallelism lists-এ গুরুত্বপূর্ণ: 'I came, I saw, I conquered.' (V2, V2, V2)",
+        "Parallelism not maintained হলে emphasis দুর্বল হয়: 'She likes swimming, to run, and painting.' -> 'She likes swimming, running, and painting.'",
+        "Rhetorical repetition spoken English এবং advertising-এ very effective।",
+        "Triple repetition (three times) একটি common rhetorical technique।"
+      ],
+      "examples": [
+        { "en": "I came, I saw, I conquered. (Veni, vidi, vici)", "bn": "আমি এলাম, আমি দেখলাম, আমি জয় করলাম।" },
+        { "en": "Education is the most powerful weapon; education is the key; education is the future.", "bn": "শিক্ষা সবচেয়ে শক্তিশালী অস্ত্র; শিক্ষা চাবিকাঠি; শিক্ষা ভবিষ্যত।" },
+        { "en": "We will not tire, we will not falter, we will not fail.", "bn": "আমরা ক্লান্ত হব না, আমরা দ্বিধা করব না, আমরা ব্যর্থ হব না।" },
+        { "en": "She enjoys reading novels, writing poetry, and painting landscapes.", "bn": "সে উপন্যাস পড়া, কবিতা লেখা এবং ল্যান্ডস্কেপ আঁকা উপভোগ করে।" },
+        { "en": "Ask not what your country can do for you; ask what you can do for your country.", "bn": "জিজ্ঞাসা করো না তোমার দেশ তোমার জন্য কী করতে পারে; জিজ্ঞাসা করো তুমি তোমার দেশের জন্য কী করতে পারো।" },
+        { "en": "The company needs employees who are hardworking, dedicated, and honest.", "bn": "কোম্পানির এমন কর্মচারী প্রয়োজন যারা পরিশ্রমী, নিবেদিতপ্রাণ এবং সৎ।" },
+        { "en": "Time is precious; time is limited; time is life itself.", "bn": "সময় মূল্যবান; সময় সীমিত; সময় নিজেই জীবন।" },
+        { "en": "If you want to succeed, you must work hard, stay focused, and never give up.", "bn": "আপনি যদি সফল হতে চান, তাহলে আপনাকে কঠোর পরিশ্রম করতে হবে, ফোকাস থাকতে হবে এবং কখনও হাল ছাড়তে হবে না।" },
+        { "en": "He is a man of courage, a man of wisdom, and a man of integrity.", "bn": "সে সাহসের মানুষ, জ্ঞানের মানুষ এবং সততার মানুষ।" },
+        { "en": "The children played, laughed, and danced all evening.", "bn": "বাচ্চারা সারা সন্ধ্যা খেলেছে, হেসেছে এবং নাচছে।" }
+      ],
+      "tips": "Repetition এবং parallelism খুব powerful rhetorical devices। Speeches এবং persuasive essays-এ এগুলো ব্যবহার করুন। Lists-এ parallelism maintain করা খুব গুরুত্বপূর্ণ: সব item একই grammatical form-এ থাকতে হবে। 'Three' magic number — three times repetition খুব effective।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Using 'it is' cleft with incorrect relative pronoun (e.g., 'It was John which broke the window')",
+      "correct": "Use 'who' for people: 'It was John who broke the window'",
+      "explanation": "'It' cleft-এ people-এর জন্য 'who' এবং things-এর জন্য 'that' ব্যবহার করা উচিত। 'Which' সাধারণত things-এর জন্য, কিন্তু cleft sentence-এ 'that' বেশি common। 'It was John which' ভুল; সঠিক হলো 'It was John who'। 'It was the dog that barked' সঠিক।"
+    },
+    {
+      "wrong": "Using plural verb after 'what' cleft when the complement is singular (e.g., 'What I need are a good rest')",
+      "correct": "The verb after 'what' clause is usually singular: 'What I need is a good rest'",
+      "explanation": "'What' clause-টিকে singular হিসেবে ধরা হয়, যদিও complement plural হয়। 'What I need are good friends' কিছু grammarian accept করেন, কিন্তু formal English-এ 'What I need is good friends' বেশি সঠিক। 'What we want is peace and harmony' — 'is' ব্যবহার করুন।"
+    },
+    {
+      "wrong": "Using 'do/does/did' with the main verb in past tense (e.g., 'I did went to the store')",
+      "correct": "After emphatic 'do/does/did', always use base form (V1): 'I did go to the store'",
+      "explanation": "'Did' ইতিমধ্যে past tense বহন করে, তাই main verb-কে past tense-এ রাখার দরকার নেই। 'I did went' ভুল; সঠিক হলো 'I did go'। 'She does works hard' ভুল; সঠিক হলো 'She does work hard'। মনে রাখবেন: emphatic 'do'-এর পর সবসময় base verb।"
+    },
+    {
+      "wrong": "Fronting without inversion when a negative adverbial is fronted (e.g., 'Never I have seen such beauty')",
+      "correct": "When fronting a negative adverbial, inversion is required: 'Never have I seen such beauty'",
+      "explanation": "Negative adverbial (never, rarely, hardly, no sooner, not only, etc.) front করলে subject এবং auxiliary verb-কে invert করতে হবে। 'Never I have seen' ভুল; সঠিক হলো 'Never have I seen'। 'Hardly I had left when...' ভুল; সঠিক হলো 'Hardly had I left when...'।"
+    },
+    {
+      "wrong": "Using reflexive pronoun incorrectly for emphasis (e.g., 'Me myself did it' instead of 'I myself did it')",
+      "correct": "Use subject pronoun + reflexive pronoun for emphasis: 'I myself did it'",
+      "explanation": "Reflexive pronoun emphasis-এর জন্য subject-এর পরে বসে। 'Me myself' ভুল কারণ 'me' object pronoun। Subject হিসেবে 'I myself' সঠিক: 'I myself saw the accident'। Object-এর পরেও বসে: 'I saw the accident myself'। 'Myself I did it' — অস্বাভাবিক, 'I myself did it' better।"
+    },
+    {
+      "wrong": "Lack of parallel structure in lists (e.g., 'She likes swimming, to run, and painting')",
+      "correct": "Maintain parallel structure: 'She likes swimming, running, and painting' (all gerunds) or 'She likes to swim, to run, and to paint' (all infinitives)",
+      "explanation": "List বা series-এ সব item একই grammatical form-এ থাকতে হবে। 'Swimming, to run, and painting' মিশ্রিত; হয় সব gerund ('swimming, running, painting') অথবা সব infinitive ('to swim, to run, to paint')। Parallelism না থাকলে sentence awkward এবং unprofessional শোনায়।"
+    },
+    {
+      "wrong": "Confusing 'it's' and 'its' in emphasis structures (e.g., 'Its important that you come')",
+      "correct": "Use 'It's' (contraction of 'it is') for cleft sentences: 'It's important that you come.' 'Its' is possessive.",
+      "explanation": "'It's' = 'it is' (contraction); 'Its' = possessive form (তার)। Cleft sentence-এ 'It's' ব্যবহার হয়: 'It's John who called.' 'Its John who called' ভুল। 'It's a beautiful day' সঠিক; 'Its a beautiful day' ভুল। বানান নিয়ে সতর্ক থাকুন।"
+    },
+    {
+      "wrong": "Using 'this' or 'that' cleft incorrectly (e.g., 'That was the book what I wanted')",
+      "correct": "Use 'that' or 'what' correctly: 'That was the book that I wanted' or 'What I wanted was that book'",
+      "explanation": "'That was the book what I wanted' ভুল কারণ 'what' এবং 'that' মিশ্রিত। দুটি অপশন: (1) 'That was the book that I wanted' (relative clause with 'that'), অথবা (2) 'What I wanted was that book' (what cleft)। এগুলো মিশিয়ে ফেলবেন না। 'This is the house which I bought' সঠিক (যেখানে 'which' possible)।"
+    }
+  ]
 }
