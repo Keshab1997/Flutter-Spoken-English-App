@@ -1,10 +1,208 @@
 {
   "chapter": 61,
   "level": "Advanced",
-  "title": "Complex Structures",
+  "title": "Complex Structures (জটিল বাক্য কাঠামো)",
   "icon": "build",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Complex Structures encompass advanced syntactic patterns used to elevate English writing and speech. This includes negative and restrictive inversion, locative and directional fronting, complex noun clauses serving as subjects, advanced participle reductions, concessive structures with adjective/noun fronting, and sophisticated cleft sentence variations. Mastery of these structures is essential for achieving a high band in academic exams like IELTS, GRE, and for professional-grade writing.",
+  "banglaDescription": "জটিল বাক্য কাঠামো (Complex Structures) বলতে ইংরেজি ব্যাকরণের এমন কিছু উন্নত বাক্য গঠন কৌশলকে বোঝায় যা লেখার ও বলার মানকে অনেক সমৃদ্ধ করে তোলে। এর মধ্যে রয়েছে নেতিবাচক ও সীমাবদ্ধ ইনভারশন, স্থান ও দিক নির্দেশক ফ্রন্টিং, সাবজেক্ট হিসেবে জটিল নাউন ক্লজের ব্যবহার, অ্যাডভান্সড পার্টিসিপল রিডাকশন, বিশেষণ বা বিশেষ্য ফ্রন্টিং সহ বৈপরীত্য প্রকাশ এবং জটিল ক্লেফ্ট বাক্যের ব্যবহার। আইইএলটিএস (IELTS), জিআরই (GRE) বা যেকোনো প্রফেশনাল রাইটিংয়ে উচ্চমানের দক্ষতা প্রদর্শনের জন্য এই কাঠামো উপাদানগুলো আয়ত্ত করা অপরিহার্য।",
+  "topics": [
+    {
+      "name": "Negative and Restrictive Inversion (নেতিবাচক ও সীমিতকরণ ইনভারশন)",
+      "banglaName": "Negative and Restrictive Inversion",
+      "definition": "Inversion occurs when we place a negative or restrictive adverbial (like never, seldom, rarely, hardly, scarcely, not only, under no circumstances) at the beginning of a sentence for emphasis. This forces the subject and the auxiliary verb to swap places (invert). If there is no auxiliary verb in the active sentence, we introduce 'do', 'does', or 'did'.",
+      "banglaDefinition": "যখন কোনো বাক্যের ওপর অতিরিক্ত জোর দেওয়ার জন্য বাক্যের শুরুতে কোনো নেতিবাচক বা সীমাবদ্ধতা প্রকাশক শব্দগুচ্ছ (যেমন: never, seldom, rarely, hardly, not only, under no circumstances) ব্যবহার করা হয়, তখন তাকে Inversion বলে। এর ফলে সাবজেক্ট এবং অক্সিলিয়ারি ভার্ব তাদের স্থান পরিবর্তন করে (উল্টে যায়)। মূল বাক্যে কোনো অক্সিলিয়ারি ভার্ব না থাকলে টেন্স অনুযায়ী 'do', 'does', বা 'did' ব্যবহার করতে হয়।",
+      "formula": "Negative/Restrictive Adverbial + Auxiliary Verb + Subject + Main Verb + Rest of the Sentence",
+      "rules": [
+        "ইনভারশন করার সময় সাধারণ প্রশ্নবোধক বাক্যের মতো Auxiliary Verb-টি Subject-এর আগে বসাতে হবে, কিন্তু বাক্যের শেষে কোনো প্রশ্নবোধক চিহ্ন বসবে না।",
+        "Negative Adverbials: never, seldom, rarely, scarcely, hardly, barely, little.",
+        "Limiting Phrases: under no circumstances, on no account, in no way, only when, not only... but also.",
+        "Hardly/Scarcely/Barely এর সাথে কানেক্টর হিসেবে 'when' বসে, এবং No sooner এর সাথে 'than' বসে।",
+        "Not until-এর ক্ষেত্রে প্রথম অংশ সাধারণ থাকে, দ্বিতীয় প্রধান ক্লজে ইনভারশন ঘটে: 'Not until he arrived *did we realize* the truth.'"
+      ],
+      "examples": [
+        { "en": "Seldom have we witnessed such an incredible performance.", "bn": "আমরা কদাচিৎ এমন একটি অবিশ্বাস্য পারফরম্যান্স প্রত্যক্ষ করেছি।" },
+        { "en": "Under no circumstances should you share your password with anyone.", "bn": "কোনো অবস্থাতেই আপনার পাসওয়ার্ড অন্য কারো সাথে শেয়ার করা উচিত নয়।" },
+        { "en": "No sooner had he left the house than it started to rain heavily.", "bn": "সে বাড়ি থেকে বের হতে না হতেই মুষলধারে বৃষ্টি শুরু হয়ে গেল।" },
+        { "en": "Not only did he complete the project early, but he also saved money.", "bn": "সে কেবল কাজটি সময়ের আগেই শেষ করেনি, বরং টাকাও সাশ্রয় করেছিল।" },
+        { "en": "Little did they know that the police were watching their every move.", "bn": "তারা মোটেও জানত না যে পুলিশ তাদের প্রতিটি পদক্ষেপের ওপর নজর রাখছিল।" },
+        { "en": "Rarely does a talent like hers appear in the music industry.", "bn": "সঙ্গীত জগতে তার মতো প্রতিভা খুব কমই দেখা যায়।" },
+        { "en": "Hardly had she closed her eyes when the alarm went off.", "bn": "সে চোখের পাতা বন্ধ করতে না করতেই অ্যালার্মটি বেজে উঠল।" },
+        { "en": "Only after the results were published did he feel relieved.", "bn": "ফলাফল প্রকাশের পরেই কেবল সে স্বস্তি অনুভব করেছিল। (Only-এর পর প্রধান ক্লজে ইনভারশন)" },
+        { "en": "On no account must this door be left unlocked at night.", "bn": "রাতের বেলা কোনো অবস্থাতেই এই দরজাটি আনলক রাখা যাবে না।" },
+        { "en": "Not until yesterday did I hear the shocking news of his resignation.", "bn": "গতকাল পর্যন্ত আমি তার পদত্যাগের এই চাঞ্চল্যকর খবরটি শুনিনি।" }
+      ],
+      "tips": "সহজ মনে রাখার নিয়ম: ইনভারশন করা বাক্যটির প্রথম অংশ দেখতে হুবহু একটি Yes/No কোয়েশ্চেনের মতো মনে হবে (যেমন: 'did I hear', 'have we witnessed')। তবে এর শেষে প্রশ্নবোধক চিহ্ন না বসে ফুলস্টপ বসবে।"
+    },
+    {
+      "name": "Locative, Directional, and Adjectival Inversion (স্থান, দিক ও বিশেষণভিত্তিক ইনভারশন)",
+      "banglaName": "স্থান, দিক ও বিশেষণভিত্তিক ইনভারশন",
+      "definition": "Locative or directional inversion occurs when a prepositional phrase of place or direction is moved to the front of a sentence, followed immediately by the main verb and then the subject. Unlike negative inversion, we do not insert 'do/does/did' here. Adjectival inversion front-shifts a descriptive adjective for literary elegance.",
+      "banglaDefinition": "যখন কোনো স্থান বা দিক নির্দেশক প্রিপজিশনাল ফ্রেজকে বাক্যের শুরুতে আনা হয় এবং এরপর সরাসরি মূল ক্রিয়াপদ ও সবশেষে সাবজেক্ট বসানো হয়, তখন তাকে Locative বা Directional Inversion বলে। নেতিবাচক ইনভারশনের মতো এখানে কোনো 'do/does/did' আনা যাবে না। সাহিত্যিক সৌন্দর্য বৃদ্ধির জন্য Adjectival inversion-এ বিশেষণকে বাক্যের শুরুতে নিয়ে আসা হয়।",
+      "formula": "Prepositional/Adjectival Phrase + Main Verb (Intransitive) + Subject (Noun)",
+      "rules": [
+        "এই ইনভারশনটি কেবল অকর্মক ক্রিয়া (intransitive verbs of position/motion) যেমন: stand, lie, sit, walk, run, come, go এর ক্ষেত্রে প্রযোজ্য।",
+        "এখানে কোনো সাহায্যকারী ক্রিয়া (do/does/did) বসানো যাবে না: 'On the hill stood a temple' (সঠিক), 'On the hill did stand...' (ভুল)।",
+        "সাবজেক্ট যদি Pronoun (he, she, it, they) হয়, তবে এই ইনভারশন করা যাবে না। যেমন: 'Here comes the bus' (Noun - সঠিক) কিন্তু 'Here comes he' (Pronoun - ভুল, সঠিক হলো: 'Here he comes')।",
+        "Adjectival Inversion-এর উদাহরণ: 'Beautiful was the sunset we watched yesterday.'"
+      ],
+      "examples": [
+        { "en": "At the foot of the mountain lay a small, picturesque village.", "bn": "পাহাড়ের পাদদেশে একটি ছোট, সুন্দর গ্রাম অবস্থিত ছিল।" },
+        { "en": "Into the room walked a tall, mysterious stranger.", "bn": "কক্ষের ভেতরে একজন লম্বা, রহস্যময় অপরিচিত ব্যক্তি হেঁটে আসলেন।" },
+        { "en": "On the table sat an antique wooden clock.", "bn": "টেবিলের ওপর একটি প্রাচীন কাঠের ঘড়ি বসানো ছিল।" },
+        { "en": "Here comes your teacher; stop talking now.", "bn": "এই যে তোমার শিক্ষক আসছেন; এখন কথা বলা বন্ধ করো।" },
+        { "en": "From the ceiling hung a magnificent crystal chandelier.", "bn": "ছাদ থেকে একটি চমৎকার ক্রিস্টালের ঝাড়বাতি ঝুলছিল।" },
+        { "en": "Out of the bushes jumped a wild rabbit.", "bn": "ঝোপের ভেতর থেকে একটি বুনো খরগোশ লাফিয়ে বের হলো।" },
+        { "en": "In the center of the hall stood a marble statue of the king.", "bn": "হলের ঠিক মাঝখানে রাজার একটি মার্বেল পাথরের মূর্তি দাঁড়িয়ে ছিল।" },
+        { "en": "Gone are the days when we had to worry about electricity cuts.", "bn": "সেই দিনগুলো চলে গেছে যখন আমাদের লোডশেডিং নিয়ে দুশ্চিন্তা করতে হতো। (Adjectival)" },
+        { "en": "Along the riverbank grew tall, wild grass.", "bn": "নদীতীর ঘেঁষে লম্বা, বুনো ঘাস জন্মেছিল।" },
+        { "en": "Blessed are those who help others in need.", "bn": "ধন্য তারা যারা বিপদে অন্যদের সাহায্য করে।" }
+      ],
+      "tips": "এই ইনভারশনটি সাধারণত কোনো দৃশ্য বা উপন্যাসের প্রেক্ষাপট বর্ণনা করতে ব্যবহৃত হয়। মনে রাখবেন, সাবজেক্টটি যদি প্রোনাউন হয় (যেমন: it, she), তবে ইনভারশন হবে না, সাধারণ শব্দক্রম বসবে: 'Away they went' (They went away নয়)।"
+    },
+    {
+      "name": "Complex Noun Clauses as Subjects (সাবজেক্ট হিসেবে জটিল নাউন ক্লজ)",
+      "banglaName": "সাবজেক্ট হিসেবে জটিল নাউন ক্লজ",
+      "definition": "A noun clause is a dependent clause that functions as a noun in a sentence. Advanced English frequently uses complete noun clauses starting with 'That', 'Whether', or 'What' as the subject of the sentence to present complex concepts as a single unit of information.",
+      "banglaDefinition": "নাউন ক্লজ হলো এমন একটি অধীনস্থ খণ্ডবাক্য (dependent clause) যা বাক্যে নাউনের মতো কাজ করে। অ্যাডভান্সড ইংরেজিতে জটিল কোনো ধারণাকে একক তথ্য হিসেবে উপস্থাপন করার জন্য 'That', 'Whether', বা 'What' দিয়ে শুরু হওয়া সম্পূর্ণ নাউন ক্লজকে বাক্যের সাবজেক্ট হিসেবে ব্যবহার করা হয়।",
+      "formula": "[That / Whether / What + Subject + Verb] + Main Verb (Singular) + Object/Complement",
+      "rules": [
+        "যেহেতু সম্পূর্ণ নাউন ক্লজটি নিজেই একটি একক সাবজেক্ট, তাই বাক্যের প্রধান ভার্বটি সর্বদা একবচন (singular) হবে।",
+        "বাক্যের শুরুতে 'If' দিয়ে সাবজেক্ট নাউন ক্লজ তৈরি করা যায় না; সেখানে বাধ্যতামূলকভাবে 'Whether' ব্যবহার করতে হবে।",
+        "যেমন: 'Whether he will attend is doubtful' (সঠিক), 'If he will attend is doubtful' (ভুল)।",
+        "'That'-ক্লজ যখন সাবজেক্ট হিসেবে বসে, তখন 'That' বাদ দেওয়া যাবে না: 'That he succeeded is true.'"
+      ],
+      "examples": [
+        { "en": "That the global temperature is rising cannot be denied.", "bn": "বৈশ্বিক তাপমাত্রা যে বাড়ছে তা অস্বীকার করা যায় can না।" },
+        { "en": "Whether the economy will recover this year remains highly uncertain.", "bn": "অর্থনীতি এই বছর পুনরুদ্ধার হবে কি না তা অত্যন্ত অনিশ্চিত রয়ে গেছে।" },
+        { "en": "What we need is a complete overhaul of the education system.", "bn": "আমাদের যা প্রয়োজন তা হলো শিক্ষা ব্যবস্থার একটি সম্পূর্ণ সংস্কার।" },
+        { "en": "How they managed to escape from the high-security prison is still a mystery.", "bn": "তারা কীভাবে উচ্চ-নিরাপত্তার কারাগার থেকে পালাতে সক্ষম হয়েছিল তা এখনও একটি রহস্য।" },
+        { "en": "That he passed the exam without studying is absolutely astonishing.", "bn": "সে যে পড়াশোনা না করেই পরীক্ষায় পাস করেছে তা সম্পূর্ণ আশ্চর্যজনক।" },
+        { "en": "Whether they will accept our proposal depends on their budget.", "bn": "তারা আমাদের প্রস্তাব গ্রহণ করবে কি না তা তাদের বাজেটের ওপর নির্ভর করছে।" },
+        { "en": "What surprised me most was his complete lack of remorse.", "bn": "যা আমাকে সবচেয়ে বেশি অবাক করেছিল তা হলো তার অনুশোচনার সম্পূর্ণ অভাব।" },
+        { "en": "Where the missing flight crashed has not been determined yet.", "bn": "নিখোঁজ ফ্লাইটটি কোথায় বিধ্বস্ত হয়েছিল তা এখনও নিশ্চিত হওয়া যায়নি।" },
+        { "en": "That she speaks five languages fluently gives her an edge in the job market.", "bn": "সে যে অনর্গল পাঁচটি ভাষা বলতে পারে তা তাকে চাকরির বাজারে বাড়তি সুবিধা দেয়।" },
+        { "en": "Why he made such a decision without consulting his team is hard to understand.", "bn": "দলের সাথে পরামর্শ না করে সে কেন এমন সিদ্ধান্ত নিল তা বোঝা কঠিন।" }
+      ],
+      "tips": "এই ধরনের বাক্য গঠন আপনার লেখাকে অত্যন্ত মার্জিত ও একাডেমিক রূপ দেয়। যেমন: 'He failed the test, and this surprised us' লেখার চেয়ে 'That he failed the test surprised us' লেখা অনেক বেশি স্ট্যান্ডার্ড।"
+    },
+    {
+      "name": "Advanced Participle Clauses (অ্যাডভান্সড পার্টিসিপল ক্লজ)",
+      "banglaName": "অ্যাডভান্সড পার্টিসিপল ক্লজ",
+      "definition": "Advanced participle clauses allow us to reduce adverbial clauses (of time, cause, or condition) into participle phrases (using Present, Past, or Perfect Participles). This also includes Nominative Absolute structures, where the participle clause has its own independent subject.",
+      "banglaDefinition": "অ্যাডভান্সড পার্টিসিপল ক্লজের মাধ্যমে আমরা সময়, কারণ বা শর্ত প্রকাশকারী অ্যাডভার্বিয়াল ক্লজগুলোকে সংকুচিত করে প্রেজেন্ট, পাস্ট বা পারফেক্ট পার্টিসিপল ফ্রেজে রূপান্তর করতে পারি। এর মধ্যে Nominative Absolute-ও অন্তর্ভুক্ত, যেখানে পার্টিসিপল ক্লজের নিজস্ব একটি স্বাধীন সাবজেক্ট থাকে এবং তা মূল বাক্যের সাবজেক্টের সাথে মেলে না।",
+      "formula": "Active Causation: V-ing + Object, Subject + Verb ...\nPassive Action: Past Participle (V3), Subject + Verb ...\nCompleted Past Action: Having + Past Participle (V3), Subject + Verb ...\nNominative Absolute: Noun + Participle, Subject + Verb ...",
+      "rules": [
+        "সাধারণত পার্টিসিপল ক্লজের সাবজেক্ট এবং মূল ক্লজের সাবজেক্ট একই হতে হয় (নইলে Dangling Modifier ভুল হবে)।",
+        "একটি কাজ শেষ হওয়ার ঠিক পর আরেকটি কাজ ঘটলে 'Having + V3' (Perfect Participle) ব্যবহার করা হয়।",
+        "প্যাসিভ কাজের ক্ষেত্রে: 'Having been warned...' বা সরাসরি 'Warned of the danger, they...'",
+        "Nominative Absolute-এ পার্টিসিপল ক্লজের নিজস্ব সাবজেক্ট থাকে: 'Weather permitting, we will go.'"
+      ],
+      "examples": [
+        { "en": "Having finished his homework, John went out to play.", "bn": "তার বাড়ির কাজ শেষ করে, জন বাইরে খেলতে গিয়েছিল। (John finished the homework first)" },
+        { "en": "Seen from a distance, the island looked like a sleeping giant.", "bn": "দূর থেকে দেখা হলে, দ্বীপটিকে একটি ঘুমন্ত দৈত্যের মতো মনে হতো। (Passive reduction)" },
+        { "en": "Having been warned about the fraud, she did not invest any money.", "bn": "প্রতারণার বিষয়ে সতর্ক হওয়ার কারণে, সে কোনো টাকা বিনিয়োগ করেনি।" },
+        { "en": "Not knowing the answer to the question, he left the page blank.", "bn": "প্রশ্নের উত্তর না জানার কারণে, সে পৃষ্ঠাটি খালি রেখে দিয়েছিল।" },
+        { "en": "All things considered, the event was a huge success.", "bn": "সবকিছু বিবেচনা করলে, আয়োজনটি একটি বড় সফল ছিল। (Nominative Absolute)" },
+        { "en": "Having lived in Japan for five years, Sarah speaks fluent Japanese.", "bn": "জাপানে পাঁচ বছর বসবাসের কারণে, সারাহ অনর্গল জাপানি ভাষায় কথা বলতে পারে।" },
+        { "en": "Defeated by the opponent, the champion congratulated the winner.", "bn": "প্রতিপক্ষের কাছে পরাজিত হয়ে, চ্যাম্পিয়ন বিজয়ীকে অভিনন্দন জানিয়েছিলেন।" },
+        { "en": "Weather permitting, we will start our journey tomorrow morning.", "bn": "আবহাওয়া অনুকূলে থাকলে, আমরা আগামীকাল সকালে আমাদের যাত্রা শুরু করব। (Nominative Absolute)" },
+        { "en": "Being extremely tired, she fell asleep as soon as her head touched the pillow.", "bn": "অত্যন্ত ক্লান্ত থাকায়, বালিশে মাথা ছোঁয়ার সাথে সাথেই সে ঘুমিয়ে পড়েছিল।" },
+        { "en": "Having been elected president, he promised to reduce taxes.", "bn": "রাষ্ট্রপতি নির্বাচিত হয়ে, তিনি কর কমানোর প্রতিশ্রুতি দিয়েছিলেন।" }
+      ],
+      "tips": "রাইটিংয়ে পার্টিসিপল ক্লজ ব্যবহারের সময় নিশ্চিত হোন যেন 'Dangling Modifier' না হয়। যেমন: 'Walking down the road, a dog bit him' ভুল, কারণ মনে হচ্ছে কুকুরটি রাস্তা দিয়ে হাঁটছিল। সঠিক রূপ: 'Walking down the road, he was bitten by a dog.'"
+    },
+    {
+      "name": "Sophisticated Cleft Sentence Variations (জটিল ক্লেফ্ট বাক্যের রূপভেদ)",
+      "banglaName": " Sophisticated Cleft Sentence Variations",
+      "definition": "While basic cleft sentences use 'It' or 'What', advanced variations utilize 'What happens/happened is...', 'The only thing...', 'It is not until... that...', and 'All I want is...' to control focus, heighten emotional emphasis, or structure professional arguments.",
+      "banglaDefinition": "সাধারণ ক্লেফ্ট বাক্যে কেবল 'It' বা 'What' ব্যবহার করা হলেও, অ্যাডভান্সড ইংরেজিতে বাক্যের ফোকাস নিয়ন্ত্রণ ও গুরুত্ব বাড়ানোর জন্য আরও জটিল কিছু রূপভেদ ব্যবহার করা হয়। যেমন: 'What happens is...' (যা ঘটে তা হলো), 'The only thing...' (একমাত্র যে বিষয়টি), এবং 'It is not until... that...' (যতক্ষণ না... ততক্ষণ পর্যন্ত...)।",
+      "formula": "What happens/happened is/was + (that) + Subject + Verb\nIt is/was not until + Time + that + Subject + Verb\nAll / The only thing + Subject + Verb + is/was + to + V1",
+      "rules": [
+        "'What happens is...' কোনো ঘটনার পুরো প্রক্রিয়া বা ফলাফলের ওপর জোর দিতে ব্যবহৃত হয়।",
+        "'It is not until [Time] that...' কোনো ঘটনা নির্দিষ্ট সময়ের আগে ঘটেনি তা জোর দিয়ে বোঝায়। এখানে 'that' বসে, 'when' বা 'then' বসে না।",
+        "'All' দিয়ে শুরু হওয়া ক্লেফ্ট বাক্যের অর্থ 'The only thing' (একমাত্র বিষয়)।"
+      ],
+      "examples": [
+        { "en": "What happened was that the server crashed due to overheating.", "bn": "যা ঘটেছিল তা হলো অতিরিক্ত গরম হওয়ার কারণে সার্ভারটি ক্র্যাশ করেছিল।" },
+        { "en": "It was not until yesterday that he finally admitted his mistake.", "bn": "গতকালকের আগে সে অবশেষে তার ভুল স্বীকার করেনি।" },
+        { "en": "The only thing I want for my birthday is a quiet dinner with family.", "bn": "আমার জন্মদিনে আমি একমাত্র যে বিষয়টি চাই তা হলো পরিবারের সাথে একটি শান্ত রাতের খাবার।" },
+        { "en": "What happens is that the software automatically backs up your files.", "bn": "যা ঘটে তা হলো সফটওয়্যারটি স্বয়ংক্রিয়ভাবে আপনার ফাইলগুলো ব্যাকআপ করে নেয়।" },
+        { "en": "It was not until 2020 that they realized the scale of the pandemic.", "bn": "২০২০ সালের আগে তারা মহামারীর ভয়াবহতার মাত্রা বুঝতে পারেনি।" },
+        { "en": "All she did was ask for a glass of water, but they ignored her.", "bn": "সে কেবল এক গ্লাস পানি চেয়েছিল, কিন্তু তারা তাকে অবহেলা করেছিল।" },
+        { "en": "What we did was report the issue immediately to the management.", "bn": "আমরা যা করেছিলাম তা হলো সমস্যাটি অবিলম্বে কর্তৃপক্ষকে জানিয়েছিলাম।" },
+        { "en": "It is not until you lose something that you realize its true value.", "bn": "আপনি কোনো কিছু না হারানো পর্যন্ত তার আসল মূল্য বুঝতে পারেন না।" },
+        { "en": "The only thing that kept me going was your constant encouragement.", "bn": "একমাত্র যে বিষয়টি আমাকে সচল রেখেছিল তা হলো তোমার অবিরাম উৎসাহ।" },
+        { "en": "What happened next was that the lights went out completely.", "bn": "এরপর যা ঘটেছিল তা হলো আলো সম্পূর্ণ চলে গিয়েছিল।" }
+      ],
+      "tips": "ক্লেফ্ট বাক্যের 'It was not until...' কাঠামোর পর কানেক্টর হিসেবে অনেকে ভুল করে 'when' বসায় (যেমন: 'It was not until yesterday *when*...'). মনে রাখবেন, এখানে সবসময় কড়া নিয়মে 'that' বসাতে হবে।"
+    },
+    {
+      "name": "Concessive Clauses with 'As' and 'Though' Fronting (As এবং Though-এর ফ্রন্টিং সহ বৈপরীত্য ক্লজ)",
+      "banglaName": "As এবং Though-এর ফ্রন্টিং সহ বৈপরীত্য ক্লজ",
+      "definition": "For stylistic emphasis, an adjective, adverb, or noun can be front-shifted before 'as' or 'though' to form a concessive clause (meaning 'although'). This structure is highly sophisticated and is widely used in literary and formal journalistic writing.",
+      "banglaDefinition": "বাক্যের সৌন্দর্য ও গুরুত্ব বাড়াতে কোনো বিশেষণ (adjective), ক্রিয়াবিশেষণ (adverb) বা বিশেষ্যকে (noun) 'as' বা 'though'-এর ঠিক পূর্বে নিয়ে আসা হয়, যা বৈপরীত্য বা 'যদিও' (concession) অর্থ প্রকাশ করে। এই শৈল্পিক কাঠামোটি সাধারণত সাহিত্যিক এবং উচ্চমানের সাংবাদিকতায় দেখা যায়।",
+      "formula": "Adjective/Adverb/Noun (without article) + as/though + Subject + Verb, Main Clause",
+      "rules": [
+        "বাক্যের অর্থ 'Although + subject + verb + adjective' এর সমান: 'Tired though he was...' মানে 'Although he was tired...'.",
+        "যদি কোনো singular countable noun বাক্যের শুরুতে আনা হয়, তবে তার আগে কোনো Article (a/an) বসানো যাবে না।",
+        "যেমন: 'Hero though he was...' (সঠিক), 'A hero though he was...' (ভুল)।",
+        "এই কাঠামোতে 'as' এবং 'though' পরস্পর পরিবর্তনযোগ্য।"
+      ],
+      "examples": [
+        { "en": "Tired though he was, he continued working until midnight.", "bn": "যদিও সে ক্লান্ত ছিল, তবুও সে মধ্যরাত পর্যন্ত কাজ চালিয়ে গিয়েছিল।" },
+        { "en": "Strange as it may seem, they have never met in person.", "bn": "যদিও এটি অদ্ভুত বলে মনে হতে পারে, তবুও তাদের কখনো সামনাসামনি দেখা হয়নি।" },
+        { "en": "Fast as he ran, he still missed the bus.", "bn": "যদিও সে দ্রুত দৌড়েছিল, তবুও সে বাসটি মিস করেছিল।" },
+        { "en": "Child though he was, he showed remarkable courage in the crisis.", "bn": "যদিও সে শিশু ছিল, তবুও সে সংকটের সময় অসাধারণ সাহসিকতা দেখিয়েছিল।" },
+        { "en": "Difficult as the test was, most of the students passed.", "bn": "পরীক্ষাটি কঠিন হওয়া সত্ত্বেও, বেশিরভাগ শিক্ষার্থী পাস করেছিল।" },
+        { "en": "Genius though she is, she couldn't solve this complex puzzle.", "bn": "যদিও সে একজন মেধাবী, তবুও সে এই জটিল ধাঁধাটি সমাধান করতে পারেনি।" },
+        { "en": "Much as I want to help you, I simply do not have the resources.", "bn": "আমি তোমাকে সাহায্য করতে যতই চাই না কেন, আমার কাছে পর্যাপ্ত সম্পদ নেই।" },
+        { "en": "Poor though they were, they were always ready to help others.", "bn": "যদিও তারা দরিদ্র ছিল, তবুও তারা সবসময় অন্যদের সাহায্য করতে প্রস্তুত থাকত।" },
+        { "en": "Badly injured as he was, the athlete managed to cross the finish line.", "bn": "গুরুতর আহত হওয়া সত্ত্বেও, অ্যাথলেটটি ফিনিশ লাইন অতিক্রম করতে সক্ষম হয়েছিল।" },
+        { "en": "Rich though she is, she lives a very simple life.", "bn": "যদিও সে ধনী, তবুও সে অত্যন্ত সাধারণ জীবনযাপন করে।" }
+      ],
+      "tips": "সিঙ্গুলার নাউনের ক্ষেত্রে আর্টিকেল বাদ দেওয়ার নিয়মটি পরীক্ষায় খুব আসে। 'A coward though he was' লিখবেন না; সঠিক রূপ হলো: 'Coward though he was, he fought bravely.' (যদিও সে কাপুরুষ ছিল, তবুও সে সাহসের সাথে লড়াই করেছিল)।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Seldom we have heard such a beautiful melody.",
+      "correct": "Seldom have we heard such a beautiful melody.",
+      "explanation": "যখন বাক্যের শুরুতে নেতিবাচক অ্যাডভার্বিয়াল যেমন 'Seldom' বসে, তখন বাক্যটিতে অবশ্যই ইনভারশন ঘটাতে হবে, অর্থাৎ Auxiliary Verb-টি সাবজেক্টের আগে বসবে।"
+    },
+    {
+      "wrong": "On the top of the hill did stand a medieval castle.",
+      "correct": "On the top of the hill stood a medieval castle.",
+      "explanation": "স্থান বা দিক নির্দেশক ইনভারশনে (Locative inversion) কখনো সাহায্যকারী ক্রিয়া হিসেবে 'do/does/did' ব্যবহার করা যাবে না; সরাসরি মূল ক্রিয়াপদ বসাতে হবে।"
+    },
+    {
+      "wrong": "Here comes he, the man we were waiting for.",
+      "correct": "Here he comes, the man we were waiting for.",
+      "explanation": "স্থান নির্দেশক ইনভারশনে সাবজেক্টটি যদি প্রোনাউন (he, she, it) হয়, তবে ইনভারশন করা যাবে না; সাধারণ শব্দক্রম 'Here + subject + verb' বসবে।"
+    },
+    {
+      "wrong": "If he will agree to the terms is still doubtful.",
+      "correct": "Whether he will agree to the terms is still doubtful.",
+      "explanation": "নাউন ক্লজ যখন বাক্যের শুরুতে সাবজেক্ট হিসেবে বসে, তখন শর্ত বা সম্ভাবনা বোঝাতে 'If' ব্যবহার করা সম্পূর্ণ ভুল; সেখানে বাধ্যতামূলকভাবে 'Whether' বসাতে হবে।"
+    },
+    {
+      "wrong": "Walking down the street, a heavy brick fell on his head.",
+      "correct": "While he was walking down the street, a heavy brick fell on his head. (Or: Walking down the street, he was hit by a brick.)",
+      "explanation": "এটি একটি 'Dangling Modifier' ভুল। পার্টিসিপল ক্লজের সাবজেক্ট এবং মূল ক্লজের সাবজেক্ট একই হতে হবে। ইট নিজে নিজে হাঁটতে পারে না, তাই প্রথম বাক্যটি ভুল।"
+    },
+    {
+      "wrong": "It was not until 2015 when the company went public.",
+      "correct": "It was not until 2015 that the company went public.",
+      "explanation": "'It is not until...'-দিয়ে গঠিত ক্লেফ্ট বাক্যের ক্ষেত্রে নির্দিষ্ট সময়ের পর কানেক্টর হিসেবে সর্বদা 'that' বসবে, 'when' বা 'then' বসানো ভুল।"
+    },
+    {
+      "wrong": "A hero though he was, he made several critical mistakes.",
+      "correct": "Hero though he was, he made several critical mistakes.",
+      "explanation": "'Though/as' ফ্রন্টিংয়ের সাহায্যে গঠিত বৈপরীত্যমূলক বাক্যে সিঙ্গুলার কাউন্টেবল নাউনটি শুরুতে বসলে তার আগে কোনো Article (a/an) বসানো যাবে না।"
+    },
+    {
+      "wrong": "That the climate is changing, it is clear to everyone.",
+      "correct": "That the climate is changing is clear to everyone.",
+      "explanation": "যেহেতু 'That the climate is changing' ক্লজটি নিজেই এই বাক্যের সাবজেক্ট, তাই এরপর অতিরিক্ত প্রোনাউন 'it' বসানো ভুল। এটি সাবজেক্টের দ্বিত্বতা তৈরি করে।"
+    }
+  ]
 }

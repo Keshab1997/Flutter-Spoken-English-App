@@ -1,10 +1,208 @@
 {
   "chapter": 57,
   "level": "Advanced",
-  "title": "Relative Clauses",
+  "title": "Relative Clauses (রিলেটিভ ক্লজ)",
   "icon": "account_tree",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Relative clauses are dependent clauses that modify a noun or noun phrase, acting essentially as adjectives. Mastery of advanced relative clauses involves distinguishing between defining and non-defining structures, reducing clauses to participle phrases, using sentential 'which' to comment on entire clauses, and employing complex partitive relative clauses (e.g., 'some of whom') for academic and professional English.",
+  "banglaDescription": "রিলেটিভ ক্লজ হলো এমন কিছু নির্ভরশীল খণ্ডবাক্য (dependent clauses) যা কোনো নাউন বা নাউন ফ্রেজকে মডিফাই করে এবং মূলত অ্যাডজেক্টিভের মতো কাজ করে। অ্যাডভান্সড লেভেলের রিলেটিভ ক্লজ আয়ত্ত করার জন্য ডিফায়েনিং ও নন-ডিফায়েনিং স্ট্রাকচারের পার্থক্য জানা, ক্লজকে সংকুচিত বা ছোট করে পার্টিসিপল ফ্রেজে রূপান্তর করা, পূর্ববর্তী পুরো বাক্যের ওপর মন্তব্য করতে sentential 'which' ব্যবহার করা এবং প্রাতিষ্ঠানিক ও পেশাদার লেখার জন্য জটিল অংশবাচক বা পরিমাপক রিলেটিভ ক্লজ (যেমন: 'some of whom') ব্যবহার করা শিখতে হয়।",
+  "topics": [
+    {
+      "name": "Defining (Restrictive) Relative Clauses (তথ্য নির্দিষ্টকারী রিলেটিভ ক্লজ)",
+      "banglaName": "Defining (Restrictive) Relative Clauses",
+      "definition": "A defining relative clause provides essential information that restricts or defines the noun it modifies. Without this clause, the meaning of the main sentence changes or becomes incomplete. No commas are used to separate this clause from the rest of the sentence, and the relative pronoun can be omitted if it is the object of the clause.",
+      "banglaDefinition": "Defining relative clause এমন কিছু প্রয়োজনীয় তথ্য প্রদান করে যা তার পূর্ববর্তী নাউনটিকে সুনির্দিষ্ট বা সীমাবদ্ধ করে। এই ক্লজটি বাদ দিলে বাক্যের মূল অর্থ বদলে যায় বা অসম্পূর্ণ হয়ে পড়ে। এই ক্লজকে বাক্যের বাকি অংশ থেকে আলাদা করার জন্য কোনো কমা (comma) ব্যবহার করা হয় না। রিলেটিভ প্রোনাউনটি যদি ক্লজের অবজেক্ট হয়, তবে সেটি সরাসরি বাদ দেওয়া যায়।",
+      "formula": "Subject/Noun + [who/which/that + verb + object] + main verb\nSubject/Noun + [(who/which/that) + subject + verb] + main verb",
+      "rules": [
+        "এই ক্লজটি নাউনকে নির্দিষ্ট করতে সাহায্য করে, তাই কমা ব্যবহার করা যাবে না।",
+        "ব্যক্তির জন্য 'who' বা 'that' এবং বস্তুর জন্য 'which' বা 'that' বসে।",
+        "অনানুষ্ঠানিক ও সাধারণ কথোপকথনে 'which' বা 'who'-এর চেয়ে 'that' বেশি ব্যবহৃত হয়।",
+        "প্রোনাউনটি অবজেক্ট হলে তা বাদ দেওয়া যায় (একে Contact Clause বা Zero Relative Pronoun বলে)।",
+        "যেমন: 'The book that I read' -> 'The book I read' (উভয়ই সঠিক)।",
+        "প্রোনাউনটি সাবজেক্ট হলে (যেমন: 'The man who called') তা কোনোভাবেই বাদ দেওয়া যাবে না।"
+      ],
+      "examples": [
+        { "en": "The colleague who helped me with the project has been promoted.", "bn": "যে সহকর্মী আমাকে প্রজেক্টটিতে সাহায্য করেছিলেন তাঁর পদোন্নতি হয়েছে।" },
+        { "en": "The house they bought last year needs a lot of repairs.", "bn": "গত বছর তারা যে বাড়িটি কিনেছিল সেটির অনেক মেরামতের প্রয়োজন।" },
+        { "en": "Students who fail to submit their assignments on time will lose marks.", "bn": "যেসব শিক্ষার্থী সময়মতো অ্যাসাইনমেন্ট জমা দিতে ব্যর্থ হবে তাদের নম্বর কাটা যাবে।" },
+        { "en": "I need a laptop that has a long battery life.", "bn": "আমার এমন একটি ল্যাপটপ প্রয়োজন যার ব্যাটারি লাইফ দীর্ঘ।" },
+        { "en": "The woman you were talking to is a well-known scientist.", "bn": "আপনি যে নারীর সাথে কথা বলছিলেন তিনি একজন সুপরিচিত বিজ্ঞানী।" },
+        { "en": "This is the very book I have been searching for all week.", "bn": "এটি ঠিক সেই বই যা আমি সারা সপ্তাহ ধরে খুঁজছি।" },
+        { "en": "The flight we booked has been cancelled due to bad weather.", "bn": "খারাপ আবহাওয়ার কারণে আমরা যে ফ্লাইটটি বুক করেছিলাম তা বাতিল করা হয়েছে।" },
+        { "en": "People who eat healthy food tend to live longer.", "bn": "যেসব মানুষ স্বাস্থ্যকর খাবার খান তারা সাধারণত দীর্ঘজীবী হন।" },
+        { "en": "The movie we watched last night was extremely boring.", "bn": "গত রাতে আমরা যে সিনেমাটি দেখেছিলাম তা অত্যন্ত বিরক্তিকর ছিল।" },
+        { "en": "The teacher whose advice I followed helped me clear the exam.", "bn": "আমি যে শিক্ষকের উপদেশ মেনে চলেছিলাম তিনি আমাকে পরীক্ষায় পাস করতে সাহায্য করেছেন।" }
+      ],
+      "tips": "মনে রাখবেন: Defining clause-এ 'that' ব্যবহার করা খুব নিরাপদ ও প্রাকৃতিক শোনায়। তবে রিলেটিভ প্রোনাউনের পর যদি সরাসরি আরেকটি subject ও verb চলে আসে, তবে লেখার সময় প্রোনাউনটি বাদ দিয়ে লিখলে (যেমন: 'The car I bought') আপনার রাইটিং স্টাইল আরও অ্যাডভান্সড মনে হবে।"
+    },
+    {
+      "name": "Non-Defining (Non-Restrictive) Relative Clauses (অতিরিক্ত তথ্য প্রদানকারী রিলেটিভ ক্লজ)",
+      "banglaName": "Non-Defining (Non-Restrictive) Relative Clauses",
+      "definition": "A non-defining relative clause adds extra, non-essential information about a noun that is already fully identified. Omitting this clause does not change the core meaning of the sentence. It must be enclosed within commas, and 'that' can never be used in place of 'who' or 'which'.",
+      "banglaDefinition": "Non-defining relative clause এমন একটি নাউন সম্পর্কে অতিরিক্ত তথ্য দেয় যা ইতিমধ্যেই সম্পূর্ণভাবে নির্দিষ্ট বা চেনা। এই ক্লজটি বাক্য থেকে বাদ দিলে বাক্যের মূল অর্থ কোনোভাবেই পরিবর্তিত হয় না। এই ক্লজটির আগে ও পরে অবশ্যই কমা (comma) দিতে হবে এবং এখানে 'who' বা 'which'-এর পরিবর্তে কখনো 'that' ব্যবহার করা যাবে না।",
+      "formula": "Noun, + who/which/whose/whom + extra information, + rest of the sentence",
+      "rules": [
+        "ক্লজটির শুরুতে এবং শেষে (যদি বাক্য সেখানে শেষ না হয়) কমা ব্যবহার করা বাধ্যতামূলক।",
+        "কখনো রিলেটিভ প্রোনাউন হিসেবে 'that' ব্যবহার করা যাবে না; ব্যক্তির জন্য 'who' এবং বস্তুর জন্য 'which' ব্যবহার করতে হবে।",
+        "এই ধরনের ক্লজ থেকে রিলেটিভ প্রোনাউন (who, which) কখনো বাদ দেওয়া যায় না, এমনকি সেটি অবজেক্ট হলেও।",
+        "এটি সাধারণত নির্দিষ্ট নাম (proper nouns) বা ইতিমধ্যেই পরিচিত কোনো বিষয়ের পরে বসে: 'My father, who...', 'Dhaka, which...'"
+      ],
+      "examples": [
+        { "en": "My eldest brother, who is a surgeon, lives in Australia.", "bn": "আমার বড় ভাই, যিনি একজন সার্জন, অস্ট্রেলিয়ায় থাকেন।" },
+        { "en": "The Taj Mahal, which was built in the 17th century, is made of white marble.", "bn": "তাজমহল, যা ১৭ শতকে নির্মিত হয়েছিল, সাদা মার্বেল পাথর দিয়ে তৈরি।" },
+        { "en": "Professor Higgins, whom you met yesterday, is a world-class linguist.", "bn": "অধ্যাপক হিগিন্স, যাঁর সাথে আপনার গতকাল দেখা হয়েছিল, একজন বিশ্বমানের ভাষাবিদ।" },
+        { "en": "London, which is the capital of the UK, is rich in history.", "bn": "লন্ডন, যা যুক্তরাজ্যের রাজধানী, ইতিহাসে সমৃদ্ধ।" },
+        { "en": "My school, which was founded in 1950, is undergoing renovation.", "bn": "আমার স্কুলটি, যা ১৯৫০ সালে প্রতিষ্ঠিত হয়েছিল, সেটি সংস্কার করা হচ্ছে।" },
+        { "en": "His new book, which took him three years to write, is a bestseller.", "bn": "তার নতুন বইটি, যা লিখতে তার তিন বছর সময় লেগেছিল, সেটি একটি বেস্টসেলার।" },
+        { "en": "Yesterday I met Sarah, whose mother is a famous singer.", "bn": "গতকাল আমি সারাহর সাথে দেখা করেছি, যার মা একজন বিখ্যাত গায়িকা।" },
+        { "en": "The Sahara Desert, which is the largest hot desert in the world, is extremely dry.", "bn": "সাহারা মরুভূমি, যা বিশ্বের বৃহত্তম উষ্ণ মরুভূমি, অত্যন্ত শুষ্ক।" },
+        { "en": "We stayed at the Grand Hotel, which had an amazing view of the ocean.", "bn": "আমরা গ্র্যান্ড হোটেলে থেকেছিলাম, যেখান থেকে সাগরের একটি চমৎকার দৃশ্য দেখা যাচ্ছিল।" },
+        { "en": "My car, which I bought only last month, is already making a strange noise.", "bn": "আমার গাড়িটি, যা আমি মাত্র গত মাসে কিনেছি, ইতিমধ্যেই একটি অদ্ভুত শব্দ করছে।" }
+      ],
+      "tips": "কমা ব্যবহারে সচেতন থাকুন! 'My sister who lives in Paris is a doctor' (কমা ছাড়া) মানে আপনার একাধিক বোন আছে এবং আপনি প্যারিসে থাকা বোনটির কথা বলছেন। কিন্তু 'My sister, who lives in Paris, is a doctor' (কমা সহ) মানে আপনার বোন একজনই এবং তিনি প্যারিসে থাকেন—এটিই অতিরিক্ত তথ্য।"
+    },
+    {
+      "name": "Reduced Relative Clauses (সংক্ষিপ্ত বা হ্রাসকৃত রিলেটিভ ক্লজ)",
+      "banglaName": "Reduced Relative Clauses",
+      "definition": "A reduced relative clause is a relative clause that has been shortened to a participle phrase or adjective phrase by removing the relative pronoun and the verb 'be'. Active relative clauses reduce to present participles (-ing), and passive relative clauses reduce to past participles (-ed/V3). This technique is highly valued in academic and formal writing.",
+      "banglaDefinition": "Reduced relative clause হলো এমন একটি রিলেটিভ ক্লজ যাকে রিলেটিভ প্রোনাউন এবং 'be' verb বাদ দিয়ে একটি পার্টিসিপল বা অ্যাডজেক্টিভ ফ্রেজে রূপান্তর করা হয়েছে। অ্যাক্টিভ ভয়েসের ক্লজগুলো প্রেজেন্ট পার্টিসিপলে (-ing) এবং প্যাসিভ ভয়েসের ক্লজগুলো পাস্ট পার্টিসিপলে (V3) সংকুচিত হয়। একাডেমিক ও প্রাতিষ্ঠানিক লেখাকে সুন্দর ও সংক্ষিপ্ত করতে এই কৌশলটি অত্যন্ত গুরুত্বপূর্ণ।",
+      "formula": "Active Reduction: Noun + [who/which/that + verb] -> Noun + Verb-ing\nPassive Reduction: Noun + [who/which/that + be verb + V3] -> Noun + V3",
+      "rules": [
+        "অ্যাক্টিভ ভয়েসের ক্ষেত্রে রিলেটিভ প্রোনাউন ও অক্সিলিয়ারি বাদ দিয়ে মূল ভার্বের সাথে -ing যুক্ত করতে হয়।",
+        "প্যাসিভ ভয়েসের ক্ষেত্রে রিলেটিভ প্রোনাউন এবং 'be' verb (is, was, were ইত্যাদি) বাদ দিয়ে সরাসরি Verb-এর Past Participle (V3) রাখতে হয়।",
+        "যদি রিলেটিভ ক্লজে কেবল একটি adjective বা prepositional phrase থাকে, তবে প্রোনাউন ও 'be' verb বাদ দেওয়া যায়: 'The man who is in the corner' -> 'The man in the corner'."
+      ],
+      "examples": [
+        { "en": "The man standing near the door is the manager. (who is standing -> standing)", "bn": "দরজার কাছে দাঁড়িয়ে থাকা লোকটি হলেন ম্যানেজার।" },
+        { "en": "The books written by Rabindranath Tagore are timeless. (which were written -> written)", "bn": "রবীন্দ্রনাথ ঠাকুরের লেখা বইগুলো চিরন্তন।" },
+        { "en": "Students wishing to join the trip must register by Friday. (who wish -> wishing)", "bn": "ভ্রমণে যোগ দিতে ইচ্ছুক শিক্ষার্থীদের অবশ্যই শুক্রবারের মধ্যে নিবন্ধন করতে হবে।" },
+        { "en": "The car parked outside belongs to the new CEO. (which is parked -> parked)", "bn": "বাইরে পার্ক করা গাড়িটি নতুন সিইও-র।" },
+        { "en": "Anyone breaking the rules will be severely punished. (who breaks -> breaking)", "bn": "যে কেউ নিয়ম ভঙ্গ করলে তাকে কঠোর শাস্তি দেওয়া হবে।" },
+        { "en": "The bridge built last year has already collapsed. (which was built -> built)", "bn": "গত বছর নির্মিত সেতুটি ইতিমধ্যেই ভেঙে পড়েছে।" },
+        { "en": "Only a few of the people invited to the party actually showed up. (who were invited -> invited)", "bn": "পার্টিতে আমন্ত্রিত ব্যক্তিদের মধ্যে মাত্র কয়েকজন আসলে উপস্থিত হয়েছিলেন।" },
+        { "en": "The message sent by him was loud and clear. (which was sent -> sent)", "bn": "তার পাঠানো বার্তাটি জোরালো এবং স্পষ্ট ছিল।" },
+        { "en": "The noise coming from the basement was terrifying. (which was coming -> coming)", "bn": "বেজমেন্ট থেকে আসা আওয়াজটি ছিল ভয়ানক।" },
+        { "en": "We bought a painting painted by a local artist. (which was painted -> painted)", "bn": "আমরা স্থানীয় এক শিল্পীর আঁকা একটি ছবি কিনেছিলাম।" }
+      ],
+      "tips": "রাইটিং উন্নত করার জন্য 'Reduce' করা শিখুন। 'The report which was published yesterday' লেখার চেয়ে 'The report published yesterday' লিখলে বাক্যটি অনেক বেশি স্মার্ট ও প্রফেশনাল দেখায়।"
+    },
+    {
+      "name": "Sentential Relative Clauses with 'Which' (সমগ্র বাক্যকে নির্দেশকারী 'Which' ক্লজ)",
+      "banglaName": "Sentential Relative Clauses with 'Which'",
+      "definition": "A sentential relative clause does not modify a single noun. Instead, it refers back to and comments on the entire preceding clause or sentence. It is introduced by 'which' (never 'that' or 'what') and is always preceded by a comma.",
+      "banglaDefinition": "Sentential relative clause কোনো একটি নির্দিষ্ট নাউনকে মডিফাই করে না। বরং, এটি তার পূর্ববর্তী সম্পূর্ণ বাক্য বা ক্লজটিকে নির্দেশ করে এবং তার ওপর একটি মন্তব্য বা প্রতিক্রিয়া প্রকাশ করে। এটি সর্বদা কমা (comma) চিহ্নের পর 'which' দ্বারা শুরু হয় (এখানে কখনো 'that' বা 'what' ব্যবহার করা যায় না)।",
+      "formula": "First Clause, + which + verb + rest of the comment",
+      "rules": [
+        "এই ধরনের ক্লজে 'which'-এর আগে অবশ্যই একটি কমা বসাতে হবে।",
+        "এখানে 'which' বলতে 'and that fact/situation' (এবং এই বিষয়টি) বোঝায়।",
+        "এই স্ট্রাকচারে 'which'-এর বদলে কোনোভাবেই 'that' বা 'what' বসানো যাবে না।",
+        "এটি সাধারণত কোনো কাজের ফলাফল বা সেই কাজের প্রতি লেখকের অনুভূতি প্রকাশ করতে ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "He passed the difficult exam, which surprised everyone.", "bn": "সে কঠিন পরীক্ষায় পাস করেছিল, যা সবাইকে অবাক করে দিয়েছিল। ('পরীক্ষায় পাস করা' বিষয়টি অবাক করেছিল)" },
+        { "en": "She offered to help us clean the house, which was very kind of her.", "bn": "সে আমাদের বাড়ি পরিষ্কার করতে সাহায্য করার প্রস্তাব দিয়েছিল, যা ছিল তার মহানুভবতা।" },
+        { "en": "The train was delayed for two hours, which meant we missed the flight.", "bn": "ট্রেনটি দুই ঘণ্টা বিলম্বিত হয়েছিল, যার অর্থ আমরা ফ্লাইটটি মিস করেছিলাম।" },
+        { "en": "He kept interrupting the speaker, which made everyone angry.", "bn": "সে ক্রমাগত বক্তার কথায় বাধা দিচ্ছিল, যা সবাইকে রাগান্বিত করেছিল।" },
+        { "en": "They won the match at the last second, which was unexpected.", "bn": "তারা শেষ সেকেন্ডে ম্যাচটি জিতেছিল, যা ছিল অপ্রত্যাশিত।" },
+        { "en": "She forgot her laptop at home, which is typical of her.", "bn": "সে বাড়িতে তার ল্যাপটপটি ভুলে রেখে এসেছিল, যা তার চিরচেনা স্বভাব।" },
+        { "en": "The company decided to cut salaries, which led to a massive strike.", "bn": "কোম্পানি বেতন কমানোর সিদ্ধান্ত নিয়েছিল, যা একটি বিশাল ধর্মঘটের রূপ নিয়েছিল।" },
+        { "en": "It rained heavily all day, which ruined our picnic plans.", "bn": "সারা দিন ভারী বৃষ্টি হয়েছিল, যা আমাদের পিকনিকের পরিকল্পনা নষ্ট করে দিয়েছিল।" },
+        { "en": "He apologized sincerely for his mistake, which made things much better.", "bn": "সে তার ভুলের জন্য আন্তরিকভাবে ক্ষমা চেয়েছিল, যা পরিস্থিতি অনেক সহজ করে দিয়েছিল।" },
+        { "en": "She got a full scholarship, which was her lifelong dream.", "bn": "সে একটি পূর্ণ বৃত্তি পেয়েছে, যা ছিল তার জীবনের স্বপ্ন।" }
+      ],
+      "tips": "আইইএলটিএস (IELTS) রাইটিং টাস্ক ২-এ আপনার লেখার কোহেশন (cohesion) ও জটিল বাক্য গঠনের ক্ষমতা প্রদর্শনের জন্য এই স্ট্রাকচারটি অন্যতম সেরা হাতিয়ার। এটি দুটি বাক্যকে সুন্দরভাবে একটি যৌক্তিক মন্তব্যে রূপান্তর করে।"
+    },
+    {
+      "name": "Partitive and Quantifying Relative Clauses (অংশ বা পরিমাণ নির্দেশক রিলেটিভ ক্লজ)",
+      "banglaName": "Partitive and Quantifying Relative Clauses",
+      "definition": "These are advanced non-defining relative clauses where a quantifier (such as some, many, all, none, both, three, most) is combined with 'of' + a relative pronoun (whom/which/whose). This structure is used to give details about a specific part or quantity of the noun mentioned before.",
+      "banglaDefinition": "এগুলো হলো অত্যন্ত উন্নত মানের নন-ডিফায়েনিং ক্লজ যেখানে কোনো পরিমাপক শব্দ (যেমন: some, many, all, none, both, most) এর সাথে 'of' যুক্ত করে তারপর রিলেটিভ প্রোনাউন (whom/which/whose) বসানো হয়। পূর্বে উল্লিখিত নাউনের একটি নির্দিষ্ট অংশ বা পরিমাণের বিশদ বিবরণ দিতে এই কাঠামোটি ব্যবহৃত হয়।",
+      "formula": "Noun, + quantifier + of + whom (for people) / which (for things) / whose + noun + ...",
+      "rules": [
+        "ব্যক্তির ক্ষেত্রে অবশ্যই 'of whom' এবং বস্তুর ক্ষেত্রে 'of which' ব্যবহার করতে হবে (কখনো of who বা of that হবে না)।",
+        "এই ক্লজটি সর্বদা নন-ডিফায়েনিং হয়, তাই কমার ব্যবহার বাধ্যতামূলক।",
+        "ব্যবহৃত quantifiers হতে পারে: all of, some of, many of, most of, none of, both of, neither of, one of, two of, etc.",
+        "মালিকানা বোঝাতে 'of whose + noun' হতে পারে: '...two of whose relatives were present.'"
+      ],
+      "examples": [
+        { "en": "She has three sons, all of whom are working as engineers.", "bn": "তাঁর তিন ছেলে আছে, যাঁদের সবাই প্রকৌশলী হিসেবে কর্মরত আছেন।" },
+        { "en": "I bought ten old books, some of which were severely damaged.", "bn": "আমি দশটি পুরোনো বই কিনেছিলাম, যেগুলোর কয়েকটি মারাত্মকভাবে ক্ষতিগ্রস্ত ছিল।" },
+        { "en": "The company has fifty employees, most of whom have been there for years.", "bn": "কোম্পানিটিতে পঞ্চাশ জন কর্মচারী আছেন, যাঁদের বেশিরভাগই সেখানে বহু বছর ধরে আছেন।" },
+        { "en": "They asked me many questions, none of which I could answer.", "bn": "তারা আমাকে অনেক প্রশ্ন করেছিল, যার একটিরও উত্তর আমি দিতে পারিনি।" },
+        { "en": "He owned two houses, both of which were located near the beach.", "bn": "তার দুটি বাড়ি ছিল, যার দুটিই সমুদ্র সৈকতের কাছে অবস্থিত ছিল।" },
+        { "en": "She interviewed several candidates, three of whom were highly qualified.", "bn": "তিনি বেশ কয়েকজন প্রার্থীর সাক্ষাৎকার নিয়েছিলেন, যাঁদের মধ্যে তিনজন অত্যন্ত যোগ্য ছিলেন।" },
+        { "en": "We ordered several dishes, many of which were quite spicy.", "bn": "আমরা বেশ কয়েকটি পদের খাবারের অর্ডার দিয়েছিলাম, যেগুলোর অনেকগুলোই বেশ ঝাল ছিল।" },
+        { "en": "The teacher praised the students, all of whose projects were excellent.", "bn": "শিক্ষক শিক্ষার্থীদের প্রশংসা করেছিলেন, যাদের সবার প্রজেক্ট চমৎকার ছিল।" },
+        { "en": "They made several proposals, neither of which was accepted by the board.", "bn": "তারা বেশ কয়েকটি প্রস্তাব দিয়েছিল, যার কোনোটিই বোর্ড কর্তৃক গৃহীত হয়নি।" },
+        { "en": "I have two close friends, one of whom lives in New York.", "bn": "আমার দুজন ঘনিষ্ঠ বন্ধু আছে, যাদের একজন নিউইয়র্কে থাকে।" }
+      ],
+      "tips": "একাডেমিক রাইটিং বা ফরমাল ইমেইলে এই কাঠামোর ব্যবহার আপনার ভাষার দক্ষতাকে প্রকাশ করে। মনে রাখবেন, এখানে 'of' প্রিপজিশন থাকার কারণে অবজেক্ট প্রোনাউন বসাতে হবে, তাই মানুষের ক্ষেত্রে 'who' নয়, 'whom' বসালে তবেই বাক্যটি ব্যাকরণগতভাবে সঠিক হবে।"
+    },
+    {
+      "name": "Nominal or Free Relative Clauses (বিশেষ্যধর্মী বা স্বাধীন রিলেটিভ ক্লজ)",
+      "banglaName": "Nominal or Free Relative Clauses",
+      "definition": "A nominal (or free) relative clause is a clause that acts as a noun phrase in itself and contains its own antecedent within it. It usually begins with 'what' (meaning 'the thing that'), 'where' ('the place where'), 'whoever', 'whatever', etc. It can act as the subject or object of the main sentence.",
+      "banglaDefinition": "Nominal (বা free) relative clause হলো এমন একটি ক্লজ যা নিজেই একটি নাউন ফ্রেজ হিসেবে কাজ করে এবং এর জন্য পূর্বে কোনো নাউন (antecedent) থাকার প্রয়োজন হয় না; এর নিজের ভেতরেই তা লুকানো থাকে। এটি সাধারণত 'what' (অর্থ: যে বিষয়টি/যা), 'where' (যে স্থানে), 'whoever' (যে কেউ) ইত্যাদি দিয়ে শুরু হয়। এটি বাক্যের সাবজেক্ট বা অবজেক্ট উভয় হিসেবে বসতে পারে।",
+      "formula": "What/Whatever/Whoever + clause + verb + complement\nSubject + verb + what/where/how + clause",
+      "rules": [
+        "এই ক্লজগুলোর পূর্বে আলাদা কোনো antecedent বা নাউন থাকে না: 'I like *what* you did' (এখানে what = the thing that)।",
+        "সাবজেক্ট হিসেবে বসলে পুরো ক্লজটিকে সাধারণত singular হিসেবে বিবেচনা করা হয় এবং singular verb বসে।",
+        "এটি কথ্য ইংরেজিতে অত্যন্ত সাধারণ এবং বাক্যের ওপর জোর দিতে সাহায্য করে।"
+      ],
+      "examples": [
+        { "en": "What you need right now is a good long rest. (What = The thing that)", "bn": "তোমার এখন যা প্রয়োজন তা হলো একটি ভালো দীর্ঘ বিশ্রাম।" },
+        { "en": "I cannot believe what he said during the meeting.", "bn": "মিটিংয়ে সে যা বলেছিল তা আমি বিশ্বাস করতে পারছি না।" },
+        { "en": "Whoever painted this wall did a terrible job. (Whoever = The person who)", "bn": "যে এই দেওয়ালে রঙ করেছে সে অত্যন্ত বাজে কাজ করেছে।" },
+        { "en": "You can park your car wherever you find space. (wherever = any place where)", "bn": "যেখানেই জায়গা পাবেন সেখানেই আপনি আপনার গাড়ি পার্ক করতে পারেন।" },
+        { "en": "What surprised me most was his sudden decision to resign.", "bn": "যা আমাকে সবচেয়ে বেশি অবাক করেছিল তা হলো তার আকস্মিক পদত্যাগের সিদ্ধান্ত।" },
+        { "en": "She always achieves whatever she sets her mind to.", "bn": "সে যে বিষয়েই মনস্থির করে তা-ই অর্জন করে।" },
+        { "en": "This is where I used to play when I was a child.", "bn": "এটি সেই জায়গা যেখানে আমি ছোটবেলায় খেলাধুলা করতাম।" },
+        { "en": "You must accept what cannot be changed.", "bn": "যা পরিবর্তন করা সম্ভব নয় তা তোমাকে অবশ্যই মেনে নিতে হবে।" },
+        { "en": "Whoever is responsible for this mess must clean it up.", "bn": "এই বিশৃঙ্খলার জন্য যে-ই দায়ী তাকেই এটি পরিষ্কার করতে হবে।" },
+        { "en": "How they managed to escape remains a complete mystery.", "bn": "তারা কীভাবে পালাতে সক্ষম হয়েছিল তা এখনও একটি সম্পূর্ণ রহস্য।" }
+      ],
+      "tips": "Nominal clause-এর 'what' এবং সাধারণ relative pronoun 'which'-এর মধ্যে গুলিয়ে ফেলবেন না। 'which'-এর আগে অবশ্যই একটি নাউন থাকতে হবে (যেমন: 'The book *which* I read')। কিন্তু 'what'-এর আগে কখনো নাউন বসবে না (যেমন: 'I like *what* you read')।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "My uncle, that lives in Canada, sent me a gift.",
+      "correct": "My uncle, who lives in Canada, sent me a gift.",
+      "explanation": "কমা দিয়ে আলাদা করা Non-defining relative clause-এ অতিরিক্ত তথ্য প্রদানের ক্ষেত্রে কখনো 'that' ব্যবহার করা যাবে না। সেখানে মানুষের জন্য 'who' এবং বস্তুর জন্য 'which' ব্যবহার করা বাধ্যতামূলক।"
+    },
+    {
+      "wrong": "This is the restaurant which I took you there last week.",
+      "correct": "This is the restaurant which I took you to last week. (Or: ...where I took you...)",
+      "explanation": "রিলেটিভ প্রোনাউন 'which' ইতিমধ্যে রেস্টুরেন্টটিকে নির্দেশ করছে। তাই ক্লজের ভেতরে অতিরিক্ত কোনো নির্দেশক শব্দ যেমন 'there' বা 'it' ব্যবহার করা ভুল (এটি Double Beneficiary error)।"
+    },
+    {
+      "wrong": "Although exhausted, the race was won by the athlete.",
+      "correct": "Although exhausted, the athlete won the race.",
+      "explanation": "রিলেটিভ ক্লজ বা ফ্রেজকে সংকুচিত (Reduce) করার সময় খেয়াল রাখতে হবে যেন মূল বাক্যের subject-টিই সেই কাজ সম্পন্ন করে। তা না হলে এটি 'Dangling Modifier' হয়ে যায়। এখানে race ক্লান্ত ছিল না, অ্যাথলেট ক্লান্ত ছিল।"
+    },
+    {
+      "wrong": "I have two sisters, all of them are doctors.",
+      "correct": "I have two sisters, both of whom are doctors.",
+      "explanation": "দুটি বাক্যাংশকে যুক্ত করতে relative pronoun প্রয়োজন। 'them' একটি personal pronoun যা দুটি ক্লজকে যুক্ত করতে পারে না। এছাড়া দুইজনের ক্ষেত্রে 'all' নয়, 'both' এবং 'of'-এর পর 'whom' বসাতে হবে।"
+    },
+    {
+      "wrong": "He fell off his bike, what broke his arm.",
+      "correct": "He fell off his bike, which broke his arm.",
+      "explanation": "পূর্ববর্তী সম্পূর্ণ ঘটনার ওপর মন্তব্য করতে Sentential clause হিসেবে কেবল 'which' ব্যবহৃত হতে পারে, 'what' বা 'that' নয়।"
+    },
+    {
+      "wrong": "The girl who's dog was barking kept me awake.",
+      "correct": "The girl whose dog was barking kept me awake.",
+      "explanation": "'Who's' হলো 'who is' বা 'who has'-এর সংক্ষিপ্ত রূপ। মালিকানা বোঝাতে সর্বদা possessive relative pronoun 'whose' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "The laptop who I bought yesterday is very fast.",
+      "correct": "The laptop which/that I bought yesterday is very fast.",
+      "explanation": "'Who' শুধুমাত্র মানুষ বা ব্যক্তিসত্তার জন্য প্রযোজ্য। জড় বস্তু বা ল্যাপটপের মতো জিনিসের জন্য 'which' বা 'that' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "What I need is more hours in the day to finish my work.",
+      "correct": "What I need are more hours in the day to finish my work. (Or: What I need is more time...)",
+      "explanation": "Nominal relative clause-এর পর verb সাধারণত singular হলেও, যদি তার পরের নাউনটি বা কমপ্লিমেন্টটি plural হয় (যেমন: hours), তবে verb-টি 'are' হওয়া ব্যাকরণগতভাবে বেশি সঠিক।"
+    }
+  ]
 }

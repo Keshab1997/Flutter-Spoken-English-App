@@ -1,10 +1,210 @@
 {
   "chapter": 55,
   "level": "Advanced",
-  "title": "Ellipsis",
+  "title": "Ellipsis (শব্দ বা অংশ বাদ দেওয়া)",
   "icon": "more_horiz",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Ellipsis in English grammar refers to the deliberate omission of one or more words from a sentence that are grammatically required but can be easily understood from the surrounding context. This technique avoids unnecessary repetition, creates a smooth rhythm, and makes both spoken and written communication more concise and natural.",
+  "banglaDescription": "ইংরেজিতে Ellipsis বলতে বাক্য থেকে ইচ্ছাকৃতভাবে এক বা একাধিক শব্দ বাদ দেওয়াকে বোঝায় যা ব্যাকরণগতভাবে প্রয়োজনীয় হলেও চারপাশের প্রসঙ্গ থেকে সহজেই বোঝা যায়। এই কৌশলটি অপ্রয়োজনীয় পুনরাবৃত্তি এড়ায়, বাক্যের ছন্দ সুন্দর করে এবং কথ্য ও লিখিত উভয় যোগাযোগকে আরও সংক্ষিপ্ত ও স্বাভাবিক করে তোলে।",
+  "topics": [
+    {
+      "name": "Anaphoric Ellipsis in Coordinated Clauses (সংযুক্ত বাক্যাংশে পূর্ববর্তী শব্দের Ellipsis)",
+      "banglaName": "সংযুক্ত বাক্যাংশে পূর্ববর্তী শব্দের Ellipsis",
+      "definition": "Anaphoric ellipsis occurs when we omit words in the second part of a coordinated sentence (using 'and', 'but', 'or') because they are identical to words used in the first part. This usually involves omitting the subject, auxiliary verb, or the main verb.",
+      "banglaDefinition": "Anaphoric ellipsis তখন ঘটে যখন আমরা একটি যুক্ত বাক্যের (and, but, or দ্বারা যুক্ত) দ্বিতীয় অংশে এমন কিছু শব্দ বাদ দিই যা প্রথম অংশে ইতিমধ্যেই ব্যবহৃত হয়েছে। সাধারণত দ্বিতীয় অংশের subject, auxiliary verb বা main verb বাদ দেওয়া হয়।",
+      "formula": "Subject + Verb (+ Object) + Conjunction + [Omitted Subject/Verb] + Rest of the Sentence\n\nOriginal: She went to the market and she bought some fruits.\nEllipsis: She went to the market and [she] bought some fruits.\n\nOriginal: John can play the piano and Mary can play the piano too.\nEllipsis: John can play the piano and Mary [can play the piano] too.",
+      "rules": [
+        "যদি দুটি ক্লজের Subject একই ব্যক্তি বা বস্তু হয়, তবে conjunction-এর পর দ্বিতীয় subject-টি বাদ দেওয়া যায়।",
+        "দুটি ক্লজের auxiliary verb এবং subject একই হলে, দ্বিতীয় ক্লজ থেকে দুটিই বাদ দেওয়া যায়: 'She has eaten and [she has] washed the dishes.'",
+        "প্রধান ক্রিয়াপদ (Main verb) একই হলে দ্বিতীয়বার তা না লিখে বাদ দেওয়া যায় বা 'do/does/did' দিয়ে প্রতিস্থাপন করা যায়।",
+        "Passive বাক্যে auxiliary 'be' verb-টি বাদ দেওয়া যায়: 'The house was designed and [was] built by him.'",
+        "Formal এবং Informal উভয় ধরনের ইংরেজিতেই এই Ellipsis ব্যাপকভাবে ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "She washed the dishes and dried them.", "bn": "সে থালাবাসন ধুয়েছিল এবং [সেগুলো] শুকিয়েছিল।" },
+        { "en": "He can speak English and write it well.", "bn": "সে ইংরেজি বলতে পারে এবং [ইংরেজি] ভালো লিখতে পারে।" },
+        { "en": "We stayed at home and watched a movie.", "bn": "আমরা বাড়িতে ছিলাম এবং একটি সিনেমা দেখেছিলাম।" },
+        { "en": "The book was written in 2010 and published in 2012.", "bn": "বইটি ২০১০ সালে লেখা হয়েছিল এবং ২০১২ সালে প্রকাশিত হয়েছিল।" },
+        { "en": "You can have tea or coffee.", "bn": "আপনি চা অথবা কফি নিতে পারেন।" },
+        { "en": "I wanted to call him but didn't have his number.", "bn": "আমি তাকে কল করতে চেয়েছিলাম কিন্তু [আমার কাছে] তার নম্বর ছিল না।" },
+        { "en": "She has lived in Paris and worked as a chef.", "bn": "সে প্যারিসে বাস করেছে এবং শেফ হিসেবে কাজ করেছে।" },
+        { "en": "The computer was repaired and returned yesterday.", "bn": "কম্পিউটারটি মেরামত করা হয়েছিল এবং গতকাল ফেরত দেওয়া হয়েছিল।" },
+        { "en": "He opened the door, looked inside, and walked away.", "bn": "সে দরজাটি খুলল, ভেতরে তাকাল এবং চলে গেল।" },
+        { "en": "You should study hard and pass the exam.", "bn": "তোমার কঠোর পড়াশোনা করা উচিত এবং পরীক্ষায় পাস করা উচিত।" }
+      ],
+      "tips": "মনে রাখবেন, coordinating conjunction (and, but, or) দিয়ে যুক্ত বাক্যে ellipsis করার সময় নিশ্চিত করুন যেন বাদ দেওয়া অংশটি প্রথম অংশের সাথে হুবহু মিলে যায়। ভিন্ন tense বা subject হলে বাদ দেওয়া যাবে না।"
+    },
+    {
+      "name": "Situational Ellipsis in Informal Speech (কথ্য ভাষায় পরিস্থিতিগত Ellipsis)",
+      "banglaName": "কথ্য ভাষায় পরিস্থিতিগত Ellipsis",
+      "definition": "Situational ellipsis happens in informal, everyday spoken English when we omit unstressed words at the very beginning of a sentence (like subject pronouns 'I', 'you', 'it', or auxiliary verbs 'do', 'have', 'are') because the immediate situation makes the meaning completely clear.",
+      "banglaDefinition": "Situational ellipsis কথ্য বা অনানুষ্ঠানিক ইংরেজিতে ঘটে যখন আমরা বাক্যের শুরুতে থাকা কম গুরুত্বপূর্ণ শব্দ (যেমন: subject pronouns 'I', 'you', 'it' অথবা auxiliary verbs 'do', 'have', 'are') বাদ দিই, কারণ তাৎক্ষণিক পরিস্থিতি থেকে অর্থটি সম্পূর্ণ স্পষ্ট থাকে।",
+      "formula": "[Omitted Subject/Auxiliary] + Main Verb/Adjective/Noun + ...\n\nOriginal: Do you want some water?\nEllipsis: Want some water?\n\nOriginal: I hope to see you soon.\nEllipsis: Hope to see you soon.",
+      "rules": [
+        "সাধারণত বাক্যের প্রথম শব্দ বা শব্দগুচ্ছ (যা সাধারণত pronoun বা auxiliary verb) বাদ দেওয়া হয়।",
+        "এটি শুধুমাত্র অনানুষ্ঠানিক (informal) কথাবার্তায় বা বন্ধুদের সাথে চ্যাটিংয়ে ব্যবহার করা উচিত।",
+        "Formal writing বা প্রাতিষ্ঠানিক যোগাযোগের ক্ষেত্রে এটি সম্পূর্ণ নিষিদ্ধ।",
+        "প্রশ্নবোধক বাক্যে auxiliary verb এবং subject একসাথে বাদ দেওয়া যায়: '[Are you] Ready?' -> 'Ready?'",
+        "Greeting বা বিদায়ের ক্ষেত্রে এটি খুব সাধারণ: '[I wish you a] Good morning' -> 'Good morning.'"
+      ],
+      "examples": [
+        { "en": "Seen John today? (Have you seen John today?)", "bn": "আজ জনকে দেখেছ?" },
+        { "en": "Hope you are doing well. (I hope you are doing well.)", "bn": "আশা করি তুমি ভালো আছ।" },
+        { "en": "Sounds like a great idea. (It sounds like a great idea.)", "bn": "দারুণ আইডিয়া বলে মনে হচ্ছে।" },
+        { "en": "Don't know what to do. (I don't know what to do.)", "bn": "কী করব জানি না।" },
+        { "en": "No wonder he was angry. (It is no wonder he was angry.)", "bn": "অবাক হওয়ার কিছু নেই যে সে রেগে ছিল।" },
+        { "en": "Got a minute? (Have you got a minute?)", "bn": "এক মিনিট সময় হবে?" },
+        { "en": "Back in five minutes. (I will be back in five minutes.)", "bn": "পাঁচ মিনিটে ফিরছি।" },
+        { "en": "Found your keys yet? (Have you found your keys yet?)", "bn": "তোমার চাবি কি খুঁজে পেয়েছ?" },
+        { "en": "Upset about the news? (Are you upset about the news?)", "bn": "খবরটি নিয়ে তুমি কি আপসেট?" },
+        { "en": "Tastes delicious! (It tastes delicious!)", "bn": "খেতে চমৎকার!" }
+      ],
+      "tips": "Spoken English-এ কথা বলার সময় situational ellipsis আপনাকে অনেক বেশি natural শোনাবে। তবে আইইএলটিএস (IELTS) স্পিকিং টেস্টে বা কোনো ইন্টারভিউতে অতিরিক্ত অপ্রাতিষ্ঠানিক Ellipsis ব্যবহার না করাই ভালো।"
+    },
+    {
+      "name": "Ellipsis in Noun Phrases (বিশেষ্য পদগুচ্ছে Ellipsis)",
+      "banglaName": "বিশেষ্য পদগুচ্ছে Ellipsis",
+      "definition": "Noun phrase ellipsis occurs when a noun is omitted because it has already been mentioned in the context. This often happens after determiners, demonstratives (this, that, these, those), possessives, or adjectives. Sometimes, we use 'one' or 'ones' to replace the omitted noun.",
+      "banglaDefinition": "Noun phrase ellipsis তখন ঘটে যখন কোনো বিশেষ্য (noun) বাদ দেওয়া হয় কারণ এটি ইতিমধ্যেই প্রসঙ্গে উল্লেখ করা হয়েছে। এটি সাধারণত determiners, demonstratives (this, that), possessives বা adjectives-এর পরে ঘটে। কখনও কখনও বাদ দেওয়া noun-এর জায়গায় 'one' বা 'ones' ব্যবহার করা হয়।",
+      "formula": "Determiner/Adjective + [Omitted Noun / replaced by 'one/ones']\n\nOriginal: I have two cars. The red car is faster than the blue car.\nEllipsis: I have two cars. The red [car] is faster than the blue one.",
+      "rules": [
+        "যখন একই noun বারবার ব্যবহার করতে হয়, তখন দ্বিতীয়বার সেটি বাদ দেওয়া যায় বা 'one' (singular) / 'ones' (plural) দিয়ে প্রতিস্থাপন করা যায়।",
+        "Numbers (one, two, three...) বা quantifiers (some, any, all, both)-এর পর noun সরাসরি বাদ দেওয়া যায়: 'Do you want some apples? I'll take two [apples].'",
+        "Possessive pronouns (mine, yours, his, hers, ours, theirs) নিজেই ellipsis-এর কাজ করে: 'My car is blue; yours [your car] is red.'",
+        "Superlative adjectives-এর পরেও noun বাদ দেওয়া যায়: 'This laptop is the cheapest [laptop] in the store.'"
+      ],
+      "examples": [
+        { "en": "I like these shoes, but those are cheaper.", "bn": "আমি এই জুতো জোড়া পছন্দ করি, কিন্তু ওইগুলো [জুতো] আরও সস্তা।" },
+        { "en": "Which dress do you want? The red one or the blue?", "bn": "তুমি কোন পোশাকটি চাও? লালটি নাকি নীলটি [পোশাক]?" },
+        { "en": "He bought three books and I bought two.", "bn": "সে তিনটি বই কিনেছিল এবং আমি দুটি [বই] কিনেছিলাম।" },
+        { "en": "Your phone is fast, but mine is slow.", "bn": "তোমার ফোন দ্রুতগতির, কিন্তু আমারটি [আমার ফোন] ধীরগতির।" },
+        { "en": "Of all the designs, this is the most elegant.", "bn": "সব ডিজাইনের মধ্যে, এটিই সবচেয়ে মার্জিত [ডিজাইন]।" },
+        { "en": "Do you need any envelopes? I have some.", "bn": "তোমার কি কোনো খাম লাগবে? আমার কাছে কিছু [খাম] আছে।" },
+        { "en": "The first test was easy, but the second was difficult.", "bn": "প্রথম পরীক্ষাটি সহজ ছিল, কিন্তু দ্বিতীয়টি [পরীক্ষা] কঠিন ছিল।" },
+        { "en": "She has two sisters; both are doctors.", "bn": "তার দুই বোন আছে; উভয়েই [বোন] ডাক্তার।" },
+        { "en": "I don't like big cities; I prefer small ones.", "bn": "আমি বড় শহর পছন্দ করি না; আমি ছোটগুলো [শহর] পছন্দ করি।" },
+        { "en": "This glass is dirty. Can I have a clean one?", "bn": "এই গ্লাসটি নোংরা। আমি কি একটি পরিষ্কার [গ্লাস] পেতে পারি?" }
+      ],
+      "tips": "Noun phrase-এ Ellipsis করার সময় মনে রাখবেন, noun-টি যদি গণনযোগ্য (countable) হয়, তবে singular-এর ক্ষেত্রে 'one' এবং plural-এর ক্ষেত্রে 'ones' ব্যবহার করতে হবে। Uncountable noun-এর সাথে 'one/ones' ব্যবহার করা যায় না, সেখানে সরাসরি noun বাদ দিতে হয়।"
+    },
+    {
+      "name": "Verb Phrase Ellipsis after Auxiliary/Modal Verbs (Auxiliary/Modal-এর পর Verb Phrase Ellipsis)",
+      "banglaName": "Auxiliary/Modal-এর পর Verb Phrase Ellipsis",
+      "definition": "Verb phrase ellipsis involves omitting the entire main verb phrase after an auxiliary verb (do, does, did, have, has, be) or a modal verb (can, could, will, would, should, etc.), because the verb phrase has already been mentioned.",
+      "banglaDefinition": "Verb phrase ellipsis-এ একটি auxiliary verb (do, does, did, have, be) বা modal verb (can, will, should ইত্যাদি)-এর পরের সম্পূর্ণ প্রধান ক্রিয়াপদ অংশটি (verb phrase) বাদ দেওয়া হয়, কারণ সেই কাজটি আগে উল্লেখ করা হয়েছে।",
+      "formula": "Subject + Auxiliary/Modal + [Omitted Verb Phrase]\n\nOriginal: I cannot swim, but my sister can swim.\nEllipsis: I cannot swim, but my sister can [swim].",
+      "rules": [
+        "প্রথম ক্লজে যে main verb ব্যবহৃত হয়েছে, দ্বিতীয় ক্লজে শুধুমাত্র auxiliary বা modal verb রেখে বাকি verb phrase বাদ দেওয়া যায়।",
+        "যদি প্রথম ক্লজে কোনো auxiliary verb না থাকে (যেমন Simple Present বা Simple Past), তবে দ্বিতীয় ক্লজে emphasis বা ellipsis-এর জন্য 'do/does/did' ব্যবহার করতে হয়।",
+        "Perfect tenses-এর ক্ষেত্রে auxiliary 'have/has/had' রেখে দেওয়া হয়।",
+        "Passive বাক্যের ক্ষেত্রে 'be' বা 'been' সহ auxiliary রাখা যায়: 'He will be invited, and she will be [invited] too.'"
+      ],
+      "examples": [
+        { "en": "She went to the party, but her brother didn't.", "bn": "সে পার্টিতে গিয়েছিল, কিন্তু তার ভাই যায়নি [যায়নি অর্থ ক্লিয়ার করে 'didn't' দিয়ে]।" },
+        { "en": "I can play chess, but you can't.", "bn": "আমি দাবা খেলতে পারি, কিন্তু তুমি পারো না।" },
+        { "en": "Have you finished your homework? Yes, I have.", "bn": "তুমি কি তোমার বাড়ির কাজ শেষ করেছ? হ্যাঁ, আমি করেছি।" },
+        { "en": "He says he is not coming, but I think he is.", "bn": "সে বলছে সে আসছে না, কিন্তু আমার মনে হয় সে আসছে।" },
+        { "en": "I would help you if I could.", "bn": "আমি তোমাকে সাহায্য করতাম যদি আমি পারতাম।" },
+        { "en": "They thought it would rain, but it didn't.", "bn": "তারা ভেবেছিল বৃষ্টি হবে, কিন্তু হয়নি।" },
+        { "en": "She is studying hard, and so am I.", "bn": "সে কঠোর পড়াশোনা করছে, এবং আমিও করছি।" },
+        { "en": "Will you attend the meeting? I might.", "bn": "তুমি কি মিটিংয়ে উপস্থিত থাকবে? আমি থাকতে পারি।" },
+        { "en": "He shouldn't drive so fast, but he does.", "bn": "তার এত দ্রুত গাড়ি চালানো উচিত নয়, কিন্তু সে চালায়।" },
+        { "en": "She hasn't signed the contract yet, but she will.", "bn": "সে এখনও চুক্তিতে স্বাক্ষর করেনি, তবে সে করবে।" }
+      ],
+      "tips": "স্পোকেন এবং রিটেন উভয় ইংরেজিতেই এটি বহুল ব্যবহৃত। প্রশ্নকর্তার উত্তরের শর্ট ফর্ম হিসেবে এটি চমৎকার কাজ করে। যেমন: 'Do you agree?' -> 'Yes, I do.'"
+    },
+    {
+      "name": "Infinitive Ellipsis with 'To' (Infinitive-এর পর 'To' রেখে Ellipsis)",
+      "banglaName": "Infinitive-এর পর 'To' রেখে Ellipsis",
+      "definition": "Infinitive ellipsis is the omission of a verb phrase after the infinitive particle 'to'. Instead of repeating the whole verb or clause, we simply end the phrase with 'to'. This is very common after verbs like want, hope, love, need, like, and have.",
+      "banglaDefinition": "Infinitive ellipsis হল infinitive-এর 'to' চিহ্নের পরের verb phrase-টি বাদ দেওয়া। সম্পূর্ণ verb বা ক্লজটি পুনরায় ব্যবহার না করে, আমরা কেবল 'to' দিয়ে বাক্য বা অংশটি শেষ করি। এটি want, hope, love, need, like এবং have ক্রিয়াপদগুলোর পর খুব সাধারণ।",
+      "formula": "Subject + Verb + to + [Omitted Verb Phrase]\n\nOriginal: I don't want to go, but I have to go.\nEllipsis: I don't want to go, but I have to [go].",
+      "rules": [
+        "Infinitive 'to' এর পরে পূর্বে উল্লিখিত একই ক্রিয়াপদ থাকলে তা সম্পূর্ণ বাদ দেওয়া যায়, তবে 'to' অবশ্যই রাখতে হবে।",
+        "এটি সাধারণত 'want to', 'hope to', 'would like to', 'have to', 'need to', 'agree to' ইত্যাদি স্ট্রাকচারে ব্যবহৃত হয়।",
+        "যদি Adjective-এর পর infinitive থাকে, সেখানেও এটি প্রযোজ্য: 'He didn't clean his room, though he was told to [clean].'",
+        "কিছু ক্ষেত্রে, বিশেষ করে 'like' বা 'love'-এর পর শুধু 'to' রাখাই যথেষ্ট: 'Come with us if you'd like to.'"
+      ],
+      "examples": [
+        { "en": "You don't have to come if you don't want to.", "bn": "তোমার আসার দরকার নেই যদি তুমি আসতে না চাও।" },
+        { "en": "I wanted to buy the car, but I couldn't afford to.", "bn": "আমি গাড়িটি কিনতে চেয়েছিলাম, কিন্তু আমার সামর্থ্য ছিল না।" },
+        { "en": "She asked me to dance, and I was happy to.", "bn": "সে আমাকে নাচতে বলেছিল, এবং আমি সানন্দে রাজি হয়েছিলাম।" },
+        { "en": "You can leave now if you need to.", "bn": "তুমি এখন চলে যেতে পারো যদি তোমার প্রয়োজন হয়।" },
+        { "en": "He didn't study for the exam, even though he promised to.", "bn": "সে পরীক্ষার জন্য পড়াশোনা করেনি, যদিও সে করার প্রতিশ্রুতি দিয়েছিল।" },
+        { "en": "I haven't told anyone yet, and I don't intend to.", "bn": "আমি এখনও কাউকে বলিনি, এবং আমার বলার ইচ্ছাও নেই।" },
+        { "en": "We didn't go to the museum because we didn't have time to.", "bn": "আমরা জাদুঘরে যাইনি কারণ আমাদের যাওয়ার সময় ছিল না।" },
+        { "en": "She didn't get the job, though she deserved to.", "bn": "সে চাকরিটি পায়নি, যদিও সে পাওয়ার যোগ্য ছিল।" },
+        { "en": "Please finish this report. I am trying to.", "bn": "দয়া করে এই রিপোর্টটি শেষ করো। আমি করার চেষ্টা করছি।" },
+        { "en": "Would you like to join us for dinner? I'd love to.", "bn": "তুমি কি আমাদের সাথে রাতের খাবারে যোগ দিতে চাও? আমি সানন্দে যোগ দেব।" }
+      ],
+      "tips": "Infinitive ellipsis-এ 'to' বাদ দেবেন না। ভুল করে অনেকে বলেন, 'I don't want to go but I have.' সঠিক রূপটি হবে: 'I have to.' 'To' এখানে নির্দেশ করে যে মূল কাজটি পূর্বে উল্লেখ করা হয়েছে।"
+    },
+    {
+      "name": "Ellipsis in Comparative and Adverbial Clauses (তুলনামূলক ও অ্যাডভার্বিয়াল ক্লজে Ellipsis)",
+      "banglaName": "তুলনামূলক ও অ্যাডভার্বিয়াল ক্লজে Ellipsis",
+      "definition": "Ellipsis is frequently used in comparative clauses (after 'than' or 'as') and adverbial clauses (after 'when', 'while', 'if', 'although', etc.) to avoid repeating the subject and the verb 'be' when they are the same as in the main clause.",
+      "banglaDefinition": "তুলনামূলক ক্লজে ('than' বা 'as'-এর পর) এবং অ্যাডভার্বিয়াল ক্লজে ('when', 'while', 'if', 'although' ইত্যাদির পর) প্রায়শই Ellipsis ব্যবহার করা হয় যাতে প্রধান ক্লজের সাথে মিল থাকা subject এবং 'be' verb-টির পুনরাবৃত্তি এড়ানো যায়।",
+      "formula": "Main Clause + Conjunction/Preposition + [Omitted Subject + Be Verb] + Adjective/Noun/Participle\n\nOriginal: Although he was tired, he finished the work.\nEllipsis: Although [he was] tired, he finished the work.\n\nOriginal: She is taller than her sister is.\nEllipsis: She is taller than her sister [is].",
+      "rules": [
+        "অ্যাডভার্বিয়াল ক্লজে (when, while, though, although, if, unless) subject এবং verb 'be' (am/is/are/was/were) বাদ দেওয়া যায়, যদি তা main clause-এর subject-এর সমান হয়।",
+        "Comparative clause-এ than/as-এর পরে auxiliary বা be verb বাদ দেওয়া যায়।",
+        "যদি passive voice-এর অংশ হয়, তবে subject এবং be verb বাদ গিয়ে শুধু past participle থাকে: 'Fill in the form as [it is] shown below.'",
+        "এই স্ট্রাকচারটি ইংরেজি রাইটিংকে অনেক বেশি প্রফেশনাল ও অ্যাডভান্সড করে তোলে।"
+      ],
+      "examples": [
+        { "en": "While walking in the park, I met an old friend. (While I was walking...)", "bn": "পার্কে হাঁটার সময়, আমি এক পুরোনো বন্ধুর সাথে দেখা করেছিলাম।" },
+        { "en": "Although very busy, she managed to attend the meeting. (Although she was...)", "bn": "খুব ব্যস্ত থাকা সত্ত্বেও, সে মিটিংয়ে উপস্থিত হতে পেরেছিল।" },
+        { "en": "When in doubt, always ask for help. (When you are in doubt...)", "bn": "সন্দেহ হলে, সর্বদা সাহায্যের জন্য জিজ্ঞাসা করুন।" },
+        { "en": "He runs faster than I do. (He runs faster than I run.)", "bn": "সে আমার চেয়ে দ্রুত দৌড়ায়।" },
+        { "en": "Please send the report as soon as possible. (as soon as it is possible.)", "bn": "দয়া করে যত তাড়াতাড়ি সম্ভব রিপোর্টটি পাঠান।" },
+        { "en": "If necessary, we can postpone the trip. (If it is necessary...)", "bn": "যদি প্রয়োজন হয়, আমরা ট্রিপটি স্থগিত করতে পারি।" },
+        { "en": "Unless accompanied by an adult, children are not allowed.", "bn": "প্রাপ্তবয়স্কদের সাথে না থাকলে, শিশুদের অনুমতি দেওয়া হয় না।" },
+        { "en": "She plays the piano better than her sister. (than her sister plays.)", "bn": "সে তার বোনের চেয়ে ভালো পিয়ানো বাজায়।" },
+        { "en": "He is not as clever as he thinks. (as he thinks he is.)", "bn": "সে যতটা মনে করে ততটা চালাক নয়।" },
+        { "en": "Cook the chicken until golden brown. (until it is golden brown.)", "bn": "চিকেনটি সোনালী বাদামী হওয়া পর্যন্ত রান্না করুন।" }
+      ],
+      "tips": "অ্যাডভার্বিয়াল ক্লজে Ellipsis করার সময় সাবধানে থাকবেন যাতে দুটি ক্লজের subject একই হয়। যদি ভিন্ন subject হয় এবং আপনি প্রথম subject বাদ দিয়ে দেন, তবে তা 'Dangling Modifier' বা ব্যাকরণগত ভুল হিসেবে গণ্য হবে।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "She went to Paris and he went to Rome too. (Overuse of repetitive verbs when unnecessary)",
+      "correct": "She went to Paris and he to Rome.",
+      "explanation": "যখন দুটি ভিন্ন সাবজেক্ট একই কাজ করে (went), তখন দ্বিতীয় ক্লজ থেকে মূল ক্রিয়াপদটি বাদ দেওয়া যায়। একে 'gapping' বলা হয়। 'he went to Rome' না লিখে 'he to Rome' লেখা অনেক বেশি ক্লাসি ও অ্যাডভান্সড।"
+    },
+    {
+      "wrong": "Are you happy? Yes, I do.",
+      "correct": "Are you happy? Yes, I am. (Or 'Yes, I am happy.')",
+      "explanation": "Ellipsis-এর সময় মূল ক্লজের verb-এর সাথে মিল রেখে auxiliary ব্যবহার করতে হবে। যেহেতু প্রশ্নে 'be' verb (Are) ব্যবহার করা হয়েছে, তাই উত্তরেও 'be' verb (am) ব্যবহার করতে হবে, 'do' নয়।"
+    },
+    {
+      "wrong": "Would you like to come with us? Yes, I'd love.",
+      "correct": "Would you like to come with us? Yes, I'd love to.",
+      "explanation": "Infinitive Ellipsis-এর ক্ষেত্রে 'to' বাদ দেওয়া যাবে না। 'I'd love' লিখলে বাক্যটি অসম্পূর্ণ শোনায়; সঠিক রূপটি হলো 'I'd love to' (যেখানে 'to'-এর পর 'come' শব্দটি মনে মনে ধরে নেওয়া হয়)।"
+    },
+    {
+      "wrong": "While study for the exam, she fell asleep.",
+      "correct": "While studying for the exam, she fell asleep. (Or 'While she was studying...')",
+      "explanation": "অ্যাডভার্বিয়াল ক্লজে Ellipsis করলে 'subject + be verb' সম্পূর্ণ বাদ যায় এবং main verb-এর সাথে -ing থাকে। 'While study' ব্যাকরণগতভাবে ভুল; সঠিক হলো 'While studying'."
+    },
+    {
+      "wrong": "Although tired, the work was finished on time.",
+      "correct": "Although tired, he finished the work on time.",
+      "explanation": "এটি একটি 'Dangling Modifier' ভুল। 'Although tired' ক্লজটিতে 'tired' কে তা উল্লেখ নেই। তাই পরবর্তী ক্লজের Subject-কে অবশ্যই সেই ব্যক্তি হতে হবে (He)। তা না হলে বোঝাবে 'কাজটি ক্লান্ত ছিল' (the work was tired), যা অবাস্তব।"
+    },
+    {
+      "wrong": "I have two cars. The black is faster.",
+      "correct": "I have two cars. The black one is faster.",
+      "explanation": "Countable noun-এর ক্ষেত্রে singular subject নির্দেশ করতে শুধুমাত্র Adjective ('black') একা বসতে পারে না, তার সাথে 'one' বসাতে হবে। সুতরাং 'The black one' সঠিক।"
+    },
+    {
+      "wrong": "I need a pen to write, but I don't have one to write with.",
+      "correct": "I need a pen to write with, but I don't have one to write.",
+      "explanation": "Infinitive-এর সাথে যদি কোনো preposition যুক্ত থাকে (যেমন 'write with'), তবে Ellipsis করার সময়েও সেই preposition-টি বাক্যে রেখে দিতে হবে। যেমন: 'I need a chair to sit on, but there is no chair to sit [on].'"
+    },
+    {
+      "wrong": "I haven't seen the movie but she is.",
+      "correct": "I haven't seen the movie but she has.",
+      "explanation": "প্রথম ক্লজে perfect tense ('haven't seen') থাকার কারণে দ্বিতীয় ক্লজের ellipsis-এ perfect tense-এর auxiliary 'has' ব্যবহার করতে হবে, continuous-এর 'is' নয়।"
+    }
+  ]
 }

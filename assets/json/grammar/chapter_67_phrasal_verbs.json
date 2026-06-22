@@ -1,10 +1,202 @@
 {
   "chapter": 67,
   "level": "Advanced",
-  "title": "Phrasal Verbs",
+  "title": "Phrasal Verbs (ফ্রেজাল ভার্ব)",
   "icon": "merge",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Phrasal Verbs are multi-word verbs consisting of a verb and one or more particles (prepositions or adverbs). They are a cornerstone of fluent English, bridging informal speech and semi-formal writing. Mastering advanced phrasal verbs involves understanding their transitivity, separability, structural patterns (including three-word verbs), and nominalized forms. This chapter will enable you to use them naturally and avoid common syntax traps.",
+  "banglaDescription": "ফ্রেজাল ভার্ব (Phrasal Verbs) হলো বহুপদী ক্রিয়া যা একটি মূল ক্রিয়াপদ (verb) এবং এক বা একাধিক পার্টিকল (preposition বা adverb) নিয়ে গঠিত হয়। এগুলো সাবলীল ইংরেজির অন্যতম প্রধান ভিত্তি, যা কথ্য ভাষা এবং আধা-আনুষ্ঠানিক লেখার মধ্যে সংযোগ তৈরি করে। অ্যাডভান্সড স্তরের ফ্রেজাল ভার্ব আয়ত্ত করার জন্য এদের সকর্মকতা (transitivity), পৃথকীকরণযোগ্যতা (separability), বাক্যের গঠনগত প্যাটার্ন (তিন শব্দের ভার্বসহ) এবং নাউন হিসেবে এদের রূপান্তর বোঝা অত্যন্ত জরুরি। এই চ্যাপ্টারটি আপনাকে এগুলোকে স্বাভাবিকভাবে ব্যবহার করতে এবং সাধারণ গঠনগত ভুলগুলো এড়াতে সাহায্য করবে।",
+  "topics": [
+    {
+      "name": "Transitive vs. Intransitive Phrasal Verbs (সকর্মক বনাম অকর্মক ফ্রেজাল ভার্ব)",
+      "banglaName": "সকর্মক বনাম অকর্মক ফ্রেজাল ভার্ব",
+      "definition": "Phrasal verbs are classified into transitive and intransitive based on whether they require an object. Transitive phrasal verbs require a direct object to complete their meaning (e.g., 'turn down the offer'). Intransitive phrasal verbs make complete sense without any object (e.g., 'the plane took off'). Some phrasal verbs can be both, but with completely different meanings.",
+      "banglaDefinition": "বাক্যে অবজেক্ট বা কর্মের প্রয়োজনীয়তার ওপর ভিত্তি করে ফ্রেজাল ভার্বগুলোকে সকর্মক (transitive) এবং অকর্মক (intransitive) এই দুই ভাগে ভাগ করা হয়। সকর্মক ফ্রেজাল ভার্বের অর্থ সম্পূর্ণ করার জন্য একটি সরাসরি অবজেক্টের প্রয়োজন হয় (যেমন: 'turn down the offer')। অকর্মক ফ্রেজাল ভার্ব কোনো অবজেক্ট ছাড়াই সম্পূর্ণ অর্থ প্রকাশ করতে পারে (যেমন: 'the plane took off')। কিছু ফ্রেজাল ভার্ব উভয়ই হতে পারে, তবে সেক্ষেত্রে তাদের অর্থ সম্পূর্ণ ভিন্ন হয়ে যায়।",
+      "formula": "Transitive: Subject + Phrasal Verb + Direct Object\nIntransitive: Subject + Phrasal Verb (No Object)",
+      "rules": [
+        "Transitive ফ্রেজাল ভার্বের পর অবশ্যই একটি noun বা pronoun অবজেক্ট হিসেবে বসাতে হবে, অন্যথায় বাক্য অসম্পূর্ণ থাকবে।",
+        "Intransitive ফ্রেজাল ভার্বের পর কোনো অবজেক্ট বসে না; বাক্যটি সেখানেই শেষ হতে পারে বা অ্যাডভার্বিয়াল ফ্রেজ যুক্ত হতে পারে।",
+        "উভয় রূপের উদাহরণ: 'take off' যখন সকর্মক তখন এর অর্থ পোশাক খুলে ফেলা ('take off your coat'), আর যখন অকর্মক তখন এর অর্থ বিমান উড্ডয়ন করা ('the plane took off')।"
+      ],
+      "examples": [
+        { "en": "Intransitive: The plane took off at exactly 9:00 AM.", "bn": "অকর্মক: বিমানটি ঠিক সকাল ৯:০০ টায় উড্ডয়ন করেছিল। (কোনো অবজেক্ট নেই)" },
+        { "en": "Transitive: Please take off your muddy shoes before entering.", "bn": "সকর্মক: দয়া করে ভেতরে ঢোকার আগে আপনার কর্দমাক্ত জুতো জোড়া খুলে ফেলুন। (Shoes হলো অবজেক্ট)" },
+        { "en": "Intransitive: Our car broke down on the highway.", "bn": "অকর্মক: আমাদের গাড়িটি হাইওয়েতে নষ্ট হয়ে গিয়েছিল।" },
+        { "en": "Transitive: The police broke down the locked door.", "bn": "সকর্মক: পুলিশ লক করা দরজাটি ভেঙে ফেলেছিল।" },
+        { "en": "Intransitive: He was speaking, but suddenly passed out.", "bn": "অকর্মক: সে কথা বলছিল, কিন্তু হঠাৎ অচেতন হয়ে পড়েছিল। (pass out = জ্ঞান হারানো)" },
+        { "en": "Transitive: The teacher passed out the exam papers.", "bn": "সকর্মক: শিক্ষক পরীক্ষার খাতাগুলো বিতরণ করেছিলেন। (pass out = বিতরণ করা)" },
+        { "en": "Intransitive: You have worked hard; it is time to show off.", "bn": "অকর্মক: তুমি অনেক পরিশ্রম করেছ; এখন নিজের দক্ষতা দেখানোর সময় এসেছে। (show off = নিজেকে জাহির করা)" },
+        { "en": "Transitive: He bought a sports car just to show off his wealth.", "bn": "সকর্মক: সে কেবল তার সম্পদ জাহির করার জন্য একটি স্পোর্টস কার কিনেছিল।" },
+        { "en": "Intransitive: The negotiations fell through at the last minute.", "bn": "অকর্মক: শেষ মুহূর্তে আলোচনাটি ব্যর্থ হয়েছিল। (fall through = ব্যর্থ হওয়া)" },
+        { "en": "Transitive: We need to carry out the experiment carefully.", "bn": "সকর্মক: আমাদের পরীক্ষাটি সাবধানে সম্পন্ন করতে হবে। (carry out = সম্পন্ন করা)" }
+      ],
+      "tips": "কোনো ফ্রেজাল ভার্ব transitive নাকি intransitive তা বোঝার জন্য নিজেকে প্রশ্ন করুন: 'কাকে বা কী?' (Whom or What?)। যদি এই প্রশ্নের উত্তরের প্রয়োজন হয়, তবে ভার্বটি Transitive।"
+    },
+    {
+      "name": "Separable vs. Inseparable Phrasal Verbs (পৃথকীকরণযোগ্য বনাম অপৃথকীকরণযোগ্য)",
+      "banglaName": "Separable বনাম Inseparable Phrasal Verbs",
+      "definition": "Transitive phrasal verbs are either separable or inseparable. With separable phrasal verbs, the direct object can be placed either after the particle or between the verb and the particle. However, if the object is a pronoun (him, her, it, them, us, me), it MUST be placed between the verb and the particle. Inseparable phrasal verbs can never be separated; the object always follows the particle.",
+      "banglaDefinition": "সকর্মক বা Transitive ফ্রেজাল ভার্বগুলো আবার দুই প্রকার: পৃথকীকরণযোগ্য (separable) এবং অপৃথকীকরণযোগ্য (inseparable)। Separable-এর ক্ষেত্রে অবজেক্টটি পার্টিকলের পরেও বসতে পারে, আবার ভার্ব ও পার্টিকলের মাঝখানেও বসতে পারে। তবে অবজেক্টটি যদি কোনো Pronoun (him, her, it, them) হয়, তবে তা বাধ্যতামূলকভাবে মাঝখানেই বসাতে হবে। Inseparable ফ্রেজাল ভার্বকে কোনো অবস্থাতেই আলাদা করা যায় না; অবজেক্ট সবসময় পার্টিকলের পরেই বসে।",
+      "formula": "Separable (Noun Obj): Verb + Particle + Noun / Verb + Noun + Particle\nSeparable (Pronoun Obj): Verb + Pronoun + Particle (Mandatory)\nInseparable: Verb + Particle + Object (Noun or Pronoun)",
+      "rules": [
+        "Separable ভার্বের ক্ষেত্রে 'turn on the light' এবং 'turn the light on' উভয়ই সঠিক।",
+        "কিন্তু pronoun হলে কেবল 'turn it on' সঠিক; 'turn on it' সম্পূর্ণ ভুল ব্যাকরণ।",
+        "Inseparable ফ্রেজাল ভার্বের ক্ষেত্রে অবজেক্ট নাউন বা প্রোনাউন যাই হোক না কেন, তা সর্বদা শেষে বসবে: 'look after him' (look him after ভুল)।"
+      ],
+      "examples": [
+        { "en": "Separable (Noun): I need to set up a meeting. / I need to set a meeting up.", "bn": "আমার একটি মিটিং সেট আপ করা প্রয়োজন। (উভয়ই সঠিক)" },
+        { "en": "Separable (Pronoun): I have to set it up today. (Not: set up it)", "bn": "আমাকে আজ এটি সেট আপ করতে হবে। (it মাঝখানে বসানো বাধ্যতামূলক)" },
+        { "en": "Separable: Don't forget to wake up John. / Don't forget to wake John up.", "bn": "জনকে জাগাতে ভুলো না।" },
+        { "en": "Separable: Wake him up before 7 AM. (Not: wake up him)", "bn": "সকাল ৭টার আগে তাকে জাগিয়ে দাও।" },
+        { "en": "Inseparable: The nurse will look after the patient. (Not: look the patient after)", "bn": "নার্স রোগীর দেখাশোনা করবেন। (look after একটি inseparable ভার্ব)" },
+        { "en": "Inseparable: She will look after him tonight. (Not: look him after)", "bn": "সে আজ রাতে তার দেখাশোনা করবে।" },
+        { "en": "Inseparable: I ran into an old friend yesterday. (Not: ran an old friend into)", "bn": "গতকাল হঠাৎ আমার এক পুরোনো বন্ধুর সাথে দেখা হয়েছিল। (run into = হঠাৎ দেখা হওয়া)" },
+        { "en": "Inseparable: I ran into her at the mall. (Not: ran her into)", "bn": "শপিং মলে আমার তার সাথে হঠাৎ দেখা হয়েছিল।" },
+        { "en": "Separable: They had to call off the match. / They had to call the match off.", "bn": "তারা ম্যাচটি বাতিল করতে বাধ্য হয়েছিল। (call off = বাতিল করা)" },
+        { "en": "Separable: The weather was bad, so they called it off. (Not: called off it)", "bn": "আবহাওয়া খারাপ ছিল, তাই তারা এটি বাতিল করেছিল।" }
+      ],
+      "tips": "অভিধানে বা ডিকশনারিতে ফ্রেজাল ভার্ব খোঁজার সময় যদি 'turn something on' বা 'call someone back' এভাবে লেখা দেখেন, তবে বুঝবেন সেটি Separable। আর যদি 'run into someone' বা 'look after someone' লেখা দেখেন, তবে সেটি Inseparable।"
+    },
+    {
+      "name": "Three-Word Phrasal Verbs (তিন শব্দের ফ্রেজাল ভার্ব)",
+      "banglaName": "তিন শব্দের ফ্রেজাল ভার্ব",
+      "definition": "Three-word phrasal verbs (often called phrasal-prepositional verbs) consist of a verb, an adverb particle, and a preposition (e.g., 'look forward to', 'run out of', 'get along with'). These verbs are always transitive and always inseparable. The direct object must follow the final preposition.",
+      "banglaDefinition": "তিন শব্দের ফ্রেজাল ভার্ব (যাকে ফ্রেজাল-প্রিপজিশনাল ভার্বও বলা হয়) একটি মূল ভার্ব, একটি অ্যাডভার্ব পার্টিকল এবং একটি প্রিপজিশন নিয়ে গঠিত হয় (যেমন: 'look forward to', 'run out of', 'get along with')। এই ভার্বগুলো সর্বদা সকর্মক (transitive) এবং সর্বদা অপৃথকীকরণযোগ্য (inseparable) হয়। সরাসরি অবজেক্টটি সর্বদা শেষ প্রিপজিশনটির পরেই বসে।",
+      "formula": "Subject + Verb + Adverb + Preposition + Direct Object (Noun/Pronoun)",
+      "rules": [
+        "তিন শব্দের ফ্রেজাল ভার্বকে কখনো ভেঙে মাঝখানে অবজেক্ট বা প্রোনাউন বসানো যাবে না।",
+        "যেমন: 'I can't put up with him' (সঠিক), 'I can't put him up with' (ভুল)।",
+        "এদের অর্থ সাধারণত অত্যন্ত অলঙ্কারিক বা ভাবার্থমূলক হয়ে থাকে।"
+      ],
+      "examples": [
+        { "en": "We have run out of printer paper; we need to buy more.", "bn": "আমাদের প্রিন্টারের কাগজ শেষ হয়ে গেছে; আমাদের আরও কিনতে হবে। (run out of = শেষ হয়ে যাওয়া)" },
+        { "en": "I am really looking forward to vacationing in Japan.", "bn": "আমি জাপানে ছুটি কাটানোর জন্য অধীর আগ্রহে অপেক্ষা করছি। (look forward to = অধীর আগ্রহে অপেক্ষা করা)" },
+        { "en": "How do you put up with his constant complaining?", "bn": "তুমি কীভাবে তার অবিরত অভিযোগ সহ্য করো? (put up with = সহ্য করা)" },
+        { "en": "The team came up with a brilliant strategy to increase sales.", "bn": "দলটি বিক্রি বাড়ানোর জন্য একটি চমৎকার কৌশল বের করেছে। (come up with = নতুন আইডিয়া বা সমাধান বের করা)" },
+        { "en": "She decided to cut down on sugar to improve her health.", "bn": "সে তার স্বাস্থ্যের উন্নতির জন্য চিনি খাওয়ার পরিমাণ কমানোর সিদ্ধান্ত নিয়েছে। (cut down on = পরিমাণ কমানো)" },
+        { "en": "I need to catch up with my classmate on the missed lessons.", "bn": "হারিয়ে যাওয়া পড়াগুলো পুষিয়ে নিতে আমার সহপাঠীর সাথে যোগাযোগ করা প্রয়োজন। (catch up with = সমান তালে এগিয়ে যাওয়া/পুষিয়ে নেওয়া)" },
+        { "en": "We must get rid of these old, broken chairs.", "bn": "আমাদের এই পুরোনো, ভাঙা চেয়ারগুলো ফেলে দিতে হবে/মুক্ত হতে হবে। (get rid of = মুক্তি পাওয়া/ফেলে দেওয়া)" },
+        { "en": "He doesn't get along with his new colleagues.", "bn": "সে তার নতুন সহকর্মীদের সাথে সুসম্পর্ক বজায় রাখতে পারছে না। (get along with = সুসম্পর্ক থাকা)" },
+        { "en": "The suspect tried to get away with the stolen diamonds.", "bn": "সন্দেহভাজন ব্যক্তিটি চুরি হওয়া হীরা নিয়ে পার পেয়ে যাওয়ার চেষ্টা করেছিল। (get away with = শাস্তি না পেয়ে পার পাওয়া)" },
+        { "en": "You must face up to the reality of the situation.", "bn": "তোমাকে অবশ্যই পরিস্থিতির বাস্তবতার মুখোমুখি হতে হবে। (face up to = সাহসের সাথে মুখোমুখি হওয়া)" }
+      ],
+      "tips": "তিন শব্দের ফ্রেজাল ভার্বগুলো একাডেমিক ও ফরমাল রাইটিংয়ে লেখার গভীরতা বাড়ায়। তবে মনে রাখবেন, এদের শেষে থাকা প্রিপজিশনটি (যেমন: to, of, with) কোনোভাবেই বাদ দেওয়া যাবে না।"
+    },
+    {
+      "name": "Idiomatic vs. Literal Phrasal Verbs (ভাবার্থমূলক বনাম আক্ষরিক ফ্রেজাল ভার্ব)",
+      "banglaName": "ভাবার্থমূলক বনাম আক্ষরিক ফ্রেজাল ভার্ব",
+      "definition": "Literal phrasal verbs have a meaning that can be easily understood from the combined meaning of the verb and the particle (e.g., 'take inside', 'stand up'). Idiomatic phrasal verbs have completely abstract, non-literal meanings that cannot be guessed easily (e.g., 'give up' meaning surrender). Many phrasal verbs have both a literal and an idiomatic meaning depending on the context.",
+      "banglaDefinition": "আক্ষরিক বা Literal ফ্রেজাল ভার্বের অর্থ তার উপাদানগুলোর (verb এবং particle) সাধারণ অর্থ দেখেই সহজে বোঝা যায় (যেমন: 'stand up' মানে উঠে দাঁড়ানো)। ভাবার্থমূলক বা Idiomatic ফ্রেজাল ভার্বের অর্থ সম্পূর্ণ অমূর্ত বা রূপক হয়, যা সহজে আন্দাজ করা যায় না (যেমন: 'give up' অর্থ হাল ছেড়ে দেওয়া বা আত্মসমর্পণ করা)। অনেক ফ্রেজাল ভার্বের প্রসঙ্গ অনুযায়ী আক্ষরিক এবং ভাবার্থমূলক উভয় অর্থই থাকতে পারে।",
+      "formula": "Literal: Verb (Physical action) + Particle (Direction/Place)\nIdiomatic: Verb + Particle = New abstract concept",
+      "rules": [
+        "আক্ষরিক ব্যবহারের ক্ষেত্রে পার্টিকলটি সাধারণত দিক বা স্থান নির্দেশ করে: 'Look up at the sky' (আক্ষরিক)।",
+        "ভাবার্থমূলক ব্যবহারের ক্ষেত্রে সম্পূর্ণ নতুন অর্থ প্রকাশ পায়: 'Look up the word in the dictionary' (look up = খুঁজে বের করা)।",
+        "পড়ার সময় বাক্যের অর্থ এবং চারপাশের প্রেক্ষাপট বিবেচনা করা অত্যন্ত জরুরি।"
+      ],
+      "examples": [
+        { "en": "Literal: He blew up the red balloon with helium.", "bn": "আক্ষরিক: সে হিলিয়াম দিয়ে লাল বেলুনটি ফুলিয়েছিল। (blow up = ফোলানো)" },
+        { "en": "Idiomatic: The terrorists planned to blow up the bridge.", "bn": "ভাবার্থমূলক: সন্ত্রাসীরা সেতুটি উড়িয়ে দেওয়ার পরিকল্পনা করেছিল। (blow up = বোমা দিয়ে ওড়ানো)" },
+        { "en": "Literal: Please look up at the beautiful stars.", "bn": "আক্ষরিক: দয়া করে সুন্দর তারাগুলোর দিকে ওপরের দিকে তাকান।" },
+        { "en": "Idiomatic: If you don't know the word, look it up in the dictionary.", "bn": "ভাবার্থমূলক: তুমি যদি শব্দটি না জানো, তবে ডিকশনারিতে এটি খুঁজে বের করো। (look up = তথ্য খোঁজা)" },
+        { "en": "Literal: The car broke down on our way to the beach.", "bn": "আক্ষরিক: সৈকতে যাওয়ার পথে আমাদের গাড়িটি বিকল/নষ্ট হয়ে গিয়েছিল।" },
+        { "en": "Idiomatic: She broke down in tears when she heard the news.", "bn": "ভাবার্থমূলক: খবরটি শুনে সে কান্নায় ভেঙে পড়েছিল। (break down = মানসিকভাবে ভেঙে পড়া)" },
+        { "en": "Literal: Put on your coat; it's freezing outside.", "bn": "আক্ষরিক: তোমার কোটটি পরিধান করো; বাইরে প্রচণ্ড ঠান্ডা। (put on = পরিধান করা)" },
+        { "en": "Idiomatic: The school is planning to put on a play next month.", "bn": "ভাবার্থমূলক: স্কুল কর্তৃপক্ষ আগামী মাসে একটি নাটক মঞ্চস্থ করার পরিকল্পনা করছে। (put on = মঞ্চস্থ করা/আয়োজন করা)" },
+        { "en": "Literal: Take off your shoes, please.", "bn": "আক্ষরিক: দয়া করে আপনার জুতো জোড়া খুলে ফেলুন।" },
+        { "en": "Idiomatic: The company's sales are expected to take off next quarter.", "bn": "ভাবার্থমূলক: আগামী কোয়ার্টারে কোম্পানির বিক্রি দ্রুত বৃদ্ধি পাবে বলে আশা করা হচ্ছে। (take off = দ্রুত সফল হওয়া)" }
+      ],
+      "tips": "আইইএলটিএস স্পিকিং টেস্টে ইংরেজি ভাষার ওপর আপনার স্বাভাবিক ও সাবলীল দখল প্রমাণ করার জন্য ভাবার্থমূলক ফ্রেজাল ভার্বের (যেমন: break down, blow up) রূপক ব্যবহার অত্যন্ত কার্যকর।"
+    },
+    {
+      "name": "Phrasal Verbs in Academic and Formal Registers (একাডেমিক ও ফরমাল রাইটিংয়ে ফ্রেজাল ভার্ব)",
+      "banglaName": "একাডেমিক ও ফরমাল রাইটিংয়ে ফ্রেজাল ভার্ব",
+      "definition": "While phrasal verbs are extremely common in spoken and informal English, they are often considered less appropriate for high-level academic or formal writing. Formal English prefers single-word verbs (usually of Latin or French origin). However, some phrasal verbs are widely accepted in academic writing if they do not have a precise single-word equivalent (e.g., 'carry out research', 'point out a fact').",
+      "banglaDefinition": "ফ্রেজাল ভার্ব কথ্য ও অনানুষ্ঠানিক ইংরেজিতে অত্যন্ত সাধারণ হলেও, উচ্চমানের অ্যাকাডেমিক বা প্রাতিষ্ঠানিক রচনায় এগুলোকে কিছুটা কম উপযুক্ত মনে করা হয়। ফরমাল ইংরেজি সাধারণত ল্যাটিন বা ফরাসি মূলের একক শব্দের ক্রিয়াপদ (single-word verbs) পছন্দ করে। তবে, কিছু ফ্রেজাল ভার্ব অ্যাকাডেমিক লেখাতেও ব্যাপকভাবে গ্রহণযোগ্য, যদি তাদের কোনো সুনির্দিষ্ট একক শব্দের বিকল্প না থাকে (যেমন: 'carry out research', 'point out a fact')।",
+      "formula": "Informal: Subject + Phrasal Verb + Object\nFormal Equivalent: Subject + Single-word Latinate Verb + Object",
+      "rules": [
+        "অ্যাকাডেমিক নিবন্ধ বা প্রফেশনাল ইমেইলে 'put off'-এর পরিবর্তে 'postpone' ব্যবহার করা ভালো।",
+        "'Bring up'-এর পরিবর্তে 'introduce' বা 'mention' ব্যবহার করুন।",
+        "তবে জোর করে অপ্রাকৃতিক জটিল শব্দ ব্যবহারের চেয়ে বহুল প্রচলিত অ্যাকাডেমিক ফ্রেজাল ভার্ব (যেমন: set up, go over) ব্যবহার করা শতগুণ শ্রেয়।"
+      ],
+      "examples": [
+        { "en": "Informal: We need to find out why the experiment failed. / Formal: We must determine why the experiment failed.", "bn": "ইনফরমাল: পরীক্ষাটি কেন ব্যর্থ হয়েছে আমাদের খুঁজে বের করতে হবে। / ফরমাল: পরীক্ষাটি কেন ব্যর্থ হয়েছিল তা আমাদের নির্ধারণ করতে হবে।" },
+        { "en": "Informal: They set up a new committee to study the issue. / Formal: They established a new committee to study the issue.", "bn": "ইনফরমাল: তারা বিষয়টি পর্যালোচনার জন্য একটি নতুন কমিটি গঠন করেছিল। / ফরমাল: তারা বিষয়টি পর্যালোচনার জন্য একটি নতুন কমিটি প্রতিষ্ঠা করেছিল।" },
+        { "en": "Informal: She pointed out several errors in the report. / Formal: She identified several errors in the report.", "bn": "ইনফরমাল: সে রিপোর্টে কয়েকটি ভুল চিহ্নিত করেছিল।" },
+        { "en": "Informal: The researcher carried out the study over three years. / Formal: The researcher conducted the study over three years.", "bn": "ইনফরমাল: গবেষক তিন বছর ধরে গবেষণাটি সম্পন্ন করেছিলেন।" },
+        { "en": "Informal: Don't bring up that controversial topic. / Formal: Do not introduce that controversial topic.", "bn": "ইনফরমাল: ওই বিতর্কিত বিষয়টি আলোচনায় তুলো না। / ফরমাল: ওই বিতর্কিত বিষয়টি উত্থাপন করবেন না।" },
+        { "en": "Informal: We had to put off the conference. / Formal: We had to postpone the conference.", "bn": "ইনফরমাল: আমাদের সম্মেলনটি স্থগিত করতে হয়েছিল।" },
+        { "en": "Informal: The company built up a large customer base. / Formal: The company accumulated a large customer base.", "bn": "ইনফরমাল: কোম্পানিটি একটি বড় কাস্টমার বেস গড়ে তুলেছিল।" },
+        { "en": "Informal: The program was cancelled due to lack of interest. / Formal: The program was terminated due to lack of interest.", "bn": "ইনফরমাল: আগ্রহের অভাবে প্রোগ্রামটি বাতিল করা হয়েছিল।" },
+        { "en": "Informal: Please look over the contract before signing. / Formal: Please review the contract before signing.", "bn": "ইনফরমাল: স্বাক্ষর করার আগে দয়া করে চুক্তিটি একটু দেখে নিন। / ফরমাল: স্বাক্ষর করার পূর্বে দয়া করে চুক্তিটি পর্যালোচনা করুন।" },
+        { "en": "Informal: This theory is built on solid evidence. / Formal: This theory is based on solid evidence.", "bn": "ইনফরমাল: এই তত্ত্বটি শক্ত প্রমাণের ওপর দাঁড়িয়ে আছে। / ফরমাল: এই তত্ত্বটি দৃঢ় প্রমাণের ওপর ভিত্তি করে প্রতিষ্ঠিত।" }
+      ],
+      "tips": "সহজ উপায়: IELTS Academic Writing Task 2-এ লেখার সময় ফ্রেজাল ভার্বের অনানুষ্ঠানিক ব্যবহারের পরিবর্তে ল্যাটিন মূলের একক শব্দ (যেমন: setup -> establish, build up -> accumulate) ব্যবহার করলে ভালো ব্যান্ড স্কোর পাওয়া যায়।"
+    },
+    {
+      "name": "Nominalized Phrasal Verbs (ফ্রেজাল ভার্ব থেকে গঠিত নাউন ও অ্যাডজেক্টিভ)",
+      "banglaName": "ফ্রেজাল ভার্ব থেকে গঠিত নাউন ও অ্যাডজেক্টিভ",
+      "definition": "Many phrasal verbs can be transformed into nouns or adjectives. In this process, the verb and the particle are joined together, often with a hyphen or as a single word. When this nominalization happens, the stress shifts to the first part of the word (e.g., 'to break down' becomes 'a breakdown').",
+      "banglaDefinition": "অনেক ফ্রেজাল ভার্বকে বিশেষ্য (noun) বা বিশেষণে (adjective) রূপান্তর করা যায়। এই প্রক্রিয়ায় মূল ভার্ব এবং পার্টিকলটিকে একসাথে জুড়ে দেওয়া হয়—হয় একটি হাইফেন দিয়ে অথবা সরাসরি একটি একক শব্দ হিসেবে। এই বিশেষ্যকরণের সময় শব্দের উচ্চারণের জোর বা stress প্রথম অংশের ওপর চলে যায় (যেমন: 'to break down' থেকে 'a breakdown')।",
+      "formula": "Phrasal Verb (Verb + Particle) -> Nominalized Noun (Verb-Particle / VerbParticle)",
+      "rules": [
+        "নাউনে রূপান্তর করার সময় সাধারণত স্পেলিংয়ে হাইফেন বসে অথবা দুটি শব্দ মিলে এক হয়ে যায়: 'to break down' -> 'a breakdown'.",
+        "এদের বহুবচন বা plural করার সময় সর্বদা শব্দের শেষে 's' যুক্ত করতে হবে: 'breakdowns' (breaksdown ভুল)।",
+        "এগুলো বাক্যের সাবজেক্ট বা অবজেক্ট হিসেবে চমৎকার কাজ করে।"
+      ],
+      "examples": [
+        { "en": "Verb: Our car broke down on the highway. / Noun: There was a major breakdown of law and order.", "bn": "ভার্ব: আমাদের গাড়ি নষ্ট হয়ে গিয়েছিল। / নাউন: আইনশৃঙ্খলার এক চরম বিপর্যয় ঘটেছিল। (breakdown = বিপর্যয়/নষ্ট হওয়া)" },
+        { "en": "Verb: Remember to back up your computer files. / Noun: Always keep a backup of important documents.", "bn": "ভার্ব: তোমার ফাইলের ব্যাকআপ রাখতে মনে রেখো। / নাউন: গুরুত্বপূর্ণ ডকুমেন্টের সর্বদা একটি ব্যাকআপ রেখো। (backup = অতিরিক্ত কপি)" },
+        { "en": "Verb: The disease broke out in the city. / Noun: The sudden outbreak of the disease caused panic.", "bn": "ভার্ব: শহরে রোগটি ছড়িয়ে পড়েছিল। / নাউন: রোগটির আকস্মিক প্রাদুর্ভাব আতঙ্কের সৃষ্টি করেছিল। (outbreak = প্রাদুর্ভাব)" },
+        { "en": "Verb: He set back our plans by two weeks. / Noun: The project suffered a major setback due to funding issues.", "bn": "ভার্ব: সে আমাদের পরিকল্পনা দুই সপ্তাহ পিছিয়ে দিয়েছিল। / নাউন: ফান্ডের সমস্যার কারণে প্রজেক্টটি একটি বড় ধাক্কার মুখে পড়েছিল। (setback = ধাক্কা/পিছিয়ে পড়া)" },
+        { "en": "Verb: She checked in at the hotel. / Noun: The check-in process was extremely slow.", "bn": "ভার্ব: সে হোটেলে চেক ইন করেছিল। / নাউন: চেক-ইন প্রক্রিয়াটি অত্যন্ত ধীরগতির ছিল।" },
+        { "en": "Verb: I like to work out in the morning. / Noun: He has a daily workout routine.", "bn": "ভার্ব: আমি সকালে ব্যায়াম করতে পছন্দ করি। / নাউন: তার একটি দৈনিক ব্যায়ামের রুটিন রয়েছে। (workout = ব্যায়াম)" },
+        { "en": "Verb: The plane will take off soon. / Noun: Passengers must fasten their seatbelts during takeoff.", "bn": "ভার্ব: বিমানটি শীঘ্রই উড্ডয়ন করবে। / নাউন: উড্ডয়নের সময় যাত্রীদের অবশ্যই সিটবেল্ট বাঁধতে হবে।" },
+        { "en": "Verb: The company covered up the scandal. / Noun: The government was accused of a massive cover-up.", "bn": "ভার্ব: কোম্পানিটি কেলেঙ্কারিটি ধামাচাপা দিয়েছিল। / নাউন: সরকারের বিরুদ্ধে এক বিশাল ধামাচাপা দেওয়ার অভিযোগ উঠেছিল। (cover-up = ধামাচাপা দেওয়া)" },
+        { "en": "Verb: You need to sign in first. / Noun: Please write your name on the sign-in sheet.", "bn": "ভার্ব: তোমাকে প্রথমে সাইন ইন করতে হবে। / নাউন: দয়া করে সাইন-ইন শীটে তোমার নাম লেখো।" },
+        { "en": "Verb: Don't let your anger build up. / Noun: The buildup of traffic was caused by the accident.", "bn": "ভার্ব: তোমার ক্ষোভ জমতে দিও না। / নাউন: দুর্ঘটনার কারণে যানজটের জটলা তৈরি হয়েছিল। (buildup = জটলা/সঞ্চয়)" }
+      ],
+      "tips": "স্পেলিং নিয়ে সতর্ক থাকুন। নাউন রূপগুলো সাধারণত এক শব্দে (takeoff, breakdown, backup) অথবা হাইফেন দিয়ে (check-in, cover-up) লেখা হয়। ভার্ব রূপগুলো সর্বদা দুটি আলাদা শব্দ হিসেবেই লিখতে হবে।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Please call back him when you are free.",
+      "correct": "Please call him back when you are free.",
+      "explanation": "'Call back' একটি separable (পৃথকীকরণযোগ্য) ফ্রেজাল ভার্ব। এর অবজেক্ট হিসেবে যদি কোনো Pronoun (him, her, it, them) ব্যবহার করা হয়, তবে তা বাধ্যতামূলকভাবে ভার্ব ও পার্টিকলের মাঝখানে বসাতে হবে, শেষে নয়।"
+    },
+    {
+      "wrong": "She looked her sister after during the vacation.",
+      "correct": "She looked after her sister during the vacation.",
+      "explanation": "'Look after' একটি inseparable (অপৃথকীকরণযোগ্য) ফ্রেজাল ভার্ব। এর অবজেক্টকে কোনোভাবেই আলাদা করে মাঝখানে বসানো যাবে না; অবজেক্ট সর্বদা 'after'-এর পরেই বসবে।"
+    },
+    {
+      "wrong": "We ran out printer paper.",
+      "correct": "We ran out of printer paper.",
+      "explanation": "তিন শব্দের ফ্রেজাল ভার্বের (phrasal-prepositional verbs) শেষ প্রিপজিশনটি বাদ দেওয়া একটি বড় ভুল। 'run out of' থেকে 'of' বাদ দিলে বাক্যটি সম্পূর্ণ অর্থহীন হয়ে যায়।"
+    },
+    {
+      "wrong": "There were several major breaksdown during the server update.",
+      "correct": "There were several major breakdowns during the server update.",
+      "explanation": "ফ্রেজাল ভার্ব থেকে গঠিত নাউনকে (Nominalized phrasal verbs) প্লুরাল করার সময় সর্বদা শব্দের শেষে 's' যুক্ত করতে হবে (breakdowns), মাঝখানের ভার্বের সাথে (breaksdown) নয়।"
+    },
+    {
+      "wrong": "He decided to set-up a new business.",
+      "correct": "He decided to set up a new business.",
+      "explanation": "যখন ফ্রেজাল ভার্বটি বাক্যের ক্রিয়া বা Verb হিসেবে বসে, তখন হাইফেন (-) ব্যবহার করা যাবে না; দুটি আলাদা শব্দ লিখতে হবে। হাইফেন কেবল নাউন বা অ্যাডজেক্টিভ রূপের ক্ষেত্রে প্রযোজ্য।"
+    },
+    {
+      "wrong": "I am looking forward to meet you next week.",
+      "correct": "I am looking forward to meeting you next week.",
+      "explanation": "'Look forward to' ফ্রেজাল ভার্বটির শেষের 'to' একটি প্রিপজিশন, এটি কোনো infinitive marker নয়। তাই এর পর যদি কোনো ভার্ব আসে, তবে তার সাথে বাধ্যতামূলকভাবে -ing যুক্ত করতে হবে (meeting)।"
+    },
+    {
+      "wrong": "The business plan fell through us.",
+      "correct": "Our business plan fell through.",
+      "explanation": "'Fall through' (ব্যর্থ হওয়া) একটি intransitive বা অকর্মক ফ্রেজাল ভার্ব। এর কোনো সরাসরি অবজেক্ট থাকে না। তাই 'fell through us' লেখা ভুল; সঠিক রূপটি হলো 'Our plan fell through'."
+    },
+    {
+      "wrong": "We had to put off it because of the rain.",
+      "correct": "We had to put it off because of the rain.",
+      "explanation": "'Put off' (স্থগিত করা) একটি separable ফ্রেজাল ভার্ব। যেহেতু অবজেক্টটি একটি pronoun ('it'), তাই এটিকে অবশ্যই 'put' এবং 'off'-এর মাঝখানে বসাতে হবে।"
+    }
+  ]
 }

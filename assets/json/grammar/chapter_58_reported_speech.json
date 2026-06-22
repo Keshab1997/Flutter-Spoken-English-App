@@ -1,10 +1,210 @@
 {
   "chapter": 58,
   "level": "Advanced",
-  "title": "Reported Speech",
+  "title": "Reported Speech (পরোক্ষ উক্তি)",
   "icon": "format_quote",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Reported Speech (or Indirect Speech) is the grammatical construction used to report what someone else has said without quoting their exact words. Mastery of advanced reported speech requires a deep understanding of tense backshifting, pronoun and time/place adverbial adjustments, reporting questions without inversion, and using a wide variety of specialized reporting verbs (like 'insist', 'accuse', 'deny', and 'suggest') instead of just 'say' or 'tell'.",
+  "banglaDescription": "রিপোর্টেড স্পীচ (বা পরোক্ষ উক্তি) হলো এমন একটি ব্যাকরণগত কাঠামো যা অন্য কেউ যা বলেছে তা হুবহু উদ্ধৃত না করে নিজের ভাষায় প্রকাশ করতে ব্যবহৃত হয়। অ্যাডভান্সড লেভেলের রিপোর্টেড স্পীচ আয়ত্ত করতে টেন্সের পরিবর্তন (backshifting), প্রোনাউন এবং সময় ও স্থানের পরিবর্তন, প্রশ্নবোধক বাক্যকে সাধারণ বাক্যের মতো রূপান্তর করা এবং কেবল 'say' বা 'tell' ব্যবহার না করে জটিল ও বিশেষায়িত রিপোর্টিং ভার্ব (যেমন: 'insist', 'accuse', 'deny', 'suggest') ব্যবহার করা শিখতে হয়।",
+  "topics": [
+    {
+      "name": "Tense Backshifting and Pronoun Shifts with Exceptions (টেন্সের ব্যাকশিফটিং, প্রোনাউন পরিবর্তন ও ব্যতিক্রমসমূহ)",
+      "banglaName": "Tense Backshifting, Pronoun Shifts ও ব্যতিক্রমসমূহ",
+      "definition": "When reporting speech, if the reporting verb is in the past tense, the verbs in the reported clause typically shift one tense back (e.g., Simple Present becomes Simple Past, Present Perfect becomes Past Perfect). Pronouns also shift to reflect the speaker's perspective. However, backshifting is NOT required if the reported statement is a universal truth, a habit, or still true at the time of reporting.",
+      "banglaDefinition": "যদি Reporting Verb-টি Past Tense-এ থাকে, তবে সাধারণত Reported Clause-এর টেন্স এক ধাপ পেছনে চলে যায় (যেমন: Simple Present হয়ে যায় Simple Past, Present Perfect হয়ে যায় Past Perfect)। একে Backshifting বলে। বক্তার দৃষ্টিভঙ্গি অনুযায়ী Pronoun-ও পরিবর্তিত হয়। তবে, যদি বক্তব্যটি কোনো চিরন্তন সত্য, অভ্যাসগত কাজ বা এখনও সত্য এমন কোনো বিষয় প্রকাশ করে, তবে টেন্স পরিবর্তনের প্রয়োজন হয় না।",
+      "formula": "Direct: Subject 1 + said, \"Subject 2 + Verb (Tense A) ...\"\nIndirect: Subject 1 + said (that) + Subject 2 + Verb (Tense B/Backshifted) ...",
+      "rules": [
+        "Simple Present -> Simple Past; Present Continuous -> Past Continuous.",
+        "Simple Past -> Past Perfect; Present Perfect -> Past Perfect.",
+        "Past Continuous -> Past Perfect Continuous; Future (will) -> Would.",
+        "যদি রিপোর্টিং ভার্বটি Present বা Future Tense-এ থাকে (যেমন: says, will say), তবে টেন্সের কোনো পরিবর্তন হবে না।",
+        "চিরন্তন সত্য (Universal Truth) বা বৈজ্ঞানিক তথ্যের ক্ষেত্রে টেন্স অপরিবর্তিত থাকে: 'The earth is round' -> 'that the earth is round'.",
+        "যদি পরিস্থিতিটি কথা বলার সময়ও সত্য থাকে, তবে টেন্স পরিবর্তন ঐচ্ছিক (optional): 'I love chocolate' -> 'He said he loves/loved chocolate'."
+      ],
+      "examples": [
+        { "en": "Direct: \"I want to visit Rome,\" John said. / Indirect: John said that he wanted to visit Rome.", "bn": "ডাইরেক্ট: \"আমি রোম ভ্রমণ করতে চাই,\" জন বলল। / ইনডাইরেক্ট: জন বলল যে সে রোম ভ্রমণ করতে চায়।" },
+        { "en": "Direct: \"We are preparing the project now,\" they said. / Indirect: They said they were preparing the project then.", "bn": "ডাইরেক্ট: \"আমরা এখন প্রজেক্টটি প্রস্তুত করছি,\" তারা বলল। / ইনডাইরেক্ট: তারা বলল যে তারা তখন প্রজেক্টটি প্রস্তুত করছিল।" },
+        { "en": "Direct: \"I have already eaten dinner,\" she said. / Indirect: She said that she had already eaten dinner.", "bn": "ডাইরেক্ট: \"আমি ইতিমধ্যেই রাতের খাবার খেয়েছি,\" সে বলল। / ইনডাইরেক্ট: সে বলল যে সে ইতিমধ্যেই রাতের খাবার খেয়েছিল।" },
+        { "en": "Direct: \"The sun rises in the east,\" the teacher said. / Indirect: The teacher said that the sun rises in the east.", "bn": "ডাইরেক্ট: \"সূর্য পূর্ব দিকে উদিত হয়,\" শিক্ষক বললেন। / ইনডাইরেক্ট: শিক্ষক বললেন যে সূর্য পূর্ব দিকে উদিত হয়। (চিরন্তন সত্য - টেন্স অপরিবর্তিত)" },
+        { "en": "Direct: \"I bought a new laptop yesterday,\" he said. / Indirect: He said that he had bought a new laptop the day before.", "bn": "ডাইরেক্ট: \"আমি গতকাল একটি নতুন ল্যাপটপ কিনেছি,\" সে বলল। / ইনডাইরেক্ট: সে বলল যে সে তার আগের দিন একটি নতুন ল্যাপটপ কিনেছিল।" },
+        { "en": "Direct: \"I will call you tomorrow,\" Sarah told me. / Indirect: Sarah told me that she would call me the next day.", "bn": "ডাইরেক্ট: \"আমি তোমাকে আগামীকাল কল করব,\" সারাহ আমাকে বলল। / ইনডাইরেক্ট: সারাহ আমাকে বলল যে সে আমাকে পরদিন কল করবে।" },
+        { "en": "Direct: \"Water boils at 100°C,\" the scientist explained. / Indirect: The scientist explained that water boils at 100°C.", "bn": "ডাইরেক্ট: \"পানি ১০০ ডিগ্রি সেলসিয়াসে ফুটতে শুরু করে,\" বিজ্ঞানী ব্যাখ্যা করলেন। / ইনডাইরেক্ট: বিজ্ঞানী ব্যাখ্যা করলেন যে পানি ১০০ ডিগ্রি সেলসিয়াসে ফুটতে শুরু করে।" },
+        { "en": "Direct: He says, \"I am feeling sick.\" / Indirect: He says that he is feeling sick.", "bn": "ডাইরেক্ট: সে বলছে, \"আমার শরীর খারাপ লাগছে।\" / ইনডাইরেক্ট: সে বলছে যে তার শরীর খারাপ লাগছে। (Reporting Verb বর্তমানে থাকায় টেন্স বদলায়নি)" },
+        { "en": "Direct: \"We had completed the task before noon,\" they said. / Indirect: They said they had completed the task before noon.", "bn": "ডাইরেক্ট: \"আমরা দুপুরের আগেই কাজটি শেষ করেছিলাম,\" তারা বলল। / ইনডাইরেক্ট: তারা বলল যে তারা দুপুরের আগেই কাজটি শেষ করেছিল। (Past Perfect অপরিবর্তিত থাকে)" },
+        { "en": "Direct: \"I still live in Dhaka,\" he said today. / Indirect: He said that he still lives in Dhaka.", "bn": "ডাইরেক্ট: \"আমি এখনও ঢাকায় থাকি,\" সে আজ বলল। / ইনডাইরেক্ট: সে বলল যে সে এখনও ঢাকায় থাকে। (এখনও সত্য বিধায় টেন্স অপরিবর্তিত রাখা হয়েছে)" }
+      ],
+      "tips": "মনে রাখবেন, 'say' এবং 'tell'-এর ব্যবহারের পার্থক্য খুব গুরুত্বপূর্ণ। 'Tell'-এর পর অবশ্যই একজন শ্রোতা বা অবজেক্ট বসাতে হবে (যেমন: 'He told me that...'), কিন্তু 'say'-এর পর সরাসরি অবজেক্ট বসে না (যেমন: 'He said that...' অথবা 'He said to me that...')"
+    },
+    {
+      "name": "Reporting Questions: Yes/No and Wh- Questions (প্রশ্নবোধক বাক্যের রূপান্তর)",
+      "banglaName": "প্রশ্নবোধক বাক্যের রূপান্তর",
+      "definition": "When reporting questions, the word order changes from interrogative (verb + subject) to assertive (subject + verb), and the question mark is removed. For Wh- questions, we use the Wh- word as the connector. For Yes/No questions, we use 'if' or 'whether' as the connector. Reporting verbs like 'ask', 'wonder', or 'inquire' are used.",
+      "banglaDefinition": "প্রশ্নবোধক বাক্যকে পরোক্ষ উক্তিতে রূপান্তর করার সময় বাক্যের গঠন ইন্টারোগেটিভ (verb + subject) থেকে পরিবর্তন হয়ে অ্যাসারটিভ (subject + verb) হয়ে যায় এবং প্রশ্নবোধক চিহ্নটি উঠে যায়। Wh- প্রশ্নের ক্ষেত্রে সেই Wh- শব্দটিই লিঙ্কার বা কানেক্টর হিসেবে বসে। Yes/No প্রশ্নের ক্ষেত্রে কানেক্টর হিসেবে 'if' বা 'whether' ব্যবহৃত হয়। রিপোর্টিং ভার্ব হিসেবে 'say'-এর পরিবর্তে 'ask', 'wonder' বা 'inquire' বসে।",
+      "formula": "Wh- Questions: Subject + asked/wondered + wh-word + subject + verb (backshifted)\nYes/No Questions: Subject + asked/wondered + if/whether + subject + verb (backshifted)",
+      "rules": [
+        "ইনডাইরেক্ট প্রশ্নে কোনো Auxiliary Verb (do, does, did) সাবজেক্টের আগে বসবে না।",
+        "বাক্যের শেষে কখনো প্রশ্নবোধক চিহ্ন (?) বসবে না, ফুলস্টপ (.) বসবে।",
+        "Yes/No প্রশ্নের ক্ষেত্রে 'if' বা 'whether' যেকোনো একটি ব্যবহার করা যায়, তবে পছন্দের ক্ষেত্রে 'whether' বেশি আনুষ্ঠানিক ও গ্রহণযোগ্য।",
+        "রিপোর্টিং ভার্বের অবজেক্ট থাকা বাধ্যতামূলক নয়: 'He asked me...' অথবা 'He asked...'"
+      ],
+      "examples": [
+        { "en": "Direct: \"Where do you live?\" she asked. / Indirect: She asked where I lived.", "bn": "ডাইরেক্ট: \"তুমি কোথায় থাকো?\" সে জিজ্ঞাসা করল। / ইনডাইরেক্ট: সে জিজ্ঞাসা করল আমি কোথায় থাকতাম।" },
+        { "en": "Direct: \"Do you like spicy food?\" he asked her. / Indirect: He asked her if she liked spicy food.", "bn": "ডাইরেক্ট: \"তুমি কি ঝাল খাবার পছন্দ করো?\" সে তাকে জিজ্ঞাসা করল। / ইনডাইরেক্ট: সে তাকে জিজ্ঞাসা করল সে ঝাল খাবার পছন্দ করে কি না।" },
+        { "en": "Direct: \"Why did you miss the meeting?\" the manager asked. / Indirect: The manager asked why I had missed the meeting.", "bn": "ডাইরেক্ট: \"তুমি মিটিংটি কেন মিস করেছ?\" ম্যানেজার জিজ্ঞাসা করলেন। / ইনডাইরেক্ট: ম্যানেজার জিজ্ঞাসা করলেন আমি কেন মিটিংটি মিস করেছিলাম।" },
+        { "en": "Direct: \"Are you going to attend the party?\" she asked him. / Indirect: She asked him whether he was going to attend the party.", "bn": "ডাইরেক্ট: \"তুমি কি পার্টিতে যাবে?\" সে তাকে জিজ্ঞাসা করল। / ইনডাইরেক্ট: সে তাকে জিজ্ঞাসা করল সে পার্টিতে যাবে কি না।" },
+        { "en": "Direct: \"What are you doing?\" mother asked me. / Indirect: Mother asked me what I was doing.", "bn": "ডাইরেক্ট: \"তুমি কী করছ?\" মা আমাকে জিজ্ঞাসা করলেন। / ইনডাইরেক্ট: মা আমাকে জিজ্ঞাসা করলেন আমি কী করছিলাম।" },
+        { "en": "Direct: \"Have you seen my keys?\" John asked. / Indirect: John asked if anyone had seen his keys.", "bn": "ডাইরেক্ট: \"তোমরা কি আমার চাবি দেখেছ?\" জন জিজ্ঞাসা করল। / ইনডাইরেক্ট: জন জিজ্ঞাসা করল কেউ তার চাবি দেখেছে কি না।" },
+        { "en": "Direct: \"When will the flight land?\" they inquired. / Indirect: They inquired when the flight would land.", "bn": "ডাইরেক্ট: \"ফ্লাইটটি কখন অবতরণ করবে?\" তারা অনুসন্ধান করল। / ইনডাইরেক্ট: তারা অনুসন্ধান করল ফ্লাইটটি কখন অবতরণ করবে।" },
+        { "en": "Direct: \"Can you swim?\" the instructor asked. / Indirect: The instructor asked if I could swim.", "bn": "ডাইরেক্ট: \"তুমি কি সাঁতার কাটতে পারো?\" ইন্সট্রাক্টর জিজ্ঞাসা করলেন। / ইনডাইরেক্ট: ইন্সট্রাক্টর জিজ্ঞাসা করলেন আমি সাঁতার কাটতে পারি কি না।" },
+        { "en": "Direct: \"How did you solve this problem?\" he asked. / Indirect: He asked how I had solved that problem.", "bn": "ডাইরেক্ট: \"তুমি কীভাবে এই সমস্যার সমাধান করলে?\" সে জিজ্ঞাসা করল। / ইনডাইরেক্ট: সে জিজ্ঞাসা করল আমি কীভাবে সেই সমস্যার সমাধান করেছিলাম।" },
+        { "en": "Direct: \"Is it raining outside?\" she wondered. / Indirect: She wondered whether it was raining outside.", "bn": "ডাইরেক্ট: \"বাইরে কি বৃষ্টি হচ্ছে?\" সে ভাবল। / ইনডাইরেক্ট: সে ভাবল বাইরে বৃষ্টি হচ্ছে কি না।" }
+      ],
+      "tips": "সবচেয়ে বেশি ভুল হয় শব্দক্রমে (word order)। ইনডাইরেক্ট স্পীচে কখনো 'She asked me where *was I* going' লিখবেন না। সঠিক রূপটি হবে 'where *I was* going' (প্রথমে Subject, তারপর Verb)।"
+    },
+    {
+      "name": "Reporting Imperatives: Commands, Requests, and Advice (আদেশ, অনুরোধ ও উপদেশের রূপান্তর)",
+      "banglaName": "আদেশ, অনুরোধ ও উপদেশের রূপান্তর",
+      "definition": "To report orders, requests, warnings, or advice, we do not use 'that' clauses. Instead, we use a reporting verb followed by an object and a to-infinitive (to + V1) for positive actions, or 'not to' + infinitive for negative actions. Reporting verbs include: order, tell, ask, beg, warn, advise, command.",
+      "banglaDefinition": "আদেশ, অনুরোধ, সতর্কবার্তা বা উপদেশ পরোক্ষ উক্তিতে প্রকাশ করার সময় আমরা 'that' ক্লজ ব্যবহার করি না। এর পরিবর্তে, একটি উপযুক্ত রিপোর্টিং ভার্বের পর অবজেক্ট এবং এরপর ইনফিনিটিভ (to + V1) ব্যবহার করা হয়। না-বোধক বাক্যের ক্ষেত্রে 'not to' + V1 ব্যবহৃত হয়। রিপোর্টিং ভার্ব হিসেবে order, tell, ask, beg, warn, advise, command ইত্যাদি বসে।",
+      "formula": "Affirmative: Subject + reporting verb + object + to + V1\nNegative: Subject + reporting verb + object + not + to + V1",
+      "rules": [
+        "অনুরোধের ক্ষেত্রে রিপোর্টিং ভার্ব হিসেবে 'ask' বা 'request' বসে এবং 'please' শব্দটি বাদ যায়।",
+        "আদেশের ক্ষেত্রে 'tell', 'order' বা 'command' বসে।",
+        "উপদেশের ক্ষেত্রে 'advise' বা 'recommend' বসে।",
+        "না-বোধক বাক্যে 'to'-এর আগে 'not' বসাতে হবে, পরে নয় (not to do, to not do ভুল)।",
+        "যদি রিপোর্টিং ভার্ব হিসেবে 'forbid' বা 'prohibit' ব্যবহৃত হয়, তবে 'not' বসানো যাবে না কারণ এই ভার্বগুলো নিজেই না-বোধক।"
+      ],
+      "examples": [
+        { "en": "Direct: \"Please sit down,\" the teacher said. / Indirect: The teacher asked us to sit down.", "bn": "ডাইরেক্ট: \"দয়া করে বসুন,\" শিক্ষক বললেন। / ইনডাইরেক্ট: শিক্ষক আমাদের বসতে বললেন।" },
+        { "en": "Direct: \"Don't touch the wet paint,\" the guard warned him. / Indirect: The guard warned him not to touch the wet paint.", "bn": "ডাইরেক্ট: \"ভেজা রঙে হাত দেবেন না,\" গার্ড তাকে সতর্ক করলেন। / ইনডাইরেক্ট: গার্ড তাকে ভেজা রঙে হাত না দিতে সতর্ক করলেন।" },
+        { "en": "Direct: \"You should consult a doctor,\" my friend said. / Indirect: My friend advised me to consult a doctor.", "bn": "ডাইরেক্ট: \"তোমার একজন ডাক্তারের সাথে পরামর্শ করা উচিত,\" আমার বন্ধু বলল। / ইনডাইরেক্ট: আমার বন্ধু আমাকে ডাক্তারের সাথে পরামর্শ করার উপদেশ দিল।" },
+        { "en": "Direct: \"Get out of the room!\" the officer shouted. / Indirect: The officer ordered him to get out of the room.", "bn": "ডাইরেক্ট: \"ঘর থেকে বের হয়ে যাও!\" অফিসার চিৎকার করে বললেন। / ইনডাইরেক্ট: অফিসার তাকে ঘর থেকে বের হয়ে যাওয়ার আদেশ দিলেন।" },
+        { "en": "Direct: \"Don't make any noise,\" mother told the children. / Indirect: Mother told the children not to make any noise.", "bn": "ডাইরেক্ট: \"গোলমাল কোরো না,\" মা বাচ্চাদের বললেন। / ইনডাইরেক্ট: মা বাচ্চাদের গোলমাল না করতে বললেন।" },
+        { "en": "Direct: \"Could you please pass the salt?\" he said. / Indirect: He asked me to pass the salt.", "bn": "ডাইরেক্ট: \"আপনি কি দয়া করে লবণটি এগিয়ে দেবেন?\" সে বলল। / ইনডাইরেক্ট: সে আমাকে লবণটি এগিয়ে দিতে অনুরোধ করল।" },
+        { "en": "Direct: \"Don't go near the edge of the cliff,\" she said to them. / Indirect: She warned them not to go near the edge of the cliff.", "bn": "ডাইরেক্ট: \"গিরিখাতের কিনারার কাছে যেও না,\" সে তাদের বলল। / ইনডাইরেক্ট: সে তাদের গিরিখাতের কিনারার কাছে না যেতে সতর্ক করল।" },
+        { "en": "Direct: \"Never drive without a seatbelt,\" the policeman advised. / Indirect: The policeman advised me never to drive without a seatbelt.", "bn": "ডাইরেক্ট: \"সিটবেল্ট ছাড়া কখনো গাড়ি চালাবেন না,\" পুলিশ সদস্য উপদেশ দিলেন। / ইনডাইরেক্ট: পুলিশ সদস্য আমাকে সিটবেল্ট ছাড়া কখনো গাড়ি না চালাতে উপদেশ দিলেন।" },
+        { "en": "Direct: \"Don't play on the road,\" the father forbade his son. / Indirect: The father forbade his son to play on the road.", "bn": "ডাইরেক্ট: \"রাস্তায় খেলাধুলা কোরো না,\" বাবা তার ছেলেকে নিষেধ করলেন। / ইনডাইরেক্ট: বাবা তার ছেলেকে রাস্তায় খেলাধুলা করতে নিষেধ করলেন। ('forbade' থাকার কারণে 'not' বসেনি)" },
+        { "en": "Direct: \"Submit your reports by Friday,\" the supervisor demanded. / Indirect: The supervisor instructed them to submit their reports by Friday.", "bn": "ডাইরেক্ট: \"শুক্রবার নাগাদ তোমাদের রিপোর্ট জমা দাও,\" সুপারভাইজার দাবি করলেন। / ইনডাইরেক্ট: সুপারভাইজার তাদের শুক্রবারের মধ্যে রিপোর্ট জমা দেওয়ার নির্দেশ দিলেন।" }
+      ],
+      "tips": "ইনফিনিটিভ স্প্লিট করবেন না। 'not to make' সঠিক; 'to not make' বা 'not make to' ব্যাকরণগতভাবে অশুদ্ধ। নেতিবাচক কমান্ড রিপোর্টিংয়ে এটি অত্যন্ত সাধারণ একটি ভুল।"
+    },
+    {
+      "name": "Reporting Exclamations and Wishes (বিস্ময়, শুভেচ্ছা ও প্রার্থনা প্রকাশকারী বাক্যের রূপান্তর)",
+      "banglaName": "বিস্ময় ও প্রার্থনামূলক বাক্যের রূপান্তর",
+      "definition": "Exclamatory sentences and wishes are reported by changing the reporting verb to 'exclaim with joy/sorrow/surprise', 'wish', 'pray', or 'congratulate'. The exclamatory structure is transformed into a standard statement, and words like 'alas', 'hurrah', or 'wow' are omitted.",
+      "banglaDefinition": "বিস্ময়সূচক বা ইচ্ছাসূচক বাক্যগুলোকে পরোক্ষ উক্তিতে রূপান্তর করার সময় রিপোর্টিং ভার্ব পরিবর্তন করে 'exclaim with joy/sorrow/surprise', 'wish', 'pray' বা 'congratulate' বসানো হয়। বিস্ময়সূচক বাক্যটিকে একটি সাধারণ বিবৃতিতে (statement) রূপান্তর করা হয় এবং 'alas', 'hurrah', বা 'wow'-এর মতো আবেগসূচক শব্দগুলো বাদ দেওয়া হয়।",
+      "formula": "Exclamations: Subject + exclaimed with + joy/sorrow + that + subject + verb (backshifted) + very/great + adjective/noun\nWishes/Prayers: Subject + wished/prayed + that + subject + might + V1",
+      "rules": [
+        "আবেগ প্রকাশক শব্দগুলো (যেমন: Hurrah!, Alas!) তুলে দিয়ে বাক্যটিকে 'exclaimed with joy/sorrow' দিয়ে শুরু করতে হয়।",
+        "বিস্ময়সূচক প্রশ্ন বা বাক্য (যেমন: What a beautiful place!) সাধারণ বাক্যে রূপান্তরিত হয় (It was a very beautiful place)।",
+        "'May God save you' এর মতো প্রার্থনামূলক বাক্য 'prayed that God might save you' তে পরিবর্তিত হয়।",
+        "কারো শুভকামনা বা শুভেচ্ছা প্রকাশের ক্ষেত্রে সরাসরি রিপোর্টিং ভার্ব ব্যবহার করা যায়: 'He wished me a happy birthday.'"
+      ],
+      "examples": [
+        { "en": "Direct: \"Hurrah! We won the match,\" the players shouted. / Indirect: The players exclaimed with joy that they had won the match.", "bn": "ডাইরেক্ট: \"হুররে! আমরা ম্যাচটি জিতেছি,\" খেলোয়াড়রা চিৎকার করে বলল। / ইনডাইরেক্ট: খেলোয়াড়রা আনন্দের সাথে প্রকাশ করল যে তারা ম্যাচটি জিতেছিল।" },
+        { "en": "Direct: \"Alas! I ruined everything,\" he said. / Indirect: He exclaimed with sorrow that he had ruined everything.", "bn": "ডাইরেক্ট: \"হায়! আমি সবকিছু ধ্বংস করে ফেলেছি,\" সে বলল। / ইনডাইরেক্ট: সে দুঃখের সাথে বলল যে সে সবকিছু ধ্বংস করে ফেলেছিল।" },
+        { "en": "Direct: \"What a beautiful painting!\" she said. / Indirect: She exclaimed with admiration that the painting was very beautiful.", "bn": "ডাইরেক্ট: \"কী চমৎকার একটি ছবি!\" সে বলল। / ইনডাইরেক্ট: সে প্রশংসার সাথে বলল যে ছবিটি অত্যন্ত চমৎকার ছিল।" },
+        { "en": "Direct: \"May you succeed in life,\" my grandmother said to me. / Indirect: My grandmother wished that I might succeed in life.", "bn": "ডাইরেক্ট: \"তুমি জীবনে সফল হও,\" আমার দাদি আমাকে বললেন। / ইনডাইরেক্ট: আমার দাদি ইচ্ছা প্রকাশ করলেন যে আমি যেন জীবনে সফল হতে পারি।" },
+        { "en": "Direct: \"Congratulations on your promotion!\" they said to him. / Indirect: They congratulated him on his promotion.", "bn": "ডাইরেক্ট: \"তোমার পদোন্নতির জন্য অভিনন্দন!\" তারা তাকে বলল। / ইনডাইরেক্ট: তারা তাকে তার পদোন্নতির জন্য অভিনন্দন জানাল।" },
+        { "en": "Direct: \"Good morning, everyone,\" the teacher said. / Indirect: The teacher wished everyone a good morning.", "bn": "ডাইরেক্ট: \"শুভ সকাল, সবাইকে,\" শিক্ষক বললেন। / ইনডাইরেক্ট: শিক্ষক সবাইকে শুভ সকাল জানালেন।" },
+        { "en": "Direct: \"May God bless you with good health,\" the priest said. / Indirect: The priest prayed that God might bless me with good health.", "bn": "ডাইরেক্ট: \"ঈশ্বর তোমাকে সুস্বাস্থ্য দান করুন,\" পুরোহিত বললেন। / ইনডাইরেক্ট: পুরোহিত প্রার্থনা করলেন যে ঈশ্বর যেন আমাকে সুস্বাস্থ্য দান করেন।" },
+        { "en": "Direct: \"How foolish I have been!\" he muttered. / Indirect: He confessed with regret that he had been very foolish.", "bn": "ডাইরেক্ট: \"আমি কত বোকা ছিলাম!\" সে বিড়বিড় করে বলল। / ইনডাইরেক্ট: সে অনুশোচনার সাথে স্বীকার করল যে সে অত্যন্ত বোকা ছিল।" },
+        { "en": "Direct: \"Happy New Year!\" Sarah said to us. / Indirect: Sarah wished us a happy new year.", "bn": "ডাইরেক্ট: \"শুভ নববর্ষ!\" সারাহ আমাদের বলল। / ইনডাইরেক্ট: সারাহ আমাদের শুভ নববর্ষের শুভেচ্ছা জানাল।" },
+        { "en": "Direct: \"What a terrible accident!\" the reporter said. / Indirect: The reporter exclaimed with horror that it was a very terrible accident.", "bn": "ডাইরেক্ট: \"কী এক ভয়াবহ দুর্ঘটনা!\" প্রতিবেদক বললেন। / ইনডাইরেক্ট: প্রতিবেদক আতঙ্কের সাথে বললেন যে এটি ছিল অত্যন্ত ভয়াবহ একটি দুর্ঘটনা।" }
+      ],
+      "tips": "বিস্ময়সূচক বাক্যের 'what a/an' বা 'how' ইনডাইরেক্ট স্পীচে পরিবর্তিত হয়ে 'very' (adjective-এর আগে) বা 'great' (noun-এর আগে) হিসেবে বসে। যেমন: 'How beautiful' -> 'very beautiful'; 'What a fool' -> 'a great fool'."
+    },
+    {
+      "name": "Advanced Reporting Verbs with Gerund/Infinitive Patterns (উন্নত রিপোর্টিং ভার্ব এবং এদের বিভিন্ন প্যাটার্ন)",
+      "banglaName": "Advanced Reporting Verbs ও এদের প্যাটার্ন",
+      "definition": "In advanced English writing, relying solely on 'say' or 'tell' is repetitive. We use specific reporting verbs that convey the speaker's tone and intention. These verbs follow different grammatical patterns, such as verb + infinitive, verb + object + infinitive, verb + gerund (-ing), or verb + preposition + gerund.",
+      "banglaDefinition": "অ্যাডভান্সড ইংরেজি লেখার ক্ষেত্রে কেবল 'say' বা 'tell' ব্যবহার করলে লেখাটি একঘেয়ে দেখায়। এর পরিবর্তে আমরা সুনির্দিষ্ট রিপোর্টিং ভার্ব ব্যবহার করি যা বক্তার সুর ও অভিপ্রায় স্পষ্টভাবে প্রকাশ করে। এই ভার্বগুলো বিভিন্ন ব্যাকরণগত প্যাটার্ন অনুসরণ করে, যেমন: verb + infinitive, verb + object + infinitive, verb + gerund (-ing) অথবা verb + preposition + gerund।",
+      "formula": "Pattern 1: Verb + infinitive (agree, offer, promise, refuse)\nPattern 2: Verb + object + infinitive (advise, invite, remind, warn)\nPattern 3: Verb + gerund (admit, deny, recommend, suggest)\nPattern 4: Verb + preposition + gerund (apologize for, accuse of, insist on)",
+      "rules": [
+        "প্যাটার্ন অনুযায়ী ভার্বগুলোর পর সঠিক অবজেক্ট এবং প্রিপজিশন বসাতে হবে।",
+        "যেমন: 'suggest'-এর পর কখনো infinitive বসে না; gerund বসে: 'He suggested *going* to the park' (correct), 'He suggested to go' (incorrect)।",
+        "'Accuse' ভার্বটির পর 'of' প্রিপজিশন বসে: 'She accused him of cheating.'",
+        "'Insist'-এর পর 'on' বসে এবং এরপর gerund বসে: 'They insisted on paying the bill.'"
+      ],
+      "examples": [
+        { "en": "Direct: \"I will definitely pay you back on Friday,\" he said. / Indirect: He promised to pay me back on Friday.", "bn": "ডাইরেক্ট: \"আমি অবশ্যই শুক্রবার তোমাকে টাকা ফেরত দেব,\" সে বলল। / ইনডাইরেক্ট: সে আমাকে শুক্রবারে টাকা ফেরত দেওয়ার প্রতিশ্রুতি দিল। (Promise + to-V1)" },
+        { "en": "Direct: \"No, I didn't steal the money!\" the boy said. / Indirect: The boy denied stealing the money.", "bn": "ডাইরেক্ট: \"না, আমি টাকাটা চুরি করিনি!\" ছেলেটি বলল। / ইনডাইরেক্ট: ছেলেটি টাকা চুরি করার কথা অস্বীকার করল। (Deny + V-ing)" },
+        { "en": "Direct: \"Why don't we go to the cinema tonight?\" she said. / Indirect: She suggested going to the cinema that night.", "bn": "ডাইরেক্ট: \"আজ রাতে আমরা সিনেমায় গেলে কেমন হয়?\" সে বলল। / ইনডাইরেক্ট: সে সেদিন রাতে সিনেমায় যাওয়ার প্রস্তাব দিল। (Suggest + V-ing)" },
+        { "en": "Direct: \"You cheated in the exam,\" the teacher said to him. / Indirect: The teacher accused him of cheating in the exam.", "bn": "ডাইরেক্ট: \"তুমি পরীক্ষায় নকল করেছ,\" শিক্ষক তাকে বললেন। / ইনডাইরেক্ট: শিক্ষক তার বিরুদ্ধে পরীক্ষায় নকল করার অভিযোগ তুললেন। (Accuse + obj + of + V-ing)" },
+        { "en": "Direct: \"I am really sorry I broke your vase,\" she said. / Indirect: She apologized for breaking my vase.", "bn": "ডাইরেক্ট: \"আমি সত্যিই দুঃখিত যে আমি আপনার ফুলদানিটি ভেঙে ফেলেছি,\" সে বলল। / ইনডাইরেক্ট: সে আমার ফুলদানি ভেঙে ফেলার জন্য ক্ষমা চাইল। (Apologize for + V-ing)" },
+        { "en": "Direct: \"No, I will not sign this document,\" the manager said. / Indirect: The manager refused to sign that document.", "bn": "ডাইরেক্ট: \"না, আমি এই নথিতে স্বাক্ষর করব না,\" ম্যানেজার বললেন। / ইনডাইরেক্ট: ম্যানেজার সেই নথিতে স্বাক্ষর করতে অস্বীকার করলেন। (Refuse + to-V1)" },
+        { "en": "Direct: \"Remember to lock the door before leaving,\" she told me. / Indirect: She reminded me to lock the door before leaving.", "bn": "ডাইরেক্ট: \"যাওয়ার আগে দরজা লক করার কথা মনে রেখো,\" সে আমাকে বলল। / ইনডাইরেক্ট: সে আমাকে যাওয়ার আগে দরজা লক করার কথা মনে করিয়ে দিল। (Remind + obj + to-V1)" },
+        { "en": "Direct: \"I will buy the tickets for everyone,\" John said. / Indirect: John offered to buy the tickets for everyone.", "bn": "ডাইরেক্ট: \"আমি সবার জন্য টিকিট কিনে দেব,\" জন বলল। / ইনডাইরেক্ট: জন সবার জন্য টিকিট কিনে দেওয়ার প্রস্তাব দিল। (Offer + to-V1)" },
+        { "en": "Direct: \"I must pay for dinner, I won't take no for an answer,\" he said. / Indirect: He insisted on paying for dinner.", "bn": "ডাইরেক্ট: \"আমাকে রাতের খাবারের বিল দিতেই হবে, আমি কোনো আপত্তি শুনব না,\" সে বলল। / ইনডাইরেক্ট: সে রাতের খাবারের বিল দেওয়ার জন্য জেদ ধরল। (Insist on + V-ing)" },
+        { "en": "Direct: \"Yes, I made a mistake in the report,\" the employee said. / Indirect: The employee admitted making a mistake in the report.", "bn": "ডাইরেক্ট: \"হ্যাঁ, আমি রিপোর্টে একটি ভুল করেছি,\" কর্মচারীটি বলল। / ইনডাইরেক্ট: কর্মচারীটি রিপোর্টে ভুল করার কথা স্বীকার করল। (Admit + V-ing)" }
+      ],
+      "tips": "জটিল ও বিশেষায়িত রিপোর্টিং ভার্বের সঠিক ব্যবহার আইইএলটিএস (IELTS) রাইটিং টাস্ক বা অন্য যেকোনো প্রফেশনাল রাইটিংয়ের মান বহুগুণ বাড়িয়ে দেয়। 'She said that she was sorry' লেখার চেয়ে 'She apologized for...' লেখা অনেক বেশি স্ট্যান্ডার্ড।"
+    },
+    {
+      "name": "Modal Verbs in Reported Speech & Time-Place Shifts (মোডাল ভার্ব পরিবর্তন এবং সময় ও স্থানের রূপান্তর)",
+      "banglaName": "Modal Verbs এবং সময় ও স্থানের রূপান্তর",
+      "definition": "In reported speech, modal verbs undergo specific shifts when the reporting verb is in the past: 'will' becomes 'would', 'can' becomes 'could', 'may' becomes 'might', and 'must' usually becomes 'had to'. However, modals like 'should', 'would', 'could', 'might', and 'ought to' do not change. Time and place words also shift relative to the time and place of reporting.",
+      "banglaDefinition": "রিপোর্টেড স্পীচে রিপোর্টিং ভার্বটি অতীতে থাকলে মোডাল ভার্বগুলোর নির্দিষ্ট রূপান্তর ঘটে: 'will' হয়ে যায় 'would', 'can' হয়ে যায় 'could', 'may' হয়ে যায় 'might', এবং সাধারণত 'must' পরিবর্তিত হয়ে 'had to' হয়। তবে, 'should', 'would', 'could', 'might', এবং 'ought to' মোডালগুলোর কোনো পরিবর্তন হয় না। রিপোর্টিংয়ের সময় ও স্থান পরিবর্তন অনুযায়ী সময় ও স্থানবাচক শব্দগুলোও পরিবর্তিত হয় (যেমন: now -> then, today -> that day)।",
+      "formula": "Modal shifts: can -> could | will -> would | may -> might | must -> had to\nTime shifts: today -> that day | yesterday -> the day before | tomorrow -> the next day\nPlace shifts: here -> there | this -> that | these -> those",
+      "rules": [
+        "'Must' যখন বর্তমানের কোনো নিয়ম বা বাধ্যবাধকতা বোঝায়, তখন তা পরিবর্তিত হয়ে 'had to' হয়।",
+        "কিন্তু 'must' যদি চিরন্তন কোনো বাধ্যবাধকতা বা আদেশ বোঝায়, তবে তা অপরিবর্তিত থাকে: 'We must die' -> 'that they must die'.",
+        "যদি কথাটি একই দিনে বা একই স্থানে দাঁড়িয়ে রিপোর্ট করা হয়, তবে 'today' বা 'here' পরিবর্তন করার প্রয়োজন নেই।"
+      ],
+      "examples": [
+        { "en": "Direct: \"You can borrow my car today,\" my uncle said. / Indirect: My uncle said that I could borrow his car that day.", "bn": "ডাইরেক্ট: \"তুমি আজ আমার গাড়িটি ধার নিতে পারো,\" আমার চাচা বললেন। / ইনডাইরেক্ট: আমার চাচা বললেন যে আমি সেদিন তাঁর গাড়িটি ধার নিতে পারতাম।" },
+        { "en": "Direct: \"We must submit the project tomorrow,\" they said. / Indirect: They said that they had to submit the project the next day.", "bn": "ডাইরেক্ট: \"আমাদের অবশ্যই আগামীকাল প্রজেক্টটি জমা দিতে হবে,\" তারা বলল। / ইনডাইরেক্ট: তারা বলল যে তাদের পরদিন প্রজেক্টটি জমা দিতে হবে।" },
+        { "en": "Direct: \"I should study tonight,\" she said. / Indirect: She said that she should study that night.", "bn": "ডাইরেক্ট: \"আমার আজ রাতে পড়াশোনা করা উচিত,\" সে বলল। / ইনডাইরেক্ট: সে বলল যে সেদিন রাতে তার পড়াশোনা করা উচিত ছিল। (should অপরিবর্তিত)" },
+        { "en": "Direct: \"I might visit you next week,\" he said. / Indirect: He said that he might visit me the following week.", "bn": "ডাইরেক্ট: \"আমি হয়তো আগামী সপ্তাহে তোমার সাথে দেখা করতে পারি,\" সে বলল। / ইনডাইরেক্ট: সে বলল যে সে হয়তো তার পরের সপ্তাহে আমার সাথে দেখা করতে পারে।" },
+        { "en": "Direct: \"I used to live here,\" she told me. / Indirect: She told me that she used to live there.", "bn": "ডাইরেক্ট: \"আমি আগে এখানে বাস করতাম,\" সে আমাকে বলল। / ইনডাইরেক্ট: সে আমাকে বলল যে সে আগে সেখানে বাস করত। (here -> there)" },
+        { "en": "Direct: \"We ought to help the poor,\" they said. / Indirect: They said that they ought to help the poor.", "bn": "ডাইরেক্ট: \"আমাদের গরীবদের সাহায্য করা উচিত,\" তারা বলল। / ইনডাইরেক্ট: তারা বলল যে তাদের গরীবদের সাহায্য করা উচিত। (ought to অপরিবর্তিত)" },
+        { "en": "Direct: \"I can't find my passport anywhere,\" he said. / Indirect: He said that he couldn't find his passport anywhere.", "bn": "ডাইরেক্ট: \"আমি আমার পাসপোর্ট কোথাও খুঁজে পাচ্ছি না,\" সে বলল। / ইনডাইরেক্ট: সে বলল যে সে তার পাসপোর্ট কোথাও খুঁজে পাচ্ছিল না।" },
+        { "en": "Direct: \"I would help you if I could,\" John said. / Indirect: John said that he would help me if he could.", "bn": "ডাইরেক্ট: \"আমি তোমাকে সাহায্য করতাম যদি আমি পারতাম,\" জন বলল। / ইনডাইরেক্ট: জন বলল যে সে আমাকে সাহায্য করত যদি সে পারত। (would/could অপরিবর্তিত)" },
+        { "en": "Direct: \"Man must obey the laws of nature,\" the philosopher said. / Indirect: The philosopher said that man must obey the laws of nature.", "bn": "ডাইরেক্ট: \"মানুষকে অবশ্যই প্রকৃতির নিয়ম মেনে চলতে হবে,\" দার্শনিক বললেন। / ইনডাইরেক্ট: দার্শনিক বললেন যে মানুষকে অবশ্যই প্রকৃতির নিয়ম মেনে চলতে হবে। (must চিরন্তন বাধ্যবাধকতা হওয়ায় অপরিবর্তিত)" },
+        { "en": "Direct: \"These apples are sweet,\" the vendor said. / Indirect: The vendor said that those apples were sweet.", "bn": "ডাইরেক্ট: \"এই আপেলগুলো মিষ্টি,\" বিক্রেতা বললেন। / ইনডাইরেক্ট: বিক্রেতা বললেন যে ওই আপেলগুলো মিষ্টি ছিল। (these -> those)" }
+      ],
+      "tips": "যদি Direct Speech-এ কোনো কাল্পনিক বাক্য বা conditional sentence থাকে (যেমন: 'If I were you, I would buy it'), তবে ইনডাইরেক্ট স্পীচে তার টেন্স বা মোডাল ভার্ব পরিবর্তিত হয় না।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "He asked me what was I doing.",
+      "correct": "He asked me what I was doing.",
+      "explanation": "পরোক্ষ প্রশ্ন বা ইনডাইরেক্ট কোয়েশ্চেনে বাক্যের গঠন প্রশ্নবোধক থাকে না; তা সাধারণ বাক্যে (assertive statement) পরিণত হয়। তাই 'what was I' (verb + subject) ভুল; সঠিক হলো 'what I was' (subject + verb)।"
+    },
+    {
+      "wrong": "She suggested me to buy a new car.",
+      "correct": "She suggested that I should buy a new car. (Or: She suggested buying a new car.)",
+      "explanation": "'Suggest' ভার্বের পর সরাসরি 'object + to-infinitive' বসে না। এর পর হয় 'that-clause' বসবে অথবা সরাসরি 'V-ing' (gerund) বসাতে হবে।"
+    },
+    {
+      "wrong": "Our geography teacher said that the Earth was round.",
+      "correct": "Our geography teacher said that the Earth is round.",
+      "explanation": "রিপোর্তেড ক্লজের বিষয়টি যদি কোনো চিরন্তন সত্য (universal truth) বা বৈজ্ঞানিক সত্য হয়, তবে রিপোর্টিং ভার্ব অতীতে থাকলেও রিপোর্টেড ক্লজের টেন্স পরিবর্তন বা backshifting করা যাবে না।"
+    },
+    {
+      "wrong": "He told that he was tired and wanted to leave.",
+      "correct": "He said that he was tired and wanted to leave. (Or: He told me that he was tired...)",
+      "explanation": "'Tell' একটি transitive verb, যার পর অবশ্যই সরাসরি কোনো অবজেক্ট বা শ্রোতা (যেমন: me, him, us) থাকতে হবে। অবজেক্ট না থাকলে তার জায়গায় 'say' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "She forbade us not to enter the laboratory.",
+      "correct": "She forbade us to enter the laboratory.",
+      "explanation": "'Forbid' (নিষেধ করা) শব্দটি নিজেই একটি না-বোধক শব্দ। তাই এর পর পুনরায় 'not' ব্যবহার করলে তা double negative ভুলের সৃষ্টি করে বাক্যের অর্থ বিপরীত করে দেয়।"
+    },
+    {
+      "wrong": "He asked me that if I was ready.",
+      "correct": "He asked me if I was ready.",
+      "explanation": "প্রশ্নবোধক বাক্যকে ইনডাইরেক্ট করার সময় লিঙ্কার বা কানেক্টর হিসেবে 'if/whether' বা 'wh-word' নিজেই বসে। তাই এদের আগে অতিরিক্ত 'that' বসানো সম্পূর্ণ ভুল।"
+    },
+    {
+      "wrong": "The guide warned us to not drink the tap water.",
+      "correct": "The guide warned us not to drink the tap water.",
+      "explanation": "নেতিবাচক ইনফিনিটিভ গঠনের ক্ষেত্রে 'not' শব্দটি অবশ্যই 'to'-এর আগে বসাতে হবে, পরে নয়। 'to not drink' ব্যাকরণগতভাবে অশুদ্ধ; 'not to drink' সঠিক।"
+    },
+    {
+      "wrong": "She denied to have seen the missing documents.",
+      "correct": "She denied having seen the missing documents. (Or: She denied that she had seen...)",
+      "explanation": "'Deny' (অস্বীকার করা) ভার্বটির পর কখনো ইনফিনিটিভ (to + V1) বসে না। এর পর সরাসরি Gerund (V-ing) বসাতে হবে।"
+    }
+  ]
 }

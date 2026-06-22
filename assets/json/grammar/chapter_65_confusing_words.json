@@ -1,10 +1,186 @@
 {
   "chapter": 65,
   "level": "Advanced",
-  "title": "Confusing Words",
-  "icon": "confusion",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "title": "Confusing Words (বিভ্রান্তিকর শব্দসমূহ)",
+  "icon": "help_outline",
+  "description": "Confusing Words in English grammar represent pairs or groups of words that look alike, sound alike (homophones), or have closely related but distinct meanings. At an advanced level, distinguishing between words like affect/effect, lie/lay, eminent/imminent, and historic/historical is crucial. Misusing these words can alter the meaning of a sentence, damage your credibility, and lower your score in academic or professional exams.",
+  "banglaDescription": "ইংরেজিতে Confusing Words বলতে এমন কিছু শব্দ বা শব্দগুচ্ছকে বোঝায় যা দেখতে একরকম, উচ্চারণে প্রায় এক (homophones), অথবা এদের অর্থ কাছাকাছি হলেও সূক্ষ্মভাবে ভিন্ন। উচ্চতর স্তরে affect/effect, lie/lay, eminent/imminent, এবং historic/historical-এর মতো শব্দগুলোর মধ্যকার পার্থক্য জানা অত্যন্ত জরুরি। এই শব্দগুলোর ভুল ব্যবহার বাক্যের অর্থ সম্পূর্ণ বদলে দিতে পারে, আপনার লেখার গ্রহণযোগ্যতা নষ্ট করতে পারে এবং প্রাতিষ্ঠানিক ও পেশাদারী পরীক্ষায় আপনার নম্বর কমিয়ে দিতে পারে।",
+  "topics": [
+    {
+      "name": "Affect vs. Effect (প্রভাব বিস্তার বনাম ফলাফল)",
+      "banglaName": "Affect বনাম Effect",
+      "definition": "The distinction between 'affect' and 'effect' is one of the most common errors in writing. 'Affect' is primarily a verb meaning to influence or produce a change in something. 'Effect' is primarily a noun meaning the result or consequence of a change. (Advanced exception: 'affect' as a noun means an emotional state, and 'effect' as a verb means to bring about or accomplish).",
+      "banglaDefinition": "'Affect' এবং 'Effect'-এর মধ্যকার পার্থক্য ইংরেজি লেখার অন্যতম সাধারণ একটি ভুল। 'Affect' সাধারণত একটি Verb (ক্রিয়া), যার অর্থ হলো প্রভাবিত করা বা কোনো পরিবর্তন ঘটানো। 'Effect' সাধারণত একটি Noun (বিশেষ্য), যার অর্থ হলো প্রভাব বা পরিবর্তনের ফলাফল। (ব্যতিক্রমী অ্যাডভান্সড রূপ: 'affect' যখন Noun হয় তখন তার অর্থ মানসিক অবস্থা, এবং 'effect' যখন Verb হয় তখন তার অর্থ কোনো কিছু বাস্তবায়ন করা বা সম্পন্ন করা)।",
+      "formula": "Verb Role: [Subject] + affect (influences) + [Object]\nNoun Role: The + effect (result) + of + [Noun] + is ...\nAdvanced Verb: effect (bring about) + a change/cure",
+      "rules": [
+        "সাধারণত মনে রাখবেন: A = Action (Affect is a verb), E = End result (Effect is a noun)।",
+        "Affect-এর পর সরাসরি অবজেক্ট বসে, কোনো প্রিপজিশন বসে না: 'This affects *us*' (affects on us ভুল)।",
+        "Effect-এর পর সাধারণত 'on' প্রিপজিশন বসে: 'This has an effect *on* us.'",
+        "অ্যাডভান্সড নিয়মে 'to effect a change' মানে হলো কোনো পরিবর্তন সফলভাবে বাস্তবায়ন করা।"
+      ],
+      "examples": [
+        { "en": "The cold weather will seriously affect the orange crops this year.", "bn": "ঠান্ডা আবহাওয়া এ বছর কমলার ফলনকে মারাত্মকভাবে প্রভাবিত করবে। (Affect = Verb)" },
+        { "en": "The government is trying to effect a complete change in the tax system.", "bn": "সরকার কর ব্যবস্থায় একটি সম্পূর্ণ পরিবর্তন বাস্তবায়ন করার চেষ্টা করছে। (Effect = Verb/Implement)" },
+        { "en": "The therapy had a positive effect on his mental health.", "bn": "থেরাপির তার মানসিক স্বাস্থ্যের ওপর একটি ইতিবাচক প্রভাব পড়েছিল। (Effect = Noun)" },
+        { "en": "Do not let his negative attitude affect your performance.", "bn": "তার নেতিবাচক মনোভাবকে তোমার পারফরম্যান্স প্রভাবিত করতে দিও না।" },
+        { "en": "Scientists are studying the long-term effects of global warming.", "bn": "বিজ্ঞানীরা বৈশ্বিক উষ্ণায়নের দীর্ঘমেয়াদী প্রভাবগুলো নিয়ে গবেষণা করছেন।" },
+        { "en": "The music deeply affected everyone in the room.", "bn": "সঙ্গীতটি ঘরের প্রত্যেকে গভীরভাবে স্পর্শ/প্রভাবিত করেছিল।" },
+        { "en": "The new law will take effect from the first of next month.", "bn": "নতুন আইনটি আগামী মাসের প্রথম তারিখ থেকে কার্যকর হবে। (take effect = কার্যকর হওয়া)" },
+        { "en": "The patient exhibited a flat affect, showing no emotion.", "bn": "রোগীটি একটি ভাবলেশহীন মানসিক অবস্থা প্রদর্শন করেছিল, কোনো আবেগ দেখায়নি। (Affect = Noun/Emotion)" },
+        { "en": "Her words had no effect on his decision.", "bn": "তার কথাগুলো তার সিদ্ধান্তের ওপর কোনো প্রভাব ফেলেনি।" },
+        { "en": "The protest was organized to effect the release of the prisoners.", "bn": "বন্দীদের মুক্তি নিশ্চিত করার জন্য প্রতিবাদটি আয়োজন করা হয়েছিল।" }
+      ],
+      "tips": "সহজ উপায়: যদি শব্দের আগে 'the', 'a', 'an' বা কোনো adjective (যেমন: positive, negative) দেখেন, তবে সেখানে চোখ বন্ধ করে 'Effect' বসাবেন। আর যদি শব্দটি বাক্যের প্রধান কাজ বা ক্রিয়া হিসেবে বসে, তবে 'Affect' বসাবেন।"
+    },
+    {
+      "name": "Lie vs. Lay (অকর্মক বনাম সকর্মক শোয়া/রাখা)",
+      "banglaName": "Lie বনাম Lay",
+      "definition": "'Lie' is an intransitive verb (it does not take a direct object) meaning to recline, rest, or remain in a flat position. Its principal parts are: lie (present), lay (past), lain (past participle). 'Lay' is a transitive verb (it requires a direct object) meaning to put or place something down carefully. Its principal parts are: lay (present), laid (past), laid (past participle).",
+      "banglaDefinition": "'Lie' হলো একটি অকর্মক ক্রিয়া বা Intransitive Verb (যার কোনো অবজেক্ট বা কর্ম থাকে না), এর অর্থ হলো নিজে নিজে শুয়ে থাকা, বিশ্রাম নেওয়া বা সমান্তরাল অবস্থায় থাকা। এর রূপগুলো হলো: lie (present), lay (past), lain (past participle)। 'Lay' হলো একটি সকর্মক ক্রিয়া বা Transitive Verb (যার পর একটি অবজেক্ট থাকা বাধ্যতামূলক), এর অর্থ হলো কোনো কিছুকে সাবধানে কোথাও রাখা বা স্থাপন করা। এর রূপগুলো হলো: lay (present), laid (past), laid (past participle)।",
+      "formula": "Lie Structure: Subject + Lie/Lay/Lain + Adverbial (No Object)\nLay Structure: Subject + Lay/Laid/Laid + Direct Object + Adverbial",
+      "rules": [
+        "নিজে শোয়ার ক্ষেত্রে 'Lie' ব্যবহার করুন: 'I want to lie down.'",
+        "কোনো বস্তু রাখার ক্ষেত্রে 'Lay' ব্যবহার করুন: 'Lay the book on the table.'",
+        "বিভ্রান্তির প্রধান কারণ: 'Lie'-এর Past Tense হলো 'Lay'। তাই বাক্যটি কোন সময়ে আছে তা বোঝা অত্যন্ত জরুরি।",
+        "পাখি বা মুরগির ডিম পাড়ার ক্ষেত্রে সর্বদা 'Lay' (laid, laid) ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "Present Lie: I usually lie on the sofa to read books.", "bn": "আমি সাধারণত বই পড়ার জন্য সোফার ওপর শুয়ে থাকি।" },
+        { "en": "Present Lay: Please lay the documents on my desk.", "bn": "দয়া করে কাগজপত্রগুলো আমার ডেস্কে রাখুন। (Documents হলো অবজেক্ট)" },
+        { "en": "Past Lie: Yesterday, he lay in bed all morning because he was sick.", "bn": "গতকাল সে অসুস্থ থাকায় সারা সকাল বিছানায় শুয়ে ছিল। (Lie-এর past form 'lay')" },
+        { "en": "Past Lay: She laid her baby gently in the crib and sang a song.", "bn": "সে তার বাচ্চাকে আলতো করে দোলনায় রাখল এবং একটি গান গাইল। (Lay-এর past form 'laid')" },
+        { "en": "Perfect Lie: The old ruins have lain undisturbed for centuries.", "bn": "পুরোনো ধ্বংসাবশেষগুলো শতাব্দীর পর শতাব্দী ধরে অক্ষত অবস্থায় পড়ে রয়েছে। (lain)" },
+        { "en": "Perfect Lay: He has laid a lot of emphasis on discipline.", "bn": "সে শৃঙ্খলার ওপর অনেক জোর দিয়েছে। (laid)" },
+        { "en": "The valley lies between two majestic mountains.", "bn": "উপত্যকাটি দুটি রাজকীয় পর্বতের মাঝে অবস্থিত।" },
+        { "en": "The hens lay eggs every morning.", "bn": "মুরগিগুলো প্রতিদিন সকালে ডিম পাড়ে।" },
+        { "en": "Don't just lie there; do some work!", "bn": "শুধু সেখানে শুয়ে থেকো না; কিছু কাজ করো!" },
+        { "en": "He laid the map flat on the ground to show us the route.", "bn": "সে আমাদের পথ দেখানোর জন্য মানচিত্রটি মাটিতে সমতলভাবে রাখল।" }
+      ],
+      "tips": "টেস্ট ট্রিক: আপনি যে শব্দটি ব্যবহার করতে চান, তার জায়গায় মনে মনে 'place' (রাখা) বসিয়ে দেখুন। যদি 'place' বসালে অর্থপূর্ণ হয়, তবে 'Lay' (laid) সঠিক। আর যদি 'place' বসালে অর্থহীন শোনায়, তবে 'Lie' (lay/lain) সঠিক।"
+    },
+    {
+      "name": "Assure vs. Ensure vs. Insure (নিশ্চয়তা ও নিরাপত্তার তিন রূপ)",
+      "banglaName": "Assure বনাম Ensure বনাম Insure",
+      "definition": "These three verbs are related to making something certain, but they have distinct applications. 'Assure' means to tell someone confidently that something is true to remove their doubts (takes a personal object). 'Ensure' means to make sure or guarantee that an event or result happens. 'Insure' specifically refers to securing something with a financial insurance policy.",
+      "banglaDefinition": "এই তিনটি ক্রিয়াপদই কোনো কিছু নিশ্চিত করার সাথে সম্পর্কিত, তবে এদের ব্যবহারিক ক্ষেত্র ভিন্ন। 'Assure' অর্থ হলো কাউকে আশ্বস্ত করা বা কারো মন থেকে সন্দেহ দূর করার জন্য জোর দিয়ে কোনো কথা বলা (এর পর অবশ্যই একজন ব্যক্তিবাচক অবজেক্ট বসে)। 'Ensure' অর্থ হলো কোনো ঘটনা বা ফলাফল নিশ্চিত করা বা গ্যারান্টি দেওয়া। 'Insure' বিশেষভাবে কোনো সম্পত্তি বা জীবনের জন্য আর্থিক বীমা করার ক্ষেত্রে ব্যবহৃত হয়।",
+      "formula": "Assure: Subject + Assure + Person + (that) + Clause\nEnsure: Subject + Ensure + (that) + Event/Result\nInsure: Subject + Insure + Asset/Life + (for/against)",
+      "rules": [
+        "'Assure'-এর পর সরাসরি একজন ব্যক্তি বা শ্রোতা বসাতে হবে: 'He assured *me*...'",
+        "'Ensure'-এর পর সাধারণত 'that' ক্লজ বা কোনো অবজেক্ট বসে: 'We must ensure success.' (ব্যক্তিবাচক অবজেক্ট বসে না)।",
+        "'Insure' কেবল টাকা-পয়সা, কোম্পানি ও আর্থিক বীমার সাথে সম্পর্কিত।"
+      ],
+      "examples": [
+        { "en": "The doctor assured me that the operation was a complete success.", "bn": "ডাক্তার আমাকে আশ্বস্ত করেছিলেন যে অপারেশনটি সম্পূর্ণ সফল হয়েছে। (Assured me)" },
+        { "en": "Please ensure that all the windows are locked before you leave.", "bn": "যাওয়ার আগে দয়া করে নিশ্চিত করুন যেন সব জানালা লক করা থাকে। (Ensure that...)" },
+        { "en": "You must insure your car against theft and natural disasters.", "bn": "তোমাকে অবশ্যই চুরি এবং প্রাকৃতিক দুর্যোগের বিরুদ্ধে তোমার গাড়ির বীমা করতে হবে।" },
+        { "en": "He assured his parents that he was studying hard.", "bn": "সে তার মা-বাবাকে আশ্বস্ত করেছিল যে সে কঠোর পড়াশোনা করছে।" },
+        { "en": "Our primary goal is to ensure the safety of our passengers.", "bn": "আমাদের প্রধান লক্ষ্য হলো আমাদের যাত্রীদের নিরাপত্তা নিশ্চিত করা।" },
+        { "en": "The company decided to insure the building for one million dollars.", "bn": "কোম্পানিটি ভবনটির জন্য এক মিলিয়ন ডলারের বীমা করার সিদ্ধান্ত নিয়েছে।" },
+        { "en": "I can assure you that there will be no further delays.", "bn": "আমি আপনাকে আশ্বস্ত করতে পারি যে আর কোনো বিলম্ব হবে না।" },
+        { "en": "Regular exercise and a balanced diet ensure good health.", "bn": "নিয়মিত ব্যায়াম এবং সুষম খাদ্য ভালো স্বাস্থ্য নিশ্চিত করে।" },
+        { "en": "Is your life insured?", "bn": "আপনার জীবন কি বীমা করা আছে?" },
+        { "en": "She smiled to assure him that everything was fine.", "bn": "সে তাকে আশ্বস্ত করতে হেসেছিল যে সবকিছু ঠিক আছে।" }
+      ],
+      "tips": "মনে রাখার সহজ উপায়: Assure = আশ্বস্ত করা (মানুষের কান শান্ত করা)। Ensure = নিশ্চিত করা (কাজটি সফল করা)। Insure = বীমা করা (টাকা বা সম্পত্তির নিরাপত্তা)।"
+    },
+    {
+      "name": "Eminent vs. Imminent vs. Immanent (উচ্চমানের শব্দত্রয়ীর সূক্ষ্ম উচ্চারণ ও অর্থ)",
+      "banglaName": "Eminent বনাম Imminent বনাম Immanent",
+      "definition": "These three adjectives sound very similar but have completely different meanings. 'Eminent' means famous, respected, and distinguished (especially in a profession). 'Imminent' means about to happen very soon, often referring to a danger or threat. 'Immanent' is a philosophical/theological term meaning inherent, existing within, or remaining within boundaries.",
+      "banglaDefinition": "এই তিনটি বিশেষণ বা Adjectives শুনতে প্রায় একরকম হলেও এদের অর্থ সম্পূর্ণ ভিন্ন। 'Eminent' অর্থ হলো বিখ্যাত, অত্যন্ত সম্মানিত এবং বিশিষ্ট ব্যক্তি (বিশেষ করে নিজ পেশায়)। 'Imminent' অর্থ হলো যা খুব শীঘ্রই ঘটতে যাচ্ছে বা আসন্ন (সাধারণত কোনো বিপদ বা খারাপ ঘটনার ক্ষেত্রে)। 'Immanent' হলো একটি দার্শনিক বা ধর্মীয় শব্দ যার অর্থ হলো সহজাত, অন্তর্নিহিত বা সবকিছুর ভেতরে বিদ্যমান।",
+      "formula": "Eminent + Person/Scholar (Famous)\nImminent + Event/Danger (About to happen)\nImmanent + Quality/Divine presence (Inherent)",
+      "rules": [
+        "বিখ্যাত বিজ্ঞানীদের ক্ষেত্রে 'Eminent scientist' লিখুন।",
+        "আসন্ন ঝড় বা বিপদের ক্ষেত্রে 'Imminent storm/danger' লিখুন।",
+        "সৃষ্টিকর্তা সবকিছুর মাঝে বিদ্যমান—এমন ভাব প্রকাশে 'Immanent God' ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "Professor Hawking was an eminent physicist of our time.", "bn": "অধ্যাপক হকিং আমাদের সময়ের একজন বিখ্যাত/বিশিষ্ট পদার্থবিদ ছিলেন।" },
+        { "en": "The dark clouds suggest that a heavy storm is imminent.", "bn": "কালো মেঘগুলো ইঙ্গিত দিচ্ছে যে একটি প্রবল ঝড় আসন্ন/শীঘ্রই ঘটতে যাচ্ছে।" },
+        { "en": "Pantheism is the belief that God is immanent in nature.", "bn": "সর্বেশ্বরবাদ হলো এমন একটি বিশ্বাস যে ঈশ্বর প্রকৃতির মধ্যেই বিদ্যমান/অন্তর্নিহিত।" },
+        { "en": "Several eminent lawyers were hired to defend the company.", "bn": "কোম্পানির পক্ষে লড়ার জন্য বেশ কয়েকজন বিশিষ্ট আইনজীবীকে নিয়োগ দেওয়া হয়েছিল।" },
+        { "en": "The government warned the citizens of an imminent volcano eruption.", "bn": "সরকার নাগরিকদের একটি আসন্ন আগ্নেয়গিরির অগ্ন্যুৎপাতের বিষয়ে সতর্ক করেছে।" },
+        { "en": "Love and compassion are immanent human qualities.", "bn": "ভালোবাসা এবং সহানুভূতি হলো মানুষের অন্তর্নিহিত গুণাবলী।" },
+        { "en": "The eminent author was awarded the Nobel Prize in Literature.", "bn": "বিশিষ্ট লেখককে সাহিত্যে নোবেল পুরস্কার প্রদান করা হয়েছিল।" },
+        { "en": "The patient is in critical condition; death seems imminent.", "bn": "রোগীর অবস্থা আশঙ্কাজনক; মৃত্যু আসন্ন বলে মনে হচ্ছে।" },
+        { "en": "Many theologians believe that the divine spirit is immanent in all living things.", "bn": "অনেক ধর্মতাত্ত্বিক বিশ্বাস করেন যে ঐশ্বরিক আত্মা সকল জীবন্ত বস্তুর মধ্যে অন্তর্নিহিত রয়েছে।" },
+        { "en": "Due to the imminent financial crisis, the company cut down its expenses.", "bn": "আসন্ন আর্থিক সংকটের কারণে কোম্পানিটি তার ব্যয় কমিয়ে দিয়েছিল।" }
+      ],
+      "tips": "সহজ ট্রিক: Eminent-এর 'E' দিয়ে মনে রাখুন 'Excellent/Famous' (বিখ্যাত)। Imminent-এর 'Im' দিয়ে মনে রাখুন 'Immediate' (আসন্ন/দ্রুত ঘটতে যাওয়া)।"
+    },
+    {
+      "name": "Complement vs. Compliment & Principal vs. Principle (পেশাদারী জীবনের বিভ্রান্তিকর শব্দ জোড়)",
+      "banglaName": "Complement বনাম Compliment এবং Principal বনাম Principle",
+      "definition": "These two pairs are classic homophones in professional English. 'Complement' (with an 'e') means to complete, go well with, or improve something. 'Compliment' (with an 'i') means to praise or flatter someone. 'Principal' means the head of a school, or the main/most important thing, or a capital sum. 'Principle' (always a noun) means a fundamental truth, law, or moral rule.",
+      "banglaDefinition": "পেশাদারী বা প্রাতিষ্ঠানিক ইংরেজিতে এই দুটি জোড় হলো বহুল ব্যবহৃত হোমোফোন। 'Complement' (বানানে 'e' রয়েছে) এর অর্থ হলো কোনো কিছুকে সম্পূর্ণ করা, মানানসই হওয়া বা আরও উন্নত করা। 'Compliment' (বানানে 'i' রয়েছে) এর অর্থ হলো প্রশংসা করা বা কারো প্রশংসা করে মিষ্টি কথা বলা। 'Principal' অর্থ হলো স্কুলের প্রধান শিক্ষক, প্রধান বা সবচেয়ে গুরুত্বপূর্ণ বিষয়, অথবা মূল মূলধন। 'Principle' (যা সর্বদা Noun) অর্থ হলো মৌলিক নীতি, সত্য, আইন বা নৈতিক নিয়মাবলি।",
+      "formula": "Complement: A + complements + B (goes well together)\nCompliment: A + compliments + B (praise)\nPrincipal: Principal + Noun / Principal (headmaster)\nPrinciple: A moral principle / A scientific principle",
+      "rules": [
+        "লাল ওয়াইন মাংসের স্বাদের সাথে ভালো যায়—এখানে 'Complement' হবে।",
+        "কেউ সুন্দর পোশাক পরেছে বলে তার প্রশংসা করলেন—এখানে 'Compliment' হবে।",
+        "মৌলিক নীতি বা আদর্শের ক্ষেত্রে সর্বদা বানানে শেষে 'ple' থাকা 'Principle' বসবে।",
+        "প্রধান বিষয় বা প্রধান শিক্ষকের ক্ষেত্রে সর্বদা বানানে শেষে 'pal' থাকা 'Principal' বসবে।"
+      ],
+      "examples": [
+        { "en": "The red tie complements his dark suit perfectly.", "bn": "লাল টাইটি তার কালো স্যুটের সাথে চমৎকারভাবে মানিয়ে যায়/পূর্ণতা দেয়। (Complement)" },
+        { "en": "She received many compliments on her outstanding presentation.", "bn": "সে তার অসাধারণ উপস্থাপনার জন্য অনেক প্রশংসা পেয়েছিল। (Compliments)" },
+        { "en": "The principal of the college addressed the new students today.", "bn": "কলেজের অধ্যক্ষ আজ নতুন শিক্ষার্থীদের উদ্দেশ্যে বক্তব্য রেখেছেন। (Principal)" },
+        { "en": "He is a man of high moral principles; he never tells lies.", "bn": "তিনি উচ্চ নৈতিক নীতিসম্পন্ন একজন মানুষ; তিনি কখনো মিথ্যা বলেন না। (Principles)" },
+        { "en": "This team needs players whose skills complement each other.", "bn": "এই দলের এমন খেলোয়াড় প্রয়োজন যাদের দক্ষতা একে অপরের পরিপূরক।" },
+        { "en": "The boss complimented him for completing the project early.", "bn": "প্রকল্পটি সময়ের আগে শেষ করার জন্য বস তার প্রশংসা করেছিলেন।" },
+        { "en": "Our principal concern is the welfare of the children.", "bn": "আমাদের প্রধান দুশ্চিন্তা হলো শিশুদের কল্যাণ। (Principal = Main)" },
+        { "en": "This machine works on the basic principle of electromagnetism.", "bn": "এই যন্ত্রটি তড়িৎচৌম্বকত্বের মৌলিক নীতির ওপর কাজ করে।" },
+        { "en": "They served free desserts as a compliment from the chef.", "bn": "তারা শেফের পক্ষ থেকে সৌজন্যমূলক প্রশংসা/উপহার হিসেবে বিনামূল্যে ডেজার্ট পরিবেশন করেছিল।" },
+        { "en": "He refuses to compromise on his principles, no matter what.", "bn": "পরিস্থিতি যা-ই হোক না কেন, সে তার নীতির সাথে আপস করতে রাজি নয়।" }
+      ],
+      "tips": "মনে রাখার দারুণ উপায়: Principa*pal*-এর শেষে 'pal' (বন্ধু) আছে, আর স্কুলের প্রিন্সিপাল আমাদের 'pal' বা বন্ধু হতে পারেন। Princia*ple*-এর শেষে 'rule'-এর মতো উচ্চারণ আছে, যার অর্থ নীতি বা নিয়ম।"
+    },
+    {
+      "name": "Historic vs. Historical & Economic vs. Economical (প্রত্যয়ঘটিত সূক্ষ্ম অর্থগত পার্থক্য)",
+      "banglaName": "Historic বনাম Historical এবং Economic বনাম Economical",
+      "definition": "These suffix-based adjective pairs are often confused. 'Historic' refers to something famous or important in history (e.g., a historic moment/speech). 'Historical' simply refers to anything related to the past or the study of history (e.g., historical documents/novels). 'Economic' relates to the economy, trade, or finance. 'Economical' means saving money, cheap, or avoiding waste.",
+      "banglaDefinition": "সাফিক্স বা প্রত্যয়ভিত্তিক এই বিশেষণ জোড়গুলোর ব্যবহার প্রায়শই গুলিয়ে যায়। 'Historic' বলতে বোঝায় ইতিহাসে অত্যন্ত বিখ্যাত, গুরুত্বপূর্ণ বা স্মরণীয় কোনো ঘটনা (যেমন: একটি ঐতিহাসিক ভাষণ/মুহূর্ত)। 'Historical' বলতে সাধারণভাবে অতীতের যেকোনো বিষয় বা ইতিহাস চর্চা সম্পর্কিত বিষয়কে বোঝায় (যেমন: ঐতিহাসিক দলিল/উপন্যাস)। 'Economic' অর্থ হলো দেশের অর্থনীতি, বাণিজ্য বা অর্থ ব্যবস্থার সাথে সম্পর্কিত। 'Economical' অর্থ হলো সাশ্রয়ী, মৃতব্যয়ী বা অপচয় রোধকারী।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "The bad news did not effect him at all.",
+      "correct": "The bad news did not affect him at all.",
+      "explanation": "এখানে 'bad news' বা খারাপ খবরটি তাকে প্রভাবিত করেনি বোঝানো হচ্ছে। প্রভাবিত করা অর্থ প্রকাশে ক্রিয়াপদ বা Verb হিসেবে 'Affect' ব্যবহার করতে হবে, 'Effect' নয় (যা সাধারণত Noun)।"
+    },
+    {
+      "wrong": "He laid in bed all yesterday morning because he was exhausted.",
+      "correct": "He lay in bed all yesterday morning because he was exhausted.",
+      "explanation": "গতকাল নিজে শুয়ে থাকার কথা বলা হচ্ছে। নিজে শোয়ার ক্রিয়াপদ হলো 'Lie'। যেহেতু ঘটনাটি অতীতের (yesterday), তাই 'Lie'-এর Past Tense হিসেবে 'Lay' ব্যবহার করতে হবে। 'Laid' হলো কোনো বস্তু রাখার (Lay) Past Tense।"
+    },
+    {
+      "wrong": "The manager assured that the project would be finished on time.",
+      "correct": "The manager assured me that the project would be finished on time. (Or: ...promised that...)",
+      "explanation": "'Assure' ভার্বটির পর অবশ্যই সরাসরি কোনো ব্যক্তিবাচক অবজেক্ট বা শ্রোতা (যেমন: me, us, the client) থাকতে হবে। অবজেক্ট না থাকলে তার জায়গায় 'Ensure' বা 'Promise' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "We need to compliment the existing software with new features.",
+      "correct": "We need to complement the existing software with new features.",
+      "explanation": "এখানে সফটওয়্যারটিকে আরও উন্নত বা পরিপূরক করার কথা বলা হচ্ছে। তাই বানানে 'e' থাকা 'Complement' (পরিপূরক হওয়া) ব্যবহার করতে হবে, প্রশংসাসূচক 'Compliment' নয়।"
+    },
+    {
+      "wrong": "An imminent scientist was invited to deliver the speech.",
+      "correct": "An eminent scientist was invited to deliver the speech.",
+      "explanation": "বিজ্ঞানী বিখ্যাত বা বিশিষ্ট ছিলেন বোঝাতে 'Eminent' ব্যবহার করতে হবে। 'Imminent' শব্দের অর্থ হলো আসন্ন বা যা এখনই ঘটতে যাচ্ছে।"
+    },
+    {
+      "wrong": "We read a historic novel about the French Revolution.",
+      "correct": "We read a historical novel about the French Revolution.",
+      "explanation": "ইতিহাসের পটভূমিতে লেখা বা ইতিহাস সম্পর্কিত উপন্যাস বোঝাতে 'Historical' ব্যবহার করতে হবে। 'Historic' কেবল ইতিহাসে অত্যন্ত গুরুত্বপূর্ণ বা স্মরণীয় ঘটনার ক্ষেত্রে বসে।"
+    },
+    {
+      "wrong": "The principal of non-violence was promoted by Mahatma Gandhi.",
+      "correct": "The principle of non-violence was promoted by Mahatma Gandhi.",
+      "explanation": "মহাত্মা গান্ধীর অহিংসা 'নীতি' বা আদর্শের কথা বলা হচ্ছে। আদর্শ বা নীতির ক্ষেত্রে বানানে শেষে 'ple' থাকা 'Principle' ব্যবহার করতে হবে, প্রধান বা অধ্যক্ষ বোঝানো 'Principal' নয়।"
+    },
+    {
+      "wrong": "Buying a luxury car is not very economic for a middle-class family.",
+      "correct": "Buying a luxury car is not very economical for a middle-class family.",
+      "explanation": "এখানে বিলাসবহুল গাড়ি কেনা মধ্যবিত্ত পরিবারের জন্য 'সাশ্রয়ী' বা খরচ বাঁচানোর মতো নয় বোঝানো হচ্ছে। সাশ্রয়ী অর্থে 'Economical' সঠিক শব্দ, দেশের সামগ্রিক অর্থনীতি সম্পর্কিত 'Economic' নয়।"
+    }
+  ]
 }

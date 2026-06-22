@@ -1,10 +1,202 @@
 {
   "chapter": 64,
   "level": "Advanced",
-  "title": "Common Grammar Mistakes",
+  "title": "Common Grammar Mistakes (সাধারণ ব্যাকরণগত ভুলসমূহ)",
   "icon": "warning",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Common Grammar Mistakes in advanced English often involve subtle syntactic errors rather than basic spelling or punctuation issues. This chapter covers complex structural traps such as dangling or misplaced modifiers, subject-verb agreement with intervening clauses, ambiguous pronoun references, lack of parallel structure in correlative pairings, comma splices, and incorrect conditional/subjunctive formulations. Mastering these nuances is essential for polishing your writing and achieving error-free academic and professional communication.",
+  "banglaDescription": "উন্নত বা অ্যাডভান্সড ইংরেজির সাধারণ ব্যাকরণগত ভুলগুলো মূলত বানান বা যতিচিহ্নের সাধারণ ভুলের চেয়ে বাক্য গঠনের সূক্ষ্ম অসঙ্গতিগুলোর সাথে সম্পর্কিত। এই চ্যাপ্টারে মডিফায়ারের ঝুলন্ত বা ভুল অবস্থান, মধ্যবর্তী ক্লজ যুক্ত জটিল বাক্যের সাবজেক্ট-ভার্ব এগ্রিমেন্ট, সর্বনামের অস্পষ্ট রেফারেন্স, কো-রিলেটিভ কনজাংশন ব্যবহারের সময় সমান্তরাল কাঠামোর অভাব, কমা স্প্লাইস এবং শর্তসাপেক্ষ ও সাবজাঙ্কটিভ বাক্যের ভুল গঠন নিয়ে বিস্তারিত আলোচনা করা হয়েছে। এই সূক্ষ্ম বিষয়গুলো আয়ত্ত করা আপনার লেখাকে ত্রুটিহীন, প্রাতিষ্ঠানিক ও পেশাদারী মানের করতে অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "Dangling and Misplaced Modifiers (ঝুলন্ত ও ভুল স্থানে স্থাপিত মডিফায়ার)",
+      "banglaName": "ঝুলন্ত ও ভুল স্থানে স্থাপিত মডিফায়ার",
+      "definition": "A modifier is a word, phrase, or clause that describes another word. A dangling modifier occurs when the word it is meant to modify is missing from the sentence. A misplaced modifier is placed too far from the word it modifies, making the sentence confusing or unintentionally funny.",
+      "banglaDefinition": "মডিফায়ার হলো এমন একটি শব্দ, ফ্রেজ বা ক্লজ যা অন্য কোনো শব্দকে বর্ণনা করে। যখন কোনো মডিফাইং ফ্রেজ যে শব্দটিকে বর্ণনা করার কথা, সেটি বাক্যে অনুপস্থিত থাকে বা পরিষ্কারভাবে উল্লেখ থাকে না, তখন তাকে ঝুলন্ত মডিফায়ার (Dangling Modifier) বলে। আর মডিফায়ারটিকে যদি তার কাঙ্ক্ষিত শব্দ থেকে অনেক দূরে স্থাপন করা হয়, তবে তাকে ভুল স্থানে স্থাপিত মডিফায়ার (Misplaced Modifier) বলে, যা বাক্যের অর্থকে বিভ্রান্তিকর বা হাস্যকর করে তোলে।",
+      "formula": "Correct: [Modifying Phrase], [Subject that performs the action of the phrase] + [Verb] + ...",
+      "rules": [
+        "বাক্যের শুরুতে যদি কোনো পার্টিসিপল ফ্রেজ (-ing বা -ed যুক্ত) থাকে, তবে কমার ঠিক পরের সাবজেক্টটিকে অবশ্যই সেই কাজের প্রকৃত কর্তা হতে হবে।",
+        "মডিফায়ারকে সর্বদা সে যে শব্দটিকে বর্ণনা করছে তার ঠিক পাশে বসাতে হবে: 'Only I want...' বনাম 'I want only...'",
+        "ঝুলন্ত মডিফায়ার ঠিক করার জন্য হয় প্রথম ফ্রেজটিকে পূর্ণ ক্লজে রূপান্তর করুন, অথবা কমার পরের সাবজেক্টটি পরিবর্তন করুন।"
+      ],
+      "examples": [
+        { "en": "Incorrect: Walking down the street, a heavy brick fell on his head. / Correct: While he was walking down the street, a heavy brick fell on his head.", "bn": "ভুল: রাস্তা দিয়ে হাঁটার সময়, একটি ভারী ইট তার মাথায় পড়েছিল। (ইট নিজে নিজে হাঁটছিল মনে হচ্ছে) / সঠিক: যখন সে রাস্তা দিয়ে হাঁটছিল, তখন একটি ভারী ইট তার মাথায় পড়েছিল।" },
+        { "en": "Incorrect: Having finished the report, the computer was turned off. / Correct: Having finished the report, the researcher turned off the computer.", "bn": "ভুল: রিপোর্টটি শেষ করার পর, কম্পিউটারটি বন্ধ করা হয়েছিল। (কম্পিউটার রিপোর্ট শেষ করেনি) / সঠিক: রিপোর্টটি শেষ করার পর, গবেষক কম্পিউটারটি বন্ধ করেছিলেন।" },
+        { "en": "Incorrect: I bought a fresh loaf of bread from the bakery that was hot. / Correct: I bought a fresh loaf of bread, which was hot, from the bakery.", "bn": "ভুল: আমি বেকারি থেকে এক টুকরো তাজা রুটি কিনেছিলাম যা গরম ছিল। (বেকারিটি গরম ছিল মনে হচ্ছে) / সঠিক: আমি বেকারি থেকে এক টুকরো গরম তাজা রুটি কিনেছিলাম।" },
+        { "en": "Incorrect: She nearly drove the car for ten hours. / Correct: She drove the car for nearly ten hours.", "bn": "ভুল: সে গাড়িটি চালাতে চালাতে প্রায় দশ ঘণ্টা শেষ করল। / সঠিক: সে প্রায় দশ ঘণ্টা ধরে গাড়িটি চালিয়েছিল।" },
+        { "en": "Incorrect: Covered in mud, John washed his dog. / Correct: John washed his dog, which was covered in mud.", "bn": "ভুল: কাদায় ঢাকা অবস্থায়, জন তার কুকুরটি ধুয়ে দিয়েছিল। (জন কাদায় ঢাকা ছিল মনে হচ্ছে) / সঠিক: জন তার কুকুরটিকে ধুয়ে দিয়েছিল, যা কাদায় ঢাকা ছিল।" },
+        { "en": "Incorrect: Standing on the balcony, the view of the city was beautiful. / Correct: Standing on the balcony, we saw a beautiful view of the city.", "bn": "ভুল: বারান্দায় দাঁড়ানো অবস্থায়, শহরের দৃশ্যটি সুন্দর লাগছিল। / সঠিক: বারান্দায় দাঁড়িয়ে আমরা শহরের একটি সুন্দর দৃশ্য দেখেছিলাম।" },
+        { "en": "Incorrect: To win the competition, practice must be done daily. / Correct: To win the competition, you must practice daily.", "bn": "ভুল: প্রতিযোগিতা জেতার জন্য, প্রতিদিন অনুশীলন করতে হবে। / সঠিক: প্রতিযোগিতা জেতার জন্য, তোমাকে অবশ্যই প্রতিদিন অনুশীলন করতে হবে।" },
+        { "en": "Incorrect: I saw a tiger riding in my car. / Correct: While riding in my car, I saw a tiger.", "bn": "ভুল: আমি গাড়িতে চড়ার সময় একটি বাঘ দেখেছিলাম। (বাঘটি গাড়িতে চড়ছিল মনে হচ্ছে) / সঠিক: আমি যখন গাড়িতে করে যাচ্ছিলাম, তখন একটি বাঘ দেখেছিলাম।" },
+        { "en": "Incorrect: Frozen in ice, the archeologists found a mammoth. / Correct: The archeologists found a mammoth that was frozen in ice.", "bn": "ভুল: বরফে জমে থাকা অবস্থায়, প্রত্নতাত্ত্বিকরা একটি ম্যামথ পেয়েছিলেন। (প্রত্নতাত্ত্বিকরা বরফে জমে ছিলেন মনে হচ্ছে) / সঠিক: প্রত্নতাত্ত্বিকরা বরফে জমে থাকা একটি ম্যামথ খুঁজে পেয়েছিলেন।" },
+        { "en": "Incorrect: Though very tired, the work was completed on time. / Correct: Though very tired, she completed the work on time.", "bn": "ভুল: খুব ক্লান্ত থাকা সত্ত্বেও, কাজটি সময়মতো শেষ হয়েছিল। (কাজটি ক্লান্ত ছিল না) / সঠিক: খুব ক্লান্ত থাকা সত্ত্বেও, সে কাজটি সময়মতো শেষ করেছিল।" }
+      ],
+      "tips": "রাইটিং রিভিশন করার সময় বাক্যের শুরুর ফ্রেজটি পড়েই নিজেকে প্রশ্ন করুন: 'এই কাজটি কে করছে?'। কমার ঠিক পরে যদি সেই ব্যক্তির নাম বা প্রোনাউন না পান, তবে বাক্যটি ঝুলন্ত মডিফায়ার (Dangling Modifier) এর শিকার।"
+    },
+    {
+      "name": "Subject-Verb Agreement with Intervening Phrases (জটিল ও মধ্যবর্তী বাক্যাংশ সহ সাবজেক্ট-ভার্ব এগ্রিমেন্ট)",
+      "banglaName": "জটিল ও মধ্যবর্তী বাক্যাংশ সহ সাবজেক্ট-ভার্ব এগ্রিমেন্ট",
+      "definition": "Subject-verb agreement errors frequently happen when there are intervening words or phrases (such as prepositions like 'of', 'in', or parenthetical expressions like 'as well as', 'along with', 'accompanied by') between the subject and the verb. Writers often mistakenly match the verb with the nearest noun instead of the actual subject.",
+      "banglaDefinition": "সাবজেক্ট-ভার্ব এগ্রিমেন্টের ভুলগুলো সাধারণত তখন ঘটে যখন সাবজেক্ট এবং ভার্বের মাঝে অন্যান্য প্রিপজিশনাল ফ্রেজ (যেমন: of, in) বা সংযোজক ফ্রেজ (যেমন: as well as, along with, accompanied by) অবস্থান করে। লেখকেরা অনেক সময় মূল সাবজেক্টকে খেয়াল না করে ভার্বের ঠিক পূর্বে থাকা নিকটবর্তী নাউন অনুযায়ী ভার্ব নির্ধারণ করে ফেলেন, যা একটি বড় ভুল।",
+      "formula": "Singular Subject + [with/along with/as well as/of + Plural Nouns] + Singular Verb\nPlural Subject + [with/along with/as well as/of + Singular Nouns] + Plural Verb",
+      "rules": [
+        "Parenthetical expressions (as well as, along with, together with, in addition to, accompanied by) বাক্যের মূল সাবজেক্টকে প্লুরাল করতে পারে না।",
+        "প্রিপজিশন 'of'-এর আগের শব্দটিই সাধারণত মূল সাবজেক্ট (head noun) হয়: 'The box of chocolates *is*...' ('chocolates' অনুযায়ী 'are' হবে না)।",
+        "'Each', 'Every', 'Everyone', 'Neither', 'Either' দিয়ে শুরু হওয়া সাবজেক্টগুলো সর্বদা Singular Verb গ্রহণ করে, যদিও এদের পরে প্লুরাল নাউন থাকে।"
+      ],
+      "examples": [
+        { "en": "Incorrect: The quality of these mangoes are not good. / Correct: The quality of these mangoes is not good.", "bn": "ভুল: এই আমগুলোর গুণগত মান ভালো না। / সঠিক: এই আমগুলোর গুণগত মান ভালো না। (Mangoes নয়, 'quality' হলো আসল সাবজেক্ট)" },
+        { "en": "Incorrect: The manager, along with his employees, were present. / Correct: The manager, along with his employees, was present.", "bn": "ভুল: ম্যানেজার এবং তাঁর কর্মচারীরা উপস্থিত ছিলেন। / সঠিক: ম্যানেজার, তাঁর কর্মচারীদের সাথে নিয়ে, উপস্থিত ছিলেন। (Manager হলো আসল সাবজেক্ট)" },
+        { "en": "Incorrect: Neither of the plans are feasible. / Correct: Neither of the plans is feasible.", "bn": "ভুল: পরিকল্পনাগুলোর কোনোটিই কার্যকর নয়। / সঠিক: পরিকল্পনাগুলোর কোনোটিই কার্যকর নয়। (Neither সর্বদা singular)" },
+        { "en": "Incorrect: A basket of red apples have been delivered. / Correct: A basket of red apples has been delivered.", "bn": "ভুল: লাল আপেলের একটি ঝুড়ি সরবরাহ করা হয়েছে। / সঠিক: লাল আপেলের একটি ঝুড়ি সরবরাহ করা হয়েছে। (Basket হলো আসল সাবজেক্ট)" },
+        { "en": "Incorrect: The politician, accompanied by his guards, are coming. / Correct: The politician, accompanied by his guards, is coming.", "bn": "ভুল: রাজনীতিবিদ, তাঁর দেহরক্ষীদের সাথে নিয়ে, আসছেন। / সঠিক: রাজনীতিবিদ, তাঁর দেহরক্ষীদের সাথে নিয়ে, আসছেন।" },
+        { "en": "Incorrect: Each of the students have to submit the paper. / Correct: Each of the students has to submit the paper.", "bn": "ভুল: প্রত্যেক শিক্ষার্থীকে কাগজ জমা দিতে হবে। / সঠিক: প্রত্যেক শিক্ষার্থীকে কাগজ জমা দিতে হবে। (Each-এর জন্য 'has')" },
+        { "en": "Incorrect: The main cause of the failures are lack of practice. / Correct: The main cause of the failures is lack of practice.", "bn": "ভুল: ব্যর্থতার প্রধান কারণ অনুশীলনের অভাব। / সঠিক: ব্যর্থতার প্রধান কারণ অনুশীলনের অভাব। ('cause' অনুযায়ী 'is')" },
+        { "en": "Incorrect: Not only the students but also the teacher were laughing. / Correct: Not only the students but also the teacher was laughing.", "bn": "ভুল: কেবল শিক্ষার্থীরাই নয়, শিক্ষকও হাসছিলেন। / সঠিক: কেবল শিক্ষার্থীরাই নয়, শিক্ষকও হাসছিলেন। (বাট অলসোর পরের নিকটতম সাবজেক্ট 'teacher' অনুযায়ী 'was')" },
+        { "en": "Incorrect: The houses in this neighborhood has beautiful gardens. / Correct: The houses in this neighborhood have beautiful gardens.", "bn": "ভুল: এই এলাকার বাড়িগুলোতে সুন্দর বাগান রয়েছে। / সঠিক: এই এলাকার বাড়িগুলোতে সুন্দর বাগান রয়েছে। ('houses' অনুযায়ী 'have')" },
+        { "en": "Incorrect: Either my sister or my parents is going to attend. / Correct: Either my sister or my parents are going to attend.", "bn": "ভুল: হয় আমার বোন অথবা আমার মা-বাবা উপস্থিত থাকবেন। / সঠিক: হয় আমার বোন অথবা আমার মা-বাবা উপস্থিত থাকবেন। (parents-এর কাছাকাছি থাকায় 'are')" }
+      ],
+      "tips": "সহজ উপায়: সাবজেক্ট ও ভার্বের মাঝখানের অংশটিকে (বিশেষ করে কমা দিয়ে ঘেরা অংশ বা প্রিপজিশনাল ফ্রেজ) মনে মনে কেটে দিয়ে বাক্যটি পড়ুন। যেমন: 'The box [of apples] is...' পড়লে সহজেই সঠিক ভার্বটি চেনা যায়।"
+    },
+    {
+      "name": "Pronoun-Antecedent Agreement & Ambiguous Reference (সর্বনামের অস্পষ্ট রেফারেন্সের ভুল)",
+      "banglaName": "সর্বনামের অস্পষ্ট রেফারেন্সের ভুল",
+      "definition": "A pronoun must agree in number (singular/plural) and gender with its antecedent (the noun it replaces). Ambiguous pronoun reference occurs when a pronoun (like 'he', 'she', 'it', 'they', 'this') could refer to more than one noun in the sentence, leaving the reader confused about which noun is being replaced.",
+      "banglaDefinition": "একটি প্রোনাউনকে অবশ্যই তার অ্যান্টিসিডেন্ট বা পূর্ববর্তী নাউনের সংখ্যা (singular/plural) এবং লিঙ্গ অনুযায়ী মিলতে হবে। অস্পষ্ট প্রোনাউন রেফারেন্স (Ambiguous reference) তখন ঘটে যখন একটি বাক্যে একাধিক নাউন থাকে এবং ব্যবহৃত প্রোনাউনটি (যেমন: he, she, it, they) আসলে কাকে নির্দেশ করছে তা পরিষ্কার বোঝা যায় না।",
+      "formula": "Incorrect: [Noun A] told [Noun B] that he... (unclear who 'he' is)\nCorrect: [Noun A] said to [Noun B], \"I...\" / Clarify by repeating the noun.",
+      "rules": [
+        "কখনো বাক্যে প্রোনাউন ব্যবহারের মাধ্যমে দ্ব্যর্থতা বা বিভ্রান্তি তৈরি করবেন না: 'The dog bit the cat because it was running' (it কে ছিল? কুকুর নাকি বিড়াল?)।",
+        "singular collective nouns (যেমন: company, committee, team) এর পরিবর্তে 'they' বা 'their' ব্যবহার না করে 'it' বা 'its' ব্যবহার করুন।",
+        "বাক্যের শুরুতে কেবল 'This...' দিয়ে বাক্য শুরু করবেন না যদি না 'This' এর পরে একটি সুনির্দিষ্ট নাউন থাকে (যেমন: 'This decision...')."
+      ],
+      "examples": [
+        { "en": "Incorrect: The teacher told the student that he had failed. / Correct: The teacher told the student, \"You have failed.\" (Or: ...that the student had failed.)", "bn": "ভুল: শিক্ষক ছাত্রটিকে বলেছিলেন যে সে ফেল করেছে। (ফেল কে করেছে? শিক্ষক নাকি ছাত্র?) / সঠিক: শিক্ষক ছাত্রটিকে বলেছিলেন যে ছাত্রটি ফেল করেছে।" },
+        { "en": "Incorrect: Every company must protect their data. / Correct: Every company must protect its data.", "bn": "ভুল: প্রতিটি কোম্পানিকে তাদের ডেটা সুরক্ষিত করতে হবে। / সঠিক: প্রতিটি কোম্পানিকে তার (its) ডেটা সুরক্ষিত করতে হবে। (company হলো singular)" },
+        { "en": "Incorrect: Take the radio out of the car and fix it. / Correct: Take the radio out of the car and fix the radio.", "bn": "ভুল: গাড়ি থেকে রেডিওটি বের করো এবং এটি ঠিক করো। (গাড়ি ঠিক করবে নাকি রেডিও?) / সঠিক: গাড়ি থেকে রেডিওটি বের করো এবং রেডিওটি ঠিক করো।" },
+        { "en": "Incorrect: Neither of the girls finished their project. / Correct: Neither of the girls finished her project.", "bn": "ভুল: মেয়েদের কেউই তাদের প্রজেক্ট শেষ করেনি। / সঠিক: মেয়েদের কেউই তার (her) প্রজেক্ট শেষ করেনি। (Neither-এর সাথে singular বসে)" },
+        { "en": "Incorrect: John met Bill while he was walking in the park. / Correct: While John was walking in the park, he met Bill.", "bn": "ভুল: পার্কের মধ্যে হাঁটার সময় জন বিলের সাথে দেখা করেছিল। (কে হাঁটছিল? জন নাকি বিল?) / সঠিক: পার্কে হাঁটার সময় জনের সাথে বিলের দেখা হয়েছিল।" },
+        { "en": "Incorrect: The committee has made their final decision. / Correct: The committee has made its final decision.", "bn": "ভুল: কমিটি তাদের চূড়ান্ত সিদ্ধান্ত নিয়েছে। / সঠিক: কমিটি তার (its) চূড়ান্ত সিদ্ধান্ত নিয়েছে। (committee একটি একক দল বা collective noun)" },
+        { "en": "Incorrect: She put the cake on the plate and ate it. / Correct: She ate the cake after putting it on the plate.", "bn": "ভুল: সে প্লেটে কেকটি রাখল এবং এটি খেল। (প্লেট খেল নাকি কেক?) / সঠিক: সে প্লেটে কেকটি রাখার পর কেকটি খেল।" },
+        { "en": "Incorrect: Anyone who wants to leave early must bring their slip. / Correct: Anyone who wants to leave early must bring his or her slip.", "bn": "ভুল: যে কেউ সকাল সকাল চলে যেতে চাইলে তাদের স্লিপ নিয়ে আসতে হবে। / সঠিক: যে কেউ সকাল সকাল চলে যেতে চাইলে তাকে তার (his or her) স্লিপ নিয়ে আসতে হবে।" },
+        { "en": "Incorrect: They decided to raise taxes. This made the citizens angry. / Correct: They decided to raise taxes. This decision made the citizens angry.", "bn": "ভুল: তারা কর বাড়ানোর সিদ্ধান্ত নিয়েছে। এটি নাগরিকদের রাগান্বিত করেছে। / সঠিক: তারা কর বাড়ানোর সিদ্ধান্ত নিয়েছে। এই সিদ্ধান্তটি নাগরিকদের রাগান্বিত করেছে।" },
+        { "en": "Incorrect: If the baby does not drink the milk, boil it. / Correct: If the baby does not drink the milk, boil the milk.", "bn": "ভুল: বাচ্চাটি যদি দুধ না খায়, তবে এটিকে সেদ্ধ করো। (বাচ্চাকে সেদ্ধ করবে নাকি দুধকে?) / সঠিক: বাচ্চাটি যদি দুধ না খায়, তবে দুধটি সেদ্ধ করো।" }
+      ],
+      "tips": "লেখার সময় যদি এমন বাক্য তৈরি হয় যেখানে দুটি সম্ভাব্য নাউনের পর 'he' বা 'it' আসছে, তবে প্রোনাউনটি পরিহার করে সরাসরি নাউনটি পুনরায় উল্লেখ করুন বা সরাসরি উক্তি (Direct Speech) ব্যবহার করুন।"
+    },
+    {
+      "name": "Parallelism Errors in Lists and Pairings (তালিকা এবং জোড় গঠনে সমান্তরাল কাঠামোর ভুল)",
+      "banglaName": "তালিকা এবং জোড় গঠনে সমান্তরাল কাঠামোর ভুল",
+      "definition": "Parallelism is the matching of sentence structures. When you list items or connect ideas using coordinating conjunctions (and, but, or) or correlative conjunctions (not only... but also, both... and, either... or), all items must have the same grammatical form (e.g., all gerunds, all infinitives, or all nouns). Non-parallel structures sound awkward and unprofessional.",
+      "banglaDefinition": "সমান্তরালতা বা প্যারালেলিজম হলো বাক্যের গাঠনিক সমতা বজায় রাখা। যখন আপনি কোনো তালিকা তৈরি করেন বা কো-অর্ডিনেটিং কনজাংশন (and, but) এবং কো-রিলেটিভ কনজাংশন (not only... but also) দ্বারা বাক্য যুক্ত করেন, তখন প্রতিটি উপাদানের ব্যাকরণগত রূপ সমান হতে হবে (যেমন: সবগুলোই Gerund, অথবা সবগুলোই Infinitive, অথবা সবগুলোই Noun হতে হবে)। এর ব্যত্যয় ঘটলে বাক্যটি শুনতে বেমানান ও অপেশাদার মনে হয়।",
+      "formula": "Incorrect: Not only + Verb + but also + Noun\nCorrect: Not only + Verb + but also + Verb\nCorrect: Not only + Noun + but also + Noun",
+      "rules": [
+        "তালিকার সব আইটেম একই রূপের হতে হবে: 'swimming, running, and painting' (সঠিক), 'swimming, to run, and painting' (ভুল)।",
+        "জোড় সংযোজকের (not only, either) ঠিক পরে যে পদ (part of speech) বসবে, তার দ্বিতীয় অংশের পরেও (but also, or) একই পদ বসাতে হবে।",
+        "তুলনা করার সময়ও প্যারালেলিজম জরুরি: 'My salary is lower than a teacher' (ভুল) -> 'My salary is lower than a teacher's [salary]' (সঠিক)।"
+      ],
+      "examples": [
+        { "en": "Incorrect: She likes swimming, to dance, and painting. / Correct: She likes swimming, dancing, and painting.", "bn": "ভুল: সে সাঁতার কাটা, নাচতে এবং ছবি আঁকা পছন্দ করে। / সঠিক: সে সাঁতার কাটা, নাচ এবং ছবি আঁকা পছন্দ করে।" },
+        { "en": "Incorrect: He is not only smart, but also has a lot of wealth. / Correct: He is not only smart, but also wealthy.", "bn": "ভুল: সে কেবল বুদ্ধিমানই নয়, তার অনেক সম্পদও আছে। / সঠিক: সে কেবল বুদ্ধিমানই নয়, ধনীও। (smart এবং wealthy উভয়ই adjective)" },
+        { "en": "Incorrect: We decided to go by train, by bus, or walking. / Correct: We decided to go by train, by bus, or on foot.", "bn": "ভুল: আমরা ট্রেনে, বাসে বা হেঁটে যাওয়ার সিদ্ধান্ত নিয়েছিলাম। / সঠিক: আমরা ট্রেনে, বাসে বা পায়ে হেঁটে যাওয়ার সিদ্ধান্ত নিয়েছিলাম।" },
+        { "en": "Incorrect: The syllabus covers writing, reading, and how to speak. / Correct: The syllabus covers writing, reading, and speaking.", "bn": "ভুল: সিলেবাসটিতে লেখা, পড়া এবং কীভাবে কথা বলতে হয় তা কভার করা হয়েছে। / সঠিক: সিলেবাসটিতে লেখা, পড়া এবং বলা কভার করা হয়েছে।" },
+        { "en": "Incorrect: To exercise regularly is as important as eating healthy. / Correct: Exercising regularly is as important as eating healthy. (Or: To exercise... as to eat...)", "bn": "ভুল: নিয়মিত ব্যায়াম করা স্বাস্থ্যকর খাওয়ার মতোই গুরুত্বপূর্ণ। / সঠিক: নিয়মিত ব্যায়াম করা স্বাস্থ্যকর খাবার খাওয়ার মতোই গুরুত্বপূর্ণ।" },
+        { "en": "Incorrect: His speech was clear, concise, and he spoke in a friendly way. / Correct: His speech was clear, concise, and friendly.", "bn": "ভুল: তার বক্তব্য ছিল স্পষ্ট, সংক্ষিপ্ত এবং সে বন্ধুত্বপূর্ণভাবে কথা বলেছিল। / সঠিক: তার বক্তব্য ছিল স্পষ্ট, সংক্ষিপ্ত এবং বন্ধুত্বপূর্ণ।" },
+        { "en": "Incorrect: I would rather study history than science. / Correct: I would rather study history than study science. (Or: ...history than science.)", "bn": "ভুল: আমি বিজ্ঞানের চেয়ে ইতিহাস পড়তে বেশি পছন্দ করব। / সঠিক: আমি বিজ্ঞানের চেয়ে ইতিহাস পড়তে বেশি পছন্দ করব।" },
+        { "en": "Incorrect: You can either pay by cash or credit card. / Correct: You can pay either by cash or by credit card. (Or: ...either cash or credit card.)", "bn": "ভুল: আপনি হয় ক্যাশে অথবা ক্রেডিট কার্ডের মাধ্যমে মূল্য দিতে পারেন। / সঠিক: আপনি হয় ক্যাশে অথবা ক্রেডিট কার্ডে মূল্য পরিশোধ করতে পারেন।" },
+        { "en": "Incorrect: Our goals are to reduce costs and improving quality. / Correct: Our goals are to reduce costs and to improve quality.", "bn": "ভুল: আমাদের লক্ষ্য হলো খরচ কমানো এবং গুণগত মান উন্নত করা। / সঠিক: আমাদের লক্ষ্য হলো খরচ কমানো এবং গুণগত মান উন্নত করা।" },
+        { "en": "Incorrect: The job requires typing skills, communication skills, and being punctual. / Correct: The job requires typing skills, communication skills, and punctuality.", "bn": "ভুল: চাকরির জন্য টাইপিং দক্ষতা, যোগাযোগ দক্ষতা এবং সময়ানুবর্তী হওয়া প্রয়োজন। / সঠিক: চাকরির জন্য টাইপিং দক্ষতা, যোগাযোগ দক্ষতা এবং সময়ানুবর্তিতা প্রয়োজন।" }
+      ],
+      "tips": "যখনই বাক্যে 'and', 'but', 'or', 'than' বা জোড় সংযোজক শব্দ দেখবেন, একটু থেমে চেক করুন যে দুপাশের গ্রামাটিক্যাল স্ট্রাকচার একদম ব্যালেন্সড আছে কি না।"
+    },
+    {
+      "name": "Comma Splices, Run-on Sentences, and Fragments (কমা স্প্লাইস, রান-অন বাক্য ও অসম্পূর্ণ বাক্য)",
+      "banglaName": "কমা স্প্লাইস, রান-অন বাক্য ও অসম্পূর্ণ বাক্য",
+      "definition": "A comma splice occurs when two independent clauses (complete sentences) are joined with only a comma. A run-on sentence occurs when they are joined with no punctuation at all. A sentence fragment is an incomplete sentence that lacks a subject, a main verb, or does not express a complete thought.",
+      "banglaDefinition": "কমা স্প্লাইস (Comma Splice) তখন ঘটে যখন দুটি স্বাধীন ক্লজ বা পূর্ণ বাক্যকে কেবল একটি কমা দিয়ে যুক্ত করা হয়। আর যখন কোনো যতিচিহ্ন বা সংযোজক ছাড়াই দুটি পূর্ণ বাক্যকে এক লাইনে লিখে দেওয়া হয়, তখন তাকে রান-অন বাক্য (Run-on Sentence) বলে। অন্যদিকে, বাক্যে যদি সাবজেক্ট বা প্রধান ক্রিয়াপদ না থাকে অথবা সম্পূর্ণ অর্থ প্রকাশ না পায়, তাকে অসম্পূর্ণ বাক্য (Sentence Fragment) বলে।",
+      "formula": "Incorrect Comma Splice: Independent Clause, Independent Clause\nCorrect Option A: Independent Clause. Independent Clause\nCorrect Option B: Independent Clause; Independent Clause\nCorrect Option C: Independent Clause, + Coordinating Conjunction + Independent Clause",
+      "rules": [
+        "দুটি পূর্ণ বাক্যকে কেবল কমা দিয়ে জোড়া লাগানো যাবে না; এর জায়গায় সেমিকোলন (;) দিতে হবে অথবা 'and', 'but', 'so' বসাতে হবে।",
+        "কারণ বা ফলাফলবাচক শব্দ যেমন 'however', 'therefore', 'furthermore' দিয়ে বাক্য জোড়ার সময় সেমিকোলন ব্যবহার করুন: '...tired; however, she...'",
+        "অধীনস্থ ক্লজ (dependent clause) যেমন 'Because he was sick' একা বসতে পারে না; একে প্রধান ক্লজের সাথে যুক্ত করতে হবে।"
+      ],
+      "examples": [
+        { "en": "Incorrect: I went to the store, I bought some milk. / Correct: I went to the store and bought some milk. (Or: I went to the store; I bought some milk.)", "bn": "ভুল: আমি দোকানে গিয়েছিলাম, আমি কিছু দুধ কিনেছিলাম। / সঠিক: আমি দোকানে গিয়েছিলাম এবং কিছু দুধ কিনেছিলাম।" },
+        { "en": "Incorrect: The weather was beautiful indeed everyone went to the park. / Correct: The weather was beautiful; indeed, everyone went to the park.", "bn": "ভুল: আবহাওয়া সত্যিই চমৎকার ছিল সবাই পার্কে গিয়েছিল। (Run-on) / সঠিক: আবহাওয়া সত্যিই চমৎকার ছিল; প্রকৃতপক্ষে, সবাই পার্কে গিয়েছিল।" },
+        { "en": "Incorrect: Because she didn't study for the exam. / Correct: She failed the exam because she didn't study. (Or: Because she didn't study, she failed.)", "bn": "ভুল: কারণ সে পরীক্ষার জন্য পড়াশোনা করেনি। (Fragment) / সঠিক: সে পরীক্ষায় ফেল করেছিল কারণ সে পড়াশোনা করেনি।" },
+        { "en": "Incorrect: He passed the test, however, he was not satisfied. / Correct: He passed the test; however, he was not satisfied.", "bn": "ভুল: সে পরীক্ষায় পাস করেছিল, তবে, সে সন্তুষ্ট ছিল না। / সঠিক: সে পরীক্ষায় পাস করেছিল; তবে সে সন্তুষ্ট ছিল না। ('however'-এর আগে সেমিকোলন বসবে)" },
+        { "en": "Incorrect: The laptop is very fast, it has a long battery life. / Correct: The laptop is very fast, and it has a long battery life.", "bn": "ভুল: ল্যাপটপটি খুব দ্রুতগতির, এটির ব্যাটারি লাইফ দীর্ঘ। / সঠিক: ল্যাপটপটি খুব দ্রুতগতির এবং এটির ব্যাটারি লাইফ দীর্ঘ।" },
+        { "en": "Incorrect: Although she tried her best. / Correct: Although she tried her best, she couldn't win. (Or: She didn't win although she tried her best.)", "bn": "ভুল: যদিও সে তার সাধ্যমতো চেষ্টা করেছিল। (Fragment) / সঠিক: যদিও সে তার সাধ্যমতো চেষ্টা করেছিল, সে জিততে পারেনি।" },
+        { "en": "Incorrect: I love writing poetry it makes me feel creative. / Correct: I love writing poetry because it makes me feel creative.", "bn": "ভুল: আমি কবিতা লিখতে ভালোবাসি এটি আমাকে সৃজনশীল অনুভব করায়। / সঠিক: আমি কবিতা লিখতে ভালোবাসি কারণ এটি আমাকে সৃজনশীল অনুভব করায়।" },
+        { "en": "Incorrect: This is a beautiful house, indeed, it is the best in the area. / Correct: This is a beautiful house; indeed, it is the best in the area.", "bn": "ভুল: এটি একটি সুন্দর বাড়ি, প্রকৃতপক্ষে, এটি এলাকার মধ্যে সেরা। / সঠিক: এটি একটি সুন্দর বাড়ি; প্রকৃতপক্ষে, এটি এই এলাকার মধ্যে সেরা।" },
+        { "en": "Incorrect: Since we arrived early at the venue. / Correct: Since we arrived early at the venue, we got the best seats.", "bn": "ভুল: যেহেতু আমরা ভেন্যুতে সকাল সকাল এসেছিলাম। (Fragment) / সঠিক: যেহেতু আমরা ভেন্যুতে সকাল সকাল এসেছিলাম, আমরা সেরা আসনগুলো পেয়েছিলাম।" },
+        { "en": "Incorrect: John is working hard, he wants to get a promotion. / Correct: John is working hard because he wants to get a promotion.", "bn": "ভুল: জন কঠোর পরিশ্রম করছে, সে পদোন্নতি পেতে চায়। / সঠিক: জন কঠোর পরিশ্রম করছে কারণ সে পদোন্নতি পেতে চায়।" }
+      ],
+      "tips": "কমা স্প্লাইস এড়ানোর সেরা নিয়ম: নিজেকে প্রশ্ন করুন কমার দুই পাশের অংশ কি সম্পূর্ণ স্বাধীন বাক্য হতে পারে? যদি উত্তর 'হ্যাঁ' হয়, তবে অবিলম্বে কমাটি তুলে দিয়ে একটি ফুলস্টপ বা সেমিকোলন বসিয়ে দিন।"
+    },
+    {
+      "name": "Errors in Conditional Moods and Subjunctives (শর্তসাপেক্ষ বাক্য ও সাবজাঙ্কটিভ মুডের সাধারণ ভুলসমূহ)",
+      "banglaName": "শর্তসাপেক্ষ বাক্য ও সাবজাঙ্কটিভ মুডের ভুলসমূহ",
+      "definition": "Advanced writers often make errors in conditional clauses (like putting 'would' in the 'if' clause) or failing to recognize the subjunctive mood. The subjunctive mood requires bare infinitives (base verbs) after certain verbs/adjectives of urgency or necessity, regardless of the subject.",
+      "banglaDefinition": "অ্যাডভান্সড রাইটারদের ক্ষেত্রে অনেক সময় কন্ডিশনাল ক্লজে (যেমন: 'If' ক্লজের ভেতরে ভুল করে 'would' বা 'would have' বসানো) অথবা সাবজাঙ্কটিভ মুড চিনতে ভুল হতে দেখা যায়। সাবজাঙ্কটিভ মুডের অধীনে কোনো জোরালো পরামর্শ বা প্রয়োজনীয়তা প্রকাশকারী শব্দের পর সাবজেক্ট থার্ড-পারসন সিঙ্গুলার হলেও ভার্বের বেস রূপ (base verb) ব্যবহার করতে হয়, স্বাভাবিক টেন্সের নিয়ম এখানে খাটে না।",
+      "formula": "Incorrect Third Conditional: If I would have known, I would have helped.\nCorrect Third Conditional: If I had known, I would have helped.\nCorrect Subjunctive: I suggest that he go (not goes) there.",
+      "rules": [
+        "সাধারণ শর্তের ক্লজে (If-clause) কখনো 'would' বা 'will' বসানো যাবে না।",
+        "সাবজাঙ্কটিভ ভার্ব (suggest, recommend, insist, demand) এর পরের 'that' ক্লজে সর্বদা base verb (go, be, have) বসাতে হবে।",
+        "অবাস্তব ইচ্ছা বা শর্তে সাবজেক্ট যাই হোক না কেন, 'was'-এর পরিবর্তে 'were' বসবে: 'I wish I were rich.'"
+      ],
+      "examples": [
+        { "en": "Incorrect: If I would have seen you, I would have said hello. / Correct: If I had seen you, I would have said hello.", "bn": "ভুল: আমি যদি তোমাকে দেখতাম, তবে হ্যালো বলতাম। / সঠিক: আমি যদি তোমাকে দেখতাম, তবে হ্যালো বলতাম। (If ক্লজে had + V3 বসবে)" },
+        { "en": "Incorrect: The boss insisted that she goes to the meeting. / Correct: The boss insisted that she go to the meeting.", "bn": "ভুল: বস জেদ ধরেছিলেন যে সে যেন মিটিংয়ে যায়। / সঠিক: বস জেদ ধরেছিলেন যে সে যেন মিটিংয়ে যায়। (insisted-এর কারণে 'go' বসবে)" },
+        { "en": "Incorrect: I wish I was in Paris right now. / Correct: I wish I were in Paris right now.", "bn": "ভুল: আমি যদি এখন প্যারিসে থাকতাম। / সঠিক: আমি যদি এখন প্যারিসে থাকতাম। (অবাস্তব আক্ষেপে 'were' বসে)" },
+        { "en": "Incorrect: If he will arrive tomorrow, we will go out. / Correct: If he arrives tomorrow, we will go out.", "bn": "ভুল: সে যদি আগামীকাল আসে, তবে আমরা বাইরে যাব। / সঠিক: সে যদি আগামীকাল আসে, তবে আমরা বাইরে যাব। (If ক্লজে simple present)" },
+        { "en": "Incorrect: It is vital that he is informed of the decision. / Correct: It is vital that he be informed of the decision.", "bn": "ভুল: এটি অত্যন্ত গুরুত্বপূর্ণ যে তাকে যেন সিদ্ধান্তের কথা জানানো হয়। / সঠিক: এটি অত্যন্ত গুরুত্বপূর্ণ যে তাকে যেন সিদ্ধান্তের কথা জানানো হয়। (vital-এর কারণে 'be')" },
+        { "en": "Incorrect: If I had worked harder, I would get promoted last year. / Correct: If I had worked harder, I would have been promoted last year.", "bn": "ভুল: আমি যদি কঠোর পরিশ্রম করতাম, তবে গত বছর পদোন্নতি পেতাম। / সঠিক: আমি যদি কঠোর পরিশ্রম করতাম, তবে গত বছর পদোন্নতি পেতাম।" },
+        { "en": "Incorrect: I suggest that he doesn't sign the contract. / Correct: I suggest that he not sign the contract.", "bn": "ভুল: আমি পরামর্শ দিচ্ছি সে যেন চুক্তিতে স্বাক্ষর না করে। / সঠিক: আমি পরামর্শ দিচ্ছি সে যেন চুক্তিতে স্বাক্ষর না করে। (সাবজাঙ্কটিভে 'not' সরাসরি বসে)" },
+        { "en": "Incorrect: If you would have studied, you would have passed. / Correct: If you had studied, you would have passed.", "bn": "ভুল: তুমি যদি পড়াশোনা করতে, তবে পাস করতে। / সঠিক: তুমি যদি পড়াশোনা করতে, তবে পাস করতে।" },
+        { "en": "Incorrect: She talks as if she is the queen of England. / Correct: She talks as if she were the queen of England.", "bn": "ভুল: সে এমনভাবে কথা বলে যেন সে ইংল্যান্ডের রাণী। / সঠিক: সে এমনভাবে কথা বলে যেন সে ইংল্যান্ডের রাণী। (অবাস্তব তুলনায় 'were')" },
+        { "en": "Incorrect: The teacher demanded that every student does the homework. / Correct: The teacher demanded that every student do the homework.", "bn": "ভুল: শিক্ষক দাবি করেছিলেন যে প্রতিটি শিক্ষার্থী যেন বাড়ির কাজ করে। / সঠিক: শিক্ষক দাবি করেছিলেন যে প্রতিটি শিক্ষার্থী যেন বাড়ির কাজ করে। ('do' বেস রূপ)" }
+      ],
+      "tips": "কন্ডিশনাল এবং সাবজাঙ্কটিভের নিয়মগুলো প্রতিযোগিতামূলক পরীক্ষায় সবচেয়ে বেশি ভুল হিসেবে আসে। মনে রাখবেন, 'insist that he *be*' বা 'suggest that he *go*' শুনতে অদ্ভুত মনে হলেও এটিই শতভাগ শুদ্ধ ব্যাকরণ।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Walking through the forest, the trees seemed incredibly tall to the hikers.",
+      "correct": "As the hikers walked through the forest, the trees seemed incredibly tall to them.",
+      "explanation": "এটি ঝুলন্ত মডিফায়ার (Dangling Modifier) এর ভুল। মূল বাক্যে মনে হচ্ছে গাছগুলো নিজেই বনের মধ্য দিয়ে হাঁটছিল। মডিফাইং ফ্রেজের পর কমার পাশে অবশ্যই হাঁটার প্রকৃত কর্তা বা 'hikers' থাকতে হবে।"
+    },
+    {
+      "wrong": "The group of students from the local colleges are going to protest.",
+      "correct": "The group of students from the local colleges is going to protest.",
+      "explanation": "এখানে বাক্যের প্রকৃত সাবজেক্ট হলো 'group' (একবচন বা singular)। 'students' বা 'colleges' প্রিপজিশনাল ফ্রেজের ভেতরে থাকায় তা সাবজেক্ট নয়। তাই সিঙ্গুলার ভার্ব 'is' হবে।"
+    },
+    {
+      "wrong": "I love the new phone because of their high-quality camera.",
+      "correct": "I love the new phone because of its high-quality camera.",
+      "explanation": "'phone' শব্দটি একটি একবচন নাউন (singular noun)। তাই এর পরিবর্তে প্লুরাল প্রোনাউন 'their' ব্যবহার করা ভুল; এখানে পসেসিভ সিঙ্গুলার প্রোনাউন 'its' বসাতে হবে।"
+    },
+    {
+      "wrong": "She likes singing, dancing, and to cook delicious food.",
+      "correct": "She likes singing, dancing, and cooking delicious food.",
+      "explanation": "এটি প্যারালেলিজম বা সমান্তরাল কাঠামোর ভুল। তালিকা বা সিরিজের সব আইটেম একই ফর্মে হতে হবে। যেহেতু প্রথম দুটি Gerund (singing, dancing), তাই তৃতীয়টিকেও 'cooking' হতে হবে।"
+    },
+    {
+      "wrong": "He is very tired, he decided to sleep early.",
+      "correct": "He is very tired; therefore, he decided to sleep early. (Or: ...tired, so he decided...)",
+      "explanation": "দুটি সম্পূর্ণ বাক্যকে কেবল একটি কমা দিয়ে যুক্ত করাকে কমা স্প্লাইস (Comma Splice) বলে। সঠিক করার জন্য সেমিকোলন ও ট্রানজিশন অথবা কনজাংশন ব্যবহার করা আবশ্যক।"
+    },
+    {
+      "wrong": "The committee recommend that the policy is changed immediately.",
+      "correct": "The committee recommends that the policy be changed immediately.",
+      "explanation": "যেহেতু বাক্যে 'recommend' (পরামর্শবাচক সাবজাঙ্কটিভ ভার্ব) আছে, তাই পরবর্তী 'that' ক্লজের প্যাসিভ রূপ গঠনে 'is changed'-এর পরিবর্তে বেস রূপ 'be changed' বসবে।"
+    },
+    {
+      "wrong": "If I would have won the match, I would have celebrated.",
+      "correct": "If I had won the match, I would have celebrated.",
+      "explanation": "থার্ড কন্ডিশনাল বাক্যের 'If' ক্লজের ভেতরে কখনো 'would have' বসে না; সেখানে সর্বদা Past Perfect টেন্স (had + V3) ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "I cannot go with you because I didn't finish my homework yet.",
+      "correct": "I cannot go with you because I haven't finished my homework yet.",
+      "explanation": "বাক্যে 'yet' থাকার অর্থ কাজটি বর্তমান পর্যন্ত অমীমাংসিত। তাই এখানে Simple Past ('didn't finish') ব্যবহার করা ভুল; সঠিক রূপটি হবে Present Perfect ('haven't finished')।"
+    }
+  ]
 }

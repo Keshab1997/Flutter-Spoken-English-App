@@ -1,10 +1,202 @@
 {
   "chapter": 68,
   "level": "Advanced",
-  "title": "Collocations",
+  "title": "Collocations (কোলোকেশনস/শব্দজোড়)",
   "icon": "link",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Collocations are natural combinations of words that closely associate and co-occur in English. Instead of choosing words at random, native speakers rely on fixed or semi-fixed pairings (e.g., 'heavy rain' instead of 'strong rain', and 'make a decision' instead of 'do a decision'). Mastering collocations is the single most effective way to eliminate unnatural phrasing, improve lexical resource, and sound natural and idiomatic in academic, professional, and everyday English.",
+  "banglaDescription": "কোলোকেশনস (Collocations) হলো এমন কিছু স্বাভাবিক শব্দজোড় যা ইংরেজিতে সর্বদা একসাথে ব্যবহৃত হয়। নেটিভ স্পিকাররা যেকোনো শব্দ যথেচ্ছভাবে ব্যবহার না করে নির্দিষ্ট কিছু জোড়া শব্দ ব্যবহার করেন (যেমন: 'strong rain'-এর পরিবর্তে 'heavy rain', এবং 'do a decision'-এর পরিবর্তে 'make a decision')। কোলোকেশনস আয়ত্ত করা হলো কৃত্রিম বা অস্বাভাবিক বাক্য গঠন দূর করার, শব্দভাণ্ডারের দক্ষতা (lexical resource) উন্নত করার এবং প্রাতিষ্ঠানিক, পেশাদারী ও দৈনন্দিন ইংরেজিতে সাবলীল ও স্বাভাবিকভাবে কথা বলার বা লেখার সবচেয়ে কার্যকর উপায়।",
+  "topics": [
+    {
+      "name": "Verb + Noun Collocations (ক্রিয়াপদ ও বিশেষ্য শব্দজোড়)",
+      "banglaName": "Verb + Noun Collocations",
+      "definition": "Verb + Noun collocations pair a specific action verb with a noun to express a unified concept. Choosing the wrong verb can make the sentence sound completely unnatural to native speakers, even if the grammatical rules are followed perfectly (e.g., 'take a test' instead of 'make a test').",
+      "banglaDefinition": "Verb + Noun collocations হলো একটি নির্দিষ্ট অ্যাকশন ভার্ব বা ক্রিয়াপদের সাথে একটি নির্দিষ্ট নাউনের মিলন যা একটি অবিভাজ্য ধারণা প্রকাশ করে। ব্যাকরণের নিয়ম শতভাগ সঠিক থাকলেও ভুল ভার্ব বেছে নিলে বাক্যটি শুনতে সম্পূর্ণ অস্বাভাবিক বা কৃত্রিম মনে হতে পারে (যেমন: 'make a test'-এর পরিবর্তে 'take a test')।",
+      "formula": "Subject + Collocated Verb + Noun Phrase (Object)",
+      "rules": [
+        "নির্দিষ্ট নাউনের সাথে মানানসই নির্দিষ্ট ভার্বটি ব্যবহার করুন: 'commit a crime' (অপরাধ করা), 'perform an operation' (অপারেশন করা)।",
+        "আইনি বা প্রাতিষ্ঠানিক আলোচনায় সাধারণ ক্রিয়ার বদলে সুনির্দিষ্ট কোলোকেশন ব্যবহার করা হয়: 'give a speech' না বলে 'deliver a speech' বলা অনেক বেশি স্ট্যান্ডার্ড।",
+        "এসব জোড় শব্দের আক্ষরিক অনুবাদ অনেক সময় বাংলায় মেলে না, তাই এগুলোকে সরাসরি জোড় হিসেবে মুখস্থ করতে হয়।"
+      ],
+      "examples": [
+        { "en": "The suspect refused to give any information that might incriminate him.", "bn": "সন্দেহভাজন ব্যক্তিটি এমন কোনো তথ্য দিতে অস্বীকার করেছিল যা তাকে অপরাধী প্রমাণ করতে পারে।" },
+        { "en": "He decided to take a risk and invest all his savings in the startup.", "bn": "সে ঝুঁকি নেওয়ার সিদ্ধান্ত নিয়েছিল এবং তার সমস্ত সঞ্চয় নতুন স্টার্টআপে বিনিয়োগ করেছিল। (take a risk = ঝুঁকি নেওয়া)" },
+        { "en": "The president will deliver a speech on national television tonight.", "bn": "রাষ্ট্রপতি আজ রাতে জাতীয় টেলিভিশনে একটি ভাষণ দেবেন। (deliver a speech = ভাষণ দেওয়া)" },
+        { "en": "Please pay attention to the safety instructions before the flight.", "bn": "ফ্লাইটের আগে দয়া করে নিরাপত্তা নির্দেশাবলীর দিকে মনোযোগ দিন। (pay attention = মনোযোগ দেওয়া)" },
+        { "en": "If you break the law, you must be prepared to face the consequences.", "bn": "আপনি যদি আইন অমান্য করেন, তবে আপনাকে অবশ্যই পরিণতির মুখোমুখি হতে প্রস্তুত থাকতে হবে। (break the law = আইন অমান্য করা)" },
+        { "en": "She managed to make a fortune by trading in the stock market.", "bn": "সে শেয়ার বাজারে ব্যবসা করে বিপুল সম্পদ অর্জন করতে সক্ষম হয়েছিল। (make a fortune = বিপুল সম্পদ অর্জন করা)" },
+        { "en": "The government needs to take action against environmental pollution.", "bn": "পরিবেশ দূষণের বিরুদ্ধে সরকারের অবিলম্বে পদক্ষেপ নেওয়া প্রয়োজন। (take action = পদক্ষেপ নেওয়া)" },
+        { "en": "They had to reach a compromise after hours of intense negotiation.", "bn": "কয়েক ঘণ্টার তীব্র আলোচনার পর তারা একটি সমঝোতায় পৌঁছাতে বাধ্য হয়েছিল। (reach a compromise = সমঝোতায় পৌঁছানো)" },
+        { "en": "The surgeon will perform a complex operation tomorrow morning.", "bn": "সার্জন আগামীকাল সকালে একটি জটিল অস্ত্রোপচার করবেন। (perform an operation = অস্ত্রোপচার করা)" },
+        { "en": "I hope this explanation will clear up the confusion.", "bn": "আমি আশা করি এই ব্যাখ্যাটি বিভ্রান্তি দূর করবে। (clear up the confusion = বিভ্রান্তি দূর করা)" }
+      ],
+      "tips": "সহজ উপায়: 'করার' ইংরেজি সবসময় 'do' বা 'make' নয়। যেমন: অপরাধ করার ক্ষেত্রে 'do/make a crime' না লিখে 'commit a crime' লিখুন। একইভাবে ভুল করার ক্ষেত্রে 'make a mistake' এবং পরীক্ষা দেওয়ার ক্ষেত্রে 'take an exam' লিখুন।"
+    },
+    {
+      "name": "Adjective + Noun Collocations (বিশেষণ ও বিশেষ্য শব্দজোড়)",
+      "banglaName": "Adjective + Noun Collocations",
+      "definition": "Adjective + Noun collocations are combinations where a specific adjective is naturally used to describe a noun. Using a synonym of the adjective might make the sentence sound bizarre (e.g., using 'strong coffee' is correct, but 'powerful coffee' is completely unnatural).",
+      "banglaDefinition": "Adjective + Noun collocations হলো এমন শব্দজোড় যেখানে কোনো নাউনকে বর্ণনা করার জন্য একটি নির্দিষ্ট এডজেক্টিভ বা বিশেষণ স্বাভাবিকভাবে ব্যবহৃত হয়। সমার্থক অন্য কোনো এডজেক্টিভ ব্যবহার করলে বাক্যটি শুনতে হাস্যকর বা অবাস্তব মনে হতে পারে (যেমন: 'strong coffee' বলা সঠিক, কিন্তু 'powerful coffee' বলা সম্পূর্ণ অস্বাভাবিক, যদিও strong ও powerful সমার্থক)।",
+      "formula": "Subject + Verb + [Collocated Adjective + Noun]",
+      "rules": [
+        "তীব্রতা প্রকাশে সঠিক এডজেক্টিভ নির্বাচন করুন: বৃষ্টির ক্ষেত্রে 'heavy rain' (প্রবল বৃষ্টি), বাতাসের ক্ষেত্রে 'strong wind' (প্রবল বাতাস)।",
+        "হতাশার ক্ষেত্রে 'bitter disappointment' (তীব্র হতাশা), ট্রাফিকের ক্ষেত্রে 'heavy traffic' (তীব্র জ্যাম) ব্যবহার করুন।",
+        "পেশাদারী বর্ণনায় এই জোড় শব্দগুলো বাক্যকে অনেক বেশি অর্থবহ ও সংক্ষিপ্ত করে তোলে।"
+      ],
+      "examples": [
+        { "en": "We missed our flight due to heavy traffic on the highway.", "bn": "হাইওয়েতে তীব্র যানজটের কারণে আমরা আমাদের ফ্লাইটটি মিস করেছিলাম। (heavy traffic = তীব্র যানজট)" },
+        { "en": "There is a strong possibility that the project will be delayed.", "bn": "প্রকল্পটি বিলম্বিত হওয়ার একটি প্রবল সম্ভাবনা রয়েছে। (strong possibility = প্রবল সম্ভাবনা)" },
+        { "en": "The country is suffering from a severe shortage of clean water.", "bn": "দেশটি বিশুদ্ধ পানির তীব্র সংকটে ভুগছে। (severe shortage = তীব্র সংকট)" },
+        { "en": "I need a cup of strong coffee to wake me up this morning.", "bn": "আজ সকালে আমাকে জাগিয়ে তুলতে এক কাপ কড়া কফি প্রয়োজন। (strong coffee = কড়া কফি)" },
+        { "en": "The young entrepreneur made a major breakthrough in renewable energy.", "bn": "তরুণ উদ্যোক্তা নবায়নযোগ্য শক্তির ক্ষেত্রে একটি বড় সাফল্য/উদ্বোধন ঘটিয়েছিলেন। (major breakthrough = বড় সাফল্য)" },
+        { "en": "He expressed deep regret for the mistakes he had made.", "bn": "সে তার ভুলের জন্য গভীর অনুশোচনা প্রকাশ করেছিল। (deep regret = গভীর অনুশোচনা)" },
+        { "en": "The meeting was cancelled due to a conflict of interest.", "bn": "স্বার্থের দ্বন্দ্বের কারণে মিটিংটি বাতিল করা হয়েছিল। (conflict of interest = স্বার্থের দ্বন্দ্ব)" },
+        { "en": "She had to make a tough decision about her career.", "bn": "তাকে তার ক্যারিয়ার নিয়ে একটি কঠিন সিদ্ধান্ত নিতে হয়েছিল। (tough decision = কঠিন সিদ্ধান্ত)" },
+        { "en": "The storm caused widespread damage across the coastal areas.", "bn": "ঝড়টি উপকূলীয় অঞ্চল জুড়ে ব্যাপক ক্ষয়ক্ষতি সাধন করেছিল। (widespread damage = ব্যাপক ক্ষয়ক্ষতি)" },
+        { "en": "The suspect gave a vague description of the getaway car.", "bn": "সন্দেহভাজন ব্যক্তিটি পালিয়ে যাওয়ার গাড়ির একটি অস্পষ্ট বিবরণ দিয়েছিল। (vague description = অস্পষ্ট বিবরণ)" }
+      ],
+      "tips": "রাইটিং উন্নত করার জন্য সাধারণ ও পুনরাবৃত্ত এডজেক্টিভ যেমন 'very bad' বা 'very big' পরিহার করে 'severe damage' বা 'massive scale' এর মতো সুনির্দিষ্ট Adjective + Noun কোলোকেশন ব্যবহার করুন।"
+    },
+    {
+      "name": "Adverb + Adjective Collocations (ক্রিয়া-বিশেষণ ও বিশেষণ শব্দজোড়)",
+      "banglaName": "Adverb + Adjective Collocations",
+      "definition": "Adverb + Adjective collocations involve using a specific intensifying adverb to modify an adjective. Instead of overusing the word 'very', advanced English utilizes diverse adverbs like 'bitterly', 'highly', 'utterly', and 'deeply' with matching adjectives.",
+      "banglaDefinition": "Adverb + Adjective collocations হলো এমন শব্দজোড় যেখানে কোনো বিশেষণের তীব্রতা বা মাত্রা প্রকাশ করার জন্য একটি নির্দিষ্ট এডভার্ব বা ক্রিয়া-বিশেষণ ব্যবহার করা হয়। অতি-ব্যবহৃত শব্দ 'very'-এর ওপর নির্ভরশীলতা কমিয়ে অ্যাডভান্সড ইংরেজিতে 'bitterly', 'highly', 'utterly', এবং 'deeply'-এর মতো বৈচিত্র্যময় এডভার্ব উপযুক্ত অ্যাডজেক্টিভের সাথে জোড়া লাগিয়ে ব্যবহার করা হয়।",
+      "formula": "Subject + Be Verb + [Collocated Adverb + Adjective]",
+      "rules": [
+        "ঠান্ডার তীব্রতা বোঝাতে 'bitterly cold' (হাড় কাঁপানো ঠান্ডা) ব্যবহার করুন; 'highly cold' সম্পূর্ণ ভুল।",
+        "অসম্ভাব্যতা প্রকাশে 'highly unlikely' (অত্যন্ত অসম্ভব) এবং অসম্মতি প্রকাশে 'strongly oppose' ব্যবহার করুন।",
+        "অনুপযুক্ত এডভার্ব ব্যবহার করলে বাক্যটি তার প্রাতিষ্ঠানিক গ্রহণযোগ্যতা হারাতে পারে।"
+      ],
+      "examples": [
+        { "en": "It is highly unlikely that the price of gold will drop next week.", "bn": "আগামী সপ্তাহে সোনার দাম কমে যাওয়ার সম্ভাবনা অত্যন্ত ক্ষীণ/অসম্ভব। (highly unlikely = অত্যন্ত অসম্ভব)" },
+        { "en": "The passengers were bitterly disappointed by the sudden flight cancellation.", "bn": "হঠাৎ ফ্লাইট বাতিল হওয়ায় যাত্রীরা চরমভাবে হতাশ হয়েছিলেন। (bitterly disappointed = চরমভাবে হতাশ)" },
+        { "en": "Her latest scientific discovery is widely accepted by the community.", "bn": "তার সর্বশেষ বৈজ্ঞানিক আবিষ্কারটি সুধী সমাজে ব্যাপকভাবে গৃহীত হয়েছে। (widely accepted = ব্যাপকভাবে গৃহীত)" },
+        { "en": "I was deeply offended by his rude behavior during the meeting.", "bn": "মিটিংয়ে তার রুক্ষ আচরণে আমি গভীরভাবে আঘাত পেয়েছিলাম। (deeply offended = গভীরভাবে আঘাত পাওয়া)" },
+        { "en": "The task seemed virtually impossible, but they managed to complete it.", "bn": "কাজটি প্রায় অসম্ভব বলে মনে হয়েছিল, কিন্তু তারা এটি সম্পন্ন করতে সক্ষম হয়েছিল। (virtually impossible = প্রায় অসম্ভব)" },
+        { "en": "We were utterly exhausted after the twelve-hour trek.", "bn": "বারো ঘণ্টার দীর্ঘ হাঁটার পর আমরা সম্পূর্ণভাবে ক্লান্ত হয়ে পড়েছিলাম। (utterly exhausted = সম্পূর্ণভাবে ক্লান্ত)" },
+        { "en": "The new security system is highly advanced and secure.", "bn": "নতুন নিরাপত্তা ব্যবস্থাটি অত্যন্ত উন্নত এবং নিরাপদ। (highly advanced = অত্যন্ত উন্নত)" },
+        { "en": "The winter weather in Russia can be bitterly cold.", "bn": "রাশিয়ায় শীতের আবহাওয়া হাড় কাঁপানো ঠান্ডা হতে পারে। (bitterly cold = হাড় কাঁপানো ঠান্ডা)" },
+        { "en": "The details of the agreement must remain strictly confidential.", "bn": "চুক্তির বিশদ বিবরণ অবশ্যই কঠোরভাবে গোপনীয় রাখতে হবে। (strictly confidential = কঠোরভাবে গোপনীয়)" },
+        { "en": "He is highly qualified for the position of manager.", "bn": "সে ম্যানেজার পদের জন্য অত্যন্ত যোগ্য। (highly qualified = অত্যন্ত যোগ্য)" }
+      ],
+      "tips": "একাডেমিক রচনায় (যেমন: IELTS Writing Task 2) 'very' এবং 'extremely' এর ব্যবহার যথাসম্ভব কমিয়ে দিন। এর পরিবর্তে 'strictly confidential', 'highly beneficial' বা 'deeply concerned' এর মতো উন্নত Adverb + Adjective কোলোকেশন ব্যবহার করলে আপনার ব্যান্ড স্কোর দ্রুত বাড়বে।"
+    },
+    {
+      "name": "Noun + Noun and Noun + Verb Collocations (বিশেষ্য + বিশেষ্য এবং বিশেষ্য + ক্রিয়া শব্দজোড়)",
+      "banglaName": "Noun + Noun এবং Noun + Verb Collocations",
+      "definition": "These are collocations where nouns pair with other nouns (collective nouns or classifiers, e.g., 'a pack of wolves') or where specific nouns are paired with the natural action verb they perform (e.g., 'dogs bark', 'lions roar', 'alarms go off').",
+      "banglaDefinition": "এগুলো হলো এমন শব্দজোড় যেখানে কোনো নাউনের সাথে অন্য নাউন যুক্ত হয় (সাধারণত সমষ্টিবাচক বা পরিমাপক শব্দ, যেমন: 'a pack of wolves' বা নেকড়ের দল) অথবা কোনো নির্দিষ্ট নাউনের সাথে তার দ্বারা সম্পাদিত স্বাভাবিক কাজ বা ভার্বটি যুক্ত হয় (যেমন: 'dogs bark' বা কুকুরের ঘেউ ঘেউ করা, 'alarms go off' বা অ্যালার্ম বেজে ওঠা)।",
+      "formula": "Classifier Noun + of + Plural Noun / Subject Noun + Natural Verb",
+      "rules": [
+        "প্রাণী বা বস্তুর সমষ্টি বোঝাতে নির্দিষ্ট সমষ্টিবাচক নাউন ব্যবহার করুন: 'a flock of sheep' (ভেড়ার পাল), 'a herd of cattle' (গবাদি পশুর দল)।",
+        "প্রাকৃতিক ঘটনার ক্ষেত্রে নির্দিষ্ট ভার্ব বসে: 'snow falls' (তুষারপাত হওয়া), 'thunder rumbles' (বজ্রপাত হওয়া)।",
+        "কোনো ঘটনার আকস্মিক প্রকাশে বিশেষ্য জোড় বসে: 'a burst of applause' (করতালির রোল)।"
+      ],
+      "examples": [
+        { "en": "A sudden burst of applause erupted when the actor finished his speech.", "bn": "অভিনেতা তার বক্তব্য শেষ করার সাথে সাথেই হঠাৎ করতালির রোল পড়ে গিয়েছিল। (a burst of applause = করতালির রোল)" },
+        { "en": "We saw a large herd of elephants crossing the river during our safari.", "bn": "সাফারি করার সময় আমরা নদীর পার হতে হাতির একটি বড় দল দেখেছিলাম। (a herd of elephants = হাতির দল)" },
+        { "en": "I woke up in panic as my smoke alarm went off in the middle of the night.", "bn": "মাঝরাতে স্মোক অ্যালার্মটি বেজে ওঠায় আমি আতঙ্কে জেগে উঠেছিলাম। (alarm went off = অ্যালার্ম বেজে ওঠা)" },
+        { "en": "A flock of birds flew across the golden sunset.", "bn": "একটি পাখির ঝাঁক সোনালী সূর্যাস্তের বুক চিরে উড়ে গেল। (a flock of birds = পাখির ঝাঁক)" },
+        { "en": "We felt a sudden gust of wind just before the heavy downpour.", "bn": "ভারী বৃষ্টির ঠিক আগেই আমরা বাতাসের একটি আকস্মিক ঝাপটা অনুভব করেছিলাম। (a gust of wind = বাতাসের ঝাপটা)" },
+        { "en": "The economy was hit by a wave of protests against rising prices.", "bn": "ক্রমবর্ধমান মূল্যের বিরুদ্ধে প্রতিবাদের একটি জোয়ারে অর্থনীতি বিপর্যস্ত হয়েছিল। (a wave of protests = প্রতিবাদের জোয়ার)" },
+        { "en": "A pack of wolves was heard howling in the distant forest.", "bn": "দূরের বনে নেকড়ের একটি দলের গর্জন করতে শোনা গিয়েছিল। (a pack of wolves = নেকড়ের দল)" },
+        { "en": "He bought a bar of chocolate for his little sister.", "bn": "সে তার ছোট বোনের জন্য এক বার চকলেট কিনেছিল। (a bar of chocolate = এক বার চকলেট)" },
+        { "en": "The dog started to bark as soon as the stranger approached the gate.", "bn": "অপরিচিত ব্যক্তি গেটের কাছে আসার সাথে সাথেই কুকুরটি ঘেউ ঘেউ করতে শুরু করেছিল। (dog bark = কুকুরের ডাক)" },
+        { "en": "Please give me a sheet of paper so I can write down the number.", "bn": "দয়া করে আমাকে এক টুকরো কাগজ দিন যাতে আমি নম্বরটি লিখে রাখতে পারি। (a sheet of paper = এক টুকরো কাগজ)" }
+      ],
+      "tips": "বাংলায় আমরা সব দলের ক্ষেত্রে 'পাল' বা 'ঝাঁক' ব্যবহার করলেও ইংরেজিতে পশুদের ক্ষেত্রে 'herd', পাখিদের ক্ষেত্রে 'flock' এবং নেকড়ে বা কুকুরের ক্ষেত্রে 'pack' ব্যবহার করা বাধ্যতামূলক। এগুলোকে সমষ্টিবাচক কোলোকেশন বলা হয়।"
+    },
+    {
+      "name": "Collocations with 'Make' vs. 'Do' (Make বনাম Do-এর শব্দজোড়)",
+      "banglaName": "Collocations with 'Make' vs. 'Do'",
+      "definition": "The verbs 'make' and 'do' are among the most frequently confused words in English. Generally, 'make' is used when creating, constructing, or producing something tangible or intangible (e.g., 'make a cake', 'make a decision'). 'Do' is used for daily activities, chores, work, or non-specific tasks (e.g., 'do homework', 'do a favor').",
+      "banglaDefinition": "ইংরেজিতে সবচেয়ে বেশি বিভ্রান্তি তৈরি করা শব্দজোড়গুলোর অন্যতম হলো 'make' এবং 'do'-এর ব্যবহার। সাধারণ নিয়ম অনুযায়ী, যখন কোনো কিছু নতুন করে তৈরি, প্রস্তুত বা উৎপাদন করা হয় (তা স্পর্শযোগ্য হোক বা না হোক), তখন 'make' বসে (যেমন: 'make a cake', 'make a decision')। আর যখন কোনো দৈনন্দিন কাজ, দায়িত্ব, বাড়ির কাজ বা সাধারণ কর্ম বোঝানো হয়, তখন 'do' বসে (যেমন: 'do homework', 'do a favor')।",
+      "formula": "Subject + MAKE + [creation/decision/noise...]\nSubject + DO + [chore/job/activity/favor...]",
+      "rules": [
+        "'Make' প্রধানত সৃষ্টি বা ফলাফলের সাথে সম্পর্কিত: make an effort, make a choice, make progress.",
+        "'Do' প্রধানত দায়িত্ব বা প্রক্রিয়ার সাথে সম্পর্কিত: do business, do dishes, do one's best.",
+        "ব্যতিক্রমী নির্দিষ্ট জোড়গুলো সরাসরি মুখস্থ করতে হবে, কারণ এগুলো কোনো সাধারণ নিয়ম মানে না (যেমন: do a favor, make a phone call)।"
+      ],
+      "examples": [
+        { "en": "I need to make a quick phone call before the meeting starts.", "bn": "মিটিং শুরু হওয়ার আগে আমাকে একটি জরুরি ফোন কল করতে হবে। (make a phone call)" },
+        { "en": "Could you please do me a favor and carry this bag?", "bn": "আপনি কি দয়া করে আমাকে একটি সাহায্য করবেন এবং এই ব্যাগটি বহন করবেন? (do a favor = সাহায্য করা)" },
+        { "en": "The company has made significant progress in developing the vaccine.", "bn": "কোম্পানিটি ভ্যাকসিন তৈরির ক্ষেত্রে উল্লেখযোগ্য অগ্রগতি সাধন করেছে। (make progress = অগ্রগতি করা)" },
+        { "en": "You don't have to be perfect; just do your best.", "bn": "তোমাকে নিখুঁত হতে হবে না; কেবল তোমার সাধ্যমতো চেষ্টা করো। (do one's best = সাধ্যমতো চেষ্টা করা)" },
+        { "en": "He made an effort to apologize, but she wasn't listening.", "bn": "সে ক্ষমা চাওয়ার একটি চেষ্টা করেছিল, কিন্তু সে শুনছিল না। (make an effort = চেষ্টা করা)" },
+        { "en": "Who is going to do the dishes tonight?", "bn": "আজ রাতে কে থালাবাসন পরিষ্কার করবে? (do the dishes = থালাবাসন ধোয়া)" },
+        { "en": "It is difficult to make a profit in the first year of business.", "bn": "ব্যবসার প্রথম বছরে লাভ করা কঠিন। (make a profit = লাভ করা)" },
+        { "en": "We must do business with partners who share our values.", "bn": "আমাদের এমন অংশীদারদের সাথে ব্যবসা করা উচিত যারা আমাদের মূল্যবোধকে সমর্থন করে। (do business = ব্যবসা করা)" },
+        { "en": "Don't make a noise; the baby is sleeping.", "bn": "গোলমাল কোরো না; বাচ্চাটি ঘুমাচ্ছে। (make a noise = গোলমাল করা)" },
+        { "en": "He did some damage to the car when he hit the gate.", "bn": "গেটে ধাক্কা দিয়ে সে গাড়িটির কিছুটা ক্ষতি করেছিল। (do damage = ক্ষতি করা)" }
+      ],
+      "tips": "মনে রাখার ছোট ট্রিক: 'Do' হলো কাজ করার প্রক্রিয়া বা এনার্জি খরচ করা। 'Make' হলো কাজের শেষে একটি দৃশ্যমান বা অদৃশ্য ফলাফল বা প্রোডাক্ট তৈরি হওয়া।"
+    },
+    {
+      "name": "Prepositional and Adjective-Preposition Collocations (প্রিপজিশনাল ও বিশেষণ-প্রিপজিশন শব্দজোড়)",
+      "banglaName": "প্রিপজিশনাল ও বিশেষণ-প্রিপজিশন শব্দজোড়",
+      "definition": "Many adjectives, verbs, and nouns must be paired with specific prepositions to form standard collocations. Using the wrong preposition is a major source of grammatical errors in writing (e.g., 'interested in', 'responsible for', 'depend on').",
+      "banglaDefinition": "ইংরেজিতে অনেক বিশেষণ (adjectives), ক্রিয়াপদ (verbs) এবং বিশেষ্যকে (nouns) অর্থপূর্ণ ও ব্যাকরণসম্মত জোড় গঠন করতে সুনির্দিষ্ট প্রিপজিশনের সাথে ব্যবহার করতে হয়। ভুল প্রিপজিশন ব্যবহার করা ইংরেজি রচনার অন্যতম বড় একটি ভুল (যেমন: 'interested in', 'responsible for', 'depend on' ইত্যাদি)।",
+      "formula": "Subject + Be Verb/Verb + [Adjective/Verb + Specific Preposition] + Object",
+      "rules": [
+        "নির্দিষ্ট বিশেষণের সাথে মানানসই প্রিপজিশন জোড় বাঁধুন: 'accused *of*' (অভিযুক্ত), 'interested *in*' (আগ্রহী)।",
+        "'According' এর পর সর্বদা 'to' বসে; 'contrary' এর পর সর্বদা 'to' বসে।",
+        "অনুবাদ করার সময় বাংলা প্রিপজিশনের আক্ষরিক অনুবাদ ইংরেজিতে বসাবেন না; যেমন: 'কারো ওপর রাগ করা' এর ইংরেজি 'angry *on* him' নয়, 'angry *with* him'।"
+      ],
+      "examples": [
+        { "en": "He was accused of stealing the company's confidential files.", "bn": "তার বিরুদ্ধে কোম্পানির গোপন ফাইল চুরির অভিযোগ আনা হয়েছিল। (accused of = অভিযুক্ত)" },
+        { "en": "The manager is responsible for the overall success of the project.", "bn": "প্রকল্পটির সার্বিক সাফল্যের জন্য ম্যানেজার দায়ী/দায়িত্বপ্রাপ্ত। (responsible for = দায়ী/দায়িত্বপ্রাপ্ত)" },
+        { "en": "Our final decision will depend on the results of the research.", "bn": "আমাদের চূড়ান্ত সিদ্ধান্তটি গবেষণার ফলাফলের ওপর নির্ভর করবে। (depend on = নির্ভর করা)" },
+        { "en": "She is highly interested in pursuing a career in artificial intelligence.", "bn": "সে কৃত্রিম বুদ্ধিমত্তা নিয়ে ক্যারিয়ার গড়তে অত্যন্ত আগ্রহী। (interested in = আগ্রহী)" },
+        { "en": "The software is not compatible with older operating systems.", "bn": "সফটওয়্যারটি পুরোনো অপারেটিং সিস্টেমের সাথে সামঞ্জস্যপূর্ণ নয়। (compatible with = সামঞ্জস্যপূর্ণ)" },
+        { "en": "He is very close to his brother and shares everything with him.", "bn": "সে তার ভাইয়ের খুব ঘনিষ্ঠ এবং তার সাথে সবকিছু শেয়ার করে। (close to = ঘনিষ্ঠ)" },
+        { "en": "According to the latest report, inflation is expected to rise.", "bn": "সর্বশেষ প্রতিবেদন অনুযায়ী, মূল্যস্ফীতি বৃদ্ধি পাবে বলে আশা করা হচ্ছে। (according to = অনুযায়ী)" },
+        { "en": "She has been married to her high school sweetheart for ten years.", "bn": "সে দশ বছর ধরে তার হাই স্কুলের প্রেমিকের সাথে বিবাহবন্ধনে আবদ্ধ। (married to = বিবাহিত)" },
+        { "en": "We must remain focused on our main goals.", "bn": "আমাদের অবশ্যই আমাদের প্রধান লক্ষ্যগুলোর ওপর মনোযোগী থাকতে হবে। (focused on = মনোযোগী)" },
+        { "en": "He is famous for his contribution to the field of medicine.", "bn": "চিকিৎসা ক্ষেত্রে তাঁর অবদানের জন্য তিনি বিখ্যাত। (famous for = বিখ্যাত)" }
+      ],
+      "tips": "বিশেষভাবে মনে রাখুন: 'Angry with someone' (ব্যক্তির ওপর রেগে যাওয়া) বনাম 'Angry at something' (কোনো বিষয়ের ওপর রেগে যাওয়া)।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I did a big mistake in the calculus exam today.",
+      "correct": "I made a big mistake in the calculus exam today.",
+      "explanation": "ভুল করার ক্ষেত্রে 'do a mistake' সম্পূর্ণ ভুল কোলোকেশন। সঠিক এবং প্রাকৃতিক শব্দজোড়টি হলো 'make a mistake'।"
+    },
+    {
+      "wrong": "We had to cancel the picnic because of the strong rain.",
+      "correct": "We had to cancel the picnic because of the heavy rain.",
+      "explanation": "বৃষ্টির তীব্রতা বা প্রবলতা বোঝাতে 'strong rain' বলা ভুল। প্রবল বৃষ্টির সাথে মানানসই সঠিক বিশেষণটি হলো 'heavy rain'।"
+    },
+    {
+      "wrong": "She is very good in mathematics and science.",
+      "correct": "She is very good at mathematics and science.",
+      "explanation": "কোনো বিষয়ে দক্ষতা বোঝাতে 'good in' ব্যবহার করা অশুদ্ধ। সঠিক প্রিপজিশনাল কোলোকেশনটি হলো 'good at'।"
+    },
+    {
+      "wrong": "The politician did a wonderful speech on the economic crisis.",
+      "correct": "The politician delivered a wonderful speech on the economic crisis. (Or: ...made a speech...)",
+      "explanation": "ভাষণ দেওয়ার ক্ষেত্রে 'did a speech' অত্যন্ত কাঁচা ও অনানুষ্ঠানিক ইংরেজি। ফরমাল এবং মার্জিত কোলোকেশন হলো 'deliver a speech' বা 'make a speech'।"
+    },
+    {
+      "wrong": "I am deeply disappointed with the flat results.",
+      "correct": "I am bitterly disappointed with the results.",
+      "explanation": "হতাশা বা অসন্তোষের চরম মাত্রা বোঝাতে 'deeply disappointed'-এর চেয়ে অনেক বেশি প্রাকৃতিক ও স্ট্যান্ডার্ড কোলোকেশন হলো 'bitterly disappointed'।"
+    },
+    {
+      "wrong": "We saw a flock of cows grazing in the green field.",
+      "correct": "We saw a herd of cows grazing in the green field.",
+      "explanation": "গরু বা গবাদি পশুর দলের ক্ষেত্রে 'flock' ব্যবহার করা ভুল। 'flock' বসে পাখির দলের ক্ষেত্রে। গবাদি পশুর সমষ্টির জন্য সঠিক কোলোকেশন হলো 'herd'।"
+    },
+    {
+      "wrong": "He was angry on me because I was late for the meeting.",
+      "correct": "He was angry with me because I was late for the meeting.",
+      "explanation": "কারো ওপর রাগ করার ক্ষেত্রে বাংলার আক্ষরিক অনুবাদ করে 'angry on me' লিখবেন না; ব্যক্তির ওপর রাগের ক্ষেত্রে প্রিপজিশনটি সর্বদা 'with' বসবে।"
+    },
+    {
+      "wrong": "We need to make research on this market before launching.",
+      "correct": "We need to do research on this market before launching. (Or: ...conduct research...)",
+      "explanation": "গবেষণা করার ক্ষেত্রে 'make research' ভুল কোলোকেশন। সঠিক রূপটি হলো 'do research' অথবা অত্যন্ত প্রাতিষ্ঠানিক রচনায় 'conduct research'।"
+    }
+  ]
 }

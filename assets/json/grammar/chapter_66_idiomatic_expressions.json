@@ -1,10 +1,172 @@
 {
   "chapter": 66,
   "level": "Advanced",
-  "title": "Idiomatic Expressions",
+  "title": "Idiomatic Expressions (বাগধারা)",
   "icon": "auto_stories",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Idiomatic expressions (idioms) are phrases where the meaning cannot be deduced from the literal definitions of the individual words. Mastering advanced idioms allows you to sound natural, express complex feelings efficiently, and decode nuanced conversations in English. This chapter covers essential idiomatic categories and explores the strict grammatical boundaries governing their usage.",
+  "banglaDescription": "বাগধারা বা ইডিয়ম (Idiomatic expressions) হলো এমন কিছু শব্দগুচ্ছ যাদের সাধারণ বা আক্ষরিক অর্থ বিশ্লেষণ করে প্রকৃত অর্থ বোঝা যায় না। উন্নত স্তরের বাগধারা আয়ত্ত করা আপনাকে ইংরেজিতে সাবলীলভাবে প্রকাশ করতে, জটিল অনুভূতি সহজে ব্যক্ত করতে এবং ইংরেজি কথোপকথনের অন্তর্নিহিত সূক্ষ্ম ভাবার্থ বুঝতে সাহায্য করবে। এই চ্যাপ্টারে বিভিন্ন গুরুত্বপূর্ণ বিভাগের বাগধারা এবং এদের ব্যবহারের ব্যাকরণগত সুনির্দিষ্ট নিয়মাবলী নিয়ে বিস্তারিত আলোচনা করা হয়েছে।",
+  "topics": [
+    {
+      "name": "Workplace and Professional Idioms (কর্মক্ষেত্র ও পেশাদারী জীবনের ইডিয়ম)",
+      "banglaName": "কর্মক্ষেত্র ও পেশাদারী জীবনের ইডিয়ম",
+      "definition": "These idioms are heavily used in corporate, business, and professional settings to describe processes, challenges, and teamwork. Using them correctly in emails or meetings showcases a high level of language proficiency and familiarity with corporate culture.",
+      "banglaDefinition": "এই বাগধারাগুলো কর্পোরেট, ব্যবসা এবং পেশাদার ক্ষেত্রে বিভিন্ন কাজের প্রক্রিয়া, চ্যালেঞ্জ এবং দলীয় কাজ বর্ণনা করতে প্রচুর ব্যবহৃত হয়। ইমেইলে বা মিটিংয়ে এগুলোর সঠিক ব্যবহার ইংরেজি ভাষার ওপর আপনার চমৎকার দক্ষতা এবং কর্পোরেট সংস্কৃতির সাথে আপনার গভীর পরিচয় তুলে ধরে।",
+      "formula": "Subject + inflected verb part of the idiom + rest of the idiom (+ Object)",
+      "rules": [
+        "পেশাদারী ইডিয়ম ব্যবহারের সময় ব্যাকরণগত কাল বা Tense অনুযায়ী কেবল এর Verb অংশটির পরিবর্তন করতে হবে (যেমন: 'burn the midnight oil' -> 'burned the midnight oil')।",
+        "এই বাগধারাগুলো সাধারণত সেমি-ফরমাল (semi-formal); অত্যন্ত কঠোর প্রাতিষ্ঠানিক বা আইনি নথিপত্রে এগুলো ব্যবহার না করাই শ্রেয়।"
+      ],
+      "examples": [
+        { "en": "We had to burn the midnight oil to finish the project before the deadline.", "bn": "ডেডলাইনের আগে প্রজেক্টটি শেষ করতে আমাদের রাত জেগে কঠোর পরিশ্রম করতে হয়েছিল। (burn the midnight oil = রাত জেগে কঠোর পরিশ্রম করা)" },
+        { "en": "The manager decided to cut corners to save money, but the quality suffered.", "bn": "ম্যানেজার টাকা বাঁচাতে কাজের মান অবহেলা করে সহজ পথ বা ফাঁকফোকর খোঁজার সিদ্ধান্ত নিয়েছিলেন, কিন্তু এর ফলে গুণগত মান খারাপ হয়েছিল। (cut corners = খরচ বা সময় বাঁচাতে সহজ/ফাঁকিবাজি পথ ধরা)" },
+        { "en": "Our first design failed, so we had to go back to the drawing board.", "bn": "আমাদের প্রথম ডিজাইনটি ব্যর্থ হয়েছিল, তাই আমাদের আবার একদম শুরু থেকে নতুন করে পরিকল্পনা করতে হয়েছিল। (go back to the drawing board = নতুন করে শুরু থেকে পরিকল্পনা করা)" },
+        { "en": "In this competitive market, you must keep your eye on the ball.", "bn": "এই প্রতিযোগিতামূলক বাজারে তোমাকে অবশ্যই অত্যন্ত মনোযোগী ও সতর্ক থাকতে হবে। (keep one's eye on the ball = মনোযোগী ও সতর্ক থাকা)" },
+        { "en": "Let's touch base next week to discuss the progress of the campaign.", "bn": "আসুন আগামী সপ্তাহে আমরা ক্যাম্পেইনের অগ্রগতি নিয়ে সংক্ষেপে একটু আলোচনা করে নিই। (touch base = পারস্পরিক যোগাযোগ করা/সংক্ষেপে আলোচনা করা)" },
+        { "en": "His suggestion hit the nail on the head and solved our main issue.", "bn": "তার পরামর্শটি একদম মোক্ষম পয়েন্টে লেগেছিল এবং আমাদের প্রধান সমস্যার সমাধান করেছিল। (hit the nail on the head = একদম সঠিক কথাটি বলা বা সঠিক কাজটি করা)" },
+        { "en": "Due to the financial crisis, the company had to lay off several employees.", "bn": "আর্থিক সংকটের কারণে কোম্পানিকে বেশ কয়েকজন কর্মচারীকে সাময়িকভাবে ছাঁটাই করতে হয়েছিল। (lay off = ছাঁটাই করা)" },
+        { "en": "We are trying to get this project off the ground, but we lack funding.", "bn": "আমরা এই প্রজেক্টটি সফলভাবে শুরু করার চেষ্টা করছি, কিন্তু আমাদের ফান্ডের অভাব রয়েছে। (get something off the ground = সফলভাবে কোনো কাজ শুরু করা)" },
+        { "en": "I need to bring my A-game to the interview if I want to get the job.", "bn": "আমি যদি চাকরিটি পেতে চাই, তবে ইন্টারভিউতে আমাকে আমার সেরা পারফরম্যান্স প্রদর্শন করতে হবে। (bring one's A-game = নিজের সেরাটা দেওয়া)" },
+        { "en": "The CEO called it a day after ten hours of continuous meetings.", "bn": "টানা দশ ঘণ্টার মিটিং শেষে প্রধান নির্বাহী কর্মকর্তা সেদিনের মতো কাজ সমাপ্ত ঘোষণা করলেন। (call it a day = সেদিনের মতো কাজ শেষ করা)" }
+      ],
+      "tips": "চাকরির ইন্টারভিউ বা ব্যবসায়িক ইমেইলে 'bring my A-game' বা 'touch base' এর মতো ইডিয়মগুলোর ব্যবহার আপনাকে একজন স্মার্ট ও সাবলীল স্পিকার হিসেবে উপস্থাপন করবে।"
+    },
+    {
+      "name": "Idioms for Emotions and Mental States (অনুভূতি ও মানসিক অবস্থার ইডিয়ম)",
+      "banglaName": "অনুভূতি ও মানসিক অবস্থার ইডিয়ম",
+      "definition": "These idiomatic expressions are used to describe various emotional ranges, including extreme happiness, stress, anxiety, anger, or feeling physically unwell. They bring color and vivid imagery to descriptive speech and personal writing.",
+      "banglaDefinition": "এই বাগধারাগুলো মানুষের বিভিন্ন মানসিক ও আবেগীয় অবস্থা—যেমন: অত্যন্ত সুখ, মানসিক চাপ, দুশ্চিন্তা, রাগ বা শারীরিক অসুস্থতা বর্ণনা করতে ব্যবহৃত হয়। এগুলো বর্ণনামূলক কথা এবং ব্যক্তিগত লেখায় এক ধরণের প্রাণবন্ততা ও বৈচিত্র্য নিয়ে আসে।",
+      "formula": "Subject + Be/Feel + Idiomatic Phrase",
+      "rules": [
+        "এই ইডিয়মগুলো সাধারণত 'be' verb (am/is/are/was/were) বা অনুভূতি প্রকাশক verb (feel, look) এর পর বসে।",
+        "জড় বস্তুর ক্ষেত্রে এগুলো ব্যবহার করা যায় না; এগুলো কেবল মানুষের অনুভূতির ক্ষেত্রে প্রযোজ্য।"
+      ],
+      "examples": [
+        { "en": "She was on cloud nine when she heard about her scholarship.", "bn": "বৃত্তির খবরটি শুনে সে খুশিতে আত্মহারা হয়ে উঠেছিল। (on cloud nine = অত্যন্ত খুশি/খুশিতে আত্মহারা)" },
+        { "en": "I am feeling a bit under the weather today, so I won't come to office.", "bn": "আমি আজ সামান্য অসুস্থ বোধ করছি, তাই অফিসে আসব না। (under the weather = সামান্য অসুস্থ বা মেজাজ খারাপ থাকা)" },
+        { "en": "Don't get bent out of shape over such a minor issue.", "bn": "এত ছোট একটা বিষয় নিয়ে নিজেকে অকারণ উত্তেজিত বা রাগান্বিত কোরো না। (get bent out of shape = রেগে যাওয়া/উত্তেজিত হওয়া)" },
+        { "en": "He was at his wits' end trying to solve the complex math problem.", "bn": "জটিল গণিতের সমাধান করার চেষ্টা করতে করতে সে বুদ্ধিহারা বা কিংকর্তব্যবিমূঢ় হয়ে পড়েছিল। (at one's wits' end = বুদ্ধিহারা/কী করবে ভেবে না পাওয়া)" },
+        { "en": "We were on pins and needles waiting for the medical test results.", "bn": "মেডিকেল টেস্টের ফলাফলের অপেক্ষায় আমরা অত্যন্ত উদ্বিগ্ন ও উৎকণ্ঠিত ছিলাম। (on pins and needles = চরম উৎকণ্ঠা বা উদ্বেগে থাকা)" },
+        { "en": "Seeing his old childhood friend made his day.", "bn": "তার ছোটবেলার পুরোনো বন্ধুকে দেখে তার দিনটি আনন্দময় হয়ে উঠেছিল। (make one's day = কারো দিনটি দারুণ বা আনন্দময় করে তোলা)" },
+        { "en": "She was over the moon when her novel became a bestseller.", "bn": "যখন তার উপন্যাসটি বেস্টসেলার হলো, সে আনন্দের সাগরে ভেসেছিল। (over the moon = অত্যন্ত আনন্দিত)" },
+        { "en": "I was scared out of my wits when the lights suddenly went out.", "bn": "হঠাৎ আলো চলে যাওয়ায় আমি ভয়ে একেবারে আত্মহারা বা জ্ঞানশূন্য হয়ে পড়েছিলাম। (scared out of one's wits = ভয়ে চরম আতঙ্কিত হওয়া)" },
+        { "en": "He kept his cool despite the client's aggressive behavior.", "bn": "ক্লায়েন্টের আক্রমণাত্মক আচরণ সত্ত্বেও সে নিজেকে শান্ত রেখেছিল। (keep one's cool = শান্ত থাকা/ধৈর্য না হারানো)" },
+        { "en": "Hearing the bad news was a bitter pill to swallow for the entire team.", "bn": "খারাপ খবরটি শোনা পুরো দলের জন্য একটি অত্যন্ত অপ্রীতিকর কিন্তু বাধ্য হয়ে মেনে নেওয়ার মতো বিষয় ছিল। (a bitter pill to swallow = অপ্রীতিকর কিন্তু বাধ্য হয়ে মেনে নিতে হবে এমন কিছু)" }
+      ],
+      "tips": "সাধারণ 'I am happy' বা 'I am worried' বলার পরিবর্তে 'I am over the moon' বা 'I am on pins and needles' বললে তা আপনার স্পিকিংয়ের গভীরতা অনেক বাড়িয়ে দেবে।"
+    },
+    {
+      "name": "Idioms for Decision-Making and Problem-Solving (সিদ্ধান্ত ও সমস্যা সমাধানের ইডিয়ম)",
+      "banglaName": "সিদ্ধান্ত ও সমস্যা সমাধানের ইডিয়ম",
+      "definition": "These expressions depict the process of making difficult choices, facing consequences, taking risks, or solving complex issues. They are frequently used in both narrative writing and daily critical discussions.",
+      "banglaDefinition": "কঠিন সিদ্ধান্ত নেওয়া, ফলাফলের মুখোমুখি হওয়া, ঝুঁকি নেওয়া বা জটিল কোনো সমস্যার সমাধান করার প্রক্রিয়া ফুটিয়ে তুলতে এই বাগধারাগুলো ব্যবহৃত হয়। গল্প লিখন এবং প্রতিদিনের যেকোনো গুরুত্বপূর্ণ আলোচনায় এগুলো প্রায়শই ব্যবহৃত হয়।",
+      "formula": "Subject + Action Verb part of the Idiom + Object of the Idiom",
+      "rules": [
+        "এই ইডিয়মগুলোর গঠনে অ্যাকশন ভার্ব থাকায় এদের পাস্ট টেন্স বা আইএনজি রূপ ব্যবহার করা খুব সাধারণ।",
+        "এদের রূপক অর্থটি বোঝার জন্য বাক্যের প্রসঙ্গ বা context খেয়াল করতে হবে।"
+      ],
+      "examples": [
+        { "en": "I had to bite the bullet and tell my boss that I made a mistake.", "bn": "আমাকে অনিচ্ছা সত্ত্বেও সাহসের সাথে কঠিন পরিস্থিতির মুখোমুখি হতে হয়েছিল এবং বসকে বলতে হয়েছিল যে আমি একটি ভুল করেছি। (bite the bullet = অনিচ্ছা সত্ত্বেও সাহসের সাথে কঠিন পরিস্থিতির মুখোমুখি হওয়া)" },
+        { "en": "Stop sitting on the fence; you have to make a choice now.", "bn": "দ্বিধাদ্বন্দ্বে থাকা বন্ধ করো; তোমাকে এখন যেকোনো একটি সিদ্ধান্ত বেছে নিতেই হবে। (sit on the fence = নিরপেক্ষ থাকা/দ্বিধাদ্বন্দ্বে কোনো সিদ্ধান্ত না নেওয়া)" },
+        { "en": "Never burn your bridges when leaving a job; you might need them later.", "bn": "চাকরি ছাড়ার সময় কখনোই পেছনের সমস্ত সম্পর্ক নষ্ট করে ফেলো না; ভবিষ্যতে তাদের প্রয়োজন হতে পারে। (burn one's bridges = ফিরে আসার বা সম্পর্কের সমস্ত পথ চিরতরে বন্ধ করা)" },
+        { "en": "He decided to play devil's advocate just to test the strength of our argument.", "bn": "সে কেবল আমাদের যুক্তির গভীরতা পরীক্ষা করার জন্য বিপক্ষের বা বিরোধিতাকারীর ভূমিকা পালন করার সিদ্ধান্ত নিয়েছিল। (play devil's advocate = বিতর্কের খাতিরে বিপক্ষের যুক্তি তুলে ধরা)" },
+        { "en": "After cheating on the exam, he had to face the music and accept his suspension.", "bn": "পরীক্ষায় নকল করার পর, তাকে তার কাজের পরিণতির মুখোমুখি হতে হয়েছিল এবং বহিষ্কারাদেশ মেনে নিতে হয়েছিল। (face the music = নিজের ভুলের অপ্রীতিকর পরিণতির মুখোমুখি হওয়া)" },
+        { "en": "Designing the entire engine from scratch is a hard nut to crack.", "bn": "শুরু থেকে পুরো ইঞ্জিনটি ডিজাইন করা একটি অত্যন্ত কঠিন ও জটিল কাজ। (a hard nut to crack = অত্যন্ত কঠিন সমস্যা বা ব্যক্তি)" },
+        { "en": "She is torn between choosing a career in law or music.", "bn": "সে আইন নাকি সঙ্গীতকে পেশা হিসেবে বেছে নেবে—এই দুইয়ের মাঝে পড়ে দোটানায় রয়েছে। (be torn between = দোটানায় থাকা)" },
+        { "en": "We should take the bull by the horns and address this issue immediately.", "bn": "আমাদের সাহসের সাথে সরাসরি সংকটের মুখোমুখি হওয়া উচিত এবং এই সমস্যাটির অবিলম্বে সমাধান করা উচিত। (take the bull by the horns = সাহসের সাথে সরাসরি সংকটের মুখোমুখি হওয়া)" },
+        { "en": "Buying that cheap house turned out to be a blessing in disguise.", "bn": "ওই সস্তা বাড়িটি কেনা শেষ পর্যন্ত প্রথমে অভিশাপ মনে হলেও আসলে আড়ালে একটি আশীর্বাদ হিসেবে প্রমাণিত হয়েছিল। (a blessing in disguise = প্রথমে অমঙ্গল মনে হলেও আসলে মঙ্গলজনক কিছু)" },
+        { "en": "Let's sleep on it and make the final decision tomorrow morning.", "bn": "আসুন আমরা সিদ্ধান্তটি নেওয়ার আগে আরেকটু সময় নিয়ে চিন্তা করি এবং আগামীকাল সকালে চূড়ান্ত সিদ্ধান্ত নিই। (sleep on it = কোনো সিদ্ধান্ত নেওয়ার আগে সময় নিয়ে চিন্তা করা)" }
+      ],
+      "tips": "আইইএলটিএস রাইটিং বা স্পিকিংয়ে কোনো জটিল সমস্যার সমাধান দেওয়ার ক্ষেত্রে 'take the bull by the horns' বা 'bite the bullet' অত্যন্ত মানানসই ইডিয়ম।"
+    },
+    {
+      "name": "Idioms for Success, Failure, and Effort (সাফল্য, ব্যর্থতা ও প্রচেষ্টার ইডিয়ম)",
+      "banglaName": "সাফল্য, ব্যর্থতা ও প্রচেষ্টার ইডিয়ম",
+      "definition": "These idioms describe the outcomes of actions, the level of effort put into a task, and the journey toward achieving goals. They are highly motivational and are common in speeches and essays.",
+      "banglaDescription": "এই বাগধারাগুলো কাজের ফলাফল, কোনো কাজে চেষ্টার মাত্রা এবং লক্ষ্য অর্জনের যাত্রা বর্ণনা করে। এগুলো অত্যন্ত অনুপ্রেরণাদায়ক এবং বিভিন্ন অনুপ্রেরণামূলক বক্তব্য ও রচনায় এগুলো বহুল ব্যবহৃত হয়।",
+      "formula": "Subject + Verb (Effort/Success context) + Idiomatic Phrase",
+      "rules": [
+        "সাফল্য বা ব্যর্থতা বোঝাতে ব্যবহৃত ইডিয়মগুলো অত্যন্ত ইতিবাচক বা নেতিবাচক অনুভূতি প্রকাশ করে, তাই বাক্যের মূল ভাবের সাথে সামঞ্জস্য রেখে এগুলো ব্যবহার করুন।"
+      ],
+      "examples": [
+        { "en": "She went the extra mile to make sure the client was completely satisfied.", "bn": "ক্লায়েন্ট যাতে সম্পূর্ণ সন্তুষ্ট হন তা নিশ্চিত করতে সে সাধ্যের বাইরে গিয়ে অতিরিক্ত চেষ্টা ও পরিশ্রম করেছিল। (go the extra mile = সাধ্যের বাইরে গিয়ে অতিরিক্ত চেষ্টা করা)" },
+        { "en": "He missed the boat because he applied for the job after the deadline.", "bn": "ডেডলাইনের পরে চাকরির আবেদন করার কারণে সে সুযোগটি হারিয়েছিল। (miss the boat = সুযোগ হাতছাড়া করা/সুযোগ হারানো)" },
+        { "en": "His business plan fell flat, and he lost all his investments.", "bn": "তার ব্যবসায়িক পরিকল্পনাটি সম্পূর্ণ ব্যর্থ হয়েছিল এবং সে তার সমস্ত বিনিয়োগ হারিয়েছিল। (fall flat = সম্পূর্ণ ব্যর্থ হওয়া/কোনো প্রভাব ফেলতে না পারা)" },
+        { "en": "You have been practicing so hard; go out there and break a leg tonight!", "bn": "তুমি অনেক কঠোর অনুশীলন করেছ; আজ মঞ্চে যাও এবং তোমার চমৎকার পারফরম্যান্স দেখাও! (break a leg = চমৎকার পারফরম্যান্স দেখানোর শুভকামনা জানানো)" },
+        { "en": "Despite the difficulties, she refused to throw in the towel.", "bn": "কঠিন পরিস্থিতি সত্ত্বেও সে পরাজয় মেনে নিতে বা হাল ছেড়ে দিতে অস্বীকার করেছিল। (throw in the towel = পরাজয় স্বীকার করা/হাল ছেড়ে দেওয়া)" },
+        { "en": "The presentation was perfect; she hit it out of the park.", "bn": "উপস্থাপনাটি নিখুঁত ছিল; সে অসাধারণভাবে কাজটি সম্পন্ন করেছিল। (hit it out of the park = অত্যন্ত সফল বা অসাধারণভাবে কাজ সম্পন্ন করা)" },
+        { "en": "He hit the jackpot when his small tech startup was bought by Google.", "bn": "তার ছোট প্রযুক্তি স্টার্টআপটি যখন গুগল কিনে নিল, সে যেন রাতারাতি অনেক বড় সাফল্য ও ভাগ্য অর্জন করল। (hit the jackpot = রাতারাতি বড় সাফল্য বা ভাগ্য লাভ করা)" },
+        { "en": "I have been working on this for years, but I am still back to square one.", "bn": "আমি বছরের পর বছর ধরে এটির ওপর কাজ করছি, কিন্তু আমি এখনও সেই শুরুর অবস্থানেই পড়ে আছি। (back to square one = আবার শুরুর অবস্থানে ফিরে যাওয়া)" },
+        { "en": "Our project is on a roll; we have secured three new clients this week.", "bn": "আমাদের প্রজেক্টটি এখন দারুণ সাফল্যের ধারায় রয়েছে; আমরা এই সপ্তাহে তিনটি নতুন ক্লায়েন্ট পেয়েছি। (on a roll = টানা সাফল্য বা ভালো ফর্মে থাকা)" },
+        { "en": "The actor became an overnight success, rising from rags to riches.", "bn": "অভিনেতাটি রাতারাতি সাফল্য অর্জন করেছিলেন, যিনি একসময় অত্যন্ত দরিদ্র থেকে অনেক ধনী হয়েছিলেন। (rags to riches = চরম দরিদ্রাবস্থা থেকে অত্যন্ত ধনী হওয়া)" }
+      ],
+      "tips": "মনে রাখবেন, 'Break a leg' কাউকে পা ভেঙে ফেলার অভিশাপ দেওয়া নয়। থিয়েটার বা পারফর্মিং আর্টসে এটি অত্যন্ত ইতিবাচকভাবে 'শুভকামনা' জানাতে ব্যবহৃত হয়।"
+    },
+    {
+      "name": "Grammatical Behavior of Idioms: Fixed vs. Flexible Structures (ইডিয়ম ব্যবহারের ব্যাকরণগত নিয়মাবলী)",
+      "banglaName": "ইডিয়ম ব্যবহারের ব্যাকরণগত নিয়মাবলী",
+      "definition": "Idioms are not grammatically uniform. Some are 'frozen' or highly fixed (their syntax cannot be changed, and they cannot be passivized or pluralized). Others are 'flexible' or 'semi-flexible', allowing tense changes, adjective insertions, or passive transformations.",
+      "banglaDefinition": "সব ইডিয়ম ব্যাকরণগতভাবে একরকম আচরণ করে না। কিছু বাগধারা হলো 'frozen' বা অত্যন্ত কঠোরভাবে নির্ধারিত (এদের শব্দক্রম পরিবর্তন করা যায় না, এবং এদের প্যাসিভ ভয়েস বা প্লুরাল করা যায় না)। অন্য কিছু ইডিয়ম হলো 'flexible' বা পরিবর্তনশীল, যা টেন্সের পরিবর্তন, নতুন বিশেষণ যুক্ত করা বা প্যাসিভ ভয়েসে রূপান্তর করার অনুমতি দেয়।",
+      "formula": "Frozen Idioms: Absolute word order (cannot be changed)\nFlexible Idioms: Can change voice/tense/adjectives",
+      "rules": [
+        "কঠোরভাবে নির্ধারিত বা Frozen Idioms-এর কোনো পরিবর্তন করা যাবে না। যেমন: 'kick the bucket' (মারা যাওয়া) কে 'the bucket was kicked' (প্যাসিভ) লিখলে তা বাগধারাটির অর্থ হারিয়ে ফেলে।",
+        "Flexible Idioms-এর প্যাসিভ করা সম্ভব। যেমন: 'spill the beans' (গোপন তথ্য ফাঁস করা) কে 'The beans were spilled by John' লিখলে তা ব্যাকরণগত ও অর্থগতভাবে সঠিক থাকে।",
+        "কখনো কোনো ইডিয়মের ভেতরের নির্দিষ্ট নাউনকে প্লুরাল করবেন না যদি না তা মূল ইডিয়মে থাকে (যেমন: 'once in a blue moon' কে 'once in blue moons' করা যাবে না)।"
+      ],
+      "examples": [
+        { "en": "Flexible Tense: She spilled the beans yesterday. / Passive: The beans were spilled yesterday by her.", "bn": "সে গতকাল গোপন তথ্য ফাঁস করে দিয়েছিল। (spill the beans-এর প্যাসিভ রূপ সম্ভব)" },
+        { "en": "Frozen (Active only): The old man kicked the bucket. (Incorrect passive: The bucket was kicked by the old man.)", "bn": "বৃদ্ধ লোকটি মারা গিয়েছিলেন। (kicked the bucket-এর প্যাসিভ রূপ করা সম্পূর্ণ ভুল)" },
+        { "en": "Flexible Adjective: He broke the ice. / He broke the awkward social ice.", "bn": "সে জড়তা ভেঙেছিল। / সে সামাজিক অস্বস্তিকর জড়তা ভেঙেছিল। (ইডিয়মের মাঝে Adjective বসানো সম্ভব)" },
+        { "en": "Frozen (No plural): It was a blessing in disguise. (Incorrect: They were blessings in disguises.)", "bn": "এটি আড়ালে একটি আশীর্বাদ ছিল। (একে প্লুরাল করা যাবে না)" },
+        { "en": "Flexible Tense: He is going the extra mile. / He went the extra mile.", "bn": "সে সাধ্যের বাইরে গিয়ে চেষ্টা করছে। / সে সাধ্যের বাইরে গিয়ে চেষ্টা করেছিল। (টেন্স পরিবর্তন সম্ভব)" },
+        { "en": "Frozen Word Order: He hit the nail on the head. (Incorrect: He hit the head on the nail.)", "bn": "সে একদম সঠিক কথাটি বলেছিল। (শব্দক্রম পরিবর্তন করা যাবে না)" },
+        { "en": "Flexible separation: They brought the house down. / They brought down the house.", "bn": "তারা দর্শকদের করতালিতে মুখরিত করেছিল। (brought down-কে আলাদা করা সম্ভব)" },
+        { "en": "Frozen Article: Once in a blue moon. (Incorrect: Once in the blue moon / Once in blue moon.)", "bn": "কদাচিৎ বা খুব বিরল ঘটনা। (আর্টিকেল 'a' পরিবর্তন বা বাদ দেওয়া যাবে না)" },
+        { "en": "Flexible Passive: The ice was finally broken by her jokes.", "bn": "অবশেষে তার কৌতুকের মাধ্যমে জড়তা কেটে গিয়েছিল। (break the ice-এর প্যাসিভ করা সম্ভব)" },
+        { "en": "Frozen Object: He is biting the bullet. (Incorrect: He is biting the bullets.)", "bn": "সে সাহসের সাথে কঠিন পরিস্থিতির মুখোমুখি হচ্ছে। (bullet-কে প্লুরাল করা যাবে না)" }
+      ],
+      "tips": "কোনো ইডিয়ম ব্যবহারে সন্দেহ থাকলে, এটিকে সর্বদা এর মৌলিক এবং অ্যাক্টিভ রূপে (Active Voice) ব্যবহার করাই সবচেয়ে নিরাপদ ও ব্যাকরণসম্মত।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "To make a long story short, we decided to sell the car.",
+      "correct": "To cut a long story short, we decided to sell the car. (Or: 'To make a long story short' is accepted, but 'To cut...' is more authentic).",
+      "explanation": "কিছু ইডিয়মের ক্ষেত্রে শব্দের পরিবর্তন গ্রহণযোগ্য হলেও, মূল ও সবচেয়ে খাঁটি রূপটি ব্যবহার করা উচিত। 'To cut a long story short' (সংক্ষেপে বলতে গেলে) বেশি প্রচলিত।"
+    },
+    {
+      "wrong": "We had a test today, and I think I hit the bucket.",
+      "correct": "We had a test today, and I think I hit the jackpot. (Or: ...kicked the bucket, which means died!)",
+      "explanation": "'Kicked the bucket' অর্থ হলো মারা যাওয়া, আর 'hit the jackpot' অর্থ হলো অনেক বড় সাফল্য পাওয়া। দুটি সম্পূর্ণ ভিন্ন ইডিয়ম গুলিয়ে ফেললে বাক্যের অর্থ হাস্যকর হয়ে যেতে পারে।"
+    },
+    {
+      "wrong": "He only visits us once in blue moon.",
+      "correct": "He only visits us once in a blue moon.",
+      "explanation": "বাগধারার ভেতরে থাকা আর্টিকেল অত্যন্ত সুনির্দিষ্ট। 'once in a blue moon' ইডিয়মটি থেকে আর্টিকেল 'a' বাদ দেওয়া একটি বড় ব্যাকরণগত ভুল।"
+    },
+    {
+      "wrong": "Don't cry over the spilled milk.",
+      "correct": "Don't cry over spilled milk. (Or: ...over spilt milk.)",
+      "explanation": "মূল বাগধারাটি হলো 'cry over spilled milk' (অতীতের ভুল নিয়ে আফসোস করা)। এর আগে অতিরিক্ত 'the' ব্যবহার করা ব্যাকরণগতভাবে অশুদ্ধ।"
+    },
+    {
+      "wrong": "To pass the exam, you need to burn midnight oil.",
+      "correct": "To pass the exam, you need to burn the midnight oil.",
+      "explanation": "এখানে আবার আর্টিকেলের ভুল ঘটেছে। 'burn the midnight oil' বাগধারাটিতে 'the' বাদ দেওয়া যাবে না।"
+    },
+    {
+      "wrong": "In writing essays, you can use informal idioms like 'hit the sack' to sound natural.",
+      "correct": "In academic writing, avoid informal idioms. Use precise academic language.",
+      "explanation": "'Hit the sack' (ঘুমাতে যাওয়া) বা 'cool' এর মতো অত্যন্ত অনানুষ্ঠানিক (informal) বাগধারাগুলো একাডেমিক রচনায় (যেমন: IELTS Writing Task 2) ব্যবহার করা সম্পূর্ণ নিষিদ্ধ। এগুলো কেবল বন্ধুদের সাথে আড্ডায় বা স্পিকিংয়ে প্রযোজ্য।"
+    },
+    {
+      "wrong": "He decided to play the advocate of the devil.",
+      "correct": "He decided to play devil's advocate.",
+      "explanation": "ইডিয়মের শব্দগুলো নিজের মতো করে সাজানো বা প্রতিস্থাপন করা যায় না। 'advocate of the devil' ভুল; সঠিক রূপটি হলো 'play devil's advocate' (বিতর্কের খাতিরে বিপক্ষের কথা বলা)।"
+    },
+    {
+      "wrong": "When she got the scholarship, she was on the cloud nine.",
+      "correct": "When she got the scholarship, she was on cloud nine.",
+      "explanation": "'on cloud nine' (খুশিতে আত্মহারা) ইডিয়মটির ভেতরে কোনো অতিরিক্ত আর্টিকেল 'the' বসানো যাবে না। এটি একটি নির্দিষ্ট এবং হিমায়িত (frozen) ইডিয়ম।"
+    }
+  ]
 }

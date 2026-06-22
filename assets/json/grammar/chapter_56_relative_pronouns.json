@@ -1,10 +1,210 @@
 {
   "chapter": 56,
   "level": "Advanced",
-  "title": "Relative Pronouns",
+  "title": "Relative Pronouns (রিলেটিভ প্রোনাউন)",
   "icon": "link",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Relative pronouns (who, whom, whose, which, that) are used to connect a clause or phrase to a noun or pronoun (known as the antecedent). They introduce relative clauses, which provide essential or extra information about the noun. Mastering relative pronouns, especially in formal and informal structures, is crucial for constructing complex sentences and enhancing cohesion in advanced English.",
+  "banglaDescription": "ইংরেজিতে Relative Pronouns (who, whom, whose, which, that) একটি ক্লজ বা ফ্রেজকে কোনো নাউন বা প্রোনাউনের (যাকে antecedent বলা হয়) সাথে যুক্ত করতে ব্যবহৃত হয়। এরা রিলেটিভ ক্লজ গঠন করে, যা নাউন সম্পর্কে প্রয়োজনীয় বা অতিরিক্ত তথ্য প্রদান করে। অ্যাডভান্সড ইংরেজিতে জটিল বাক্য গঠন এবং লেখার ধারাবাহিকতা বজায় রাখার জন্য রিলেটিভ প্রোনাউনের আনুষ্ঠানিক (formal) ও অনানুষ্ঠানিক (informal) ব্যবহার আয়ত্ত করা অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "Defining vs. Non-Defining Relative Clauses (প্রয়োজনীয় বনাম অতিরিক্ত তথ্য প্রদানকারী ক্লজ)",
+      "banglaName": "Defining বনাম Non-Defining Relative Clauses",
+      "definition": "Defining relative clauses provide essential information that identifies the noun we are talking about; without this clause, the sentence is incomplete. Non-defining relative clauses provide extra, non-essential information about a noun that is already identified. Non-defining clauses must be separated by commas, and 'that' cannot be used in them.",
+      "banglaDefinition": "Defining relative clause বাক্যের নাউনটি সম্পর্কে এমন প্রয়োজনীয় তথ্য দেয় যা নাউনটিকে শনাক্ত করতে সাহায্য করে; এই ক্লজটি ছাড়া বাক্যটি অসম্পূর্ণ থেকে যায়। অন্যদিকে, Non-defining relative clause এমন নাউন সম্পর্কে অতিরিক্ত তথ্য দেয় যা ইতিমধ্যেই নির্দিষ্ট। Non-defining ক্লজে কমা (comma) ব্যবহার করা বাধ্যতামূলক এবং এতে 'that' ব্যবহার করা যায় না।",
+      "formula": "Defining: Noun + who/which/that + restrictive clause (No Commas)\nNon-Defining: Noun, + who/which + extra information, + main verb/rest of the sentence",
+      "rules": [
+        "Defining clause-এ কোনো কমা বসে না। এটি নাউনকে নির্দিষ্ট করে: 'The book that you gave me is lost.'",
+        "Non-defining clause-এর শুরুতে ও শেষে কমা বসে। এটি কেবল অতিরিক্ত তথ্য দেয়: 'My father, who is 60, still works.'",
+        "Defining clause-এ 'who' বা 'which'-এর পরিবর্তে 'that' ব্যবহার করা খুব সাধারণ ও চমৎকার রূপ।",
+        "Non-defining clause-এ কখনো 'that' ব্যবহার করা যাবে না; সর্বদা 'who' (ব্যক্তির জন্য) বা 'which' (বস্তুর জন্য) ব্যবহার করতে হবে।",
+        "Defining clause-এ রিলেটিভ প্রোনাউনটি যদি অবজেক্ট হয়, তবে তা বাদ দেওয়া যায় (Zero Pronoun)।",
+        "Non-defining clause-এ রিলেটিভ প্রোনাউন কখনো বাদ দেওয়া যায় না।"
+      ],
+      "examples": [
+        { "en": "The doctor who treated me was very kind.", "bn": "যে ডাক্তারটি আমার চিকিৎসা করেছিলেন তিনি খুব দয়ালু ছিলেন। (Defining - নির্দিষ্ট ডাক্তার)" },
+        { "en": "My brother, who lives in London, is coming tomorrow.", "bn": "আমার ভাই, যিনি লন্ডনে থাকেন, আগামীকাল আসছেন। (Non-Defining - অতিরিক্ত তথ্য)" },
+        { "en": "The car that/which they bought yesterday broke down today.", "bn": "তারা গতকাল যে গাড়িটি কিনেছিল তা আজ নষ্ট হয়ে গেছে। (Defining)" },
+        { "en": "His new car, which cost a fortune, has already been damaged.", "bn": "তার নতুন গাড়িটি, যা কিনতে প্রচুর টাকা লেগেছিল, ইতিমধ্যেই ক্ষতিগ্রস্ত হয়েছে। (Non-Defining)" },
+        { "en": "Students who study hard usually pass the exams.", "bn": "যেসব ছাত্রছাত্রী কঠোর পড়াশোনা করে তারা সাধারণত পরীক্ষায় পাস করে। (Defining)" },
+        { "en": "The Eiffel Tower, which was completed in 1889, is in Paris.", "bn": "আইফেল টাওয়ার, যা ১৮৮৯ সালে সমাপ্ত হয়েছিল, প্যারিসে অবস্থিত। (Non-Defining)" },
+        { "en": "The man whom you met yesterday is my uncle.", "bn": "গতকাল আপনার সাথে যে লোকটির দেখা হয়েছিল তিনি আমার চাচা। (Defining)" },
+        { "en": "My mother, whom I love dearly, is an incredibly strong woman.", "bn": "আমার মা, যাকে আমি গভীরভাবে ভালোবাসি, একজন অত্যন্ত শক্তিশালী নারী। (Non-Defining)" },
+        { "en": "The job that she applied for requires five years of experience.", "bn": "সে যে চাকরিটির জন্য আবেদন করেছে সেটিতে পাঁচ বছরের অভিজ্ঞতা প্রয়োজন। (Defining)" },
+        { "en": "This smart watch, which I bought online, keeps track of my sleep.", "bn": "এই স্মার্ট ওয়াচটি, যা আমি অনলাইন থেকে কিনেছি, আমার ঘুমের হিসাব রাখে। (Non-Defining)" }
+      ],
+      "tips": "সহজ ট্রিক: যদি আপনি বাক্য থেকে রিলেটিভ ক্লজটি বাদ দেওয়ার পর বাক্যের মূল অর্থ অপরিবর্তিত থাকে, তবে সেটি 'Non-defining' এবং সেখানে কমা বসবে। আর যদি বাদ দিলে বাক্যটি অর্থহীন বা অসম্পূর্ণ শোনায়, তবে সেটি 'Defining' এবং কোনো কমা বসবে না।"
+    },
+    {
+      "name": "Relative Pronouns as Subject vs. Object (সাবজেক্ট বনাম অবজেক্ট রিলেটিভ প্রোনাউন)",
+      "banglaName": "Subject বনাম Object হিসেবে Relative Pronouns",
+      "definition": "A relative pronoun can function as either the subject or the object of the relative clause. If it is the subject, it is followed immediately by a verb and cannot be omitted. If it is the object, it is followed by another subject + verb, and can be omitted in defining clauses (creating a contact clause).",
+      "banglaDefinition": "একটি রিলেটিভ প্রোনাউন রিলেটিভ ক্লজের Subject অথবা Object হিসেবে কাজ করতে পারে। যদি এটি Subject হয়, তবে এর ঠিক পরেই একটি Verb বসে এবং এই প্রোনাউনটি বাদ দেওয়া যায় না। যদি এটি Object হয়, তবে এর পরে আরেকটি Subject + Verb বসে এবং Defining ক্লজের ক্ষেত্রে এই প্রোনাউনটি বাক্য থেকে সম্পূর্ণ বাদ দেওয়া যায় (একে contact clause বলে)।",
+      "formula": "Subject Role: Noun + Who/Which/That + Verb + Object\nObject Role: Noun + Who/Whom/Which/That/Ø (Zero Pronoun) + Subject + Verb",
+      "rules": [
+        "Subject হিসেবে ব্যক্তির জন্য 'who/that' এবং বস্তুর জন্য 'which/that' বসে। এর পরে সরাসরি verb বসে।",
+        "Object হিসেবে ব্যক্তির জন্য 'whom/who/that' এবং বস্তুর জন্য 'which/that' বসে।",
+        "অফিসিয়াল বা অত্যন্ত ফরমাল ইংরেজিতে অবজেক্ট হিসেবে 'whom' বসে; ইনফরমাল স্পোকেন ইংলিশে 'who' বা 'that' বেশি ব্যবহৃত হয়।",
+        "Defining relative clause-এ অবজেক্ট প্রোনাউনটি সম্পূর্ণ বাদ দিলে বাক্যটি আরও প্রাকৃতিক শোনায়: 'The music [that] we heard' -> 'The music we heard'.",
+        "Subject রিলেটিভ প্রোনাউন কখনো কোনো অবস্থাতেই বাক্য থেকে বাদ দেওয়া যাবে না।"
+      ],
+      "examples": [
+        { "en": "The girl who won the race is my cousin.", "bn": "যে মেয়েটি দৌড় প্রতিযোগিতায় জিতেছিল সে আমার মামাতো বোন। (Subject - 'who' বাদ দেওয়া যাবে না)" },
+        { "en": "The book which is on the table belongs to the teacher.", "bn": "টেবিলের উপর যে বইটি আছে সেটি শিক্ষকের। (Subject - 'which' বাদ দেওয়া যাবে না)" },
+        { "en": "The candidate whom the committee selected has accepted the offer.", "bn": "কমিটি যে প্রার্থীকে নির্বাচন করেছে তিনি অফারটি গ্রহণ করেছেন। (Object - Formal)" },
+        { "en": "The candidate they selected has accepted the offer.", "bn": "তারা যে প্রার্থীকে নির্বাচন করেছে তিনি অফারটি গ্রহণ করেছেন। (Object - Zero Pronoun/Omitted)" },
+        { "en": "The phone that I bought last week is already lagging.", "bn": "গত সপ্তাহে আমি যে ফোনটি কিনেছিলাম তা ইতিমধ্যেই ল্যাগ করছে। (Object - with 'that')" },
+        { "en": "The phone I bought last week is already lagging.", "bn": "গত সপ্তাহে আমি যে ফোনটি কিনেছিলাম তা ইতিমধ্যেই ল্যাগ করছে। (Object - Pronoun omitted)" },
+        { "en": "People who live in glass houses shouldn't throw stones.", "bn": "যাদের নিজেদের ঘর কাঁচের, তাদের অন্যদের দিকে পাথর ছোঁড়া উচিত নয়। (Subject)" },
+        { "en": "The advice that he gave me was extremely helpful.", "bn": "সে আমাকে যে উপদেশটি দিয়েছিল তা অত্যন্ত সহায়ক ছিল। (Object)" },
+        { "en": "The man who called you earlier left a message.", "bn": "যে লোকটি একটু আগে তোমাকে কল করেছিল সে একটি বার্তা রেখে গেছে। (Subject)" },
+        { "en": "The house we rented last summer was beautiful.", "bn": "গত গ্রীষ্মে আমরা যে বাড়িটি ভাড়া নিয়েছিলাম তা সুন্দর ছিল। (Object - Zero Pronoun)" }
+      ],
+      "tips": "রাইটিং বা স্পিকিং করার সময় যদি রিলেটিভ প্রোনাউনের পরেই সরাসরি verb দেখেন (যেমন: 'the man who *knows*'), বুঝবেন এটি Subject; একে বাদ দেওয়া যাবে না। আর যদি প্রোনাউনের পর আরেকটি subject দেখেন (যেমন: 'the man who *I* saw'), বুঝবেন এটি Object এবং চাইলে আপনি 'who/that/whom' না লিখে সরাসরি 'the man I saw' বলতে পারেন।"
+    },
+    {
+      "name": "Prepositions with Relative Pronouns: Formal vs. Informal (প্রিপজিশনের অবস্থান ও ব্যবহার)",
+      "banglaName": "Relative Pronouns-এর সাথে Preposition-এর ব্যবহার",
+      "definition": "In relative clauses, prepositions can appear in two places: either before the relative pronoun (Pied-Piping - highly formal) or at the end of the clause (Preposition Stranding - informal/natural). When the preposition is placed first, we must use 'whom' for people and 'which' for things.",
+      "banglaDefinition": "রিলেটিভ ক্লজে prepositions দুটি স্থানে বসতে পারে: হয় রিলেটিভ প্রোনাউনের ঠিক আগে (একে Pied-Piping বলে - যা অত্যন্ত আনুষ্ঠানিক বা formal), অথবা ক্লজের একেবারে শেষে (একে Preposition Stranding বলে - যা অনানুষ্ঠানিক বা স্বাভাবিক)। প্রিপজিশনটি শুরুতে বসালে ব্যক্তির ক্ষেত্রে বাধ্যতামূলকভাবে 'whom' এবং বস্তুর জন্য 'which' ব্যবহার করতে হয় (সেক্ষেত্রে 'that' বা 'who' ব্যবহার করা যাবে না)।",
+      "formula": "Formal: Noun + Preposition + Whom/Which + Subject + Verb\nInformal: Noun + Who/Which/That/Ø + Subject + Verb + Preposition",
+      "rules": [
+        "ফরমাল রাইটিংয়ে প্রিপজিশন শুরুতে বসানো উত্তম: 'The person to whom I spoke...'",
+        "ইনফরমাল বা সাধারণ কথোপকথনে প্রিপজিশনটি ক্লজের শেষে রাখাই স্বাভাবিক: 'The person who I spoke to...'",
+        "প্রিপজিশন যদি রিলেটিভ প্রোনাউনের ঠিক আগে বসে, তবে 'who' বা 'that' ব্যবহার করা যাবে না; 'whom' বা 'which' ব্যবহার করতে হবে।",
+        "যেমন: 'The house in which we live' (সঠিক), কিন্তু 'The house in that we live' (ভুল)।",
+        "যদি প্রিপজিশন শেষে বসে, তবে রিলেটিভ প্রোনাউনটি বাদ দেওয়া যায়: 'The project we worked on was successful.'"
+      ],
+      "examples": [
+        { "en": "The lady to whom you were speaking is our principal.", "bn": "আপনি যে ভদ্রমহিলার সাথে কথা বলছিলেন তিনি আমাদের অধ্যক্ষ। (Highly Formal)" },
+        { "en": "The lady who you were speaking to is our principal.", "bn": "তুমি যে ভদ্রমহিলার সাথে কথা বলছিলে তিনি আমাদের প্রিন্সিপাল। (Informal/Common)" },
+        { "en": "This is the folder in which I kept the documents.", "bn": "এটি সেই ফোল্ডার যার মধ্যে আমি কাগজপত্রগুলো রেখেছিলাম। (Formal)" },
+        { "en": "This is the folder I kept the documents in.", "bn": "এই ফোল্ডারটাতেই আমি কাগজপত্রগুলো রেখেছিলাম। (Informal/Zero Pronoun)" },
+        { "en": "The tools with which he repaired the car were old.", "bn": "সে যে সরঞ্জামগুলো দিয়ে গাড়িটি মেরামত করেছিল সেগুলো পুরোনো ছিল। (Formal)" },
+        { "en": "The tools that he repaired the car with were old.", "bn": "সে যে সরঞ্জামগুলো দিয়ে গাড়ি মেরামত করেছিল সেগুলো পুরোনো ছিল। (Informal)" },
+        { "en": "The friends with whom I traveled are very supportive.", "bn": "আমি যাদের সাথে ভ্রমণ করেছিলাম সেই বন্ধুরা খুবই সহযোগী মনোভাবের। (Formal)" },
+        { "en": "The friends I traveled with are very supportive.", "bn": "আমি যে বন্ধুদের সাথে ট্যুর দিয়েছিলাম তারা খুব ভালো। (Informal)" },
+        { "en": "The theory on which his research is based is controversial.", "bn": "তার গবেষণাটি যে তত্ত্বের ওপর ভিত্তি করে প্রতিষ্ঠিত তা বিতর্কিত। (Formal)" },
+        { "en": "The company for which she works has gone bankrupt.", "bn": "সে যে কোম্পানির জন্য কাজ করে সেটি দেউলিয়া হয়ে গেছে। (Formal)" }
+      ],
+      "tips": "লিখিত পরীক্ষায় বা কোনো প্রফেশনাল ইমেইলে 'Preposition + Whom/Which' (যেমন: with whom, in which) ব্যবহার করুন। এটি আপনার ইংরেজিকে অত্যন্ত সমৃদ্ধ ও মার্জিত করে তোলে। তবে বন্ধুদের সাথে কথা বলার সময় প্রিপজিশন শেষে রাখাই (যেমন: the guy I was talking to) বেশি স্বাভাবিক।"
+    },
+    {
+      "name": "Possessive Relative Pronoun: Whose (স্বত্বাধিকারসূচক রিলেটিভ প্রোনাউন)",
+      "banglaName": "Possessive Relative Pronoun: Whose",
+      "definition": "'Whose' is the possessive relative pronoun used to indicate possession by both people and things. It replaces possessive adjectives (my, your, his, her, its, their). When referring to things, 'whose' is often preferred to avoid the clumsy 'of which' structure.",
+      "banglaDefinition": "'Whose' হলো স্বত্বাধিকার বা মালিকানা নির্দেশক রিলেটিভ প্রোনাউন, যা মানুষ এবং বস্তু উভয়ের মালিকানা বোঝাতে ব্যবহৃত হয়। এটি মূলত possessive adjectives (my, your, his, her, its, their) এর পরিবর্তে বসে। জড় বস্তুর ক্ষেত্রে জটিল ও অপ্রাকৃতিক শোনায় এমন 'of which' পরিহার করার জন্য সাধারণত 'whose' ব্যবহার করাই বেশি শ্রেয়।",
+      "formula": "Noun + Whose + Noun (possessed item) + Clause/Verb",
+      "rules": [
+        "'Whose' মানুষ, প্রাণী এবং বস্তু বা অণুজীব—সবার ক্ষেত্রেই ব্যবহার করা যায়।",
+        "'Whose' এর পর অবশ্যই সরাসরি আরেকটি Noun বসাতে হবে যার মালিকানা প্রকাশ করা হচ্ছে (যেমন: 'whose car', 'whose leaves')।",
+        "'Whose' এর পর কোনো Article (a, an, the) বসানো যাবে না।",
+        "বস্তুর ক্ষেত্রে 'Noun + of which' ব্যবহার করা যায়, তবে তা অত্যন্ত প্রাচীন ও ফরমাল শোনায়: 'The car, the engine of which was broken...' এর চেয়ে 'The car whose engine was broken...' অনেক সহজ ও আধুনিক।"
+      ],
+      "examples": [
+        { "en": "The man whose car was stolen called the police.", "bn": "যে লোকটির গাড়ি চুরি হয়েছিল তিনি পুলিশ ডেকেছিলেন।" },
+        { "en": "I met a writer whose books have been translated into ten languages.", "bn": "আমি এমন একজন লেখকের সাথে দেখা করেছি যাঁর বই দশটি ভাষায় অনুবাদ করা হয়েছে।" },
+        { "en": "This is the tree whose leaves turn bright red in autumn.", "bn": "এটি সেই গাছ যার পাতাগুলো শরৎকালে উজ্জ্বল লাল রঙে পরিণত হয়।" },
+        { "en": "A widow is a woman whose husband has died.", "bn": "বিধবা হলেন এমন একজন নারী যাঁর স্বামী মারা গেছেন।" },
+        { "en": "I bought a house whose windows overlook the beautiful river.", "bn": "আমি এমন একটি বাড়ি কিনেছি যার জানালা দিয়ে সুন্দর নদীটি দেখা যায়।" },
+        { "en": "The company whose employees went on strike has agreed to raise wages.", "bn": "যে কোম্পানির কর্মচারীরা ধর্মঘট করেছিল তারা মজুরি বাড়াতে সম্মত হয়েছে।" },
+        { "en": "He is a musician whose talent is recognized worldwide.", "bn": "তিনি এমন একজন সঙ্গীতশিল্পী যাঁর প্রতিভা বিশ্বজুড়ে স্বীকৃত।" },
+        { "en": "The mountain whose peak is covered with snow is Mount Everest.", "bn": "যে পর্বতটির চূড়া বরফে ঢাকা সেটি হলো মাউন্ট এভারেস্ট।" },
+        { "en": "I have a friend whose father is a famous heart surgeon.", "bn": "আমার একজন বন্ধু আছে যার বাবা একজন বিখ্যাত হৃদরোগ বিশেষজ্ঞ।" },
+        { "en": "This is the phone whose battery lasts for three days.", "bn": "এটি সেই ফোন যার ব্যাটারি তিন দিন পর্যন্ত চলে।" }
+      ],
+      "tips": "'Whose' এবং 'Who's' এর উচ্চারণ এক হলেও এদের অর্থ সম্পূর্ণ ভিন্ন। 'Whose' মালিকানা বোঝায়, আর 'Who's' হলো 'Who is' বা 'Who has'-এর সংক্ষিপ্ত রূপ (Contraction)। লেখার সময় বানান নিয়ে সতর্ক থাকুন!"
+    },
+    {
+      "name": "Relative Adverbs as Relative Pronouns: Where, When, Why (স্থান, সময় ও কারণের রিলেটিভ এডভার্ব)",
+      "banglaName": "Relative Adverbs: Where, When, Why",
+      "definition": "The words 'where', 'when', and 'why' function as relative adverbs. They introduce relative clauses that refer to places, times, or reasons. They can often be replaced by a preposition + relative pronoun (which), making the sentence more formal.",
+      "banglaDefinition": "'Where', 'when', এবং 'why' শব্দগুলো ব্যাকরণে Relative Adverbs হিসেবে কাজ করে। এরা স্থান, সময় বা কারণ নির্দেশক নাউনের পরে বসে রিলেটিভ ক্লজ গঠন করে। এগুলোকে প্রায়শই প্রিপজিশন + রিলেটিভ প্রোনাউন (in/on/at/for which) দ্বারা প্রতিস্থাপন করা যায়, যা বাক্যকে আরও বেশি ফরমাল করে তোলে।",
+      "formula": "Place Noun + Where (or preposition + which) + Subject + Verb\nTime Noun + When (or preposition + which) + Subject + Verb\nReason Noun (usually 'reason') + Why (or for which) + Subject + Verb",
+      "rules": [
+        "স্থানের ক্ষেত্রে 'where' বসে, যা মূলত 'in/at/on which' এর অর্থ প্রকাশ করে: 'The town where I was born.'"
+      ],
+      "examples": [
+        { "en": "The restaurant where we had dinner was fantastic.", "bn": "আমরা যে রেস্তোরাঁয় রাতের খাবার খেয়েছিলাম সেটি চমৎকার ছিল। (where = at which)" },
+        { "en": "I will never forget the day when I first met you.", "bn": "আমি সেই দিনটির কথা কখনই ভুলব না যেদিন আমি তোমার সাথে প্রথম দেখা করেছিলাম। (when = on which)" },
+        { "en": "The reason why she left the job is still unknown.", "bn": "সে কেন চাকরিটি ছেড়েছিল তার কারণ এখনও অজানা। (why = for which)" },
+        { "en": "This is the hospital where my brother works.", "bn": "এটি সেই হাসপাতাল যেখানে আমার ভাই কাজ করেন।" },
+        { "en": "1971 was the year when Bangladesh achieved independence.", "bn": "১৯৭১ সাল ছিল সেই বছর যখন বাংলাদেশ স্বাধীনতা অর্জন করেছিল।" },
+        { "en": "The house where they live is over a hundred years old.", "bn": "তারা যে বাড়িটিতে বাস করে সেটি একশো বছরেরও বেশি পুরোনো।" },
+        { "en": "Is there any reason why you didn't call me?", "bn": "তুমি আমাকে কল না করার পেছনে কি কোনো কারণ আছে?" },
+        { "en": "Summer is the season when tourists flock to the beaches.", "bn": "গ্রীষ্মকাল হলো সেই ঋতু যখন পর্যটকরা সমুদ্র সৈকতে ভিড় জমায়।" },
+        { "en": "The city where the conference was held was beautiful.", "bn": "যে শহরে সম্মেলনটি অনুষ্ঠিত হয়েছিল সেটি সুন্দর ছিল।" },
+        { "en": "Do you know the reason why the train is delayed?", "bn": "তুমি কি জানো ট্রেনটি বিলম্বিত হওয়ার কারণ কী?" }
+      ],
+      "tips": "মনে রাখবেন, 'Where'-এর পরিবর্তে যখন আপনি 'which' ব্যবহার করবেন, তখন অবশ্যই উপযুক্ত preposition বসাতে হবে। যেমন: 'The house where I live' অথবা 'The house in which I live'। শুধু 'The house which I live' বলা ব্যাকরণগতভাবে ভুল।"
+    },
+    {
+      "name": "Compound Relative Pronouns: Whoever, Whichever, Whatever (যৌগিক রিলেটিভ প্রোনাউন)",
+      "banglaName": "Compound Relative Pronouns",
+      "definition": "Compound relative pronouns (whoever, whomsoever, whichever, whatever) are used without an antecedent noun. They mean 'any person who', 'any thing that', etc., and function as both the connector and the subject/object of the clause. They are common in advanced English to express generalization or conditional choice.",
+      "banglaDefinition": "Compound relative pronouns (whoever, whichever, whatever) কোনো নির্দিষ্ট antecedent (পূর্ববর্তী নাউন) ছাড়াই সরাসরি ব্যবহৃত হয়। এগুলোর অর্থ দাঁড়ায় 'যে কেউ', 'যেটিই হোক', বা 'যা কিছুই হোক'। এগুলো একই সাথে ক্লজগুলোকে যুক্ত করে এবং বাক্যের সাবজেক্ট/অবজেক্ট হিসেবে কাজ করে। সাধারণীকরণ বা শর্তহীন পছন্দ বোঝাতে অ্যাডভান্সড ইংরেজিতে এগুলো ব্যবহৃত হয়।",
+      "formula": "Whoever/Whatever/Whichever + Subject + Verb + Main Verb\n(Or) Subject + Verb + Whoever/Whatever/Whichever + Clause",
+      "rules": [
+        "'Whoever' অর্থ 'যে কেউ' (any person who)। এটি সাবজেক্ট হিসেবে কাজ করে।",
+        "'Whomever' অত্যন্ত ফরমাল এবং এটি অবজেক্ট হিসেবে কাজ করে (any person whom)।",
+        "'Whatever' অর্থ 'যা-ই' (any thing that/everything that)।",
+        "'Whichever' অর্থ 'যেটিই' (one particular thing out of a limited choice)।",
+        "এই প্রোনাউনগুলোর নিজস্ব কোনো antecedent (যেমন: the man, the book) থাকে না; এরা নিজেরাই নাউনের কাজ করে।"
+      ],
+      "examples": [
+        { "en": "Whoever wants to join the club is welcome.", "bn": "যে কেউ ক্লাবে যোগ দিতে চায় তাকে স্বাগত জানানো হচ্ছে। (Whoever = anyone who)" },
+        { "en": "You can eat whatever you like from the menu.", "bn": "মেনু থেকে তোমার যা পছন্দ তুমি তা-ই খেতে পারো। (Whatever = anything that)" },
+        { "en": "Whichever route you take, you will face traffic.", "bn": "তুমি যে পথই বেছে নাও না কেন, তোমাকে জ্যামে পড়তে হবে।" },
+        { "en": "Please give the prize to whoever finishes the race first.", "bn": "দৌড় প্রতিযোগিতা যে প্রথম শেষ করবে তাকেই পুরস্কারটি দিন।" },
+        { "en": "Do whatever is necessary to solve the problem.", "bn": "সমস্যাটি সমাধান করার জন্য যা কিছু প্রয়োজন তা-ই করো।" },
+        { "en": "Buy whichever phone fits your budget best.", "bn": "যে ফোনটি তোমার বাজেটের সাথে সবচেয়ে ভালো মিলে যায় সেটিই কেনো।" },
+        { "en": "Whoever leaked the information will be dismissed immediately.", "bn": "যে কেউ তথ্যটি ফাঁস করেছে তাকে অবিলম্বে বরখাস্ত করা হবে।" },
+        { "en": "I will support you, whatever decision you make.", "bn": "তুমি যে সিদ্ধান্তই নাও না কেন, আমি তোমাকে সমর্থন করব।" },
+        { "en": "You can invite whomever you want to the party.", "bn": "পার্টিতে তুমি যাকে খুশি তাকে আমন্ত্রণ জানাতে পারো। (Whomever - Object)" },
+        { "en": "Whichever of these books you choose, you will learn a lot.", "bn": "এই বইগুলোর মধ্যে তুমি যেটিই বেছে নাও না কেন, তুমি অনেক কিছু শিখতে পারবে।" }
+      ],
+      "tips": "রাইটিংয়ে 'Whoever' এবং 'Whomever' নিয়ে দ্বিধায় পড়লে এই ট্রিকটি খাটান: যদি ঐ স্থানে 'he/they' বসালে অর্থপূর্ণ হয়, তবে 'whoever' ব্যবহার করুন (যেহেতু 'he' subject)। আর যদি 'him/them' বসালে অর্থ প্রকাশ পায়, তবে 'whomever' ব্যবহার করুন (যেহেতু 'him' object)।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "My father, that is a doctor, advised me to exercise daily.",
+      "correct": "My father, who is a doctor, advised me to exercise daily.",
+      "explanation": "কমা দিয়ে আলাদা করা Non-defining relative clause-এ অতিরিক্ত তথ্য দেওয়ার জন্য কখনো 'that' ব্যবহার করা যায় না। সেখানে মানুষের জন্য 'who' এবং বস্তুর জন্য 'which' ব্যবহার করা বাধ্যতামূলক।"
+    },
+    {
+      "wrong": "The laptop which I bought it yesterday is not working.",
+      "correct": "The laptop which I bought yesterday is not working.",
+      "explanation": "রিলেটিভ প্রোনাউন নিজেই পূর্ববর্তী নাউনকে (The laptop) নির্দেশ করে। তাই ক্লজের ভেতরে একই নাউনকে পুনরায় নির্দেশকারী কোনো অবজেক্ট প্রোনাউন (it/them/him) ব্যবহার করা যাবে না। এটি ডাবল অবজেক্টের সৃষ্টি করে যা ব্যাকরণগত ভুল।"
+    },
+    {
+      "wrong": "This is the colleague who I traveled with him to Tokyo.",
+      "correct": "This is the colleague who I traveled with to Tokyo. (Or: ...with whom I traveled...)",
+      "explanation": "রিলেটিভ প্রোনাউন 'who' ইতিমধ্যে 'colleague'-কে নির্দেশ করছে, তাই বাক্যের শেষে অতিরিক্ত 'him' রাখা ভুল। প্রিপজিশন 'with' এর পর কোনো অতিরিক্ত অবজেক্ট প্রোনাউন বসবে না।"
+    },
+    {
+      "wrong": "The student lives next door is a talented programmer.",
+      "correct": "The student who lives next door is a talented programmer.",
+      "explanation": "রিলেটিভ ক্লজটি যদি subject হিসেবে কাজ করে, তবে রিলেটিভ প্রোনাউনটি ('who' বা 'that') বাদ দেওয়া যায় না। সরাসরি 'The student lives next door' লিখলে তা দুটি ভিন্ন বাক্যকে ভুলভাবে জোড়া লাগায় (run-on sentence)।"
+    },
+    {
+      "wrong": "The city which I visited last year where is famous for its history.",
+      "correct": "The city which I visited last year is famous for its history.",
+      "explanation": "এখানে 'The city' ক্লজের অবজেক্ট হিসেবে 'which' সঠিক ছিল। সেখানে অতিরিক্ত 'where' ব্যবহার করার প্রয়োজন নেই, কারণ 'where' সাধারণত 'in that city'-র অর্থ দেয় এবং এর পর আরেকটি পূর্ণ ক্লজ প্রয়োজন হয়।"
+    },
+    {
+      "wrong": "The boy whose the dog bit me is crying.",
+      "correct": "The boy whose dog bit me is crying.",
+      "explanation": "'Whose' নিজেই একটি possessive রূপ যা মালিকানা নির্দিষ্ট করে দেয়। তাই 'whose' এর পর সরাসরি noun বসে; এদের মাঝখানে কোনো article (a/an/the) বসতে পারে না।"
+    },
+    {
+      "wrong": "The organization in that we believe is doing great work.",
+      "correct": "The organization in which we believe is doing great work. (Or: The organization that we believe in...)",
+      "explanation": "প্রিপজিশনের ঠিক পরেই কখনো রিলেটিভ প্রোনাউন হিসেবে 'that' বসে না। যদি প্রিপজিশনটি শুরুতে বসে তবে বস্তুর জন্য অবশ্যই 'which' এবং মানুষের জন্য 'whom' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "I don't know the woman whom called you yesterday.",
+      "correct": "I don't know the woman who called you yesterday.",
+      "explanation": "এখানে রিলেটিভ প্রোনাউনটি রিলেটিভ ক্লজের সাবজেক্ট হিসেবে কাজ করছে (যেহেতু এর পরেই verb 'called' রয়েছে)। সাবজেক্ট হিসেবে সবসময় 'who' বসে, অবজেক্ট ফর্ম 'whom' নয়।"
+    }
+  ]
 }

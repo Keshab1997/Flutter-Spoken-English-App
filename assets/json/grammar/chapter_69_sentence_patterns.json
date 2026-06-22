@@ -1,10 +1,207 @@
 {
   "chapter": 69,
   "level": "Advanced",
-  "title": "Sentence Patterns",
+  "title": "Sentence Patterns (বাক্যবিন্যাস/বাক্য কাঠামো)",
   "icon": "pattern",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Sentence Patterns refer to the grammatical frameworks and syntactic arrangements used to construct meaningful sentences in English. At an advanced level, mastering sentence patterns involves understanding transitive and intransitive alignments, dative shifts, object complement configurations, complex linking verb sequences, and causative/perception structures. Precision in sentence patterning is essential for fluent, natural, and stylistically varied writing.",
+  "banglaDescription": "সেন্টেন্স প্যাটার্নস বা বাক্যবিন্যাস বলতে ইংরেজিতে অর্থপূর্ণ বাক্য গঠনের ব্যাকরণগত কাঠামো এবং সিনট্যাক্টিক বিন্যাসকে বোঝায়। অ্যাডভান্সড স্তরে বাক্য কাঠামো আয়ত্ত করার জন্য সকর্মক ও অকর্মক বিন্যাস, ডেটিভ শিফট (দ্বিকর্মক রূপান্তর), অবজেক্ট কমপ্লিমেন্ট বিন্যাস, জটিল লিঙ্কিং ভার্ব সিকোয়েন্স এবং কজেটিভ ও পারসেপশন (অনুভূতিমূলক) কাঠামো বোঝা আবশ্যক। বাক্যবিন্যাসের নির্ভুলতা লেখাকে সাবলীল, স্বাভাবিক এবং শৈল্পিক বৈচিত্র্যময় করতে অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "Subject + Transitive Verb + Indirect Object + Direct Object (S-V-IO-DO) and Dative Shift (দ্বিকর্মক ক্রিয়া ও ডেটিভ শিফট)",
+      "banglaName": "S-V-IO-DO এবং ডেটিভ শিফট",
+      "definition": "This pattern involves ditransitive verbs that take two objects: an Indirect Object (IO), which is usually a person receiving the action, and a Direct Object (DO), which is the thing being acted upon. 'Dative Shift' refers to the alternation between the 'S-V-IO-DO' structure and the 'S-V-DO + preposition (to/for) + IO' structure.",
+      "banglaDefinition": "এই বাক্য কাঠামোটি দ্বিকর্মক ক্রিয়া (ditransitive verbs) নিয়ে গঠিত যা দুটি অবজেক্ট গ্রহণ করে: একটি পরোক্ষ অবজেক্ট বা Indirect Object (IO), যা সাধারণত কোনো ব্যক্তি যে কাজটি গ্রহণ করে; এবং একটি প্রত্যক্ষ অবজেক্ট বা Direct Object (DO), যা মূলত মূল কাজটি সম্পন্ন করে। 'Dative Shift' বলতে 'S-V-IO-DO' কাঠামো এবং 'S-V-DO + preposition (to/for) + IO' কাঠামোর পারস্পরিক রূপান্তরকে বোঝায়।",
+      "formula": "Pattern A: Subject + Verb + Indirect Object (Person) + Direct Object (Thing)\nPattern B: Subject + Verb + Direct Object (Thing) + Preposition (to/for) + Indirect Object (Person)",
+      "rules": [
+        "যদি পরোক্ষ অবজেক্ট (IO) আগে বসে, তবে কোনো প্রিপজিশন বসে না: 'He gave me a book.'",
+        "যদি প্রত্যক্ষ অবজেক্ট (DO) আগে বসে, তবে পরোক্ষ অবজেক্টের আগে 'to' বা 'for' বসাতে হবে: 'He gave a book to me.'",
+        "'to' গ্রহণকারী ভার্বসমূহ: give, send, lend, pass, show, write, offer.",
+        "'for' গ্রহণকারী ভার্বসমূহ: buy, make, find, get, cook, save.",
+        "যদি প্রত্যক্ষ অবজেক্টটি একটি Pronoun (it, them) হয়, তবে অবশ্যই Pattern B ব্যবহার করতে হবে (যেমন: 'Give it to me' সঠিক, 'Give me it' অনানুষ্ঠানিক বা ভুল)।"
+      ],
+      "examples": [
+        { "en": "The company offered him a lucrative job in London.", "bn": "কোম্পানিটি তাকে লন্ডনে একটি লাভজনক চাকরির প্রস্তাব দিয়েছিল। (S-V-IO-DO)" },
+        { "en": "The company offered a lucrative job to him in London.", "bn": "কোম্পানিটি তাকে লন্ডনে একটি লাভজনক চাকরির প্রস্তাব দিয়েছিল। (S-V-DO-to-IO)" },
+        { "en": "My father bought me a brand new laptop for university.", "bn": "আমার বাবা বিশ্ববিদ্যালয়ের জন্য আমাকে একটি ব্র্যান্ড নিউ ল্যাপটপ কিনে দিয়েছিলেন। (S-V-IO-DO)" },
+        { "en": "My father bought a brand new laptop for me for university.", "bn": "আমার বাবা বিশ্ববিদ্যালয়ের জন্য আমার জন্য একটি ব্র্যান্ড নিউ ল্যাপটপ কিনে দিয়েছিলেন। (S-V-DO-for-IO)" },
+        { "en": "Could you pass me the salt, please?", "bn": "আপনি কি দয়া করে আমাকে লবণটি এগিয়ে দেবেন?" },
+        { "en": "Could you pass the salt to me, please?", "bn": "আপনি কি দয়া করে লবণটি আমার দিকে এগিয়ে দেবেন?" },
+        { "en": "She cooked her guests a magnificent three-course dinner.", "bn": "সে তার অতিথিদের জন্য একটি চমৎকার তিন-কোর্সের রাতের খাবার রান্না করেছিল।" },
+        { "en": "She cooked a magnificent three-course dinner for her guests.", "bn": "সে তার অতিথিদের জন্য একটি চমৎকার তিন-কোর্সের রাতের খাবার রান্না করেছিল।" },
+        { "en": "He lent his colleague some money to pay the bills.", "bn": "সে বিল পরিশোধ করার জন্য তার সহকর্মীকে কিছু টাকা ধার দিয়েছিল।" },
+        { "en": "I found the lost keys, so I handed them to her immediately.", "bn": "আমি হারিয়ে যাওয়া চাবিগুলো খুঁজে পেয়েছিলাম, তাই আমি সেগুলো অবিলম্বে তাকে হস্তান্তর করেছিলাম। (Pronoun অবজেক্টের ক্ষেত্রে to ব্যবহার করা হয়েছে)" }
+      ],
+      "tips": "মনে রাখার সহজ উপায়: যদি দেওয়ার অনুভূতি থাকে (give, hand, send), তবে প্রিপজিশন 'to' বসবে। আর যদি কোনো উপকার বা পাওয়ার অনুভূতি থাকে (buy, cook, make), তবে প্রিপজিশন 'for' বসবে।"
+    },
+    {
+      "name": "Subject + Verb + Object + Object Complement (S-V-O-OC) (অবজেক্ট এবং অবজেক্ট কমপ্লিমেন্ট)",
+      "banglaName": "S-V-O-OC বাক্য কাঠামো",
+      "definition": "In this pattern, the verb is followed by a direct object and an Object Complement (OC). The object complement provides essential information about the object, describing its state, identity, or quality resulting from the verb's action. The complement can be a noun, an adjective, or a noun phrase.",
+      "banglaDefinition": "এই কাঠামোতে, ক্রিয়াপদের পরে একটি সরাসরি অবজেক্ট এবং একটি অবজেক্ট কমপ্লিমেন্ট (OC) বসে। অবজেক্ট কমপ্লিমেন্টটি অবজেক্ট সম্পর্কে প্রয়োজনীয় তথ্য প্রদান করে; যা ক্রিয়ার ফলে অবজেক্টের কী অবস্থা, পরিচয় বা গুণগত পরিবর্তন হয়েছে তা বর্ণনা করে। কমপ্লিমেন্টটি একটি নাউন, অ্যাডজেক্টিভ বা নাউন ফ্রেজ হতে পারে।",
+      "formula": "Subject + Verb + Direct Object + Object Complement (Noun/Adjective/Noun Phrase)",
+      "rules": [
+        "অবজেক্ট কমপ্লিমেন্টটি সর্বদা অবজেক্টের ঠিক পরে বসে এবং এটি অবজেক্টকে মডিফাই করে (সাবজেক্টকে নয়)।",
+        "এই প্যাটার্ন তৈরি করা প্রধান ভার্বগুলো হলো: call, name, elect, make, find, consider, paint, keep, declare.",
+        "ভার্বের পর অবজেক্ট ও কমপ্লিমেন্টের মাঝে কোনো অতিরিক্ত 'as' বা 'to be' বসানোর প্রয়োজন নেই (যেমন: 'They elected him president' সঠিক, 'They elected him as president' পরিহার করা ভালো)।",
+        "অবজেক্ট এবং অবজেক্ট কমপ্লিমেন্টের মধ্যে একটি অদৃশ্য 'to be' বা 'is' সম্পর্ক থাকে (যেমন: 'We found the room clean' মানে 'The room was clean')।"
+      ],
+      "examples": [
+        { "en": "The committee appointed her spokesperson for the project.", "bn": "কমিটি তাকে প্রকল্পটির মুখপাত্র হিসেবে নিযুক্ত করেছে। (Spokesperson হলো অবজেক্ট her-এর কমপ্লিমেন্ট)" },
+        { "en": "The long journey made the travelers extremely exhausted.", "bn": "দীর্ঘ যাত্রাটি ভ্রমণকারীদের অত্যন্ত ক্লান্ত করে তুলেছিল। (Exhausted হলো অবজেক্ট-এর অবস্থা)" },
+        { "en": "Many people consider his latest novel a masterpiece.", "bn": "অনেকে তার সর্বশেষ উপন্যাসটিকে একটি মাস্টারপিস মনে করেন। (Masterpiece হলো novel-এর কমপ্লিমেন্ট)" },
+        { "en": "They painted the wooden fence bright green.", "bn": "তারা কাঠের বেড়াটি উজ্জ্বল সবুজ রঙে রাঙিয়েছিল। (Bright green হলো fence-এর অবস্থা)" },
+        { "en": "You must keep the kitchen clean and tidy at all times.", "bn": "আপনাকে অবশ্যই রান্নাঘরটি সবসময় পরিষ্কার ও পরিপাটি রাখতে হবে।" },
+        { "en": "The jury declared the defendant not guilty of all charges.", "bn": "জুরি বিবাদীকে সমস্ত অভিযোগ থেকে নির্দোষ ঘোষণা করেছিল।" },
+        { "en": "We found the presentation highly informative and engaging.", "bn": "আমরা উপস্থাপনাটিকে অত্যন্ত তথ্যবহুল এবং আকর্ষণীয় পেয়েছিলাম।" },
+        { "en": "They named their newborn daughter Sarah.", "bn": "তারা তাদের নবজাতক কন্যার নাম রেখেছিল সারাহ।" },
+        { "en": "The economic crisis drove many businesses bankrupt.", "bn": "অর্থনৈতিক সংকট অনেক ব্যবসাকে দেউলিয়া করে দিয়েছিল। (Bankrupt হলো businesses-এর অবস্থা)" },
+        { "en": "The performance left the audience absolutely speechless.", "bn": "পরিবেশনাটি দর্শকদের একেবারে বাকরুদ্ধ করে দিয়েছিল।" }
+      ],
+      "tips": "যদি আপনি অবজেক্টের পর কোনো Adverb ব্যবহার করেন (যেমন: 'She made him happily'), তবে বাক্যটির অর্থ ভিন্ন হবে। এখানে 'happily' তার কাজ করার ধরনকে বোঝাবে। কিন্তু অবজেক্টের অবস্থা বোঝাতে সর্বদা Adjective কমপ্লিমেন্ট (যেমন: 'She made him happy') ব্যবহার করতে হবে।"
+    },
+    {
+      "name": "Subject + Linking Verb + Subject Complement (S-V-SC) (লিঙ্কিং ভার্ব ও সাবজেক্ট কমপ্লিমেন্ট)",
+      "banglaName": "S-V-SC বাক্য কাঠামো",
+      "definition": "This pattern features a linking verb (such as be, become, seem, look, smell, taste, remain, prove) followed by a Subject Complement (SC). The complement describes or redefines the subject of the sentence. Since linking verbs do not show action, the complement is never an adverb; it must be an adjective or a noun.",
+      "banglaDefinition": "এই কাঠামোতে একটি লিঙ্কিং ভার্ব (যেমন: be, become, seem, look, smell, taste, remain, prove) এবং এর পরে একটি সাবজেক্ট কমপ্লিমেন্ট (SC) থাকে। কমপ্লিমেন্টটি বাক্যের সাবজেক্টকে বর্ণনা করে বা তার নতুন পরিচয় দেয়। যেহেতু লিঙ্কিং ভার্ব কোনো শারীরিক কাজ প্রকাশ করে না, তাই কমপ্লিমেন্টটি কখনোই অ্যাডভার্ব হতে পারে না; এটি অবশ্যই একটি অ্যাডজেক্টিভ বা নাউন হতে হবে।",
+      "formula": "Subject + Linking Verb + Subject Complement (Adjective/Noun)",
+      "rules": [
+        "লিঙ্কিং ভার্বগুলোর পর সাবজেক্টকে বর্ণনা করতে Adjective বসে, Adverb নয় (যেমন: 'I feel bad' সঠিক, 'I feel badly' ভুল)।",
+        "লিঙ্কিং ভার্বগুলোকে 'equal to (=)' চিহ্ন দ্বারা প্রতিস্থাপন করা যায়: 'He is a doctor' -> 'He = doctor'.",
+        "অ্যাডভান্সড লিঙ্কিং ভার্বসমূহ: prove (প্রমাণিত হওয়া), turn out (অবশেষে হওয়া), remain (থাকা), appear (মনে হওয়া)।"
+      ],
+      "examples": [
+        { "en": "The soup tastes absolutely delicious with these spices.", "bn": "এই মশলাগুলোর কারণে স্যুপটি খেতে অত্যন্ত সুস্বাদু লাগছে। (Delicious হলো soup-এর কমপ্লিমেন্ট)" },
+        { "en": "Despite the chaos around him, the captain remained calm.", "bn": "তার চারপাশের বিশৃঙ্খলা সত্ত্বেও অধিনায়ক শান্ত ছিলেন। (Calm হলো captain-এর অবস্থা)" },
+        { "en": "The investment proved profitable within a few months.", "bn": "বিনিয়োগটি কয়েক মাসের মধ্যেই লাভজনক প্রমাণিত হয়েছিল। (Profitable)" },
+        { "en": "Her explanation seemed highly plausible to the jury.", "bn": "তার ব্যাখ্যাটি জুরির কাছে অত্যন্ত গ্রহণযোগ্য বলে মনে হয়েছিল।" },
+        { "en": "He became a successful entrepreneur after years of struggle.", "bn": "কয়েক বছরের সংগ্রামের পর সে একজন সফল উদ্যোক্তা হয়েছিল। (Noun complement)" },
+        { "en": "The weather turned cold suddenly in the evening.", "bn": "সন্ধ্যায় আবহাওয়া হঠাৎ ঠান্ডা হয়ে গিয়েছিল।" },
+        { "en": "Your perfume smells incredibly fresh and floral.", "bn": "তোমার পারফিউমের সুবাস অবিশ্বাস্যভাবে তাজা এবং ফুলের মতো।" },
+        { "en": "The rumors about his resignation turned out false.", "bn": "তার পদত্যাগের গুজবটি অবশেষে মিথ্যা প্রমাণিত হয়েছিল।" },
+        { "en": "She looks elegant in that traditional dress.", "bn": "ঐতিহ্যবাহী পোশাকে তাকে মার্জিত দেখাচ্ছে।" },
+        { "en": "This antique chair remains valuable despite its minor scratches.", "bn": "সামান্য স্ক্র্যাচ থাকা সত্ত্বেও এই প্রাচীন চেয়ারটি মূল্যবান রয়ে গেছে।" }
+      ],
+      "tips": "কিছু ভার্ব একই সাথে লিঙ্কিং এবং অ্যাকশন ভার্ব হতে পারে। যেমন: 'The coffee tasted bad' (লিঙ্কিং - কফিটির স্বাদ খারাপ ছিল) বনাম 'He tasted the coffee carefully' (অ্যাকশন - সে সাবধানে কফিটি টেস্ট করছিল)। অ্যাকশন ভার্বের পর অ্যাডভার্ব বসতে পারে, কিন্তু লিঙ্কিং ভার্বের পর সর্বদা অ্যাডজেক্টিভ বসবে।"
+    },
+    {
+      "name": "Complex Causative and Perception Patterns: S + V + O + Verb Form (কজেটিভ এবং অনুভূতিমূলক বাক্যবিন্যাস)",
+      "banglaName": "কজেটিভ ও অনুভূতিমূলক বাক্যবিন্যাস",
+      "definition": "This advanced pattern involves verbs of causation (make, let, have, get) or perception (see, hear, notice, watch, feel) followed by an object and a specific verb form (bare infinitive, to-infinitive, or participle). The choice of the final verb form depends strictly on the main verb and the active/passive nature of the action.",
+      "banglaDefinition": "এই উন্নত কাঠামোটিতে কজেটিভ ভার্ব (make, let, have, get) অথবা অনুভূতিমূলক ভার্ব (see, hear, notice, watch, feel) এর পরে একটি অবজেক্ট এবং একটি নির্দিষ্ট ক্রিয়ারূপ (bare infinitive, to-infinitive, বা participle) বসে। শেষ ক্রিয়ারূপটির নির্বাচন সম্পূর্ণভাবে প্রধান ভার্ব এবং কাজটি অ্যাক্টিভ নাকি প্যাসিভ তার ওপর নির্ভর করে।",
+      "formula": "Causative Active: Subject + make/let/have + Object + Bare Infinitive (V1)\nCausative Active (get): Subject + get + Object + To-Infinitive (to + V1)\nCausative Passive: Subject + have/get + Object + Past Participle (V3)\nPerception Pattern: Subject + see/hear + Object + V1 (Completed) / V-ing (Ongoing)",
+      "rules": [
+        "অ্যাক্টিভ কজেটিভ ভার্ব 'make', 'let', 'have'-এর পর অবজেক্ট থাকলে সরাসরি Bare Infinitive (V1) বসে, 'to' বসে না।",
+        "অ্যাক্টিভ কজেটিভ ভার্ব 'get'-এর পর অবজেক্ট থাকলে 'to-infinitive' বসে: 'I got him to clean the room.'",
+        "প্যাসিভ কজেটিভ (কাউকে দিয়ে কোনো কাজ করিয়ে নেওয়া) এর ক্ষেত্রে 'have/get + object + V3' বসে: 'I had my car repaired.'",
+        "অনুভূতিমূলক ভার্বের পর যদি কাজটি সম্পূর্ণ হওয়া বোঝায় তবে V1 বসে; আর কাজটি চলমান থাকা বোঝাতে V-ing বসে।"
+      ],
+      "examples": [
+        { "en": "The teacher made the students rewrite the entire essay.", "bn": "শিক্ষক শিক্ষার্থীদের পুরো রচনাটি পুনরায় লেখাতে বাধ্য করেছিলেন। (Active make + V1)" },
+        { "en": "I finally got my brother to help me with the gardening.", "bn": "আমি অবশেষে আমার ভাইকে বাগানের কাজে আমাকে সাহায্য করতে রাজি করিয়েছিলাম। (Active get + to-V1)" },
+        { "en": "She had her hair cut and styled at the new salon yesterday.", "bn": "সে গতকাল নতুন সেলুনে তার চুল কাটিয়েছিল এবং স্টাইল করিয়েছিল। (Passive Causative - have + obj + V3)" },
+        { "en": "I saw him cross the road safely before the car arrived.", "bn": "গাড়িটি আসার আগে আমি তাকে নিরাপদে রাস্তা পার হতে দেখেছিলাম। (সম্পূর্ণ কাজ - see + obj + V1)" },
+        { "en": "We heard her singing a beautiful song as we walked by.", "bn": "যাওয়ার সময় আমরা তাকে একটি সুন্দর গান গাইতে শুনেছিলাম। (চলমান কাজ - hear + obj + V-ing)" },
+        { "en": "The boss let the employees leave early on Friday.", "bn": "বস শুক্রবার কর্মচারীদের সকাল সকাল চলে যাওয়ার অনুমতি দিয়েছিলেন।" },
+        { "en": "We need to get our roof repaired before the monsoon starts.", "bn": "বর্ষা শুরু হওয়ার আগে আমাদের ছাদটি মেরামত করিয়ে নিতে হবে। (get + roof + repaired)" },
+        { "en": "Did you notice anyone entering the building last night?", "bn": "আপনি কি গত রাতে কাউকে ভবনে প্রবেশ করতে লক্ষ্য করেছিলেন?" },
+        { "en": "She watched the children playing in the park for an hour.", "bn": "সে এক ঘণ্টা ধরে বাচ্চাদের পার্কে খেলা করা দেখেছিল।" },
+        { "en": "He had the mechanic check the brakes of his car.", "bn": "সে মেকানিককে দিয়ে তার গাড়ির ব্রেকগুলো পরীক্ষা করিয়ে নিয়েছিল।" }
+      ],
+      "tips": "মনে রাখবেন: 'make' যখন প্যাসিভ ভয়েসে ব্যবহৃত হয়, তখন কিন্তু 'to' বসাতে হবে। যেমন: 'He was made *to rewrite* the essay' (সঠিক), 'He was made rewrite' (ভুল)।"
+    },
+    {
+      "name": "Dummy/Expletive Subject Patterns: 'It' and 'There' (Dummy 'It' and 'There' বাক্যবিন্যাস)",
+      "banglaName": "Dummy 'It' and 'There' বাক্যবিন্যাস",
+      "definition": "This pattern uses 'It' or 'There' as placeholder (dummy or expletive) subjects at the beginning of a sentence. 'It' is used for extraposition (moving a long subject clause to the end) or describing time, weather, and distance. 'There' is used to declare the existence or non-existence of something, often paired with linking or passive verbs.",
+      "banglaDefinition": "এই কাঠামোতে বাক্যের শুরুতে কোনো প্রকৃত সাবজেক্ট না রেখে প্লেসহোল্ডার বা ডামি সাবজেক্ট হিসেবে 'It' বা 'There' ব্যবহার করা হয়। 'It' ব্যবহৃত হয় এক্সট্রাপজিশন বা বাক্যের বড় সাবজেক্ট ক্লজটিকে শেষে সরিয়ে নেওয়ার জন্য, অথবা সময়, আবহাওয়া ও দূরত্ব বর্ণনা করতে। 'There' ব্যবহৃত হয় কোনো কিছুর অস্তিত্ব বা অনস্তিত্ব ঘোষণা করার জন্য, যা প্রায়শই লিঙ্কিং বা প্যাসিভ ভার্বের সাথে বসে।",
+      "formula": "It Pattern: It + is/was + Adjective + (for/of someone) + To-Infinitive / That Clause\nThere Pattern: There + Verb (be/seem/exist/remain) + Real Subject + Adverbial",
+      "rules": [
+        "দীর্ঘ সাবজেক্ট ক্লজ এড়াতে 'It' দিয়ে বাক্য শুরু করা অ্যাকাডেমিক রাইটিংয়ে খুব সাধারণ: 'It is important that we study...'",
+        "'There' দিয়ে শুরু হওয়া বাক্যের প্রকৃত সাবজেক্টটি ভার্বের পরে থাকে। তাই ভার্বটি সিঙ্গুলার হবে নাকি প্লুরাল হবে তা পরবর্তী নাউনের ওপর নির্ভর করে।",
+        "যেমন: 'There *is* a problem' (সিঙ্গুলার) বনাম 'There *are* many problems' (প্লুরাল)।",
+        "'There'-এর পর 'be' ভার্ব ছাড়াও seem to be, exist, remain, arise-এর মতো ভার্ব বসতে পারে।"
+      ],
+      "examples": [
+        { "en": "It is essential for candidates to submit their applications on time.", "bn": "প্রার্থীদের জন্য সময়মতো আবেদনপত্র জমা দেওয়া অত্যন্ত জরুরি।" },
+        { "en": "It is rumored that the CEO is planning to resign next month.", "bn": "গুজব রয়েছে যে প্রধান নির্বাহী কর্মকর্তা আগামী মাসে পদত্যাগ করার পরিকল্পনা করছেন।" },
+        { "en": "There seems to be some misunderstanding between the partners.", "bn": "অংশীদারদের মধ্যে কিছুটা ভুল বোঝাবুঝি রয়েছে বলে মনে হচ্ছে।" },
+        { "en": "There remain several unresolved issues in the contract.", "bn": "চুক্তিতে বেশ কয়েকটি অমীমাংসিত বিষয় এখনও রয়ে গেছে। (issues প্লুরাল হওয়ায় remain হয়েছে)" },
+        { "en": "It was very generous of you to host the charity event.", "bn": "দাতব্য অনুষ্ঠানটি আয়োজন করার জন্য আপনার মহানুভবতা প্রশংসনীয় ছিল।" },
+        { "en": "There arose a fierce dispute over the property line.", "bn": "সম্পত্তির সীমানা নিয়ে এক তীব্র বিবাদের সৃষ্টি হয়েছিল। (arose = সৃষ্টি হওয়া)" },
+        { "en": "It takes about forty minutes to reach the airport from here.", "bn": "এখান থেকে বিমানবন্দরে পৌঁছাতে প্রায় চল্লিশ মিনিট সময় লাগে। (সময় প্রকাশে It)" },
+        { "en": "There was a sudden increase in the demand for renewable energy.", "bn": "নবায়নযোগ্য শক্তির চাহিদাই হঠাৎ এক আকস্মিক বৃদ্ধি ঘটেছিল।" },
+        { "en": "It is highly unlikely that they will agree to our terms.", "bn": "তারা আমাদের শর্তে রাজি হবে এমন সম্ভাবনা অত্যন্ত ক্ষীণ।" },
+        { "en": "There existed a ancient civilization in this valley thousands of years ago.", "bn": "হাজার হাজার বছর আগে এই উপত্যকায় একটি প্রাচীন সভ্যতার অস্তিত্ব ছিল।" }
+      ],
+      "tips": "লিখিত পরীক্ষায় 'There is many people' বা 'There is several reasons' লেখার ভুলটি সবচেয়ে বেশি হয়। যেহেতু 'reasons' এবং 'people' প্লুরাল, তাই এখানে অবশ্যই 'There are' লিখতে হবে।"
+    },
+    {
+      "name": "Advanced Inversion and Fronting Patterns (উন্নত ইনভারশন ও ফ্রন্টিং বাক্যবিন্যাস)",
+      "banglaName": "উন্নত ইনভারশন ও ফ্রন্টিং বাক্যবিন্যাস",
+      "definition": "Inversion and Fronting are syntactic rearrangements used to change the default word order (Subject + Verb + Object) for rhetorical emphasis, contrast, or dramatic effect. Inversion swaps the subject and auxiliary verb, while fronting moves non-subject elements (like adjectives, adverbs, or objects) to the very beginning.",
+      "banglaDefinition": "ইনভারশন এবং ফ্রন্টিং হলো এমন কিছু বাক্যবিন্যাস কৌশল যা শৈল্পিক বা অলঙ্কারিক জোর, বৈপরীত্য বা নাটকীয় প্রভাব তৈরির জন্য বাক্যের সাধারণ শব্দক্রম (Subject + Verb + Object) পরিবর্তন করে। ইনভারশনে সাবজেক্ট এবং অক্সিলিয়ারি ভার্বের স্থান পরিবর্তন করা হয়, আর ফ্রন্টিংয়ে সাবজেক্ট নয় এমন কোনো উপাদানকে (যেমন: বিশেষণ, ক্রিয়াবিশেষণ বা অবজেক্ট) বাক্যের একেবারে শুরুতে নিয়ে আসা হয়।",
+      "formula": "Negative Inversion: Negative Word + Auxiliary + Subject + Main Verb\nLocative Inversion: Place Phrase + Main Verb + Subject Noun\nConcessive Fronting: Adjective + as/though + Subject + Verb",
+      "rules": [
+        "নেতিবাচক শব্দ (never, rarely, seldom) শুরুতে থাকলে ইনভারশন বাধ্যতামূলক: 'Never have I seen...'",
+        "স্থানবাচক ইনভারশনে কোনো সাহায্যকারী ক্রিয়া (do/does/did) বসে না, সরাসরি মূল ক্রিয়া বসে: 'On the hill stood a castle.'",
+        "'As/Though' ফ্রন্টিংয়ে কমা বসে এবং এটি 'যদিও' অর্থ দেয়: 'Strange though it seems, it is true.'"
+      ],
+      "examples": [
+        { "en": "Never in my life have I witnessed such a magnificent sunset.", "bn": "আমার জীবনে কখনো আমি এমন এক চমৎকার সূর্যাস্ত দেখিনি। (Negative Inversion)" },
+        { "en": "At the top of the hill stood an old medieval castle.", "bn": "পাহাড়ের চূড়ায় একটি প্রাচীন মধ্যযুগীয় দুর্গ দাঁড়িয়ে ছিল। (Locative Inversion)" },
+        { "en": "Hardly had we stepped out of the house when it started to pour.", "bn": "আমরা বাড়ি থেকে বের হতে না হতেই মুষলধারে বৃষ্টি শুরু হয়ে গিয়েছিল।" },
+        { "en": "Beautiful though she is, she remains extremely humble.", "bn": "যদিও সে সুন্দরী, তবুও সে অত্যন্ত নম্র। (Concessive Fronting)" },
+        { "en": "Under no circumstances are you allowed to enter the laboratory alone.", "bn": "কোনো অবস্থাতেই আপনার ল্যাবরেটরিতে একা প্রবেশ করার অনুমতি নেই।" },
+        { "en": "Into the boardroom walked the angry shareholders.", "bn": "বোর্ডরুমে ক্ষুব্ধ শেয়ারহোল্ডাররা হেঁটে প্রবেশ করলেন।" },
+        { "en": "Not until yesterday did we receive the official confirmation.", "bn": "গতকালের আগে আমরা অফিশিয়াল নিশ্চিতকরণটি পাইনি।" },
+        { "en": "Exhausted as he was, he managed to complete the marathon.", "bn": "যদিও সে ক্লান্ত ছিল, তবুও সে ম্যারাথনটি সম্পন্ন করতে পেরেছিল।" },
+        { "en": "Such was the intensity of the storm that power lines were destroyed.", "bn": "ঝড়ের তীব্রতা এতটাই ছিল যে বিদ্যুৎ সংযোগ লাইনগুলো ধ্বংস হয়ে গিয়েছিল।" },
+        { "en": "On the desk lay a beautiful handwritten love letter.", "bn": "ডেস্কের ওপর একটি সুন্দর হাতে লেখা প্রেমের চিঠি পড়েছিল।" }
+      ],
+      "tips": "ইনভারশন এবং ফ্রন্টিং সাধারণ কথোপকথনে বেশি ব্যবহার করলে তা অতিরিক্ত ফরমাল বা কৃত্রিম শোনাতে পারে। তবে উচ্চমানের অ্যাকাডেমিক প্রবন্ধ বা সাহিত্যিক রচনায় এগুলো লেখার মান বহুগুণ বাড়িয়ে দেয়।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "He bought a laptop to me yesterday.",
+      "correct": "He bought a laptop for me yesterday. (Or: He bought me a laptop).",
+      "explanation": "'Buy' একটি দ্বিকর্মক কজেটিভ ভার্ব যা পরোক্ষ অবজেক্টের আগে সর্বদা প্রিপজিশন হিসেবে 'for' গ্রহণ করে, 'to' নয়। 'He gave it *to* me' সঠিক, কিন্তু 'He bought it *for* me' সঠিক।"
+    },
+    {
+      "wrong": "They elected him as the president of the club.",
+      "correct": "They elected him president of the club.",
+      "explanation": "'Elect', 'appoint', 'name', 'make' ইত্যাদি ভার্বের অবজেক্ট কমপ্লিমেন্ট গঠনের সময় অতিরিক্ত 'as' বা 'the' ব্যবহার করা সম্পূর্ণ অপ্রয়োজনীয় এবং ব্যাকরণগতভাবে দুর্বল।"
+    },
+    {
+      "wrong": "The coffee smelled badly, so I threw it away.",
+      "correct": "The coffee smelled bad, so I threw it away.",
+      "explanation": "'Smell' এখানে একটি লিঙ্কিং ভার্ব, যা সাবজেক্ট কফির অবস্থাকে নির্দেশ করছে। লিঙ্কিং ভার্বের পর সাবজেক্টকে বর্ণনা করতে সর্বদা Adjective ('bad') বসে, Adverb ('badly') নয়।"
+    },
+    {
+      "wrong": "The strict manager made the employees to work overtime.",
+      "correct": "The strict manager made the employees work overtime.",
+      "explanation": "অ্যাক্টিভ ভয়েসে কজেটিভ ভার্ব 'make'-এর পর অবজেক্ট থাকলে তার পরবর্তী ক্রিয়ার রূপটি সর্বদা Bare Infinitive (to ছাড়া V1) হতে হবে।"
+    },
+    {
+      "wrong": "I got my car repair yesterday at the workshop.",
+      "correct": "I got my car repaired yesterday at the workshop. (Or: I had my car repaired...)",
+      "explanation": "এটি একটি প্যাসিভ কজেটিভ কাঠামো (নিজে না করে অন্যকে দিয়ে গাড়ি মেরামত করানো)। 'have/get + object + V3' নিয়ম অনুযায়ী এখানে 'repair'-এর পাস্ট পার্টিসিপল 'repaired' বসবে।"
+    },
+    {
+      "wrong": "I saw him to steal the money from the bag.",
+      "correct": "I saw him steal the money from the bag. (Or: I saw him stealing...)",
+      "explanation": "অনুভূতিমূলক ভার্ব (see, hear, watch) এর পর সরাসরি অবজেক্ট থাকলে তার পরবর্তী ক্রিয়ার সাথে 'to' বসে না; হয় V1 (steal) অথবা V-ing (stealing) বসবে।"
+    },
+    {
+      "wrong": "There is several reasons why the plan failed.",
+      "correct": "There are several reasons why the plan failed.",
+      "explanation": "'There' দিয়ে বাক্য শুরু হলে প্রকৃত সাবজেক্টটি ভার্বের পরে থাকে। যেহেতু 'reasons' শব্দটি প্লুরাল, তাই সাহায্যকারী ভার্বটি সিঙ্গুলার 'is' না হয়ে প্লুরাল 'are' হবে।"
+    },
+    {
+      "wrong": "Rarely I have heard such a beautiful voice.",
+      "correct": "Rarely have I heard such a beautiful voice.",
+      "explanation": "যখন নেতিবাচক বা সীমাবদ্ধতা প্রকাশক অ্যাডভার্ব (Rarely, Never, Seldom) বাক্যের শুরুতে বসে, তখন বাক্যটিতে অবশ্যই ইনভারশন ঘটাতে হবে, অর্থাৎ Auxiliary Verb-টি সাবজেক্টের আগে বসবে।"
+    }
+  ]
 }

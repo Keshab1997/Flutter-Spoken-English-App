@@ -1,10 +1,206 @@
 {
   "chapter": 59,
   "level": "Advanced",
-  "title": "Subjunctive Mood",
+  "title": "Subjunctive Mood (অনুজ্ঞা ও অনুমানসূচক ভাব)",
   "icon": "mood",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "The Subjunctive Mood is a specialized grammatical mood used to express wishes, hypothetical situations, doubts, possibilities, or demands and suggestions. Unlike the indicative mood, which states facts, the subjunctive often uses bare infinitives (e.g., 'he go' instead of 'he goes') or past plural forms for singular subjects (e.g., 'I were' instead of 'I was'). Mastering this is essential for formal, academic, and sophisticated English writing.",
+  "banglaDescription": "সাবজাঙ্কটিভ মুড (Subjunctive Mood) হলো এমন একটি বিশেষ ব্যাকরণগত রূপ যা আকাঙ্ক্ষা, কল্পনাপ্রসূত বা অবাস্তব পরিস্থিতি, সন্দেহ, সম্ভাবনা, অথবা কোনো জোরালো দাবি ও পরামর্শ প্রকাশ করতে ব্যবহৃত হয়। সাধারণ বর্ণনামূলক বাক্যের (indicative mood) মতো এখানে স্বাভাবিক ক্রিয়ারূপ বসে না; বরং সাবজাঙ্কটিভ-এ মূল বা বেস ভার্ব বসে (যেমন: 'he goes'-এর পরিবর্তে 'he go') অথবা একবচন কর্তার সাথে বহুবচন অতীত রূপ বসে (যেমন: 'I was'-এর পরিবর্তে 'I were')। প্রাতিষ্ঠানিক, একাডেমিক এবং মানসম্মত ইংরেজি লেখার জন্য এটি আয়ত্ত করা অত্যন্ত জরুরি।",
+  "topics": [
+    {
+      "name": "The Present (Mandative) Subjunctive with Verbs (ক্রিয়াপদের সাথে প্রেজেন্ট বা আদেশাত্মক সাবজাঙ্কটিভ)",
+      "banglaName": "Verbs-এর সাথে Present Subjunctive",
+      "definition": "The Present Subjunctive (often called the Mandative Subjunctive) is used after verbs that express a demand, request, suggestion, insistence, or command. In this structure, the 'that' clause always uses the base form of the verb (bare infinitive), regardless of the subject. This means third-person singular subjects do not take 's' or 'es', and 'be' is used instead of 'am, is, are'.",
+      "banglaDefinition": "Present Subjunctive (যাকে Mandative বা আদেশাত্মক সাবজাঙ্কটিভও বলা হয়) এমন সব ক্রিয়াপদের পরে ব্যবহৃত হয় যা কোনো জোরালো দাবি, অনুরোধ, পরামর্শ, জেদ বা আদেশ প্রকাশ করে (যেমন: demand, suggest, insist, recommend)। এই কাঠামোর অধীনে 'that'-পরবর্তী ক্লজটিতে সাবজেক্ট যাই হোক না কেন, ক্রিয়ার মূল রূপ বা Base Verb (bare infinitive) বসে। অর্থাৎ, থার্ড-পারসন সিঙ্গুলার সাবজেক্ট হলেও ভার্বের সাথে 's' বা 'es' যুক্ত হয় না এবং 'am, is, are'-এর পরিবর্তে সরাসরি 'be' বসে।",
+      "formula": "Subject 1 + Subjunctive Verb (demand/suggest/insist...) + that + Subject 2 + Base Verb (V1 without s/es/ed) + ...",
+      "rules": [
+        "সাবজাঙ্কটিভ ট্রিগার করা প্রধান ভার্বগুলো হলো: suggest, recommend, insist, demand, propose, ask, require, urge, command, decree.",
+        "That-এর পরের ক্লজে সর্বদাই ভার্বের বেস ফর্ম (যেমন: go, run, do, have, be) বসবে, কোনো tense বা person অনুযায়ী পরিবর্তন হবে না।",
+        "সাবজেক্ট she, he বা it হলেও 'goes' বা 'writes' না লিখে 'go' বা 'write' লিখতে হবে।",
+        "Passive গঠনের ক্ষেত্রে সরাসরি 'be + V3' বসে: '...that he be promoted' (he is/was promoted নয়)।",
+        "নেতিবাচক (negative) করার জন্য বেস ভার্বের ঠিক আগে কেবল 'not' বসাতে হবে; 'does not' বা 'did not' ব্যবহার করা সম্পূর্ণ ভুল।"
+      ],
+      "examples": [
+        { "en": "The doctor suggested that he take a few days off work.", "bn": "ডাক্তার পরামর্শ দিয়েছিলেন যে সে যেন কাজ থেকে কয়েক দিনের ছুটি নেয়। (takes-এর পরিবর্তে take)" },
+        { "en": "They insisted that she be present at the ceremony.", "bn": "তারা জেদ ধরেছিল যে তাকে যেন অনুষ্ঠানে উপস্থিত রাখা হয়। (is/was-এর পরিবর্তে be)" },
+        { "en": "The manager demanded that everyone arrive on time.", "bn": "ম্যানেজার দাবি করেছিলেন যে প্রত্যেকে যেন সময়মতো পৌঁছায়। (arrives-এর পরিবর্তে arrive)" },
+        { "en": "I recommend that he not sign the contract yet.", "bn": "আমি সুপারিশ করছি সে যেন এখনই চুক্তিতে স্বাক্ষর না করে। (does not sign-এর পরিবর্তে not sign)" },
+        { "en": "The law requires that every citizen carry an ID card.", "bn": "আইনানুযায়ী প্রত্যেক নাগরিকের পরিচয়পত্র বহন করা আবশ্যক। (carries-এর পরিবর্তে carry)" },
+        { "en": "She proposed that the meeting be postponed until next week.", "bn": "সে প্রস্তাব করেছিল যে সভাটি যেন আগামী সপ্তাহ পর্যন্ত স্থগিত করা হয়। (is postponed-এর পরিবর্তে be postponed)" },
+        { "en": "He asked that he be allowed to explain his side of the story.", "bn": "সে অনুরোধ করেছিল যে তাকে যেন তার পক্ষের গল্পটি ব্যাখ্যা করার সুযোগ দেওয়া হয়।" },
+        { "en": "The committee urged that the government take immediate action.", "bn": "কমিটি সরকারকে অবিলম্বে পদক্ষেপ নেওয়ার জন্য জোর আহ্বান জানিয়েছে।" },
+        { "en": "The judge decreed that the defendant pay a heavy fine.", "bn": "বিচারক ফরমান জারি করেছিলেন যে বিবাদী যেন একটি বড় অঙ্কের জরিমানা পরিশোধ করে।" },
+        { "en": "I insist that he have a fair trial.", "bn": "আমি জোর দাবি করছি যেন সে একটি ন্যায্য বিচার পায়। (has-এর পরিবর্তে have)" }
+      ],
+      "tips": "সহজ উপায়: মনে মনে ভাবুন 'that' এবং 'subject'-এর মাঝে একটি অদৃশ্য 'should' লুকিয়ে আছে। যেমন: 'I suggest that he [should] go'। তবে আমেরিকান ইংরেজিতে 'should' লেখা হয় না, সরাসরি বেস ভার্ব 'go' বসে। এটিই হলো বিশুদ্ধ সাবজাঙ্কটিভ।"
+    },
+    {
+      "name": "Subjunctive after Adjectives of Necessity and Importance (প্রয়োজনীয়তা ও গুরুত্ব প্রকাশকারী Adjectives-এর পর সাবজাঙ্কটিভ)",
+      "banglaName": "Adjectives-এর পর Subjunctive",
+      "definition": "The present subjunctive is also triggered by impersonal constructions using adjectives that denote necessity, urgency, or extreme importance (such as essential, vital, crucial, imperative, necessary). The structure starts with 'It is/was' and is followed by a 'that' clause containing a base verb.",
+      "banglaDefinition": "গুরুত্ব, প্রয়োজনীয়তা বা জরুরি অবস্থা প্রকাশ করে এমন কিছু Adjectives (যেমন: essential, vital, crucial, imperative, necessary) এর পর 'It is/was + Adjective' দিয়ে বাক্য শুরু হলে, পরবর্তী 'that' ক্লজটিতে প্রেজেন্ট সাবজাঙ্কটিভ বা ভার্বের বেস রূপ ব্যবহৃত হয়।",
+      "formula": "It + is/was + Subjunctive Adjective (essential/vital/crucial...) + that + Subject + Base Verb (V1) + ...",
+      "rules": [
+        "ট্রিগার অ্যাডজেক্টিভসমূহ: essential, vital, crucial, imperative, necessary, important, urgent, advisable, mandatory.",
+        "পূর্ববর্তী টপিকের মতোই, এখানেও 'that' ক্লজের সাবজেক্ট থার্ড-পারসন সিঙ্গুলার হলেও ভার্বের বেস রূপ বসবে।",
+        "নেতিবাচক বাক্যে 'not + base verb' বসবে (যেমন: It is important that he not leave)।",
+        "প্যাসিভ করার জন্য 'be + V3' বসবে (যেমন: It is vital that this be done)।"
+      ],
+      "examples": [
+        { "en": "It is essential that she be informed of the change.", "bn": "এটি অত্যন্ত প্রয়োজনীয় যে তাকে যেন এই পরিবর্তনের কথা জানানো হয়।" },
+        { "en": "It was vital that the rescue team reach the site before sunset.", "bn": "উদ্ধারকারী দলের সূর্যাস্তের আগে ঘটনাস্থলে পৌঁছানোটা অত্যন্ত গুরুত্বপূর্ণ ছিল।" },
+        { "en": "It is crucial that he not make any mistakes during the presentation.", "bn": "উপস্থাপনার সময় সে যেন কোনো ভুল না করে তা অত্যন্ত গুরুত্বপূর্ণ।" },
+        { "en": "It is imperative that you be ready by 6 AM.", "bn": "সকাল ৬টার মধ্যে তোমার প্রস্তুত থাকাটা বাধ্যতামূলক।" },
+        { "en": "It is necessary that he have a passport to travel abroad.", "bn": "বিদেশ ভ্রমণের জন্য তার একটি পাসপোর্ট থাকা আবশ্যক। (has নয়, have)" },
+        { "en": "It is advisable that she consult a specialist.", "bn": "তার একজন বিশেষজ্ঞের সাথে পরামর্শ করা বাঞ্ছনীয়। (consults নয়, consult)" },
+        { "en": "It was urgent that the patient be taken to the operating room.", "bn": "রোগীকে অস্ত্রোপচার কক্ষে নিয়ে যাওয়া অত্যন্ত জরুরি ছিল।" },
+        { "en": "It is mandatory that every employee attend the safety training.", "bn": "প্রত্যেক কর্মচারীর নিরাপত্তা বিষয়ক প্রশিক্ষণে উপস্থিত থাকা বাধ্যতামূলক।" },
+        { "en": "It is important that this secret be kept safe.", "bn": "এই গোপন বিষয়টি সুরক্ষিত রাখা অত্যন্ত গুরুত্বপূর্ণ।" },
+        { "en": "It is vital that we not lose focus now.", "bn": "আমরা যেন এখন মনোযোগ না হারাই তা অত্যন্ত জরুরি।" }
+      ],
+      "tips": "ফর্মাল রাইটিং ও প্রাতিষ্ঠানিক চিঠিপত্রে এই কাঠামোর ব্যবহার আপনার লেখার মানকে অনেক উন্নত করে। ব্রিটিশ ইংরেজিতে অবশ্য প্রায়শই 'should' ব্যবহার করা হয় (যেমন: 'It is essential that she *should* be informed'), তবে আমেরিকান এবং আন্তর্জাতিক মানদণ্ডে 'should' ছাড়াই সরাসরি সাবজাঙ্কটিভ ব্যবহার করা বেশি পছন্দ করা হয়।"
+    },
+    {
+      "name": "The Past Subjunctive: Hypothetical 'Were' (অতীত সাবজাঙ্কটিভ: অবাস্তব ও কাল্পনিক 'Were')",
+      "banglaName": "The Past Subjunctive ('Were')",
+      "definition": "The Past Subjunctive (also known as the Were-Subjunctive) is used to express hypothetical, imaginary, or counterfactual situations (situations that are contrary to current facts). In this mood, 'were' is used for ALL subjects, including singular subjects like I, he, she, it, where 'was' would normally be used in the indicative mood.",
+      "banglaDefinition": "Past Subjunctive (যাকে Were-Subjunctive-ও বলা হয়) মূলত অবাস্তব, কাল্পনিক বা সত্যের বিপরীত কোনো পরিস্থিতি প্রকাশ করতে ব্যবহৃত হয়। এই মুডের অধীনে, সাবজেক্ট একবচন (I, he, she, it) হওয়া সত্ত্বেও 'was'-এর পরিবর্তে সকলের সাথে বাধ্যতামূলকভাবে 'were' বসে। এটি প্রধানত 'If' ক্লজে (Conditional 2) দেখা যায়।",
+      "formula": "If + Subject + Were + Complement, Subject + Would/Could + Base Verb + ...",
+      "rules": [
+        "অবাস্তব বা অসম্ভব কল্পনা প্রকাশের জন্য 'was' ব্যবহার না করে সর্বদা 'were' ব্যবহার করুন।",
+        "এটি প্রধানত Second Conditional (অবাস্তব বর্তমান/ভবিষ্যত) বাক্যে ব্যবহৃত হয়।",
+        "ফরমাল ইংরেজিতে 'If I were you' বলা হয়, 'If I was you' ব্যাকরণগতভাবে অনানুষ্ঠানিক বা অশুদ্ধ হিসেবে গণ্য করা হয়।",
+        "বাক্যকে আরও বেশি অলঙ্কৃত করতে 'If' বাদ দিয়ে 'were' শুরুতে আনা যায় (Inversion): 'Were I in your position...'"
+      ],
+      "examples": [
+        { "en": "If I were rich, I would travel the world.", "bn": "আমি যদি ধনী হতাম, তবে সারা বিশ্ব ভ্রমণ করতাম। (কিন্তু আমি ধনী নই)" },
+        { "en": "If he were more careful, he wouldn't make so many mistakes.", "bn": "সে যদি আরও সতর্ক হতো, তবে এত বেশি ভুল করত না।" },
+        { "en": "If she were president, she would change the education system.", "bn": "সে যদি রাষ্ট্রপতি হতো, তবে শিক্ষা ব্যবস্থার পরিবর্তন করত।" },
+        { "en": "I would help you if I were able to.", "bn": "আমি তোমাকে সাহায্য করতাম যদি আমি সমর্থ হতাম।" },
+        { "en": "If the weather were better, we could go for a picnic.", "bn": "আবহাওয়া যদি আরও ভালো হতো, তবে আমরা পিকনিকে যেতে পারতাম। (কিন্তু আবহাওয়া খারাপ)" },
+        { "en": "Were I you, I would decline the offer immediately.", "bn": "আমি যদি তোমার জায়গায় হতাম, তবে প্রস্তাবটি অবিলম্বে প্রত্যাখ্যান করতাম। (Inversion)" },
+        { "en": "If it were not for your support, I would have failed.", "bn": "তোমার সমর্থন যদি না থাকত, তবে আমি ব্যর্থ হতাম।" },
+        { "en": "He would join the team if he were a bit taller.", "bn": "সে যদি আরেকটু লম্বা হতো, তবে দলে যোগ দিত।" },
+        { "en": "If she were here today, she would know exactly what to do.", "bn": "সে যদি আজ এখানে থাকত, তবে সে ঠিক জানত কী করতে হবে।" },
+        { "en": "I wouldn't buy that car even if it were cheap.", "bn": "আমি ওই গাড়িটি কিনতাম না, এমনকি সেটি যদি সস্তাও হতো।" }
+      ],
+      "tips": "স্পোকেন বা অনানুষ্ঠানিক ইংরেজিতে মানুষ মাঝেমধ্যে 'If I was' বলে ফেলে এবং তা গ্রহণযোগ্য হলেও, কোনো প্রতিযোগিতামূলক পরীক্ষা বা ফরমাল রাইটিংয়ে সর্বদা 'If I were', 'If he were' ব্যবহার করবেন। এটি শতভাগ ব্যাকরণসম্মত।"
+    },
+    {
+      "name": "Subjunctive with 'Wish', 'As if', and 'As though' (ইচ্ছা ও কাল্পনিক তুলনায় সাবজাঙ্কটিভ)",
+      "banglaName": "'Wish', 'As if', 'As though'-এর সাথে Subjunctive",
+      "definition": "The subjunctive mood is used after the verb 'wish' to express a desire for a situation to be different from the present reality. It is also used after 'as if' and 'as though' to describe an unreal or hypothetical comparison, indicating that the situation described is not true.",
+      "banglaDefinition": "বর্তমান বাস্তবতার বিপরীত কোনো আকাঙ্ক্ষা বা ইচ্ছা প্রকাশ করার জন্য 'wish'-এর পরে সাবজাঙ্কটিভ ব্যবহৃত হয়। এছাড়াও, কোনো অবাস্তব বা সত্য নয় এমন পরিস্থিতির তুলনা করার জন্য 'as if' বা 'as though' (যেন)-এর পরেও 'were' বা Past Subjunctive রূপ ব্যবহার করা হয়।",
+      "formula": "Wish: Subject 1 + wish(es) + Subject 2 + Were / Past Simple Verb\nAs if/As though: Subject 1 + Verb + as if/as though + Subject 2 + Were / Past Simple Verb",
+      "rules": [
+        "'I wish' বা 'She wishes'-এর পরের ক্লজটিতে অসম্ভাব্য ইচ্ছা বোঝাতে 'were' বা Past Simple Verb বসে।",
+        "ভবিষ্যতের কোনো পরিবর্তনের আকাঙ্ক্ষা প্রকাশ করতে 'wish'-এর পর 'would' বসে: 'I wish it would stop raining.'",
+        "'As if' বা 'As though'-এর পর অবাস্তব তুলনার ক্ষেত্রে singular subject-এর সাথেও 'were' বসে: 'He talks as if he were the king.'"
+      ],
+      "examples": [
+        { "en": "I wish I were taller than my brother.", "bn": "আমি যদি আমার ভাইয়ের চেয়ে লম্বা হতাম! (কিন্তু আমি নই)" },
+        { "en": "She wishes she knew the answer to this question.", "bn": "সে যদি এই প্রশ্নের উত্তরটি জানত! (কিন্তু সে জানে না)" },
+        { "en": "He talks as if he were the boss of this company.", "bn": "সে এমনভাবে কথা বলে যেন সে এই কোম্পানির মালিক। (কিন্তু সে মালিক নয়)" },
+        { "en": "I wish you were here with me right now.", "bn": "আমি আশা করি তুমি যদি এই মুহূর্তে আমার সাথে এখানে থাকতে!" },
+        { "en": "She behaves as though she knew everything.", "bn": "সে এমন আচরণ করে যেন সে সবকিছু জানে।" },
+        { "en": "They wish they had a bigger house.", "bn": "তারা যদি একটি বড় বাড়ির মালিক হতো!" },
+        { "en": "He spent money as if he were a billionaire.", "bn": "সে এমনভাবে টাকা ওড়াত যেন সে একজন বিলিয়নেয়ার ছিল।" },
+        { "en": "I wish I didn't have to work tomorrow.", "bn": "আমার যদি আগামীকাল কাজ করতে না হতো!" },
+        { "en": "She looked at me as if I were crazy.", "bn": "সে আমার দিকে এমনভাবে তাকাল যেন আমি পাগল ছিলাম।" },
+        { "en": "Do you wish you were living in a different country?", "bn": "তুমি কি ইচ্ছা পোষণ করো যে তুমি যদি অন্য কোনো দেশে বাস করতে?" }
+      ],
+      "tips": "যদি তুলনাকৃত বিষয়টি অবাস্তব না হয়ে সত্য হওয়ার সম্ভাবনা থাকে, তবে 'as if'-এর পর স্বাভাবিক টেন্স বসে। যেমন: 'He looks as if he is sick' (সে দেখতে অসুস্থ মনে হচ্ছে এবং সে আসলেই অসুস্থ হতে পারে)। কিন্তু 'He acts as if he *were* sick' (সে অসুস্থ হওয়ার ভান করছে মাত্র, আসলে সে সুস্থ)।"
+    },
+    {
+      "name": "Subjunctive with 'Lest' and 'In Case' (আশঙ্কা ও সতর্কতা প্রকাশে সাবজাঙ্কটিভ)",
+      "banglaName": "'Lest' ও 'In Case'-এর সাথে Subjunctive",
+      "definition": "The conjunction 'lest' means 'for fear that' or 'to prevent any possibility that'. In highly formal and literary English, 'lest' is followed by a clause in the present subjunctive (base verb) or 'should' + base verb. 'In case' can also trigger similar formal subjunctive structures to express precaution.",
+      "banglaDefinition": "সংযোজক অব্যয় 'lest'-এর অর্থ হলো 'এই আশঙ্কায় যে' বা 'পাছে লোকে কিছু বলে'। অত্যন্ত মার্জিত এবং সাহিত্যিক ইংরেজিতে 'lest'-এর পরের ক্লজটিতে প্রেজেন্ট সাবজাঙ্কটিভ (সরাসরি বেস ভার্ব) অথবা 'should + base verb' ব্যবহৃত হয়। সতর্কতামূলক ব্যবস্থা প্রকাশ করতে 'in case'-এর পরও কখনো কখনো এমন সাবজাঙ্কটিভ কাঠামো দেখা যায়।",
+      "formula": "Subject + Verb + lest + Subject + Base Verb (or should + Base Verb)\nSubject + Verb + in case + Subject + (should) + Base Verb",
+      "rules": [
+        "'Lest' শব্দটি নিজেই নেতিবাচক (negative) অর্থ বহন করে, তাই 'lest'-এর ক্লজে কখনো 'not' বা 'no' বসানো যাবে না।",
+        "'Lest'-এর পর সরাসরি বেস ভার্ব (যেমন: 'lest he fall') অথবা 'should' যুক্ত ভার্ব (যেমন: 'lest he should fall') বসে।",
+        "এটি সাধারণত আধুনিক কথ্য ভাষায় কম ব্যবহৃত হলেও সাহিত্য ও আনুষ্ঠানিক রচনায় খুবই জনপ্রিয়।"
+      ],
+      "examples": [
+        { "en": "He ran fast lest he miss the train.", "bn": "সে দ্রুত দৌড়েছিল এই আশঙ্কায় যে পাছে সে ট্রেনটি মিস না করে বসে।" },
+        { "en": "We walked quietly lest we wake the sleeping baby.", "bn": "আমরা নীরবে হেঁটেছিলাম পাছে ঘুমন্ত বাচ্চাটি জেগে না যায়।" },
+        { "en": "She wrote down the address lest she forget it.", "bn": "সে ঠিকানাটি লিখে রেখেছিল এই ভয়ে যে পাছে সে এটি ভুলে না যায়।" },
+        { "en": "Keep the documents safe lest they be stolen.", "bn": "কাগজপত্রগুলো নিরাপদে রাখুন পাছে সেগুলো চুরি না হয়ে যায়। (be stolen - Passive Subjunctive)" },
+        { "en": "He studied hard lest he fail the final exam.", "bn": "সে কঠোর পড়াশোনা করেছিল পাছে সে চূড়ান্ত পরীক্ষায় ফেল না করে বসে।" },
+        { "en": "They took an umbrella lest it should rain.", "bn": "তারা একটি ছাতা নিয়েছিল এই আশঙ্কায় যে বৃষ্টি হতে পারে।" },
+        { "en": "She locked the door lest any intruder enter the house.", "bn": "সে দরজাটি লক করেছিল পাছে কোনো অনুপ্রবেশকারী ঘরে ঢুকে না পড়ে।" },
+        { "en": "We must be cautious lest we repeat the same mistake.", "bn": "আমাদের সতর্ক হতে হবে পাছে আমরা একই ভুলের পুনরাবৃত্তি না করে বসি।" },
+        { "en": "He spoke in a whisper lest anyone should overhear him.", "bn": "সে ফিসফিস করে কথা বলছিল এই ভয়ে যে পাছে কেউ তার কথা শুনে না ফেলে।" },
+        { "en": "He left early in case there be traffic jam.", "bn": "সে সকাল সকাল বের হয়েছিল এই সতর্কতায় যেন জ্যামে পড়তে না হয়।" }
+      ],
+      "tips": "বাঙালি শিক্ষার্থীদের জন্য 'lest' এর বাংলা অর্থ 'পাছে' বা 'এই ভয়ে যে' মনে রাখা সহজ। মনে রাখবেন, 'lest he should not fail' ভুল; সঠিক হলো 'lest he fail' বা 'lest he should fail'। কারণ 'lest' ইতিমধ্যে নেতিবাচক।"
+    },
+    {
+      "name": "Formulaic and Fixed Subjunctive Expressions (স্থিরীকৃত এবং প্রবাদপ্রতিম সাবজাঙ্কটিভ)",
+      "banglaName": "স্থিরীকৃত ও প্রবাদপ্রতিম Subjunctive",
+      "definition": "There are several fossilized or fixed idiomatic expressions in English that have preserved the subjunctive mood from older forms of the language. These expressions do not follow normal subject-verb agreement rules and are used as complete phrases.",
+      "banglaDefinition": "ইংরেজিতে কিছু বাঁধাধরা প্রবাদপ্রতিম বা স্থিরীকৃত অভিব্যক্তি (fixed expressions) রয়েছে যা প্রাচীন ইংরেজি থেকে আজ অব্দি সাবজাঙ্কটিভ মুডকে টিকিয়ে রেখেছে। এই অভিব্যক্তিগুলো কোনো সাধারণ সাবজেক্ট-ভার্ব এগ্রিমেন্ট মানে না এবং এগুলোকে অবিকৃত ফ্রেজ হিসেবে মুখস্থ ব্যবহার করতে হয়।",
+      "formula": "Fossilized Phrases (Fixed word order and base verbs)",
+      "rules": [
+        "এই ফ্রেজগুলোর গঠন বা টেন্স পরিবর্তন করা যায় না; এগুলো যেমন আছে তেমনই ব্যবহার করতে হয়।",
+        "যেমন: 'God save the Queen' (Savs নয়), 'Heaven forbid' (forbids নয়)।",
+        "এগুলো মূলত শুভেচ্ছা, প্রার্থনা, বা তীব্র অসন্তোষ প্রকাশে ব্যবহৃত হয়।"
+      ],
+      "examples": [
+        { "en": "God save the King!", "bn": "ঈশ্বর রাজাকে রক্ষা করুন! (God saves নয়)" },
+        { "en": "Heaven forbid that such a tragedy should ever happen again.", "bn": "ঈশ্বর না করুন যেন এমন ট্র্যাজেডি আর কখনো না ঘটে।" },
+        { "en": "Come what may, I will always stand by you.", "bn": "যা-ই ঘটুক না কেন, আমি সর্বদা তোমার পাশে থাকব।" },
+        { "en": "Be that as it may, we still have to follow the rules.", "bn": "তা সত্ত্বেও (বা তা যা-ই হোক না কেন), আমাদের নিয়ম মেনে চলতেই হবে।" },
+        { "en": "So be it. If they want to resign, let them.", "bn": "তা-ই হোক। তারা যদি পদত্যাগ করতে চায়, করতে দাও।" },
+        { "en": "Far be it from me to tell you how to live your life.", "bn": "তোমাকে কীভাবে জীবনযাপন করতে হবে তা বলার ধৃষ্টতা আমার নেই।" },
+        { "en": "Long live the Republic!", "bn": "প্রজাতন্ত্র দীর্ঘজীবী হোক!" },
+        { "en": "If truth be told, I never liked his behavior.", "bn": "সত্যি বলতে কি, আমি তার আচরণ কখনোই পছন্দ করিনি।" },
+        { "en": "Suffice it to say, the project was a complete failure.", "bn": "এইটুকু বলাই যথেষ্ট যে প্রজেক্টটি সম্পূর্ণ ব্যর্থ হয়েছিল।" },
+        { "en": "As it were, he is the undisputed leader of the team.", "bn": "বলতে গেলে, সে দলের অবিসংবাদিত নেতা।" }
+      ],
+      "tips": "রাইটিং বা স্পিকিংয়ে 'Come what may' বা 'Be that as it may'-এর মতো ফ্রেজগুলো ব্যবহার করলে আপনার ভাষা অনেক বেশি আকর্ষণীয় ও প্রাঞ্জল শোনায়।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "The doctor recommended that he goes to bed.",
+      "correct": "The doctor recommended that he go to bed.",
+      "explanation": "যেহেতু বাক্যে 'recommended' (পরামর্শবাচক সাবজাঙ্কটিভ ভার্ব) আছে, তাই পরবর্তী 'that' ক্লজের সাবজেক্ট 'he' হলেও ক্রিয়াপদের স্বাভাবিক রূপ 'goes' না বসে বেস রূপ 'go' বসবে।"
+    },
+    {
+      "wrong": "It is essential that she is ready by noon.",
+      "correct": "It is essential that she be ready by noon.",
+      "explanation": "'Essential' একটি গুরুত্ব প্রকাশকারী অ্যাডজেক্টিভ যা সাবজাঙ্কটিভ মুড তৈরি করে। তাই এখানে 'is'-এর পরিবর্তে 'be' বসানো বাধ্যতামূলক।"
+    },
+    {
+      "wrong": "If I was you, I would accept the job offer.",
+      "correct": "If I were you, I would accept the job offer.",
+      "explanation": "এটি একটি অবাস্তব বা কাল্পনিক শর্ত (hypothetical conditional)। এই ক্ষেত্রে ফার্স্ট পারসন সিঙ্গুলার 'I'-এর সাথেও সর্বদা সাবজাঙ্কটিভ 'were' বসে, 'was' নয়।"
+    },
+    {
+      "wrong": "I suggest that he doesn't go there alone.",
+      "correct": "I suggest that he not go there alone.",
+      "explanation": "প্রেজেন্ট সাবজাঙ্কটিভকে নেতিবাচক বা না-বোধক করতে কোনো auxiliary verb (does/do/did) আনা যাবে না। কেবল বেস ভার্বের আগে সরাসরি 'not' বসাতে হবে।"
+    },
+    {
+      "wrong": "He behaves as if he knows everything.",
+      "correct": "He behaves as if he knew everything. (Or: ...as if he were knowing...)",
+      "explanation": "'As if' (যেন) দিয়ে অবাস্তব তুলনা করা হলে পরবর্তী ক্লজে পাস্ট সাবজাঙ্কটিভ (V2) বসে, সাধারণ প্রেজেন্ট টেন্স নয়। সে আসলে সব জানে না, তাই 'knew' সঠিক।"
+    },
+    {
+      "wrong": "He ran quickly lest he should not miss the bus.",
+      "correct": "He ran quickly lest he should miss the bus. (Or: ...lest he miss the bus.)",
+      "explanation": "'Lest' শব্দের অর্থই হলো 'পাছে বা এই ভয়ে যে'। এটি নিজেই একটি নেতিবাচক শব্দ, তাই এর পরে আরেকটি 'not' বসানো ডাবল নেগেটিভ ভুলের সৃষ্টি করে।"
+    },
+    {
+      "wrong": "It is important that this file is deleted.",
+      "correct": "It is important that this file be deleted.",
+      "explanation": "প্যাসিভ সাবজাঙ্কটিভ গঠনে 'is/was deleted'-এর পরিবর্তে 'be + V3' অর্থাৎ 'be deleted' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "I wish I can speak fluent French.",
+      "correct": "I wish I could speak fluent French.",
+      "explanation": "'Wish'-এর পরের ক্লজটি যদি কোনো অবাস্তব বা বর্তমানে অসম্ভব আকাঙ্ক্ষা বোঝায়, তবে মোডাল ভার্ব 'can'-এর অবাস্তব অতীত রূপ 'could' বসাতে হবে।"
+    }
+  ]
 }

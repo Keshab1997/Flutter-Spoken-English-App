@@ -1,10 +1,203 @@
 {
   "chapter": 62,
   "level": "Advanced",
-  "title": "Nominalization",
+  "title": "Nominalization (বিশেষ্যকরণ)",
   "icon": "token",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Nominalization is the grammatical process of transforming verbs, adjectives, or other parts of speech into nouns or noun phrases. It is a defining feature of academic, scientific, and professional English. By using nominalization, writers can express complex processes as abstract concepts, establish objectivity by removing personal agents, and construct highly dense and cohesive arguments.",
+  "banglaDescription": "বিশেষ্যকরণ (Nominalization) হলো এমন একটি ব্যাকরণগত প্রক্রিয়া যার মাধ্যমে ক্রিয়াপদ (verbs), বিশেষণ (adjectives) বা অন্যান্য পদকে বিশেষ্য (nouns) বা বিশেষ্য পদগুচ্ছে (noun phrases) রূপান্তর করা হয়। এটি অ্যাকাডেমিক, বৈজ্ঞানিক এবং পেশাদারী ইংরেজির একটি অন্যতম প্রধান বৈশিষ্ট্য। বিশেষ্যকরণের মাধ্যমে লেখকেরা জটিল প্রক্রিয়াগুলোকে অমূর্ত ধারণা (abstract concepts) হিসেবে প্রকাশ করতে পারেন, ব্যক্তিগত কর্তা বা ব্যক্তিকে বাদ দিয়ে লেখার বস্তুনিষ্ঠতা বজায় রাখতে পারেন এবং অত্যন্ত সংক্ষিপ্ত ও সুসংহত বাক্য গঠন করতে পারেন।",
+  "topics": [
+    {
+      "name": "Verbs to Nouns: Suffixation and Derivation (ক্রিয়াপদ থেকে বিশেষ্যকরণ)",
+      "banglaName": "ক্রিয়াপদ থেকে বিশেষ্যকরণ",
+      "definition": "The most common form of nominalization involves turning verbs into nouns by adding specific suffixes (such as -tion, -ment, -ance, -al, -ure, -sion) or through zero-derivation (where the word form remains unchanged but acts as a noun). This shifts the focus from 'who is doing the action' to 'the action/process itself'.",
+      "banglaDefinition": "বিশেষ্যকরণের সবচেয়ে সাধারণ রূপটি হলো ক্রিয়াপদের সাথে নির্দিষ্ট প্রত্যয় বা সাফিক্স (যেমন: -tion, -ment, -ance, -al, -ure, -sion) যুক্ত করে বা শূন্য-ব্যুৎপত্তি (যেখানে শব্দের বানান পরিবর্তন না করেই বিশেষ্য হিসেবে ব্যবহার করা হয়) এর মাধ্যমে সেটিকে বিশেষ্যে রূপান্তর করা। এটি বাক্যের ফোকাসকে 'কে কাজটি করছে' থেকে 'কাজ বা প্রক্রিয়াটির নিজের' দিকে স্থানান্তরিত করে।",
+      "formula": "Subject + Verb + Object -> The + Nominalized Verb (Noun) + of + Object + Verb ...",
+      "rules": [
+        "ক্রিয়াপদের অর্থকে স্থির ধারণায় রূপান্তর করতে Suffixes ব্যবহার করুন (যেমন: analyze -> analysis, develop -> development)।",
+        "অনেক সময় ক্রিয়াপদের রূপান্তর না ঘটিয়েও বিশেষ্য হিসেবে ব্যবহার করা যায় (যেমন: to impact -> an impact, to delay -> a delay)।",
+        "ক্রিয়াপদকে নাউনে রূপান্তর করার পর অবজেক্টের আগে সাধারণত 'of' প্রিপজিশন বসে: 'They destroyed the forest' -> 'The destruction of the forest'.",
+        "এটি ক্রিয়ার গতিশীলতাকে একটি ধারণাগত বা তাত্ত্বিক রূপ দান করে।"
+      ],
+      "examples": [
+        { "en": "They decided to shut down the factory, which shocked the workers.", "bn": "তারা কারখানাটি বন্ধ করার সিদ্ধান্ত নিয়েছিল, যা শ্রমিকদের হতবাক করেছিল। (Normal)" },
+        { "en": "The decision to shut down the factory shocked the workers.", "bn": "কারখানাটি বন্ধ করার সিদ্ধান্ত শ্রমিকদের হতবাক করেছিল। (Nominalized)" },
+        { "en": "The company has developed a new software to improve security.", "bn": "কোম্পানিটি নিরাপত্তা উন্নত করার জন্য একটি নতুন সফটওয়্যার তৈরি করেছে।" },
+        { "en": "The development of a new software aims at the improvement of security.", "bn": "একটি নতুন সফটওয়্যারের বিকাশ নিরাপত্তার উন্নতির লক্ষ্য রাখে। (Nominalized)" },
+        { "en": "We need to analyze the data before making a choice.", "bn": "আমাদের সিদ্ধান্ত নেওয়ার আগে ডেটা বিশ্লেষণ করতে হবে।" },
+        { "en": "An analysis of the data is required prior to decision-making.", "bn": "সিদ্ধান্ত গ্রহণের পূর্বে ডেটার বিশ্লেষণ প্রয়োজন। (Nominalized)" },
+        { "en": "The government rejected the proposal yesterday.", "bn": "সরকার গতকাল প্রস্তাবটি প্রত্যাখ্যান করেছে।" },
+        { "en": "The government's rejection of the proposal occurred yesterday.", "bn": "গতকাল সরকারের পক্ষ থেকে প্রস্তাবটির প্রত্যাখ্যান ঘটেছিল। (Nominalized)" },
+        { "en": "They failed to complete the project on time.", "bn": "তারা সময়মতো প্রকল্পটি সম্পন্ন করতে ব্যর্থ হয়েছিল।" },
+        { "en": "Their failure to complete the project on time had severe consequences.", "bn": "সময়মতো প্রকল্পটি সম্পন্ন করতে তাদের ব্যর্থতার মারাত্মক পরিণতি হয়েছিল। (Nominalized)" }
+      ],
+      "tips": "ক্রিয়াপদ থেকে নাউনে রূপান্তরের সময় সাফিক্সগুলোর বানান ভালো করে মুখস্থ করুন। অনেক সময় বানানে সামান্য পরিবর্তন ঘটে (যেমন: decide -> decision, maintain -> maintenance)।"
+    },
+    {
+      "name": "Adjectives to Nouns: Expressing Qualities as Concepts (বিশেষণ থেকে বিশেষ্যকরণ)",
+      "banglaName": "বিশেষণ থেকে বিশেষ্যকরণ",
+      "definition": "Nominalizing adjectives involves transforming descriptive qualities into abstract nouns using suffixes such as -ness, -ity, -ance/ence, -th, and -ty. This is useful in academic writing because it changes a personal or situational attribute into a broader, discussable concept.",
+      "banglaDefinition": "বিশেষণ বা অ্যাডজেক্টিভকে নাউনে রূপান্তর করার অর্থ হলো কোনো বর্ণনামূলক গুণকে -ness, -ity, -ance/ence, -th, এবং -ty-এর মতো সাফিক্স ব্যবহার করে একটি অমূর্ত ধারণায় রূপান্তর করা। এটি অ্যাকাডেমিক লেখার জন্য খুবই দরকারী, কারণ এটি কোনো ব্যক্তিগত বা সাময়িক গুণাবলীকে একটি ব্যাপক ও আলোচনাযোগ্য ধারণায় পরিণত করে।",
+      "formula": "Subject + is/was + Adjective -> The + Nominalized Adjective (Noun) + of + Subject + is/was ...",
+      "rules": [
+        "গুণবাচক বিশেষণগুলোকে ধারণাগত নাউনে রূপান্তর করুন (যেমন: pure -> purity, happy -> happiness, silent -> silence)।",
+        "বিশেষণ থেকে নাউন তৈরি করার পর সাধারণত 'of' প্রিপজিশন বসে: 'The water was pure' -> 'The purity of the water'.",
+        "দৈর্ঘ্য, প্রস্থ, গভীরতা ইত্যাদির মতো শারীরিক গুণাবলীকেও বিশেষ্য করা হয়: 'The river is wide' -> 'The width of the river'."
+      ],
+      "examples": [
+        { "en": "She was extremely kind to the orphans.", "bn": "সে এতিমদের প্রতি অত্যন্ত দয়ালু ছিল। (Normal)" },
+        { "en": "Her extreme kindness to the orphans was appreciated by all.", "bn": "এতিমদের প্রতি তার চরম দয়ার প্রশংসা সবাই করেছিল। (Nominalized)" },
+        { "en": "The team was creative, which led to their success.", "bn": "দলটি সৃজনশীল ছিল, যা তাদের সাফল্যের দিকে নিয়ে গিয়েছিল।" },
+        { "en": "The creativity of the team led to their success.", "bn": "দলের সৃজনশীলতা তাদের সাফল্যের দিকে নিয়ে গিয়েছিল। (Nominalized)" },
+        { "en": "The chemical is highly toxic, so handle it with care.", "bn": "রাসায়নিকটি অত্যন্ত বিষাক্ত, তাই এটি সাবধানে নাড়াচাড়া করুন।" },
+        { "en": "The high toxicity of the chemical requires careful handling.", "bn": "রাসায়নিকটির উচ্চ বিষাক্ততার জন্য সতর্কভাবে নাড়াচাড়া করা প্রয়োজন। (Nominalized)" },
+        { "en": "The lake is incredibly deep.", "bn": "হ্রদটি অবিশ্বাস্যভাবে গভীর।" },
+        { "en": "The incredible depth of the lake is fascinating.", "bn": "হ্রদটির অবিশ্বাস্য গভীরতা মুগ্ধকর। (Nominalized)" },
+        { "en": "The audience was silent during the performance.", "bn": "পরিবেশন চলাকালীন দর্শকেরা নীরব ছিলেন।" },
+        { "en": "The silence of the audience was maintained during the performance.", "bn": "পরিবেশন চলাকালীন দর্শকদের নীরবতা বজায় ছিল। (Nominalized)" }
+      ],
+      "tips": "গুণাবলীকে নাউন ফর্মে নিয়ে যাওয়ার ফলে বাক্য থেকে 'He is' বা 'She was'-এর মতো অপ্রয়োজনীয় সংযোগকারী শব্দ কমে যায় এবং বাক্যটি অনেক বেশি তথ্যবহুল হয়।"
+    },
+    {
+      "name": "Creating Objectivity and Agentless Sentences (বস্তুনিষ্ঠতা এবং কর্তাহীন বাক্য গঠন)",
+      "banglaName": "বস্তুনিষ্ঠতা এবং কর্তাহীন বাক্য গঠন",
+      "definition": "One of the primary academic uses of nominalization is to create an objective, impersonal tone. By transforming verbs (actions) into nouns, the writer can omit the 'agent' (the person doing the action). This makes scientific or research-focused writing sound unbiased, objective, and authoritative.",
+      "banglaDefinition": "অ্যাকাডেমিক লেখায় বিশেষ্যকরণের অন্যতম প্রধান ব্যবহার হলো একটি বস্তুনিষ্ঠ এবং নির্লিপ্ত বা impersonal সুর তৈরি করা। ক্রিয়া বা কাজকে নাউনে রূপান্তর করে লেখক মূল 'কর্তা' বা কাজ সম্পাদনকারী ব্যক্তিকে বাক্য থেকে সম্পূর্ণ বাদ দিতে পারেন। এর ফলে বৈজ্ঞানিক বা গবেষণা-ভিত্তিক লেখাগুলো কোনো পক্ষপাতহীন, নিরপেক্ষ এবং নির্ভরযোগ্য শোনায়।",
+      "formula": "[Agent] + [Verb] + [Object] -> The + [Nominalized Verb] + of + [Object] + [Passive/Intransitive Verb]",
+      "rules": [
+        "বাক্য থেকে ব্যক্তিবাচক প্রোনাউন (I, We, You, They) সরিয়ে দিন।",
+        "কাজের ওপর গুরুত্ব দিতে ক্রিয়াপদটিকে বাক্যের সাবজেক্ট হিসেবে নাউনে রূপান্তর করুন।",
+        "যেমন: 'We discovered a new planet' -> 'The discovery of a new planet was announced.' (এখানে আবিষ্কারক গুরুত্বপূর্ণ নয়, আবিষ্কারটি গুরুত্বপূর্ণ)।"
+      ],
+      "examples": [
+        { "en": "We investigated the crime, and then we wrote a report.", "bn": "আমরা অপরাধটি তদন্ত করেছি এবং তারপর একটি প্রতিবেদন লিখেছি। (Active/Personal)" },
+        { "en": "An investigation of the crime was followed by the preparation of a report.", "bn": "অপরাধের তদন্তের পর একটি প্রতিবেদন তৈরি করা হয়েছিল। (Objective/Nominalized)" },
+        { "en": "I analyzed the blood samples in the laboratory.", "bn": "আমি ল্যাবরেটরিতে রক্তের নমুনাগুলো বিশ্লেষণ করেছি।" },
+        { "en": "The analysis of the blood samples was conducted in the laboratory.", "bn": "রক্তের নমুনার বিশ্লেষণ ল্যাবরেটরিতে সম্পন্ন হয়েছিল। (Objective)" },
+        { "en": "The engineers tested the engine for three weeks.", "bn": "প্রকৌশলীরা তিন সপ্তাহ ধরে ইঞ্জিনটি পরীক্ষা করেছিলেন।" },
+        { "en": "The testing of the engine continued for three weeks.", "bn": "ইঞ্জিনের পরীক্ষা তিন সপ্তাহ ধরে চলেছিল। (Objective)" },
+        { "en": "We discovered a leak in the pipe, which prevented further damage.", "bn": "আমরা পাইপে একটি লিক আবিষ্কার করেছিলাম, যা পরবর্তী ক্ষতি প্রতিরোধ করেছিল।" },
+        { "en": "The discovery of a leak in the pipe prevented further damage.", "bn": "পাইপে লিক আবিষ্কারের ফলে পরবর্তী ক্ষতি প্রতিরোধ করা সম্ভব হয়েছিল। (Objective)" },
+        { "en": "The manager implemented new policies to cut costs.", "bn": "ম্যানেজার খরচ কমাতে নতুন নীতি বাস্তবায়ন করেছেন।" },
+        { "en": "The implementation of new policies aimed at cost reduction.", "bn": "নতুন নীতি বাস্তবায়নের লক্ষ্য ছিল ব্যয় হ্রাস করা। (Objective)" }
+      ],
+      "tips": "বিজ্ঞানের গবেষণাপত্র বা অফিসিয়াল রিপোর্ট লেখার সময় এই কৌশলটি অত্যন্ত কার্যকর। এটি পড়ার সময় মনে হয় যে তথ্যগুলো কোনো নির্দিষ্ট ব্যক্তির ব্যক্তিগত মতামত নয়, বরং বৈজ্ঞানিকভাবে প্রমাণিত সত্য।"
+    },
+    {
+      "name": "Nominalization for Academic & Professional Density (অ্যাকাডেমিক ও পেশাদারি লেখার ঘনত্ব বৃদ্ধি)",
+      "banglaName": "অ্যাকাডেমিক ও পেশাদারি লেখার ঘনত্ব বৃদ্ধি",
+      "definition": "Academic writing requires packing a lot of information into fewer words. Nominalization allows writers to condense entire clauses or ideas into single noun phrases, which then function as the subject or object of a new sentence. This increases lexical density and cohesion.",
+      "banglaDefinition": "অ্যাকাডেমিক লেখার একটি বড় শর্ত হলো কম শব্দের মধ্যে অনেক বেশি তথ্য বা ধারণা ফুটিয়ে তোলা। বিশেষ্যকরণ লেখকদের সম্পূর্ণ একটি ক্লজ বা ধারণাকে একটিমাত্র নাউন ফ্রেজে সংকুচিত করতে সাহায্য করে, যা পরে নতুন একটি বাক্যের সাবজেক্ট বা অবজেক্ট হিসেবে বসে। এটি লেখার শব্দের ঘনত্ব (lexical density) এবং বাক্যের ভেতরের পারস্পরিক সুসংহতি বাড়ায়।",
+      "formula": "[Clause 1] + because/so + [Clause 2] -> [Nominalized Clause 1] + caused/resulted in + [Nominalized Clause 2]",
+      "rules": [
+        "দুটি ভিন্ন সরল বা জটিল বাক্যকে একটিমাত্র বাক্যে পরিণত করতে সংযোগকারী শব্দ (because, although, if) বাদ দিয়ে নাউন ফ্রেজ গঠন করুন।",
+        "কার্যকারণ বোঝাতে 'resulted in', 'led to', 'caused', 'prevented'-এর মতো ক্রিয়াপদ ব্যবহার করুন।",
+        "যেমন: 'It rained heavily, so we cancelled the match' -> 'The heavy rain resulted in the cancellation of the match.'"
+      ],
+      "examples": [
+        { "en": "Because they cleared the forest, many animals lost their habitats.", "bn": "বন উজাড় করার কারণে অনেক প্রাণী তাদের বাসস্থান হারিয়েছে। (Normal - Two clauses)" },
+        { "en": "The clearance of the forest led to the loss of animal habitats.", "bn": "বন উজার করার ফলে বন্যপ্রাণীদের বাসস্থান বিলুপ্ত হয়েছে। (Nominalized - Dense)" },
+        { "en": "Since the population grew rapidly, the demand for water increased.", "bn": "জনসংখ্যা দ্রুত বৃদ্ধি পাওয়ায় পানির চাহিদা বেড়েছে।" },
+        { "en": "Rapid population growth caused an increase in the demand for water.", "bn": "দ্রুত জনসংখ্যা বৃদ্ধি পানির চাহিদাকে বাড়িয়ে দিয়েছে। (Nominalized)" },
+        { "en": "If we train the staff, we can reduce errors in the system.", "bn": "আমরা যদি কর্মীদের প্রশিক্ষণ দিই, তবে সিস্টেমে ভুল কমাতে পারব।" },
+        { "en": "Staff training will lead to a reduction in system errors.", "bn": "কর্মীদের প্রশিক্ষণ সিস্টেমের ভুল হ্রাসের দিকে নিয়ে যাবে। (Nominalized)" },
+        { "en": "The economy inflated, which made the citizens protest.", "bn": "অর্থনীতি স্ফীত হয়েছিল, যা নাগরিকদের প্রতিবাদ করতে বাধ্য করেছিল।" },
+        { "en": "Economic inflation triggered public protests.", "bn": "অর্থনৈতিক মূল্যস্ফীতি গণপ্রতিবাদ উস্কে দিয়েছিল। (Nominalized)" },
+        { "en": "Although the patient recovered quickly, the doctors were puzzled.", "bn": "যদিও রোগী দ্রুত সুস্থ হয়ে উঠেছিল, ডাক্তাররা হতবাক হয়েছিলেন।" },
+        { "en": "The patient's rapid recovery puzzled the doctors.", "bn": "রোগীর দ্রুত আরোগ্য লাভ চিকিৎসকদের হতবাক করেছিল। (Nominalized)" }
+      ],
+      "tips": "আইইএলটিএস (IELTS) রাইটিং টাস্ক ২-এ উচ্চ ব্যান্ড স্কোর (7.5 বা তার বেশি) পাওয়ার জন্য এটি অত্যন্ত গুরুত্বপূর্ণ একটি স্কিল। এটি আপনার লেখার প্রাতিষ্ঠানিক গভীরতা প্রদর্শন করে।"
+    },
+    {
+      "name": "Nominalization with Light Verbs: De-verbal Structures (হালকা ক্রিয়াপদ ও বিশেষ্য কাঠামো)",
+      "banglaName": "হালকা ক্রিয়াপদ ও বিশেষ্য কাঠামো",
+      "definition": "A common structure in English is to pair a nominalized noun with a 'light' or 'de-verbal' verb (such as make, take, give, conduct, perform, carry out). This turns a single verb into a multi-word phrase (e.g., 'decide' becomes 'make a decision'). While discouraged in plain English, it is heavily used in formal, legal, and academic registers for stylistic variation.",
+      "banglaDefinition": "ইংরেজিতে একটি সাধারণ কাঠামো হলো একটি বিশেষ্যকৃত নাউনের সাথে একটি 'হালকা' বা 'de-verbal' ক্রিয়াপদ (যেমন: make, take, give, conduct, perform, carry out) জোড়া লাগানো। এটি একটি সাধারণ ক্রিয়াপদকে একটি বহুপদী ফ্রেজে রূপান্তর করে (যেমন: 'decide' হয়ে যায় 'make a decision')। সহজ বা সরল ইংরেজিতে এটি এড়িয়ে যাওয়ার পরামর্শ দেওয়া হলেও, আনুষ্ঠানিক, আইনি এবং অ্যাকাডেমিক ক্ষেত্রে এটি খুব বেশি ব্যবহৃত হয়।",
+      "formula": "Subject + Main Verb -> Subject + Light Verb (make/take/give/conduct...) + a/an + Nominalized Noun",
+      "rules": [
+        "সাধারণ অ্যাকশন ভার্বটিকে নাউন ফ্রেজে রূপান্তর করুন।",
+        "তার পূর্বে একটি হালকা বা অলঙ্কারিক সাহায্যকারী ভার্ব বসান।",
+        "যেমন: 'to visit' -> 'to pay a visit', 'to investigate' -> 'to conduct an investigation', 'to look' -> 'to take a look'."
+      ],
+      "examples": [
+        { "en": "We should discuss this issue tomorrow.", "bn": "আমাদের আগামীকাল এই বিষয়টি আলোচনা করা উচিত। (Simple)" },
+        { "en": "We should have a discussion about this issue tomorrow.", "bn": "আগামীকাল আমাদের এই বিষয়টি নিয়ে একটি আলোচনা করা উচিত। (Formal with Light Verb)" },
+        { "en": "The researchers analyzed the results thoroughly.", "bn": "গবেষকেরা ফলাফলগুলো পুঙ্খানুপুঙ্খভাবে বিশ্লেষণ করেছেন।" },
+        { "en": "The researchers conducted a thorough analysis of the results.", "bn": "গবেষকেরা ফলাফলের একটি পুঙ্খানুপুঙ্খ বিশ্লেষণ পরিচালনা করেছিলেন। (Formal)" },
+        { "en": "She decided quickly without thinking.", "bn": "সে চিন্তা না করেই দ্রুত সিদ্ধান্ত নিয়েছিল।" },
+        { "en": "She made a quick decision without thinking.", "bn": "সে চিন্তা না করেই একটি দ্রুত সিদ্ধান্ত নিয়েছিল। (Formal)" },
+        { "en": "The police are investigating the robbery.", "bn": "পুলিশ ডাকাতির ঘটনাটি তদন্ত করছে।" },
+        { "en": "The police are carrying out an investigation into the robbery.", "bn": "পুলিশ ডাকাতির বিষয়ে একটি তদন্ত পরিচালনা করছে। (Formal)" },
+        { "en": "He suggested that we should wait.", "bn": "সে পরামর্শ দিয়েছিল যে আমাদের অপেক্ষা করা উচিত।" },
+        { "en": "He made a suggestion that we should wait.", "bn": "সে একটি প্রস্তাব বা পরামর্শ দিয়েছিল যে আমাদের অপেক্ষা করা উচিত। (Formal)" }
+      ],
+      "tips": "যদিও ফরমাল রাইটিংয়ে এটি খুব সাধারণ, তবে অতিরিক্ত ব্যবহার করলে লেখাটি অতিরিক্ত জটিল বা 'শব্দবহুল' (wordy) মনে হতে পারে। তাই প্রয়োজন অনুযায়ী স্বাভাবিক ক্রিয়াপদ এবং হালকা ক্রিয়াপদের ভারসাম্য বজায় রাখুন।"
+    },
+    {
+      "name": "Gerunds vs. Derived Deverbal Nouns (জেরান্ড বনাম ব্যুৎপন্ন বিশেষ্য)",
+      "banglaName": "জেরান্ড বনাম ব্যুৎপন্ন বিশেষ্য",
+      "definition": "Both gerunds (verb-ing acting as nouns) and derived deverbal nouns (nouns created via suffixes like -tion) are forms of nominalization. However, they are used differently. Gerunds focus more on the continuous process of the action, whereas derived nouns represent the completed concept or result of the action.",
+      "banglaDefinition": "জেরান্ড (verb-ing যা নাউন হিসেবে কাজ করে) এবং ব্যুৎপন্ন বিশেষ্য (যা -tion-এর মতো প্রত্যয় যোগে তৈরি নাউন) উভয়ই বিশেষ্যকরণের প্রকারভেদ। তবে এদের ব্যবহারের ক্ষেত্রে সূক্ষ্ম পার্থক্য রয়েছে। জেরান্ড সাধারণত কোনো কাজের চলমান প্রক্রিয়া বা অ্যাকশনের ওপর বেশি জোর দেয়, আর ব্যুৎপন্ন নাউনটি সেই কাজের চূড়ান্ত ধারণা বা ফলাফলকে নির্দেশ করে।",
+      "formula": "Gerund: Subject/Object + V-ing (e.g., 'the burning of forest')\nDerived Noun: Subject/Object + Derived Noun (e.g., 'the destruction of forest')",
+      "rules": [
+        "চলমান বা দীর্ঘমেয়াদী প্রক্রিয়া বোঝাতে gerund (যেমন: writing, building) ব্যবহার করা ভালো।",
+        "একটি সুনির্দিষ্ট ঘটনা, ফলাফল বা চূড়ান্ত সিদ্ধান্ত বোঝাতে derived noun (যেমন: writer, building-এর ক্ষেত্রে construction, translation) ব্যবহার করা ভালো।",
+        "যেমন: 'The translating of the book took months' (অনুবাদ করার চলমান কাজটি বোঝাচ্ছে) বনাম 'The translation of the book was beautiful' (অনুদিত চূড়ান্ত বইটি বোঝাচ্ছে)।"
+      ],
+      "examples": [
+        { "en": "Developing the software was a long process.", "bn": "সফটওয়্যারটি ডেভেলপ করা একটি দীর্ঘ প্রক্রিয়া ছিল। (Gerund - চলমান কাজ)" },
+        { "en": "The development of the software is now complete.", "bn": "সফটওয়্যারটির ডেভেলপমেন্ট বা বিকাশ এখন সম্পূর্ণ। (Derived Noun - চূড়ান্ত ফলাফল)" },
+        { "en": "Destroying the historic monument was a crime.", "bn": "ঐতিহাসিক নিদর্শনটি ধ্বংস করা একটি অপরাধ ছিল। (Gerund)" },
+        { "en": "The destruction of the historic monument shocked the public.", "bn": "ঐতিহাসিক নিদর্শনটির ধ্বংসযজ্ঞ জনগণকে হতবাক করেছিল। (Derived Noun)" },
+        { "en": "Translating poems is extremely difficult.", "bn": "কবিতা অনুবাদ করা অত্যন্ত কঠিন। (Gerund)" },
+        { "en": "The translation of the poem was published yesterday.", "bn": "কবিতার অনুবাদটি গতকাল প্রকাশিত হয়েছিল। (Derived Noun)" },
+        { "en": "Building the bridge took five years.", "bn": "সেতুটি নির্মাণ করতে পাঁচ বছর সময় লেগেছিল। (Gerund - চলমান কাজ)" },
+        { "en": "The construction of the bridge was funded by the state.", "bn": "সেতুটির নির্মাণকাজ রাষ্ট্র কর্তৃক অর্থায়ন করা হয়েছিল। (Derived Noun)" },
+        { "en": "Analyzing the DNA took several hours.", "bn": "ডিএনএ বিশ্লেষণ করতে কয়েক ঘণ্টা সময় লেগেছিল। (Gerund)" },
+        { "en": "The analysis of the DNA revealed the truth.", "bn": "ডিএনএ-র বিশ্লেষণটি সত্য প্রকাশ করেছিল। (Derived Noun)" }
+      ],
+      "tips": "মনে রাখবেন, Derived Noun-এর সাথে সাধারণত Article ('the') বসে: 'The destruction of...' কিন্তু Gerund-এর সাথে সরাসরি অবজেক্ট বসতে পারে এবং আর্টিকেল প্রয়োজন হয় না: 'Destroying the forest is wrong.'"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Overusing nominalization: 'The utilization of these methods leads to the facilitation of learning.'",
+      "correct": "Using active verbs: 'These methods facilitate learning.' (Or: 'Using these methods facilitates learning.')",
+      "explanation": "অতিরিক্ত বিশেষ্যকরণ বাক্যকে ভারী, অস্পষ্ট এবং বিরক্তিকর করে তোলে (একে বলা হয় 'Zombie Nouns' বা মৃত নাউনের ব্যবহার)। সাধারণ কথার ক্ষেত্রে সবসময় একটি সরাসরি এবং শক্তিশালী ক্রিয়াপদ ব্যবহার করাই বুদ্ধিমানের কাজ।"
+    },
+    {
+      "wrong": "Using incorrect prepositions after nominalized nouns: 'We had a discussion about the project.' (Less formal)",
+      "correct": "Using standard prepositions: 'We had a discussion of the project.' (Or: 'We discussed the project.')",
+      "explanation": "ক্রিয়াপদ যখন নাউনে রূপান্তরিত হয়, তখন তার পরের প্রপজিশনও বদলে যায়। 'Discuss'-এর পর কোনো প্রিপজিশন বসে না, কিন্তু 'discussion'-এর পর ফরমাল রাইটিংয়ে 'of' অথবা 'into' বেশি সঠিক এবং স্ট্যান্ডার্ড।"
+    },
+    {
+      "wrong": "Clumsy nominalization with possessive pronouns: 'Due to his failing of the test, he was sad.'",
+      "correct": "Proper derived noun or simple clause: 'Due to his failure in the test, he was sad.' (Or: 'Because he failed the test...')",
+      "explanation": "Possessive pronoun-এর সাথে জেরান্ডিয়ালের চেয়ে প্রকৃত ব্যুৎপন্ন নাউন (failure) ব্যবহার করা অনেক বেশি ক্লাসিক্যাল ও ব্যাকরণসম্মত।"
+    },
+    {
+      "wrong": "Incorrect noun form confusion: 'The criticize of the book was very harsh.'",
+      "correct": "Using correct derived noun: 'The criticism of the book was very harsh.'",
+      "explanation": "ক্রিয়াপদ (criticize), ব্যক্তি নাউন (critic), এবং কাজের নাউন (criticism)-এর মধ্যকার পার্থক্য পরিষ্কারভাবে জানতে হবে। এখানে বইয়ের পর্যালোচনার কথা বলা হচ্ছে, তাই 'criticism' বসবে।"
+    },
+    {
+      "wrong": "Missing article before derived nouns: 'Destruction of the city was massive.'",
+      "correct": "Add definite article: 'The destruction of the city was massive.'",
+      "explanation": "ব্যুৎপন্ন বা derived nouns যখন প্রিপজিশনাল ফ্রেজের আগে বসে, তখন তার পূর্বে অবশ্যই Definite Article 'The' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "Subject-verb agreement error: 'The implementation of the new laws are necessary.'",
+      "correct": "Use singular verb: 'The implementation of the new laws is necessary.'",
+      "explanation": "এখানে বাক্যের প্রকৃত সাবজেক্ট হলো 'implementation' (একবচন বা singular)। 'laws' শব্দটি প্রিপজিশনাল ফ্রেজের ভেতরে থাকায় তা সাবজেক্ট নয়। তাই ভার্বটি 'is' হবে, 'are' নয়।"
+    },
+    {
+      "wrong": "Using gerund with 'the' and missing 'of': 'The destroying the forest is bad.'",
+      "correct": "Add 'of' after gerund with 'the': 'The destroying of the forest is bad.' (Or better: 'Destroying the forest is bad.')",
+      "explanation": "যদি আপনি জেরান্ডের আগে 'the' ব্যবহার করেন, তবে জেরান্ডের পরে অবশ্যই 'of' বসাতে হবে। আর যদি 'the' ব্যবহার না করেন, তবে সরাসরি অবজেক্ট বসাতে হবে।"
+    },
+    {
+      "wrong": "Dangling modifier after nominalization: 'Upon the completion of the report, the computer crashed.'",
+      "correct": "Clarify the agent: 'Upon completion of the report, the researcher found that the computer crashed.'",
+      "explanation": "প্রথম বাক্যে মনে হচ্ছে কম্পিউটারটি নিজেই রিপোর্ট সম্পন্ন করেছে। বিশেষ্যকরণের কারণে অনেক সময় কাজের প্রকৃত সম্পাদনকারী হারিয়ে যায়, যা বিভ্রান্তির সৃষ্টি করে। তাই বাক্যে অর্থগত স্পষ্টতা বজায় রাখুন।"
+    }
+  ]
 }

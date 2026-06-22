@@ -1,10 +1,206 @@
 {
   "chapter": 60,
   "level": "Advanced",
-  "title": "Advanced Conditionals",
+  "title": "Advanced Conditionals (অ্যাডভান্সড কন্ডিশনালস)",
   "icon": "call_split",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Advanced Conditionals cover complex structures beyond the basic zero, first, second, and third conditionals. This includes mixed conditionals (combining different times), inversion (omitting 'if' for formal emphasis), alternative conditional conjunctions (unless, provided that, assuming), 'but for' structures, and the rare but crucial uses of 'will' or 'would' in the if-clause.",
+  "banglaDescription": "অ্যাডভান্সড কন্ডিশনালস ইংরেজি ব্যাকরণের সাধারণ কন্ডিশনাল (Zero, 1st, 2nd, 3rd) ছাড়িয়ে আরও জটিল ও প্রাতিষ্ঠানিক বাক্য গঠন নিয়ে আলোচনা করে। এর মধ্যে রয়েছে মিক্সড কন্ডিশনাল (অতীত ও বর্তমান সময়ের সমন্বয়), ইনভারশন (আনুষ্ঠানিক লেখার জন্য 'if' বাদ দিয়ে বাক্য গঠন), বিকল্প কন্ডিশনাল সংযোজক (unless, provided that, assuming), 'but for' কাঠামো এবং 'if'-ক্লজের ভেতরে 'will' বা 'would'-এর বিরল কিন্তু অত্যন্ত গুরুত্বপূর্ণ ব্যবহারসমূহ।",
+  "topics": [
+    {
+      "name": "Mixed Conditionals (মিশ্র কন্ডিশনালস)",
+      "banglaName": "মিশ্র কন্ডিশনালস",
+      "definition": "Mixed conditionals are used when the time of the 'if-clause' is different from the time of the 'result clause'. There are two main types: 1) Past Condition -> Present Result (Type 3 + Type 2): an unreal past action and its present consequence. 2) Present/Ongoing Condition -> Past Result (Type 2 + Type 3): a permanent state and its effect on a past event.",
+      "banglaDefinition": "মিশ্র কন্ডিশনালস (Mixed Conditionals) তখন ব্যবহৃত হয় যখন 'if-clause' (শর্ত) এবং 'result clause' (ফলাফল)-এর সময়কাল ভিন্ন হয়। এগুলো প্রধানত দুই প্রকার: ১) অতীত শর্ত -> বর্তমান ফলাফল (Type 3 + Type 2): অতীতে কোনো কাজ না ঘটার কারণে বর্তমানে তার কী প্রভাব পড়ছে। ২) বর্তমান/স্থায়ী পরিস্থিতি -> অতীত ফলাফল (Type 2 + Type 3): বর্তমানে কারো কোনো স্থায়ী বৈশিষ্ট্যের কারণে অতীতে কোনো ঘটনার ওপর কী প্রভাব পড়েছিল।",
+      "formula": "Type A (Past -> Present): If + Past Perfect, Subject + Would/Could + Base Verb\nType B (Present -> Past): If + Past Simple, Subject + Would/Could have + Past Participle (V3)",
+      "rules": [
+        "অতীতের কাজের বর্তমান ফলাফল বোঝাতে 'If + had + V3' এবং 'would + V1' ব্যবহার করুন: 'If I had won the lottery yesterday, I would be rich today.'",
+        "বর্তমান বা স্থায়ী স্বভাবের অতীত ফলাফল বোঝাতে 'If + V2' এবং 'would have + V3' ব্যবহার করুন: 'If I were afraid of spiders, I wouldn't have kept it as a pet.'",
+        "বাক্যে সময়ের পার্থক্য বোঝার জন্য 'now', 'today', 'yesterday', 'last year'-এর মতো সময়বাচক শব্দ খেয়াল করুন।",
+        "এই স্ট্রাকচারগুলো কাল্পনিক বা অবাস্তব পরিস্থিতির ক্ষেত্রে প্রযোজ্য।"
+      ],
+      "examples": [
+        { "en": "If I had worked harder at university, I would have a better job now.", "bn": "আমি যদি বিশ্ববিদ্যালয়ে আরও কঠোর পরিশ্রম করতাম, তবে এখন আমার একটি ভালো চাকরি থাকত। (অতীতের অবহেলা, বর্তমানের ফলাফল)" },
+        { "en": "If he were more polite, he wouldn't have insulted his boss yesterday.", "bn": "সে যদি আরেকটু ভদ্র হতো, তবে গতকাল তার বসকে অপমান করত না। (বর্তমান স্বভাব, অতীতের কাজ)" },
+        { "en": "If we had caught the early train, we would be in London by now.", "bn": "আমরা যদি সকালের ট্রেনটি ধরতে পারতাম, তবে এতক্ষণে আমরা লন্ডনে থাকতাম।" },
+        { "en": "If I spoke French, I would have translated that document for you yesterday.", "bn": "আমি যদি ফ্রেঞ্চ বলতে পারতাম, তবে গতকাল তোমার জন্য ওই নথিপত্রটি অনুবাদ করে দিতাম।" },
+        { "en": "If she hadn't lost her passport, she would be boarding the plane today.", "bn": "সে যদি তার পাসপোর্টটি না হারাত, তবে আজ সে বিমানে আরোহণ করতে পারত।" },
+        { "en": "If they were smart, they would have invested in that company last year.", "bn": "তারা যদি বুদ্ধিমান হতো, তবে গত বছরই ওই কোম্পানিতে বিনিয়োগ করত।" },
+        { "en": "If I hadn't spent all my money, I would buy that laptop today.", "bn": "আমি যদি আমার সব টাকা খরচ না করে ফেলতাম, তবে আজ ওই ল্যাপটপটি কিনতাম।" },
+        { "en": "If he didn't love music so much, he wouldn't have become a professional guitarist.", "bn": "সে যদি গান এত ভালোবাসতো না, তবে আজ পেশাদার গিটারিস্ট হতো না।" },
+        { "en": "If you had taken the map, we wouldn't be lost right now.", "bn": "তুমি যদি মানচিত্রটি সাথে নিতে, তবে আমরা এই মুহূর্তে পথ হারিয়ে ফেলতাম না।" },
+        { "en": "If she were a good cook, she would have prepared dinner for us last night.", "bn": "সে যদি ভালো রাঁধুনি হতো, তবে গত রাতে আমাদের জন্য রাতের খাবার তৈরি করত।" }
+      ],
+      "tips": "সহজ ট্রিক: যদি বাক্যের এক অংশে অতীত সময় ('yesterday', 'then') এবং অন্য অংশে বর্তমান সময় ('now', 'today', 'by now') নির্দেশ করা থাকে, তবে নিশ্চিতভাবেই সেখানে Mixed Conditional ব্যবহার করতে হবে।"
+    },
+    {
+      "name": "Inverted Conditionals (ইনভারশন বা 'If' বাদ দিয়ে কন্ডিশনালস)",
+      "banglaName": "ইনভারশন বা 'If' বাদ দিয়ে কন্ডিশনালস",
+      "definition": "Inverted conditionals are highly formal structures where the conjunction 'if' is omitted, and the subject and auxiliary verb are inverted (reversed). This is common in academic and professional English. It applies to First, Second, and Third Conditionals using 'Should', 'Were', and 'Had' respectively.",
+      "banglaDefinition": "ইনভারশন হলো এমন একটি অত্যন্ত প্রাতিষ্ঠানিক ও আনুষ্ঠানিক কাঠামো যেখানে 'if' শব্দটি বাদ দেওয়া হয় এবং সাবজেক্ট ও অক্সিলিয়ারি ভার্বের স্থান পরিবর্তন (উল্টে দেওয়া) করা হয়। এটি একাডেমিক ও পেশাদার ইংরেজিতে বহুল ব্যবহৃত। এটি প্রথম, দ্বিতীয় ও তৃতীয় কন্ডিশনালের ক্ষেত্রে যথাক্রমে 'Should', 'Were', এবং 'Had' ব্যবহার করে গঠিত হয়।",
+      "formula": "First Conditional: Should + Subject + Base Verb, ...\nSecond Conditional: Were + Subject + to + V1 / Were + Subject + Adjective, ...\nThird Conditional: Had + Subject + Past Participle (V3), ...",
+      "rules": [
+        "First Conditional ইনভারশনে 'If you need' এর পরিবর্তে 'Should you need' ব্যবহার করা হয়। এখানে 'Should'-এর অর্থ 'যদি কোনোভাবে'।",
+        "Second Conditional ইনভারশনে 'If I were rich' হয়ে যায় 'Were I rich'।",
+        "যদি Second Conditional-এ কোনো অ্যাকশন ভার্ব থাকে, তবে 'Were + subject + to + V1' লিখতে হবে: 'Were he to lose his job...'",
+        "Third Conditional ইনভারশনে 'If I had known' হয়ে যায় 'Had I known'।",
+        "নেতিবাচক ইনভারশনের ক্ষেত্রে সংকুচিত রূপ (Hadn't I, Aren't I) ব্যবহার করা যাবে না; 'not' অবশ্যই সাবজেক্টের পরে বসাতে হবে: 'Had I not seen...'"
+      ],
+      "examples": [
+        { "en": "Should you require further assistance, please do not hesitate to contact us.", "bn": "যদি আপনার আরও সহায়তার প্রয়োজন হয়, তবে দয়া করে আমাদের সাথে যোগাযোগ করতে দ্বিধা করবেন না। (If you should require...)" },
+        { "en": "Were I in your position, I would accept the job offer immediately.", "bn": "আমি যদি তোমার জায়গায় হতাম, তবে প্রস্তাবটি অবিলম্বে গ্রহণ করতাম। (If I were...)" },
+        { "en": "Had I known about the schedule change, I would have arrived earlier.", "bn": "আমি যদি সময়সূচি পরিবর্তনের বিষয়ে জানতাম, তবে আরও আগে পৌঁছাতাম। (If I had known...)" },
+        { "en": "Should it rain tomorrow, the outdoor match will be postponed.", "bn": "যদি আগামীকাল বৃষ্টি হয়, তবে বাইরের খেলাটি স্থগিত করা হবে।" },
+        { "en": "Were they to discover the truth, they would be devastated.", "bn": "তারা যদি সত্যটি জানতে পারে, তবে তারা সম্পূর্ণ ভেঙে পড়বে। (If they discovered...)" },
+        { "en": "Had we not missed the train, we would have attended the meeting.", "bn": "আমরা যদি ট্রেনটি মিস না করতাম, তবে মিটিংয়ে উপস্থিত থাকতে পারতাম। (Had we not...)" },
+        { "en": "Were he more experienced, he would handle the crisis better.", "bn": "সে যদি আরও অভিজ্ঞ হতো, তবে এই সংকট আরও ভালোভাবে মোকাবেলা করত।" },
+        { "en": "Should you see John, tell him to call me.", "bn": "যদি জনের সাথে তোমার দেখা হয়, তাকে আমাকে কল করতে বোলো।" },
+        { "en": "Had the doctor arrived earlier, the patient's life might have been saved.", "bn": "ডাক্তার যদি আরও আগে আসতেন, তবে রোগীর জীবন বাঁচানো হয়তো সম্ভব হতো।" },
+        { "en": "Were I to win the prize, I would donate half of it.", "bn": "আমি যদি পুরস্কারটি জিততাম, তবে তার অর্ধেক দান করে দিতাম।" }
+      ],
+      "tips": "ইনভারশন ব্যবহারের মাধ্যমে আপনি আপনার ফরমাল রাইটিংয়ের (যেমন: IELTS Writing Task 2 বা বিজনেস লেটার) মান বহুগুণ বাড়িয়ে নিতে পারেন। তবে মনে রাখবেন, সাধারণ আড্ডায় বা অনানুষ্ঠানিক কথাবার্তায় ইনভারশন ব্যবহার করলে তা অত্যন্ত অস্বাভাবিক শোনাতে পারে।"
+    },
+    {
+      "name": "Alternative Conditional Conjunctions (বিকল্প কন্ডিশনাল কানেক্টরস)",
+      "banglaName": "বিকল্প কন্ডিশনাল কানেক্টরস",
+      "definition": "Instead of 'if', advanced English uses other conjunctions to introduce conditions with subtle changes in meaning. These include: 'unless' (if not), 'provided/providing that' / 'on condition that' (only if), 'as/so long as' (condition of time/security), and 'suppose/supposing' (imagining a scenario).",
+      "banglaDefinition": "শর্ত প্রকাশ করার জন্য কেবল 'if' ব্যবহার না করে অ্যাডভান্সড ইংরেজিতে অর্থের সূক্ষ্ম তারতম্য সহ অন্যান্য কিছু সংযোজক শব্দ বা ফ্রেজ ব্যবহৃত হয়। এগুলো হলো: 'unless' (যদি না), 'provided/providing that' / 'on condition that' (কেবলমাত্র যদি), 'as/so long as' (যতক্ষণ না বা শর্তে যে), এবং 'suppose/supposing' (যদি এমনটি ঘটে/কল্পনা করো)।",
+      "formula": "[Alternative Conjunction] + Subject + Verb, Subject + Verb ...",
+      "rules": [
+        "'Unless' নিজেই নেতিবাচক, তাই এর ক্লজে অতিরিক্ত 'not' বসানো যাবে না: 'Unless you study' (সঠিক), 'Unless you don't study' (ভুল)।",
+        "'Provided/Providing that' এবং 'As/So long as' অত্যন্ত জোরালো শর্ত নির্দেশ করে (Only if)।",
+        "'Suppose/Supposing' সাধারণত বাক্যের শুরুতে বসে একটি কাল্পনিক পরিস্থিতি তুলে ধরে এবং এর পর প্রায়ই একটি প্রশ্নবোধক বাক্য থাকে।"
+      ],
+      "examples": [
+        { "en": "We will go for a picnic tomorrow unless it rains.", "bn": "যদি বৃষ্টি না হয়, তবে আমরা আগামীকাল পিকনিকে যাব। (unless = if it doesn't rain)" },
+        { "en": "You can borrow my car provided that you return it by 8 PM.", "bn": "তুমি আমার গাড়িটি ধার নিতে পারো, শর্ত থাকে যে তোমাকে রাত ৮টার মধ্যে এটি ফেরত দিতে হবে।" },
+        { "en": "You will pass the exam as long as you study regularly.", "bn": "তুমি পরীক্ষায় পাস করবে যতক্ষণ পর্যন্ত তুমি নিয়মিত পড়াশোনা করবে।" },
+        { "en": "I will sign the contract on condition that you deliver the goods this week.", "bn": "আমি চুক্তিতে স্বাক্ষর করব এই শর্তে যে আপনি এই সপ্তাহেই পণ্য সরবরাহ করবেন।" },
+        { "en": "Supposing he refuses to help us, what will we do?", "bn": "মনে করো সে যদি আমাদের সাহায্য করতে অস্বীকার করে, তবে আমরা কী করব?" },
+        { "en": "She won't talk to you unless you apologize first.", "bn": "সে তোমার সাথে কথা বলবে না যদি না তুমি প্রথমে ক্ষমা চাও।" },
+        { "en": "You can stay here providing that you keep quiet.", "bn": "তুমি এখানে থাকতে পারো কেবলমাত্র যদি তুমি শান্ত থাকো।" },
+        { "en": "As long as everyone agrees, we can start the project tomorrow.", "bn": "যতক্ষণ পর্যন্ত সবাই একমত থাকবে, আমরা আগামীকালই প্রকল্পটি শুরু করতে পারি।" },
+        { "en": "Suppose you won the lottery, how would you spend the money?", "bn": "কল্পনা করো তুমি যদি লটারি জিততে, তবে কীভাবে টাকাগুলো খরচ করতে?" },
+        { "en": "They will invest in our startup on condition that we show a solid plan.", "bn": "তারা আমাদের স্টার্টআপে বিনিয়োগ করবে এই শর্তে যে আমরা একটি বাস্তবসম্মত পরিকল্পনা দেখাব।" }
+      ],
+      "tips": "রাইটিংয়ে বৈচিত্র্য আনতে 'if'-এর জায়গায় 'provided that' বা 'as long as' ব্যবহার করুন। এটি আপনার লেখার পুনরাবৃত্তি রোধ করবে এবং বাক্যগুলোকে পড়তে আকর্ষণীয় করে তুলবে।"
+    },
+    {
+      "name": "'But for', 'Without', and 'If it were not/hadn't been for' Structures (বিশেষ প্রতিরক্ষামূলক কন্ডিশনাল কাঠামো)",
+      "banglaName": "'But for', 'Without' এবং 'If it were not/hadn't been for'",
+      "definition": "These structures are used to say that an event would happen or would have happened only because of a specific cause or the help of someone. 'But for' and 'Without' are followed by a noun phrase, while 'If it were not for' (present) and 'If it hadn't been for' (past) introduce unreal conditional situations.",
+      "banglaDefinition": "এই কাঠামোটি ব্যবহার করা হয় এটি বোঝাতে যে, কোনো একটি নির্দিষ্ট কারণ বা কারো সাহায্য ছাড়া কোনো ঘটনা ঘটা বা না ঘটা অসম্ভব ছিল (যেমন: 'তুমি না থাকলে আমার আজ এই বিপদ হতো')। 'But for' এবং 'Without'-এর পরে সরাসরি Noun Phrase বসে, আর 'If it were not for' (বর্তমান পরিস্থিতি) এবং 'If it hadn't been for' (অতীত পরিস্থিতি) অবাস্তব শর্ত নির্দেশ করে।",
+      "formula": "But for / Without + Noun Phrase, Subject + Would/Could + Verb\nIf it weren't for / Had it not been for + Noun Phrase, ...",
+      "rules": [
+        "'But for' অত্যন্ত প্রাতিষ্ঠানিক ও সাহিত্যিক রূপ, এর অর্থ 'যদি না হতো/থাকত': 'But for your help...'",
+        "অতীতের কোনো পরিস্থিতির জন্য 'If it hadn't been for' বা ইনভারশনে 'Had it not been for' বসাতে হবে।",
+        "বর্তমানের কোনো পরিস্থিতির জন্য 'If it weren't for' বা ইনভারশনে 'Were it not for' বসাতে হবে।"
+      ],
+      "examples": [
+        { "en": "But for your advice, I would have made a terrible mistake.", "bn": "তোমার উপদেশ যদি না থাকত, তবে আমি এক মারাত্মক ভুল করে ফেলতাম।" },
+        { "en": "Without his timely intervention, the argument would have turned into a fight.", "bn": "তার সময়োপযোগী হস্তক্ষেপ ছাড়া তর্কাতর্কিটি মারামারিতে রূপ নিত।" },
+        { "en": "If it hadn't been for the heavy rain, we would have reached on time.", "bn": "ভারী বৃষ্টি যদি না হতো, তবে আমরা সময়মতো পৌঁছে যেতাম।" },
+        { "en": "If it weren't for my family's support, I wouldn't be successful today.", "bn": "আমার পরিবারের সমর্থন যদি না থাকত, তবে আজ আমি সফল হতে পারতাম না।" },
+        { "en": "But for the goalkeeper's brilliant performance, they would have lost the match.", "bn": "গোলরক্ষকের চমৎকার পারফরম্যান্স না থাকলে তারা ম্যাচটি হেরে যেত।" },
+        { "en": "Had it not been for your financial help, I couldn't have started this business.", "bn": "তোমার আর্থিক সাহায্য যদি না থাকত, তবে আমি এই ব্যবসা শুরু করতে পারতাম না। (Inversion)" },
+        { "en": "Were it not for his laziness, he would be a manager by now.", "bn": "তার অলসতা যদি না থাকত, তবে এতক্ষণে সে একজন ম্যানেজার হতো।" },
+        { "en": "Without water, no living being can survive on Earth.", "bn": "পানি ছাড়া পৃথিবীতে কোনো জীবই বেঁচে থাকতে পারে না।" },
+        { "en": "If it hadn't been for your warning, we would have fallen into the trap.", "bn": "তোমার সতর্কবার্তা যদি না থাকত, তবে আমরা ফাঁদে পড়ে যেতাম।" },
+        { "en": "But for her dedication, the project wouldn't have been completed on time.", "bn": "তার নিষ্ঠা ও পরিশ্রম যদি না থাকত, তবে প্রকল্পটি সময়মতো শেষ হতো না।" }
+      ],
+      "tips": "সহজ অনুবাদ কৌশল: বাংলায় যখন আমরা বলি 'যদি না তোমার সাহায্য থাকত...' বা 'তোমার সাহায্য ছাড়া...', তখন ইংরেজিতে সরাসরি 'But for your help' বা 'Without your help' ব্যবহার করতে পারেন। এটি বাক্যকে অত্যন্ত সংক্ষিপ্ত ও মার্জিত করে।"
+    },
+    {
+      "name": "Will and Would in the If-Clause (If-ক্লজে 'Will' বা 'Would'-এর ব্যতিক্রমী ব্যবহার)",
+      "banglaName": "If-ক্লজে 'Will' বা 'Would'-এর ব্যবহার",
+      "definition": "Normally, we do not use 'will' or 'would' in the 'if-clause'. However, they can be used exceptionally to express: 1) Polite requests (where will/would means 'be willing to'). 2) Insistence or stubborn behavior (where 'will' is heavily stressed). 3) A strong refusal in negative form ('won't' or 'wouldn't').",
+      "banglaDefinition": "সাধারণ নিয়ম অনুযায়ী আমরা কখনো 'if-clause'-এর ভেতরে 'will' বা 'would' বসাই না। তবে কিছু বিশেষ ক্ষেত্রে ব্যতিক্রম হিসেবে এগুলো বসানো যায়: ১) নম্র অনুরোধ বোঝাতে (যেখানে will/would-এর অর্থ হয় 'রাজি হওয়া' বা 'দয়া করে করা')। ২) কারো একগুঁয়েমি বা অনড় জেদ প্রকাশ করতে (এখানে 'will'-এর ওপর অতিরিক্ত জোর দেওয়া হয়)। ৩) কোনো জোরালো অস্বীকৃতি প্রকাশে (নেতিবাচক 'won't' বা 'wouldn't' রূপে)।",
+      "formula": "Request: If you will/would + V1, Subject + will/would ...\nInsistence: If you *will* (stressed) + V1, Subject + will/would ...\nRefusal: If they won't/wouldn't + V1, ...",
+      "rules": [
+        "নম্র অনুরোধের ক্ষেত্রে: 'If you will wait here, I'll call the doctor' (এখানে will = please wait)।",
+        "অনড় জেদের ক্ষেত্রে (যদি তুমি বারবার এই ভুলটি করোই): 'If you *will* eat junk food every day, you will get sick.'",
+        "অস্বীকৃতির ক্ষেত্রে: 'If she won't listen to us, we can't help her' (যদি সে কিছুতেই আমাদের কথা না শোনে...)।"
+      ],
+      "examples": [
+        { "en": "If you would just sign here, the deal will be finalized.", "bn": "আপনি যদি দয়া করে এখানে স্বাক্ষর করেন, তবে চুক্তিটি চূড়ান্ত হয়ে যাবে। (Polite Request)" },
+        { "en": "If you will please take a seat, the manager will see you shortly.", "bn": "আপনি যদি দয়া করে আসন গ্রহণ করেন, তবে ম্যানেজার শীঘ্রই আপনার সাথে দেখা করবেন।" },
+        { "en": "If you *will* interrupt me while I'm speaking, I won't continue.", "bn": "আপনি যদি আমার কথা বলার সময় বারবার বাধাই দিতে থাকেন, তবে আমি আর বলব না। (Insistence)" },
+        { "en": "If she won't apologize, I will never speak to her again.", "bn": "সে যদি কিছুতেই ক্ষমা না চায়, তবে আমি আর কখনো তার সাথে কথা বলব না। (Refusal)" },
+        { "en": "If you would follow me, I'll show you to your room.", "bn": "আপনি যদি দয়া করে আমার পিছু পিছু আসেন, আমি আপনাকে আপনার ঘরটি দেখিয়ে দেব।" },
+        { "en": "If they won't sign the contract, we will have to find another partner.", "bn": "তারা যদি কোনোভাবেই চুক্তিতে স্বাক্ষর করতে রাজি না হয়, তবে আমাদের অন্য অংশীদার খুঁজতে হবে।" },
+        { "en": "If you *will* drive so fast, you must expect to get a ticket.", "bn": "তুমি যদি এত দ্রুত গাড়ি চালানোর জেদ ধরিই রাখো, তবে জরিমানা পাওয়ার জন্য প্রস্তুত থাকো।" },
+        { "en": "If you would kindly fill out this form, we can process your request.", "bn": "আপনি যদি দয়া করে এই ফর্মটি পূরণ করেন, তবে আমরা আপনার অনুরোধটি প্রসেস করতে পারব।" },
+        { "en": "If the computer won't start, call the IT department.", "bn": "কম্পিউটারটি যদি কোনোভাবেই চালু হতে না চায়, তবে আইটি বিভাগে কল করো।" },
+        { "en": "If he would just listen to my advice, he wouldn't be in this trouble.", "bn": "সে যদি দয়া করে আমার উপদেশটুকু শুনতো, তবে আজ এই বিপদে পড়তো না।" }
+      ],
+      "tips": "মনে রাখবেন, সাধারণ শর্তে কখনো 'will' বসাবেন না। যেমন: 'If it *will* rain tomorrow, we will stay at home' ভুল। এখানে স্বাভাবিক নিয়ম অনুযায়ী 'If it *rains*...' লিখতে হবে। কেবল নম্র অনুরোধ বা জেদ প্রকাশেই 'will' গ্রহণযোগ্য।"
+    },
+    {
+      "name": "Conditionals with 'If only' and 'I wish' (আকাঙ্ক্ষা ও আক্ষেপ প্রকাশক কন্ডিশনাল)",
+      "banglaName": "'If only' এবং 'I wish' কন্ডিশনাল",
+      "definition": "'If only' and 'I wish' are used to express wishes, regrets, or desires for a situation to be different. 'If only' is often more emphatic than 'I wish'. When talking about the present or future, we use Past Simple; when expressing regrets about the past, we use Past Perfect.",
+      "banglaDefinition": "বাস্তবতার বিপরীত কোনো ইচ্ছা, আক্ষেপ বা আকাঙ্ক্ষা প্রকাশ করতে 'If only' এবং 'I wish' ব্যবহৃত হয়। 'If only' সাধারণত 'I wish'-এর চেয়ে অনেক বেশি জোরালো অনুভূতি প্রকাশ করে। বর্তমান বা ভবিষ্যতের কোনো পরিস্থিতি পরিবর্তনের আকাঙ্ক্ষায় Past Simple এবং অতীতের কোনো ঘটনার আক্ষেপে Past Perfect ব্যবহৃত হয়।",
+      "formula": "Present/Future Desire: If only / I wish + Subject + Past Simple (or Were)\nPast Regret: If only / I wish + Subject + Past Perfect (had + V3)",
+      "rules": [
+        "বর্তমান পরিস্থিতির বিপরীত আকাঙ্ক্ষা প্রকাশে Past Simple বসে: 'I wish I had a car.' (কিন্তু আমার গাড়ি নেই)।",
+        "অতীতের ভুলের আক্ষেপ প্রকাশে Past Perfect বসে: 'If only I had studied harder.' (আমি অতীতে পড়াশোনা করিনি)।",
+        "সাবজেক্ট একবচন হলেও 'be' verb হিসেবে সর্বদা 'were' ব্যবহৃত হয়: 'I wish I were rich.'",
+        "কারো কোনো বিরক্তিকর অভ্যাস পরিবর্তনের ইচ্ছা প্রকাশে 'would' বসে: 'I wish you would stop shouting.'"
+      ],
+      "examples": [
+        { "en": "If only I had accepted that job offer last year!", "bn": "আমি যদি গত বছর ওই চাকরির প্রস্তাবটি গ্রহণ করতাম! (অতীতের আক্ষেপ)" },
+        { "en": "I wish I were capable of solving this complex puzzle.", "bn": "আমি যদি এই জটিল ধাঁধাটি সমাধান করতে সমর্থ হতাম!" },
+        { "en": "If only she were here with us today.", "bn": "আজ সে যদি আমাদের সাথে এখানে থাকত!" },
+        { "en": "I wish it would stop raining so we could go out.", "bn": "বৃষ্টিটা যদি একটু থামত, তবে আমরা বাইরে যেতে পারতাম। (ভবিষ্যতের বিরক্তি প্রকাশ)" },
+        { "en": "If only we hadn't lost touch over the years.", "bn": "আমরা যদি বছরের পর বছর এভাবে যোগাযোগ হারিয়ে না ফেলতাম!" },
+        { "en": "I wish I had listened to my father's advice.", "bn": "আমি যদি আমার বাবার উপদেশ শুনতাম!" },
+        { "en": "If only I spoke fluent Spanish; I would apply for the job.", "bn": "আমি যদি অনর্গল স্প্যানিশ বলতে পারতাম; তবে চাকরিটির জন্য আবেদন করতাম।" },
+        { "en": "I wish you wouldn't leave your clothes on the floor.", "bn": "তুমি যদি মেঝেতে কাপড় ফেলে না রাখতে তবে ভালো হতো। (বিরক্তিকর অভ্যাস পরিবর্তন)" },
+        { "en": "If only they had told us the truth from the beginning.", "bn": "তারা যদি শুরু থেকেই আমাদের সত্যিটা বলত!" },
+        { "en": "I wish I didn't have to work this weekend.", "bn": "আমার যদি এই উইকএন্ডে কাজ করতে না হতো!" }
+      ],
+      "tips": "পরীক্ষায় 'If only' বা 'I wish'-এর পর টেন্স ব্যবহারের সময় সর্বদা খেয়াল করবেন যে ঘটনাটি কি বর্তমানের নাকি অতীতের। বর্তমান হলে V2 (past simple) এবং অতীত হলে had + V3 (past perfect) বসাবেন।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "If I had won the lottery yesterday, I will be rich now.",
+      "correct": "If I had won the lottery yesterday, I would be rich now.",
+      "explanation": "এটি একটি Mixed Conditional বাক্য। যেহেতু শর্তটি অতীতের (yesterday) এবং ফলাফলটি বর্তমানের (now), তাই ফলাফলের ক্লজে 'will be' এর পরিবর্তে 'would be' ব্যবহার করতে হবে।"
+    },
+    {
+      "wrong": "Had I known the truth, I wouldn't make that mistake.",
+      "correct": "Had I known the truth, I wouldn't have made that mistake.",
+      "explanation": "এটি Third Conditional-এর ইনভারশন। অতীতের অবাস্তব পরিস্থিতি বোঝাতে ফলাফল ক্লজে অবশ্যই 'would have + Past Participle (V3)' বসাতে হবে, কেবল 'would + V1' নয়।"
+    },
+    {
+      "wrong": "Unless you don't study hard, you will fail the exam.",
+      "correct": "Unless you study hard, you will fail the exam.",
+      "explanation": "'Unless' নিজেই নেতিবাচক (যার অর্থ 'যদি না')। এর পর পুনরায় 'don't' ব্যবহার করলে তা ডাবল নেগেটিভ ভুলের সৃষ্টি করে। তাই 'unless'-এর পরের ক্লজটি ইতিবাচক হতে হবে।"
+    },
+    {
+      "wrong": "Had not I seen the red light, I would have crashed.",
+      "correct": "Had I not seen the red light, I would have crashed.",
+      "explanation": "কন্ডিশনাল ইনভারশনে নেতিবাচক বাক্য গঠনের সময় সংকুচিত রূপ (Hadn't I) ব্যবহার না করলে, 'not' শব্দটি অবশ্যই সাবজেক্টের পরে বসাতে হবে, অক্সিলিয়ারির সাথে নয়।"
+    },
+    {
+      "wrong": "Provided that it will rain tomorrow, the event will be cancelled.",
+      "correct": "Provided that it rains tomorrow, the event will be cancelled.",
+      "explanation": "Provided that, as long as বা on condition that দিয়ে শর্ত যুক্ত করা হলে, প্রথম ক্লজে ভবিষ্যৎ বোঝাতে 'will' বসে না; সাধারণ প্রেজেন্ট টেন্স (rains) বসে।"
+    },
+    {
+      "wrong": "If it wasn't for his help, I would have failed.",
+      "correct": "If it hadn't been for his help, I would have failed. (Or: But for his help...)",
+      "explanation": "যেহেতু ফলাফল ক্লজে 'would have failed' (অতীতের ফলাফল) আছে, তাই শর্তের ক্লজটি অতীতের অবাস্তব কাঠামো 'If it hadn't been for' হতে হবে, বর্তমানের 'If it wasn't for' নয়।"
+    },
+    {
+      "wrong": "If you will rain tomorrow, we will cancel the picnic.",
+      "correct": "If it rains tomorrow, we will cancel the picnic.",
+      "explanation": "'If'-ক্লজে কেবল নম্র অনুরোধ বা অনড় জেদ ছাড়া সাধারণ ভবিষ্যৎ বা প্রাকৃতিক ঘটনা বোঝাতে 'will' ব্যবহার করা সম্পূর্ণ ভুল। এখানে প্রেজেন্ট সিম্পল (rains) বসবে।"
+    },
+    {
+      "wrong": "I wish I was taller when I was in school.",
+      "correct": "I wish I had been taller when I was in school.",
+      "explanation": "অতীতের কোনো আক্ষেপ (when I was in school) প্রকাশ করার জন্য 'I wish'-এর পরে Past Perfect টেন্স ('had been') ব্যবহার করতে হবে, সাধারণ অতীত 'was' বা 'were' নয়।"
+    }
+  ]
 }

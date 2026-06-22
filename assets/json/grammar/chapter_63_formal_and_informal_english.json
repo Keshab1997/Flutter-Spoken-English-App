@@ -1,10 +1,202 @@
 {
   "chapter": 63,
   "level": "Advanced",
-  "title": "Formal and Informal English",
+  "title": "Formal and Informal English (আনুষ্ঠানিক ও অনানুষ্ঠানিক ইংরেজি)",
   "icon": "alternate_email",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Formal and Informal English represent the two primary registers of the English language. Formal English is characterized by sophisticated vocabulary (often Latinate), complex sentence structures, passive voice, and objectivity, making it ideal for academic, legal, and professional contexts. Informal English relies on phrasal verbs, active voice, personal pronouns, contractions, and colloquialisms, which are perfect for daily conversations and casual writing. Mastering both registers allows you to adapt your tone precisely to any audience.",
+  "banglaDescription": "ফরমাল (আনুষ্ঠানিক) এবং ইনফরমাল (অনানুষ্ঠানিক) ইংরেজি হলো ইংরেজি ভাষার দুটি প্রধান স্তর বা রেজিস্টার। ফরমাল ইংরেজি মার্জিত শব্দভাণ্ডার (সাধারণত ল্যাটিন থেকে উৎপন্ন), জটিল বাক্য গঠন, প্যাসিভ ভয়েস এবং বস্তুনিষ্ঠতার দ্বারা চিহ্নিত হয়, যা অ্যাকাডেমিক, আইনি এবং পেশাদার ক্ষেত্রে ব্যবহারের জন্য উপযুক্ত। অন্যদিকে, অনানুষ্ঠানিক ইংরেজি মূলত ফ্রেজাল ভার্ব, অ্যাক্টিভ ভয়েস, ব্যক্তিগত প্রোনাউন, কন্ট্রাকশন (সংক্ষিপ্ত রূপ) এবং কথ্য ভাষার ওপর নির্ভর করে, যা দৈনন্দিন আড্ডা এবং অনানুষ্ঠানিক লেখার জন্য আদর্শ। উভয় স্তর আয়ত্ত করার মাধ্যমে আপনি যেকোনো পরিস্থিতিতে শ্রোতা বা পাঠকের সাথে সামঞ্জস্য রেখে কথা বলতে বা লিখতে পারবেন।",
+  "topics": [
+    {
+      "name": "Vocabulary Choice: Latinate Verbs vs. Phrasal Verbs (শব্দভাণ্ডার নির্বাচন: ল্যাটিন মূলের ক্রিয়াপদ বনাম ফ্রেজাল ভার্ব)",
+      "banglaName": "শব্দভাণ্ডার নির্বাচন: Latinate Verbs বনাম Phrasal Verbs",
+      "definition": "The most visible difference between formal and informal English lies in vocabulary. Formal English prefers single-word verbs, often derived from Latin or French (Latinate verbs). Informal English heavily relies on phrasal verbs (verb + preposition/adverb) and words of Germanic origin, which sound warmer and more casual.",
+      "banglaDefinition": "ফরমাল এবং ইনফরমাল ইংরেজির মধ্যে সবচেয়ে দৃশ্যমান পার্থক্যটি লক্ষ্য করা যায় শব্দভাণ্ডারে। ফরমাল ইংরেজিতে একক শব্দের ক্রিয়াপদ বেশি পছন্দ করা হয়, যা সাধারণত ল্যাটিন বা ফরাসি ভাষা থেকে এসেছে (Latinate verbs)। অনানুষ্ঠানিক ইংরেজিতে ফ্রেজাল ভার্ব (verb + preposition/adverb) এবং জার্মানিক মূলের সহজ শব্দের ওপর বেশি নির্ভর করা হয়, যা শুনতে অনেক বেশি সাধারণ ও বন্ধুত্বপূর্ণ শোনায়।",
+      "formula": "Informal: Subject + Phrasal/Simple Verb + Object\nFormal: Subject + Latinate/Single-word Verb + Object",
+      "rules": [
+        "ফরমাল লেখার ক্ষেত্রে ফ্রেজাল ভার্ব পরিহার করুন: 'look into' এর জায়গায় 'investigate' লিখুন।",
+        "সহজ ও বহুল ব্যবহৃত ক্রিয়াপদ যেমন 'get', 'give', 'put' ইত্যাদির পরিবর্তে নির্দিষ্ট ফরমাল শব্দ (obtain, provide, postpone) ব্যবহার করুন।",
+        "অ্যাকাডেমিক এবং ব্যবসায়িক ইমেইলে বা রিপোর্টে সবসময় একক শব্দের ফরমাল ভার্ব ব্যবহার করা বাঞ্ছনীয়।"
+      ],
+      "examples": [
+        { "en": "Informal: The police are looking into the matter. / Formal: The police are investigating the matter.", "bn": "ইনফরমাল: পুলিশ বিষয়টি খতিয়ে দেখছে। / ফরমাল: পুলিশ বিষয়টি তদন্ত করছে।" },
+        { "en": "Informal: We had to put off the meeting. / Formal: We had to postpone the meeting.", "bn": "ইনফরমাল: আমাদের মিটিংটি স্থগিত করতে হয়েছিল।" },
+        { "en": "Informal: Can you find out what went wrong? / Formal: Can you determine what went wrong?", "bn": "ইনফরমাল: কী ভুল হয়েছে তুমি কি তা খুঁজে বের করতে পারবে? / ফরমাল: কী ভুল হয়েছে আপনি কি তা নির্ধারণ করতে পারবেন?" },
+        { "en": "Informal: The price of oil is going up. / Formal: The price of oil is increasing.", "bn": "ইনফরমাল: তেলের দাম বাড়ছে। / ফরমাল: তেলের দাম বৃদ্ধি পাচ্ছে।" },
+        { "en": "Informal: They gave up their plans. / Formal: They abandoned their plans.", "bn": "ইনফরমাল: তারা তাদের পরিকল্পনা বাদ দিয়েছে। / ফরমাল: তারা তাদের পরিকল্পনা পরিত্যাগ করেছে।" },
+        { "en": "Informal: I need to get some information. / Formal: I need to obtain some information.", "bn": "ইনফরমাল: আমার কিছু তথ্য দরকার। / ফরমাল: আমার কিছু তথ্য সংগ্রহ করা প্রয়োজন।" },
+        { "en": "Informal: He made up a fake story. / Formal: He fabricated a story.", "bn": "ইনফরমাল: সে একটি বানানো গল্প তৈরি করেছিল। / ফরমাল: সে একটি গল্প সাজিয়েছিল।" },
+        { "en": "Informal: The bomb blew up at noon. / Formal: The device exploded at noon.", "bn": "ইনফরমাল: বোমাটি দুপুরে বিস্ফোরিত হয়েছিল। / ফরমাল: ডিভাইসটি দুপুরে বিস্ফোরিত হয়েছিল।" },
+        { "en": "Informal: Please ask for help if you need it. / Formal: Please request assistance if required.", "bn": "ইনফরমাল: প্রয়োজন হলে দয়া করে সাহায্য চাও। / ফরমাল: প্রয়োজন হলে দয়া করে সহায়তার জন্য অনুরোধ করুন।" },
+        { "en": "Informal: This bad habit will bring about failure. / Formal: This habit will cause failure.", "bn": "ইনফরমাল: এই খারাপ অভ্যাস ব্যর্থতা ডেকে আনবে। / ফরমাল: এই অভ্যাসটি ব্যর্থতার কারণ হবে।" }
+      ],
+      "tips": "ফরমাল রাইটিংয়ে কোনো Phrasal Verb লেখার আগে চিন্তা করুন এর কোনো একক শব্দের বিকল্প (যেমন: setup -> establish, build up -> accumulate) আছে কি না। থাকলে অবশ্যই একক শব্দটি ব্যবহার করুন।"
+    },
+    {
+      "name": "Grammatical Tone: Active vs. Passive Voice (ব্যাকরণগত স্বর: অ্যাক্টিভ বনাম প্যাসিভ ভয়েস)",
+      "banglaName": "Grammatical Tone: Active বনাম Passive Voice",
+      "definition": "Informal English is highly active and personal, directly mentioning the subject who performs the action. Formal English, especially in scientific research and administrative reports, prefers the passive voice to maintain objectivity, emphasize the process or result, and downplay the personal agent.",
+      "banglaDefinition": "অনানুষ্ঠানিক ইংরেজি অত্যন্ত সক্রিয় এবং ব্যক্তিগত হয়, যেখানে কাজটি কে করছে তার সরাসরি উল্লেখ থাকে (Active Voice)। ফরমাল ইংরেজি, বিশেষ করে বৈজ্ঞানিক গবেষণা এবং প্রশাসনিক প্রতিবেদনে, কাজের কর্তা বা ব্যক্তিকে আড়াল করে কাজ বা ফলাফলের ওপর জোর দেওয়ার জন্য এবং বস্তুনিষ্ঠতা বজায় রাখার জন্য প্যাসিভ ভয়েস (Passive Voice) বেশি পছন্দ করে।",
+      "formula": "Informal (Active): Agent (Subject) + Verb + Object\nFormal (Passive): Object + Be Verb + Past Participle (V3) (+ by Agent)",
+      "rules": [
+        "ব্যক্তিগত মতামত বা গবেষণার ফলাফল বর্ণনা করতে 'I found that...' না লিখে 'It was discovered that...' লিখুন।",
+        "বিজ্ঞানের বৈজ্ঞানিক প্রক্রিয়া এবং ল্যাব রিপোর্টের ক্ষেত্রে প্যাসিভ ভয়েস ব্যবহার করা স্ট্যান্ডার্ড।",
+        "তবে অতিরিক্ত প্যাসিভ ব্যবহার বাক্যকে দুর্বোধ্য করতে পারে, তাই ফরমাল হলেও গুরুত্বপূর্ণ জায়গায় ব্যালেন্স বজায় রাখুন।"
+      ],
+      "examples": [
+        { "en": "Informal: We tested the new drug on fifty patients. / Formal: The new drug was tested on fifty patients.", "bn": "ইনফরমাল: আমরা পঞ্চাশ জন রোগীর ওপর নতুন ওষুধটি পরীক্ষা করেছি। / ফরমাল: পঞ্চাশ জন রোগীর ওপর নতুন ওষুধটি পরীক্ষা করা হয়েছিল।" },
+        { "en": "Informal: I made a big mistake in the report. / Formal: An error was made in the report.", "bn": "ইনফরমাল: আমি রিপোর্টে একটি বড় ভুল করেছি। / ফরমাল: রিপোর্টে একটি ত্রুটি ঘটেছে।" },
+        { "en": "Informal: They will build a new bridge next year. / Formal: A new bridge will be constructed next year.", "bn": "ইনফরমাল: তারা আগামী বছর একটি নতুন সেতু তৈরি করবে। / ফরমাল: আগামী বছর একটি নতুন সেতু নির্মাণ করা হবে।" },
+        { "en": "Informal: You must sign the papers before leaving. / Formal: Documents must be signed prior to departure.", "bn": "ইনফরমাল: যাওয়ার আগে আপনাকে কাগজপত্রে স্বাক্ষর করতে হবে। / ফরমাল: প্রস্থানের পূর্বে নথিপত্রগুলোতে স্বাক্ষর করা বাধ্যতামূলক।" },
+        { "en": "Informal: We discovered a link between stress and heart disease. / Formal: A link between stress and heart disease was identified.", "bn": "ইনফরমাল: আমরা মানসিক চাপ এবং হৃদরোগের মধ্যে একটি সংযোগ আবিষ্কার করেছি। / ফরমাল: মানসিক চাপ এবং হৃদরোগের মধ্যে একটি সংযোগ চিহ্নিত করা হয়েছিল।" },
+        { "en": "Informal: He sent the email on Monday. / Formal: The email was transmitted on Monday.", "bn": "ইনফরমাল: সে সোমবারে ইমেইলটি পাঠিয়েছিল। / ফরমাল: সোমবারে ইমেইলটি প্রেরণ করা হয়েছিল।" },
+        { "en": "Informal: You can buy tickets online. / Formal: Tickets may be purchased online.", "bn": "ইনফরমাল: তুমি অনলাইনে টিকিট কিনতে পারো। / ফরমাল: অনলাইনে টিকিট কেনা যেতে পারে।" },
+        { "en": "Informal: People think that the economy is getting better. / Formal: It is believed that the economy is improving.", "bn": "ইনফরমাল: মানুষ মনে করে যে অর্থনীতি ভালো হচ্ছে। / ফরমাল: বিশ্বাস করা হয় যে অর্থনীতি উন্নত হচ্ছে।" },
+        { "en": "Informal: We have resolved the issue. / Formal: The issue has been resolved.", "bn": "ইনফরমাল: আমরা সমস্যার সমাধান করেছি। / ফরমাল: সমস্যাটির সমাধান করা হয়েছে।" },
+        { "en": "Informal: The company fired him. / Formal: His employment was terminated.", "bn": "ইনফরমাল: কোম্পানি তাকে চাকরি থেকে বরখাস্ত করেছে। / ফরমাল: তার কর্মসংস্থান বাতিল বা অবসান করা হয়েছিল।" }
+      ],
+      "tips": "ফরমাল লেখার সময় 'I', 'we', 'you' প্রোনাউনগুলো পরিহার করার একটি দারুণ উপায় হলো প্যাসিভ ভয়েস ব্যবহার করা। এটি আপনার লেখাকে অনেক বেশি পেশাদার ও নিরপেক্ষ করে তোলে।"
+    },
+    {
+      "name": "Personal Pronouns & Subjectivity vs. Objectivity (ব্যক্তিগত প্রোনাউন ও ব্যক্তিনিষ্ঠতা বনাম বস্তুনিষ্ঠতা)",
+      "banglaName": "Personal Pronouns ও ব্যক্তিনিষ্ঠতা বনাম বস্তুনিষ্ঠতা",
+      "definition": "Informal English is naturally subjective and addresses the reader directly using 'you', or refers to the writer using 'I' or 'we'. Formal English values objectivity and uses impersonal constructions, third-person pronouns, or the pronoun 'one' to state facts and general arguments without personal bias.",
+      "banglaDefinition": "অনানুষ্ঠানিক ইংরেজি প্রকৃতিগতভাবে ব্যক্তিনিষ্ঠ বা মতামতভিত্তিক হয় এবং এটি 'you' ব্যবহার করে সরাসরি পাঠককে সম্বোধন করে, অথবা 'I' বা 'we' ব্যবহার করে লেখক নিজেকে নির্দেশ করে। ফরমাল ইংরেজি বস্তুনিষ্ঠতা এবং নিরপেক্ষতাকে মূল্য দেয়। তাই ব্যক্তিগত পক্ষপাত এড়াতে এটি থার্ড-পারসন প্রোনাউন, 'one' অথবা কর্তাহীন বা ইমপারসোনাল বাক্য গঠন ব্যবহার করে থাকে।",
+      "formula": "Informal (Personal): I think / In my opinion / You can see ...\nFormal (Impersonal): It is apparent / One can observe / The data suggests ...",
+      "rules": [
+        "অ্যাকাডেমিক পেপারে বা ব্যবসায়িক চিঠিতে পাঠককে সরাসরি 'you' বলে সম্বোধন করবেন না; এর পরিবর্তে 'the reader', 'candidates', বা 'individuals' ব্যবহার করুন।",
+        "'In my opinion' বা 'I believe'-এর পরিবর্তে 'It is argued that...' বা 'Evidence suggests that...' ব্যবহার করুন।",
+        "সাধারণ মানুষ বোঝাতে 'one' বা 'individuals' ব্যবহার করুন: 'One must consider...' (you must consider-এর পরিবর্তে)।"
+      ],
+      "examples": [
+        { "en": "Informal: If you want to succeed, you have to work hard. / Formal: If one wishes to succeed, one must work diligently.", "bn": "ইনফরমাল: তুমি যদি সফল হতে চাও, তোমাকে কঠোর পরিশ্রম করতে হবে। / ফরমাল: কেউ যদি সফল হতে চায়, তবে তাকে অধ্যবসায়ের সাথে কাজ করতে হবে।" },
+        { "en": "Informal: I think the plan will fail. / Formal: It is highly probable that the plan will fail.", "bn": "ইনফরমাল: আমার মনে হয় পরিকল্পনাটি ব্যর্থ হবে। / ফরমাল: এটি অত্যন্ত সম্ভাব্য যে পরিকল্পনাটি ব্যর্থ হবে।" },
+        { "en": "Informal: You can clearly see the difference. / Formal: The difference is clearly visible.", "bn": "ইনফরমাল: তুমি পরিষ্কারভাবেই পার্থক্যটি দেখতে পাচ্ছ। / ফরমাল: পার্থক্যটি পরিষ্কারভাবেই দৃশ্যমান।" },
+        { "en": "Informal: We think this is a good solution. / Formal: This is considered a viable solution.", "bn": "ইনফরমাল: আমরা মনে করি এটি একটি ভালো সমাধান। / ফরমাল: এটিকে একটি কার্যকর সমাধান হিসেবে বিবেচনা করা হয়।" },
+        { "en": "Informal: I am writing to ask about your prices. / Formal: This inquiry is regarding the pricing structure.", "bn": "ইনফরমাল: আমি তোমাদের দামের ব্যাপারে জানতে লিখতেছি। / ফরমাল: এই অনুসন্ধানটি মূল্য কাঠামো জানার উদ্দেশ্যে করা হয়েছে।" },
+        { "en": "Informal: If you need help, just ask. / Formal: Should assistance be required, please do not hesitate to contact us.", "bn": "ইনফরমাল: তোমার সাহায্য লাগলে শুধু বলবে। / ফরমাল: যদি সহায়তার প্রয়োজন হয়, তবে দয়া করে যোগাযোগ করতে দ্বিধা করবেন না।" },
+        { "en": "Informal: I will show you how to do it. / Formal: A demonstration will be provided.", "bn": "ইনফরমাল: আমি তোমাকে দেখাব কীভাবে এটি করতে হয়। / ফরমাল: একটি প্রদর্শনী প্রদান করা হবে।" },
+        { "en": "Informal: What do you think about this? / Formal: What is your perspective on this matter?", "bn": "ইনফরমাল: এই ব্যাপারে তোমার কী মনে হয়? / ফরমাল: এই বিষয়ে আপনার দৃষ্টিভঙ্গি কী?" },
+        { "en": "Informal: We don't accept this kind of behavior. / Formal: Such behavior is deemed unacceptable.", "bn": "ইনফরমাল: আমরা এই ধরনের আচরণ মেনে নিই না। / ফরমাল: এই ধরনের আচরণ গ্রহণযোগ্য নয় বলে গণ্য করা হয়।" },
+        { "en": "Informal: You must remember this rule. / Formal: It is essential to keep this rule in mind.", "bn": "ইনফরমাল: তোমার এই নিয়মটি অবশ্যই মনে রাখতে হবে। / ফরমাল: এই নিয়মটি মনে রাখা অত্যন্ত জরুরি।" }
+      ],
+      "tips": "সহজ ট্রিক: আপনার রচনা থেকে 'I', 'me', 'my', 'you', 'your' শব্দগুলো কেটে দিয়ে বাক্যগুলো পুনরায় সাজান। দেখবেন আপনার লেখার মান মুহূর্তের মধ্যে অত্যন্ত প্রফেশনাল ও অ্যাকাডেমিক হয়ে উঠেছে।"
+    },
+    {
+      "name": "Avoidance of Contractions, Reductions, and Slang (কন্ট্রাকশন, অনানুষ্ঠানিক সংকোচন ও স্ল্যাং বর্জন)",
+      "banglaName": "কন্ট্রাকশন, অনানুষ্ঠানিক সংকোচন ও স্ল্যাং বর্জন",
+      "definition": "Informal English is full of contractions (can't, don't, won't), reductions (gonna, wanna, gotta), and slang/idioms (cool, awesome, hit the sack). Formal English strictly forbids all contractions, demands full grammatical spelling, and uses precise, literal language instead of figurative slang.",
+      "banglaDefinition": "অনানুষ্ঠানিক ইংরেজি কন্ট্রাকশন বা সংকুচিত রূপ (যেমন: don't, can't), অনানুষ্ঠানিক উচ্চারণ সংকোচন (যেমন: gonna, wanna) এবং কথ্য ভাষা বা স্ল্যাং (যেমন: cool, awesome) দিয়ে পূর্ণ থাকে। ফরমাল ইংরেজিতে সমস্ত ধরনের কন্ট্রাকশন কঠোরভাবে নিষিদ্ধ, এতে প্রতিটি শব্দের পূর্ণ রূপ লিখতে হয় এবং রূপক বা কথ্য স্ল্যাংয়ের পরিবর্তে সুনির্দিষ্ট ও আক্ষরিক ভাষা ব্যবহার করা হয়।",
+      "formula": "Informal: Contractions / Reductions / Slang\nFormal: Full Words / Standard Literary Language",
+      "rules": [
+        "ফরমাল রাইটিংয়ে কখনো 'don't', 'it's', 'won't' লিখবেন না; সর্বদা 'do not', 'it is', 'will not' লিখুন।",
+        "কথ্য সংকোচন যেমন 'gonna', 'wanna', 'gotta' ইত্যাদি কেবল অনানুষ্ঠানিক চ্যাটিং বা ডায়ালগে সীমাবদ্ধ রাখুন; ফরমাল বা একাডেমিক লেখায় এগুলো সম্পূর্ণ নিষিদ্ধ।",
+        "কোনো ভাব বা প্রশংসা প্রকাশে 'cool', 'awesome', 'bad' ইত্যাদি স্ল্যাং ব্যবহার না করে 'excellent', 'remarkable', 'unsatisfactory' ব্যবহার করুন।"
+      ],
+      "examples": [
+        { "en": "Informal: It's not gonna work. / Formal: It is not going to work.", "bn": "ইনফরমাল: এটা কাজ করবে না। / ফরমাল: এটি সফল হতে যাচ্ছে না।" },
+        { "en": "Informal: They won't accept the deal. / Formal: They will not accept the agreement.", "bn": "ইনফরমাল: তারা চুক্তিটি মানবে না। / ফরমাল: তারা চুক্তিটি গ্রহণ করবে না।" },
+        { "en": "Informal: The movie was awesome. / Formal: The film was outstanding.", "bn": "ইনফরমাল: সিনেমাটি দারুণ ছিল। / ফরমাল: চলচ্চিত্রটি অসাধারণ ছিল।" },
+        { "en": "Informal: I wanna go home. / Formal: I would like to return home.", "bn": "ইনফরমাল: আমি বাড়ি যেতে চাই। / ফরমাল: আমি বাড়ি ফিরতে ইচ্ছুক।" },
+        { "en": "Informal: He's got a lot of cash. / Formal: He possesses a significant amount of wealth.", "bn": "ইনফরমাল: তার কাছে প্রচুর ক্যাশ টাকা আছে। / ফরমাল: সে উল্লেখযোগ্য পরিমাণ সম্পদের অধিকারী।" },
+        { "en": "Informal: You don't have to pay. / Formal: Payment is not required.", "bn": "ইনফরমাল: তোমাকে টাকা দিতে হবে না। / ফরমাল: অর্থপ্রদানের প্রয়োজন নেই।" },
+        { "en": "Informal: She can't write properly. / Formal: She is unable to write proficiently.", "bn": "ইনফরমাল: সে ঠিকমতো লিখতে পারে না। / ফরমাল: সে দক্ষভাবে লিখতে অসমর্থ।" },
+        { "en": "Informal: That's a cool idea. / Formal: That is an innovative concept.", "bn": "ইনফরমাল: এটা একটা দারুণ আইডিয়া। / ফরমাল: সেটি একটি অভিনব ধারণা।" },
+        { "en": "Informal: We've done it. / Formal: We have accomplished the task.", "bn": "ইনফরমাল: আমরা এটা করে ফেলেছি। / ফরমাল: আমরা কাজটি সম্পন্ন করেছি।" },
+        { "en": "Informal: I gotta leave now. / Formal: It is necessary for me to depart immediately.", "bn": "ইনফরমাল: আমাকে এখন বের হতে হবে। / ফরমাল: আমার অবিলম্বে প্রস্থান করা প্রয়োজন।" }
+      ],
+      "tips": "ফরমাল রাইটিং (যেমন: IELTS Writing Task 1 & 2)-এ যদি আপনি একটি মাত্র কন্ট্রাকশনও (যেমন: don't) ব্যবহার করেন, তবে আপনার গ্রামাটিক্যাল স্কোর কমে যেতে পারে। তাই পরীক্ষার খাতায় সর্বদা পূর্ণ রূপটি লিখুন।"
+    },
+    {
+      "name": "Transition Words & Discourse Markers (লিঙ্কিং বা ট্রানজিশন শব্দের সঠিক ব্যবহার)",
+      "banglaName": "Transition Words ও Discourse Markers",
+      "definition": "To connect ideas, informal English uses short, conversational transition words (like but, so, also, like, anyway). Formal English uses sophisticated, multi-syllabic discourse markers (such as however, therefore, furthermore, in addition, consequently) to establish logical relationships between sentences.",
+      "banglaDefinition": "ধারণা বা বাক্যের মধ্যে সংযোগ স্থাপনের জন্য অনানুষ্ঠানিক ইংরেজিতে ছোট এবং কথোপকথনমূলক লিঙ্কিং শব্দ ব্যবহার করা হয় (যেমন: but, so, also, like)। ফরমাল ইংরেজিতে বাক্যগুলোর মধ্যে সুনির্দিষ্ট ও যৌক্তিক সম্পর্ক স্থাপনের জন্য অত্যন্ত মার্জিত ও গম্ভীর ট্রানজিশন শব্দ বা ডিসকোর্স মার্কার (যেমন: however, therefore, furthermore, consequently) ব্যবহৃত হয়।",
+      "formula": "Informal transition: but / so / also / anyway\nFormal transition: however / therefore / furthermore / nevertheless",
+      "rules": [
+        "বাক্যের শুরুতে 'But', 'So', 'And' বা 'Also' ব্যবহার করা ইনফরমাল। এর পরিবর্তে যথাক্রমে 'However', 'Therefore', 'In addition' লিখুন।",
+        "উদাহরণ দেওয়ার ক্ষেত্রে ইনফরমাল 'like' বা 'kids like...' পরিহার করে ফরমাল 'such as' বা 'for instance' ব্যবহার করুন।",
+        "ফরমাল ট্রানজিশনাল অ্যাডভার্বগুলোর পর সাধারণত একটি কমা (comma) বসে: 'Therefore, the study was...'"
+      ],
+      "examples": [
+        { "en": "Informal: But we didn't give up. / Formal: However, we did not abandon our efforts.", "bn": "ইনফরমাল: কিন্তু আমরা হাল ছাড়িনি। / ফরমাল: তা সত্ত্বেও, আমরা আমাদের প্রচেষ্টা বন্ধ করিনি।" },
+        { "en": "Informal: So they lost the match. / Formal: Consequently, they lost the match.", "bn": "ইনফরমাল: তাই তারা ম্যাচটি হেরে গেল। / ফরমাল: ফলস্বরূপ, তারা ম্যাচটিতে পরাজিত হয়েছিল।" },
+        { "en": "Informal: Also, we need more money. / Formal: Furthermore, additional funding is required.", "bn": "ইনফরমাল: আমাদের আরও টাকাও লাগবে। / ফরমাল: তদুপরি, অতিরিক্ত তহবিলের প্রয়োজন রয়েছে।" },
+        { "en": "Informal: I like fruits like apples and oranges. / Formal: I prefer fruits such as apples and oranges.", "bn": "ইনফরমাল: আমি আপেল ও কমলার মতো ফল পছন্দ করি। / ফরমাল: আমি আপেল এবং কমলার মতো ফলগুলো বেশি পছন্দ করি।" },
+        { "en": "Informal: Anyway, let's talk about the main topic. / Formal: In any case, let us focus on the primary subject.", "bn": "ইনফরমাল: যা-ই হোক, মূল টপিকে আসা যাক। / ফরমাল: যা-ই হোক না কেন, আসুন আমরা প্রধান বিষয়ের ওপর ফোকাস করি।" },
+        { "en": "Informal: He was sick so he didn't come. / Formal: He was ill; therefore, he did not attend.", "bn": "ইনফরমাল: সে অসুস্থ ছিল তাই আসেনি। / ফরমাল: তিনি অসুস্থ ছিলেন; অতএব, তিনি উপস্থিত হননি।" },
+        { "en": "Informal: Also, he is a writer. / Formal: In addition, he is an author.", "bn": "ইনফরমাল: এছাড়াও, সে একজন লেখক। / ফরমাল: অধিকন্তু, তিনি একজন লেখক।" },
+        { "en": "Informal: It was raining but we went out. / Formal: Despite the rain, we proceeded with our journey.", "bn": "ইনফরমাল: বৃষ্টি হচ্ছিল কিন্তু আমরা বাইরে গিয়েছিলাম। / ফরমাল: বৃষ্টি হওয়া সত্ত্বেও, আমরা আমাদের যাত্রা অব্যাহত রেখেছিলাম।" },
+        { "en": "Informal: You can use tools like calculators. / Formal: One may utilize devices such as calculators.", "bn": "ইনফরমাল: তুমি ক্যালকুলেটরের মতো জিনিস ব্যবহার করতে পারো। / ফরমাল: কেউ ক্যালকুলেটরের মতো ডিভাইসগুলো ব্যবহার করতে পারেন।" },
+        { "en": "Informal: I want to leave now because I am tired. / Formal: I wish to depart due to fatigue.", "bn": "ইনফরমাল: আমি এখন চলে যেতে চাই কারণ আমি ক্লান্ত। / ফরমাল: ক্লান্তির কারণে আমি প্রস্থান করার ইচ্ছা পোষণ করছি।" }
+      ],
+      "tips": "লিখিত পরীক্ষায় বাক্যের শুরুতে 'And' বা 'But' লেখার অভ্যাস আজই পরিহার করুন। এগুলো ইনফরমাল ইংরেজিতে বাক্য শুরু করতে ব্যবহার হলেও ফরমাল রাইটিংয়ে এগুলোকে ব্যাকরণগতভাবে দুর্বল বলে মনে করা হয়।"
+    },
+    {
+      "name": "Academic Hedging vs. Direct Assertions (অ্যাকাডেমিক হেজিং বনাম সরাসরি বক্তব্য)",
+      "banglaName": "Academic Hedging বনাম সরাসরি বক্তব্য",
+      "definition": "Informal English is often direct, making absolute or general claims (e.g., 'This is because...'). Formal English, especially academic writing, uses 'hedging' (softening language) to express caution, probability, and humility. This is achieved using modal verbs (may, might), tentative verbs (appear, seem, suggest), and cautious adverbs (possibly, perhaps).",
+      "banglaDefinition": "অনানুষ্ঠানিক ইংরেজি প্রায়শই খুব সরাসরি এবং দ্ব্যর্থহীন দাবি বা সাধারণীকরণ করে থাকে (যেমন: 'এটি এই কারণে হয়েছে...)। ফরমাল ইংরেজি, বিশেষ করে অ্যাকাডেমিক রাইটিং, যেকোনো তথ্যের ক্ষেত্রে সতর্কতা, সম্ভাবনা এবং বিনয় প্রকাশ করতে 'হেজিং' (নরম বা সতর্ক ভাষা) ব্যবহার করে। এটি মোডাল ভার্ব (may, might), সূচক ভার্ব (appear, suggest) এবং সতর্কতামূলক ক্রিয়াবিশেষণ (possibly, perhaps) ব্যবহার করে অর্জন করা হয়।",
+      "formula": "Informal Assertion: Subject + is/will be + absolutely true\nFormal Hedging: Subject + may be / appears to be / suggests that ...",
+      "rules": [
+        "কোনো বিষয়ে শতভাগ বৈজ্ঞানিক বা অকাট্য প্রমাণ না থাকলে সরাসরি 'will' বা 'is' না লিখে 'may' বা 'could' ব্যবহার করুন।",
+        "Absolute claims ('Every student fails if...') পরিহার করে 'It is possible that some students...' লিখুন।",
+        "'This proves that...' এর পরিবর্তে 'This suggests that...' বা 'The evidence indicates that...' ব্যবহার করুন।"
+      ],
+      "examples": [
+        { "en": "Informal: Playing video games makes children violent. / Formal: Playing video games may contribute to aggressive behavior in children.", "bn": "ইনফরমাল: ভিডিও গেম খেললে বাচ্চারা হিংস্র হয়ে যায়। / ফরমাল: ভিডিও গেম খেলা শিশুদের আক্রমণাত্মক আচরণের ক্ষেত্রে অবদান রাখতে পারে।" },
+        { "en": "Informal: This is the only solution. / Formal: This appears to be the most viable solution.", "bn": "ইনফরমাল: এটিই একমাত্র সমাধান। / ফরমাল: এটি সবচেয়ে কার্যকর সমাধান বলে মনে হচ্ছে।" },
+        { "en": "Informal: Heavy rain will cause floods. / Formal: Heavy rain is likely to result in flooding.", "bn": "ইনফরমাল: ভারী বৃষ্টিতে বন্যা হবেই। / ফরমাল: ভারী বৃষ্টির ফলে বন্যা হওয়ার সম্ভাবনা রয়েছে।" },
+        { "en": "Informal: The experiment proved that he was wrong. / Formal: The experiment suggests that his hypothesis was incorrect.", "bn": "ইনফরমাল: পরীক্ষাটি প্রমাণ করেছে যে সে ভুল ছিল। / ফরমাল: পরীক্ষাটি নির্দেশ করে যে তার অনুমানটি ভুল ছিল।" },
+        { "en": "Informal: People are lazy nowadays. / Formal: It can be argued that some individuals show a tendency toward inactivity in modern times.", "bn": "ইনফরমাল: আজকাল মানুষ অলস হয়ে গেছে। / ফরমাল: এটি যুক্তি দেওয়া যেতে পারে যে আধুনিক যুগে কিছু ব্যক্তির মধ্যে নিষ্ক্রিয়তার প্রবণতা দেখা যায়।" },
+        { "en": "Informal: This drug cures cancer. / Formal: This drug has been shown to potentially inhibit cancer growth in some trials.", "bn": "ইনফরমাল: এই ওষুধটি ক্যান্সার নিরাময় করে। / ফরমাল: কিছু ট্রায়ালে এই ওষুধটি সম্ভাব্যভাবে ক্যান্সারের বৃদ্ধি প্রতিরোধ করতে সক্ষম বলে প্রমাণিত হয়েছে।" },
+        { "en": "Informal: Technology is bad for relationships. / Formal: Excessive technology use may negatively impact interpersonal relationships.", "bn": "ইনফরমাল: প্রযুক্তি সম্পর্কের জন্য খারাপ। / ফরমাল: প্রযুক্তির অতিরিক্ত ব্যবহার পারস্পরিক সম্পর্কের ওপর নেতিবাচক প্রভাব ফেলতে পারে।" },
+        { "en": "Informal: She is wrong about this. / Formal: Her perspective on this matter seems to be incomplete.", "bn": "ইনফরমাল: সে এই ব্যাপারে ভুল বলছে। / ফরমাল: এই বিষয়ে তার দৃষ্টিভঙ্গিটি কিছুটা অসম্পূর্ণ বলে মনে হচ্ছে।" },
+        { "en": "Informal: Everybody wants to be rich. / Formal: A significant majority of individuals express a desire for financial security.", "bn": "ইনফরমাল: সবাই ধনী হতে চায়। / ফরমাল: উল্লেখযোগ্য সংখ্যক ব্যক্তি আর্থিক নিরাপত্তার ইচ্ছা প্রকাশ করে থাকেন।" },
+        { "en": "Informal: This will definitely happen. / Formal: There is a strong possibility that this will occur.", "bn": "ইনফরমাল: এটি অবশ্যই ঘটবে। / ফরমাল: এটি ঘটার একটি জোরালো সম্ভাবনা রয়েছে।" }
+      ],
+      "tips": "হেজিং (Hedging) হলো অ্যাকাডেমিক রাইটিংয়ের প্রাণ। এটি আপনার লেখাকে অনেক বেশি যৌক্তিক ও বিশ্বাসযোগ্য করে তোলে। আপনি যখন কোনো বিষয়ে অতি-নিশ্চয়তা (over-certainty) প্রকাশ করা বন্ধ করবেন, তখন আপনার লেখার বৈজ্ঞানিক গ্রহণযোগ্যতা বাড়বে।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I am writing this essay because I want to look into the effects of global warming.",
+      "correct": "This essay aims to investigate the effects of global warming.",
+      "explanation": "অ্যাকাডেমিক রচনায় 'I want to' (ব্যক্তিগত ইচ্ছা) এবং 'look into' (ফ্রেজাল ভার্ব) ব্যবহার করা ইনফরমাল। এর পরিবর্তে বস্তুনিষ্ঠ ইমপারসোনাল বাক্য এবং ফরমাল ভার্ব 'investigate' ব্যবহার করা উচিত।"
+    },
+    {
+      "wrong": "We don't think that the government will accept the proposal.",
+      "correct": "It is unlikely that the government will accept the proposal.",
+      "explanation": "'We don't' কন্ট্রাকশন এবং ব্যক্তিগত প্রোনাউন দিয়ে শুরু হওয়া বাক্য ইনফরমাল। ফরমাল করতে কন্ট্রাকশন বাদ দিয়ে 'It is unlikely...' কাঠামো ব্যবহার করা সঠিক।"
+    },
+    {
+      "wrong": "You can buy tickets online but you must pay immediately.",
+      "correct": "Tickets may be purchased online; however, immediate payment is required.",
+      "explanation": "পাঠককে সরাসরি 'You' বলে সম্বোধন করা, 'but' দিয়ে বাক্য যুক্ত করা এবং 'buy' ভার্ব ব্যবহার করা ইনফরমাল। ফরমাল রূপান্তর করতে প্যাসিভ ভয়েস, 'purchase' ভার্ব এবং 'however' ট্রানজিশন ব্যবহার করুন।"
+    },
+    {
+      "wrong": "The results of the test were totally awesome.",
+      "correct": "The results of the test were highly satisfactory.",
+      "explanation": "'Totally awesome' একটি কথ্য স্ল্যাং যা বন্ধুদের সাথে আড্ডায় চলে, কিন্তু অ্যাকাডেমিক বা অফিশিয়াল রিপোর্টে এর পরিবর্তে 'highly satisfactory' বা 'outstanding' লিখতে হবে।"
+    },
+    {
+      "wrong": "The company setup a new office in Dhaka.",
+      "correct": "The company established a new office in Dhaka.",
+      "explanation": "'Setup' একটি Phrasal Verb। ফরমাল রাইটিংয়ে Phrasal Verb-এর চেয়ে ল্যাটিন বা গ্রিক মূলের একক শব্দের ক্রিয়াপদ (যেমন: establish, construct) ব্যবহার করা বেশি সঠিক।"
+    },
+    {
+      "wrong": "I got your letter yesterday. Thanks for the info.",
+      "correct": "I received your letter yesterday. Thank you for the information.",
+      "explanation": "ব্যবসায়িক বা অফিশিয়াল ইমেইলে 'got' এর পরিবর্তে 'received', 'Thanks' এর পরিবর্তে 'Thank you' এবং 'info' এর মতো কোনো সংক্ষিপ্ত শব্দ ব্যবহার না করে পূর্ণ শব্দ 'information' লিখতে হবে।"
+    },
+    {
+      "wrong": "This proves that every student is lazy.",
+      "correct": "This suggests that some students may exhibit a tendency toward inactivity.",
+      "explanation": "কোনো প্রমাণ ছাড়াই সরাসরি 'proves' এবং সবাইকে এক কাতারে ফেলে 'every student is lazy' বলা একটি দুর্বল সরাসরি দাবি। অ্যাকাডেমিক রাইটিংয়ে 'suggests' এবং 'may' ব্যবহার করে বাক্যটিকে সতর্ক ও বিনয়ী (Hedged) করতে হবে।"
+    },
+    {
+      "wrong": "Actually, we tried to solve the issue ASAP.",
+      "correct": "In fact, efforts were made to resolve the issue as soon as possible.",
+      "explanation": "'Actually' একটি কথ্য রূপ এবং 'ASAP' একটি অনানুষ্ঠানিক সংক্ষিপ্ত রূপ (abbreviation)। ফরমাল বাক্যে এগুলোর পরিবর্তে যথাক্রমে 'In fact' বা 'Indeed' এবং পূর্ণ রূপ 'as soon as possible' লিখতে হবে।"
+    }
+  ]
 }
