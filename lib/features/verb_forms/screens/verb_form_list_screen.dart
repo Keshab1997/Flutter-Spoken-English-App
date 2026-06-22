@@ -82,6 +82,27 @@ class _VerbFormListScreenState extends State<VerbFormListScreen> {
               ),
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: const BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  _HeaderChip(label: 'V1', color: AppColors.primary),
+                  const SizedBox(width: 4),
+                  _HeaderChip(label: 'V2', color: AppColors.secondary),
+                  const SizedBox(width: 4),
+                  _HeaderChip(label: 'V3', color: AppColors.warning),
+                  const SizedBox(width: 4),
+                  _HeaderChip(label: 'V4', color: AppColors.info),
+                  const SizedBox(width: 4),
+                  _HeaderChip(label: 'V5', color: AppColors.pinkGradient[0]),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
           Expanded(
             child: ListView.builder(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -139,15 +160,15 @@ class _VerbFormListScreenState extends State<VerbFormListScreen> {
               physics: const BouncingScrollPhysics(),
               child: Row(
                 children: [
-                  _FormChip(label: 'V1', value: v.v1, color: AppColors.primary),
+                  _ValueChip(value: v.v1, color: AppColors.primary),
                   const SizedBox(width: 4),
-                  _FormChip(label: 'V2', value: v.v2, color: AppColors.secondary),
+                  _ValueChip(value: v.v2, color: AppColors.secondary),
                   const SizedBox(width: 4),
-                  _FormChip(label: 'V3', value: v.v3, color: AppColors.warning),
+                  _ValueChip(value: v.v3, color: AppColors.warning),
                   const SizedBox(width: 4),
-                  _FormChip(label: 'V4', value: v.v4, color: AppColors.info),
+                  _ValueChip(value: v.v4, color: AppColors.info),
                   const SizedBox(width: 4),
-                  _FormChip(label: 'V5', value: v.v5, color: AppColors.pinkGradient[0]),
+                  _ValueChip(value: v.v5, color: AppColors.pinkGradient[0]),
                 ],
               ),
             ),
@@ -158,12 +179,31 @@ class _VerbFormListScreenState extends State<VerbFormListScreen> {
   }
 }
 
-class _FormChip extends StatelessWidget {
+class _HeaderChip extends StatelessWidget {
   final String label;
+  final Color color;
+
+  const _HeaderChip({required this.label, required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 12),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.15),
+        borderRadius: BorderRadius.circular(8),
+      ),
+      child: Text(label,
+          style: TextStyle(color: color, fontWeight: FontWeight.w800, fontSize: 11)),
+    );
+  }
+}
+
+class _ValueChip extends StatelessWidget {
   final String value;
   final Color color;
 
-  const _FormChip({required this.label, required this.value, required this.color});
+  const _ValueChip({required this.value, required this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -174,16 +214,8 @@ class _FormChip extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: color.withOpacity(0.2)),
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(label,
-              style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 10)),
-          const SizedBox(width: 4),
-          Text(value,
-              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12, color: color)),
-        ],
-      ),
+      child: Text(value,
+          style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12, color: color)),
     );
   }
 }

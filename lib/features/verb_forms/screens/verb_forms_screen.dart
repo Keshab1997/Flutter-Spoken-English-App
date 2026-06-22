@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../models/verb_form_model.dart';
 import 'verb_form_list_screen.dart';
+import 'verb_forms_guide_screen.dart';
 
 class VerbFormsScreen extends StatefulWidget {
   const VerbFormsScreen({super.key});
@@ -57,7 +58,9 @@ class _VerbFormsScreenState extends State<VerbFormsScreen> {
                     const SizedBox(height: 4),
                     Text('${_categories!.length} categories — ${_categories!.fold(0, (s, c) => s + c.verbs.length)} verbs',
                         style: theme.textTheme.bodyMedium?.copyWith(color: Colors.grey)),
-                    const SizedBox(height: 20),
+                    const SizedBox(height: 16),
+                    _buildGuideCard(context),
+                    const SizedBox(height: 16),
                     ..._categories!.map((cat) => Padding(
                           padding: const EdgeInsets.only(bottom: 14),
                           child: _buildCategoryCard(context, cat),
@@ -67,6 +70,58 @@ class _VerbFormsScreenState extends State<VerbFormsScreen> {
                 ),
               ),
             ),
+    );
+  }
+
+  Widget _buildGuideCard(BuildContext context) {
+    return GestureDetector(
+      onTap: () => Navigator.push(context,
+          MaterialPageRoute(builder: (_) => const VerbFormsGuideScreen())),
+      child: Container(
+        width: double.infinity,
+        padding: const EdgeInsets.all(18),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              AppColors.primary.withOpacity(0.15),
+              AppColors.secondary.withOpacity(0.1),
+            ],
+          ),
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: AppColors.primary.withOpacity(0.15)),
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withOpacity(0.15),
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: const Icon(Icons.school_rounded,
+                  color: AppColors.primary, size: 30),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text('Verb Forms Guide',
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17,
+                          color: AppColors.primary)),
+                  const SizedBox(height: 2),
+                  Text('V1-V5 rules, examples & tips in Bengali',
+                      style: TextStyle(color: Colors.grey.shade500, fontSize: 13)),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right_rounded,
+                color: AppColors.primary, size: 22),
+          ],
+        ),
+      ),
     );
   }
 
