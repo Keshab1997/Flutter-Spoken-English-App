@@ -1,10 +1,149 @@
 {
   "chapter": 70,
   "level": "Advanced",
-  "title": "Advanced Writing Structures",
+  "title": "Advanced Writing Structures (উন্নত লেখনী কাঠামো ও শৈলী)",
   "icon": "article",
-  "description": "",
-  "banglaDescription": "",
-  "topics": [],
-  "commonMistakes": []
+  "description": "Advanced Writing Structures comprise sophisticated syntactic configurations that elevate written English, transforming simple assertions into complex, nuanced, and stylistically mature expressions. Mastering structures like cleft sentences, absolute constructions, participial reductions, parallelisms, and appositive insertions is crucial for academic writing, professional journalism, and creative literature.",
+  "banglaDescription": "অ্যাডভান্সড রাইটিং স্ট্রাকচারস বা উন্নত লেখনী কাঠামো মূলত এমন কিছু জটিল এবং শৈল্পিক বাক্যবিন্যাস নিয়ে গঠিত যা সাধারণ বক্তব্যকে আরও গভীর, বৈচিত্র্যময় ও মার্জিত করে তোলে। ক্লিফট সেন্টেন্স (Cleft Sentences), অ্যাবসলিউট কনস্ট্রাকশন (Absolute Constructions), পার্টিসিপল ক্লজের মাধ্যমে বাক্য সংকোচন, সমান্তরাল বাক্য কাঠামো এবং অ্যাপোজিটিভের ব্যবহার আয়ত্ত করা উচ্চমানের অ্যাকাডেমিক লেখা, পেশাদার সাংবাদিকতা এবং সৃজনশীল সাহিত্য রচনার জন্য অত্যন্ত আবশ্যক।",
+  "topics": [
+    {
+      "name": "Cleft Sentences (It-Cleft and Wh-Cleft for Rhetorical Focus)",
+      "banglaName": "ক্লিফট সেন্টেন্স (It-Cleft এবং Wh-Cleft বাক্যবিন্যাস)",
+      "definition": "A cleft sentence is a complex sentence in which a simple sentence is split into two clauses to emphasize a particular part of the information. The most common types are 'It-clefts' (starting with 'It is/was') and 'Wh-clefts' or pseudo-clefts (starting with 'What' or 'All').",
+      "banglaDefinition": "ক্লিফট সেন্টেন্স (Cleft Sentence) হলো এমন এক ধরনের জটিল বাক্য যেখানে একটি সাধারণ বাক্যকে ভেঙে দুটি ক্লজে রূপান্তর করা হয় যাতে বাক্যের কোনো একটি নির্দিষ্ট তথ্যের (যেমন: সাবজেক্ট, অবজেক্ট বা সময়) ওপর অতিরিক্ত জোর দেওয়া যায়। এর প্রধান দুটি প্রকার হলো 'It-cleft' (যা 'It is/was' দিয়ে শুরু হয়) এবং 'Wh-cleft' বা ছদ্ম-ক্লিফট (যা 'What' বা 'All' দিয়ে শুরু হয়)।",
+      "formula": "It-Cleft: It + is/was + Emphasized Element + that/who/whom + Remaining Clause\nWh-Cleft: What/All + Clause + is/was + Emphasized Element",
+      "rules": [
+        "It-cleft-এ যে অংশটির ওপর জোর দেওয়া হচ্ছে তা 'It is/was'-এর ঠিক পরেই বসে এবং বাকি অংশটি 'that' বা 'who' ক্লজ দ্বারা যুক্ত হয়।",
+        "It-cleft-এ মানুষের ক্ষেত্রে 'who' বা 'that' এবং বস্তু বা বিষয়ের ক্ষেত্রে 'that' বা 'which' ব্যবহৃত হয়।",
+        "Wh-cleft-এ সাধারণত 'What' ক্লজ দিয়ে বাক্য শুরু হয়, এরপর ক্রিয়াপদ (সাধারণত 'be' ভার্ব) বসে এবং যে বিষয়টির ওপর জোর দেওয়া হচ্ছে তা বাক্যের শেষে বসে।",
+        "ইনফিনিটিভ ব্যবহারের ক্ষেত্রে Wh-cleft-এ 'to' বাদ দিয়ে সরাসরি Bare Infinitive বসানো যায় (যেমন: 'What he did was resign')."
+      ],
+      "examples": [
+        { "en": "It was John who solved the complex mathematical puzzle, not Sarah.", "bn": "জনই সেই ব্যক্তি যে জটিল গাণিতিক ধাঁধাটি সমাধান করেছিল, সারাহ নয়। (John-এর ওপর জোর দেওয়া হয়েছে)" },
+        { "en": "It is in this historic library that we found the rare manuscript.", "bn": "এই ঐতিহাসিক লাইব্রেরিতেই আমরা বিরল পান্ডুলিপিটি খুঁজে পেয়েছিলাম। (স্থানের ওপর জোর দেওয়া হয়েছে)" },
+        { "en": "What we desperately need is a practical solution to this global crisis.", "bn": "এই বৈশ্বিক সংকটের জন্য আমাদের যা সবচেয়ে বেশি প্রয়োজন, তা হলো একটি বাস্তবমুখী সমাধান। (Wh-Cleft)" },
+        { "en": "All she wants to do is complete her PhD thesis as soon as possible.", "bn": "সে কেবল যত দ্রুত সম্ভব তার পিএইচডি থিসিসটি সম্পন্ন করতে চায়। (All-Cleft)" },
+        { "en": "What the manager did was explain the entire marketing strategy again.", "bn": "ম্যানেজার যা করেছিলেন তা হলো সম্পূর্ণ বিপণন কৌশলটি পুনরায় ব্যাখ্যা করা।" },
+        { "en": "It was only yesterday that the government announced the tax reduction.", "bn": "সরকার কেবল গতকালই কর হ্রাসের ঘোষণা দিয়েছিল। (সময়ের ওপর জোর দেওয়া হয়েছে)" }
+      ],
+      "tips": "মনে রাখবেন: অ্যাকাডেমিক রাইটিংয়ে নিজের কোনো প্রধান যুক্তি বা গবেষণার ফলাফলের ওপর জোর দিতে 'It-cleft' ব্যবহার করলে লেখার মান সাধারণ বাক্যের চেয়ে অনেক প্রফেশনাল শোনায়।"
+    },
+    {
+      "name": "Nominal Absolute Clauses (অ্যাবসলিউট ক্লজ বা স্বাধীন বাক্যাংশ)",
+      "banglaName": "নমিনাল অ্যাবসলিউট ক্লজ",
+      "definition": "An absolute clause (or nominal absolute) is a grammatically independent group of words that modifies a whole sentence. It contains a noun or pronoun as its subject and a participle (present, past, or perfect) as its predicate, but lacks a finite verb. It is used to indicate time, cause, or circumstances without conjunctions.",
+      "banglaDefinition": "অ্যাবসলিউট ক্লজ (Absolute Clause) হলো ব্যাকরণগতভাবে স্বাধীন একদল শব্দগুচ্ছ যা সম্পূর্ণ বাক্যটিকে মডিফাই বা বিশেষায়িত করে। এতে একটি নিজস্ব নাউন বা প্রোনাউন (যা সাবজেক্ট হিসেবে কাজ করে) এবং একটি পার্টিসিপল (যা প্রেডিকেট হিসেবে কাজ করে) থাকে, কিন্তু কোনো ফাইনাইট বা সমাপিকা ক্রিয়া থাকে না। কোনো কনজাংশন ছাড়াই কারণ, সময় বা পারিপার্শ্বিক পরিস্থিতি নির্দেশ করতে এটি ব্যবহৃত হয়।",
+      "formula": "Noun/Pronoun + Participle (V-ing / V3 / Having V3) + [Modifiers], Main Clause",
+      "rules": [
+        "অ্যাবসলিউট ক্লজের নিজস্ব সাবজেক্ট বা কর্তা থাকে, যা মূল ক্লজের সাবজেক্ট থেকে সম্পূর্ণ ভিন্ন হতে হবে।",
+        "এই বাক্যাংশে কোনো সমাপিকা ক্রিয়া (Finite Verb) থাকতে পারবে না, কেবল পার্টিসিপল (V-ing, V3, বা Having V3) বসবে।",
+        "মূল বাক্য থেকে কমা (,) দিয়ে অ্যাবসলিউট ক্লজটিকে আলাদা করতে হবে।",
+        "এটি সাধারণত 'As', 'Since' বা 'Because' যুক্ত বাক্যকে সংকুচিত করার একটি অত্যন্ত উন্নত রূপ।"
+      ],
+      "examples": [
+        { "en": "The weather being extremely harsh, the climbers decided to halt the expedition.", "bn": "আবহাওয়া অত্যন্ত প্রতিকূল হওয়ায়, আরোহীরা অভিযান স্থগিত করার সিদ্ধান্ত নিয়েছিলেন। (The weather = subject, being = participle)" },
+        { "en": "Their homework having been completed, the children went out to play in the park.", "bn": "তাদের বাড়ির কাজ শেষ হয়ে যাওয়ায়, বাচ্চারা পার্কে খেলতে গিয়েছিল। (Passive Perfect Participle)" },
+        { "en": "His hands trembling with nervousness, he slowly opened the confidential letter.", "bn": "উত্তেজনায় তার হাত কাঁপতে কাঁপতে, সে ধীরে ধীরে গোপন চিঠিটি খুলল।" },
+        { "en": "The sun having set, the travelers looked for a safe place to spend the night.", "bn": "সূর্য অস্ত যাওয়ায়, ভ্রমণকারীরা রাত কাটানোর জন্য একটি নিরাপদ জায়গা খুঁজছিল।" },
+        { "en": "All things considered, the project was a resounding success despite the obstacles.", "bn": "সবকিছু বিবেচনা করে, বাধা থাকা সত্ত্বেও প্রকল্পটি একটি দুর্দান্ত সাফল্য অর্জন করেছিল।" }
+      ],
+      "tips": "অ্যাবসলিউট ক্লজ হলো সাহিত্যের ভাষা। সাধারণ 'Since the weather was harsh...' না লিখে 'The weather being harsh...' লিখলে আপনার লেখাটি আরও বেশি মার্জিত এবং উচ্চমানের দেখাবে।"
+    },
+    {
+      "name": "Participle Clauses for Sentence Reduction (পার্টিসিপল ক্লজের মাধ্যমে বাক্য সংকোচন)",
+      "banglaName": "পার্টিসিপল ক্লজের মাধ্যমে বাক্য সংকোচন",
+      "definition": "Participle clauses are non-finite clauses that use present participles (V-ing), past participles (V3), or perfect participles (having + V3) to replace adverbial or relative clauses. This reduction condenses sentences, avoids repetition, and creates a smoother narrative flow.",
+      "banglaDefinition": "পার্টিসিপল ক্লজ হলো এমন এক ধরনের নন-ফাইনাইট ক্লজ যা প্রেজেন্ট পার্টিসিপল (V-ing), পাস্ট পার্টিসিপল (V3) অথবা পারফেক্ট পার্টিসিপল (having + V3) ব্যবহার করে অ্যাডভার্বিয়াল বা রিলেটিভ ক্লজকে সংকুচিত করে। এটি বাক্যের অনাবশ্যক পুনরাবৃত্তি কমায় এবং লেখার গতি ও প্রবাহকে আরও মসৃণ করে।",
+      "formula": "Simultaneous Action: Present Participle (V-ing) + Phrase, Main Clause\nSequential Action: Perfect Participle (Having + V3) + Phrase, Main Clause\nPassive Cause/State: Past Participle (V3) + Phrase, Main Clause",
+      "rules": [
+        "পার্টিসিপল ক্লজ এবং মূল ক্লজ—উভয়েরই সাবজেক্ট বা কর্তা এক হতে হবে। অন্যথায় 'Dangling Participle' বা ঝুলন্ত পার্টিসিপলের ব্যাকরণগত ভুল হবে।",
+        "দুটি কাজ একই সময়ে ঘটলে প্রথম কাজটির জন্য Present Participle (V-ing) ব্যবহৃত হয়।",
+        "একটি কাজ সম্পূর্ণ শেষ হওয়ার পর আরেকটি কাজ শুরু হলে প্রথম কাজটির জন্য Perfect Participle (Having + V3) ব্যবহৃত হয়।",
+        "প্যাসিভ অনুভূতি বা কোনো কারণ নির্দেশ করতে সরাসরি Past Participle (V3) দিয়ে বাক্য শুরু করা হয়।"
+      ],
+      "examples": [
+        { "en": "Walking along the quiet shoreline, she suddenly spotted a rare dolphin.", "bn": "শান্ত সমুদ্রতীর ঘেঁষে হাঁটার সময়, সে হঠাৎ একটি বিরল ডলফিন দেখতে পেয়েছিল। (একই সময়ে ঘটা কাজ)" },
+        { "en": "Having analyzed the data thoroughly, the researcher drafted the final report.", "bn": "উপাত্তগুলো পুঙ্খানুপুঙ্খভাবে বিশ্লেষণ করার পর, গবেষক চূড়ান্ত প্রতিবেদনটির খসড়া তৈরি করেছিলেন। (sequential)" },
+        { "en": "Shocked by the unexpected news, he remained speechless for several minutes.", "bn": "অপ্রত্যাশিত সংবাদে স্তম্ভিত হয়ে, সে বেশ কয়েক মিনিট বাকরুদ্ধ হয়ে ছিল। (প্যাসিভ অনুভূতি)" },
+        { "en": "Not knowing the answer to the question, he decided to skip it.", "bn": "প্রশ্নটির উত্তর না জানায়, সে এটি এড়িয়ে যাওয়ার সিদ্ধান্ত নিয়েছিল। (Negative with Participle)" },
+        { "en": "Built in the seventeenth century, the castle is now a protected heritage site.", "bn": "সপ্তদশ শতাব্দীতে নির্মিত, দুর্গটি এখন একটি সংরক্ষিত ঐতিহ্যবাহী স্থান।" }
+      ],
+      "tips": "সতর্কতা: 'Having finished his dinner, the phone rang' বাক্যটি ভুল, কারণ ডিনার শেষ করেছে এক ব্যক্তি কিন্তু সাবজেক্ট হিসেবে আছে 'phone'। সঠিক রূপ: 'Having finished his dinner, he answered the phone.'"
+    },
+    {
+      "name": "Advanced Parallelism and Correlative Inversion (সমান্তরাল বাক্য কাঠামো ও ইনভারশন)",
+      "banglaName": "উন্নত প্যারালালিজম ও কো-রিলেটিভ ইনভারশন",
+      "definition": "Parallelism is the balance of two or more similar words, phrases, or clauses in a sentence by using the same grammatical structure. When advanced correlative conjunctions (e.g., Not only... but also) are placed at the beginning of clauses, subject-verb inversion must be applied to the first clause.",
+      "banglaDefinition": "প্যালালিজম বা সমান্তরাল কাঠামো হলো একটি বাক্যের সমগোত্রীয় একাধিক শব্দ, ফ্রেজ বা ক্লজকে একই ব্যাকরণগত রূপ প্রদানের মাধ্যমে বাক্যের ভারসাম্য রক্ষা করা। যখন উন্নত কো-রিলেটিভ কনজাংশন (যেমন: Not only... but also, Neither... nor) ক্লজের শুরুতে ব্যবহৃত হয়, তখন প্রথম ক্লজটিতে সাবজেক্ট-ভার্ব ইনভারশন (সাহায্যকারী ক্রিয়া আগে আসা) ঘটাতে হয়।",
+      "formula": "Parallel Form: Verb + [Gerund / Infinitive / Noun] + and/but + [Gerund / Infinitive / Noun]\nNot Only Inversion: Not only + Auxiliary + Subject + Verb + but (subject) + also + Verb",
+      "rules": [
+        "একটি সিরিজের অন্তর্গত সমস্ত উপাদানকে একই ব্যাকরণগত কাঠামোতে রাখতে হবে (যেমন: সবগুলোকে Gerund করতে হবে অথবা সবগুলোকে Infinitive করতে হবে)।",
+        "যদি 'Not only' দিয়ে বাক্য শুরু হয়, তবে প্রথম ক্লজে অবশ্যই Auxiliary Verb-কে সাবজেক্টের আগে আনতে হবে (ইনভারশন)।",
+        "উভয় ক্লজেই বিষয়ের ভারসাম্য থাকতে হবে যেন অর্থ স্পষ্ট ও জোরালো হয়।"
+      ],
+      "examples": [
+        { "en": "The manager is responsible for designing the layout, training the staff, and monitoring progress.", "bn": "ব্যবস্থাপক লেআউট ডিজাইন করা, স্টাফদের প্রশিক্ষণ দেওয়া এবং অগ্রগতি পর্যবেক্ষণ করার জন্য দায়ী। (সবগুলোই Gerund ফর্মে প্যারালাল)" },
+        { "en": "Not only did he win the prestigious award, but he also gained international recognition.", "bn": "সে কেবল মর্যাদাপূর্ণ পুরস্কারটিই জয় করেনি, বরং আন্তর্জাতিক স্বীকৃতিও লাভ করেছিল। (Inverted structure)" },
+        { "en": "The new policy aims both to reduce bureaucratic delays and to increase transparency.", "bn": "নতুন নীতিটির লক্ষ্য আমলাতান্ত্রিক বিলম্ব হ্রাস করা এবং স্বচ্ছতা বৃদ্ধি করা—উভয়ই। (Infinitive-এর প্যারালালিজম)" },
+        { "en": "Neither did they accept our proposal, nor did they offer any alternative solution.", "bn": "তারা আমাদের প্রস্তাবও গ্রহণ করেনি, আবার কোনো বিকল্প সমাধানও দেয়নি। (Double Inversion)" }
+      ],
+      "tips": "প্যারালালিজম ভাঙলে (যেমন: 'He likes swimming and to run') বাক্যটি শ্রুতিকটু দেখায়। সর্বদা সমগোত্রীয় ভার্ব ফর্ম ব্যবহার করে বাক্যের ভারসাম্য বজায় রাখুন।"
+    },
+    {
+      "name": "Parenthetical Appositives and Sentential Relative Clauses (অ্যাপোজিটিভ ও সেন্টেনশিয়াল রিলেটিভ ক্লজ)",
+      "banglaName": "অ্যাপোজিটিভ ও সেন্টেনশিয়াল রিলেটিভ ক্লজ",
+      "definition": "Appositives are nouns or noun phrases that rename, explain, or add details to another noun right next to it, often set off by commas or em-dashes. Sentential Relative Clauses use the relative pronoun 'which' to comment on the entire preceding clause or situation, rather than a single noun.",
+      "banglaDefinition": "অ্যাপোজিটিভ (Appositives) হলো এমন নাউন বা নাউন ফ্রেজ যা তার ঠিক পাশে বসা অন্য একটি নাউনকে পুনরায় সংজ্ঞায়িত বা ব্যাখ্যা করে; এগুলোকে সাধারণত কমা (,) বা এম-ড্যাশ (—) দিয়ে আলাদা করা হয়। সেন্টেনশিয়াল রিলেটিভ ক্লজ (Sentential Relative Clauses) পূর্ববর্তী কোনো একক নাউনকে নয়, বরং তার আগের পুরো ক্লজ বা সামগ্রিক পরিস্থিতির ওপর মন্তব্য করতে 'which' ব্যবহার করে।",
+      "formula": "Appositive: Subject [Noun], + [Noun Phrase description] +, + Verb + Object\nSentential Relative: [Main Clause] +, which + [Verb/Clause evaluating the situation]",
+      "rules": [
+        "অ্যাপোজিটিভ উপাদানটি বাক্যের প্রধান অংশ নয়, তাই এটি বাদ দিলেও বাক্যের ব্যাকরণগত অর্থ সম্পূর্ণ অক্ষুণ্ন থাকে। এটি কেবল অতিরিক্ত তথ্য দেয়।",
+        "সেন্টেনশিয়াল 'which' ব্যবহারের আগে সর্বদা একটি কমা (,) দিতে হবে। এখানে 'which' এর জায়গায় 'that' ব্যবহার করা সম্পূর্ণ ভুল।",
+        "এই 'which' মূলত পূর্ববর্তী সম্পূর্ণ ধারণাকে নির্দেশ করে এবং এটি অ্যাকাডেমিক রচনায় কার্যকারণ সম্পর্ক দেখাতে দারুণ কাজ করে।"
+      ],
+      "examples": [
+        { "en": "Professor Higgins—a renowned authority on sociolinguistics—will deliver the keynote speech.", "bn": "সমাজভাষাবিজ্ঞানের একজন খ্যাতনামা বিশেষজ্ঞ—অধ্যাপক হিগিন্স—মূল বক্তব্য প্রদান করবেন। (এম-ড্যাশ সম্বলিত অ্যাপোজিটিভ)" },
+        { "en": "The company decided to automate all production processes, which pleased the shareholders.", "bn": "কোম্পানিটি সমস্ত উৎপাদন প্রক্রিয়া স্বয়ংক্রিয় করার সিদ্ধান্ত নিয়েছে, যা শেয়ারহোল্ডারদের সন্তুষ্ট করেছিল। ('which' পুরো সিদ্ধান্তকে নির্দেশ করছে)" },
+        { "en": "Her latest novel, a historical epic set in ancient Rome, has received rave reviews.", "bn": "তার সর্বশেষ উপন্যাস, প্রাচীন রোমের পটভূমিতে রচিত একটি ঐতিহাসিক মহাকাব্য, প্রশংসনীয় রিভিউ পেয়েছে।" },
+        { "en": "The vaccine must be stored at sub-zero temperatures, which presents a significant logistical challenge.", "bn": "ভ্যাকসিনটি অবশ্যই শূন্যের নিচের তাপমাত্রায় সংরক্ষণ করতে হবে, যা একটি বড় ধরনের লজিস্টিক চ্যালেঞ্জ তৈরি করে।" }
+      ],
+      "tips": "কোনো বিষয়ের তাৎক্ষণিক প্রভাব বা মন্তব্য মূল বাক্যের মসৃণতা নষ্ট না করে যুক্ত করার জন্য 'which' সম্বলিত সেন্টেনশিয়াল ক্লজ সবচেয়ে কার্যকর অ্যাকাডেমিক হাতিয়ার।"
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "What she did was she resigned from her position.",
+      "correct": "What she did was resign from her position.",
+      "explanation": "Wh-cleft বাক্যে 'What... did' ব্যবহারের পর মূল জোর দেওয়া ক্রিয়াটি সরাসরি Bare Infinitive (resign) বা To-Infinitive হওয়া উচিত, আরেকটি সমাপিকা ক্লজ (she resigned) ব্যবহার করা অপ্রয়োজনীয় ও দুর্বল।"
+    },
+    {
+      "wrong": "Walking down the street, a tile fell from the roof and hit him.",
+      "correct": "While he was walking down the street, a tile fell from the roof and hit him. (Or: Walking down the street, he was hit by a tile...)",
+      "explanation": "এখানে একটি 'Dangling Participle'-এর ভুল রয়েছে। 'Walking' এর সাবজেক্ট হিসেবে 'tile' এসে পড়ছে, যার অর্থ দাঁড়ায় টাইলসটি রাস্তা দিয়ে হাঁটছিল! তাই মূল ক্লজের সাবজেক্টের সাথে সমন্বয় রেখে বাক্যটি সংশোধন করতে হবে।"
+    },
+    {
+      "wrong": "The storm was being over, we resumed our journey.",
+      "correct": "The storm being over, we resumed our journey.",
+      "explanation": "অ্যাবসলিউট কনস্ট্রাকশনে কোনো সাহায্যকারী সমাপিকা ক্রিয়া (যেমন: was) পার্টিসিপলের পূর্বে ব্যবহৃত হয় না। এখানে সরাসরি 'The storm being over' লিখতে হবে।"
+    },
+    {
+      "wrong": "Not only he failed the exam, but he also lost his scholarship.",
+      "correct": "Not only did he fail the exam, but he also lost his scholarship.",
+      "explanation": "যখন 'Not only' বাক্যের শুরুতে বসে, তখন প্রথম ক্লজে অবশ্যই সাবজেক্ট-ভার্ব ইনভারশন ঘটাতে হবে। অর্থাৎ সাবজেক্ট 'he'-এর পূর্বে সাহায্যকারী ক্রিয়া 'did' বসাতে হবে।"
+    },
+    {
+      "wrong": "She likes writing, reading, and to listen to music.",
+      "correct": "She likes writing, reading, and listening to music.",
+      "explanation": "প্যারালালিজমের নিয়ম অনুযায়ী, সমগোত্রীয় কাজের তালিকায় সবগুলো উপাদান একই ব্যাকরণগত রূপের হতে হবে। পূর্বের দুটি 'Gerund' হওয়ায় শেষটিও 'listening' (Gerund) হতে হবে।"
+    },
+    {
+      "wrong": "He missed the deadline, that disappointed his supervisor greatly.",
+      "correct": "He missed the deadline, which disappointed his supervisor greatly.",
+      "explanation": "পূর্ববর্তী সম্পূর্ণ ঘটনার ওপর মন্তব্য করতে বা তার ফল প্রকাশ করতে রিলেটিভ প্রোনাউন হিসেবে কেবল 'which' বসতে পারে, 'that' নয়।"
+    },
+    {
+      "wrong": "My brother a talented artist won the national art competition.",
+      "correct": "My brother, a talented artist, won the national art competition.",
+      "explanation": "অ্যাপোজিটিভ উপাদানগুলোকে মূল বাক্য থেকে আলাদা করতে অবশ্যই উভয় পাশে কমা (,) ব্যবহার করতে হবে, অন্যথায় বাক্যটি অস্পষ্ট ও ব্যাকরণগতভাবে ত্রুটিপূর্ণ থেকে যায়।"
+    }
+  ]
 }
