@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি গতকাল বিকেলে একটি বই পড়ছিলাম।",
+    "english": "I was reading a book yesterday afternoon.",
+    "grammar_focus": "Past Continuous",
+    "rules": ["Subject (I) + was + Verb-ing (reading)", "yesterday afternoon → অতীতের একটি নির্দিষ্ট সময়"],
+    "hint": "I, He, She, It - এগুলোর সাথে 'was' বসে।"
+  },
+  {
+    "bangla": "তারা মাঠে ফুটবল খেলছিল।",
+    "english": "They were playing football in the field.",
+    "grammar_focus": "Past Continuous",
+    "rules": ["They (Plural) এর সাথে 'were' বসে", "play + ing = playing"],
+    "hint": "We, You, They (বহুবচন) এর সাথে 'were' বসে।"
+  },
+  {
+    "bangla": "সে ঘুমাচ্ছিল না।",
+    "english": "He was not sleeping.",
+    "grammar_focus": "Past Continuous (Negative)",
+    "rules": ["Negative বাক্যে was/were এর পর not বসে", "He (Singular) + was not"],
+    "hint": "was not-কে সংক্ষেপে 'wasn't' বলা যায়।"
+  },
+  {
+    "bangla": "আমরা তখন টিভি দেখছিলাম না।",
+    "english": "We were not watching TV then.",
+    "grammar_focus": "Past Continuous (Negative)",
+    "rules": ["We-এর সাথে were বসে", "then → তখন (অতীতের সময় নির্দেশ করে)"],
+    "hint": "were not-কে সংক্ষেপে 'weren't' বলা যায়।"
+  },
+  {
+    "bangla": "সে কি তোমার জন্য অপেক্ষা করছিল?",
+    "english": "Was she waiting for you?",
+    "grammar_focus": "Past Continuous (Question)",
+    "rules": ["Question-এ 'Was' বাক্যের শুরুতে বসে", "Was + she + waiting?"],
+    "hint": "প্রশ্নবোধক বাক্যে was/were সাবজেক্টের আগে চলে আসে।"
+  },
+  {
+    "bangla": "তোমরা কি তখন পড়াশোনা করছিলে?",
+    "english": "Were you studying then?",
+    "grammar_focus": "Past Continuous (Question)",
+    "rules": ["You-এর সাথে were বসে", "Were + you + studying?"],
+    "hint": "'You' (তুমি/তোমরা) সর্বদা 'were' গ্রহণ করে।"
+  },
+  {
+    "bangla": "তুমি গতকাল রাতে কী করছিলে?",
+    "english": "What were you doing last night?",
+    "grammar_focus": "Past Continuous (Wh-Question)",
+    "rules": ["What + were + you + doing?", "What → কী (Wh-word)"],
+    "hint": "Wh-word এর ঠিক পরেই were বা was বসাতে হয়।"
+  },
+  {
+    "bangla": "বাচ্চাটি কাঁদছিল কেন?",
+    "english": "Why was the baby crying?",
+    "grammar_focus": "Past Continuous (Wh-Question)",
+    "rules": ["Why + was + the baby + crying?", "the baby (Singular) তাই was বসেছে"],
+    "hint": "'Why' দিয়ে প্রশ্ন করলে কারণ জানতে চাওয়া হয়।"
+  },
+  {
+    "bangla": "আমি যখন তাকে দেখলাম, সে রাস্তা পার হচ্ছিল।",
+    "english": "When I saw him, he was crossing the road.",
+    "grammar_focus": "Past Continuous (with when)",
+    "rules": ["When-এর সাথের অংশটি Past Simple (saw) হয়", "অন্য চলমান কাজটি Past Continuous (was crossing) হয়"],
+    "hint": "অতীতে একটি কাজ চলার সময় হঠাৎ আরেকটি কাজ ঘটলে চলমান কাজটি Past Continuous হয়।"
+  },
+  {
+    "bangla": "আমি যখন ঘুমাচ্ছিলাম, তখন ফোন বেজে উঠল।",
+    "english": "While I was sleeping, the phone rang.",
+    "grammar_focus": "Past Continuous (with while)",
+    "rules": ["While-এর ঠিক পরের অংশটি Past Continuous (was sleeping) হয়", "হঠাৎ ঘটা কাজটি Past Simple (rang) হয়"],
+    "hint": "'When' এর পর Past Simple এবং 'While' এর পর Past Continuous বসে।"
+  },
+  {
+    "bangla": "মা কেক বানাচ্ছিলেন।",
+    "english": "Mother was making a cake.",
+    "grammar_focus": "Past Continuous (Spelling Rule)",
+    "rules": ["Mother (Singular) + was", "make + ing = making (শেষের 'e' বাদ গেছে)"],
+    "hint": "make, take, write - এগুলোর শেষে e বাদ দিয়ে ing হয়।"
+  },
+  {
+    "bangla": "কুকুরটি আমার দিকে দৌড়ে আসছিল।",
+    "english": "The dog was running towards me.",
+    "grammar_focus": "Past Continuous (Spelling Rule)",
+    "rules": ["run + ing = running ('n' ডাবল হয়েছে)", "towards me → আমার দিকে"],
+    "hint": "consonant-এর আগে একটি vowel থাকলে consonant ডাবল হয়ে যায় (run > running)।"
+  },
+  {
+    "bangla": "গতকাল সারাদিন বৃষ্টি হচ্ছিল।",
+    "english": "It was raining all day yesterday.",
+    "grammar_focus": "Past Continuous",
+    "rules": ["আবহাওয়া বা প্রাকৃতিক ঘটনায় Subject হিসেবে 'It' বসে", "all day → সারাদিন"],
+    "hint": "It-এর সাথে সর্বদা was বসে।"
+  },
+  {
+    "bangla": "তুমি কেন কাজ করছিলে না?",
+    "english": "Why were you not working?",
+    "grammar_focus": "Past Continuous (Negative Wh-Question)",
+    "rules": ["Why + were + you + not + working?", "স্পোকেন ইংলিশে 'Why weren't you working?' বেশি ব্যবহৃত হয়"],
+    "hint": "negative question-এ 'not' সাধারণত subject-এর পরে বসে।"
+  },
+  {
+    "bangla": "আমি যখন পড়ছিলাম, আমার ভাই তখন খেলছিল।",
+    "english": "While I was reading, my brother was playing.",
+    "grammar_focus": "Past Continuous (Parallel Actions)",
+    "rules": ["অতীতে একই সাথে দুটি কাজ চলতে থাকলে দুটিই Past Continuous হয়", "মাঝখানে While ব্যবহৃত হয়"],
+    "hint": "দুটি কাজ সমান্তরালভাবে চলতে থাকলে 'while' ব্যবহার করুন।"
+  },
+  {
+    "bangla": "গতকাল ঠিক এই সময়ে আমরা ভ্রমণ করছিলাম।",
+    "english": "We were traveling at this exact time yesterday.",
+    "grammar_focus": "Past Continuous",
+    "rules": ["at this exact time → ঠিক এই সময়ে", "travel + ing = traveling"],
+    "hint": "অতীতের একটি নির্দিষ্ট মুহূর্তে কোনো কাজ চলছিল বোঝাতে এটি ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "কে চিৎকার করছিল?",
+    "english": "Who was shouting?",
+    "grammar_focus": "Past Continuous (Who Question)",
+    "rules": ["Who-কে Singular subject ধরে এর পর was বসেছে", "shout + ing = shouting"],
+    "hint": "'Who' দিয়ে প্রশ্ন করলে সাধারণত 'was' বসে।"
+  },
+  {
+    "bangla": "তারা কোথায় যাচ্ছিল?",
+    "english": "Where were they going?",
+    "grammar_focus": "Past Continuous (Wh-Question)",
+    "rules": ["Where + were + they + going?", "Where → কোথায়"],
+    "hint": "Wh-word-এর পরে Plural subject (they) থাকায় 'were' বসেছে।"
+  },
+  {
+    "bangla": "আমি ভাবছিলাম তুমি আমাকে সাহায্য করতে পারবে কি না।",
+    "english": "I was wondering if you could help me.",
+    "grammar_focus": "Past Continuous (Polite Request)",
+    "rules": ["wonder + ing = wondering", "I was wondering → আমি ভাবছিলাম (খুব ভদ্রভাবে কিছু জিজ্ঞেস করতে ব্যবহৃত হয়)"],
+    "hint": "স্পোকেন ইংলিশে ভদ্রভাবে সাহায্য চাইতে 'I was wondering...' খুব চমৎকার একটি ফ্রেজ।"
+  },
+  {
+    "bangla": "বাতাস খুব জোরে বইছিল।",
+    "english": "The wind was blowing very fast.",
+    "grammar_focus": "Past Continuous",
+    "rules": ["wind (বাতাস) Uncountable noun, তাই Singular হিসেবে was বসে", "blow + ing = blowing"],
+    "hint": "blow মানে প্রবাহিত হওয়া বা বাতাস বওয়া।"
+  },
+  {
+    "bangla": "পাখিরা আকাশে উড়ছিল।",
+    "english": "The birds were flying in the sky.",
+    "grammar_focus": "Past Continuous",
+    "rules": ["The birds (Plural) + were", "fly + ing = flying", "in the sky → আকাশে"],
+    "hint": "Subject বহুবচন হলে সর্বদা 'were' বসে।"
+  },
+  {
+    "bangla": "লোকটি রাস্তায় শুয়ে ছিল।",
+    "english": "The man was lying on the road.",
+    "grammar_focus": "Past Continuous (Spelling Rule)",
+    "rules": ["lie (শোয়া) > lying", "on the road → রাস্তায়"],
+    "hint": "Verb-এর শেষে 'ie' থাকলে, ing যোগ করার সময় 'ie' বদলে 'y' হয়ে যায় (lie > lying)।"
+  },
+  {
+    "bangla": "আমরা যখন ডিনার করছিলাম, তখন বিদ্যুৎ চলে গেল।",
+    "english": "When we were having dinner, the power went out.",
+    "grammar_focus": "Past Continuous (Interrupted Action)",
+    "rules": ["have dinner > having dinner (খাওয়া অর্থে)", "power went out (Past Simple) → বিদ্যুৎ চলে গেল"],
+    "hint": "খাওয়া বোঝাতে eat-এর বদলে 'have/having' ব্যবহার করা বেশ স্মার্ট।"
+  },
+  {
+    "bangla": "সে আমার কথা শুনছিল না।",
+    "english": "She was not listening to me.",
+    "grammar_focus": "Past Continuous (Negative)",
+    "rules": ["listen + ing = listening", "listen-এর পর সবসময় to বসে (listen to me)"],
+    "hint": "'listen' মানে মনোযোগ দিয়ে শোনা।"
+  },
+  {
+    "bangla": "সে সবসময় অভিযোগ করছিল!",
+    "english": "He was always complaining!",
+    "grammar_focus": "Past Continuous (Annoyance)",
+    "rules": ["always + Verb-ing", "complain + ing = complaining"],
+    "hint": "অতীতের কোনো বিরক্তিকর বা পুনরাবৃত্তিমূলক অভ্যাস বোঝাতে always-এর সাথে Past Continuous ব্যবহৃত হয়।"
+  }
+]

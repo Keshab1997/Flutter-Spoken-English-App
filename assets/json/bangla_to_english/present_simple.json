@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি প্রতিদিন স্কুলে যাই।",
+    "english": "I go to school every day.",
+    "grammar_focus": "Present Simple",
+    "rules": ["every day → প্রতিদিনের অভ্যাস (Present Simple)", "I (1st person) এর সাথে Verb-এর Base form (V1) বসে"],
+    "hint": "I, We, You, They - এর সাথে verb এর শেষে s/es যুক্ত হয় না।"
+  },
+  {
+    "bangla": "সে ফুটবল খেলে।",
+    "english": "He plays football.",
+    "grammar_focus": "Present Simple (3rd Person Singular)",
+    "rules": ["He → 3rd Person Singular Number", "Verb-এর সাথে s/es যুক্ত হয়েছে (play + s = plays)"],
+    "hint": "He, She, It বা যেকোনো একটি নামের সাথে Verb-এর শেষে s/es বসে।"
+  },
+  {
+    "bangla": "সূর্য পূর্ব দিকে ওঠে।",
+    "english": "The sun rises in the east.",
+    "grammar_focus": "Present Simple (Universal Truth)",
+    "rules": ["The sun → 3rd Person Singular", "Universal Truth (চিরন্তন সত্য) সবসময় Present Simple হয়"],
+    "hint": "চিরন্তন সত্য বোঝাতে verb-এর V1 (s/es) ফর্ম ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আমি চা পছন্দ করি না।",
+    "english": "I do not like tea.",
+    "grammar_focus": "Present Simple (Negative)",
+    "rules": ["Negative করতে do not বা don't ব্যবহার করা হয়", "do not এর পরে মূল verb (V1) বসে"],
+    "hint": "I, We, You, They - এর সাথে do not বসে।"
+  },
+  {
+    "bangla": "সে মাংস খায় না।",
+    "english": "She does not eat meat.",
+    "grammar_focus": "Present Simple (Negative)",
+    "rules": ["She → 3rd Person Singular, তাই does not বসেছে", "does not বসালে মূল verb-এর সাথে আর s/es থাকে না (eat)"],
+    "hint": "does not থাকলে verb-এর সাথে s/es যুক্ত হবে না।"
+  },
+  {
+    "bangla": "তুমি কি তাকে চেনো?",
+    "english": "Do you know him?",
+    "grammar_focus": "Present Simple (Question)",
+    "rules": ["Question করতে বাক্যের শুরুতে Do বসে", "Do + subject + V1?"],
+    "hint": "You এর আগে প্রশ্ন করতে Do ব্যবহার করতে হয়।"
+  },
+  {
+    "bangla": "সে কি এখানে থাকে?",
+    "english": "Does he live here?",
+    "grammar_focus": "Present Simple (Question)",
+    "rules": ["He (3rd Person Singular) এর জন্য বাক্যের শুরুতে Does বসে", "Does + subject + V1?"],
+    "hint": "Does দিয়ে প্রশ্ন করলে মূল verb-এর সাথে s/es বসে না।"
+  },
+  {
+    "bangla": "তুমি কোথায় থাকো?",
+    "english": "Where do you live?",
+    "grammar_focus": "Present Simple (Wh-Question)",
+    "rules": ["Wh-word (Where) + do + subject + V1?", "Where → কোথায়"],
+    "hint": "Wh-word এর ঠিক পরেই do/does বসাতে হয়।"
+  },
+  {
+    "bangla": "পাখিরা আকাশে ওড়ে।",
+    "english": "Birds fly in the sky.",
+    "grammar_focus": "Present Simple",
+    "rules": ["Birds → Plural (বহুবচন)", "Plural subject এর সাথে Verb-এর Base form (fly) বসে"],
+    "hint": "Subject বহুবচন হলে verb-এর সাথে s/es হয় না।"
+  },
+  {
+    "bangla": "আমরা সকাল ৬টায় ঘুম থেকে উঠি।",
+    "english": "We wake up at 6 AM.",
+    "grammar_focus": "Present Simple (Routine)",
+    "rules": ["We → 1st person plural", "wake up → Base verb (V1)", "সময়ের আগে at বসে"],
+    "hint": "নিয়মিত অভ্যাস বা রুটিন বোঝাতে Present Simple হয়।"
+  },
+  {
+    "bangla": "আমার বাবা রাতে টিভি দেখেন।",
+    "english": "My father watches TV at night.",
+    "grammar_focus": "Present Simple (3rd Person Singular)",
+    "rules": ["My father → 3rd Person Singular", "watch-এর শেষে 'ch' থাকায় 'es' যুক্ত হয়েছে (watches)"],
+    "hint": "Verb-এর শেষে o, ch, sh, ss, x থাকলে 'es' যুক্ত হয়।"
+  },
+  {
+    "bangla": "আমি একজন ছাত্র।",
+    "english": "I am a student.",
+    "grammar_focus": "Present Simple (To be verb)",
+    "rules": ["am → Present 'To be' verb", "এখানে 'am' মূল verb হিসেবে ব্যবহৃত"],
+    "hint": "I এর সাথে সবসময় am বসে।"
+  },
+  {
+    "bangla": "আমার একটি গাড়ি আছে।",
+    "english": "I have a car.",
+    "grammar_focus": "Present Simple (Have verb)",
+    "rules": ["have → অধিকারে কিছু থাকা বোঝায়", "I, We, You, They এর সাথে have বসে"],
+    "hint": "নিজের কিছু আছে বোঝাতে have ব্যবহার করা হয়।"
+  },
+  {
+    "bangla": "তার একটি সুন্দর কলম আছে।",
+    "english": "He has a beautiful pen.",
+    "grammar_focus": "Present Simple (Have verb)",
+    "rules": ["He → 3rd Person Singular", "Singular subject-এর সাথে has বসে"],
+    "hint": "He, She, It এর সাথে 'have'-এর পরিবর্তে 'has' বসে।"
+  },
+  {
+    "bangla": "তুমি কেন বোঝো না?",
+    "english": "Why don't you understand?",
+    "grammar_focus": "Present Simple (Negative Wh-Question)",
+    "rules": ["Why + don't + subject + V1?", "don't → do not এর সংক্ষিপ্ত রূপ"],
+    "hint": "Negative প্রশ্নের ক্ষেত্রে do/does এর সাথে not যুক্ত করা যায়।"
+  },
+  {
+    "bangla": "পানি ১০০ ডিগ্রি সেলসিয়াসে ফোটে।",
+    "english": "Water boils at 100 degrees Celsius.",
+    "grammar_focus": "Present Simple (Scientific Fact)",
+    "rules": ["Water → Uncountable Noun (Singular হিসেবে ধরা হয়)", "boil + s = boils"],
+    "hint": "বৈজ্ঞানিক সত্য বা সাধারণ সত্য বোঝাতে Present Simple ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "তারা তাদের দেশকে ভালোবাসে।",
+    "english": "They love their country.",
+    "grammar_focus": "Present Simple",
+    "rules": ["They → 3rd person plural", "love → V1 (s/es হবে না)"],
+    "hint": "They-এর সাথে verb-এর স্বাভাবিক রূপ বসে।"
+  },
+  {
+    "bangla": "সে সর্বদা সত্য কথা বলে।",
+    "english": "She always speaks the truth.",
+    "grammar_focus": "Present Simple (Adverb of frequency)",
+    "rules": ["always → সর্বদা (Frequency নির্দেশ করে)", "speak + s = speaks"],
+    "hint": "always, usually, often, never ইত্যাদি শব্দগুলো Present Simple-এ বেশি ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "সে উত্তরটি জানে না।",
+    "english": "He doesn't know the answer.",
+    "grammar_focus": "Present Simple (Negative)",
+    "rules": ["doesn't → does not এর short form", "doesn't এর পর know (V1) বসেছে"],
+    "hint": "spoken English-এ does not এর বদলে doesn't বেশি ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "ট্রেনটি রাত ৯টায় ছাড়ে।",
+    "english": "The train leaves at 9 PM.",
+    "grammar_focus": "Present Simple (Fixed Schedule)",
+    "rules": ["The train → 3rd Person Singular", "leave + s = leaves", "ভবিষ্যতের নির্ধারিত সময়সূচি বোঝাতে Present Simple ব্যবহৃত হয়"],
+    "hint": "কোনো ফিক্সড টাইমটেবিল বোঝাতে Present Tense ব্যবহার করা যায়।"
+  },
+  {
+    "bangla": "তারা কি ক্রিকেট খেলে?",
+    "english": "Do they play cricket?",
+    "grammar_focus": "Present Simple (Question)",
+    "rules": ["They (Plural) এর জন্য বাক্যের শুরুতে Do বসেছে", "play → V1"],
+    "hint": "They এর আগে প্রশ্ন করতে Do বসে।"
+  },
+  {
+    "bangla": "আমি একটি ব্যাংকে কাজ করি।",
+    "english": "I work in a bank.",
+    "grammar_focus": "Present Simple",
+    "rules": ["work → পেশা বা স্থায়ী কাজ বোঝাতে V1 ব্যবহৃত হয়"],
+    "hint": "স্থায়ী অবস্থা বা পেশা বোঝাতে Present Simple ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "সে প্রতিদিন রাতে একটি বই পড়ে।",
+    "english": "She reads a book every night.",
+    "grammar_focus": "Present Simple (3rd Person Singular)",
+    "rules": ["every night → নিয়মিত কাজ", "read + s = reads"],
+    "hint": "She-এর সাথে verb-এর শেষে s/es বসে।"
+  },
+  {
+    "bangla": "এই মেশিনটা কীভাবে কাজ করে?",
+    "english": "How does this machine work?",
+    "grammar_focus": "Present Simple (Wh-Question)",
+    "rules": ["How → কীভাবে", "this machine → Singular subject, তাই does বসেছে"],
+    "hint": "Singular বস্তুর সম্পর্কে প্রশ্ন করতে does ব্যবহার করতে হয়।"
+  },
+  {
+    "bangla": "কে আমার সাথে যেতে চায়?",
+    "english": "Who wants to go with me?",
+    "grammar_focus": "Present Simple (Question with Who)",
+    "rules": ["Who নিজে subject হিসেবে কাজ করলে do/does বসে না", "Who-কে Singular ধরে verb-এর সাথে s/es (wants) যুক্ত হয়"],
+    "hint": "Who দিয়ে প্রশ্ন করলে সাধারণত verb-এর সাথে s/es বসে।"
+  }
+]

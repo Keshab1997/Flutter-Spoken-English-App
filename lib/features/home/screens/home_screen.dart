@@ -29,6 +29,7 @@ import '../widgets/study_plan_section.dart';
 import '../widgets/spoken_rules_screen.dart';
 import '../../verb_forms/screens/verb_forms_screen.dart';
 import '../../verb_forms/screens/verb_form_practice_screen.dart';
+import '../../practice/screens/bangla_english_practice_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   final Function(int)? onNavigateToTab;
@@ -1081,6 +1082,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       {'title': 'Vocab Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()))},
       {'title': 'Verb Quiz', 'icon': Icons.transform_rounded, 'gradient': AppColors.accentGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VerbFormPracticeScreen()))},
       {'title': 'Grammar Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.infoGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarTestListScreen()))},
+      {'title': 'Bangla English', 'icon': Icons.translate_rounded, 'gradient': [const Color(0xFF6366F1), const Color(0xFF8B5CF6)], 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const BanglaEnglishCategoryScreen()))},
       {'title': 'Conversation', 'icon': Icons.forum_rounded, 'gradient': AppColors.secondaryGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ConversationScreen()))},
       {'title': 'Listening', 'icon': Icons.headset_rounded, 'gradient': AppColors.infoGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ListeningScreen()))},
       {'title': 'Speaking', 'icon': Icons.mic_rounded, 'gradient': AppColors.pinkGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SpeakingScreen()))},

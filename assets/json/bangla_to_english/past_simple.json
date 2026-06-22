@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি গতকাল স্কুলে গিয়েছিলাম।",
+    "english": "I went to school yesterday.",
+    "grammar_focus": "Past Simple",
+    "rules": ["yesterday → Past tense নির্দেশক", "go → went (Irregular V2)"],
+    "hint": "go-এর V2 = went"
+  },
+  {
+    "bangla": "সে গতরাতে একটি সিনেমা দেখেছিল।",
+    "english": "She watched a movie last night.",
+    "grammar_focus": "Past Simple",
+    "rules": ["last night → Past tense নির্দেশক", "Regular verb: watch → watched"],
+    "hint": "Regular verb-এর V2 = V1 + ed"
+  },
+  {
+    "bangla": "তারা গতকাল ফুটবল খেলেছিল।",
+    "english": "They played football yesterday.",
+    "grammar_focus": "Past Simple",
+    "rules": ["yesterday → Past tense", "play → played"],
+    "hint": "play → played (regular)"
+  },
+  {
+    "bangla": "আমি আজ সকালে একটি ডিম খেয়েছিলাম।",
+    "english": "I ate an egg this morning.",
+    "grammar_focus": "Past Simple",
+    "rules": ["this morning → Past tense (already passed)", "eat → ate (Irregular V2)", "an → vowel sound আগে"],
+    "hint": "eat-এর V2 = ate"
+  },
+  {
+    "bangla": "সে গত বছর ইংল্যান্ডে গিয়েছিল।",
+    "english": "He went to England last year.",
+    "grammar_focus": "Past Simple",
+    "rules": ["last year → Past tense নির্দেশক", "He-এর সাথে V2"],
+    "hint": "go → went"
+  },
+  {
+    "bangla": "আমরা গতকাল একটি চিঠি লিখেছিলাম।",
+    "english": "We wrote a letter yesterday.",
+    "grammar_focus": "Past Simple",
+    "rules": ["write → wrote (Irregular V2)", "yesterday → Past tense"],
+    "hint": "write-এর V2 = wrote"
+  },
+  {
+    "bangla": "সে দোকান থেকে একটি বই কিনেছিল।",
+    "english": "She bought a book from the shop.",
+    "grammar_focus": "Past Simple",
+    "rules": ["buy → bought (Irregular V2)", "from → preposition"],
+    "hint": "buy-এর V2 = bought"
+  },
+  {
+    "bangla": "তারা গতকাল সকালে পৌঁছেছিল।",
+    "english": "They arrived yesterday morning.",
+    "grammar_focus": "Past Simple",
+    "rules": ["arrive → arrived (Regular)", "yesterday morning → Past tense"],
+    "hint": "arrive → arrived (just +d)"
+  },
+  {
+    "bangla": "আমি জানলাম না।",
+    "english": "I did not know.",
+    "grammar_focus": "Past Simple (Negative)",
+    "rules": ["Negative: did not + V1", "know → V1 (did not-এর পরে V1 বসে)"],
+    "hint": "did not-এর পরে সবসময় V1 (base form)"
+  },
+  {
+    "bangla": "সে কি গতকাল এসেছিল?",
+    "english": "Did she come yesterday?",
+    "grammar_focus": "Past Simple (Question)",
+    "rules": ["Question: Did + subject + V1?", "come → V1 (Did-এর পরে V1 বসে)"],
+    "hint": "Did-এর পরে সবসময় V1 (base form)"
+  },
+  {
+    "bangla": "আমি তাকে বাজারে দেখেছিলাম।",
+    "english": "I saw him in the market.",
+    "grammar_focus": "Past Simple",
+    "rules": ["see → saw (Irregular V2)", "in the market → জায়গার আগে in বসে"],
+    "hint": "see-এর V2 = saw"
+  },
+  {
+    "bangla": "মা আমার জন্য একটি কেক বানিয়েছিলেন।",
+    "english": "Mother made a cake for me.",
+    "grammar_focus": "Past Simple",
+    "rules": ["make → made (Irregular V2)", "for me → আমার জন্য (Preposition)"],
+    "hint": "make-এর V2 = made"
+  },
+  {
+    "bangla": "আমরা গতকাল রাতে ভাত খাইনি।",
+    "english": "We did not eat rice last night.",
+    "grammar_focus": "Past Simple (Negative)",
+    "rules": ["Negative: did not + eat (V1)", "last night → Past tense"],
+    "hint": "did not থাকলে V2 (ate) হবে না, V1 (eat) হবে।"
+  },
+  {
+    "bangla": "তুমি গতকাল কোথায় গিয়েছিলে?",
+    "english": "Where did you go yesterday?",
+    "grammar_focus": "Past Simple (Wh-Question)",
+    "rules": ["Wh-word + did + subject + V1?", "Where → কোথায়", "go → V1"],
+    "hint": "Wh-Question এ did আগে আসে এবং verb V1 হয়।"
+  },
+  {
+    "bangla": "সে গতকাল খুব অসুস্থ ছিল।",
+    "english": "He was very sick yesterday.",
+    "grammar_focus": "Past Simple (To be verb)",
+    "rules": ["am/is এর Past form → was", "এখানে 'was' মূল verb হিসেবে ব্যবহৃত"],
+    "hint": "Singular subject (I, He, She, It) এর সাথে was বসে।"
+  },
+  {
+    "bangla": "তারা মিটিংয়ে উপস্থিত ছিল।",
+    "english": "They were present in the meeting.",
+    "grammar_focus": "Past Simple (To be verb)",
+    "rules": ["are এর Past form → were", "in the meeting → মিটিংয়ে"],
+    "hint": "Plural subject (We, You, They) এর সাথে were বসে।"
+  },
+  {
+    "bangla": "পুলিশ চোরটিকে ধরেছিল।",
+    "english": "The police caught the thief.",
+    "grammar_focus": "Past Simple",
+    "rules": ["catch → caught (Irregular V2)"],
+    "hint": "catch-এর V2 = caught"
+  },
+  {
+    "bangla": "তুমি কি খবরটি শোননি?",
+    "english": "Didn't you hear the news?",
+    "grammar_focus": "Past Simple (Negative Question)",
+    "rules": ["Didn't + subject + V1?", "hear → V1 (শোনা)"],
+    "hint": "did not সংক্ষেপে didn't, এবং এরপরে V1 বসে।"
+  },
+  {
+    "bangla": "বৃষ্টির কারণে আমরা বাইরে যাইনি।",
+    "english": "We did not go out because of the rain.",
+    "grammar_focus": "Past Simple (Negative)",
+    "rules": ["did not + go (V1)", "because of → কারণে"],
+    "hint": "did not এর পরে মূল verb (go) বসে।"
+  },
+  {
+    "bangla": "সে তার চাবি হারিয়ে ফেলেছিল।",
+    "english": "He lost his keys.",
+    "grammar_focus": "Past Simple",
+    "rules": ["lose → lost (Irregular V2)"],
+    "hint": "lose-এর V2 = lost"
+  },
+  {
+    "bangla": "আমি তাকে একটি কলম দিয়েছিলাম।",
+    "english": "I gave him a pen.",
+    "grammar_focus": "Past Simple",
+    "rules": ["give → gave (Irregular V2)"],
+    "hint": "give-এর V2 = gave"
+  },
+  {
+    "bangla": "তুমি কিভাবে কাজটি করেছিলে?",
+    "english": "How did you do the work?",
+    "grammar_focus": "Past Simple (Wh-Question)",
+    "rules": ["How + did + subject + do (V1)?", "How → কিভাবে"],
+    "hint": "Question এ 'did' সাহায্যকারী verb, আর 'do' মূল verb।"
+  },
+  {
+    "bangla": "তারা সুন্দর একটি গান গেয়েছিল।",
+    "english": "They sang a beautiful song.",
+    "grammar_focus": "Past Simple",
+    "rules": ["sing → sang (Irregular V2)"],
+    "hint": "sing-এর V2 = sang"
+  },
+  {
+    "bangla": "শিশুটি শান্তিতে ঘুমিয়েছিল।",
+    "english": "The baby slept peacefully.",
+    "grammar_focus": "Past Simple",
+    "rules": ["sleep → slept (Irregular V2)", "peacefully → Adverb"],
+    "hint": "sleep-এর V2 = slept"
+  },
+  {
+    "bangla": "আমি গত সপ্তাহে আমার ঘর পরিষ্কার করেছিলাম।",
+    "english": "I cleaned my room last week.",
+    "grammar_focus": "Past Simple",
+    "rules": ["clean → cleaned (Regular verb)", "last week → Past tense"],
+    "hint": "clean → cleaned (+ed)"
+  }
+]

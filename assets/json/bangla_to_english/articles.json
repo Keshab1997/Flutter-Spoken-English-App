@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি একটি বই কিনেছিলাম।",
+    "english": "I bought a book.",
+    "grammar_focus": "Indefinite Article (A)",
+    "rules": ["book-এর প্রথম অক্ষর 'b' (Consonant sound)", "Consonant sound-এর আগে 'a' বসে"],
+    "hint": "যেকোনো একটি অনির্দিষ্ট বস্তু বোঝাতে এবং ব্যঞ্জনবর্ণের উচ্চারণের আগে 'a' বসে।"
+  },
+  {
+    "bangla": "সে একটি আপেল খাচ্ছে।",
+    "english": "She is eating an apple.",
+    "grammar_focus": "Indefinite Article (An)",
+    "rules": ["apple-এর প্রথম অক্ষর 'a' (Vowel sound)", "Vowel (a, e, i, o, u) sound-এর আগে 'an' বসে"],
+    "hint": "স্বরবর্ণের (Vowel) মতো উচ্চারণ হলে তার আগে 'an' বসে।"
+  },
+  {
+    "bangla": "বইটি টেবিলের উপরে আছে।",
+    "english": "The book is on the table.",
+    "grammar_focus": "Definite Article (The)",
+    "rules": ["The book → নির্দিষ্ট একটি বই", "The table → নির্দিষ্ট একটি টেবিল"],
+    "hint": "কোনো কিছুকে নির্দিষ্ট করে (টি, টা, খানা, খানি) বোঝাতে 'The' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "সে একজন বিশ্ববিদ্যালয়ের ছাত্র।",
+    "english": "He is a university student.",
+    "grammar_focus": "Exception of 'A'",
+    "rules": ["university-এর প্রথম অক্ষর 'u' (vowel) হলেও এর উচ্চারণ 'ইউ' (you)-এর মতো", "উচ্চারণ 'ইউ' বা 'ওয়া'-এর মতো হলে vowel হওয়া সত্ত্বেও 'a' বসে"],
+    "hint": "university, union, uniform, European - এগুলোর আগে 'a' বসে ('an' নয়)।"
+  },
+  {
+    "bangla": "লোকটি একজন সৎ ব্যক্তি।",
+    "english": "The man is an honest person.",
+    "grammar_focus": "Exception of 'An'",
+    "rules": ["honest-এর 'h' অনুচ্চারিত বা সাইলেন্ট (উচ্চারণ হয় 'অনেস্ট')", "vowel sound-এর কারণে consonant থাকা সত্ত্বেও 'an' বসেছে"],
+    "hint": "honest, hour, honor - এগুলোর আগে 'an' বসে।"
+  },
+  {
+    "bangla": "আমি রাস্তায় একটি এক টাকার নোট দেখেছিলাম।",
+    "english": "I saw a one-taka note on the road.",
+    "grammar_focus": "Exception of 'A'",
+    "rules": ["one-এর 'o' vowel হলেও উচ্চারণ 'ওয়া' (wa)-এর মতো", "তাই 'an'-এর পরিবর্তে 'a' বসেছে"],
+    "hint": "'one' শব্দটির আগে সবসময় 'a' বসে (a one-eyed man, a one-taka note)।"
+  },
+  {
+    "bangla": "তার বাবা একজন এম.বি.বি.এস. ডাক্তার।",
+    "english": "His father is an MBBS doctor.",
+    "grammar_focus": "Indefinite Article with Abbreviations",
+    "rules": ["MBBS উচ্চারণ করতে প্রথমে 'এম' (এ + ম) আসে, যা একটি Vowel sound", "Abbreviations-এর শুরুতে vowel sound থাকলে 'an' বসে"],
+    "hint": "MA, MBBS, MP, LLB - এগুলোর আগে 'an' বসে। কিন্তু BA, BSc-এর আগে 'a' বসে।"
+  },
+  {
+    "bangla": "সূর্য পূর্ব দিকে ওঠে।",
+    "english": "The sun rises in the east.",
+    "grammar_focus": "Definite Article (Unique Things & Directions)",
+    "rules": ["sun → বিশ্বে একটিমাত্র বা অদ্বিতীয় বস্তু", "east → নির্দিষ্ট দিকের নাম", "এগুলোর আগে The বসে"],
+    "hint": "সূর্য, চাঁদ, পৃথিবী, আকাশ এবং দিক (North, South, East, West)-এর আগে The বসে।"
+  },
+  {
+    "bangla": "সে ক্লাসের সবচেয়ে ভালো ছেলে।",
+    "english": "He is the best boy in the class.",
+    "grammar_focus": "Definite Article (Superlative Degree)",
+    "rules": ["best → Superlative form (good-better-best)", "Superlative degree-এর আগে সবসময় The বসে"],
+    "hint": "tallest, biggest, most beautiful - এগুলোর আগে সর্বদা The বসাতে হয়।"
+  },
+  {
+    "bangla": "পদ্মা একটি বড় নদী।",
+    "english": "The Padma is a big river.",
+    "grammar_focus": "Definite Article (Rivers/Oceans)",
+    "rules": ["নদী, সাগর, মহাসাগর, উপসাগরের নামের আগে The বসে", "The Padma → নির্দিষ্ট নদীর নাম"],
+    "hint": "The Padma, The Meghna, The Pacific - নদী/সাগরের আগে The বসে।"
+  },
+  {
+    "bangla": "আমি প্রতিদিন কোরআন পড়ি।",
+    "english": "I read the Quran every day.",
+    "grammar_focus": "Definite Article (Holy Books)",
+    "rules": ["ধর্মগ্রন্থ বা পবিত্র বইয়ের নামের আগে The বসে"],
+    "hint": "The Quran, The Bible, The Gita - এগুলোর আগে সবসময় The বসে।"
+  },
+  {
+    "bangla": "আমি একটি পাখি দেখলাম। পাখিটি খুব সুন্দর ছিল।",
+    "english": "I saw a bird. The bird was very beautiful.",
+    "grammar_focus": "Repetition of Noun",
+    "rules": ["প্রথমবার অনির্দিষ্ট 'a bird' ব্যবহৃত হয়েছে", "পরের বাক্যে একই পাখিকে নির্দিষ্ট করে বোঝানোয় 'The bird' হয়েছে"],
+    "hint": "গল্প বলার সময় প্রথমে 'a/an' বসে, এরপর বারবার ওই বস্তুকে বোঝাতে 'the' বসে।"
+  },
+  {
+    "bangla": "শিশুরা খেলতে পছন্দ করে।",
+    "english": "Children like to play.",
+    "grammar_focus": "Zero Article (Plural Noun)",
+    "rules": ["Children → বহুবচন (Plural Noun)", "সাধারণভাবে বা পুরো শ্রেণিকে বোঝাতে বহুবচন Noun-এর আগে কোনো Article বসে না"],
+    "hint": "The children বললে নির্দিষ্ট কয়েকটি শিশু বোঝাবে, কিন্তু সাধারণভাবে শিশুদের বোঝালে The বসে না।"
+  },
+  {
+    "bangla": "পানি জীবনের জন্য অপরিহার্য।",
+    "english": "Water is essential for life.",
+    "grammar_focus": "Zero Article (Uncountable Noun)",
+    "rules": ["Water → Uncountable Noun", "সাধারণ অর্থে Uncountable Noun-এর আগে Article বসে না"],
+    "hint": "Water, Milk, Gold, Honesty - সাধারণ অর্থে এগুলোর আগে The বসে না।"
+  },
+  {
+    "bangla": "এই গ্লাসের পানিটুকু বিশুদ্ধ।",
+    "english": "The water in this glass is pure.",
+    "grammar_focus": "Definite Article with Uncountable Noun",
+    "rules": ["সাধারণত water-এর আগে The বসে না", "কিন্তু এখানে 'এই গ্লাসের নির্দিষ্ট পানি' বোঝানোয় The বসেছে"],
+    "hint": "Uncountable noun-কে নির্দিষ্ট করে (যেমন: নদীর পানি, গ্লাসের পানি) বোঝালে The বসে।"
+  },
+  {
+    "bangla": "গরু একটি উপকারী প্রাণী।",
+    "english": "The cow is a useful animal.",
+    "grammar_focus": "Definite Article (Singular Class Noun)",
+    "rules": ["Singular Noun দিয়ে পুরো জাতিকে বোঝালে তার আগে The বসে", "এখানে 'The cow' মানে পৃথিবীর সব গরু"],
+    "hint": "'The cow is...' অথবা 'Cows are...' দুটোই সঠিক। কিন্তু 'The cows are' সাধারণ অর্থে ভুল।"
+  },
+  {
+    "bangla": "সে ভালো পিয়ানো বাজাতে পারে।",
+    "english": "She can play the piano well.",
+    "grammar_focus": "Definite Article (Musical Instruments)",
+    "rules": ["বাদ্যযন্ত্র বাজানো (play) বোঝালে তার আগে The বসে", "the piano → পিয়ানো"],
+    "hint": "I play the guitar, He plays the flute - বাদ্যযন্ত্রের আগে The বসে।"
+  },
+  {
+    "bangla": "সে ইংরেজিতে অনর্গল কথা বলতে পারে।",
+    "english": "He can speak English fluently.",
+    "grammar_focus": "Zero Article (Language)",
+    "rules": ["ভাষার (Language) নামের আগে কোনো Article বসে না", "তাই English-এর আগে The বসেনি"],
+    "hint": "I learn English, I speak Bengali (The English বা The Bengali হবে না)।"
+  },
+  {
+    "bangla": "ইংরেজরা সাহসী জাতি।",
+    "english": "The English are a brave nation.",
+    "grammar_focus": "Definite Article (Nationality)",
+    "rules": ["ভাষার নামের আগে The বসালে তা ওই দেশের অধিবাসীদের (জাতি) বোঝায়", "The English → ইংরেজ জাতি"],
+    "hint": "English = ইংরেজি ভাষা। The English = ইংরেজ জাতি।"
+  },
+  {
+    "bangla": "সে আমেরিকায় (যুক্তরাষ্ট্রে) থাকে।",
+    "english": "He lives in the USA.",
+    "grammar_focus": "Definite Article (Specific Countries)",
+    "rules": ["সাধারণত দেশের নামের আগে The বসে না (যেমন: Bangladesh, India)", "তবে দেশের নামে United, Republic বা States থাকলে The বসে"],
+    "hint": "The USA, The UK, The UAE, The Netherlands - এগুলোর আগে The বসে।"
+  },
+  {
+    "bangla": "সে প্রথম পুরস্কার জিতেছিল।",
+    "english": "He won the first prize.",
+    "grammar_focus": "Definite Article (Ordinal Numbers)",
+    "rules": ["first, second, third (Ordinal numbers)-এর আগে সবসময় The বসে"],
+    "hint": "the first boy, the second chapter - এগুলোতে The ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আমি সকাল ৮টায় ব্রেকফাস্ট করি।",
+    "english": "I have breakfast at 8 AM.",
+    "grammar_focus": "Zero Article (Meals)",
+    "rules": ["সাধারণ খাবারের সময় (breakfast, lunch, dinner)-এর আগে কোনো Article বসে না"],
+    "hint": "'the breakfast' বা 'a lunch' বলা সাধারণত ভুল (তবে নির্দিষ্ট পার্টির খাবার বোঝালে আলাদা)।"
+  },
+  {
+    "bangla": "তার মা একজন ডাক্তার।",
+    "english": "His mother is a doctor.",
+    "grammar_focus": "Indefinite Article (Professions)",
+    "rules": ["পেশা (Profession) বা উপাধি বোঝাতে Singular Noun-এর আগে a/an বসে"],
+    "hint": "I am a student, He is an engineer - পেশার আগে a/an বসাতে ভুলবেন না।"
+  },
+  {
+    "bangla": "ধনীদের সবসময় সুখী দেখা যায় না।",
+    "english": "The rich are not always happy.",
+    "grammar_focus": "Definite Article (Adjectives as Plural Nouns)",
+    "rules": ["Adjective-এর আগে The বসালে তা প্লুরাল কমন নাউন (সমগ্র শ্রেণি) হয়ে যায়", "The rich → ধনী লোকেরা (Plural)"],
+    "hint": "The rich, The poor, The brave - এগুলো প্লুরাল, তাই এগুলোর পর are/were বসে।"
+  },
+  {
+    "bangla": "সে জ্বরে ভুগছে।",
+    "english": "He is suffering from fever.",
+    "grammar_focus": "Zero Article (Diseases)",
+    "rules": ["রোগ বা ব্যাধির (Disease) নামের আগে সাধারণত কোনো Article বসে না"],
+    "hint": "fever, cholera, malaria - এগুলোর আগে a/an/the বসে না।"
+  }
+]

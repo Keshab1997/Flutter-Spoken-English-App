@@ -1,0 +1,16 @@
+[
+  {"id": "present_simple", "title": "Present Simple", "subtitle": "বর্তমান সাধারণ", "icon": "check_circle", "color": "#2563EB"},
+  {"id": "present_continuous", "title": "Present Continuous", "subtitle": "বর্তমান চলমান", "icon": "timelapse", "color": "#10B981"},
+  {"id": "present_perfect", "title": "Present Perfect", "subtitle": "বর্তমান পূর্ণ", "icon": "done_all", "color": "#8B5CF6"},
+  {"id": "past_simple", "title": "Past Simple", "subtitle": "অতীত সাধারণ", "icon": "history", "color": "#F59E0B"},
+  {"id": "past_continuous", "title": "Past Continuous", "subtitle": "অতীত চলমান", "icon": "hourglass_top", "color": "#EC4899"},
+  {"id": "past_perfect", "title": "Past Perfect", "subtitle": "অতীত পূর্ণ", "icon": "timeline", "color": "#06B6D4"},
+  {"id": "future_simple", "title": "Future Simple", "subtitle": "ভবিষ্যৎ সাধারণ", "icon": "trending_up", "color": "#EF4444"},
+  {"id": "articles", "title": "Articles (A/An/The)", "subtitle": "নির্দিষ্ট ও অনির্দিষ্ট", "icon": "article", "color": "#6366F1"},
+  {"id": "prepositions", "title": "Prepositions", "subtitle": "পদান্বয়ী অব্যয়", "icon": "linear_scale", "color": "#14B8A6"},
+  {"id": "modal_verbs", "title": "Modal Verbs", "subtitle": "Can, Must, Should ইত্যাদি", "icon": "handyman", "color": "#F97316"},
+  {"id": "conditionals", "title": "Conditional Sentences", "subtitle": "যদি-তাহলে বাক্য", "icon": "call_split", "color": "#22C55E"},
+  {"id": "passive_voice", "title": "Passive Voice", "subtitle": "কর্মবাচ্য", "icon": "swap_horiz", "color": "#0EA5E9"},
+  {"id": "questions", "title": "Question Formation", "subtitle": "প্রশ্ন গঠন", "icon": "help_outline", "color": "#A855F7"},
+  {"id": "common_patterns", "title": "Common Patterns", "subtitle": "প্রয়োজনীয় বাক্য", "icon": "menu_book", "color": "#D946EF"}
+]

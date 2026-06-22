@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "কাজটি প্রতিদিন করা হয়।",
+    "english": "The work is done every day.",
+    "grammar_focus": "Present Simple (Passive)",
+    "rules": ["Subject + am/is/are + V3", "do-এর V3 = done"],
+    "hint": "প্রতিদিন হয় বোঝালে am/is/are এর পর verb-এর V3 (Past Participle) বসে।"
+  },
+  {
+    "bangla": "সারা বিশ্বে ইংরেজি বলা হয়।",
+    "english": "English is spoken all over the world.",
+    "grammar_focus": "Present Simple (Passive)",
+    "rules": ["English (Singular) + is + spoken (V3)", "speak-এর V3 = spoken"],
+    "hint": "ভাষা নিজে নিজে বলে না, মানুষের দ্বারা বলা হয়। তাই এটি Passive।"
+  },
+  {
+    "bangla": "চিঠিটি গতকাল লেখা হয়েছিল।",
+    "english": "The letter was written yesterday.",
+    "grammar_focus": "Past Simple (Passive)",
+    "rules": ["Subject + was/were + V3", "write-এর V3 = written", "yesterday → Past Tense"],
+    "hint": "অতীতের কোনো কাজ করা হয়েছিল বোঝাতে was/were + V3 বসে।"
+  },
+  {
+    "bangla": "চোরটিকে গ্রেপ্তার করা হয়েছিল।",
+    "english": "The thief was arrested.",
+    "grammar_focus": "Past Simple (Passive)",
+    "rules": ["arrest-এর V3 = arrested", "চোরকে পুলিশই গ্রেপ্তার করে, তাই 'by police' উহ্য রাখা যায়"],
+    "hint": "কে কাজটি করেছে (doer) সেটা জানা থাকলে বা গুরুত্বহীন হলে 'by' যুক্ত অংশ বাদ দেওয়া যায়।"
+  },
+  {
+    "bangla": "তাজমহল শাহজাহান কর্তৃক নির্মিত হয়েছিল।",
+    "english": "The Taj Mahal was built by Shah Jahan.",
+    "grammar_focus": "Past Simple (Passive with 'by')",
+    "rules": ["build-এর V3 = built", "কারো দ্বারা কোনো কাজ হলে 'by + ব্যক্তি/বস্তু' বসে"],
+    "hint": "build - built - built"
+  },
+  {
+    "bangla": "সমস্যাটি শীঘ্রই সমাধান করা হবে।",
+    "english": "The problem will be solved soon.",
+    "grammar_focus": "Future Simple (Passive)",
+    "rules": ["Subject + will be + V3", "solve-এর V3 = solved"],
+    "hint": "ভবিষ্যতে কোনো কাজ করা হবে বোঝাতে 'will be + V3' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "রাস্তাটি মেরামত করা হচ্ছে।",
+    "english": "The road is being repaired.",
+    "grammar_focus": "Present Continuous (Passive)",
+    "rules": ["Subject + am/is/are + being + V3", "repair-এর V3 = repaired"],
+    "hint": "বর্তমানে কোনো কাজ চলছে (Passive) বোঝাতে 'being' যুক্ত করতে হয়।"
+  },
+  {
+    "bangla": "একটি নতুন বাড়ি তৈরি করা হচ্ছে।",
+    "english": "A new house is being built.",
+    "grammar_focus": "Present Continuous (Passive)",
+    "rules": ["house (Singular) তাই is বসেছে", "is + being + built (V3)"],
+    "hint": "কাজটি চলমান আছে, তাই is-এর পর being বসেছে।"
+  },
+  {
+    "bangla": "ঘরটি পরিষ্কার করা হচ্ছিল।",
+    "english": "The room was being cleaned.",
+    "grammar_focus": "Past Continuous (Passive)",
+    "rules": ["Subject + was/were + being + V3", "clean-এর V3 = cleaned"],
+    "hint": "অতীতে কোনো কাজ করা হচ্ছিল বোঝাতে 'was being / were being' বসে।"
+  },
+  {
+    "bangla": "আমাকে পার্টিতে আমন্ত্রণ জানানো হয়েছে।",
+    "english": "I have been invited to the party.",
+    "grammar_focus": "Present Perfect (Passive)",
+    "rules": ["Subject + have/has + been + V3", "invite-এর V3 = invited"],
+    "hint": "কেউ আমাকে আমন্ত্রণ জানিয়েছে, তাই এটি Passive (have been + V3)।"
+  },
+  {
+    "bangla": "মিটিংটি বাতিল করা হয়েছে।",
+    "english": "The meeting has been cancelled.",
+    "grammar_focus": "Present Perfect (Passive)",
+    "rules": ["The meeting (Singular) + has been + cancelled (V3)"],
+    "hint": "কোনো কাজ ইতিমধ্যে সম্পন্ন হয়েছে এবং তার ফলাফল বর্তমান, তাই Present Perfect Passive।"
+  },
+  {
+    "bangla": "কাজটি করা যেতে পারে।",
+    "english": "The work can be done.",
+    "grammar_focus": "Modal Passive (can)",
+    "rules": ["Modal verb (can, could, should, must) এর পর Passive-এ 'be + V3' বসে", "can + be + done (V3)"],
+    "hint": "যেকোনো Modal verb-কে Passive করতে তার সাথে শুধু 'be' যোগ করে V3 বসাতে হয়।"
+  },
+  {
+    "bangla": "নিয়মগুলো মানা উচিত।",
+    "english": "The rules should be followed.",
+    "grammar_focus": "Modal Passive (should)",
+    "rules": ["should + be + V3", "follow-এর V3 = followed"],
+    "hint": "উচিত অর্থে should-এর সাথে be + V3 বসে।"
+  },
+  {
+    "bangla": "চিঠিটি অবশ্যই পাঠাতে হবে।",
+    "english": "The letter must be sent.",
+    "grammar_focus": "Modal Passive (must)",
+    "rules": ["must + be + sent (V3)"],
+    "hint": "send - sent - sent"
+  },
+  {
+    "bangla": "কখন কাজটা শেষ করা হবে?",
+    "english": "When will the work be finished?",
+    "grammar_focus": "Future Simple Passive (Wh-Question)",
+    "rules": ["Wh-word + will + Subject + be + V3?", "finish-এর V3 = finished"],
+    "hint": "প্রশ্নবোধক বাক্যে 'will' সাবজেক্টের আগে থাকে এবং 'be' সাবজেক্টের পরে বসে।"
+  },
+  {
+    "bangla": "তোমাকে কি জানানো হয়েছিল?",
+    "english": "Were you informed?",
+    "grammar_focus": "Past Simple Passive (Question)",
+    "rules": ["Were + you + informed (V3)?", "inform-এর V3 = informed"],
+    "hint": "You-এর সাথে were বসে, তাই প্রশ্নটি Were দিয়ে শুরু হয়েছে।"
+  },
+  {
+    "bangla": "বইটি কোথায় পাওয়া যাবে?",
+    "english": "Where can the book be found?",
+    "grammar_focus": "Modal Passive (Wh-Question)",
+    "rules": ["Where + can + Subject + be + V3?", "find-এর V3 = found"],
+    "hint": "find - found - found"
+  },
+  {
+    "bangla": "আমাকে একটি বই দেওয়া হয়েছিল।",
+    "english": "I was given a book.",
+    "grammar_focus": "Passive with Double Object",
+    "rules": ["এখানে I (আমাকে) সাবজেক্ট হিসেবে ব্যবহৃত হয়েছে", "was + given (V3)"],
+    "hint": "'A book was given to me'-ও বলা যায়, তবে 'I was given a book' বেশি প্রচলিত।"
+  },
+  {
+    "bangla": "তাকে এখনো টাকা দেওয়া হয়নি।",
+    "english": "He has not been paid yet.",
+    "grammar_focus": "Present Perfect Passive (Negative)",
+    "rules": ["has + not + been + paid (V3)", "yet → এখনো", "pay-এর V3 = paid"],
+    "hint": "নেগেটিভ বাক্যে not শব্দটি has এবং been-এর মাঝখানে বসে।"
+  },
+  {
+    "bangla": "এই ঘরটি ব্যবহার করা হয় না।",
+    "english": "This room is not used.",
+    "grammar_focus": "Present Simple Passive (Negative)",
+    "rules": ["is + not + used (V3)"],
+    "hint": "সাধারণ ঘটনা বা অভ্যাসের নেগেটিভ রূপ।"
+  },
+  {
+    "bangla": "কাজটি করা হোক।",
+    "english": "Let the work be done.",
+    "grammar_focus": "Imperative Passive (Let)",
+    "rules": ["আদেশ বা অনুরোধমূলক বাক্যকে Passive করতে Let বসে", "Let + Object (the work) + be + V3 (done)"],
+    "hint": "Do the work (কাজটি করো) - এর Passive ফর্ম হলো 'Let the work be done'।"
+  },
+  {
+    "bangla": "দরজাটি বন্ধ করা হোক।",
+    "english": "Let the door be closed.",
+    "grammar_focus": "Imperative Passive (Let)",
+    "rules": ["Let + Object (the door) + be + V3 (closed)", "Close the door-এর Passive ফর্ম"],
+    "hint": "Imperative বাক্যের Passive-এ সর্বদা 'be + V3' বসে।"
+  },
+  {
+    "bangla": "গাছগুলো কাটা উচিত নয়।",
+    "english": "Trees should not be cut down.",
+    "grammar_focus": "Modal Passive (Negative)",
+    "rules": ["should + not + be + cut (V3)", "cut-এর তিন ফর্মই cut"],
+    "hint": "cut down একটি Phrasal verb যার অর্থ গাছ কেটে ফেলা।"
+  },
+  {
+    "bangla": "তাঁকে একজন ভালো মানুষ হিসেবে বিবেচনা করা হয়।",
+    "english": "He is considered a good man.",
+    "grammar_focus": "Present Simple (Passive)",
+    "rules": ["is + considered (V3)"],
+    "hint": "consider মানে বিবেচনা করা। সমাজ তাকে বিবেচনা করে তাই এটি Passive।"
+  },
+  {
+    "bangla": "আগামীকাল একটি মিটিং ডাকা হবে।",
+    "english": "A meeting will be called tomorrow.",
+    "grammar_focus": "Future Simple (Passive)",
+    "rules": ["will be + called (V3)", "tomorrow → আগামীকাল"],
+    "hint": "ডাক দেওয়া বা আহ্বান করা অর্থে 'call' ব্যবহৃত হয়।"
+  }
+]

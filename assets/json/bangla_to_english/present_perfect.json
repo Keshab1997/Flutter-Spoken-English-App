@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি কাজটি করেছি।",
+    "english": "I have done the work.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["Subject (I) + have + V3 (done)", "do-এর V3 = done"],
+    "hint": "কোনো কাজ শেষ হয়েছে কিন্তু তার ফল এখনও আছে বোঝালে Present Perfect হয়।"
+  },
+  {
+    "bangla": "সে একটি চিঠি লিখেছে।",
+    "english": "He has written a letter.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["He (3rd Person Singular) এর সাথে has বসে", "write-এর V3 = written"],
+    "hint": "He, She, It বা যেকোনো একটি নামের পর 'has' বসে।"
+  },
+  {
+    "bangla": "তারা সবেমাত্র পৌঁছেছে।",
+    "english": "They have just arrived.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["just → সবেমাত্র বা এইমাত্র", "They-এর পর have বসে", "arrive-এর V3 = arrived"],
+    "hint": "'just' শব্দটি have/has এবং মূল verb-এর মাঝখানে বসে।"
+  },
+  {
+    "bangla": "আমি ইতিমধ্যে বিলটি পরিশোধ করেছি।",
+    "english": "I have already paid the bill.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["already → ইতিমধ্যে", "pay-এর V3 = paid"],
+    "hint": "'already' শব্দটি have/has এর পরে বসে।"
+  },
+  {
+    "bangla": "সে এখনো আসেনি।",
+    "english": "She has not come yet.",
+    "grammar_focus": "Present Perfect (Negative)",
+    "rules": ["Negative বাক্যে has not + V3", "yet → এখনো", "come-এর V3 = come (come-came-come)"],
+    "hint": "'yet' শব্দটি সাধারণত Negative বাক্যের একেবারে শেষে বসে।"
+  },
+  {
+    "bangla": "তুমি কি কখনো লন্ডন গিয়েছো?",
+    "english": "Have you ever been to London?",
+    "grammar_focus": "Present Perfect (Question)",
+    "rules": ["Question-এ Have/Has বাক্যের শুরুতে বসে", "ever → কখনো", "go-এর পরিবর্তে এখানে been (যাওয়া বা ভিজিট করা অর্থে) ব্যবহৃত হয়েছে"],
+    "hint": "কোনো জায়গা ঘুরে আসার অভিজ্ঞতা বোঝাতে 'gone' এর বদলে 'been' বেশি ব্যবহার হয়।"
+  },
+  {
+    "bangla": "আমি কখনো সুশি খাইনি।",
+    "english": "I have never eaten sushi.",
+    "grammar_focus": "Present Perfect (Negative)",
+    "rules": ["never → কখনো না", "eat-এর V3 = eaten"],
+    "hint": "'never' থাকলে আলাদা করে 'not' বসানোর প্রয়োজন নেই।"
+  },
+  {
+    "bangla": "আমরা তাকে অনেকদিন ধরে চিনি।",
+    "english": "We have known him for a long time.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["know-এর V3 = known", "for a long time → অনেকদিন ধরে (সময়ের ব্যাপ্তি বোঝাতে for বসে)"],
+    "hint": "Total duration বা মোট সময় বোঝাতে 'for' ব্যবহার করা হয়।"
+  },
+  {
+    "bangla": "সে সোমবার থেকে অসুস্থ।",
+    "english": "He has been sick since Monday.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["be verb-এর V3 = been", "since Monday → সোমবার থেকে (নির্দিষ্ট সময় থেকে শুরু বোঝাতে since বসে)"],
+    "hint": "Starting point বা শুরুর নির্দিষ্ট সময় বোঝাতে 'since' বসে।"
+  },
+  {
+    "bangla": "তুমি কি তোমার হোমওয়ার্ক করেছ?",
+    "english": "Have you done your homework?",
+    "grammar_focus": "Present Perfect (Question)",
+    "rules": ["Have + Subject (you) + V3 (done)?"],
+    "hint": "You এর সাথে question করতে 'Have' বাক্যের প্রথমে আসে।"
+  },
+  {
+    "bangla": "আমি আমার চাবি হারিয়ে ফেলেছি।",
+    "english": "I have lost my keys.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["lose-এর V3 = lost"],
+    "hint": "চাবিটি হারিয়েছে এবং এখনো পাওয়া যায়নি, তাই এটি Present Perfect।"
+  },
+  {
+    "bangla": "সে গ্লাসটি ভেঙেছে।",
+    "english": "She has broken the glass.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["break-এর V3 = broken"],
+    "hint": "break - broke - broken"
+  },
+  {
+    "bangla": "ট্রেনটি এইমাত্র ছেড়েছে।",
+    "english": "The train has just left.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["The train (Singular) এর সাথে has বসে", "leave-এর V3 = left", "just → এইমাত্র"],
+    "hint": "leave - left - left"
+  },
+  {
+    "bangla": "আমি তার নাম ভুলে গেছি।",
+    "english": "I have forgotten his name.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["forget-এর V3 = forgotten"],
+    "hint": "forget - forgot - forgotten"
+  },
+  {
+    "bangla": "তুমি কোথায় গিয়েছ?",
+    "english": "Where have you gone?",
+    "grammar_focus": "Present Perfect (Wh-Question)",
+    "rules": ["Wh-word + have/has + Subject + V3?", "Where → কোথায়"],
+    "hint": "Wh-word এর ঠিক পরেই 'have' বা 'has' বসাতে হয়।"
+  },
+  {
+    "bangla": "তারা কি ম্যাচটি জিতেছে?",
+    "english": "Have they won the match?",
+    "grammar_focus": "Present Perfect (Question)",
+    "rules": ["Have + they + won (V3)", "win-এর V3 = won"],
+    "hint": "win - won - won"
+  },
+  {
+    "bangla": "সে একটি নতুন গাড়ি কিনেছে।",
+    "english": "He has bought a new car.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["buy-এর V3 = bought"],
+    "hint": "buy - bought - bought"
+  },
+  {
+    "bangla": "সূর্য অস্ত গেছে।",
+    "english": "The sun has set.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["set-এর V1, V2, V3 তিনটাই একই (set)"],
+    "hint": "The sun (Singular) তাই 'has' বসেছে।"
+  },
+  {
+    "bangla": "আমার বই কে নিয়েছে?",
+    "english": "Who has taken my book?",
+    "grammar_focus": "Present Perfect (Wh-Question)",
+    "rules": ["Who-কে Singular subject ধরে এর পর has বসেছে", "take-এর V3 = taken"],
+    "hint": "'Who' দিয়ে প্রশ্ন করলে সাধারণত 'has' বসে।"
+  },
+  {
+    "bangla": "তুমি এটা কেন করেছ?",
+    "english": "Why have you done this?",
+    "grammar_focus": "Present Perfect (Wh-Question)",
+    "rules": ["Why + have + you + V3 (done)?", "Why → কেন"],
+    "hint": "প্রশ্নবোধক বাক্যে 'have' সবসময় Subject-এর আগে বসে।"
+  },
+  {
+    "bangla": "আমি আজ তাকে দেখিনি।",
+    "english": "I have not seen him today.",
+    "grammar_focus": "Present Perfect (Negative)",
+    "rules": ["have not + V3 (seen)", "see-এর V3 = seen"],
+    "hint": "'today', 'this week', 'recently' ইত্যাদি শব্দের সাথে Present Perfect বসে।"
+  },
+  {
+    "bangla": "মা কি রান্না শেষ করেছেন?",
+    "english": "Has mother finished cooking?",
+    "grammar_focus": "Present Perfect (Question)",
+    "rules": ["mother (Singular) তাই Has বাক্যের প্রথমে", "finish-এর V3 = finished"],
+    "hint": "মা যেহেতু 3rd Person Singular, তাই 'Has' ব্যবহার করতে হবে।"
+  },
+  {
+    "bangla": "তুমি কি কিনেছ?",
+    "english": "What have you bought?",
+    "grammar_focus": "Present Perfect (Wh-Question)",
+    "rules": ["What + have + you + V3 (bought)?", "What → কী"],
+    "hint": "'What' দিয়ে প্রশ্ন করলে বাক্যের গঠন একই থাকে, শুধু Wh-word আগে আসে।"
+  },
+  {
+    "bangla": "শিশুটি ঘুমিয়েছে।",
+    "english": "The baby has slept.",
+    "grammar_focus": "Present Perfect",
+    "rules": ["sleep-এর V3 = slept", "The baby (Singular) তাই has বসেছে"],
+    "hint": "sleep - slept - slept"
+  },
+  {
+    "bangla": "আমরা এখনো সিদ্ধান্ত নিইনি।",
+    "english": "We have not decided yet.",
+    "grammar_focus": "Present Perfect (Negative)",
+    "rules": ["have not + V3 (decided)", "yet → এখনো"],
+    "hint": "decide-এর V3 = decided (Regular Verb)।"
+  }
+]

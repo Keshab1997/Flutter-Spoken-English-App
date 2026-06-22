@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি সাঁতার কাটতে পারি।",
+    "english": "I can swim.",
+    "grammar_focus": "Modal Verb (Can - Ability)",
+    "rules": ["Subject + can + V1 (Base form of verb)", "can → সামর্থ্য বা যোগ্যতা (Ability) প্রকাশ করে"],
+    "hint": "Modal verb-এর পর সবসময় verb-এর V1 বসে।"
+  },
+  {
+    "bangla": "আমি কি তোমার কলমটি নিতে পারি?",
+    "english": "Can I take your pen?",
+    "grammar_focus": "Modal Verb (Can - Permission)",
+    "rules": ["Can + Subject + V1?", "বন্ধুদের সাথে বা সাধারণ অনুমতি চাইতে Can ব্যবহৃত হয়"],
+    "hint": "Can দিয়ে শুরু হওয়া প্রশ্নগুলো ইনফরমাল (informal) হয়ে থাকে।"
+  },
+  {
+    "bangla": "সে কাজটি করতে পারে না।",
+    "english": "He cannot do the work.",
+    "grammar_focus": "Modal Verb (Cannot)",
+    "rules": ["can + not = cannot (একসাথে লেখা হয়)", "cannot + V1 (do)"],
+    "hint": "'cannot' সবসময় একসাথে লিখতে হয়, আলাদা (can not) লেখা ভুল।"
+  },
+  {
+    "bangla": "আমি যখন ছোট ছিলাম, তখন দ্রুত দৌড়াতে পারতাম।",
+    "english": "I could run fast when I was young.",
+    "grammar_focus": "Modal Verb (Could - Past Ability)",
+    "rules": ["can-এর past form হলো 'could'", "অতীতের সামর্থ্য বোঝাতে could + V1 বসে"],
+    "hint": "could-এর পরও verb-এর V1 (run) বসে।"
+  },
+  {
+    "bangla": "তুমি কি আমাকে একটু সাহায্য করতে পারবে?",
+    "english": "Could you please help me?",
+    "grammar_focus": "Modal Verb (Could - Polite Request)",
+    "rules": ["Could + Subject + V1?", "খুব ভদ্রভাবে (Polite) অনুরোধ করতে Could ব্যবহৃত হয়"],
+    "hint": "'Can'-এর চেয়ে 'Could' দিয়ে প্রশ্ন করলে অনেক বেশি ভদ্রতা প্রকাশ পায়।"
+  },
+  {
+    "bangla": "তোমার এখন ঘুমানো উচিত।",
+    "english": "You should sleep now.",
+    "grammar_focus": "Modal Verb (Should - Advice)",
+    "rules": ["Subject + should + V1", "should → উচিত (কাউকে উপদেশ বা পরামর্শ দিতে)"],
+    "hint": "should-এর পর verb-এর সাথে s/es, ing বা ed কিছুই যুক্ত হয় না।"
+  },
+  {
+    "bangla": "তোমার সেখানে যাওয়া উচিত নয়।",
+    "english": "You should not go there.",
+    "grammar_focus": "Modal Verb (Should not)",
+    "rules": ["should + not + V1", "Negative উপদেশ দিতে should not বসে"],
+    "hint": "should not-কে সংক্ষেপে 'shouldn't' বলা যায়।"
+  },
+  {
+    "bangla": "তোমার তাকে বলা উচিত ছিল।",
+    "english": "You should have told him.",
+    "grammar_focus": "Modal Verb (Should have - Past Regret)",
+    "rules": ["should + have + V3", "অতীতে কিছু করা উচিত ছিল কিন্তু করা হয়নি বোঝাতে বসে", "tell-এর V3 = told"],
+    "hint": "should have-এর পর সবসময় verb-এর past participle (V3) বসে।"
+  },
+  {
+    "bangla": "আপনি কি এক কাপ চা খাবেন?",
+    "english": "Would you like a cup of tea?",
+    "grammar_focus": "Modal Verb (Would like)",
+    "rules": ["Would you like...? → ভদ্রভাবে কাউকে কিছু অফার (Offer) করতে"],
+    "hint": "স্পোকেন ইংলিশে কাউকে কিছু খেতে সাধতে 'Would you like' খুব জনপ্রিয়।"
+  },
+  {
+    "bangla": "আমি বরং ঘরে থাকব।",
+    "english": "I would rather stay at home.",
+    "grammar_focus": "Modal Verb (Would rather - Preference)",
+    "rules": ["would rather + V1", "দুটির মধ্যে একটিকে বেশি পছন্দ করা (বরং) বোঝায়"],
+    "hint": "'would rather'-এর অর্থ হলো 'বরং' (কোনো কিছু করতে বেশি ইচ্ছুক হওয়া)।"
+  },
+  {
+    "bangla": "আমার বাবা প্রতিদিন সকালে হাঁটতেন।",
+    "english": "My father would walk every morning.",
+    "grammar_focus": "Modal Verb (Would - Past Habit)",
+    "rules": ["would + V1", "অতীতের নিয়মিত অভ্যাস বোঝাতে would ব্যবহৃত হয়"],
+    "hint": "অতীতের অভ্যাস বোঝাতে 'used to'-এর মতো 'would'-ও ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আমি কি ভেতরে আসতে পারি, স্যার?",
+    "english": "May I come in, sir?",
+    "grammar_focus": "Modal Verb (May - Permission)",
+    "rules": ["May + Subject + V1?", "অফিসিয়াল, ফরমাল বা সম্মানজনক অনুমতির জন্য May বসে"],
+    "hint": "শিক্ষক বা বড়দের কাছে অনুমতি চাইতে 'Can'-এর বদলে 'May' ব্যবহার করা উত্তম।"
+  },
+  {
+    "bangla": "আজ বৃষ্টি হতে পারে।",
+    "english": "It may rain today.",
+    "grammar_focus": "Modal Verb (May - Possibility)",
+    "rules": ["Subject + may + V1", "কোনো কিছু ঘটার সম্ভাবনা (Possibility) থাকলে may বসে"],
+    "hint": "may মানে 'হতে পারে' (সম্ভাবনা ৫০-৫০)।"
+  },
+  {
+    "bangla": "আল্লাহ তোমার মঙ্গল করুন।",
+    "english": "May Allah bless you.",
+    "grammar_focus": "Modal Verb (May - Wish/Prayer)",
+    "rules": ["May + Subject + V1", "প্রার্থনা বা শুভকামনা বোঝাতে বাক্যের শুরুতে May বসে"],
+    "hint": "কারো জন্য দোয়া করতে May দিয়ে বাক্য শুরু হয়।"
+  },
+  {
+    "bangla": "সে আজ আসতেও পারে। (সম্ভাবনা কম)",
+    "english": "He might come today.",
+    "grammar_focus": "Modal Verb (Might - Weak Possibility)",
+    "rules": ["Subject + might + V1", "খুবই ক্ষীণ সম্ভাবনা (Weak Possibility) বোঝাতে might বসে"],
+    "hint": "'may'-এর চেয়ে 'might'-এর সম্ভাবনা অনেক কম থাকে (১০-২০%)।"
+  },
+  {
+    "bangla": "সে হয়তো খবরটি শুনেছে।",
+    "english": "He might have heard the news.",
+    "grammar_focus": "Modal Verb (Might have)",
+    "rules": ["might + have + V3", "অতীতে কোনো কিছু ঘটে থাকার সম্ভাবনা বোঝায়", "hear-এর V3 = heard"],
+    "hint": "might have-এর পর verb-এর V3 বসে।"
+  },
+  {
+    "bangla": "তোমাকে অবশ্যই আইন মানতে হবে।",
+    "english": "You must obey the law.",
+    "grammar_focus": "Modal Verb (Must - Obligation)",
+    "rules": ["Subject + must + V1", "must → অবশ্যই (বাধ্যবাধকতা বা অবশ্যকর্তব্য)"],
+    "hint": "'must' মানে অবশ্যই করতে হবে, এর কোনো বিকল্প নেই।"
+  },
+  {
+    "bangla": "সে নিশ্চয়ই ক্লান্ত।",
+    "english": "He must be tired.",
+    "grammar_focus": "Modal Verb (Must be - Strong Assumption)",
+    "rules": ["must + be + Adjective", "কোনো বিষয়ে প্রায় নিশ্চিত অনুমান (Strong Belief) বোঝাতে"],
+    "hint": "কারো চেহারা বা অবস্থা দেখে নিশ্চিত হলে must be বসে।"
+  },
+  {
+    "bangla": "তোমার এখানে ধূমপান করা সম্পূর্ণ নিষেধ।",
+    "english": "You must not smoke here.",
+    "grammar_focus": "Modal Verb (Must not - Prohibition)",
+    "rules": ["must + not + V1", "কঠোর নিষেধ বা সম্পূর্ণ বারণ বোঝাতে must not বসে"],
+    "hint": "must not-কে সংক্ষেপে 'mustn't' বলা হয়।"
+  },
+  {
+    "bangla": "আমাদের পিতামাতাকে সম্মান করা উচিত।",
+    "english": "We ought to respect our parents.",
+    "grammar_focus": "Modal Verb (Ought to - Moral Duty)",
+    "rules": ["ought to + V1", "ought to → নৈতিক দায়িত্ব বা উচিত অর্থে বসে"],
+    "hint": "should এবং ought to-এর অর্থ প্রায় একই, তবে ought to বেশি নৈতিক দায়িত্ব বোঝায়।"
+  },
+  {
+    "bangla": "আমাকে এখন যেতে হবে।",
+    "english": "I have to go now.",
+    "grammar_focus": "Modal Verb (Have to)",
+    "rules": ["Subject (I, We, You, They) + have to + V1", "have to → পরিস্থিতি বা বাধ্যবাধকতার কারণে কিছু করতে হওয়া"],
+    "hint": "'must' নিজের ভেতর থেকে আসে, আর 'have to' বাইরের চাপে করতে হয়।"
+  },
+  {
+    "bangla": "তাকে প্রতিদিন রান্না করতে হয়।",
+    "english": "She has to cook every day.",
+    "grammar_focus": "Modal Verb (Has to)",
+    "rules": ["Subject (He, She, It) + has to + V1", "Third Person Singular-এর সাথে has to বসে"],
+    "hint": "have to-এর মতোই অর্থ, শুধু subject অনুযায়ী has to হয়েছে।"
+  },
+  {
+    "bangla": "আমাকে গতকাল সেখানে যেতে হয়েছিল।",
+    "english": "I had to go there yesterday.",
+    "grammar_focus": "Modal Verb (Had to - Past Obligation)",
+    "rules": ["have to/has to-এর past form হলো had to", "had to + V1"],
+    "hint": "অতীতে কিছু করতে বাধ্য ছিলাম বা করতে হয়েছিল বোঝাতে 'had to' বসে।"
+  },
+  {
+    "bangla": "আমি আগে ফুটবল খেলতাম (এখন আর খেলি না)।",
+    "english": "I used to play football.",
+    "grammar_focus": "Modal Verb (Used to - Past Habit)",
+    "rules": ["Subject + used to + V1", "অতীতে কোনো অভ্যাস ছিল কিন্তু বর্তমানে নেই, এমন বোঝায়"],
+    "hint": "অতীতের দীর্ঘস্থায়ী অভ্যাস বোঝাতে 'used to' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আমি ধূমপান করতাম না।",
+    "english": "I did not use to smoke.",
+    "grammar_focus": "Modal Verb (Negative Used to)",
+    "rules": ["did not + use to + V1", "did বসলে used থেকে d বাদ গিয়ে use হয়ে যায়"],
+    "hint": "Negative বা question-এর সময় 'used to' পরিবর্তন হয়ে 'use to' হয়ে যায়।"
+  }
+]

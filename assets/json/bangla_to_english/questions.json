@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "তুমি কি ইংরেজি জানো?",
+    "english": "Do you know English?",
+    "grammar_focus": "Yes/No Question (Present Simple)",
+    "rules": ["হ্যাঁ/না উত্তর হয় এমন প্রশ্নে 'Do/Does' বাক্যের শুরুতে বসে", "Do + subject + V1?"],
+    "hint": "I, We, You, They-এর আগে প্রশ্ন করতে 'Do' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "সে কি এখানে থাকে?",
+    "english": "Does he live here?",
+    "grammar_focus": "Yes/No Question (Present Simple)",
+    "rules": ["He (3rd Person Singular) এর জন্য বাক্যের শুরুতে Does বসে", "Does + subject + V1 (live)?"],
+    "hint": "Does দিয়ে প্রশ্ন শুরু হলে মূল verb-এর সাথে s/es বসে না (lives হবে না, live হবে)।"
+  },
+  {
+    "bangla": "তুমি কি গতকাল সেখানে গিয়েছিলে?",
+    "english": "Did you go there yesterday?",
+    "grammar_focus": "Yes/No Question (Past Simple)",
+    "rules": ["অতীতের প্রশ্ন করতে বাক্যের শুরুতে Did বসে", "Did + subject + V1 (go)?"],
+    "hint": "Did-এর পর সবসময় Verb-এর Base Form (V1) বসে (went হবে না, go হবে)।"
+  },
+  {
+    "bangla": "তোমার নাম কী?",
+    "english": "What is your name?",
+    "grammar_focus": "Wh-Question (What)",
+    "rules": ["What → কী (বস্তু বা তথ্য জানতে ব্যবহৃত হয়)", "Wh-word + am/is/are + Subject?"],
+    "hint": "যেকোনো তথ্য জানতে 'What' দিয়ে প্রশ্ন করা হয়।"
+  },
+  {
+    "bangla": "তুমি কোথায় থাকো?",
+    "english": "Where do you live?",
+    "grammar_focus": "Wh-Question (Where)",
+    "rules": ["Where → কোথায় (স্থান জানতে ব্যবহৃত হয়)", "Where + do/does/did + subject + V1?"],
+    "hint": "Wh-word-এর ঠিক পরেই সাহায্যকারী verb (do/does/is/are) বসাতে হয়।"
+  },
+  {
+    "bangla": "তুমি কখন ঘুম থেকে ওঠো?",
+    "english": "When do you wake up?",
+    "grammar_focus": "Wh-Question (When)",
+    "rules": ["When → কখন (সময় জানতে ব্যবহৃত হয়)"],
+    "hint": "সময় জানতে 'When' অথবা 'What time' দুটোই ব্যবহার করা যায়।"
+  },
+  {
+    "bangla": "তুমি কেন কাঁদছ?",
+    "english": "Why are you crying?",
+    "grammar_focus": "Wh-Question (Why - Present Continuous)",
+    "rules": ["Why → কেন (কারণ জানতে ব্যবহৃত হয়)", "Why + are + you + verb(ing)?"],
+    "hint": "'Why' দিয়ে প্রশ্ন করলে উত্তরে সাধারণত 'because' দিয়ে কারণ বলতে হয়।"
+  },
+  {
+    "bangla": "কে দরজা ভেঙেছে?",
+    "english": "Who broke the door?",
+    "grammar_focus": "Wh-Question (Who as Subject)",
+    "rules": ["Who → কে বা কারা (ব্যক্তি জানতে ব্যবহৃত হয়)", "Who নিজে Subject হিসেবে কাজ করলে এরপর do/did বসে না, সরাসরি verb বসে"],
+    "hint": "Who-এর পর সরাসরি past form (V2) বসেছে।"
+  },
+  {
+    "bangla": "তুমি কাকে খুঁজছ?",
+    "english": "Whom are you looking for?",
+    "grammar_focus": "Wh-Question (Whom)",
+    "rules": ["Whom → কাকে (Object হিসেবে ব্যক্তি জানতে)", "look for → খোঁজা"],
+    "hint": "Spoken English-এ 'Whom'-এর পরিবর্তে 'Who are you looking for?' বলাটাও বেশ প্রচলিত।"
+  },
+  {
+    "bangla": "এটা কার কলম?",
+    "english": "Whose pen is this?",
+    "grammar_focus": "Wh-Question (Whose)",
+    "rules": ["Whose → কার (মালিকানা জানতে ব্যবহৃত হয়)", "Whose-এর ঠিক পরেই Noun (pen) বসে"],
+    "hint": "Whose-এর পর সাহায্যকারী verb না বসে ওই বস্তুর নাম বসে।"
+  },
+  {
+    "bangla": "তুমি কোন বইটি চাও?",
+    "english": "Which book do you want?",
+    "grammar_focus": "Wh-Question (Which)",
+    "rules": ["Which → কোনটি (বেছে নেওয়া বা Choice বোঝাতে)", "Which-এর ঠিক পরেই Noun (book) বসে"],
+    "hint": "Whose এবং Which-এর ঠিক পরেই যে বস্তুর কথা বলা হচ্ছে, তার নাম বসাতে হয়।"
+  },
+  {
+    "bangla": "তুমি কীভাবে অফিসে যাও?",
+    "english": "How do you go to the office?",
+    "grammar_focus": "Wh-Question (How - Method)",
+    "rules": ["How → কীভাবে / কেমন করে (পদ্ধতি বা অবস্থা জানতে)"],
+    "hint": "যাতায়াতের মাধ্যম বা কোনো কাজের পদ্ধতি জানতে 'How' দিয়ে প্রশ্ন করা হয়।"
+  },
+  {
+    "bangla": "এটার দাম কত?",
+    "english": "How much does this cost?",
+    "grammar_focus": "Question with 'How much'",
+    "rules": ["How much → কতটুকু / কত দাম (Uncountable Noun বা দাম জানতে)", "অথবা 'How much is this?' বলা যায়"],
+    "hint": "যাহা গোনা যায় না বা দাম জিজ্ঞেস করতে 'How much' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "তোমার কয়টি কলম আছে?",
+    "english": "How many pens do you have?",
+    "grammar_focus": "Question with 'How many'",
+    "rules": ["How many → কয়টি (Countable Noun বা সংখ্যা জানতে)", "How many-এর পর সবসময় Plural Noun (pens) বসে"],
+    "hint": "যাহা গোনা যায়, তার সংখ্যা জানতে 'How many' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "তোমার স্কুল কত দূর?",
+    "english": "How far is your school?",
+    "grammar_focus": "Question with 'How far'",
+    "rules": ["How far → কত দূর (দূরত্ব বা Distance জানতে ব্যবহৃত হয়)"],
+    "hint": "How-এর সাথে far যুক্ত হয়ে এটি দূরত্ব জানতে চাওয়ার ফ্রেজ তৈরি করে।"
+  },
+  {
+    "bangla": "তুমি কতক্ষণ ধরে অপেক্ষা করছ?",
+    "english": "How long have you been waiting?",
+    "grammar_focus": "Question with 'How long'",
+    "rules": ["How long → কতক্ষণ (সময়ের ব্যাপ্তি বা Duration জানতে)", "have you been + verb(ing) (Present Perfect Continuous)"],
+    "hint": "কোনো কাজ কতক্ষণ ধরে চলছে জানতে 'How long' ব্যবহার করা হয়।"
+  },
+  {
+    "bangla": "তুমি কত ঘনঘন সেখানে যাও?",
+    "english": "How often do you go there?",
+    "grammar_focus": "Question with 'How often'",
+    "rules": ["How often → কত ঘনঘন / কত দিন পরপর (Frequency জানতে)"],
+    "hint": "মাসে কয়বার, সপ্তাহে কয়দিন—এমনটা জানতে 'How often' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "তুমি কী সম্পর্কে কথা বলছ?",
+    "english": "What are you talking about?",
+    "grammar_focus": "Preposition at the end",
+    "rules": ["Spoken English-এ Preposition (about, for, with) সাধারণত বাক্যের শেষে বসে", "talk about → কোনো বিষয়ে কথা বলা"],
+    "hint": "'About what are you talking?' বলাটা ব্যাকরণগতভাবে সঠিক হলেও, স্পোকেন ইংলিশে about শেষে রাখা হয়।"
+  },
+  {
+    "bangla": "তুমি কি খবরটি শোননি?",
+    "english": "Didn't you hear the news?",
+    "grammar_focus": "Negative Question",
+    "rules": ["Did not (Didn't) + Subject + V1?", "না-বোধক প্রশ্ন করতে সাহায্যকারী verb-এর সাথে n't যুক্ত করে বাক্যের শুরুতে বসাতে হয়"],
+    "hint": "তুমি কি জানো না? (Don't you know?) - এগুলো Negative Question।"
+  },
+  {
+    "bangla": "তুমি একজন ছাত্র, তাই না?",
+    "english": "You are a student, aren't you?",
+    "grammar_focus": "Tag Question (Positive to Negative)",
+    "rules": ["মূল বাক্যটি Positive হলে, Tag অংশটি Negative (aren't you) হয়", "নিশ্চিত হওয়ার জন্য বাক্যের শেষে ছোট প্রশ্ন জুড়ে দেওয়া হয়"],
+    "hint": "Spoken English-এ সম্মতি আদায়ে Tag Question প্রচুর ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "সে কাল আসেনি, তাই না?",
+    "english": "He didn't come yesterday, did he?",
+    "grammar_focus": "Tag Question (Negative to Positive)",
+    "rules": ["মূল বাক্যটি Negative (didn't) হলে, Tag অংশটি Positive (did he) হয়"],
+    "hint": "নেগেটিভ বাক্যের শেষে পজিটিভ ট্যাগ বসে।"
+  },
+  {
+    "bangla": "তুমি কি জানো ব্যাংকটি কোথায়?",
+    "english": "Do you know where the bank is?",
+    "grammar_focus": "Embedded Question",
+    "rules": ["বড় বাক্যের ভেতরে ছোট প্রশ্ন থাকলে তাকে Embedded Question বলে", "where-এর পর সাহায্যকারী verb না বসে Subject (the bank) বসেছে"],
+    "hint": "Where is the bank? কিন্তু 'Do you know where the bank is?' (where-এর পর subject)।"
+  },
+  {
+    "bangla": "আমি কি তোমাকে সাহায্য করতে পারি?",
+    "english": "Can I help you?",
+    "grammar_focus": "Modal Question (Offer)",
+    "rules": ["কাউকে সাহায্য করার প্রস্তাব দিতে Can I / May I ব্যবহৃত হয়"],
+    "hint": "দোকানে বা অফিসে কাস্টমারকে এই প্রশ্নটি করা খুব কমন।"
+  },
+  {
+    "bangla": "আপনি কি এক কাপ চা খাবেন?",
+    "english": "Would you like a cup of tea?",
+    "grammar_focus": "Modal Question (Polite Offer)",
+    "rules": ["Would you like...? → খুব ভদ্রভাবে কাউকে কিছু সাধতে বা অফার করতে"],
+    "hint": "'Do you want tea?'-এর চেয়ে 'Would you like...?' বলা অনেক বেশি ভদ্রতা।"
+  },
+  {
+    "bangla": "তুমি কি চা খাবে নাকি কফি?",
+    "english": "Will you have tea or coffee?",
+    "grammar_focus": "Alternative Question",
+    "rules": ["or (নাকি) দিয়ে দুটি অপশনের মধ্যে বেছে নিতে বলা হয়", "have → এখানে পান করা বা খাওয়া অর্থে ব্যবহৃত হয়েছে"],
+    "hint": "দুটো জিনিসের মধ্যে পছন্দ জানতে 'or' ব্যবহার করে প্রশ্ন করা হয়।"
+  }
+]

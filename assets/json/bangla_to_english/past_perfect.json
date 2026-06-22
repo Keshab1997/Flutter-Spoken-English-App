@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "ডাক্তার আসার আগে রোগী মারা গেল।",
+    "english": "The patient had died before the doctor came.",
+    "grammar_focus": "Past Perfect (before)",
+    "rules": ["অতীতে দুটি কাজের মধ্যে যেটি আগে হয়, সেটি Past Perfect হয়", "রোগী আগে মারা গেছে, তাই 'had died'", "before-এর আগের অংশ Past Perfect এবং পরের অংশ Past Simple হয়"],
+    "hint": "Before (আগে) - এর আগে Past Perfect Tense বসে।"
+  },
+  {
+    "bangla": "ডাক্তার আসার পর রোগী মারা গেল।",
+    "english": "The patient died after the doctor had come.",
+    "grammar_focus": "Past Perfect (after)",
+    "rules": ["এখানে ডাক্তার আগে এসেছে, তাই 'had come'", "after-এর পরের অংশ Past Perfect এবং আগের অংশ Past Simple হয়"],
+    "hint": "After (পরে) - এর পরে Past Perfect Tense বসে।"
+  },
+  {
+    "bangla": "আমরা স্টেশনে পৌঁছানোর আগেই ট্রেনটি ছেড়ে দিল।",
+    "english": "The train had left before we reached the station.",
+    "grammar_focus": "Past Perfect (before)",
+    "rules": ["ট্রেনটি আগে ছেড়েছে, তাই 'had left'", "আমরা পরে পৌঁছেছি, তাই 'reached' (V2)"],
+    "hint": "leave-এর V3 হলো left, এবং reach-এর V2 হলো reached।"
+  },
+  {
+    "bangla": "ট্রেন ছেড়ে দেওয়ার পর আমরা স্টেশনে পৌঁছালাম।",
+    "english": "We reached the station after the train had left.",
+    "grammar_focus": "Past Perfect (after)",
+    "rules": ["after-এর পরে সবসময় 'had + V3' বসে"],
+    "hint": "after-এর ক্ষেত্রে ঘটনা উল্টে যায়, কারণ কাজটি পরে হয়েছে।"
+  },
+  {
+    "bangla": "আমি আগেই কাজটা শেষ করেছিলাম।",
+    "english": "I had already finished the work.",
+    "grammar_focus": "Past Perfect",
+    "rules": ["already → আগেই", "Subject (I) + had + already + V3 (finished)"],
+    "hint": "'already' শব্দটি 'had' এবং মূল verb-এর মাঝখানে বসে।"
+  },
+  {
+    "bangla": "সে আসার আগে আমি ঘুমাইনি।",
+    "english": "I had not slept before he came.",
+    "grammar_focus": "Past Perfect (Negative)",
+    "rules": ["Negative বাক্যে had-এর পর not বসে", "sleep-এর V3 = slept"],
+    "hint": "had not + V3 ব্যবহার করে অতীতের না-বোধক কথা বলা যায়।"
+  },
+  {
+    "bangla": "তুমি কি আগেই খবরটি শুনেছিলে?",
+    "english": "Had you heard the news before?",
+    "grammar_focus": "Past Perfect (Question)",
+    "rules": ["Question-এ 'Had' বাক্যের শুরুতে বসে", "Had + you + heard (V3)"],
+    "hint": "hear-এর V3 হলো heard।"
+  },
+  {
+    "bangla": "বাবা আসার আগে তুমি কী করেছিলে?",
+    "english": "What had you done before father came?",
+    "grammar_focus": "Past Perfect (Wh-Question)",
+    "rules": ["What + had + subject + V3", "do-এর V3 = done"],
+    "hint": "Wh-word-এর ঠিক পরেই 'had' বসাতে হয়।"
+  },
+  {
+    "bangla": "আমি এর আগে কখনো তাজমহল দেখিনি।",
+    "english": "I had never seen the Taj Mahal before.",
+    "grammar_focus": "Past Perfect (Negative)",
+    "rules": ["never → কখনো না", "see-এর V3 = seen", "before → এর আগে (বাক্যের শেষে বসেছে)"],
+    "hint": "কখনো করিনি বা দেখিনি বোঝাতে 'had never + V3' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "ঘণ্টা বাজার আগেই আমি স্কুলে পৌঁছালাম।",
+    "english": "I had reached the school before the bell rang.",
+    "grammar_focus": "Past Perfect (before)",
+    "rules": ["ring-এর V2 = rang (Past Simple)", "reach-এর V3 = reached"],
+    "hint": "ring - rang - rung"
+  },
+  {
+    "bangla": "আমি খুব ক্লান্ত ছিলাম কারণ আমি সারাদিন কাজ করেছিলাম।",
+    "english": "I was very tired because I had worked all day.",
+    "grammar_focus": "Past Perfect (Reason/Because)",
+    "rules": ["কারণটি আগে ঘটেছিল, তাই because-এর পরে Past Perfect হয়েছে", "had + worked (V3)"],
+    "hint": "অতীতে কোনো ঘটনার কারণ ব্যাখ্যা করতে because-এর পর Past Perfect বসে।"
+  },
+  {
+    "bangla": "আমি বুঝতে পারলাম যে আমি মানিব্যাগটি হারিয়ে ফেলেছিলাম।",
+    "english": "I realized that I had lost my wallet.",
+    "grammar_focus": "Past Perfect",
+    "rules": ["হারানোর কাজটি আগে হয়েছে, তাই 'had lost'", "বুঝতে পারার কাজটি পরে হয়েছে, তাই 'realized' (V2)"],
+    "hint": "lose-এর V3 হলো lost।"
+  },
+  {
+    "bangla": "আমি সবেমাত্র ভাত খেয়েছিলাম যখন সে ডাকল।",
+    "english": "I had just eaten rice when he called.",
+    "grammar_focus": "Past Perfect (just)",
+    "rules": ["just → সবেমাত্র", "eat-এর V3 = eaten", "when-এর পরের অংশ Past Simple হয়"],
+    "hint": "অতীতে ঠিক যে মুহূর্তে আরেকটি কাজ হয়েছিল, তার ঠিক আগে কাজটি শেষ বোঝাতে 'had just + V3' বসে।"
+  },
+  {
+    "bangla": "সে পরীক্ষায় ফেল করেছিল কারণ সে পড়াশোনা করেনি।",
+    "english": "He failed the exam because he had not studied.",
+    "grammar_focus": "Past Perfect (Negative / Reason)",
+    "rules": ["পড়াশোনা না করার কাজটি আগে, তাই 'had not studied'", "study-এর V3 = studied"],
+    "hint": "ফেল করার কারণটি অতীতের, তাই সেটি Past Perfect-এ হবে।"
+  },
+  {
+    "bangla": "পুলিশ আসার আগেই চোরটি পালিয়ে গিয়েছিল।",
+    "english": "The thief had run away before the police arrived.",
+    "grammar_focus": "Past Perfect (before)",
+    "rules": ["run away-এর V3 = run away (run-ran-run)", "চোর আগে পালিয়েছে, তাই had run away"],
+    "hint": "arrive-এর V2 হলো arrived।"
+  },
+  {
+    "bangla": "তুমি সেখানে যাওয়ার আগে সে কোথায় গিয়েছিল?",
+    "english": "Where had he gone before you went there?",
+    "grammar_focus": "Past Perfect (Wh-Question)",
+    "rules": ["Where + had + subject + V3", "go-এর V3 = gone", "you went (V2)"],
+    "hint": "Wh-Question-এ সাহায্যকারী verb 'had' সাবজেক্টের আগে বসে।"
+  },
+  {
+    "bangla": "শিক্ষক ক্লাসে ঢোকার পর ছাত্ররা কি উঠে দাঁড়িয়েছিল?",
+    "english": "Did the students stand up after the teacher had entered the class?",
+    "grammar_focus": "Past Perfect (Question with after)",
+    "rules": ["after-এর আগের অংশ Past Simple, তাই প্রশ্ন করতে 'Did' ব্যবহৃত হয়েছে", "Did + subject + V1 (stand up)", "after-এর পরের অংশ Past Perfect (had entered)"],
+    "hint": "after যুক্ত বাক্যে Past Simple অংশটিকে ধরে প্রশ্ন তৈরি করতে হয়।"
+  },
+  {
+    "bangla": "ইশ! আমি যদি তাকে আগে চিনতাম!",
+    "english": "I wish I had known him before!",
+    "grammar_focus": "Past Perfect (Wish/Regret)",
+    "rules": ["অতীতের কোনো আক্ষেপ প্রকাশ করতে I wish-এর পর Past Perfect বসে", "know-এর V3 = known"],
+    "hint": "অতীতের কোনো ইচ্ছাপূরণ না হওয়ার আক্ষেপ বোঝাতে এটি ব্যবহার হয়।"
+  },
+  {
+    "bangla": "যখন আমি পার্টিতে পৌঁছালাম, তারা ইতিমধ্যে কেক কেটে ফেলেছিল।",
+    "english": "When I arrived at the party, they had already cut the cake.",
+    "grammar_focus": "Past Perfect (already)",
+    "rules": ["cut-এর V1, V2, V3 একই (cut)", "already-এর কারণে এটি Past Perfect হয়েছে"],
+    "hint": "'When' যুক্ত অংশের কাজ পরে হয় (Past Simple), আর অন্য অংশটি আগে হয় (Past Perfect)।"
+  },
+  {
+    "bangla": "বইটি ফেরত দেওয়ার আগে আমি এটি পড়েছিলাম।",
+    "english": "I had read the book before I returned it.",
+    "grammar_focus": "Past Perfect (before)",
+    "rules": ["পড়ার কাজ আগে, তাই 'had read'", "read-এর V3-এর বানান একই (read) কিন্তু উচ্চারণ 'red'"],
+    "hint": "return-এর V2 হলো returned।"
+  },
+  {
+    "bangla": "আমি ভুলে গিয়েছিলাম যে আমি দরজা লক করেছিলাম।",
+    "english": "I forgot that I had locked the door.",
+    "grammar_focus": "Past Perfect",
+    "rules": ["লক করার কাজটি আগে হয়েছে, তাই 'had locked'", "ভুলে যাওয়ার কাজ পরে হয়েছে, তাই forgot (V2)"],
+    "hint": "that (যে) দিয়ে দুটি বাক্য যুক্ত হয়েছে।"
+  },
+  {
+    "bangla": "আমরা সিনেমা হলে যাওয়ার আগেই সিনেমা শুরু হয়ে গিয়েছিল।",
+    "english": "The movie had started before we reached the cinema hall.",
+    "grammar_focus": "Past Perfect (before)",
+    "rules": ["start-এর V3 = started", "reach-এর V2 = reached"],
+    "hint": "সিনেমা আগে শুরু হয়েছে, তাই The movie had started।"
+  },
+  {
+    "bangla": "ঢাকায় আসার আগে আমরা ৫ বছর সিলেটে বাস করেছিলাম।",
+    "english": "We had lived in Sylhet for 5 years before we came to Dhaka.",
+    "grammar_focus": "Past Perfect (Duration before an action)",
+    "rules": ["for 5 years → ৫ বছর ধরে (সময়ের ব্যাপ্তি)", "live-এর V3 = lived"],
+    "hint": "আগের কোনো জায়গায় দীর্ঘদিন থাকার কথা বোঝাতে Past Perfect ব্যবহার করা যায়।"
+  },
+  {
+    "bangla": "সে তার হাত ধুয়েছিল তারপর সে খাবার খেয়েছিল। (পর অর্থে)",
+    "english": "He ate the food after he had washed his hands.",
+    "grammar_focus": "Past Perfect (after)",
+    "rules": ["হাত ধোয়ার কাজ আগে, তাই 'had washed'", "খাওয়া পরে, তাই 'ate' (V2)"],
+    "hint": "যে কাজটি আগে হয়েছে সেটির সাথে 'had' যুক্ত করুন।"
+  },
+  {
+    "bangla": "বৃষ্টি শুরু হওয়ার আগে আমরা বাড়ি পৌঁছেছিলাম।",
+    "english": "We had reached home before it started raining.",
+    "grammar_focus": "Past Perfect (before)",
+    "rules": ["বাড়ি পৌঁছানো আগে হয়েছে, তাই 'had reached'", "বৃষ্টি হওয়া পরে, তাই 'started' (V2)"],
+    "hint": "'start' বা 'stop'-এর পর অন্য verb আসলে তার সাথে সাধারণত 'ing' যুক্ত হয় (started raining)।"
+  }
+]

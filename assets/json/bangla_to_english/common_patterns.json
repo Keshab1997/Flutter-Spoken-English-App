@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "এখন ইংরেজি শেখার সময়।",
+    "english": "It is time to learn English.",
+    "grammar_focus": "Pattern: It is time to + V1",
+    "rules": ["কোনো কিছু করার সঠিক সময় হয়েছে বোঝাতে 'It is time to' বসে", "to-এর পর সর্বদা Verb-এর Base form (V1) বসে"],
+    "hint": "It is time to go, It is time to eat—এভাবে যেকোনো কাজ যুক্ত করতে পারেন।"
+  },
+  {
+    "bangla": "এটাই আমাদের কাজ শুরু করার উপযুক্ত সময়।",
+    "english": "It is high time we started the work.",
+    "grammar_focus": "Pattern: It is high time + Subject + V2",
+    "rules": ["'It is high time' মানে 'এটাই উপযুক্ত সময়' বা 'ইতিমধ্যেই অনেক দেরি হয়ে গেছে'", "এর পর Subject থাকলে Verb-এর Past form (V2) বসাতে হয়"],
+    "hint": "high time-এর পর 'we start' হবে না, 'we started' হবে।"
+  },
+  {
+    "bangla": "আমার এখন এক কাপ চা খেতে ইচ্ছে করছে।",
+    "english": "I feel like having a cup of tea now.",
+    "grammar_focus": "Pattern: Feel like + Verb(ing)",
+    "rules": ["Feel like → কোনো কিছু করতে ইচ্ছা করা", "feel like-এর পর সর্বদা verb-এর সাথে ing যুক্ত হয়"],
+    "hint": "চা/কফি 'খাওয়া' বোঝাতে drink/eat-এর চেয়ে 'have/having' ব্যবহার করা বেশি স্মার্ট।"
+  },
+  {
+    "bangla": "আজ রাতে বাইরে খেলে কেমন হয়?",
+    "english": "How about eating out tonight?",
+    "grammar_focus": "Pattern: How about + Verb(ing)",
+    "rules": ["How about...? → ...করলে কেমন হয়? (কাউকে প্রস্তাব দিতে)", "How about-এর পর verb-এর সাথে ing বসে"],
+    "hint": "কারো মতামত বা সম্মতি জানতে 'How about + V(ing)' খুব জনপ্রিয় একটি প্যাটার্ন।"
+  },
+  {
+    "bangla": "আমি তোমার সাথে দেখা করার জন্য অধীর আগ্রহে অপেক্ষা করছি।",
+    "english": "I am looking forward to meeting you.",
+    "grammar_focus": "Pattern: Look forward to + Verb(ing)",
+    "rules": ["look forward to → অধীর আগ্রহে অপেক্ষা করা", "সাধারণত to-এর পর V1 বসে, কিন্তু 'look forward to'-এর পর Verb+ing বসে"],
+    "hint": "ইমেইল বা চিঠির শেষেও এই প্যাটার্নটি খুব বেশি ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "কিছু মনে না করলে আমাকে কলমটা দেবেন?",
+    "english": "Would you mind giving me the pen?",
+    "grammar_focus": "Pattern: Would you mind + Verb(ing)",
+    "rules": ["Would you mind...? → কিছু মনে না করলে... (ভদ্রভাবে অনুরোধ করা)", "mind-এর পর verb-এর সাথে ing বসে"],
+    "hint": "Please-এর চেয়ে 'Would you mind' ব্যবহার করলে বেশি ভদ্রতা প্রকাশ পায়।"
+  },
+  {
+    "bangla": "সে একটি সাইকেলই কিনতে পারে না, গাড়ি তো দূরের কথা।",
+    "english": "He cannot buy a bicycle, let alone a car.",
+    "grammar_focus": "Pattern: Let alone",
+    "rules": ["Let alone → তো দূরের কথা / ভাবাই যায় না", "ছোট বা সহজ কাজটির কথা আগে বসে, তারপর let alone দিয়ে বড় কাজটির কথা বসে"],
+    "hint": "নেতিবাচক (Negative) বাক্যে এটি ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আমার ইংরেজি বুঝতে সমস্যা হচ্ছে।",
+    "english": "I am having trouble understanding English.",
+    "grammar_focus": "Pattern: Have trouble + Verb(ing)",
+    "rules": ["have trouble → সমস্যা হওয়া বা কষ্ট হওয়া", "trouble-এর পর verb-এর সাথে ing যুক্ত হয়"],
+    "hint": "কোনো কাজ করতে অসুবিধা হলে I am having trouble + V(ing) ব্যবহার করুন।"
+  },
+  {
+    "bangla": "তার আজ এখানে আসার কথা আছে।",
+    "english": "He is supposed to come here today.",
+    "grammar_focus": "Pattern: Supposed to + V1",
+    "rules": ["supposed to → কথা আছে বা কথা ছিল", "am/is/are + supposed to + V1 (বর্তমানে কথা আছে)"],
+    "hint": "কথা ছিল বোঝাতে was/were + supposed to বসে (He was supposed to come)।"
+  },
+  {
+    "bangla": "এখন কেঁদে কোনো লাভ নেই।",
+    "english": "There is no point in crying now.",
+    "grammar_focus": "Pattern: There is no point in + Verb(ing)",
+    "rules": ["There is no point in → কোনো লাভ নেই বা কোনো অর্থ হয় না", "in (Preposition)-এর পর verb-এর সাথে ing বসে"],
+    "hint": "It is no use + Verb(ing) প্যাটার্নটিও একই অর্থে ব্যবহার করা যায়।"
+  },
+  {
+    "bangla": "টিভি দেখার পরিবর্তে তোমার পড়া উচিত।",
+    "english": "Instead of watching TV, you should read.",
+    "grammar_focus": "Pattern: Instead of + Verb(ing)",
+    "rules": ["Instead of → পরিবর্তে বা বদলে", "of (Preposition)-এর পর verb-এর সাথে ing বসে"],
+    "hint": "একটি কাজের বদলে অন্য কাজ করা বোঝাতে 'Instead of' চমৎকার একটি ফ্রেজ।"
+  },
+  {
+    "bangla": "অফিসে পৌঁছাতে আমার ৩০ মিনিট সময় লাগে।",
+    "english": "It takes me 30 minutes to reach the office.",
+    "grammar_focus": "Pattern: It takes + (person) + time + to + V1",
+    "rules": ["কোনো কাজে কত সময় লাগে তা বোঝাতে 'It takes' দিয়ে বাক্য শুরু হয়", "to-এর পর V1 বসে"],
+    "hint": "It takes 2 hours (২ ঘণ্টা লাগে), It took 5 days (৫ দিন লেগেছিল)।"
+  },
+  {
+    "bangla": "সে শুধু একজন ভালো ছাত্রই নয়, ভালো খেলোয়াড়ও।",
+    "english": "He is not only a good student but also a good player.",
+    "grammar_focus": "Pattern: Not only ... but also",
+    "rules": ["Not only ... but also → শুধু এটা নয়, ওটাও", "দুটি সমজাতীয় বিষয়কে যুক্ত করতে এটি ব্যবহৃত হয়"],
+    "hint": "এক ব্যক্তির দুটি ভালো বা খারাপ গুণ প্রকাশ করতে এটি দারুণ কার্যকর।"
+  },
+  {
+    "bangla": "আমি ক্রিকেট খেলতে দক্ষ।",
+    "english": "I am good at playing cricket.",
+    "grammar_focus": "Pattern: Good at + Verb(ing)",
+    "rules": ["good at → কোনো কিছুতে দক্ষ বা পারদর্শী", "at (Preposition)-এর পর verb-এর সাথে ing বসে"],
+    "hint": "good in হয় না, সঠিক প্রিপজিশন হলো good at।"
+  },
+  {
+    "bangla": "তুমি যতক্ষণ চাও এখানে থাকতে পারো।",
+    "english": "You can stay here as long as you want.",
+    "grammar_focus": "Pattern: As long as",
+    "rules": ["As long as → যতক্ষণ পর্যন্ত / যদি শর্ত থাকে"],
+    "hint": "শর্ত বা সময়ের ব্যাপ্তি বোঝাতে 'as long as' ব্যবহার করা হয়।"
+  },
+  {
+    "bangla": "যাওয়ার আগে দরজা বন্ধ করা নিশ্চিত করো।",
+    "english": "Make sure to lock the door before you leave.",
+    "grammar_focus": "Pattern: Make sure to + V1",
+    "rules": ["Make sure → নিশ্চিত করা", "to-এর পর Verb-এর Base form (lock) বসেছে"],
+    "hint": "কাউকে কোনো গুরুত্বপূর্ণ কাজ মনে করিয়ে দিতে Make sure ব্যবহার করা হয়।"
+  },
+  {
+    "bangla": "ক্লাস প্রায় শুরু হতে চলেছে।",
+    "english": "The class is about to start.",
+    "grammar_focus": "Pattern: About to + V1",
+    "rules": ["About to → প্রায় ঘটতে চলেছে বা এইমাত্র শুরু হবে", "am/is/are + about to + V1"],
+    "hint": "খুবই নিকট ভবিষ্যতে (Immediate future) কোনো কাজ হলে 'about to' বসে।"
+  },
+  {
+    "bangla": "যদি আজ বৃষ্টি হয় তাহলে কী হবে?",
+    "english": "What if it rains today?",
+    "grammar_focus": "Pattern: What if + Present Simple",
+    "rules": ["What if → যদি এমনটা হয়, তাহলে কী হবে?", "আশঙ্কা বা ভয় প্রকাশ করতে ব্যবহৃত হয়"],
+    "hint": "what if-এর পর সাধারণত subject + V1 বসে।"
+  },
+  {
+    "bangla": "আমি বরং মারা যাব তবুও ভিক্ষা করব না।",
+    "english": "I would rather die than beg.",
+    "grammar_focus": "Pattern: Would rather ... than",
+    "rules": ["Would rather + V1 + than + V1", "দুটি কাজের মধ্যে একটিকে বেশি প্রাধান্য দেওয়া (বরং) বোঝাতে"],
+    "hint": "'would rather' এবং 'than' উভয়ের পরেই Verb-এর Base form বসে।"
+  },
+  {
+    "bangla": "আমি না হেসে থাকতে পারলাম না।",
+    "english": "I couldn't help laughing.",
+    "grammar_focus": "Pattern: Can't help / Couldn't help + Verb(ing)",
+    "rules": ["can't help / couldn't help → না করে থাকতে পারা", "help-এর পর এখানে verb-এর সাথে ing বসে"],
+    "hint": "এখানে 'help' মানে সাহায্য করা নয়, এখানে অর্থ হলো 'নিয়ন্ত্রণ করতে না পারা'।"
+  },
+  {
+    "bangla": "আমি স্টেশনে পৌঁছামাত্রই ট্রেনটি ছেড়ে দিল।",
+    "english": "As soon as I reached the station, the train left.",
+    "grammar_focus": "Pattern: As soon as",
+    "rules": ["As soon as → যেইমাত্র ... সেইমাত্র", "উভয় অংশের Tense সাধারণত একই (Past Simple) হয়"],
+    "hint": "দুটি কাজ একটার পর একটা দ্রুত ঘটলে as soon as ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "তুমি যাই বলো না কেন, আমি যাব।",
+    "english": "No matter what you say, I will go.",
+    "grammar_focus": "Pattern: No matter + Wh-word",
+    "rules": ["No matter what → যাই হোক না কেন", "No matter how/where/who দিয়েও বাক্য হয়"],
+    "hint": "কোনো বাধা বা আপত্তি মানবেন না বোঝাতে 'No matter' দারুণ একটি ফ্রেজ।"
+  },
+  {
+    "bangla": "তুমি কি জানো ব্যাংকটি কোথায়?",
+    "english": "Do you know where the bank is?",
+    "grammar_focus": "Pattern: Do you know + wh-word + Subject + Verb?",
+    "rules": ["Embedded Question (প্রশ্নের ভেতরে প্রশ্ন)", "wh-word-এর পর সাহায্যকারী verb না বসে subject বসে"],
+    "hint": "'where is the bank' সাধারণ প্রশ্ন, কিন্তু 'Do you know'-এর পর বসলে 'where the bank is' হয়।"
+  },
+  {
+    "bangla": "বলা সহজ কিন্তু করা কঠিন।",
+    "english": "It is easy to say but difficult to do.",
+    "grammar_focus": "Pattern: It is Adjective + to + V1",
+    "rules": ["It is easy/hard/important + to + V1", "to-এর পর Base form বসে"],
+    "hint": "It is hard to believe, It is nice to meet you—এই প্যাটার্নেই গঠিত।"
+  },
+  {
+    "bangla": "আমার একটি ল্যাপটপ থাকা দরকার।",
+    "english": "I need to have a laptop.",
+    "grammar_focus": "Pattern: Need to have",
+    "rules": ["need to → দরকার বা প্রয়োজন", "have → থাকা (অধিকার বোঝাতে)"],
+    "hint": "'আমার যাওয়া দরকার' (I need to go), আর 'আমার থাকা দরকার' (I need to have)।"
+  }
+]

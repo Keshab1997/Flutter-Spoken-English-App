@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "বরফ গরম করলে তা গলে যায়।",
+    "english": "If you heat ice, it melts.",
+    "grammar_focus": "Zero Conditional",
+    "rules": ["বৈজ্ঞানিক বা চিরন্তন সত্য বোঝাতে Zero Conditional বসে", "If + Present Simple + Present Simple"],
+    "hint": "যে ঘটনা সবসময় সত্য, সেখানে If-এর পরের এবং অন্য অংশের বাক্য—দুটোই Present Simple হয়।"
+  },
+  {
+    "bangla": "বৃষ্টি হলে মাটি ভিজে যায়।",
+    "english": "If it rains, the ground gets wet.",
+    "grammar_focus": "Zero Conditional",
+    "rules": ["If it rains (Present Simple)", "the ground gets wet (Present Simple)"],
+    "hint": "সাধারণ ফলাফল বোঝাতে will বসে না, Present Tense-ই বসে।"
+  },
+  {
+    "bangla": "যদি তুমি আসো, আমি যাব।",
+    "english": "If you come, I will go.",
+    "grammar_focus": "First Conditional",
+    "rules": ["ভবিষ্যতে ঘটার সম্ভাবনা আছে এমন শর্ত বোঝায়", "If + Present Simple + Future Simple"],
+    "hint": "If যুক্ত অংশে 'will' বসে না। (If you will come - বলাটা ভুল)।"
+  },
+  {
+    "bangla": "যদি সে পড়াশোনা করে, তবে সে পাস করবে।",
+    "english": "If he studies, he will pass.",
+    "grammar_focus": "First Conditional",
+    "rules": ["If he studies (Present Simple)", "he will pass (Future Simple)"],
+    "hint": "he-এর সাথে verb-এর শেষে s/es বসে (studies)।"
+  },
+  {
+    "bangla": "বৃষ্টি হলে আমরা খেলব না।",
+    "english": "If it rains, we will not play.",
+    "grammar_focus": "First Conditional (Negative)",
+    "rules": ["If it rains (শর্ত)", "we will not play (ফলাফল - Future Simple)"],
+    "hint": "will not-কে সংক্ষেপে 'won't' বলা যায়।"
+  },
+  {
+    "bangla": "যদি তুমি তাড়াতাড়ি না করো, তুমি ট্রেনটি মিস করবে।",
+    "english": "If you do not hurry, you will miss the train.",
+    "grammar_focus": "First Conditional (Negative If clause)",
+    "rules": ["If + Subject + do/does not + V1", "you will miss the train (Future Simple)"],
+    "hint": "Negative শর্তের ক্ষেত্রে If-এর সাথে do not / does not বসে।"
+  },
+  {
+    "bangla": "তুমি যদি কঠোর পরিশ্রম না করো, তুমি সফল হবে না।",
+    "english": "Unless you work hard, you will not succeed.",
+    "grammar_focus": "Conditionals (Unless)",
+    "rules": ["Unless মানে 'যদি না' (If not)", "Unless-এর পর আর not বসে না"],
+    "hint": "'If you do not work hard'-এর বদলে 'Unless you work hard' বলাটা বেশি স্মার্ট।"
+  },
+  {
+    "bangla": "আমি যদি সময় পাই, তোমাকে কল করব।",
+    "english": "If I get time, I will call you.",
+    "grammar_focus": "First Conditional",
+    "rules": ["If I get time (Present Simple)", "I will call you (Future Simple)"],
+    "hint": "get time বা have time দুটোই 'সময় পাওয়া' অর্থে ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "সে যদি সত্যিটা বলে, আমি তাকে ক্ষমা করে দেব।",
+    "english": "If he tells the truth, I will forgive him.",
+    "grammar_focus": "First Conditional",
+    "rules": ["tell the truth → সত্য বলা", "forgive → ক্ষমা করা"],
+    "hint": "সত্য বলার ক্ষেত্রে 'say' হয় না, 'tell' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "বৃষ্টি হলে তুমি কী করবে?",
+    "english": "What will you do if it rains?",
+    "grammar_focus": "First Conditional (Wh-Question)",
+    "rules": ["Wh-word + will + subject + V1 + if + Present Simple?", "এখানে If clause-টি বাক্যের পরে বসেছে"],
+    "hint": "If clause বাক্যের মাঝে বসলে তার আগে কমা (,) বসে না।"
+  },
+  {
+    "bangla": "আমার যদি অনেক টাকা থাকত, আমি একটি গাড়ি কিনতাম।",
+    "english": "If I had a lot of money, I would buy a car.",
+    "grammar_focus": "Second Conditional",
+    "rules": ["বর্তমানে কোনো অবাস্তব ইচ্ছা বা কল্পনা বোঝাতে বসে", "If + Past Simple + Subject + would + V1"],
+    "hint": "Second Conditional-এ will-এর জায়গায় 'would' বসে।"
+  },
+  {
+    "bangla": "আমি যদি পাখি হতাম, তবে আকাশে উড়তাম।",
+    "english": "If I were a bird, I would fly in the sky.",
+    "grammar_focus": "Second Conditional (Unreal Past)",
+    "rules": ["কল্পনা বা অসম্ভব ইচ্ছা বোঝাতে I, He, She—সব কিছুর সাথেই 'were' বসে", "would + fly (V1)"],
+    "hint": "অবাস্তব কল্পনায় 'was' না বসে সবসময় 'were' বসে (If I were...)।"
+  },
+  {
+    "bangla": "সে যদি ঠিকানাটি জানত, তবে সে তোমাকে বলত।",
+    "english": "If he knew the address, he would tell you.",
+    "grammar_focus": "Second Conditional",
+    "rules": ["If he knew (Past Simple)", "he would tell (would + V1)"],
+    "hint": "know-এর V2 হলো knew (উচ্চারণ: নিউ)।"
+  },
+  {
+    "bangla": "আমি যদি তোমার জায়গায় হতাম, আমি এ কাজ করতাম না।",
+    "english": "If I were you, I would not do this.",
+    "grammar_focus": "Second Conditional (Advice)",
+    "rules": ["If I were you → আমি যদি তোমার জায়গায় হতাম (কাউকে উপদেশ দিতে ব্যবহৃত হয়)", "would not + do"],
+    "hint": "ভদ্রভাবে কাউকে কোনো কাজ করতে নিষেধ করার এটি একটি দারুণ কৌশল।"
+  },
+  {
+    "bangla": "যদি সে লটারি জিতত, সে বিশ্ব ভ্রমণ করত।",
+    "english": "If he won the lottery, he would travel the world.",
+    "grammar_focus": "Second Conditional",
+    "rules": ["If he won (win-এর V2)", "he would travel (would + V1)"],
+    "hint": "win - won - won"
+  },
+  {
+    "bangla": "তুমি যদি তাকে ডাকতে, সে আসতে পারত।",
+    "english": "If you called him, he could come.",
+    "grammar_focus": "Second Conditional (with could)",
+    "rules": ["পারত (ability) অর্থে would-এর বদলে could বসতে পারে", "could + V1"],
+    "hint": "would মানে 'করতাম/করত', আর could মানে 'পারতাম/পারত'।"
+  },
+  {
+    "bangla": "তুমি যদি এক মিলিয়ন ডলার পেতে, তুমি কী করতে?",
+    "english": "What would you do if you got a million dollars?",
+    "grammar_focus": "Second Conditional (Question)",
+    "rules": ["What + would + subject + do + if + Past Simple?"],
+    "hint": "অবাস্তব বা কাল্পনিক প্রশ্ন করতে would ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "যদি তুমি আমাকে আগে বলতে, আমি তোমাকে সাহায্য করতাম।",
+    "english": "If you had told me earlier, I would have helped you.",
+    "grammar_focus": "Third Conditional",
+    "rules": ["অতীতে কোনো কাজ হয়নি, এখন তা নিয়ে আক্ষেপ বোঝাতে", "If + Past Perfect (had + V3) + would have + V3"],
+    "hint": "Third Conditional মানেই past regret (অতীতের আক্ষেপ)।"
+  },
+  {
+    "bangla": "সে যদি ভালোভাবে পড়ত, সে পরীক্ষায় পাস করত।",
+    "english": "If he had studied well, he would have passed the exam.",
+    "grammar_focus": "Third Conditional",
+    "rules": ["If he had studied (Past Perfect)", "would have + passed (V3)"],
+    "hint": "বাস্তবতা হলো সে ভালোভাবে পড়েনি এবং পাসও করেনি।"
+  },
+  {
+    "bangla": "আমি যদি ট্রেনটি মিস না করতাম, আমি সঠিক সময়ে পৌঁছাতাম।",
+    "english": "If I had not missed the train, I would have arrived on time.",
+    "grammar_focus": "Third Conditional (Negative)",
+    "rules": ["If I had not missed (Negative Past Perfect)", "would have + arrived (V3)", "on time → সঠিক সময়ে"],
+    "hint": "Negative বাক্যে had-এর পর not বসে (had not + V3)।"
+  },
+  {
+    "bangla": "যদি আমরা ট্যাক্সি নিতাম, তবে আমরা ভিজতাম না।",
+    "english": "If we had taken a taxi, we would not have got wet.",
+    "grammar_focus": "Third Conditional (Negative result)",
+    "rules": ["would not have + V3 (got wet)"],
+    "hint": "would not have-কে সংক্ষেপে wouldn't have বলা যায়।"
+  },
+  {
+    "bangla": "যদি সে সতর্ক থাকত, দুর্ঘটনাটি ঘটত না।",
+    "english": "If he had been careful, the accident would not have happened.",
+    "grammar_focus": "Third Conditional",
+    "rules": ["had + been (be verb-এর V3) + careful (Adjective)"],
+    "hint": "'সতর্ক হওয়া/থাকা' অর্থে be verb (been) ব্যবহৃত হয়েছে।"
+  },
+  {
+    "bangla": "তুমি যদি সেখানে যেতে, কী হতো?",
+    "english": "What would have happened if you had gone there?",
+    "grammar_focus": "Third Conditional (Wh-Question)",
+    "rules": ["What would have happened...? → কী ঘটত / কী হতো?", "if you had gone (Past Perfect)"],
+    "hint": "অতীতের কোনো ঘটনা নিয়ে প্রশ্ন করতে এই স্ট্রাকচারটি খুব কার্যকর।"
+  },
+  {
+    "bangla": "আমি তাকে চিনতে পারলে কথা বলতাম।",
+    "english": "If I had recognized him, I would have spoken to him.",
+    "grammar_focus": "Third Conditional",
+    "rules": ["recognize → চিনতে পারা", "speak to someone → কারো সাথে কথা বলা"],
+    "hint": "speak-এর V3 হলো spoken (speak - spoke - spoken)।"
+  },
+  {
+    "bangla": "সে যদি আমাকে না ডাকত, আমি ঘুমিয়ে থাকতাম।",
+    "english": "If he had not called me, I would have slept.",
+    "grammar_focus": "Third Conditional",
+    "rules": ["had not called (Negative)", "would have + slept (V3)"],
+    "hint": "sleep-এর V3 হলো slept।"
+  }
+]

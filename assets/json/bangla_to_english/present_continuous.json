@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি এখন একটি বই পড়ছি।",
+    "english": "I am reading a book now.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["Subject (I) + am + Verb-ing (reading)", "now → এখন (Present Continuous নির্দেশ করে)"],
+    "hint": "বর্তমানে কোনো কাজ চলছে বোঝালে am/is/are + verb-এর সাথে ing যুক্ত হয়।"
+  },
+  {
+    "bangla": "সে ঘুমাচ্ছে।",
+    "english": "He is sleeping.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["He (3rd Person Singular) এর সাথে 'is' বসে", "sleep + ing = sleeping"],
+    "hint": "He, She, It বা যেকোনো একটি নামের সাথে 'is' বসে।"
+  },
+  {
+    "bangla": "তারা মাঠে ফুটবল খেলছে।",
+    "english": "They are playing football in the field.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["They (Plural) এর সাথে 'are' বসে", "play + ing = playing"],
+    "hint": "Plural subject (We, You, They) এর সাথে 'are' বসে।"
+  },
+  {
+    "bangla": "এখন বৃষ্টি হচ্ছে।",
+    "english": "It is raining now.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["প্রাকৃতিক ঘটনার ক্ষেত্রে Subject হিসেবে 'It' বসে", "It-এর সাথে 'is' বসে"],
+    "hint": "It-এর সাথে সর্বদা is বসে এবং মূল verb-এর সাথে ing হয়।"
+  },
+  {
+    "bangla": "আমি ভাত খাচ্ছি না।",
+    "english": "I am not eating rice.",
+    "grammar_focus": "Present Continuous (Negative)",
+    "rules": ["Negative বাক্যে am/is/are এর পর not বসে", "I + am not + eating"],
+    "hint": "'am' এবং 'verb+ing' এর মাঝখানে 'not' বসাতে হয়।"
+  },
+  {
+    "bangla": "সে কি স্কুলে যাচ্ছে?",
+    "english": "Is she going to school?",
+    "grammar_focus": "Present Continuous (Question)",
+    "rules": ["Question-এ am/is/are বাক্যের শুরুতে বসে", "Is + she + going?"],
+    "hint": "প্রশ্নবোধক বাক্যে 'Is' সাবজেক্টের (she) আগে চলে আসে।"
+  },
+  {
+    "bangla": "তুমি কী করছ?",
+    "english": "What are you doing?",
+    "grammar_focus": "Present Continuous (Wh-Question)",
+    "rules": ["What + are + you + doing?", "What → কী (Wh-word)"],
+    "hint": "Wh-word এর ঠিক পরেই am/is/are বসাতে হয়।"
+  },
+  {
+    "bangla": "আমরা এখন টিভি দেখছি।",
+    "english": "We are watching TV right now.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["We-এর সাথে are বসে", "right now → এই মুহূর্তে"],
+    "hint": "'watch' মানে মনোযোগ দিয়ে দেখা, তাই টিভির ক্ষেত্রে 'seeing' না হয়ে 'watching' হয়।"
+  },
+  {
+    "bangla": "তুমি কাঁদছ কেন?",
+    "english": "Why are you crying?",
+    "grammar_focus": "Present Continuous (Wh-Question)",
+    "rules": ["Why + are + you + crying?", "Why → কেন"],
+    "hint": "you-এর জন্য সাহায্যকারী verb হিসেবে 'are' ব্যবহৃত হয়েছে।"
+  },
+  {
+    "bangla": "মা রান্নাঘরে রান্না করছেন।",
+    "english": "Mother is cooking in the kitchen.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["Mother (Singular) এর সাথে is বসে", "cook + ing = cooking"],
+    "hint": "কারো মা, বাবা বা ভাই-বোন (Singular) হলে 'is' বসে।"
+  },
+  {
+    "bangla": "আমি আজ রাতে তার সাথে দেখা করছি।",
+    "english": "I am meeting him tonight.",
+    "grammar_focus": "Present Continuous (Future Plan)",
+    "rules": ["tonight → আজ রাতে (নিকট ভবিষ্যৎ)", "নিকট ভবিষ্যতের কোনো নির্দিষ্ট পরিকল্পনা বোঝাতেও Present Continuous ব্যবহৃত হয়"],
+    "hint": "ফিক্সড ফিউচার প্ল্যান বোঝাতে will/shall এর বদলে am/is/are + verb(ing) ব্যবহার করা যায়।"
+  },
+  {
+    "bangla": "তারা কি আসছে?",
+    "english": "Are they coming?",
+    "grammar_focus": "Present Continuous (Question)",
+    "rules": ["Are + they + coming?", "come-এর শেষের 'e' বাদ দিয়ে ing যুক্ত হয়েছে (coming)"],
+    "hint": "Verb-এর শেষে 'e' থাকলে, ing যোগ করার সময় 'e' বাদ যায় (come > coming)।"
+  },
+  {
+    "bangla": "ছেলেটি খুব দ্রুত দৌড়াচ্ছে।",
+    "english": "The boy is running very fast.",
+    "grammar_focus": "Present Continuous (Spelling Rule)",
+    "rules": ["run + ing = running", "The boy (Singular) এর সাথে is বসেছে"],
+    "hint": "Verb-এর শেষে Consonant এবং তার আগে একটি Vowel থাকলে, Consonant টি ডাবল হয়ে যায় (run > running)।"
+  },
+  {
+    "bangla": "তুমি আমার কথা শুনছ না।",
+    "english": "You are not listening to me.",
+    "grammar_focus": "Present Continuous (Negative)",
+    "rules": ["You-এর সাথে are বসে", "listen-এর পর সাধারণত to (Preposition) বসে"],
+    "hint": "'listen' এর সাথে সবসময় 'to' বসে (listen to me)।"
+  },
+  {
+    "bangla": "বাসটি আসছে।",
+    "english": "The bus is coming.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["The bus (Singular object) তাই is বসেছে", "come > coming"],
+    "hint": "যেকোনো একটি বস্তু বা বাহন বোঝালে is বসে।"
+  },
+  {
+    "bangla": "বাতাস বইছে।",
+    "english": "The wind is blowing.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["wind (বাতাস) Uncountable noun, তাই Singular হিসেবে is বসে", "blow + ing = blowing"],
+    "hint": "blow মানে প্রবাহিত হওয়া বা বাতাস বওয়া।"
+  },
+  {
+    "bangla": "তুমি কোথায় যাচ্ছ?",
+    "english": "Where are you going?",
+    "grammar_focus": "Present Continuous (Wh-Question)",
+    "rules": ["Where + are + you + going?", "Where → কোথায়"],
+    "hint": "স্থান জানতে চাইলে Where দিয়ে প্রশ্ন শুরু করতে হয়।"
+  },
+  {
+    "bangla": "আমরা একটি কেক বানাচ্ছি।",
+    "english": "We are making a cake.",
+    "grammar_focus": "Present Continuous (Spelling Rule)",
+    "rules": ["make + ing = making", "e বাদ গিয়ে ing যুক্ত হয়েছে"],
+    "hint": "make, write, take - এগুলোর শেষে e বাদ দিয়ে ing হয় (making, writing, taking)।"
+  },
+  {
+    "bangla": "শিশুটি হাসছে।",
+    "english": "The baby is laughing.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["The baby (Singular) এর সাথে is বসেছে", "laugh + ing = laughing"],
+    "hint": "laugh মানে শব্দ করে হাসা।"
+  },
+  {
+    "bangla": "আমি তোমার জন্য অপেক্ষা করছি।",
+    "english": "I am waiting for you.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["I-এর সাথে am বসে", "wait + ing = waiting", "for you → তোমার জন্য"],
+    "hint": "wait-এর সাথে সাধারণত for (Preposition) বসে (wait for someone)।"
+  },
+  {
+    "bangla": "তারা ঝগড়া করছে না।",
+    "english": "They are not arguing.",
+    "grammar_focus": "Present Continuous (Negative)",
+    "rules": ["They + are + not + arguing", "argue > arguing ('e' বাদ গেছে)"],
+    "hint": "argue মানে তর্ক করা বা ঝগড়া করা।"
+  },
+  {
+    "bangla": "শিক্ষক আমাদের ইংরেজি পড়াচ্ছেন।",
+    "english": "The teacher is teaching us English.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["The teacher (Singular) + is", "teach + ing = teaching"],
+    "hint": "teach মানে কাউকে শেখানো বা পড়ানো।"
+  },
+  {
+    "bangla": "পাখিটি আকাশে উড়ছে।",
+    "english": "The bird is flying in the sky.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["The bird (Singular) + is", "fly + ing = flying", "in the sky → আকাশে"],
+    "hint": "fly-এর শেষে y থাকলেও সরাসরি ing বসে যায়।"
+  },
+  {
+    "bangla": "সে এখন একটি গান গাইছে।",
+    "english": "She is singing a song at the moment.",
+    "grammar_focus": "Present Continuous",
+    "rules": ["sing + ing = singing", "at the moment → এই মুহূর্তে (Present Continuous নির্দেশক)"],
+    "hint": "'now' এবং 'at the moment' একই অর্থ প্রকাশ করে।"
+  },
+  {
+    "bangla": "লোকটি মারা যাচ্ছে।",
+    "english": "The man is dying.",
+    "grammar_focus": "Present Continuous (Spelling Rule)",
+    "rules": ["The man (Singular) + is", "die > dying"],
+    "hint": "Verb-এর শেষে 'ie' থাকলে, ing যোগ করার সময় 'ie' বদলে 'y' হয়ে যায় (die > dying, lie > lying)।"
+  }
+]

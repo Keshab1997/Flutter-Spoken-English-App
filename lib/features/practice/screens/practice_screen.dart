@@ -7,6 +7,7 @@ import '../../listening/screens/listening_screen.dart';
 import '../../speaking/screens/speaking_screen.dart';
 import '../../translator/screens/banglish_translator_screen.dart';
 import '../../verb_forms/screens/verb_form_practice_screen.dart';
+import 'bangla_english_practice_screen.dart';
 
 class PracticeScreen extends StatelessWidget {
   const PracticeScreen({super.key});
@@ -32,6 +33,13 @@ class PracticeScreen extends StatelessWidget {
       icon: Icons.quiz_rounded,
       gradient: AppColors.infoGradient,
       target: _Target.grammarTest,
+    ),
+    _Category(
+      title: 'Bangla English',
+      subtitle: 'Translate & learn grammar',
+      icon: Icons.translate_rounded,
+      gradient: [Color(0xFF6366F1), Color(0xFF8B5CF6)],
+      target: _Target.banglaEnglish,
     ),
     _Category(
       title: 'Conversation',
@@ -177,18 +185,21 @@ class PracticeScreen extends StatelessWidget {
         Navigator.push(context, MaterialPageRoute(builder: (_) => const BanglishTranslatorScreen()));
       case _Target.verbFormsQuiz:
         Navigator.push(context, MaterialPageRoute(builder: (_) => const VerbFormPracticeScreen()));
+      case _Target.banglaEnglish:
+        Navigator.push(context, MaterialPageRoute(builder: (_) => const BanglaEnglishCategoryScreen()));
     }
   }
 }
 
 enum _Target {
   vocabTest,
+  verbFormsQuiz,
   grammarTest,
+  banglaEnglish,
   conversation,
   listening,
   speaking,
   translate,
-  verbFormsQuiz,
 }
 
 class _Category {

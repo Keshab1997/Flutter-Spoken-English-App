@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "বইটি টেবিলের উপরে আছে।",
+    "english": "The book is on the table.",
+    "grammar_focus": "Preposition of Place (on)",
+    "rules": ["কোনো কিছুর পৃষ্ঠ বা সারফেসের (surface) সাথে লেগে থাকা বোঝাতে on বসে", "on the table → টেবিলের উপরে"],
+    "hint": "কোনো কিছুর উপরে স্পর্শ করে থাকলে 'on' বসে।"
+  },
+  {
+    "bangla": "আমি সকাল ৭টায় ঘুম থেকে উঠি।",
+    "english": "I get up at 7 AM.",
+    "grammar_focus": "Preposition of Time (at)",
+    "rules": ["ঘড়ির নির্দিষ্ট সময়ের আগে সবসময় at বসে", "at 7 AM → সকাল ৭টায়"],
+    "hint": "Specific time বা নির্দিষ্ট সময়ের আগে 'at' ব্যবহার করুন।"
+  },
+  {
+    "bangla": "তারা ঢাকায় বাস করে।",
+    "english": "They live in Dhaka.",
+    "grammar_focus": "Preposition of Place (in)",
+    "rules": ["বড় শহর, দেশ বা মহাদেশের নামের আগে in বসে", "in Dhaka → ঢাকায়"],
+    "hint": "বড় জায়গার আগে 'in' এবং ছোট জায়গার আগে 'at' বসে।"
+  },
+  {
+    "bangla": "আমরা সোমবারে দেখা করব।",
+    "english": "We will meet on Monday.",
+    "grammar_focus": "Preposition of Time (on)",
+    "rules": ["যেকোনো দিন (Day) বা তারিখের (Date) আগে on বসে", "on Monday → সোমবারে"],
+    "hint": "Days of the week (রবি, সোম...) এর আগে 'on' বসে।"
+  },
+  {
+    "bangla": "সে জানুয়ারিতে জন্মগ্রহণ করেছিল।",
+    "english": "He was born in January.",
+    "grammar_focus": "Preposition of Time (in)",
+    "rules": ["মাস (Month) বা বছর (Year)-এর নামের আগে in বসে", "in January → জানুয়ারিতে"],
+    "hint": "মাস, বছর বা ঋতুর নামের আগে সবসময় 'in' বসে।"
+  },
+  {
+    "bangla": "আমি এখন বাড়িতে আছি।",
+    "english": "I am at home now.",
+    "grammar_focus": "Preposition of Place (at)",
+    "rules": ["নির্দিষ্ট কোনো স্থান বা পয়েন্ট বোঝাতে at বসে", "at home → বাড়িতে"],
+    "hint": "'home', 'school', 'work' এগুলোর আগে সাধারণত 'at' বসে।"
+  },
+  {
+    "bangla": "আমি বাসে করে অফিসে যাই।",
+    "english": "I go to the office by bus.",
+    "grammar_focus": "Preposition of Transport (by)",
+    "rules": ["যাতায়াতের মাধ্যম বা যানবাহনের আগে by বসে", "by bus → বাসে করে"],
+    "hint": "যানবাহন বোঝাতে by bus, by train, by car ব্যবহৃত হয়। (তবে পায়ে হেঁটে বোঝাতে 'on foot' হয়)।"
+  },
+  {
+    "bangla": "সে কলম দিয়ে চিঠিটি লিখেছিল।",
+    "english": "He wrote the letter with a pen.",
+    "grammar_focus": "Preposition of Instrument (with)",
+    "rules": ["কোনো বস্তু বা হাতিয়ার দিয়ে কাজ করা বোঝালে with বসে", "with a pen → কলম দিয়ে"],
+    "hint": "কোনো যন্ত্র বা উপকরণ দিয়ে কাজ করলে 'with' বসে (by a pen হবে না)।"
+  },
+  {
+    "bangla": "বিড়ালটি টেবিলের নিচে।",
+    "english": "The cat is under the table.",
+    "grammar_focus": "Preposition of Position (under)",
+    "rules": ["কোনো কিছুর ঠিক নিচে বোঝাতে under বসে", "under the table → টেবিলের নিচে"],
+    "hint": "উপরে বোঝাতে 'on', আর নিচে বোঝাতে 'under'।"
+  },
+  {
+    "bangla": "আমার পাশে বসো।",
+    "english": "Sit beside me.",
+    "grammar_focus": "Preposition of Position (beside)",
+    "rules": ["beside → পাশে বা নিকটে"],
+    "hint": "'beside' মানে পাশে। (next to ব্যবহার করলেও একই অর্থ হয়)।"
+  },
+  {
+    "bangla": "গাড়িটি আমার বাড়ির সামনে।",
+    "english": "The car is in front of my house.",
+    "grammar_focus": "Preposition of Position (in front of)",
+    "rules": ["in front of → কোনো কিছুর সামনে"],
+    "hint": "পেছনে বোঝাতে 'behind' এবং সামনে বোঝাতে 'in front of' বসে।"
+  },
+  {
+    "bangla": "সে ঘরের ভেতরে দৌড়ে ঢুকল।",
+    "english": "He ran into the room.",
+    "grammar_focus": "Preposition of Movement (into)",
+    "rules": ["বাইরে থেকে ভেতরে প্রবেশ করার গতি (movement) বোঝাতে into বসে", "into the room → ঘরের ভেতরে"],
+    "hint": "স্থির অবস্থায় ভেতরে থাকলে 'in', কিন্তু গতি নিয়ে ভেতরে ঢুকলে 'into' বসে।"
+  },
+  {
+    "bangla": "আপেলটি গাছ থেকে পড়ল।",
+    "english": "The apple fell from the tree.",
+    "grammar_focus": "Preposition of Origin/Separation (from)",
+    "rules": ["কোনো জায়গা থেকে আলাদা হওয়া বা উৎস বোঝাতে from বসে", "from the tree → গাছ থেকে"],
+    "hint": "'থেকে' বা 'হতে' বোঝাতে 'from' ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আপেলটি দুজনের মাঝে ভাগ করে দাও।",
+    "english": "Divide the apple between the two.",
+    "grammar_focus": "Preposition of Distribution (between)",
+    "rules": ["between → দুই ব্যক্তি বা বস্তুর মধ্যে"],
+    "hint": "শুধুমাত্র ২ জনের মধ্যে কিছু ভাগ করলে 'between' বসে।"
+  },
+  {
+    "bangla": "খাবারগুলো গরিবদের মাঝে বিলিয়ে দাও।",
+    "english": "Distribute the food among the poor.",
+    "grammar_focus": "Preposition of Distribution (among)",
+    "rules": ["among → দুইয়ের অধিক ব্যক্তি বা বস্তুর মধ্যে"],
+    "hint": "২ জনের বেশি হলে 'between' এর বদলে 'among' বসে।"
+  },
+  {
+    "bangla": "আমি ইংরেজিতে দক্ষ।",
+    "english": "I am good at English.",
+    "grammar_focus": "Appropriate Preposition (good at)",
+    "rules": ["কোনো বিষয়ে দক্ষ বা পারদর্শী বোঝাতে good-এর পর at বসে", "good at → দক্ষ"],
+    "hint": "good in English হয় না, সঠিক হলো 'good at English'।"
+  },
+  {
+    "bangla": "সে কুকুরকে ভয় পায়।",
+    "english": "He is afraid of dogs.",
+    "grammar_focus": "Appropriate Preposition (afraid of)",
+    "rules": ["ভয় পাওয়া বোঝাতে afraid-এর পর সবসময় of বসে", "afraid of → ভীত বা ভয় পাওয়া"],
+    "hint": "'afraid' এর পর সর্বদা 'of' বসে।"
+  },
+  {
+    "bangla": "আমার কথা শোনো।",
+    "english": "Listen to me.",
+    "grammar_focus": "Appropriate Preposition (listen to)",
+    "rules": ["কারো কথা মনোযোগ দিয়ে শোনা বোঝাতে listen-এর পর to বসে"],
+    "hint": "listen me হয় না, সঠিক হলো 'listen to me'।"
+  },
+  {
+    "bangla": "আমি তোমার উপর নির্ভর করছি।",
+    "english": "I am depending on you.",
+    "grammar_focus": "Appropriate Preposition (depend on)",
+    "rules": ["নির্ভর করা বোঝাতে depend-এর পর on বসে", "depend on → নির্ভর করা"],
+    "hint": "'depend' বা 'rely' শব্দের সাথে সবসময় 'on' বসে।"
+  },
+  {
+    "bangla": "আমি আমার চাবি খুঁজছি।",
+    "english": "I am looking for my keys.",
+    "grammar_focus": "Phrasal Verb (look for)",
+    "rules": ["look for → কোনো কিছু খোঁজা (search)", "look-এর সাথে for বসলে অর্থ পরিবর্তন হয়ে যায়"],
+    "hint": "তাকানো বোঝাতে 'look at', আর খোঁজা বোঝাতে 'look for'।"
+  },
+  {
+    "bangla": "বোর্ডের দিকে তাকাও।",
+    "english": "Look at the board.",
+    "grammar_focus": "Appropriate Preposition (look at)",
+    "rules": ["নির্দিষ্ট কোনো দিকে তাকানো বোঝাতে look-এর পর at বসে"],
+    "hint": "look at me, look at the board - এভাবে নির্দিষ্ট দিকে তাকাতে at বসে।"
+  },
+  {
+    "bangla": "আমি তার সাথে একমত।",
+    "english": "I agree with him.",
+    "grammar_focus": "Appropriate Preposition (agree with)",
+    "rules": ["কোনো ব্যক্তির সাথে একমত হওয়া বোঝাতে agree-এর পর with বসে", "agree with someone → কারো সাথে একমত হওয়া"],
+    "hint": "ব্যক্তির সাথে একমত হলে with, কিন্তু কোনো প্রস্তাবে একমত হলে 'agree to' হয়।"
+  },
+  {
+    "bangla": "সে কলেরায় মারা গেছে।",
+    "english": "He died of cholera.",
+    "grammar_focus": "Appropriate Preposition (die of)",
+    "rules": ["রোগে মারা যাওয়া বোঝাতে die-এর পর of বসে", "die of + disease"],
+    "hint": "কোনো রোগে মারা গেলে die from বা by হয় না, 'die of' হয়।"
+  },
+  {
+    "bangla": "সে আমার সাথে রাগ করেছে।",
+    "english": "He is angry with me.",
+    "grammar_focus": "Appropriate Preposition (angry with)",
+    "rules": ["কারো (ব্যক্তির) উপর রাগ করা বোঝাতে angry-এর পর with বসে"],
+    "hint": "angry at me হয় না, সঠিক হলো 'angry with me'।"
+  },
+  {
+    "bangla": "সে আমার সম্পর্কে কথা বলছিল।",
+    "english": "He was talking about me.",
+    "grammar_focus": "Preposition of Topic (about)",
+    "rules": ["কারো সম্পর্কে বা বিষয়ে কিছু বলা বোঝাতে about বসে", "about me → আমার সম্পর্কে"],
+    "hint": "'about' মানে সম্বন্ধে বা বিষয়ে।"
+  }
+]

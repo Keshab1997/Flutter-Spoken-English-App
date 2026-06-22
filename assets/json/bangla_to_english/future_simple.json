@@ -1,0 +1,177 @@
+[
+  {
+    "bangla": "আমি আগামীকাল স্কুলে যাব।",
+    "english": "I will go to school tomorrow.",
+    "grammar_focus": "Future Simple",
+    "rules": ["Subject (I) + will + V1 (go)", "tomorrow → আগামীকাল (ভবিষ্যৎ কাল নির্দেশক)"],
+    "hint": "Modern Spoken English-এ 'I' এবং 'We'-এর সাথে 'shall'-এর বদলে 'will' বেশি ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "সে আগামী সপ্তাহে একটি গাড়ি কিনবে।",
+    "english": "He will buy a car next week.",
+    "grammar_focus": "Future Simple",
+    "rules": ["He + will + V1 (buy)", "next week → আগামী সপ্তাহে"],
+    "hint": "Future Tense-এ Subject যেমনই (Singular/Plural) হোক না কেন, verb-এর সাথে s/es যুক্ত হয় না।"
+  },
+  {
+    "bangla": "তারা আজ রাতে ফুটবল খেলবে।",
+    "english": "They will play football tonight.",
+    "grammar_focus": "Future Simple",
+    "rules": ["They + will + V1 (play)", "tonight → আজ রাতে (ভবিষ্যতের নির্দিষ্ট সময়)"],
+    "hint": "I, He, She, They—সব কিছুর সাথেই 'will' বসে।"
+  },
+  {
+    "bangla": "আমি সেখানে যাব না।",
+    "english": "I will not go there.",
+    "grammar_focus": "Future Simple (Negative)",
+    "rules": ["Negative করতে will-এর পর not বসে", "will not + V1 (go)"],
+    "hint": "Spoken English-এ 'will not'-কে সংক্ষেপে 'won't' বলা হয় (I won't go there)।"
+  },
+  {
+    "bangla": "সে তোমাকে সাহায্য করবে না।",
+    "english": "He won't help you.",
+    "grammar_focus": "Future Simple (Negative)",
+    "rules": ["won't → will not এর সংক্ষিপ্ত রূপ", "won't + V1 (help)"],
+    "hint": "'won't'-এর উচ্চারণ 'ওন্ট' (wount), 'ওয়ান্ট' (want) নয়।"
+  },
+  {
+    "bangla": "তুমি কি আমাকে সাহায্য করবে?",
+    "english": "Will you help me?",
+    "grammar_focus": "Future Simple (Question)",
+    "rules": ["Question-এ 'Will' বাক্যের শুরুতে বসে", "Will + Subject + V1?"],
+    "hint": "ভবিষ্যতের কোনো বিষয়ে প্রশ্ন করতে Will সাবজেক্টের আগে চলে আসে।"
+  },
+  {
+    "bangla": "সে কি আগামীকাল আসবে?",
+    "english": "Will he come tomorrow?",
+    "grammar_focus": "Future Simple (Question)",
+    "rules": ["Will + he + come (V1)?"],
+    "hint": "Will দিয়ে প্রশ্ন করলে মূল verb-এর কোনো পরিবর্তন হয় না।"
+  },
+  {
+    "bangla": "তুমি আগামীকাল কোথায় যাবে?",
+    "english": "Where will you go tomorrow?",
+    "grammar_focus": "Future Simple (Wh-Question)",
+    "rules": ["Wh-word (Where) + will + Subject + V1?", "Where → কোথায়"],
+    "hint": "Wh-word-এর ঠিক পরেই 'will' বসাতে হয়।"
+  },
+  {
+    "bangla": "তুমি কী করবে?",
+    "english": "What will you do?",
+    "grammar_focus": "Future Simple (Wh-Question)",
+    "rules": ["What + will + you + do?", "What → কী"],
+    "hint": "কারো ভবিষ্যতের পরিকল্পনা জানতে এই প্রশ্নটি খুব বেশি ব্যবহার হয়।"
+  },
+  {
+    "bangla": "সে কখন পৌঁছাবে?",
+    "english": "When will he arrive?",
+    "grammar_focus": "Future Simple (Wh-Question)",
+    "rules": ["When + will + Subject + V1?", "When → কখন"],
+    "hint": "সময় জানতে চাইলে 'When' দিয়ে প্রশ্ন শুরু করতে হয়।"
+  },
+  {
+    "bangla": "আমি এখনই দরজাটি খুলব।",
+    "english": "I will open the door now.",
+    "grammar_focus": "Future Simple (Spontaneous Decision)",
+    "rules": ["তাৎক্ষণিক বা সাথে সাথে নেওয়া কোনো সিদ্ধান্ত বোঝাতে will বসে"],
+    "hint": "আগে থেকে প্ল্যান করা না থাকলে, হঠাৎ কিছু করার সিদ্ধান্ত নিলে will ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আমি তোমাকে কখনো ভুলব না।",
+    "english": "I will never forget you.",
+    "grammar_focus": "Future Simple (Promise)",
+    "rules": ["কাউকে কথা দেওয়া বা প্রতিশ্রুতি (Promise) বোঝাতে will বসে", "never → কখনো না (এর পর আর not বসে না)"],
+    "hint": "প্রতিশ্রুতি বা দৃঢ় সংকল্প বোঝাতে will-এর ব্যবহার সবচেয়ে পারফেক্ট।"
+  },
+  {
+    "bangla": "আমার মনে হয় আজ বৃষ্টি হবে।",
+    "english": "I think it will rain today.",
+    "grammar_focus": "Future Simple (Prediction)",
+    "rules": ["ভবিষ্যদ্বাণী বা ধারণা (Prediction) করতে will ব্যবহৃত হয়", "I think (আমার মনে হয়) এর পর will বসে"],
+    "hint": "নিজের ধারণা প্রকাশ করতে 'I think... will' খুব সুন্দর একটি স্ট্রাকচার।"
+  },
+  {
+    "bangla": "তারা ম্যাচটি জিতবে।",
+    "english": "They will win the match.",
+    "grammar_focus": "Future Simple (Prediction)",
+    "rules": ["will + V1 (win)"],
+    "hint": "ভবিষ্যতে কিছু ঘটবে এমন নিশ্চিত ধারণা থেকে এটি বলা হয়।"
+  },
+  {
+    "bangla": "তুমি কি আমার সাথে যাবে না?",
+    "english": "Won't you go with me?",
+    "grammar_focus": "Future Simple (Negative Question)",
+    "rules": ["Won't + Subject + V1?", "with me → আমার সাথে"],
+    "hint": "না-বোধক প্রশ্ন করতে will not-এর শর্ট ফর্ম won't বাক্যের শুরুতে বসে।"
+  },
+  {
+    "bangla": "কে কাজটি করবে?",
+    "english": "Who will do the work?",
+    "grammar_focus": "Future Simple (Who Question)",
+    "rules": ["Who + will + V1 (do)", "Who নিজেই Subject হিসেবে কাজ করে"],
+    "hint": "Who দিয়ে প্রশ্ন করলে বাক্যের গঠন Affirmative বাক্যের মতোই থাকে।"
+  },
+  {
+    "bangla": "সে শীঘ্রই ফিরে আসবে।",
+    "english": "He will return soon.",
+    "grammar_focus": "Future Simple",
+    "rules": ["soon → শীঘ্রই বা খুব তাড়াতাড়ি (ভবিষ্যৎ নির্দেশ করে)"],
+    "hint": "return মানে ফিরে আসা। (return back বলাটা ভুল, শুধু return বলতে হয়)।"
+  },
+  {
+    "bangla": "আমি কি তোমার জন্য এক কাপ চা আনব?",
+    "english": "Shall I bring a cup of tea for you?",
+    "grammar_focus": "Future Simple (Offer with Shall)",
+    "rules": ["কাউকে কিছু অফার করতে বা প্রস্তাব দিতে 'Shall I' ব্যবহৃত হয়"],
+    "hint": "Spoken English-এ প্রস্তাব দিতে (Offer) 'Will I'-এর বদলে 'Shall I' বলাটা বেশি স্মার্ট।"
+  },
+  {
+    "bangla": "আমরা কি এখন শুরু করব?",
+    "english": "Shall we start now?",
+    "grammar_focus": "Future Simple (Suggestion with Shall)",
+    "rules": ["সবার মত জানতে বা প্রস্তাব দিতে 'Shall we' ব্যবহৃত হয়"],
+    "hint": "Shall we go? Shall we start? —এগুলো খুব কমন এবং ভদ্র স্পোকেন ফ্রেজ।"
+  },
+  {
+    "bangla": "এটি অনেক সময় নেবে।",
+    "english": "It will take a lot of time.",
+    "grammar_focus": "Future Simple",
+    "rules": ["কোনো কিছুতে সময় লাগা বোঝাতে 'take time' ব্যবহৃত হয়", "It + will + take (V1)"],
+    "hint": "a lot of time মানে অনেক সময়।"
+  },
+  {
+    "bangla": "তুমি কীভাবে সমস্যাটি সমাধান করবে?",
+    "english": "How will you solve the problem?",
+    "grammar_focus": "Future Simple (Wh-Question)",
+    "rules": ["How + will + Subject + V1?", "How → কীভাবে / কেমন করে"],
+    "hint": "পদ্ধতি বা উপায় জানতে 'How' দিয়ে প্রশ্ন করা হয়।"
+  },
+  {
+    "bangla": "সে আর কখনো মিথ্যা বলবে না।",
+    "english": "He will never tell a lie again.",
+    "grammar_focus": "Future Simple (Negative)",
+    "rules": ["never ... again → আর কখনো না", "tell a lie → মিথ্যা বলা"],
+    "hint": "মিথ্যা বলার ক্ষেত্রে 'say' ব্যবহৃত হয় না, 'tell' ব্যবহৃত হয় (tell a lie)।"
+  },
+  {
+    "bangla": "আমি ভবিষ্যতে একজন ডাক্তার হব।",
+    "english": "I will be a doctor in the future.",
+    "grammar_focus": "Future Simple (Be verb)",
+    "rules": ["will-এর পর মূল verb হিসেবে 'be' (হওয়া) বসেছে", "in the future → ভবিষ্যতে"],
+    "hint": "ভবিষ্যতে কিছু 'হওয়া' বোঝাতে will be ব্যবহৃত হয়।"
+  },
+  {
+    "bangla": "আমরা পরের বছর লন্ডন যাব।",
+    "english": "We will go to London next year.",
+    "grammar_focus": "Future Simple",
+    "rules": ["next year → পরের বছর"],
+    "hint": "কোনো বড় জায়গার দিকে যাওয়া বোঝাতে go-এর পর to (to London) বসে।"
+  },
+  {
+    "bangla": "সে কেন এমন করবে?",
+    "english": "Why will he do so?",
+    "grammar_focus": "Future Simple (Wh-Question)",
+    "rules": ["Why + will + Subject + V1?", "do so → এমন করা / তা করা"],
+    "hint": "'so' শব্দটি এখানে 'এমন' বা 'এইরকম' অর্থ প্রকাশ করছে।"
+  }
+]
