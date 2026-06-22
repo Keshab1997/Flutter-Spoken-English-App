@@ -3,6 +3,16 @@ import 'package:flutter_tts/flutter_tts.dart';
 class TtsService {
   final FlutterTts _tts = FlutterTts();
   bool _isInitialized = false;
+  bool _muted = false;
+
+  bool get isMuted => _muted;
+
+  void setMuted(bool value) {
+    _muted = value;
+    if (value) _tts.stop();
+  }
+
+  void toggleMute() => setMuted(!_muted);
 
   Future<void> initialize() async {
     if (_isInitialized) return;
@@ -13,6 +23,7 @@ class TtsService {
   }
 
   Future<void> speak(String text) async {
+    if (_muted) return;
     if (!_isInitialized) await initialize();
     await _tts.speak(text);
   }

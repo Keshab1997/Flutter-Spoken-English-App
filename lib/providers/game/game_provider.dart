@@ -186,13 +186,13 @@ class GameNotifier extends StateNotifier<GameState> {
     );
   }
 
-  void continueToNext() {
+  Future<void> continueToNext() async {
     if (state.isGameOver) return;
 
     final answers = List<String>.from(state.userAnswers);
     
     if (state.isLastQuestion) {
-      _finishGame(answers);
+      await _finishGame(answers);
     } else {
       state = state.copyWith(
         currentQuestionIndex: state.currentQuestionIndex + 1,
@@ -203,12 +203,12 @@ class GameNotifier extends StateNotifier<GameState> {
     }
   }
 
-  void skipQuestion() {
+  Future<void> skipQuestion() async {
     if (state.isGameOver) return;
     final answers = List<String>.from(state.userAnswers)..add('');
     
     if (state.isLastQuestion) {
-      _finishGame(answers);
+      await _finishGame(answers);
     } else {
       state = state.copyWith(
         userAnswers: answers,
@@ -228,24 +228,38 @@ class GameNotifier extends StateNotifier<GameState> {
     final baseResult = await _gameService.calculateResult(
       questions: state.questions,
       userAnswers: answers,
-      earnedXP: 0, // Will be calculated by XpService
-      earnedCoins: 0, // Will be calculated by CoinService
+      earnedXP: 0,
+      earnedCoins: 0,
     );
 
-    // A round only counts as a boss / daily-challenge win when the
-    // player cleared it with a passing accuracy. The exact threshold is
-    // intentionally lenient (>= 50%) so partial-completion boss rounds
-    // still credit progress; tighten here if product policy changes.
+    final correctCount = baseResult.correctAnswers;
+    final total = baseResult.correctAnswers + baseResult.wrongAnswers;
+    final accuracy = total > 0 ? correctCount / total : 0.0;
+    final isPerfect = accuracy >= 1.0;
+
+    final earnedXP = correctCount * 10 +
+        (accuracy >= 0.85 ? 30 : accuracy >= 0.7 ? 15 : 0) +
+        (isPerfect ? correctCount * 5 : 0);
+    final earnedCoins = correctCount * 5 +
+        (accuracy >= 0.85 ? 15 : accuracy >= 0.7 ? 8 : 0) +
+        (isPerfect ? correctCount * 3 : 0);
+
     final bool isWin = baseResult.accuracy >= 0.5;
     final tagged = baseResult.copyWith(
       gameType: state.gameType,
       durationSeconds: duration.inSeconds,
+      earnedXP: earnedXP,
+      earnedCoins: earnedCoins,
       isBossWin: state.gameType == 'boss' && isWin,
       isDailyChallengeWin:
           state.gameType == 'daily_challenge' && isWin,
     );
 
-    await _gameService.saveResult(tagged, duration: duration);
+    try {
+      await _gameService.saveResult(tagged, duration: duration);
+    } catch (e) {
+      print('Failed to save game result: $e');
+    }
 
     state = state.copyWith(
       userAnswers: answers,

@@ -144,7 +144,7 @@ class StatisticsRepository {
   }
 
   Future<void> uploadResultToFirestore(String userId, GameResultModel result) async {
-    final data = result.toMap();
+    final data = result.toFirestoreMap();
     data['userId'] = userId;
     await FirebaseFirestore.instance
         .collection(_firestoreCollection)

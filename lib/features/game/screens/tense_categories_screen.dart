@@ -322,18 +322,6 @@ class _TenseCard extends StatelessWidget {
     );
   }
 
-  void _startPractice(BuildContext context) {
-    ref.read(soundProvider.notifier).playButtonTap();
-    ref.read(gameProvider.notifier).loadQuestions(
-      tenseType: tense.id,
-      limit: 15,
-    );
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (_) => const QuestionScreen()),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
@@ -439,30 +427,7 @@ class _TenseCard extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(width: 10),
-                // Practice Button
-                Expanded(
-                  child: ElevatedButton.icon(
-                    onPressed: () => _startPractice(context),
-                    icon: const Icon(Icons.play_arrow_rounded, size: 18, color: Colors.white),
-                    label: const Text(
-                      'Practice করো',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600,
-                      ),
-                    ),
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: color,
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      elevation: 2,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                ),
+
               ],
             ),
           ),

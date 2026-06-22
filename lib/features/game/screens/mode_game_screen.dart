@@ -142,11 +142,10 @@ class _ModeGameScreenState extends ConsumerState<ModeGameScreen> with TickerProv
     }
   }
 
-  void _continueToNext() {
-    ref.read(gameProvider.notifier).continueToNext();
+  Future<void> _continueToNext() async {
+    await ref.read(gameProvider.notifier).continueToNext();
     ref.read(soundServiceProvider).playButtonTap();
-    
-    // Check if game ended
+
     final gameState = ref.read(gameProvider);
     if (gameState.isGameOver) {
       _endGame();

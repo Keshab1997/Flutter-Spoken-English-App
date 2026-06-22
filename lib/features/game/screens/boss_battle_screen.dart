@@ -5,6 +5,7 @@ import '../../../providers/game/game_provider.dart';
 import '../../../providers/game/timer_provider.dart';
 import '../../../providers/game/score_provider.dart';
 import '../../../providers/game/sound_provider.dart';
+import '../../../providers/game/statistics_provider.dart';
 import 'result_screen.dart';
 
 class BossBattleScreen extends ConsumerWidget {
@@ -260,11 +261,12 @@ class BossBattleScreen extends ConsumerWidget {
     }
   }
 
-  void _handleContinue(BuildContext context, WidgetRef ref) {
-    ref.read(gameProvider.notifier).continueToNext();
+  Future<void> _handleContinue(BuildContext context, WidgetRef ref) async {
+    await ref.read(gameProvider.notifier).continueToNext();
     final gameState = ref.read(gameProvider);
     if (gameState.isGameOver) {
       ref.read(timerProvider.notifier).resetTimer();
+      ref.read(statisticsProvider.notifier).refresh();
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => ResultScreen(
         score: gameState.lastResult?.score ?? 0,
         correctAnswers: gameState.lastResult?.correctAnswers ?? 0,

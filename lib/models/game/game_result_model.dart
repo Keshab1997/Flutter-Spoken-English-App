@@ -67,8 +67,11 @@ class GameResultModel {
       accuracy: (map['accuracy'] as num?)?.toDouble() ?? 0.0,
       earnedXP: map['earnedXP'] as int? ?? 0,
       earnedCoins: map['earnedCoins'] as int? ?? 0,
-      completedTime: (map['completedTime'] as Timestamp?)?.toDate() ??
-          DateTime.now(),
+      completedTime: map['completedTime'] is Timestamp
+          ? (map['completedTime'] as Timestamp).toDate()
+          : DateTime.fromMillisecondsSinceEpoch(
+              (map['completedTime'] as num?)?.toInt() ??
+                  DateTime.now().millisecondsSinceEpoch),
       gameType: map['gameType'] as String? ?? 'normal',
       durationSeconds: map['durationSeconds'] as int? ?? 0,
       isBossWin: map['isBossWin'] as bool? ?? false,
@@ -77,6 +80,22 @@ class GameResultModel {
   }
 
   Map<String, dynamic> toMap() {
+    return {
+      'score': score,
+      'correctAnswers': correctAnswers,
+      'wrongAnswers': wrongAnswers,
+      'accuracy': accuracy,
+      'earnedXP': earnedXP,
+      'earnedCoins': earnedCoins,
+      'completedTime': completedTime.millisecondsSinceEpoch,
+      'gameType': gameType,
+      'durationSeconds': durationSeconds,
+      'isBossWin': isBossWin,
+      'isDailyChallengeWin': isDailyChallengeWin,
+    };
+  }
+
+  Map<String, dynamic> toFirestoreMap() {
     return {
       'score': score,
       'correctAnswers': correctAnswers,

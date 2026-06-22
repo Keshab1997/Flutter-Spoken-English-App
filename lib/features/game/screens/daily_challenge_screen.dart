@@ -6,6 +6,7 @@ import '../../../providers/game/timer_provider.dart';
 import '../../../providers/game/score_provider.dart';
 import '../../../providers/game/streak_provider.dart';
 import '../../../providers/game/sound_provider.dart';
+import '../../../providers/game/statistics_provider.dart';
 import 'result_screen.dart';
 
 class DailyChallengeScreen extends ConsumerWidget {
@@ -19,7 +20,6 @@ class DailyChallengeScreen extends ConsumerWidget {
     final streakState = ref.watch(streakProvider);
     final theme = Theme.of(context);
 
-    // Start daily challenge on first build
     ref.listen<GameState>(gameProvider, (previous, next) {
       if (previous?.questions.isEmpty ?? true && next.questions.isNotEmpty) {
         ref.read(timerProvider.notifier).startStandardGame();
@@ -182,47 +182,18 @@ class DailyChallengeScreen extends ConsumerWidget {
 
           Expanded(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.all(16),
+              padding: const EdgeInsets.fromLTRB(12, 8, 12, 12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // Daily Bonus Banner
+                  // Question Card
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      gradient: const LinearGradient(colors: [Colors.amber, Colors.orange]),
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: const Row(
-                      children: [
-                        Icon(Icons.star, color: Colors.white, size: 32),
-                        SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('Daily Bonus Active!', 
-                                  style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold)),
-                              Text('+50% XP & Coins', 
-                                  style: TextStyle(color: Colors.white70, fontSize: 12)),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  const SizedBox(height: 24),
-
-                  // Question Card
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
                       color: theme.cardColor,
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: AppColors.primary, width: 2),
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(color: AppColors.primary, width: 1.5),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -240,16 +211,16 @@ class DailyChallengeScreen extends ConsumerWidget {
                             ),
                           ],
                         ),
-                        const SizedBox(height: 16),
+                        const SizedBox(height: 12),
                         Text(
                           question.question,
-                          style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w600, height: 1.4),
+                          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600, height: 1.35, color: Colors.black87),
                         ),
                       ],
                     ),
                   ),
 
-                  const SizedBox(height: 24),
+                  const SizedBox(height: 16),
 
                   // Options
                   ...question.options.asMap().entries.map((entry) {
@@ -261,7 +232,7 @@ class DailyChallengeScreen extends ConsumerWidget {
                     final isSelected = gameState.selectedAnswer?.trim().toLowerCase() == option.trim().toLowerCase();
 
                     return Padding(
-                      padding: const EdgeInsets.only(bottom: 12),
+                      padding: const EdgeInsets.only(bottom: 10),
                       child: _DailyAnswerOption(
                         option: option,
                         index: idx,
@@ -303,11 +274,12 @@ class DailyChallengeScreen extends ConsumerWidget {
     }
   }
 
-  void _handleContinue(BuildContext context, WidgetRef ref) {
-    ref.read(gameProvider.notifier).continueToNext();
+  Future<void> _handleContinue(BuildContext context, WidgetRef ref) async {
+    await ref.read(gameProvider.notifier).continueToNext();
     final gameState = ref.read(gameProvider);
     if (gameState.isGameOver) {
       ref.read(timerProvider.notifier).resetTimer();
+      ref.read(statisticsProvider.notifier).refresh();
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => ResultScreen(
         score: gameState.lastResult?.score ?? 0,
         correctAnswers: gameState.lastResult?.correctAnswers ?? 0,
@@ -400,7 +372,7 @@ class _DailyAnswerOption extends StatelessWidget {
           onTap: isAnswerChecked ? null : onTap,
           borderRadius: BorderRadius.circular(16),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 18),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
             child: Row(
               children: [
                 AnimatedContainer(

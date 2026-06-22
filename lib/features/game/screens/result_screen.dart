@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../core/constants/app_colors.dart';
-import '../../../../providers/game/xp_provider.dart';
-import '../../../../providers/game/coin_provider.dart';
-import '../../../../providers/game/sound_provider.dart';
-import './game_home_screen.dart';
-import './answer_review_screen.dart';
+import '../../../core/constants/app_colors.dart';
+import '../../../providers/game/game_provider.dart';
+import '../../../providers/game/timer_provider.dart';
+import '../../../providers/game/score_provider.dart';
+import '../../../services/game_service.dart';
+import '../../../providers/game/xp_provider.dart';
+import '../../../providers/game/coin_provider.dart';
+import '../../../providers/game/sound_provider.dart';
+import 'game_home_screen.dart';
+import 'answer_review_screen.dart';
+import 'question_screen.dart';
 
 class ResultScreen extends ConsumerWidget {
   final int score;
@@ -36,7 +41,7 @@ class ResultScreen extends ConsumerWidget {
           gradient: LinearGradient(colors: AppColors.primaryGradient, begin: Alignment.topCenter, end: Alignment.bottomCenter),
         ),
         child: SafeArea(
-          child: Padding(
+          child: SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
               children: [
@@ -99,7 +104,7 @@ class ResultScreen extends ConsumerWidget {
                   ),
                 ),
 
-                const Spacer(),
+                const SizedBox(height: 32),
 
                 // Review Answers Button (only if there are wrong answers)
                 if (wrongAnswers > 0)
@@ -129,13 +134,35 @@ class ResultScreen extends ConsumerWidget {
                     ),
                   ),
 
+                // Retry Button
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 12),
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      onPressed: () => _retryGame(context, ref),
+                      icon: const Icon(Icons.replay),
+                      label: const Text(
+                        'Retry',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: Colors.white,
+                        side: const BorderSide(color: Colors.white54),
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+                      ),
+                    ),
+                  ),
+                ),
+
                 // Continue Button
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      ref.read(xpProvider.notifier).addXP(earnedXP);
-                      ref.read(coinProvider.notifier).addCoins(earnedCoins);
+                      ref.read(xpProvider.notifier).refresh();
+                      ref.read(coinProvider.notifier).refresh();
                       ref.read(soundServiceProvider).playLevelUp();
                       Navigator.pushReplacement(context, MaterialPageRoute(builder: (_) => const GameHomeScreen()));
                     },
@@ -148,11 +175,28 @@ class ResultScreen extends ConsumerWidget {
                     child: const Text('Continue', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
                   ),
                 ),
+                const SizedBox(height: 24),
               ],
             ),
           ),
         ),
       ),
+    );
+  }
+
+  void _retryGame(BuildContext context, WidgetRef ref) {
+    final gameState = ref.read(gameProvider);
+    final mode = gameState.gameMode;
+    ref.read(gameProvider.notifier).reset();
+    ref.read(timerProvider.notifier).resetTimer();
+    ref.read(scoreProvider.notifier).resetScore();
+    ref.read(gameProvider.notifier).loadQuestions(
+      mode: mode,
+      limit: mode == GameMode.practice ? 10 : 20,
+    );
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (_) => const QuestionScreen()),
     );
   }
 

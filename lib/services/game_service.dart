@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import '../models/game/game_question_model.dart';
 import '../models/game/game_result_model.dart';
 import '../models/game/game_level_model.dart';
@@ -148,6 +149,21 @@ class GameService {
 
     await _progressRepository.addXP(result.earnedXP);
     await _progressRepository.addCoins(result.earnedCoins);
+
+    // Upload to Firestore (user-specific)
+    final userId = FirebaseAuth.instance.currentUser?.uid;
+    if (userId != null) {
+      try {
+        await _statisticsRepository.uploadResultToFirestore(userId, resultWithDuration);
+        await _statisticsRepository.uploadMetaToFirestore(userId);
+        final progress = _progressRepository.getProgress();
+        if (progress != null) {
+          await _progressRepository.uploadProgressToFirestore(progress);
+        }
+      } catch (e) {
+        print('Failed to upload result to Firestore: $e');
+      }
+    }
   }
 
   // ── Level Progression ──

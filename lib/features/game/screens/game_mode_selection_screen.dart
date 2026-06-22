@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../services/game_mode_service.dart';
+import '../../../providers/game/game_provider.dart';
+import '../../../providers/game/timer_provider.dart';
+import '../../../providers/game/score_provider.dart';
 import '../../../providers/game/sound_provider.dart';
 import 'mode_game_screen.dart';
 
@@ -27,6 +30,9 @@ class GameModeSelectionScreen extends ConsumerWidget {
               return _ModeCard(
                 config: config,
                 onTap: () {
+                  ref.read(gameProvider.notifier).reset();
+                  ref.read(timerProvider.notifier).resetTimer();
+                  ref.read(scoreProvider.notifier).resetScore();
                   ref.read(soundProvider.notifier).playButtonTap();
                   Navigator.push(
                     context,
