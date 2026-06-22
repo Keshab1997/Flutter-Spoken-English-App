@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../vocabulary/screens/vocabulary_screen.dart';
-import '../../speaking/screens/speaking_screen.dart';
+import '../../learning/screens/learning_screen.dart';
+import '../../practice/screens/practice_screen.dart';
 import '../../ai_teacher/screens/ai_chat_screen.dart';
 import '../../profile/screens/profile_screen.dart';
 import 'home_screen.dart';
@@ -28,8 +28,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
         onNavigateToTab: _onTabChanged,
         onNavigateToLessons: () => _onTabChanged(1),
       ),
-      const VocabularyScreen(),
-      const SpeakingScreen(),
+      const LearningScreen(),
+      const PracticeScreen(),
       AiChatScreen(onNavigateToHome: () => _onTabChanged(0)),
       const ProfileScreen(),
     ];
@@ -49,13 +49,13 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
             label: 'Home',
           ),
           NavigationDestination(
-            icon: Icon(Icons.menu_book_outlined),
-            selectedIcon: Icon(Icons.menu_book_rounded),
-            label: 'Vocabulary',
+            icon: Icon(Icons.auto_stories_outlined),
+            selectedIcon: Icon(Icons.auto_stories_rounded),
+            label: 'Learning',
           ),
           NavigationDestination(
-            icon: Icon(Icons.mic_none_outlined),
-            selectedIcon: Icon(Icons.mic_rounded),
+            icon: Icon(Icons.rocket_launch_outlined),
+            selectedIcon: Icon(Icons.rocket_launch_rounded),
             label: 'Practice',
           ),
           NavigationDestination(

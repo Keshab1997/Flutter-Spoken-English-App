@@ -14,12 +14,15 @@ import '../../../providers/last_opened_chapter_provider.dart';
 import '../../../models/vocabulary_chapter_model.dart';
 import '../../../models/grammar_chapter_model.dart';
 import '../../../providers/theme_provider.dart';
-import '../../grammar/screens/grammar_list_screen.dart';
 import '../../grammar/screens/grammar_detail_screen.dart';
+import '../../grammar/screens/grammar_list_screen.dart';
 import '../../grammar/screens/grammar_test_list_screen.dart';
 import '../../vocabulary/screens/chapter_words_screen.dart';
+import '../../vocabulary/screens/vocabulary_screen.dart';
 import '../../vocabulary/screens/vocabulary_test_screen.dart';
 import '../../conversation/screens/conversation_screen.dart';
+import '../../listening/screens/listening_screen.dart';
+import '../../speaking/screens/speaking_screen.dart';
 import '../../translator/screens/banglish_translator_screen.dart';
 import '../../game/screens/game_home_screen.dart';
 import '../widgets/study_plan_section.dart';
@@ -107,8 +110,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final progressPct = (lessonsCompleted / totalLessons).clamp(0.0, 1.0);
     final favoritesCount = allWords.where((w) => w.isFavorite).length;
 
-    // Today's word from JSON chapters — changes every 10 minutes
-    final todayWord = allChapterWords.isEmpty ? null : allChapterWords[_wordIndex(allChapterWords.length)];
+    // Today's words from JSON chapters — picks 5 words every 10 minutes
+    final todayWords = _pickWords(allChapterWords, 5);
 
     // Group lessons by level for Continue Learning
     return Scaffold(
@@ -183,7 +186,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               const SizedBox(height: 20),
               _buildProgressCard(theme, streakDays, lessonsCompleted, progressPct, totalLessons),
               const SizedBox(height: 24),
-              _buildTodaysWordCard(theme, isDark, todayWord, isLoading: chaptersAsync.isLoading),
+              _buildTodaysWordCard(theme, isDark, todayWords, isLoading: chaptersAsync.isLoading),
               const SizedBox(height: 24),
               _buildAiTeacherBanner(theme),
               const SizedBox(height: 24),
@@ -192,6 +195,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               ),
               const SizedBox(height: 24),
               const StudyPlanSection(),
+              const SizedBox(height: 24),
+              _buildHomeLearningSection(theme, isDark),
+              const SizedBox(height: 24),
+              _buildHomePracticeSection(theme, isDark),
               const SizedBox(height: 24),
               _buildDailyChallengeCard(theme, streakDays),
               const SizedBox(height: 24),
@@ -325,10 +332,23 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     );
   }
 
-  // TODAY'S WORD
-  Widget _buildTodaysWordCard(ThemeData theme, bool isDark, ChapterWord? todayWord, {required bool isLoading}) {
+  // TODAY'S WORDS — multi-word card
+  List<ChapterWord> _pickWords(List<ChapterWord> words, int count) {
+    if (words.isEmpty) return [];
+    final start = _wordIndex(words.length);
+    final result = <ChapterWord>[];
+    for (int i = 0; i < count && i < words.length; i++) {
+      result.add(words[(start + i) % words.length]);
+    }
+    return result;
+  }
+
+  Widget _buildTodaysWordCard(ThemeData theme, bool isDark, List<ChapterWord> todayWords, {required bool isLoading}) {
     if (isLoading) return _buildLoadingWordCard(theme, isDark);
-    if (todayWord == null) return _buildEmptyWordCard(theme, isDark);
+    if (todayWords.isEmpty) return _buildEmptyWordCard(theme, isDark);
+
+    final featured = todayWords.first;
+    final more = todayWords.length > 1 ? todayWords.sublist(1) : <ChapterWord>[];
 
     return Container(
       width: double.infinity,
@@ -343,6 +363,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Header
             Container(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               color: AppColors.accent.withOpacity(0.1),
@@ -350,17 +371,18 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 children: [
                   const Icon(Icons.wb_sunny_outlined, color: AppColors.accent, size: 20),
                   const SizedBox(width: 8),
-                  const Text("TODAY'S WORD", style: TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
+                  const Text("TODAY'S WORDS", style: TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
                   const Spacer(),
                   Text(
-                    _timeSlotLabel(),
+                    '${todayWords.length} words',
                     style: TextStyle(color: AppColors.accent.withOpacity(0.6), fontSize: 10, fontWeight: FontWeight.w600),
                   ),
                 ],
               ),
             ),
+            // Featured word — full detail
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: EdgeInsets.fromLTRB(20, 20, 20, more.isEmpty ? 20 : 0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -372,19 +394,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              todayWord.word,
+                              featured.word,
                               style: theme.textTheme.headlineLarge?.copyWith(fontSize: 26, fontWeight: FontWeight.w900, color: AppColors.primary),
                             ),
-                            if (todayWord.pronunciation.isNotEmpty)
+                            if (featured.pronunciation.isNotEmpty)
                               Text(
-                                todayWord.pronunciation,
+                                featured.pronunciation,
                                 style: const TextStyle(color: Colors.grey, fontSize: 14, fontStyle: FontStyle.italic),
                               ),
                           ],
                         ),
                       ),
                       GestureDetector(
-                        onTap: () => _speakWord(todayWord.word),
+                        onTap: () => _speakWord(featured.word),
                         child: AnimatedContainer(
                           duration: const Duration(milliseconds: 200),
                           padding: const EdgeInsets.all(12),
@@ -404,19 +426,19 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   const SizedBox(height: 16),
                   const Divider(height: 1),
                   const SizedBox(height: 16),
-                  if (todayWord.meaning.isNotEmpty) ...[
+                  if (featured.meaning.isNotEmpty) ...[
                     const Text('Meaning (ইংরেজি):', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Colors.grey)),
                     const SizedBox(height: 4),
-                    Text(todayWord.meaning, style: theme.textTheme.titleMedium?.copyWith(fontSize: 16, fontWeight: FontWeight.w500)),
+                    Text(featured.meaning, style: theme.textTheme.titleMedium?.copyWith(fontSize: 16, fontWeight: FontWeight.w500)),
                     const SizedBox(height: 12),
                   ],
-                  if (todayWord.banglaMeaning.isNotEmpty) ...[
+                  if (featured.banglaMeaning.isNotEmpty) ...[
                     const Text('Meaning (বাংলা):', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Colors.grey)),
                     const SizedBox(height: 4),
-                    Text(todayWord.banglaMeaning, style: theme.textTheme.titleMedium?.copyWith(fontSize: 18, fontWeight: FontWeight.bold)),
+                    Text(featured.banglaMeaning, style: theme.textTheme.titleMedium?.copyWith(fontSize: 18, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 12),
                   ],
-                  if (todayWord.exampleSentence.isNotEmpty) ...[
+                  if (featured.exampleSentence.isNotEmpty) ...[
                     const Text('Example Sentence:', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Colors.grey)),
                     const SizedBox(height: 4),
                     Container(
@@ -428,7 +450,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                         border: Border.all(color: isDark ? Colors.grey[800]! : Colors.grey[200]!, width: 1),
                       ),
                       child: Text(
-                        todayWord.exampleSentence,
+                        featured.exampleSentence,
                         style: theme.textTheme.bodyLarge?.copyWith(fontStyle: FontStyle.italic, fontWeight: FontWeight.w500),
                       ),
                     ),
@@ -436,10 +458,104 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 ],
               ),
             ),
+            // More words — compact horizontal list
+            if (more.isNotEmpty) ...[
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  children: [
+                    Text('More Words',
+                        style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700, color: Colors.grey)),
+                    const Spacer(),
+                    Text('${more.length} more',
+                        style: const TextStyle(color: Colors.grey, fontSize: 11)),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 8),
+              SizedBox(
+                height: 80,
+                child: ListView.separated(
+                  scrollDirection: Axis.horizontal,
+                  physics: const BouncingScrollPhysics(),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  itemCount: more.length,
+                  separatorBuilder: (_, __) => const SizedBox(width: 10),
+                  itemBuilder: (_, i) => _buildCompactWordCard(more[i], isDark, theme),
+                ),
+              ),
+              const SizedBox(height: 16),
+            ],
+            // Browse all
+            GestureDetector(
+              onTap: () => _openVocabulary(),
+              child: Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                decoration: BoxDecoration(
+                  border: Border(top: BorderSide(color: isDark ? AppColors.borderDark : AppColors.borderLight)),
+                ),
+                child: const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Browse Vocabulary',
+                        style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.w700, fontSize: 13)),
+                    SizedBox(width: 4),
+                    Icon(Icons.arrow_forward_rounded, color: AppColors.primary, size: 16),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),
     );
+  }
+
+  Widget _buildCompactWordCard(ChapterWord w, bool isDark, ThemeData theme) {
+    return Container(
+      width: 180,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+      decoration: BoxDecoration(
+        color: isDark ? Colors.grey[900] : Colors.grey[50],
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: isDark ? AppColors.borderDark : AppColors.borderLight),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(w.word,
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    maxLines: 1, overflow: TextOverflow.ellipsis),
+                const SizedBox(height: 2),
+                Text(w.banglaMeaning.isNotEmpty ? w.banglaMeaning : w.meaning,
+                    style: TextStyle(color: Colors.grey.shade500, fontSize: 11),
+                    maxLines: 1, overflow: TextOverflow.ellipsis),
+              ],
+            ),
+          ),
+          GestureDetector(
+            onTap: () => _speakWord(w.word),
+            child: Container(
+              padding: const EdgeInsets.all(6),
+              decoration: BoxDecoration(
+                color: AppColors.primary.withOpacity(0.1),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Icon(Icons.volume_up_rounded, color: AppColors.primary, size: 16),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _openVocabulary() {
+    widget.onNavigateToTab?.call(1);
   }
 
   Widget _buildLoadingWordCard(ThemeData theme, bool isDark) {
@@ -462,7 +578,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 children: [
                   Icon(Icons.wb_sunny_outlined, color: AppColors.accent, size: 20),
                   SizedBox(width: 8),
-                  Text("TODAY'S WORD", style: TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
+                  Text("TODAY'S WORDS", style: TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
                 ],
               ),
             ),
@@ -511,8 +627,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               child: const Row(
                 children: [
                   Icon(Icons.wb_sunny_outlined, color: AppColors.accent, size: 20),
-                  SizedBox(width: 8),
-                  Text("TODAY'S WORD", style: TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
+                    SizedBox(width: 8),
+                  Text("TODAY'S WORDS", style: TextStyle(color: AppColors.accent, fontSize: 12, fontWeight: FontWeight.bold, letterSpacing: 1.2)),
                 ],
               ),
             ),
@@ -535,18 +651,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         ),
       ),
     );
-  }
-
-  String _timeSlotLabel() {
-    final now = DateTime.now();
-    final totalMinutes = now.hour * 60 + now.minute;
-    final slotStart = (totalMinutes ~/ 10) * 10;
-    final slotEnd = slotStart + 10;
-    final hh = slotStart ~/ 60;
-    final mm = slotStart % 60;
-    final hh2 = slotEnd ~/ 60;
-    final mm2 = slotEnd % 60;
-    return '${hh.toString().padLeft(2, '0')}:${mm.toString().padLeft(2, '0')} - ${hh2.toString().padLeft(2, '0')}:${mm2.toString().padLeft(2, '0')}';
   }
 
   // CONTINUE LEARNING — next pending Grammar + Vocabulary chapters
@@ -882,70 +986,152 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     );
   }
 
-  // QUICK PRACTICE
-  Widget _buildQuickPracticeSection(ThemeData theme, bool isDark) {
-    final items = [
-      {'title': 'Vocabulary', 'icon': Icons.menu_book_rounded, 'gradient': AppColors.primaryGradient, 'tab': 1},
-      {'title': 'Vocab Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'tab': -1},
-      {'title': 'Grammar', 'icon': Icons.edit_note_rounded, 'gradient': AppColors.purpleGradient, 'tab': -2},
-      {'title': 'Grammar Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'tab': -3},
-      {'title': 'Conversation', 'icon': Icons.forum_rounded, 'gradient': AppColors.secondaryGradient, 'tab': -4},
-      {'title': 'Listening', 'icon': Icons.headset_rounded, 'gradient': AppColors.infoGradient, 'tab': 2},
-      {'title': 'Speaking', 'icon': Icons.mic_rounded, 'gradient': AppColors.pinkGradient, 'tab': 2},
-      {'title': 'Translate', 'icon': Icons.translate_rounded, 'gradient': [const Color(0xFF00BCD4), const Color(0xFF009688)], 'tab': -5},
-      {'title': 'Spoken Rules', 'icon': Icons.auto_stories_rounded, 'gradient': [const Color(0xFF6366F1), const Color(0xFF8B5CF6)], 'tab': -6},
-    ];
+  // HOME LEARNING SECTION — Spoken Rules, Vocabulary, Grammar
+  Widget _buildHomeLearningSection(ThemeData theme, bool isDark) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Quick Practice', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+        Row(
+          children: [
+            const Icon(Icons.auto_stories_rounded, color: AppColors.primary, size: 22),
+            const SizedBox(width: 8),
+            Text('Learning', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+            const Spacer(),
+            GestureDetector(
+              onTap: () => widget.onNavigateToTab?.call(1),
+              child: Text('See All', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.w600, fontSize: 13)),
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        SizedBox(
+          height: 120,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
+            itemCount: 3,
+            separatorBuilder: (_, __) => const SizedBox(width: 14),
+            itemBuilder: (_, i) {
+              final items = [
+                {
+                  'title': 'Spoken Rules',
+                  'icon': Icons.auto_stories_rounded,
+                  'gradient': [const Color(0xFF6366F1), const Color(0xFF8B5CF6)],
+                  'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SpokenRulesScreen())),
+                },
+                {
+                  'title': 'Vocabulary',
+                  'icon': Icons.menu_book_rounded,
+                  'gradient': AppColors.primaryGradient,
+                  'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyScreen())),
+                },
+                {
+                  'title': 'Grammar',
+                  'icon': Icons.edit_note_rounded,
+                  'gradient': AppColors.purpleGradient,
+                  'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarListScreen())),
+                },
+              ];
+              final item = items[i];
+              final grad = item['gradient'] as List<Color>;
+              return GestureDetector(
+                onTap: item['onTap'] as VoidCallback,
+                child: Container(
+                  width: 180,
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight),
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [BoxShadow(color: grad[0].withOpacity(0.25), blurRadius: 10, offset: const Offset(0, 4))],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(8),
+                        decoration: BoxDecoration(
+                          color: Colors.white.withOpacity(0.2),
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Icon(item['icon'] as IconData, color: Colors.white, size: 24),
+                      ),
+                      Text(item['title'] as String,
+                          style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 16)),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  // HOME PRACTICE SECTION — Tests & practice modes
+  Widget _buildHomePracticeSection(ThemeData theme, bool isDark) {
+    final items = [
+      {'title': 'Vocab Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()))},
+      {'title': 'Grammar Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.infoGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarTestListScreen()))},
+      {'title': 'Conversation', 'icon': Icons.forum_rounded, 'gradient': AppColors.secondaryGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ConversationScreen()))},
+      {'title': 'Speaking', 'icon': Icons.mic_rounded, 'gradient': AppColors.pinkGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SpeakingScreen()))},
+      {'title': 'Listening', 'icon': Icons.headset_rounded, 'gradient': AppColors.infoGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ListeningScreen()))},
+      {'title': 'Translate', 'icon': Icons.translate_rounded, 'gradient': [const Color(0xFF00BCD4), const Color(0xFF009688)], 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const BanglishTranslatorScreen()))},
+    ];
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Icon(Icons.rocket_launch_rounded, color: AppColors.primary, size: 22),
+            const SizedBox(width: 8),
+            Text('Practice', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+            const Spacer(),
+            GestureDetector(
+              onTap: () => widget.onNavigateToTab?.call(2),
+              child: Text('See All', style: TextStyle(color: AppColors.primary, fontWeight: FontWeight.w600, fontSize: 13)),
+            ),
+          ],
+        ),
         const SizedBox(height: 12),
         GridView.builder(
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2, crossAxisSpacing: 14, mainAxisSpacing: 14, childAspectRatio: 1.45),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+            crossAxisSpacing: 12,
+            mainAxisSpacing: 12,
+            childAspectRatio: 0.9,
+          ),
           itemCount: items.length,
-          itemBuilder: (context, index) {
-            final item = items[index];
+          itemBuilder: (_, i) {
+            final item = items[i];
             final grad = item['gradient'] as List<Color>;
             return GestureDetector(
-              onTap: () {
-                final tab = item['tab'] as int;
-                if (tab == -1) {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()));
-                } else if (tab == -2) {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarListScreen()));
-                } else if (tab == -3) {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarTestListScreen()));
-                } else if (tab == -4) {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => const ConversationScreen()));
-                } else if (tab == -5) {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => const BanglishTranslatorScreen()));
-                } else if (tab == -6) {
-                  Navigator.push(context, MaterialPageRoute(builder: (_) => const SpokenRulesScreen()));
-                } else {
-                  widget.onNavigateToTab?.call(tab);
-                }
-              },
+              onTap: item['onTap'] as VoidCallback,
               child: Container(
-                padding: const EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  color: isDark ? AppColors.surfaceDark : AppColors.surfaceLight,
-                  borderRadius: BorderRadius.circular(20),
-                  border: Border.all(color: isDark ? AppColors.borderDark : AppColors.borderLight, width: 1.2),
-                  boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.01), blurRadius: 6, offset: const Offset(0, 3))],
+                  gradient: LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight),
+                  borderRadius: BorderRadius.circular(18),
+                  boxShadow: [BoxShadow(color: grad[0].withOpacity(0.25), blurRadius: 8, offset: const Offset(0, 3))],
                 ),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(color: grad[0].withOpacity(0.1), borderRadius: BorderRadius.circular(12)),
-                      child: Icon(item['icon'] as IconData, color: grad[0], size: 24),
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        borderRadius: BorderRadius.circular(14),
+                      ),
+                      child: Icon(item['icon'] as IconData, color: Colors.white, size: 26),
                     ),
-                    const SizedBox(height: 6),
-                    Text(item['title'] as String, style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.bold, fontSize: 15)),
+                    const SizedBox(height: 8),
+                    Text(item['title'] as String,
+                        style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 12),
+                        textAlign: TextAlign.center),
                   ],
                 ),
               ),

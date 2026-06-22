@@ -36,8 +36,8 @@ class TodoListNotifier extends StateNotifier<StudyPlanState> {
 
   void init(String? userId, List<GrammarChapter> grammarChapters,
       List<VocabularyChapter> vocabChapters) {
-    // Re-init if userId changed (login/logout) or first time
-    if (_userId == userId && state.items.isNotEmpty) return;
+    final expectedCount = grammarChapters.length + vocabChapters.length;
+    if (_userId == userId && state.items.length == expectedCount && state.items.isNotEmpty) return;
     _userId = userId;
     _loadFromFirestore(grammarChapters, vocabChapters);
   }
@@ -282,7 +282,7 @@ final todoListProvider =
     final vocabAsync = ref.read(allChaptersProvider);
     final grammarData = grammarAsync.asData?.value ?? [];
     final vocabData = vocabAsync.asData?.value ?? [];
-    if (grammarData.isNotEmpty || vocabData.isNotEmpty) {
+    if (grammarData.isNotEmpty && vocabData.isNotEmpty) {
       notifier.init(userId, grammarData, vocabData);
     }
   }

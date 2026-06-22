@@ -130,6 +130,29 @@ class _StudyPlanSectionState extends ConsumerState<StudyPlanSection> {
     return cards;
   }
 
+  Widget _buildLoadingSkeleton(bool isDark) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Container(width: 22, height: 22, decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4))),
+            const SizedBox(width: 8),
+            Container(width: 100, height: 20, decoration: BoxDecoration(color: Colors.grey[300], borderRadius: BorderRadius.circular(4))),
+          ],
+        ),
+        const SizedBox(height: 16),
+        Container(width: double.infinity, height: 40, decoration: BoxDecoration(color: isDark ? Colors.grey[800] : Colors.grey[200], borderRadius: BorderRadius.circular(8))),
+        const SizedBox(height: 8),
+        Container(width: double.infinity, height: 40, decoration: BoxDecoration(color: isDark ? Colors.grey[800] : Colors.grey[200], borderRadius: BorderRadius.circular(8))),
+        const SizedBox(height: 12),
+        Container(width: double.infinity, height: 80, decoration: BoxDecoration(color: isDark ? Colors.grey[800] : Colors.grey[200], borderRadius: BorderRadius.circular(20))),
+        const SizedBox(height: 8),
+        Container(width: double.infinity, height: 80, decoration: BoxDecoration(color: isDark ? Colors.grey[800] : Colors.grey[200], borderRadius: BorderRadius.circular(20))),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final studyState = ref.watch(todoListProvider);
@@ -139,7 +162,12 @@ class _StudyPlanSectionState extends ConsumerState<StudyPlanSection> {
     final isDark = theme.brightness == Brightness.dark;
 
     final items = studyState.items;
-    if (items.isEmpty) return const SizedBox.shrink();
+    if (items.isEmpty) {
+      if (grammarAsync.isLoading || vocabAsync.isLoading) {
+        return _buildLoadingSkeleton(isDark);
+      }
+      return const SizedBox.shrink();
+    }
 
     final grammarChapters = grammarAsync.asData?.value ?? [];
     final vocabChapters = vocabAsync.asData?.value ?? [];
