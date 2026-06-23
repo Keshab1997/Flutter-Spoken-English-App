@@ -24,12 +24,12 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDummyKeyWeb1234567890',
-    appId: '1:1234567890:web:abcdef123456',
-    messagingSenderId: '1234567890',
-    projectId: 'spoken-english-app-dummy',
-    authDomain: 'spoken-english-app-dummy.firebaseapp.com',
-    storageBucket: 'spoken-english-app-dummy.appspot.com',
+    apiKey: 'AIzaSyCMAgGAsSdHD0EtS8_oyelTKkKZ9cXqsEU',
+    appId: '1:858001624614:web:1913a87cc8f23a5316e0e7',
+    messagingSenderId: '858001624614',
+    projectId: 'flutter-spoken-english-app',
+    authDomain: 'flutter-spoken-english-app.firebaseapp.com',
+    storageBucket: 'flutter-spoken-english-app.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
