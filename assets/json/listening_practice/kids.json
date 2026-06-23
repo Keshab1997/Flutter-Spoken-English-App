@@ -1,0 +1,212 @@
+[
+  {
+    "id": "my_family",
+    "title": "My Family",
+    "level": "Kids",
+    "sentences": [
+      {
+        "bangla": "এটি আমার মা।",
+        "english": "This is my mother.",
+        "grammar_focus": "This is...",
+        "rules": ["This is = এটি হল", "my = আমার"],
+        "hint": "This is দিয়ে পরিচয় করানো হয়"
+      },
+      {
+        "bangla": "আমার বাবার নাম রহিম।",
+        "english": "My father's name is Rahim.",
+        "grammar_focus": "Possessive ('s)",
+        "rules": ["father's = বাবার", "name is = নাম"],
+        "hint": "'s যোগ করে possessive বানাও"
+      },
+      {
+        "bangla": "আমার একটি ছোট বোন আছে।",
+        "english": "I have a little sister.",
+        "grammar_focus": "Have / Has",
+        "rules": ["I have = আমার আছে", "little = ছোট"],
+        "hint": "I-এর সাথে have বসে"
+      },
+      {
+        "bangla": "আমরা একসাথে খেলি।",
+        "english": "We play together.",
+        "grammar_focus": "Present Simple",
+        "rules": ["We play = আমরা খেলি", "together = একসাথে"],
+        "hint": "We-এর সাথে V1"
+      },
+      {
+        "bangla": "আমি আমার পরিবারকে ভালোবাসি।",
+        "english": "I love my family.",
+        "grammar_focus": "Present Simple",
+        "rules": ["love = ভালোবাসা", "family = পরিবার"],
+        "hint": "I love + object"
+      }
+    ]
+  },
+  {
+    "id": "my_pet",
+    "title": "My Pet Cat",
+    "level": "Kids",
+    "sentences": [
+      {
+        "bangla": "আমার একটি বিড়াল আছে।",
+        "english": "I have a cat.",
+        "grammar_focus": "Have / Has",
+        "rules": ["I have = আমার আছে", "cat = বিড়াল"],
+        "hint": "অধিকার বোঝাতে have ব্যবহার করো"
+      },
+      {
+        "bangla": "এটির নাম মিনি।",
+        "english": "Its name is Mini.",
+        "grammar_focus": "Pronoun (Its)",
+        "rules": ["প্রাণীর ক্ষেত্রে Its (এটির) বসে", "name is = নাম হয়"],
+        "hint": "It-এর possessive হলো Its"
+      },
+      {
+        "bangla": "মিনি দুধ পান করে।",
+        "english": "Mini drinks milk.",
+        "grammar_focus": "Present Simple (3rd Person Singular)",
+        "rules": ["Mini (Singular) তাই drink-এর সাথে s বসেছে (drinks)", "milk = দুধ"],
+        "hint": "Singular subject-এর সাথে verb-এর শেষে s/es বসে"
+      },
+      {
+        "bangla": "এটি খুব নরম।",
+        "english": "It is very soft.",
+        "grammar_focus": "To be verb (is) + Adjective",
+        "rules": ["soft = নরম", "very = খুব"],
+        "hint": "It-এর সাথে is বসে"
+      },
+      {
+        "bangla": "আমি মিনির সাথে খেলি।",
+        "english": "I play with Mini.",
+        "grammar_focus": "Preposition (with)",
+        "rules": ["with = সাথে", "play = খেলা করা"],
+        "hint": "with + নাম"
+      }
+    ]
+  },
+  {
+    "id": "my_school",
+    "title": "My School",
+    "level": "Kids",
+    "sentences": [
+      {
+        "bangla": "আমি স্কুলে যাই।",
+        "english": "I go to school.",
+        "grammar_focus": "Present Simple + Preposition",
+        "rules": ["go to = কোথাও যাওয়া", "school = বিদ্যালয়"],
+        "hint": "I go (V1)"
+      },
+      {
+        "bangla": "আমার স্কুল অনেক বড়।",
+        "english": "My school is very big.",
+        "grammar_focus": "Adjective (big)",
+        "rules": ["big = বড়", "very big = অনেক বড়"],
+        "hint": "স্কুলের অবস্থা বোঝাতে 'is' বসেছে"
+      },
+      {
+        "bangla": "আমার অনেক বন্ধু আছে।",
+        "english": "I have many friends.",
+        "grammar_focus": "Quantifier (many)",
+        "rules": ["many = অনেক (যা গোনা যায়)", "friends (Plural)"],
+        "hint": "friend-এর শেষে 's' যোগ করে বহুবচন করো"
+      },
+      {
+        "bangla": "আমরা একসাথে পড়ি।",
+        "english": "We study together.",
+        "grammar_focus": "Adverb (together)",
+        "rules": ["study = পড়াশোনা করা", "together = একসাথে"],
+        "hint": "We-এর সাথে study (V1)"
+      },
+      {
+        "bangla": "আমার শিক্ষক খুব ভালো।",
+        "english": "My teacher is very good.",
+        "grammar_focus": "To be verb (is) + Adjective",
+        "rules": ["teacher (Singular) তাই is বসেছে", "good = ভালো"],
+        "hint": "My teacher-এর সাথে is বসবে"
+      }
+    ]
+  },
+  {
+    "id": "colors_i_like",
+    "title": "Colors I Like",
+    "level": "Kids",
+    "sentences": [
+      {
+        "bangla": "আমার প্রিয় রঙ লাল।",
+        "english": "My favorite color is red.",
+        "grammar_focus": "Vocabulary (Colors)",
+        "rules": ["favorite = প্রিয়", "red = লাল"],
+        "hint": "favorite color-এর সাথে is বসে"
+      },
+      {
+        "bangla": "আপেল লাল হয়।",
+        "english": "Apples are red.",
+        "grammar_focus": "To be verb (are)",
+        "rules": ["Apples (Plural) তাই are বসেছে"],
+        "hint": "বহুবচনের ক্ষেত্রে are ব্যবহার করো"
+      },
+      {
+        "bangla": "আকাশ নীল।",
+        "english": "The sky is blue.",
+        "grammar_focus": "Article (The)",
+        "rules": ["sky (আকাশ)-এর আগে The বসে", "blue = নীল"],
+        "hint": "The sky (নির্দিষ্ট বস্তু)"
+      },
+      {
+        "bangla": "গাছের পাতা সবুজ।",
+        "english": "Leaves are green.",
+        "grammar_focus": "Plural Noun",
+        "rules": ["leaf-এর বহুবচন leaves (পাতাগুলো)", "green = সবুজ"],
+        "hint": "Leaves-এর সাথে are বসবে"
+      },
+      {
+        "bangla": "আমি ছবি আঁকতে পছন্দ করি।",
+        "english": "I like to draw pictures.",
+        "grammar_focus": "Infinitive (to draw)",
+        "rules": ["like to = করতে পছন্দ করা", "draw = আঁকা"],
+        "hint": "like-এর পর 'to' বসবে"
+      }
+    ]
+  },
+  {
+    "id": "my_body",
+    "title": "My Body Parts",
+    "level": "Kids",
+    "sentences": [
+      {
+        "bangla": "আমার দুটি চোখ আছে।",
+        "english": "I have two eyes.",
+        "grammar_focus": "Numbers & Plurals",
+        "rules": ["two = দুই", "eye-এর বহুবচন eyes"],
+        "hint": "I have + সংখ্যা + Noun"
+      },
+      {
+        "bangla": "আমি চোখ দিয়ে দেখি।",
+        "english": "I see with my eyes.",
+        "grammar_focus": "Preposition (with)",
+        "rules": ["see = দেখা", "with = দিয়ে/সাহায্যে"],
+        "hint": "কোনো অঙ্গ দিয়ে কাজ বোঝাতে 'with' বসে"
+      },
+      {
+        "bangla": "আমার একটি নাক আছে।",
+        "english": "I have one nose.",
+        "grammar_focus": "Singular Noun",
+        "rules": ["one = এক", "nose = নাক (Singular)"],
+        "hint": "one-এর পর s/es হয় না"
+      },
+      {
+        "bangla": "আমার দুটি হাত আছে।",
+        "english": "I have two hands.",
+        "grammar_focus": "Plural Noun",
+        "rules": ["hand-এর বহুবচন hands", "two = দুই"],
+        "hint": "two-এর পর hand-এর সাথে s বসবে"
+      },
+      {
+        "bangla": "আমি হাত দিয়ে কাজ করি।",
+        "english": "I work with my hands.",
+        "grammar_focus": "Present Simple",
+        "rules": ["work = কাজ করা", "with my hands = আমার হাত দিয়ে"],
+        "hint": "I work (V1)"
+      }
+    ]
+  }
+]

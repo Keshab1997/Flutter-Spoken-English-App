@@ -1,0 +1,254 @@
+[
+  {
+    "id": "climate_change",
+    "title": "Climate Change & Sustainability",
+    "level": "Advanced",
+    "sentences": [
+      {
+        "bangla": "বিজ্ঞানীরা সতর্ক করেছেন যে, আমরা যদি কার্বন নির্গমন ব্যাপকভাবে না কমাই, তবে পরিস্থিতি নিয়ন্ত্রণের বাইরে চলে যাবে।",
+        "english": "Scientists have warned that unless we drastically reduce carbon emissions, the situation will become irreversible.",
+        "grammar_focus": "Conditional with 'Unless' + Advanced Vocab",
+        "rules": ["unless = if not (যদি না)", "drastically = ব্যাপকভাবে", "irreversible = যা আর আগের অবস্থায় ফেরানো যাবে না"],
+        "hint": "'unless' ব্যবহার করলে বাক্যাংশে আর 'not' বসে না"
+      },
+      {
+        "bangla": "আগে কখনও গ্লোবাল ওয়ার্মিং এতোটা ভয়ংকর পর্যায়ে পৌঁছায়নি।",
+        "english": "Never before has global warming reached such an alarming level.",
+        "grammar_focus": "Negative Inversion",
+        "rules": ["Negative word (Never before) বাক্যের শুরুতে বসলে Auxiliary verb (has) Subject (global warming)-এর আগে চলে আসে"],
+        "hint": "Never before has + Subject + V3"
+      },
+      {
+        "bangla": "বনাঞ্চল ধ্বংস হওয়ার কারণে অনেক বন্যপ্রাণী তাদের প্রাকৃতিক বাসস্থান হারাচ্ছে।",
+        "english": "Due to widespread deforestation, a myriad of wildlife species are losing their natural habitats.",
+        "grammar_focus": "Prepositional Phrase + Advanced Quantifier",
+        "rules": ["Due to = কারণে", "widespread deforestation = ব্যাপক বনাঞ্চল ধ্বংস", "a myriad of = অসংখ্য/অনেক"],
+        "hint": "'a myriad of' ব্যবহার করে advanced রূপ দিন"
+      },
+      {
+        "bangla": "জীবাশ্ম জ্বালানির উপর আমাদের নির্ভরতা উল্লেখযোগ্যভাবে কমানো উচিত ছিল।",
+        "english": "Our reliance on fossil fuels should have been significantly reduced.",
+        "grammar_focus": "Past Modal Passive (should have been)",
+        "rules": ["should have + V3 = অতীতে কোনো কিছু করা উচিত ছিল", "Passive voice হওয়ায় 'been' যুক্ত হয়েছে"],
+        "hint": "should have been + V3 (reduced)"
+      },
+      {
+        "bangla": "এটা অত্যন্ত জরুরি যে সরকারগুলো নবায়নযোগ্য শক্তিতে বিপুল পরিমাণ বিনিয়োগ করুক।",
+        "english": "It is imperative that governments invest heavily in renewable energy sources.",
+        "grammar_focus": "Subjunctive Mood",
+        "rules": ["It is imperative/essential that-এর পর subject যাই হোক না কেন, verb-এর base form বসে"],
+        "hint": "It is imperative that..."
+      },
+      {
+        "bangla": "এই সংকট যত দ্রুত সমাধান করা হবে, আমাদের ভবিষ্যতের জন্য তত মঙ্গলজনক।",
+        "english": "The sooner this crisis is addressed, the better it will be for our future.",
+        "grammar_focus": "Double Comparative (The... the...)",
+        "rules": ["The + comparative adjective, the + comparative adjective", "address a crisis = সংকট মোকাবিলা করা"],
+        "hint": "The sooner..., the better..."
+      },
+      {
+        "bangla": "বলা হয়ে থাকে যে সমুদ্রপৃষ্ঠের উচ্চতা এই শতাব্দীর শেষ নাগাদ কয়েক ফুট বাড়তে পারে।",
+        "english": "It is estimated that sea levels could rise by several feet by the end of this century.",
+        "grammar_focus": "Impersonal Passive",
+        "rules": ["It is estimated that = ধারণা করা হয় যে / বলা হয়ে থাকে যে"],
+        "hint": "It is estimated/believed that ব্যবহার করুন"
+      },
+      {
+        "bangla": "আমাদের শুধু সচেতনতা বৃদ্ধিই নয়, বরং বাস্তব পদক্ষেপও গ্রহণ করা উচিত।",
+        "english": "We must not only raise awareness but also take concrete actions.",
+        "grammar_focus": "Correlative Conjunctions",
+        "rules": ["Not only... but also = শুধু এটাই নয়, ওটাও", "concrete actions = বাস্তব বা দৃঢ় পদক্ষেপ"],
+        "hint": "not only... but also"
+      }
+    ]
+  },
+  {
+    "id": "career_regrets",
+    "title": "Career Regrets & Retrospect",
+    "level": "Advanced",
+    "sentences": [
+      {
+        "bangla": "আমি যদি বিশ্ববিদ্যালয় জীবনে আরও মনোযোগ দিতাম, তাহলে আজ আমি আরও ভালো অবস্থানে থাকতাম।",
+        "english": "If I had paid more attention during my university years, I would be in a better position today.",
+        "grammar_focus": "Mixed Conditional",
+        "rules": ["অতীতে কোনো কাজ না করার ফলে বর্তমানে তার প্রভাব বোঝাতে If + Past Perfect, Subject + would + V1 বসে"],
+        "hint": "If I had... I would be..."
+      },
+      {
+        "bangla": "আমার মনে হয়, আমার ওই লোভনীয় চাকরির প্রস্তাবটি প্রত্যাখ্যান করা উচিত হয়নি।",
+        "english": "I feel that I shouldn't have turned down that lucrative job offer.",
+        "grammar_focus": "Past Modal (shouldn't have) + Phrasal Verb",
+        "rules": ["shouldn't have + V3 = অতীতে কোনো কাজ করা উচিত হয়নি", "turn down = প্রত্যাখ্যান করা", "lucrative = লোভনীয়"],
+        "hint": "shouldn't have + turned down"
+      },
+      {
+        "bangla": "সেই সময় আমি বুঝতে পারিনি যে নেটওয়ার্কিং কতটা গুরুত্বপূর্ণ ছিল।",
+        "english": "Little did I realize at that time how crucial networking was.",
+        "grammar_focus": "Negative Inversion + Noun Clause",
+        "rules": ["Little দিয়ে বাক্য শুরু হলে verb subject-এর আগে আসে (did I realize)", "crucial = অত্যন্ত গুরুত্বপূর্ণ"],
+        "hint": "Little did I realize..."
+      },
+      {
+        "bangla": "বিদেশে উচ্চশিক্ষা গ্রহণের সিদ্ধান্তটি আমার জীবনের মোড় পুরোপুরি ঘুরিয়ে দিতে পারতো।",
+        "english": "The decision to pursue higher education abroad could have completely changed the course of my life.",
+        "grammar_focus": "Past Modal (could have)",
+        "rules": ["could have + V3 = অতীতে কোনো কিছু ঘটতে পারত কিন্তু ঘটেনি", "pursue = গ্রহণ করা/চালিয়ে যাওয়া"],
+        "hint": "could have + changed"
+      },
+      {
+        "bangla": "সময়ের তীব্র অভাবে, আমি আমার ভাষার দক্ষতা উন্নত করতে ব্যর্থ হয়েছিলাম।",
+        "english": "Having a severe lack of time, I failed to enhance my language proficiency.",
+        "grammar_focus": "Participle Clause",
+        "rules": ["Having + Noun = কোনো কিছু থাকায়/থাকার কারণে", "enhance = উন্নত করা", "proficiency = দক্ষতা"],
+        "hint": "Having... দিয়ে শুরু করুন"
+      },
+      {
+        "bangla": "এখন পিছন ফিরে তাকালে মনে হয়, ইশ! যদি আমি আরেকটি বিদেশি ভাষা শিখতাম।",
+        "english": "Looking back, I wish I had learned another foreign language.",
+        "grammar_focus": "Wish / If only + Past Perfect",
+        "rules": ["Looking back = পিছন ফিরে তাকালে", "অতীতের কোনো আফসোস বোঝাতে wish + Past Perfect বসে"],
+        "hint": "wish I had learned"
+      },
+      {
+        "bangla": "আমার প্রথম মেন্টর আমাকে অনেক সাহায্য করেছিলেন, যার জন্য আমি চিরকাল কৃতজ্ঞ থাকব।",
+        "english": "My first mentor helped me tremendously, for which I will remain forever grateful.",
+        "grammar_focus": "Non-defining Relative Clause",
+        "rules": ["for which = যার জন্য (আগের পুরো বাক্যটিকে নির্দেশ করছে)", "tremendously = ব্যাপকভাবে"],
+        "hint": "..., for which I will..."
+      },
+      {
+        "bangla": "অতীত নিয়ে অনুশোচনা করা অর্থহীন, তাই বর্তমানের দিকে মনোযোগ দেওয়াই শ্রেয়।",
+        "english": "Regretting the past is futile, so it is better to focus on the present.",
+        "grammar_focus": "Gerund Subject + Advanced Vocab",
+        "rules": ["Regretting (Gerund Subject)", "futile = অর্থহীন/বৃথা", "it is better to = কোনো কিছু করাই শ্রেয়"],
+        "hint": "futile শব্দটি ব্যবহার করুন"
+      }
+    ]
+  },
+  {
+    "id": "impact_of_ai",
+    "title": "The Impact of Artificial Intelligence",
+    "level": "Advanced",
+    "sentences": [
+      {
+        "bangla": "কৃত্রিম বুদ্ধিমত্তা প্রায় প্রতিটি শিল্পকে এমনভাবে রূপান্তরিত করেছে যা এক দশক আগে অকল্পনীয় ছিল।",
+        "english": "Artificial Intelligence has transformed almost every industry in ways that were unimaginable a decade ago.",
+        "grammar_focus": "Present Perfect + Relative Clause",
+        "rules": ["has transformed = রূপান্তরিত করেছে", "unimaginable = অকল্পনীয়", "a decade = এক দশক (১০ বছর)"],
+        "hint": "in ways that..."
+      },
+      {
+        "bangla": "অনেক মানুষ এই ভেবে উদ্বিগ্ন যে অটোমেশনের কারণে তাদের চাকরি চলে যেতে পারে।",
+        "english": "Many people are apprehensive that they might lose their jobs due to automation.",
+        "grammar_focus": "Adjective + Noun Clause",
+        "rules": ["apprehensive = উদ্বিগ্ন/শঙ্কিত", "might = সম্ভাবনা বোঝাতে"],
+        "hint": "apprehensive that..."
+      },
+      {
+        "bangla": "এআই যতই উন্নত হচ্ছে, নৈতিকতার প্রশ্নগুলো ততই প্রকট হয়ে উঠছে।",
+        "english": "As AI becomes more sophisticated, ethical concerns are becoming increasingly prominent.",
+        "grammar_focus": "Subordinate Clause (As...)",
+        "rules": ["sophisticated = আধুনিক/উন্নত", "ethical concerns = নৈতিকতার উদ্বেগ", "prominent = প্রকট/স্পষ্ট"],
+        "hint": "As AI becomes..."
+      },
+      {
+        "bangla": "আগামী বিশ বছরের মধ্যে, প্রযুক্তি আমাদের দৈনন্দিন জীবনে আরও গভীরভাবে মিশে যাবে।",
+        "english": "By the next twenty years, technology will have integrated even more deeply into our daily lives.",
+        "grammar_focus": "Future Perfect Tense",
+        "rules": ["ভবিষ্যতে কোনো নির্দিষ্ট সময়ের মধ্যে কাজ শেষ হয়ে থাকবে বোঝাতে will have + V3 বসে", "integrate = মিশে যাওয়া"],
+        "hint": "will have integrated"
+      },
+      {
+        "bangla": "যদিও এটি দক্ষতা বাড়ায়, তবুও মানুষের সৃজনশীলতার কোনো বিকল্প নেই।",
+        "english": "Although it enhances efficiency, there is absolutely no substitute for human creativity.",
+        "grammar_focus": "Concession (Although) + Fixed Phrase",
+        "rules": ["enhance efficiency = দক্ষতা বাড়ানো", "no substitute for = কোনো বিকল্প নেই"],
+        "hint": "Although... there is no substitute for..."
+      },
+      {
+        "bangla": "আমাদের এমন একটি সমাজ গড়ার দিকে নজর দেওয়া উচিত যেখানে মানুষ এবং মেশিন শান্তিতে সহাবস্থান করতে পারে।",
+        "english": "We should focus on building a society where humans and machines can coexist harmoniously.",
+        "grammar_focus": "Relative Adverb (where)",
+        "rules": ["coexist = সহাবস্থান করা", "harmoniously = শান্তিতে/মিলেমিশে"],
+        "hint": "where humans and machines can..."
+      },
+      {
+        "bangla": "এটা অস্বীকার করার কোনো উপায় নেই যে প্রযুক্তিগত অগ্রগতি একটি দ্বিমুখী তলোয়ার।",
+        "english": "There is no denying the fact that technological advancement is a double-edged sword.",
+        "grammar_focus": "Gerund Phrase + Idiom",
+        "rules": ["There is no denying the fact that = অস্বীকার করার উপায় নেই যে", "a double-edged sword = দ্বিমুখী তলোয়ার (যার ভালো-খারাপ দুই দিকই আছে)"],
+        "hint": "There is no denying..."
+      },
+      {
+        "bangla": "আমাদের এখনই নিয়মকানুন তৈরি করতে হবে, তা না হলে চরম বিপর্যয় ঘটতে পারে।",
+        "english": "We must establish regulations immediately; otherwise, catastrophic consequences might follow.",
+        "grammar_focus": "Compound Sentence + Advanced Vocab",
+        "rules": ["establish regulations = নিয়মকানুন তৈরি করা", "otherwise = তা না হলে", "catastrophic consequences = চরম বিপর্যয়/পরিণতি"],
+        "hint": "otherwise ব্যবহার করুন"
+      }
+    ]
+  },
+  {
+    "id": "difficult_decision",
+    "title": "A Difficult Decision",
+    "level": "Advanced",
+    "sentences": [
+      {
+        "bangla": "নিজের ব্যবসা শুরু করার জন্য আমার আরামদায়ক কর্পোরেট চাকরি ছেড়ে দেওয়াটা আমার নেওয়া সবচেয়ে কঠিন সিদ্ধান্ত ছিল।",
+        "english": "Quitting my comfortable corporate job to start my own business was the most difficult decision I have ever made.",
+        "grammar_focus": "Gerund Subject + Superlative + Present Perfect",
+        "rules": ["Quitting... business (পুরো অংশটি বাক্যের Subject)", "I have ever made (Relative pronoun 'that' উহ্য আছে)"],
+        "hint": "Quitting দিয়ে বাক্য শুরু করুন"
+      },
+      {
+        "bangla": "যদিও শুরুতে আমি খুব দ্বিধায় ছিলাম, আমি জানতাম আমাকে ঝুঁকি নিতেই হবে।",
+        "english": "Even though I was extremely hesitant at first, I knew I had to take the plunge.",
+        "grammar_focus": "Even though + Idiom",
+        "rules": ["hesitant = দ্বিধাগ্রস্ত", "take the plunge = সাহসের সাথে নতুন/ঝুঁকিপূর্ণ কিছু শুরু করা"],
+        "hint": "take the plunge (idiom) ব্যবহার করুন"
+      },
+      {
+        "bangla": "যদি আমার পরিবার আমাকে সমর্থন না করত, তবে আমি এই পথে সফল হতে পারতাম না।",
+        "english": "If my family hadn't supported me, I would not have been able to succeed on this path.",
+        "grammar_focus": "Third Conditional",
+        "rules": ["If + Past Perfect (hadn't supported), Subject + would have + V3", "would not have been able to = সক্ষম হতাম না"],
+        "hint": "If my family hadn't..., I would not have..."
+      },
+      {
+        "bangla": "অনেক নির্ঘুম রাত কাটানোর পর, অবশেষে আমার কঠোর পরিশ্রমের ফল মিলেছে।",
+        "english": "Having spent many sleepless nights, my hard work finally paid off.",
+        "grammar_focus": "Perfect Participle + Phrasal Verb",
+        "rules": ["Having + V3 = কোনো কাজ সম্পন্ন করার পর", "pay off = ফল পাওয়া/কাজে আসা (Past form: paid off)"],
+        "hint": "Having spent..."
+      },
+      {
+        "bangla": "আমি স্বীকার করি যে প্রথম কয়েক মাস আর্থিকভাবে অত্যন্ত চ্যালেঞ্জিং ছিল।",
+        "english": "I must admit that the first few months were exceptionally challenging financially.",
+        "grammar_focus": "Noun Clause + Adverb Modifying Adjective",
+        "rules": ["exceptionally challenging = অত্যন্ত চ্যালেঞ্জিং", "financially = আর্থিকভাবে (Adverb)"],
+        "hint": "exceptionally challenging"
+      },
+      {
+        "bangla": "তবে, নিজের বস হওয়ার স্বাধীনতা এমন কিছু যা আমি অন্য কিছুর সাথে বিনিময় করব না।",
+        "english": "However, the freedom of being my own boss is something I wouldn't trade for anything else.",
+        "grammar_focus": "Preposition + Gerund / Conditional 'would'",
+        "rules": ["of being = হওয়ার", "wouldn't trade = বিনিময় করব না (Hypothetical situation)"],
+        "hint": "is something I wouldn't trade"
+      },
+      {
+        "bangla": "আপনি যতক্ষণ না নিজের কমফোর্ট জোন থেকে বেরিয়ে আসছেন, ততক্ষণ আপনার আসল সম্ভাবনা বুঝতে পারবেন না।",
+        "english": "Unless you step out of your comfort zone, you will never realize your true potential.",
+        "grammar_focus": "Conditional (Unless)",
+        "rules": ["Unless = যতক্ষণ না (Negative conditional)", "true potential = আসল সম্ভাবনা"],
+        "hint": "Unless you step out..."
+      },
+      {
+        "bangla": "এখন পিছন ফিরে তাকালে মনে হয়, এটি আমার জীবনের অন্যতম সেরা সিদ্ধান্ত ছিল।",
+        "english": "Looking back now, it seems that it was one of the best decisions of my life.",
+        "grammar_focus": "Participle Clause + One of the...",
+        "rules": ["Looking back now = এখন পিছন ফিরে তাকালে", "one of the best decisions (plural noun)"],
+        "hint": "Looking back now, it seems..."
+      }
+    ]
+  }
+]

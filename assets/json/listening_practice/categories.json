@@ -1,0 +1,72 @@
+[
+  {
+    "id": "kids", 
+    "title": "Starter / Kids", 
+    "subtitle": "একদম প্রাথমিক ধাপ", 
+    "icon": "child_care", 
+    "color": "#8B5CF6"
+  },
+  {
+    "id": "beginner", 
+    "title": "Beginner Stories", 
+    "subtitle": "সহজ গল্প", 
+    "icon": "star", 
+    "color": "#10B981"
+  },
+  {
+    "id": "intermediate", 
+    "title": "Intermediate Stories", 
+    "subtitle": "মাঝারি গল্প", 
+    "icon": "trending_up", 
+    "color": "#F59E0B"
+  },
+  {
+    "id": "advanced", 
+    "title": "Advanced Stories", 
+    "subtitle": "কঠিন গল্প", 
+    "icon": "psychology", 
+    "color": "#EF4444"
+  },
+  {
+    "id": "daily_conversations", 
+    "title": "Daily Conversations", 
+    "subtitle": "দৈনন্দিন কথোপকথন", 
+    "icon": "forum", 
+    "color": "#3B82F6"
+  },
+  {
+    "id": "moral_stories", 
+    "title": "Moral Stories", 
+    "subtitle": "শিক্ষণীয় গল্প", 
+    "icon": "auto_stories", 
+    "color": "#EC4899"
+  },
+  {
+    "id": "business", 
+    "title": "Business English", 
+    "subtitle": "পেশাগত ও অফিস ইংরেজি", 
+    "icon": "business_center", 
+    "color": "#6366F1"
+  },
+  {
+    "id": "travel", 
+    "title": "Travel & Airport", 
+    "subtitle": "ভ্রমণ ও বিদেশযাত্রা", 
+    "icon": "flight_takeoff", 
+    "color": "#14B8A6"
+  },
+  {
+    "id": "ielts_listening", 
+    "title": "Exam Preparation", 
+    "subtitle": "IELTS / TOEFL প্রস্তুতি", 
+    "icon": "school", 
+    "color": "#F97316"
+  },
+  {
+    "id": "news_articles", 
+    "title": "News & Articles", 
+    "subtitle": "খবর ও প্রবন্ধ", 
+    "icon": "newspaper", 
+    "color": "#64748B"
+  }
+]

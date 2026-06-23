@@ -1,0 +1,268 @@
+[
+  {
+    "id": "morning_routine",
+    "title": "My Morning Routine",
+    "level": "Beginner",
+    "sentences": [
+      {
+        "bangla": "আমি প্রতিদিন সকাল ৬টায় ঘুম থেকে উঠি।",
+        "english": "I wake up at 6 o'clock every morning.",
+        "grammar_focus": "Present Simple",
+        "rules": ["every morning → Present Simple", "wake up = ঘুম থেকে ওঠা"],
+        "hint": "I-এর সাথে V1 (wake)"
+      },
+      {
+        "bangla": "তারপর আমি আমার দাঁত ব্রাশ করি।",
+        "english": "Then I brush my teeth.",
+        "grammar_focus": "Present Simple",
+        "rules": ["habit বোঝালে Present Simple", "Then = তারপর"],
+        "hint": "I brush (V1)"
+      },
+      {
+        "bangla": "আমি একটি স্বাস্থ্যকর নাস্তা খাই।",
+        "english": "I eat a healthy breakfast.",
+        "grammar_focus": "Present Simple + Article",
+        "rules": ["a healthy breakfast → a বসে (healthy consonant sound)", "eat = খাওয়া"],
+        "hint": "Article 'a' বসবে, 'an' নয়"
+      },
+      {
+        "bangla": "তারপর আমি স্কুলে যাই।",
+        "english": "Then I go to school.",
+        "grammar_focus": "Present Simple",
+        "rules": ["go to school = fixed phrase"],
+        "hint": "go = V1"
+      },
+      {
+        "bangla": "আমি বাসে করে স্কুলে যাই।",
+        "english": "I go to school by bus.",
+        "grammar_focus": "Preposition (by)",
+        "rules": ["by + transport (bus/car/train)", "by bus = বাসে করে"],
+        "hint": "by bus, not 'in bus'"
+      },
+      {
+        "bangla": "স্কুলে আমি আমার বন্ধুদের সাথে পড়ি।",
+        "english": "At school, I study with my friends.",
+        "grammar_focus": "Preposition (with/at)",
+        "rules": ["at school = স্কুলে", "with my friends = বন্ধুদের সাথে"],
+        "hint": "Preposition 'with' ব্যবহার করো"
+      },
+      {
+        "bangla": "আমি বিকেল ৪টায় বাড়ি ফিরি।",
+        "english": "I come back home at 4 o'clock in the afternoon.",
+        "grammar_focus": "Preposition (at/in)",
+        "rules": ["at + time (at 4 o'clock)", "in the afternoon = বিকেলে"],
+        "hint": "সময়ের আগে at, part of day-এর আগে in"
+      },
+      {
+        "bangla": "তারপর আমি আমার বাড়ির কাজ করি।",
+        "english": "Then I do my homework.",
+        "grammar_focus": "Present Simple",
+        "rules": ["do homework = বাড়ির কাজ করা (fixed phrase)"],
+        "hint": "do = V1"
+      },
+      {
+        "bangla": "রাতে আমি টিভি দেখি এবং পরিবারের সাথে সময় কাটাই।",
+        "english": "At night, I watch TV and spend time with my family.",
+        "grammar_focus": "Present Simple + Conjunction",
+        "rules": ["at night = রাতে", "watch TV = fixed phrase", "and = conjunction"],
+        "hint": "and ব্যবহার করে দুটি কাজ join করো"
+      },
+      {
+        "bangla": "আমি রাত ১০টায় ঘুমাতে যাই।",
+        "english": "I go to sleep at 10 o'clock at night.",
+        "grammar_focus": "Present Simple + Time",
+        "rules": ["go to sleep = ঘুমাতে যাওয়া", "at + time"],
+        "hint": "go to sleep, not 'go to sleeping'"
+      }
+    ]
+  },
+  {
+    "id": "shopping_trip",
+    "title": "A Shopping Trip",
+    "level": "Beginner",
+    "sentences": [
+      {
+        "bangla": "আমি আমার মায়ের সাথে বাজারে যাই।",
+        "english": "I go to the market with my mother.",
+        "grammar_focus": "Present Simple + Preposition",
+        "rules": ["go to the market = বাজারে যাওয়া", "with my mother = মায়ের সাথে"],
+        "hint": "market অর্থে সাধারণত 'the' বসে"
+      },
+      {
+        "bangla": "আমরা কিছু শাকসবজি কিনি।",
+        "english": "We buy some vegetables.",
+        "grammar_focus": "Determiner (some)",
+        "rules": ["some = কিছু (countable plural-এর সাথে)", "vegetables = plural"],
+        "hint": "some + plural noun"
+      },
+      {
+        "bangla": "আমরা কিছু ফলও কিনি।",
+        "english": "We also buy some fruits.",
+        "grammar_focus": "Adverb (also)",
+        "rules": ["also = ও/এছাড়াও", "sentence-এ also-র অবস্থান: subject-এর পরে"],
+        "hint": "also সাধারণত verb-এর আগে বসে"
+      },
+      {
+        "bangla": "দোকানদার খুব বন্ধুত্বপূর্ণ।",
+        "english": "The shopkeeper is very friendly.",
+        "grammar_focus": "To be verb (is)",
+        "rules": ["the shopkeeper = singular → is", "very friendly = খুব বন্ধুত্বপূর্ণ"],
+        "hint": "Singular subject-এর সাথে 'is' বসে"
+      },
+      {
+        "bangla": "আমরা দাম নিয়ে দরকষাকষি করি।",
+        "english": "We bargain about the price.",
+        "grammar_focus": "Verb + Preposition",
+        "rules": ["bargain about = দরকষাকষি করা"],
+        "hint": "bargain + about"
+      },
+      {
+        "bangla": "আমি এক কেজি টমেটো কিনি।",
+        "english": "I buy one kilogram of tomatoes.",
+        "grammar_focus": "Measurement phrase",
+        "rules": ["kilogram of = কেজি", "tomatoes = plural"],
+        "hint": "of ব্যবহার করো: one kilogram of tomatoes"
+      },
+      {
+        "bangla": "আমরা মোট ৫০০ টাকা খরচ করি।",
+        "english": "We spend a total of 500 taka.",
+        "grammar_focus": "Amount phrase",
+        "rules": ["a total of = মোট", "spend = খরচ করা"],
+        "hint": "'a total of' phrase ব্যবহার করো"
+      },
+      {
+        "bangla": "তারপর আমরা বাড়ি ফিরে আসি।",
+        "english": "Then we come back home.",
+        "grammar_focus": "Phrasal verb (come back)",
+        "rules": ["come back = ফিরে আসা", "home-এর আগে to হয় না"],
+        "hint": "'come back home' not 'come back to home'"
+      }
+    ]
+  },
+  {
+    "id": "my_family",
+    "title": "My Family",
+    "level": "Beginner",
+    "sentences": [
+      {
+        "bangla": "আমার পরিবার ছোট।",
+        "english": "My family is small.",
+        "grammar_focus": "To be verb (is)",
+        "rules": ["family কে একটি একক হিসেবে ধরা হয়, তাই is বসে"],
+        "hint": "'is' ব্যবহার করো"
+      },
+      {
+        "bangla": "আমার পরিবারে চারজন সদস্য আছে।",
+        "english": "There are four members in my family.",
+        "grammar_focus": "There is / There are",
+        "rules": ["four members (plural), তাই There are বসেছে"],
+        "hint": "Plural noun-এর আগে 'There are' বসে"
+      },
+      {
+        "bangla": "আমার বাবা একজন শিক্ষক।",
+        "english": "My father is a teacher.",
+        "grammar_focus": "Article (a)",
+        "rules": ["পেশা (Profession)-এর আগে a/an বসে"],
+        "hint": "teacher-এর আগে 'a' বসবে"
+      },
+      {
+        "bangla": "আমার মা একজন গৃহিণী।",
+        "english": "My mother is a housewife.",
+        "grammar_focus": "Vocabulary",
+        "rules": ["housewife = গৃহিণী", "mother (singular) → is"],
+        "hint": "housewife (singular noun)"
+      },
+      {
+        "bangla": "আমার একটি ছোট ভাই আছে।",
+        "english": "I have a younger brother.",
+        "grammar_focus": "Have verb",
+        "rules": ["I-এর সাথে have বসে", "younger brother = ছোট ভাই"],
+        "hint": "অধিকার বোঝাতে 'have' ব্যবহার করো"
+      },
+      {
+        "bangla": "সে ক্লাস ফাইভে পড়ে।",
+        "english": "He studies in class five.",
+        "grammar_focus": "Present Simple (3rd Person Singular)",
+        "rules": ["He (3rd person singular) তাই verb-এর সাথে s/es যুক্ত হয়েছে (study → studies)"],
+        "hint": "verb 'study'-এর শেষে 'ies' যোগ করো"
+      },
+      {
+        "bangla": "আমরা ছুটির দিনে একসাথে খেলি।",
+        "english": "We play together on holidays.",
+        "grammar_focus": "Preposition (on)",
+        "rules": ["holidays/days-এর আগে on বসে", "together = একসাথে"],
+        "hint": "on + holidays"
+      },
+      {
+        "bangla": "আমি আমার পরিবারকে খুব ভালোবাসি।",
+        "english": "I love my family very much.",
+        "grammar_focus": "Adverbial Phrase",
+        "rules": ["very much = খুব", "'very much' বাক্যের শেষে বসে"],
+        "hint": "love (V1)"
+      }
+    ]
+  },
+  {
+    "id": "my_weekend",
+    "title": "My Weekend",
+    "level": "Beginner",
+    "sentences": [
+      {
+        "bangla": "শুক্রবার আমার ছুটির দিন।",
+        "english": "Friday is my holiday.",
+        "grammar_focus": "Capitalization & To be verb",
+        "rules": ["দিনের নামের প্রথম অক্ষর Capital হয়", "Friday (singular) → is"],
+        "hint": "Friday-এর 'F' বড় হাতের হবে"
+      },
+      {
+        "bangla": "আমি সকালে দেরিতে ঘুম থেকে উঠি।",
+        "english": "I wake up late in the morning.",
+        "grammar_focus": "Adverb (late)",
+        "rules": ["late = দেরিতে", "in the morning = সকালে"],
+        "hint": "in + the + morning"
+      },
+      {
+        "bangla": "আমি আমার মায়ের কাজে সাহায্য করি।",
+        "english": "I help my mother with her work.",
+        "grammar_focus": "Verb + Preposition",
+        "rules": ["help someone with something = কাউকে কোনো কাজে সাহায্য করা"],
+        "hint": "Preposition 'with' ব্যবহার করো"
+      },
+      {
+        "bangla": "বিকেলে আমি মাঠে খেলতে যাই।",
+        "english": "In the afternoon, I go to play in the field.",
+        "grammar_focus": "Infinitive (to play)",
+        "rules": ["to play = খেলতে (উদ্দেশ্য বোঝাতে)"],
+        "hint": "to + V1 (play)"
+      },
+      {
+        "bangla": "আমি ক্রিকেট খেলতে পছন্দ করি।",
+        "english": "I like to play cricket.",
+        "grammar_focus": "Verb + Infinitive",
+        "rules": ["like to + V1 = কিছু করতে পছন্দ করা"],
+        "hint": "like-এর পর 'to' বসবে"
+      },
+      {
+        "bangla": "সন্ধ্যায় আমি গল্পের বই পড়ি।",
+        "english": "In the evening, I read storybooks.",
+        "grammar_focus": "Preposition (in)",
+        "rules": ["in the evening = সন্ধ্যায়", "storybooks = plural"],
+        "hint": "read (V1)"
+      },
+      {
+        "bangla": "মাঝেমধ্যে আমরা রেস্টুরেন্টে খেতে যাই।",
+        "english": "Sometimes we go out to eat at a restaurant.",
+        "grammar_focus": "Adverb of Frequency",
+        "rules": ["Sometimes = মাঝেমধ্যে", "at a restaurant = রেস্টুরেন্টে"],
+        "hint": "Sometimes বাক্যের শুরুতে বসতে পারে"
+      },
+      {
+        "bangla": "আমি ছুটির দিনগুলো খুব উপভোগ করি।",
+        "english": "I enjoy the holidays very much.",
+        "grammar_focus": "Present Simple",
+        "rules": ["enjoy = উপভোগ করা", "holidays (plural)"],
+        "hint": "enjoy (V1)"
+      }
+    ]
+  }
+]

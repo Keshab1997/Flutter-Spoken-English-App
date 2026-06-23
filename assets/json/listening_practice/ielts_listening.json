@@ -1,0 +1,177 @@
+[
+  {
+    "id": "academic_lecture",
+    "title": "Academic Lecture",
+    "level": "IELTS",
+    "sentences": [
+      {
+        "bangla": "আজকের আলোচনার বিষয় হলো জলবায়ু পরিবর্তন।",
+        "english": "Today's topic of discussion is climate change.",
+        "grammar_focus": "Noun Phrase + 's",
+        "rules": ["Today's topic = আজকের বিষয়", "climate change = জলবায়ু পরিবর্তন"],
+        "hint": "'s দিয়ে সময়গত possession"
+      },
+      {
+        "bangla": "বিজ্ঞানীরা বিশ্বাস করেন তাপমাত্রা বাড়ছে।",
+        "english": "Scientists believe that the temperature is rising.",
+        "grammar_focus": "Reported/Indirect Speech",
+        "rules": ["believe that = বিশ্বাস করেন যে", "is rising = বাড়ছে (Present Continuous)"],
+        "hint": "believe that + clause"
+      },
+      {
+        "bangla": "গত এক দশকে বরফের পরিমাণ অনেক কমে গেছে।",
+        "english": "The amount of ice has decreased significantly in the last decade.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["has decreased = কমে গেছে", "significantly = উল্লেখযোগ্যভাবে"],
+        "hint": "Present Perfect: has + V3"
+      },
+      {
+        "bangla": "এই সমস্যা সমাধানে নবায়নযোগ্য শক্তি গুরুত্বপূর্ণ ভূমিকা রাখতে পারে।",
+        "english": "Renewable energy can play an important role in solving this problem.",
+        "grammar_focus": "Modal (can) + Infinitive",
+        "rules": ["can play = রাখতে পারে", "renewable energy = নবায়নযোগ্য শক্তি"],
+        "hint": "can + V1"
+      },
+      {
+        "bangla": "আমাদের এখনই পদক্ষেপ নেওয়া উচিত।",
+        "english": "We should take action now.",
+        "grammar_focus": "Modal (should)",
+        "rules": ["should = উচিত", "take action = পদক্ষেপ নেওয়া"],
+        "hint": "should + V1 (advice)"
+      },
+      {
+        "bangla": "অনেক দেশ ইতিমধ্যে কঠোর নীতি গ্রহণ করেছে।",
+        "english": "Many countries have already adopted strict policies.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["have adopted = গ্রহণ করেছে", "strict policies = কঠোর নীতি"],
+        "hint": "have + V3"
+      }
+    ]
+  },
+  {
+    "id": "university_admission",
+    "title": "University Admission Inquiry",
+    "level": "IELTS",
+    "sentences": [
+      {
+        "bangla": "আমি কি আন্তর্জাতিক শিক্ষার্থীদের জন্য ভর্তি প্রক্রিয়া সম্পর্কে জানতে পারি?",
+        "english": "Could I get some information about the admission process for international students?",
+        "grammar_focus": "Modal for Polite Request",
+        "rules": ["Could I get = আমি কি পেতে পারি/জানতে পারি (ফর্মাল)", "admission process = ভর্তি প্রক্রিয়া"],
+        "hint": "Polite request-এর জন্য Could ব্যবহার করা শ্রেয়"
+      },
+      {
+        "bangla": "আবেদনের শেষ তারিখ হলো আগামী মাসের ১৫ তারিখ।",
+        "english": "The deadline for the application is the 15th of next month.",
+        "grammar_focus": "Preposition of Time & Date",
+        "rules": ["deadline = শেষ সময়/তারিখ", "15th of next month = আগামী মাসের ১৫ তারিখ"],
+        "hint": "the + date + of + month"
+      },
+      {
+        "bangla": "আবেদনপত্রের সাথে আপনার একটি সুপারিশপত্র জমা দিতে হবে।",
+        "english": "You must submit a recommendation letter along with the application form.",
+        "grammar_focus": "Modal (must) + Prepositional Phrase",
+        "rules": ["submit = জমা দেওয়া", "along with = সাথে", "recommendation letter = সুপারিশপত্র"],
+        "hint": "must + V1 (submit)"
+      },
+      {
+        "bangla": "আমি কি বৃত্তির জন্য আবেদন করতে যোগ্য?",
+        "english": "Am I eligible to apply for a scholarship?",
+        "grammar_focus": "Adjective + Infinitive",
+        "rules": ["eligible to apply = আবেদন করতে যোগ্য", "scholarship = বৃত্তি"],
+        "hint": "Am I + eligible + to + V1"
+      },
+      {
+        "bangla": "হ্যাঁ, তবে এর জন্য ন্যূনতম আইইএলটিএস স্কোর ৭.০ প্রয়োজন।",
+        "english": "Yes, but it requires a minimum IELTS score of 7.0.",
+        "grammar_focus": "Present Simple (Fact)",
+        "rules": ["requires = প্রয়োজন/দাবি করে", "minimum = ন্যূনতম"],
+        "hint": "it (3rd person singular) তাই requires বসেছে"
+      }
+    ]
+  },
+  {
+    "id": "library_orientation",
+    "title": "Library Orientation",
+    "level": "IELTS",
+    "sentences": [
+      {
+        "bangla": "বিশ্ববিদ্যালয়ের কেন্দ্রীয় গ্রন্থাগারে আপনাদের সবাইকে স্বাগতম।",
+        "english": "Welcome everyone to the central library of the university.",
+        "grammar_focus": "Greeting / Preposition",
+        "rules": ["Welcome ... to = কোথাও স্বাগতম জানানো", "central library = কেন্দ্রীয় গ্রন্থাগার"],
+        "hint": "Welcome + to + place"
+      },
+      {
+        "bangla": "নিচতলায় আপনারা সব রেফারেন্স বই পাবেন।",
+        "english": "On the ground floor, you will find all the reference books.",
+        "grammar_focus": "Preposition (on) + Future Simple",
+        "rules": ["On the ground floor = নিচতলায় (floor-এর আগে on বসে)"],
+        "hint": "on + the + floor"
+      },
+      {
+        "bangla": "বই ধার নেওয়ার জন্য আপনাদের একটি বৈধ স্টুডেন্ট আইডি কার্ড থাকতে হবে।",
+        "english": "You must have a valid student ID card to borrow books.",
+        "grammar_focus": "Infinitive of Purpose",
+        "rules": ["must have = অবশ্যই থাকতে হবে", "valid = বৈধ", "to borrow = ধার নেওয়ার জন্য"],
+        "hint": "to + V1 (borrow)"
+      },
+      {
+        "bangla": "একবারে সর্বোচ্চ পাঁচটি বই ইস্যু করা যাবে।",
+        "english": "A maximum of five books can be issued at a time.",
+        "grammar_focus": "Modal Passive",
+        "rules": ["can be issued = ইস্যু করা যাবে (passive)", "at a time = একবারে"],
+        "hint": "can be + V3 (issued)"
+      },
+      {
+        "bangla": "নির্ধারিত সময়ের পর বই ফেরত দিলে জরিমানা দিতে হবে।",
+        "english": "A fine will be charged if books are returned after the due date.",
+        "grammar_focus": "Passive Conditional",
+        "rules": ["fine will be charged = জরিমানা ধার্য করা হবে", "due date = নির্ধারিত সময়"],
+        "hint": "if + passive voice"
+      }
+    ]
+  },
+  {
+    "id": "group_assignment",
+    "title": "Group Assignment Discussion",
+    "level": "IELTS",
+    "sentences": [
+      {
+        "bangla": "আমাদের পরের সপ্তাহের মধ্যে জীববিজ্ঞানের অ্যাসাইনমেন্ট শেষ করতে হবে।",
+        "english": "We need to finish the biology assignment by next week.",
+        "grammar_focus": "Preposition of Time (by)",
+        "rules": ["by next week = পরের সপ্তাহের মধ্যে (deadline বোঝাতে by বসে)"],
+        "hint": "in next week নয়, by next week হবে"
+      },
+      {
+        "bangla": "আমি মনে করি আমাদের ডেটা সংগ্রহের কাজটা ভাগ করে নেওয়া উচিত।",
+        "english": "I think we should divide the data collection task.",
+        "grammar_focus": "Modal (should)",
+        "rules": ["should divide = ভাগ করা উচিত", "data collection task = ডেটা সংগ্রহের কাজ"],
+        "hint": "should + V1"
+      },
+      {
+        "bangla": "তুমি যদি প্রথম অংশটি লেখো, তবে আমি উপসংহার তৈরি করব।",
+        "english": "If you write the first part, I will prepare the conclusion.",
+        "grammar_focus": "First Conditional",
+        "rules": ["If + Present Simple, Future Simple", "conclusion = উপসংহার"],
+        "hint": "If you write..., I will prepare..."
+      },
+      {
+        "bangla": "আমাদের নিশ্চিত করতে হবে যে সব তথ্য নির্ভরযোগ্য উৎস থেকে নেওয়া হয়েছে।",
+        "english": "We have to make sure that all the information is taken from reliable sources.",
+        "grammar_focus": "Present Simple Passive",
+        "rules": ["make sure = নিশ্চিত করা", "is taken = নেওয়া হয়েছে", "reliable sources = নির্ভরযোগ্য উৎস"],
+        "hint": "information uncountable noun, তাই 'is' বসেছে"
+      },
+      {
+        "bangla": "চলো শুক্রবার আবার দেখা করি অগ্রগতি নিয়ে আলোচনা করার জন্য।",
+        "english": "Let's meet again on Friday to discuss the progress.",
+        "grammar_focus": "Let's + Infinitive",
+        "rules": ["on Friday = শুক্রবার (দিনের আগে on)", "to discuss = আলোচনা করতে", "progress = অগ্রগতি"],
+        "hint": "Let's + V1"
+      }
+    ]
+  }
+]

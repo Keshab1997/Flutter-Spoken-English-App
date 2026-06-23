@@ -1,0 +1,170 @@
+[
+  {
+    "id": "at_the_airport",
+    "title": "At the Airport",
+    "level": "Travel",
+    "sentences": [
+      {
+        "bangla": "আমার ফ্লাইটটি কখন ছাড়বে?",
+        "english": "When does my flight depart?",
+        "grammar_focus": "Wh- Question (Present Simple)",
+        "rules": ["When does = কখন (3rd person)", "depart = ছাড়া"],
+        "hint": "Does দিয়ে 3rd person singular-এ question"
+      },
+      {
+        "bangla": "আমি আমার বোর্ডিং পাস কোথায় পাব?",
+        "english": "Where can I get my boarding pass?",
+        "grammar_focus": "Wh- Question (Modal)",
+        "rules": ["Where can I = কোথায় পাব", "boarding pass = বোর্ডিং পাস"],
+        "hint": "Where can I + V1"
+      },
+      {
+        "bangla": "আমার লাগেজের ওজন ২০ কেজি।",
+        "english": "My luggage weighs 20 kilograms.",
+        "grammar_focus": "Present Simple (weight)",
+        "rules": ["weighs = ওজন (weigh + s)", "luggage = লাগেজ"],
+        "hint": "luggage = uncountable noun"
+      },
+      {
+        "bangla": "গেট নম্বর ১২ থেকে ফ্লাইটটি ছাড়বে।",
+        "english": "The flight departs from gate number 12.",
+        "grammar_focus": "Present Simple (Schedule)",
+        "rules": ["departs from = থেকে ছাড়ে", "gate number = গেট নম্বর"],
+        "hint": "Schedule বোঝাতে Present Simple"
+      },
+      {
+        "bangla": "যাত্রাটি প্রায় ৩ ঘণ্টা সময় নেবে।",
+        "english": "The journey will take about 3 hours.",
+        "grammar_focus": "Future Simple",
+        "rules": ["will take = নেবে (সময়)", "about = প্রায়"],
+        "hint": "take time = সময় নেওয়া"
+      }
+    ]
+  },
+  {
+    "id": "at_the_hotel",
+    "title": "At the Hotel Reception",
+    "level": "Travel",
+    "sentences": [
+      {
+        "bangla": "আমার নামে একটি রুম বুক করা আছে।",
+        "english": "I have a reservation under my name.",
+        "grammar_focus": "Noun Phrase / Preposition",
+        "rules": ["reservation = বুকিং", "under my name = আমার নামে"],
+        "hint": "under + my name ব্যবহার করুন"
+      },
+      {
+        "bangla": "আমি কি আপনার পাসপোর্টটি দেখতে পারি?",
+        "english": "May I see your passport, please?",
+        "grammar_focus": "Modal (May) for permission",
+        "rules": ["May I = আমি কি পারি (ভদ্রভাবে অনুমতি চাওয়া)"],
+        "hint": "ভদ্রতার জন্য please যুক্ত করুন"
+      },
+      {
+        "bangla": "সকালের নাস্তা কি ভাড়ার অন্তর্ভুক্ত?",
+        "english": "Is breakfast included in the price?",
+        "grammar_focus": "Passive Question",
+        "rules": ["Is ... included = ... কি অন্তর্ভুক্ত?", "price = ভাড়া/দাম"],
+        "hint": "included + in"
+      },
+      {
+        "bangla": "চেক-আউটের সময় কখন?",
+        "english": "What time is checkout?",
+        "grammar_focus": "Wh- Question (Time)",
+        "rules": ["What time = কখন / কয়টায়", "checkout = হোটেল ছাড়ার সময়"],
+        "hint": "What time is..."
+      },
+      {
+        "bangla": "দয়া করে কেউ কি আমার লাগেজগুলো রুমে দিয়ে আসতে পারবে?",
+        "english": "Could someone please help me with my luggage to the room?",
+        "grammar_focus": "Modal (Could) for polite request",
+        "rules": ["Could someone = কেউ কি পারবে", "help someone with = কাউকে কোনো ব্যাপারে সাহায্য করা"],
+        "hint": "Could দিয়ে অনুরোধ করুন"
+      }
+    ]
+  },
+  {
+    "id": "asking_for_directions",
+    "title": "Asking for Directions",
+    "level": "Travel",
+    "sentences": [
+      {
+        "bangla": "মাফ করবেন, কাছাকাছি কি কোনো ব্যাংক আছে?",
+        "english": "Excuse me, is there a bank nearby?",
+        "grammar_focus": "Is there...?",
+        "rules": ["Excuse me = মাফ করবেন (কারও মনোযোগ আকর্ষণের জন্য)", "nearby = কাছাকাছি"],
+        "hint": "is there + a/an..."
+      },
+      {
+        "bangla": "আমি কীভাবে ট্রেন স্টেশনে যেতে পারি?",
+        "english": "How can I get to the train station?",
+        "grammar_focus": "Wh- Question (How)",
+        "rules": ["How can I get to = আমি কীভাবে ... যেতে পারি (রাস্তা জানতে চাওয়া)"],
+        "hint": "get to + location"
+      },
+      {
+        "bangla": "এটি এখান থেকে কত দূর?",
+        "english": "How far is it from here?",
+        "grammar_focus": "Wh- Question (Distance)",
+        "rules": ["How far = কত দূর", "from here = এখান থেকে"],
+        "hint": "How far + is it..."
+      },
+      {
+        "bangla": "সোজা যান এবং ট্রাফিক লাইট থেকে ডানে মোড় নিন।",
+        "english": "Go straight and turn right at the traffic lights.",
+        "grammar_focus": "Imperative Sentence",
+        "rules": ["Go straight = সোজা যান", "turn right = ডানে মোড় নিন", "at the traffic lights = ট্রাফিক লাইট থেকে"],
+        "hint": "Preposition 'at' বসবে"
+      },
+      {
+        "bangla": "আপনি কি আমাকে ম্যাপে জায়গাটি দেখাতে পারবেন?",
+        "english": "Can you show me the place on the map?",
+        "grammar_focus": "Modal (Can)",
+        "rules": ["show me = আমাকে দেখান", "on the map = ম্যাপে"],
+        "hint": "on + the map"
+      }
+    ]
+  },
+  {
+    "id": "at_a_restaurant_travel",
+    "title": "Ordering Food at a Restaurant",
+    "level": "Travel",
+    "sentences": [
+      {
+        "bangla": "আমি কি মেনুটি দেখতে পারি, দয়া করে?",
+        "english": "May I see the menu, please?",
+        "grammar_focus": "Modal Request",
+        "rules": ["May I see = আমি কি দেখতে পারি"],
+        "hint": "May I + V1"
+      },
+      {
+        "bangla": "আমি এক কাপ কফি এবং একটি স্যান্ডউইচ নেব।",
+        "english": "I will have a cup of coffee and a sandwich.",
+        "grammar_focus": "Future Simple (Ordering)",
+        "rules": ["I will have = আমি খাব/নেব (রেস্টুরেন্টে অর্ডারের জন্য ব্যবহৃত হয়)"],
+        "hint": "eat-এর বদলে have ব্যবহার করা স্মার্ট"
+      },
+      {
+        "bangla": "এই খাবারটিতে কি কোনো মাংস আছে?",
+        "english": "Does this dish contain any meat?",
+        "grammar_focus": "Present Simple Question",
+        "rules": ["contain = থাকা/ধারণ করা", "dish = খাবার"],
+        "hint": "Does this dish + V1"
+      },
+      {
+        "bangla": "আমি কি বিলটি পেতে পারি?",
+        "english": "Can I have the bill, please?",
+        "grammar_focus": "Modal Request",
+        "rules": ["Can I have = আমি কি পেতে পারি", "bill = হিসাবের কাগজ"],
+        "hint": "Can I have + noun"
+      },
+      {
+        "bangla": "আমি ক্রেডিট কার্ড দিয়ে পেমেন্ট করতে চাই।",
+        "english": "I would like to pay by credit card.",
+        "grammar_focus": "Would like to + V1",
+        "rules": ["would like to = চাই (ভদ্রভাবে)", "pay by credit card = কার্ডে পেমেন্ট করা (cash এর ক্ষেত্রে 'in cash' হয়)"],
+        "hint": "pay by + credit card"
+      }
+    ]
+  }
+]

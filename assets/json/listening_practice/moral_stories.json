@@ -1,0 +1,247 @@
+[
+  {
+    "id": "the_lion_and_mouse",
+    "title": "The Lion and the Mouse",
+    "level": "Moral Story",
+    "sentences": [
+      {
+        "bangla": "একটি সিংহ জঙ্গলে ঘুমাচ্ছিল।",
+        "english": "A lion was sleeping in the jungle.",
+        "grammar_focus": "Past Continuous",
+        "rules": ["was sleeping = ঘুমাচ্ছিল", "in the jungle = জঙ্গলে"],
+        "hint": "was/were + V4 (ing)"
+      },
+      {
+        "bangla": "একটি ছোট ইঁদুর তার উপর দিয়ে দৌড়ালো।",
+        "english": "A small mouse ran over him.",
+        "grammar_focus": "Past Simple",
+        "rules": ["ran = দৌড়ালো (run এর past)", "over him = তার উপর দিয়ে"],
+        "hint": "ran is the past form of run"
+      },
+      {
+        "bangla": "সিংহটি জেগে উঠল এবং খুব রেগে গেল।",
+        "english": "The lion woke up and became very angry.",
+        "grammar_focus": "Past Simple (Irregular verbs)",
+        "rules": ["woke up = জেগে উঠল (wake up)", "became = হল (become)"],
+        "hint": "wake → woke, become → became"
+      },
+      {
+        "bangla": "ইঁদুরটি ক্ষমা চাইল।",
+        "english": "The mouse asked for forgiveness.",
+        "grammar_focus": "Past Simple",
+        "rules": ["asked for = চাওয়া", "forgiveness = ক্ষমা"],
+        "hint": "ask for = request"
+      },
+      {
+        "bangla": "সিংহটি ইঁদুরকে ছেড়ে দিল।",
+        "english": "The lion set the mouse free.",
+        "grammar_focus": "Causative / Verb Pattern",
+        "rules": ["set free = মুক্ত করে দেওয়া", "set - set - set (irregular)"],
+        "hint": "set free = let go"
+      },
+      {
+        "bangla": "পরে ইঁদুরটি সিংহকে একটি জাল থেকে বাঁচালো।",
+        "english": "Later the mouse saved the lion from a net.",
+        "grammar_focus": "Past Simple",
+        "rules": ["saved = বাঁচালো", "from a net = জাল থেকে"],
+        "hint": "save from = থেকে বাঁচানো"
+      },
+      {
+        "bangla": "ছোট বন্ধুরাও বড় কাজ করতে পারে।",
+        "english": "Even small friends can do big things.",
+        "grammar_focus": "Modal (can)",
+        "rules": ["can = পারে", "do big things = বড় কাজ করা"],
+        "hint": "can + V1"
+      }
+    ]
+  },
+  {
+    "id": "the_thirsty_crow",
+    "title": "The Thirsty Crow",
+    "level": "Moral Story",
+    "sentences": [
+      {
+        "bangla": "একটি কাকের খুব তৃষ্ণা পেয়েছিল।",
+        "english": "A crow was very thirsty.",
+        "grammar_focus": "To be verb (Past)",
+        "rules": ["was = ছিল (past tense)", "thirsty = তৃষ্ণার্ত"],
+        "hint": "Subject (A crow) singular হওয়ায় 'was' বসবে"
+      },
+      {
+        "bangla": "সে এদিক-ওদিক পানির খোঁজ করল।",
+        "english": "He looked for water here and there.",
+        "grammar_focus": "Phrasal Verb (look for)",
+        "rules": ["look for = খোঁজ করা (Past form: looked for)", "here and there = এদিক-ওদিক"],
+        "hint": "looked for ব্যবহার করো"
+      },
+      {
+        "bangla": "অবশেষে সে একটি কলসি দেখতে পেল।",
+        "english": "At last, he saw a pitcher.",
+        "grammar_focus": "Past Simple",
+        "rules": ["At last = অবশেষে", "saw = দেখতে পেল (see এর past form)", "pitcher = কলসি"],
+        "hint": "see → saw (V2)"
+      },
+      {
+        "bangla": "কিন্তু কলসিতে পানি খুব নিচে ছিল।",
+        "english": "But the water in the pitcher was very low.",
+        "grammar_focus": "Preposition (in)",
+        "rules": ["in the pitcher = কলসির ভেতরে", "low = নিচে/কম"],
+        "hint": "in + the + pitcher"
+      },
+      {
+        "bangla": "কাকটি কিছু নুড়ি পাথর কুড়িয়ে কলসিতে ফেলল।",
+        "english": "The crow picked up some pebbles and dropped them into the pitcher.",
+        "grammar_focus": "Preposition (into) + Conjunction",
+        "rules": ["pick up = কুড়িয়ে নেওয়া", "pebbles = নুড়ি পাথর", "into = বাইরে থেকে ভেতরে প্রবেশ বোঝাতে"],
+        "hint": "dropped + into"
+      },
+      {
+        "bangla": "পানি উপরে উঠে এল।",
+        "english": "The water came up.",
+        "grammar_focus": "Phrasal Verb (come up)",
+        "rules": ["come up = উপরে উঠে আসা (Past form: came up)"],
+        "hint": "come → came"
+      },
+      {
+        "bangla": "কাকটি পানি পান করে উড়ে গেল।",
+        "english": "The crow drank the water and flew away.",
+        "grammar_focus": "Past Simple (Irregular)",
+        "rules": ["drank = পান করল (drink)", "flew away = উড়ে গেল (fly away)"],
+        "hint": "drink → drank, fly → flew"
+      },
+      {
+        "bangla": "ইচ্ছা থাকলে উপায় হয়।",
+        "english": "Where there is a will, there is a way.",
+        "grammar_focus": "Proverb",
+        "rules": ["will = ইচ্ছা", "way = উপায়", "এটি একটি প্রবাদ বাক্য"],
+        "hint": "Where there is... there is..."
+      }
+    ]
+  },
+  {
+    "id": "the_hare_and_tortoise",
+    "title": "The Hare and the Tortoise",
+    "level": "Moral Story",
+    "sentences": [
+      {
+        "bangla": "একটি খরগোশ একটি কচ্ছপকে নিয়ে হাসাহাসি করত।",
+        "english": "A hare used to laugh at a tortoise.",
+        "grammar_focus": "Used to + V1",
+        "rules": ["used to = অতীতে নিয়মিত কোনো কাজ করত বোঝাতে", "laugh at = কাউকে নিয়ে হাসাহাসি করা"],
+        "hint": "used to + laugh"
+      },
+      {
+        "bangla": "তারা একটি দৌড় প্রতিযোগিতার আয়োজন করল।",
+        "english": "They arranged a running race.",
+        "grammar_focus": "Past Simple",
+        "rules": ["arranged = আয়োজন করল", "running race = দৌড় প্রতিযোগিতা"],
+        "hint": "arrange → arranged (V2)"
+      },
+      {
+        "bangla": "খরগোশটি খুব দ্রুত দৌড়ালো।",
+        "english": "The hare ran very fast.",
+        "grammar_focus": "Adverb (fast)",
+        "rules": ["ran = দৌড়ালো", "fast = দ্রুত (এটি adjective এবং adverb উভয় হিসেবেই বসে)"],
+        "hint": "run → ran"
+      },
+      {
+        "bangla": "মাঝপথে সে ভাবল একটু বিশ্রাম নেওয়া যাক।",
+        "english": "Halfway, he thought of taking a little rest.",
+        "grammar_focus": "Preposition + Gerund",
+        "rules": ["thought of = ভাবল", "of-এর পর verb আসলে ing যুক্ত হয় (taking)"],
+        "hint": "thought of + taking"
+      },
+      {
+        "bangla": "কিন্তু সে ঘুমিয়ে পড়ল।",
+        "english": "But he fell asleep.",
+        "grammar_focus": "Collocation",
+        "rules": ["fall asleep = ঘুমিয়ে পড়া (Past form: fell asleep)"],
+        "hint": "fall → fell"
+      },
+      {
+        "bangla": "কচ্ছপটি ধীরে ধীরে কিন্তু একটানা চলতে থাকল।",
+        "english": "The tortoise kept moving slowly but steadily.",
+        "grammar_focus": "Keep + Gerund",
+        "rules": ["keep + V-ing = কোনো কাজ চালিয়ে যাওয়া", "slowly but steadily = ধীর কিন্তু একটানা"],
+        "hint": "keep → kept + moving"
+      },
+      {
+        "bangla": "অবশেষে কচ্ছপটি প্রতিযোগিতায় জিতে গেল।",
+        "english": "Finally, the tortoise won the race.",
+        "grammar_focus": "Past Simple",
+        "rules": ["won = জিতে গেল (win এর past form)"],
+        "hint": "win → won (V2)"
+      },
+      {
+        "bangla": "ধীর কিন্তু স্থির ব্যক্তিই জয়লাভ করে।",
+        "english": "Slow and steady wins the race.",
+        "grammar_focus": "Proverb + Subject-Verb Agreement",
+        "rules": ["Slow and steady-কে একটি একক ধারণা হিসেবে ধরা হয়, তাই verb-এর সাথে s বসে (wins)"],
+        "hint": "wins the race"
+      }
+    ]
+  },
+  {
+    "id": "the_honest_woodcutter",
+    "title": "The Honest Woodcutter",
+    "level": "Moral Story",
+    "sentences": [
+      {
+        "bangla": "এক গরিব কাঠুরিয়া নদীর ধারে কাঠ কাটছিল।",
+        "english": "A poor woodcutter was cutting wood near a river.",
+        "grammar_focus": "Past Continuous",
+        "rules": ["was cutting = কাটছিল", "near = কাছে/ধারে"],
+        "hint": "was + V-ing"
+      },
+      {
+        "bangla": "হঠাৎ তার কুঠারটি পানিতে পড়ে গেল।",
+        "english": "Suddenly, his axe fell into the water.",
+        "grammar_focus": "Past Simple + Preposition",
+        "rules": ["Suddenly = হঠাৎ", "fell into = ভেতরে পড়ে যাওয়া (fall এর past)"],
+        "hint": "fall → fell"
+      },
+      {
+        "bangla": "সে নদীর তীরে বসে কাঁদতে শুরু করল।",
+        "english": "He sat by the river and started crying.",
+        "grammar_focus": "Verb + Gerund",
+        "rules": ["sat = বসল", "start-এর পর verb আসলে ing হয় (started crying)"],
+        "hint": "started + crying"
+      },
+      {
+        "bangla": "নদীর দেবতা আবির্ভূত হলেন এবং তাকে একটি সোনার কুঠার দেখালেন।",
+        "english": "The river god appeared and showed him a golden axe.",
+        "grammar_focus": "Past Simple",
+        "rules": ["appear = আবির্ভূত হওয়া", "golden axe = সোনার কুঠার"],
+        "hint": "appear → appeared"
+      },
+      {
+        "bangla": "কাঠুরিয়া বলল, 'এটি আমার নয়।'",
+        "english": "The woodcutter said, 'This is not mine.'",
+        "grammar_focus": "Possessive Pronoun",
+        "rules": ["mine = আমার (বাক্যের শেষে বসে)", "said = বলল (say)"],
+        "hint": "my axe = mine"
+      },
+      {
+        "bangla": "দেবতা তাকে রুপার কুঠার দেখালেন, কিন্তু সে সেটিও নিল না।",
+        "english": "The god showed him a silver axe, but he didn't take that either.",
+        "grammar_focus": "Past Simple Negative",
+        "rules": ["didn't take = নিল না", "either = ও (নেগেটিভ বাক্যে 'ও' বোঝাতে)"],
+        "hint": "didn't + V1 (take)"
+      },
+      {
+        "bangla": "দেবতা তার সততায় খুশি হয়ে তাকে সবগুলো কুঠার দিয়ে দিলেন।",
+        "english": "The god was pleased with his honesty and gave him all the axes.",
+        "grammar_focus": "Passive structure + Preposition",
+        "rules": ["was pleased with = খুশি হয়েছিলেন", "honesty = সততা"],
+        "hint": "pleased with + object"
+      },
+      {
+        "bangla": "সততাই সর্বোৎকৃষ্ট পন্থা।",
+        "english": "Honesty is the best policy.",
+        "grammar_focus": "Superlative Degree",
+        "rules": ["the best = সর্বোৎকৃষ্ট (good - better - best)", "policy = পন্থা/নীতি"],
+        "hint": "Superlative degree-এর আগে 'the' বসে"
+      }
+    ]
+  }
+]

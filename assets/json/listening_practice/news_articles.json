@@ -1,0 +1,198 @@
+[
+  {
+    "id": "tech_breakthrough",
+    "title": "Tech Breakthrough",
+    "level": "News",
+    "sentences": [
+      {
+        "bangla": "একটি নতুন প্রযুক্তি কোম্পানি একটি যুগান্তকারী ডিভাইস উন্মোচন করেছে।",
+        "english": "A new tech company has unveiled a groundbreaking device.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["has unveiled = উন্মোচন করেছে", "groundbreaking = যুগান্তকারী"],
+        "hint": "has + V3 (recent news)"
+      },
+      {
+        "bangla": "এই ডিভাইসটি যোগাযোগের পদ্ধতি পরিবর্তন করবে বলে আশা করা যাচ্ছে।",
+        "english": "The device is expected to change the way we communicate.",
+        "grammar_focus": "Passive (is expected to)",
+        "rules": ["is expected to = আশা করা যাচ্ছে", "change the way = পদ্ধতি পরিবর্তন"],
+        "hint": "is expected to + V1"
+      },
+      {
+        "bangla": "কোম্পানিটির সিইও বলেছেন এটি মাত্র শুরু।",
+        "english": "The CEO of the company said this is just the beginning.",
+        "grammar_focus": "Reported Speech",
+        "rules": ["said = বলেছেন", "just the beginning = মাত্র শুরু"],
+        "hint": "said + clause"
+      },
+      {
+        "bangla": "বাজার বিশ্লেষকরা এই উন্নয়নকে স্বাগত জানিয়েছেন।",
+        "english": "Market analysts have welcomed this development.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["have welcomed = স্বাগত জানিয়েছেন", "development = উন্নয়ন"],
+        "hint": "have + V3"
+      },
+      {
+        "bangla": "প্রতিযোগী কোম্পানিগুলো এখন নতুন কৌশল নিয়ে কাজ করছে।",
+        "english": "Competitor companies are now working on new strategies.",
+        "grammar_focus": "Present Continuous",
+        "rules": ["are working = কাজ করছে", "strategies = কৌশল"],
+        "hint": "are + V4 (ing)"
+      },
+      {
+        "bangla": "পণ্যটি আগামী বছর বাজারে আসবে।",
+        "english": "The product will launch next year.",
+        "grammar_focus": "Future Simple",
+        "rules": ["will launch = লঞ্চ করবে", "next year = আগামী বছর"],
+        "hint": "will + V1"
+      }
+    ]
+  },
+  {
+    "id": "global_climate_summit",
+    "title": "Global Climate Summit",
+    "level": "News",
+    "sentences": [
+      {
+        "bangla": "বিশ্বনেতারা জলবায়ু পরিবর্তন মোকাবিলায় প্যারিসে জড়ো হয়েছেন।",
+        "english": "World leaders have gathered in Paris to tackle climate change.",
+        "grammar_focus": "Present Perfect + Infinitive",
+        "rules": ["have gathered = জড়ো হয়েছেন", "tackle = মোকাবিলা করা (to tackle)"],
+        "hint": "খবরের ক্ষেত্রে সদ্য ঘটা কাজের জন্য Present Perfect ব্যবহৃত হয়"
+      },
+      {
+        "bangla": "তারা কার্বন নির্গমন কমানোর একটি নতুন চুক্তিতে স্বাক্ষর করেছেন।",
+        "english": "They have signed a new agreement to reduce carbon emissions.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["signed = স্বাক্ষর করেছেন", "agreement = চুক্তি", "carbon emissions = কার্বন নির্গমন"],
+        "hint": "have + signed (V3)"
+      },
+      {
+        "bangla": "বিশেষজ্ঞদের মতে, অবিলম্বে ব্যবস্থা গ্রহণ করা অত্যন্ত জরুরি।",
+        "english": "According to experts, taking immediate action is highly crucial.",
+        "grammar_focus": "Gerund as Subject",
+        "rules": ["According to = মতে", "taking immediate action = অবিলম্বে ব্যবস্থা গ্রহণ করা", "crucial = অত্যন্ত জরুরি"],
+        "hint": "taking (Gerund) দিয়ে শুরু করুন"
+      },
+      {
+        "bangla": "উন্নয়নশীল দেশগুলোকে আর্থিক সহায়তা প্রদান করা হবে।",
+        "english": "Financial support will be provided to developing countries.",
+        "grammar_focus": "Future Simple Passive",
+        "rules": ["will be provided = প্রদান করা হবে", "financial support = আর্থিক সহায়তা"],
+        "hint": "will be + V3 (provided)"
+      },
+      {
+        "bangla": "এই সম্মেলন আগামী শুক্রবার পর্যন্ত চলবে।",
+        "english": "The summit will continue until next Friday.",
+        "grammar_focus": "Preposition (until)",
+        "rules": ["summit = শীর্ষ সম্মেলন", "until = পর্যন্ত"],
+        "hint": "will continue + until"
+      },
+      {
+        "bangla": "পরিবেশবাদীরা এই পদক্ষেপের প্রশংসা করেছেন।",
+        "english": "Environmentalists have praised this initiative.",
+        "grammar_focus": "Present Perfect + Vocabulary",
+        "rules": ["environmentalists = পরিবেশবাদীরা", "initiative = পদক্ষেপ / উদ্যোগ"],
+        "hint": "have + praised (V3)"
+      }
+    ]
+  },
+  {
+    "id": "economic_update",
+    "title": "Economic Update & Market",
+    "level": "News",
+    "sentences": [
+      {
+        "bangla": "কেন্দ্রীয় ব্যাংক আজ সুদের হার বাড়ানোর ঘোষণা দিয়েছে।",
+        "english": "The central bank announced a hike in interest rates today.",
+        "grammar_focus": "Past Simple (News style)",
+        "rules": ["announced = ঘোষণা দিয়েছে (খবরে অনেক সময় recent কাজে Past Simple বসে)", "hike = বৃদ্ধি"],
+        "hint": "a hike in interest rates"
+      },
+      {
+        "bangla": "মুদ্রাস্ফীতি নিয়ন্ত্রণের জন্যই এই সিদ্ধান্ত নেওয়া হয়েছে।",
+        "english": "This decision has been taken to control inflation.",
+        "grammar_focus": "Present Perfect Passive",
+        "rules": ["has been taken = নেওয়া হয়েছে", "inflation = মুদ্রাস্ফীতি"],
+        "hint": "has been + V3 (taken)"
+      },
+      {
+        "bangla": "এর ফলে নিত্যপ্রয়োজনীয় জিনিসপত্রের দাম কমতে পারে।",
+        "english": "As a result, the prices of daily essential goods might decrease.",
+        "grammar_focus": "Modal (might)",
+        "rules": ["As a result = এর ফলে", "essential goods = নিত্যপ্রয়োজনীয় জিনিসপত্র", "might = সম্ভাবনা বোঝাতে"],
+        "hint": "might + V1 (decrease)"
+      },
+      {
+        "bangla": "তবে, ক্ষুদ্র ব্যবসায়ীরা এই সিদ্ধান্তে উদ্বেগ প্রকাশ করেছেন।",
+        "english": "However, small business owners have expressed concern over this decision.",
+        "grammar_focus": "Present Perfect + Collocation",
+        "rules": ["expressed concern = উদ্বেগ প্রকাশ করেছেন", "over = বিষয়ে/উপর"],
+        "hint": "express concern + over"
+      },
+      {
+        "bangla": "শেয়ার বাজারে আজ বড় ধরনের পতন দেখা গেছে।",
+        "english": "A massive drop was witnessed in the stock market today.",
+        "grammar_focus": "Past Simple Passive",
+        "rules": ["massive drop = বড় ধরনের পতন", "was witnessed = দেখা গেছে (passive)"],
+        "hint": "was + V3 (witnessed)"
+      },
+      {
+        "bangla": "সরকার অর্থনীতিকে স্থিতিশীল করার চেষ্টা করছে।",
+        "english": "The government is trying to stabilize the economy.",
+        "grammar_focus": "Present Continuous",
+        "rules": ["is trying = চেষ্টা করছে", "stabilize = স্থিতিশীল করা"],
+        "hint": "is + V4 (trying)"
+      }
+    ]
+  },
+  {
+    "id": "sports_victory",
+    "title": "Historic Sports Victory",
+    "level": "News",
+    "sentences": [
+      {
+        "bangla": "রোমাঞ্চকর ফাইনালে বাংলাদেশ ঐতিহাসিক জয় পেয়েছে।",
+        "english": "Bangladesh has secured a historic victory in the thrilling final.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["secured = অর্জন করেছে/পেয়েছে", "thrilling = রোমাঞ্চকর"],
+        "hint": "has + secured (V3)"
+      },
+      {
+        "bangla": "অধিনায়কের দুর্দান্ত পারফরম্যান্স ম্যাচের মোড় ঘুরিয়ে দেয়।",
+        "english": "The captain's brilliant performance turned the tide of the match.",
+        "grammar_focus": "Idiom / Past Simple",
+        "rules": ["brilliant = দুর্দান্ত", "turn the tide = মোড় ঘুরিয়ে দেওয়া (Past: turned)"],
+        "hint": "turned the tide (Idiom) ব্যবহার করুন"
+      },
+      {
+        "bangla": "হাজার হাজার ভক্ত রাস্তায় নেমে উল্লাস করেছে।",
+        "english": "Thousands of fans took to the streets to celebrate.",
+        "grammar_focus": "Phrasal Verb",
+        "rules": ["take to the streets = রাস্তায় নেমে আসা (Past: took to the streets)"],
+        "hint": "took to the streets"
+      },
+      {
+        "bangla": "প্রধানমন্ত্রী বিজয়ী দলকে অভিনন্দন জানিয়েছেন।",
+        "english": "The Prime Minister has congratulated the winning team.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["congratulate = অভিনন্দন জানানো", "winning team = বিজয়ী দল"],
+        "hint": "has + congratulated (V3)"
+      },
+      {
+        "bangla": "খেলোয়াড়দের আগামীকাল দেশে ফেরার কথা রয়েছে।",
+        "english": "The players are scheduled to return home tomorrow.",
+        "grammar_focus": "Passive (Expected action)",
+        "rules": ["are scheduled to = কথা রয়েছে / নির্ধারিত আছে", "return home = দেশে ফেরা"],
+        "hint": "are scheduled to + V1"
+      },
+      {
+        "bangla": "এই জয় দেশের ক্রীড়া ইতিহাসে একটি মাইলফলক হয়ে থাকবে।",
+        "english": "This win will remain a milestone in the country's sports history.",
+        "grammar_focus": "Future Simple + Vocabulary",
+        "rules": ["remain = থাকা", "milestone = মাইলফলক", "sports history = ক্রীড়া ইতিহাস"],
+        "hint": "will + remain (V1)"
+      }
+    ]
+  }
+]

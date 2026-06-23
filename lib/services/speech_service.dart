@@ -15,6 +15,7 @@ class SpeechService {
 
   Future<void> startListening({
     required Function(String text) onResult,
+    Function(String text)? onPartialResult,
     Function(String? error)? onError,
   }) async {
     if (!_isInitialized) {
@@ -30,22 +31,26 @@ class SpeechService {
       onResult: (result) {
         if (result.finalResult) {
           onResult(result.recognizedWords);
+        } else {
+          onPartialResult?.call(result.recognizedWords);
         }
       },
-      listenFor: const Duration(seconds: 30),
-      pauseFor: const Duration(seconds: 3),
-      listenOptions: stt.SpeechListenOptions(partialResults: true),
+      listenFor: const Duration(seconds: 60),
+      pauseFor: const Duration(seconds: 60),
+      listenOptions: stt.SpeechListenOptions(
+        partialResults: true,
+        cancelOnError: false,
+      ),
       localeId: 'en_US',
     );
+    _isListening = false;
   }
 
   Future<void> stopListening() async {
-    _isListening = false;
     await _speech.stop();
   }
 
   Future<void> cancelListening() async {
-    _isListening = false;
     await _speech.cancel();
   }
 

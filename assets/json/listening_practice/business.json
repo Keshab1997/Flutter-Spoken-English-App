@@ -1,0 +1,177 @@
+[
+  {
+    "id": "office_meeting",
+    "title": "Office Meeting",
+    "level": "Business",
+    "sentences": [
+      {
+        "bangla": "আমাদের আজ একটি গুরুত্বপূর্ণ মিটিং আছে।",
+        "english": "We have an important meeting today.",
+        "grammar_focus": "Present Simple",
+        "rules": ["have = আছে (We)", "an important meeting = একটি গুরুত্বপূর্ণ মিটিং"],
+        "hint": "an বসেছে important-এর আগে (vowel sound)"
+      },
+      {
+        "bangla": "আমি একটি প্রেজেন্টেশন দেব।",
+        "english": "I will give a presentation.",
+        "grammar_focus": "Future Simple (will)",
+        "rules": ["will give = দেব", "presentation = উপস্থাপনা"],
+        "hint": "will + V1"
+      },
+      {
+        "bangla": "আপনারা কি প্রশ্ন করতে পারেন?",
+        "english": "Can you please ask questions?",
+        "grammar_focus": "Can you…? (Request)",
+        "rules": ["Can you = আপনি কি পারেন", "ask questions = প্রশ্ন করা"],
+        "hint": "Can you please + V1"
+      },
+      {
+        "bangla": "আমি প্রতিবেদনটি ইমেইল করব।",
+        "english": "I will email the report.",
+        "grammar_focus": "Future Simple",
+        "rules": ["will email = ইমেইল করব", "report = প্রতিবেদন"],
+        "hint": "email একটি verb হিসেবেও ব্যবহার হয়"
+      },
+      {
+        "bangla": "আমাদের ডেডলাইনটি শুক্রবার।",
+        "english": "The deadline is on Friday.",
+        "grammar_focus": "Preposition (on)",
+        "rules": ["on + day (Friday)", "deadline = শেষ সময়"],
+        "hint": "দিনের আগে on বসে"
+      },
+      {
+        "bangla": "আমি দলকে ইমেইলটি ফরোয়ার্ড করেছি।",
+        "english": "I have forwarded the email to the team.",
+        "grammar_focus": "Present Perfect",
+        "rules": ["have forwarded = ফরোয়ার্ড করেছি", "to the team = দলকে"],
+        "hint": "have + V3 (past participle)"
+      }
+    ]
+  },
+  {
+    "id": "job_interview_business",
+    "title": "A Job Interview",
+    "level": "Business",
+    "sentences": [
+      {
+        "bangla": "শুভ সকাল, আমি কি ভেতরে আসতে পারি?",
+        "english": "Good morning, may I come in?",
+        "grammar_focus": "Modal for Permission (May)",
+        "rules": ["May I = আমি কি পারি (অফিসিয়াল বা ভদ্রভাবে অনুমতির জন্য can এর চেয়ে may ভালো)"],
+        "hint": "May I + V1"
+      },
+      {
+        "bangla": "দয়া করে বসুন এবং আপনার সম্পর্কে কিছু বলুন।",
+        "english": "Please take a seat and tell me something about yourself.",
+        "grammar_focus": "Imperative Sentence",
+        "rules": ["take a seat = বসা (sit down এর চেয়ে বেশি ফর্মাল)", "about yourself = আপনার সম্পর্কে"],
+        "hint": "Please দিয়ে শুরু করুন"
+      },
+      {
+        "bangla": "আমার বিপণন ক্ষেত্রে পাঁচ বছরের অভিজ্ঞতা আছে।",
+        "english": "I have five years of experience in the marketing field.",
+        "grammar_focus": "Preposition / Noun Phrase",
+        "rules": ["years of experience = বছরের অভিজ্ঞতা", "marketing field = বিপণন ক্ষেত্র"],
+        "hint": "in + the marketing field"
+      },
+      {
+        "bangla": "আপনি কেন আমাদের কোম্পানিতে কাজ করতে চান?",
+        "english": "Why do you want to work for our company?",
+        "grammar_focus": "Wh- Question + Preposition",
+        "rules": ["work for = কোনো কোম্পানির হয়ে কাজ করা (work in এর চেয়ে work for বেশি মানানসই)"],
+        "hint": "Why do you want to + V1"
+      },
+      {
+        "bangla": "আমি বিশ্বাস করি যে আমার দক্ষতা আপনাদের দলের জন্য সহায়ক হবে।",
+        "english": "I believe that my skills will be helpful for your team.",
+        "grammar_focus": "Noun Clause",
+        "rules": ["I believe that = আমি বিশ্বাস করি যে", "skills = দক্ষতা", "helpful = সহায়ক"],
+        "hint": "will be + adjective (helpful)"
+      }
+    ]
+  },
+  {
+    "id": "professional_email",
+    "title": "Writing a Professional Email",
+    "level": "Business",
+    "sentences": [
+      {
+        "bangla": "আমি আপনাকে আগামীকালের মিটিংয়ের বিষয়ে লিখছি।",
+        "english": "I am writing to you regarding tomorrow's meeting.",
+        "grammar_focus": "Present Continuous + Preposition",
+        "rules": ["regarding = বিষয়ে/সম্পর্কে (about এর ফর্মাল রূপ)", "tomorrow's = আগামীকালের"],
+        "hint": "I am writing + regarding"
+      },
+      {
+        "bangla": "অনুগ্রহ করে সংযুক্ত ফাইলটি দেখুন।",
+        "english": "Please find the attached file.",
+        "grammar_focus": "Fixed Professional Phrase",
+        "rules": ["attached file = সংযুক্ত ফাইল", "Please find = অনুগ্রহ করে দেখুন (অফিসিয়াল ইমেইলের একটি নির্দিষ্ট বাক্য)"],
+        "hint": "'check the attached file' এর চেয়ে এটি বেশি ফর্মাল"
+      },
+      {
+        "bangla": "আপনার যদি কোনো প্রশ্ন থাকে, আমাকে জানাতে দ্বিধা করবেন না।",
+        "english": "If you have any questions, do not hesitate to let me know.",
+        "grammar_focus": "First Conditional + Imperative",
+        "rules": ["hesitate = দ্বিধা করা", "let me know = আমাকে জানাবেন"],
+        "hint": "do not hesitate to + V1"
+      },
+      {
+        "bangla": "আমি আপনার উত্তরের অপেক্ষায় থাকব।",
+        "english": "I look forward to hearing from you.",
+        "grammar_focus": "Fixed Phrase + Gerund",
+        "rules": ["look forward to = অধীর আগ্রহে অপেক্ষা করা", "এরপরে সবসময় verb এর সাথে ing বসে (hearing)"],
+        "hint": "look forward to + V+ing"
+      },
+      {
+        "bangla": "আপনার সহযোগিতার জন্য ধন্যবাদ।",
+        "english": "Thank you for your cooperation.",
+        "grammar_focus": "Preposition (for) + Noun",
+        "rules": ["cooperation = সহযোগিতা", "Thank you for = কোনো কিছুর জন্য ধন্যবাদ"],
+        "hint": "for + your + noun"
+      }
+    ]
+  },
+  {
+    "id": "client_negotiation",
+    "title": "Negotiating with a Client",
+    "level": "Business",
+    "sentences": [
+      {
+        "bangla": "আমাদের সাথে ব্যবসা করার জন্য আপনাকে ধন্যবাদ।",
+        "english": "Thank you for doing business with us.",
+        "grammar_focus": "Preposition + Gerund",
+        "rules": ["for-এর পর verb আসলে ing হয় (doing)", "do business = ব্যবসা করা"],
+        "hint": "doing business + with us"
+      },
+      {
+        "bangla": "আমরা কি দাম নিয়ে আলোচনা করতে পারি?",
+        "english": "Can we discuss the price?",
+        "grammar_focus": "Modal + Verb (No Preposition)",
+        "rules": ["discuss = আলোচনা করা", "discuss-এর পর about বসে না, সরাসরি object (the price) বসে"],
+        "hint": "discuss the price (not 'discuss about')"
+      },
+      {
+        "bangla": "আপনি যদি বেশি পরিমাণে কেনেন, আমরা আপনাকে ১০% ছাড় দিতে পারি।",
+        "english": "If you buy in bulk, we can offer you a 10% discount.",
+        "grammar_focus": "First Conditional",
+        "rules": ["in bulk = বেশি পরিমাণে / পাইকারি", "offer = দেওয়া/প্রস্তাব করা"],
+        "hint": "buy in bulk"
+      },
+      {
+        "bangla": "এটি আমাদের জন্য একটি লাভজনক চুক্তি বলে মনে হচ্ছে।",
+        "english": "This seems like a win-win deal for us.",
+        "grammar_focus": "Business Idiom",
+        "rules": ["win-win deal = এমন চুক্তি যেখানে দুই পক্ষেরই লাভ", "seems like = বলে মনে হচ্ছে"],
+        "hint": "win-win deal ব্যবহার করুন"
+      },
+      {
+        "bangla": "আসুন আগামী সপ্তাহে চুক্তিটি চূড়ান্ত করি।",
+        "english": "Let's finalize the contract next week.",
+        "grammar_focus": "Let's + Verb",
+        "rules": ["Let's = আসুন (কোনো প্রস্তাব দিতে)", "finalize = চূড়ান্ত করা", "contract = চুক্তি"],
+        "hint": "Let's + finalize"
+      }
+    ]
+  }
+]

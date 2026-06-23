@@ -1,0 +1,254 @@
+[
+  {
+    "id": "job_interview",
+    "title": "Preparing for a Job Interview",
+    "level": "Intermediate",
+    "sentences": [
+      {
+        "bangla": "আমি গত দুই সপ্তাহ ধরে একটি চাকরির সাক্ষাৎকারের জন্য প্রস্তুতি নিচ্ছি।",
+        "english": "I have been preparing for a job interview for the last two weeks.",
+        "grammar_focus": "Present Perfect Continuous",
+        "rules": ["কোনো কাজ অতীতে শুরু হয়ে এখনও চলছে বোঝালে Present Perfect Continuous হয়", "সময়ের ব্যাপ্তি বোঝাতে for বসে"],
+        "hint": "'have been preparing' ব্যবহার করুন"
+      },
+      {
+        "bangla": "প্রথমে, আমাকে আমার জীবনবৃত্তান্ত আপডেট করতে হবে।",
+        "english": "First, I need to update my resume.",
+        "grammar_focus": "Infinitive (to + V1)",
+        "rules": ["need to = কোনো কিছু করার প্রয়োজন", "update = হালনাগাদ করা"],
+        "hint": "need-এর পর 'to update' বসবে"
+      },
+      {
+        "bangla": "সাক্ষাৎকারে ভালো করার জন্য আত্মবিশ্বাস থাকা খুবই জরুরি।",
+        "english": "Having confidence is very important to do well in the interview.",
+        "grammar_focus": "Gerund as Subject",
+        "rules": ["Verb-এর সাথে ing যোগ করে বাক্যের Subject হিসেবে ব্যবহার (Having)", "to do well = ভালো করার জন্য"],
+        "hint": "বাক্যটি 'Having' দিয়ে শুরু করুন"
+      },
+      {
+        "bangla": "আমি আয়নার সামনে ইংরেজিতে কথা বলার অনুশীলন করেছি।",
+        "english": "I have practiced speaking in English in front of the mirror.",
+        "grammar_focus": "Present Perfect + Gerund",
+        "rules": ["practice-এর পর verb আসলে তার সাথে ing যুক্ত হয় (practiced speaking)", "in front of = সামনে"],
+        "hint": "have practiced (V3)"
+      },
+      {
+        "bangla": "তারা যদি আমাকে আমার অভিজ্ঞতা সম্পর্কে জিজ্ঞাসা করে, আমি আমার আগের কাজের কথা বলব।",
+        "english": "If they ask me about my experience, I will talk about my previous job.",
+        "grammar_focus": "First Conditional",
+        "rules": ["If + Present Simple, Future Simple", "previous job = আগের কাজ"],
+        "hint": "If clauses-এ present tense এবং পরের অংশে will বসবে"
+      },
+      {
+        "bangla": "সাক্ষাৎকারটি আগামী সোমবার সকাল ১০টায় অনুষ্ঠিত হবে।",
+        "english": "The interview will be held next Monday at 10 AM.",
+        "grammar_focus": "Future Passive",
+        "rules": ["will be + V3 (held) = অনুষ্ঠিত হবে (Passive Voice)"],
+        "hint": "will be held ব্যবহার করুন"
+      },
+      {
+        "bangla": "আমাকে অবশ্যই সময়মতো সেখানে পৌঁছাতে হবে।",
+        "english": "I must reach there on time.",
+        "grammar_focus": "Modal Verb (must)",
+        "rules": ["must = অবশ্যই (বাধ্যবাধকতা বোঝাতে)", "on time = সময়মতো"],
+        "hint": "must-এর পর verb-এর base form (reach) বসে"
+      },
+      {
+        "bangla": "আমি আশা করি তারা আমাকে চাকরিটা দেবে।",
+        "english": "I hope they will offer me the job.",
+        "grammar_focus": "Future Simple (Prediction/Hope)",
+        "rules": ["hope-এর পর সাধারণত Future Simple (will + V1) বসে", "offer = প্রস্তাব দেওয়া"],
+        "hint": "will offer"
+      }
+    ]
+  },
+  {
+    "id": "memorable_trip",
+    "title": "A Memorable Trip",
+    "level": "Intermediate",
+    "sentences": [
+      {
+        "bangla": "গত বছর আমি আমার বন্ধুদের সাথে কক্সবাজার গিয়েছিলাম।",
+        "english": "Last year, I went to Cox's Bazar with my friends.",
+        "grammar_focus": "Past Simple",
+        "rules": ["অতীতে সম্পন্ন হওয়া কাজ বোঝাতে verb-এর Past form (V2) বসে", "go → went"],
+        "hint": "went to"
+      },
+      {
+        "bangla": "আমরা যখন সেখানে পৌঁছালাম, তখন বৃষ্টি হচ্ছিল।",
+        "english": "When we arrived there, it was raining.",
+        "grammar_focus": "Past Continuous + Past Simple",
+        "rules": ["অতীতে একটি কাজ চলাকালীন আরেকটি কাজ ঘটলে: When + Past Simple, Past Continuous"],
+        "hint": "it was raining (Past Continuous)"
+      },
+      {
+        "bangla": "আমরা একটি হোটেলে অবস্থান করেছিলাম যা সমুদ্রের খুব কাছে ছিল।",
+        "english": "We stayed at a hotel which was very close to the sea.",
+        "grammar_focus": "Relative Clause (which)",
+        "rules": ["বস্তুর ক্ষেত্রে which বসে", "close to = কাছাকাছি"],
+        "hint": "hotel-কে বোঝাতে 'which' ব্যবহার করুন"
+      },
+      {
+        "bangla": "সমুদ্রসৈকতে হাঁটার সময় আমরা সূর্যাস্ত উপভোগ করেছিলাম।",
+        "english": "We enjoyed the sunset while walking on the beach.",
+        "grammar_focus": "While + Gerund",
+        "rules": ["while-এর পর সরাসরি verb আসলে তার সাথে ing যুক্ত হয়"],
+        "hint": "while walking"
+      },
+      {
+        "bangla": "আমরা কিছু সামুদ্রিক খাবারও খেয়েছিলাম, যা খুব সুস্বাদু ছিল।",
+        "english": "We also ate some seafood, which was very delicious.",
+        "grammar_focus": "Past Simple + Relative Clause",
+        "rules": ["ate = eat-এর Past form", "delicious = সুস্বাদু"],
+        "hint": "also ate (V2)"
+      },
+      {
+        "bangla": "আমি অনেক ছবি তুলেছিলাম স্মৃতি ধরে রাখার জন্য।",
+        "english": "I took a lot of pictures to keep the memories.",
+        "grammar_focus": "Infinitive of Purpose",
+        "rules": ["কোনো কাজের উদ্দেশ্য বোঝাতে to + V1 বসে (to keep)"],
+        "hint": "take pictures → took pictures (V2)"
+      },
+      {
+        "bangla": "এটি ছিল আমার জীবনের সেরা ভ্রমণগুলোর মধ্যে একটি।",
+        "english": "It was one of the best trips of my life.",
+        "grammar_focus": "Superlative Degree",
+        "rules": ["one of the + Superlative adjective (best) + Plural noun (trips)"],
+        "hint": "trips (plural) হবে"
+      },
+      {
+        "bangla": "আমি যদি সুযোগ পাই, আমি আবার সেখানে যাব।",
+        "english": "If I get a chance, I will go there again.",
+        "grammar_focus": "First Conditional",
+        "rules": ["If + Present tense, Future tense", "get a chance = সুযোগ পাওয়া"],
+        "hint": "will go"
+      }
+    ]
+  },
+  {
+    "id": "health_and_fitness",
+    "title": "Health and Fitness",
+    "level": "Intermediate",
+    "sentences": [
+      {
+        "bangla": "সুস্থ থাকার জন্য আমাদের নিয়মিত ব্যায়াম করা উচিত।",
+        "english": "We should exercise regularly to stay healthy.",
+        "grammar_focus": "Modal (should) + Infinitive",
+        "rules": ["should = উচিত (পরামর্শ দিতে)", "to stay = থাকার জন্য"],
+        "hint": "should-এর পর verb-এর base form (exercise) বসে"
+      },
+      {
+        "bangla": "আমি জাঙ্ক ফুড এড়িয়ে চলার চেষ্টা করি।",
+        "english": "I try to avoid eating junk food.",
+        "grammar_focus": "Verb + Gerund",
+        "rules": ["avoid-এর পর verb আসলে তার সাথে ing যুক্ত হয় (avoid eating)"],
+        "hint": "avoid + eating"
+      },
+      {
+        "bangla": "পর্যাপ্ত পরিমাণ পানি পান করা শরীরের জন্য অত্যাবশ্যক।",
+        "english": "Drinking enough water is essential for the body.",
+        "grammar_focus": "Gerund as Subject",
+        "rules": ["Drinking (Subject) = পান করা", "essential = অত্যাবশ্যক/খুবই জরুরি"],
+        "hint": "Drinking দিয়ে বাক্য শুরু করুন"
+      },
+      {
+        "bangla": "গত বছর আমার ওজন বেড়ে গিয়েছিল, তাই আমি দৌড়ানো শুরু করি।",
+        "english": "Last year I gained weight, so I started running.",
+        "grammar_focus": "Past Simple + Verb followed by Gerund",
+        "rules": ["gain weight = ওজন বাড়া", "start-এর পর verb+ing বসতে পারে (started running)"],
+        "hint": "gained (V2), started (V2)"
+      },
+      {
+        "bangla": "আপনি যদি প্রতিদিন যোগব্যায়াম করেন, আপনার মানসিক চাপ কমে যাবে।",
+        "english": "If you do yoga every day, your stress will reduce.",
+        "grammar_focus": "First Conditional",
+        "rules": ["do yoga = যোগব্যায়াম করা", "stress = মানসিক চাপ"],
+        "hint": "will reduce"
+      },
+      {
+        "bangla": "আমি গত এক মাস ধরে একটি নতুন ডায়েট মেনে চলছি।",
+        "english": "I have been following a new diet for the last one month.",
+        "grammar_focus": "Present Perfect Continuous",
+        "rules": ["have been + verb+ing (অতীতে শুরু হয়ে এখনও চলছে)"],
+        "hint": "have been following"
+      },
+      {
+        "bangla": "পর্যাপ্ত ঘুমানো ব্যায়াম করার মতোই গুরুত্বপূর্ণ।",
+        "english": "Sleeping enough is as important as exercising.",
+        "grammar_focus": "Positive Degree (as...as) + Gerunds",
+        "rules": ["as + adjective + as = একই রকম বোঝাতে", "Subject এবং object উভয়ই gerund"],
+        "hint": "as important as"
+      },
+      {
+        "bangla": "আমি এখন আগের চেয়ে অনেক বেশি শক্তিবান অনুভব করি।",
+        "english": "I feel much more energetic now than before.",
+        "grammar_focus": "Comparative Degree",
+        "rules": ["more energetic = আরও শক্তিবান", "than before = আগের চেয়ে"],
+        "hint": "feel much more..."
+      }
+    ]
+  },
+  {
+    "id": "technology_daily_life",
+    "title": "Technology in Daily Life",
+    "level": "Intermediate",
+    "sentences": [
+      {
+        "bangla": "আজকাল মানুষ স্মার্টফোন ছাড়া এক মুহূর্তও ভাবতে পারে না।",
+        "english": "Nowadays, people cannot imagine a single moment without a smartphone.",
+        "grammar_focus": "Modal (cannot)",
+        "rules": ["cannot imagine = ভাবতে পারে না", "without = ছাড়া"],
+        "hint": "cannot + V1"
+      },
+      {
+        "bangla": "প্রযুক্তি আমাদের জীবনকে অনেক সহজ করে দিয়েছে।",
+        "english": "Technology has made our lives much easier.",
+        "grammar_focus": "Present Perfect + Comparative",
+        "rules": ["has made (Present Perfect)", "much easier = অনেক সহজ (Comparative)"],
+        "hint": "has made (V3)"
+      },
+      {
+        "bangla": "তবে, অতিরিক্ত স্ক্রিন টাইম আমাদের চোখের ক্ষতি করতে পারে।",
+        "english": "However, excessive screen time can damage our eyes.",
+        "grammar_focus": "Modal (can)",
+        "rules": ["excessive = অতিরিক্ত", "can = সামর্থ্য বা সম্ভাবনা বোঝাতে"],
+        "hint": "can damage (V1)"
+      },
+      {
+        "bangla": "সামাজিক যোগাযোগ মাধ্যম আমাদের বন্ধুদের সাথে যুক্ত থাকতে সাহায্য করে।",
+        "english": "Social media helps us stay connected with friends.",
+        "grammar_focus": "Causative Verb (help)",
+        "rules": ["help + object + base verb (stay) অথবা to + base verb"],
+        "hint": "helps us stay"
+      },
+      {
+        "bangla": "ইন্টারনেটের মাধ্যমে এখন ঘরে বসেই কেনাকাটা করা যায়।",
+        "english": "Shopping can now be done from home through the internet.",
+        "grammar_focus": "Modal Passive",
+        "rules": ["can be + V3 (done) = করা যেতে পারে / যায়", "through = মাধ্যমে"],
+        "hint": "can be done"
+      },
+      {
+        "bangla": "আমি ঘুমানোর আগে ফোন ব্যবহার না করার সিদ্ধান্ত নিয়েছি।",
+        "english": "I have decided not to use my phone before sleeping.",
+        "grammar_focus": "Present Perfect + Negative Infinitive",
+        "rules": ["decide-এর পর to + V1 বসে। নেগেটিভ করতে 'not to' বসে", "before + verb+ing"],
+        "hint": "not to use"
+      },
+      {
+        "bangla": "প্রযুক্তি আমাদের বিশ্ব সম্পর্কে আরও জানতে সাহায্য করে।",
+        "english": "Technology helps us to know more about the world.",
+        "grammar_focus": "Present Simple + Infinitive",
+        "rules": ["helps (3rd person singular)", "to know = জানতে"],
+        "hint": "helps + object + to know"
+      },
+      {
+        "bangla": "আমাদের উচিত প্রযুক্তির সঠিক ব্যবহার নিশ্চিত করা।",
+        "english": "We should ensure the proper use of technology.",
+        "grammar_focus": "Modal (should)",
+        "rules": ["ensure = নিশ্চিত করা", "proper use = সঠিক ব্যবহার"],
+        "hint": "should ensure"
+      }
+    ]
+  }
+]

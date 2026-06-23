@@ -1,0 +1,44 @@
+[
+  {
+    "id": "at_a_restaurant",
+    "title": "At a Restaurant",
+    "level": "Daily Conversation",
+    "sentences": [
+      {
+        "bangla": "আমি কি অর্ডার করতে পারি?",
+        "english": "Can I place an order?",
+        "grammar_focus": "Can I…? (Request)",
+        "rules": ["Can I = আমি কি পারি", "place an order = অর্ডার করা"],
+        "hint": "Can I দিয়ে অনুমতি চাওয়া হয়"
+      },
+      {
+        "bangla": "আমি একটি চিকেন বিরিয়ানি খেতে চাই।",
+        "english": "I would like to have a chicken biryani.",
+        "grammar_focus": "Would like to",
+        "rules": ["would like to = চাই (ভদ্র)", "have = খাওয়া"],
+        "hint": "I would like = polite way to want"
+      },
+      {
+        "bangla": "দয়া করে বিলটি আনবেন?",
+        "english": "Could you please bring the bill?",
+        "grammar_focus": "Could you…? (Polite request)",
+        "rules": ["Could you = আপনি কি (ভদ্র)", "bring the bill = বিল আনা"],
+        "hint": "Could you please দিয়ে ভদ্র অনুরোধ"
+      },
+      {
+        "bangla": "খাবারটি খুব সুস্বাদু ছিল।",
+        "english": "The food was very delicious.",
+        "grammar_focus": "Past Simple (was)",
+        "rules": ["was = ছিল", "delicious = সুস্বাদু"],
+        "hint": "The food was → অতীত"
+      },
+      {
+        "bangla": "আমি কি জল পেতে পারি?",
+        "english": "May I have some water?",
+        "grammar_focus": "May I…? (Permission)",
+        "rules": ["May I = আমি কি (আনুষ্ঠানিক)", "some water = কিছু জল"],
+        "hint": "May I → more formal than Can I"
+      }
+    ]
+  }
+]
