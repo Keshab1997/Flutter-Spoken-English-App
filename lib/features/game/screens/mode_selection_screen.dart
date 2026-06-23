@@ -4,6 +4,7 @@ import '../../../providers/game/game_provider.dart';
 import '../../../providers/game/timer_provider.dart';
 import '../../../providers/game/score_provider.dart';
 import '../../../services/game_service.dart';
+import '../../../services/hive_service.dart';
 import 'question_screen.dart';
 
 
@@ -30,9 +31,11 @@ class ModeSelectionScreen extends ConsumerWidget {
                 ref.read(gameProvider.notifier).reset();
                 ref.read(timerProvider.notifier).resetTimer();
                 ref.read(scoreProvider.notifier).resetScore();
+                // Honour the user's saved Settings (Questions Per Game).
+                final configuredCount = HiveService.getGameQuestionCount();
                 ref.read(gameProvider.notifier).loadQuestions(
                   mode: mode,
-                  limit: mode == GameMode.practice ? 10 : 20,
+                  limit: mode == GameMode.practice ? configuredCount : (configuredCount * 2),
                 );
                 Navigator.push(context, MaterialPageRoute(builder: (_) => const QuestionScreen()));
               },

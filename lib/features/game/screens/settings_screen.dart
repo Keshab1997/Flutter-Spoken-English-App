@@ -3,15 +3,142 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../providers/theme_provider.dart';
 import '../../../providers/game/sound_provider.dart';
+import '../../../services/hive_service.dart';
 
-class SettingsScreen extends ConsumerWidget {
+class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<SettingsScreen> createState() => _SettingsScreenState();
+}
+
+class _SettingsScreenState extends ConsumerState<SettingsScreen> {
+  late int _timerSeconds;
+  late int _questionCount;
+  late String _difficulty;
+
+  @override
+  void initState() {
+    super.initState();
+    _timerSeconds = HiveService.getGameTimerSeconds();
+    _questionCount = HiveService.getGameQuestionCount();
+    _difficulty = HiveService.getGameDifficulty();
+  }
+
+  String _formatTimer(int s) {
+    if (s <= 0) return 'No timer';
+    final m = s ~/ 60;
+    final r = s % 60;
+    return m > 0 ? '$m:${r.toString().padLeft(2, '0')}' : '${r}s';
+  }
+
+  String _difficultyLabel(String d) {
+    switch (d) {
+      case 'easy':
+        return 'Easy';
+      case 'intermediate':
+        return 'Intermediate';
+      case 'hard':
+        return 'Hard';
+      default:
+        return 'Easy';
+    }
+  }
+
+  Future<void> _pickTimer() async {
+    const options = [0, 30, 45, 60, 90, 120];
+    final selected = await showDialog<int>(
+      context: context,
+      builder: (ctx) => SimpleDialog(
+        title: const Text('Default Timer'),
+        children: options.map((s) {
+          return SimpleDialogOption(
+            onPressed: () => Navigator.pop(ctx, s),
+            child: Row(
+              children: [
+                Icon(
+                  s == _timerSeconds ? Icons.radio_button_checked : Icons.radio_button_unchecked,
+                  color: AppColors.primary,
+                  size: 20,
+                ),
+                const SizedBox(width: 12),
+                Text(_formatTimer(s)),
+              ],
+            ),
+          );
+        }).toList(),
+      ),
+    );
+    if (selected != null && selected != _timerSeconds) {
+      await HiveService.setGameTimerSeconds(selected);
+      setState(() => _timerSeconds = selected);
+    }
+  }
+
+  Future<void> _pickQuestionCount() async {
+    const options = [5, 10, 15, 20, 25];
+    final selected = await showDialog<int>(
+      context: context,
+      builder: (ctx) => SimpleDialog(
+        title: const Text('Questions Per Game'),
+        children: options.map((c) {
+          return SimpleDialogOption(
+            onPressed: () => Navigator.pop(ctx, c),
+            child: Row(
+              children: [
+                Icon(
+                  c == _questionCount ? Icons.radio_button_checked : Icons.radio_button_unchecked,
+                  color: AppColors.primary,
+                  size: 20,
+                ),
+                const SizedBox(width: 12),
+                Text('$c questions'),
+              ],
+            ),
+          );
+        }).toList(),
+      ),
+    );
+    if (selected != null && selected != _questionCount) {
+      await HiveService.setGameQuestionCount(selected);
+      setState(() => _questionCount = selected);
+    }
+  }
+
+  Future<void> _pickDifficulty() async {
+    const options = ['easy', 'intermediate', 'hard'];
+    final selected = await showDialog<String>(
+      context: context,
+      builder: (ctx) => SimpleDialog(
+        title: const Text('Default Difficulty'),
+        children: options.map((d) {
+          return SimpleDialogOption(
+            onPressed: () => Navigator.pop(ctx, d),
+            child: Row(
+              children: [
+                Icon(
+                  d == _difficulty ? Icons.radio_button_checked : Icons.radio_button_unchecked,
+                  color: AppColors.primary,
+                  size: 20,
+                ),
+                const SizedBox(width: 12),
+                Text(_difficultyLabel(d)),
+              ],
+            ),
+          );
+        }).toList(),
+      ),
+    );
+    if (selected != null && selected != _difficulty) {
+      await HiveService.setGameDifficulty(selected);
+      setState(() => _difficulty = selected);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final themeState = ref.watch(themeProvider);
-    final soundService = ref.watch(soundServiceProvider);
-    final theme = Theme.of(context);
+    final soundState = ref.watch(soundProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -45,14 +172,14 @@ class SettingsScreen extends ConsumerWidget {
               SwitchListTile(
                 title: const Text('Sound Effects'),
                 subtitle: const Text('Enable game sounds'),
-                value: !soundService.isMuted,
+                value: !soundState.isMuted,
                 onChanged: (value) {
-                  soundService.setMuted(!value);
-                  if (value) soundService.playButtonTap();
+                  ref.read(soundProvider.notifier).setMuted(!value);
+                  if (value) ref.read(soundProvider.notifier).playButtonTap();
                 },
-                secondary: Icon(soundService.isMuted ? Icons.volume_off : Icons.volume_up, color: AppColors.primary),
+                secondary: Icon(soundState.isMuted ? Icons.volume_off : Icons.volume_up, color: AppColors.primary),
               ),
-              if (!soundService.isMuted)
+              if (!soundState.isMuted)
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   child: Row(
@@ -60,8 +187,10 @@ class SettingsScreen extends ConsumerWidget {
                       const Icon(Icons.volume_down, size: 20),
                       Expanded(
                         child: Slider(
-                          value: soundService.volume,
-                          onChanged: (value) => soundService.setVolume(value),
+                          value: soundState.volume,
+                          min: 0.0,
+                          max: 1.0,
+                          onChanged: (value) => ref.read(soundProvider.notifier).setVolume(value),
                           activeColor: AppColors.primary,
                         ),
                       ),
@@ -81,31 +210,25 @@ class SettingsScreen extends ConsumerWidget {
               ListTile(
                 leading: const Icon(Icons.timer, color: AppColors.primary),
                 title: const Text('Default Timer'),
-                subtitle: const Text('60 seconds'),
+                subtitle: Text(_formatTimer(_timerSeconds)),
                 trailing: const Icon(Icons.chevron_right),
-                onTap: () {
-                  // TODO: Show timer selection dialog
-                },
+                onTap: _pickTimer,
               ),
               const Divider(),
               ListTile(
                 leading: const Icon(Icons.quiz, color: AppColors.primary),
                 title: const Text('Questions Per Game'),
-                subtitle: const Text('10 questions'),
+                subtitle: Text('$_questionCount questions'),
                 trailing: const Icon(Icons.chevron_right),
-                onTap: () {
-                  // TODO: Show question count selection dialog
-                },
+                onTap: _pickQuestionCount,
               ),
               const Divider(),
               ListTile(
                 leading: const Icon(Icons.tune, color: AppColors.primary),
                 title: const Text('Default Difficulty'),
-                subtitle: const Text('Beginner'),
+                subtitle: Text(_difficultyLabel(_difficulty)),
                 trailing: const Icon(Icons.chevron_right),
-                onTap: () {
-                  // TODO: Show difficulty selection dialog
-                },
+                onTap: _pickDifficulty,
               ),
             ],
           ),
@@ -122,7 +245,6 @@ class SettingsScreen extends ConsumerWidget {
                 subtitle: const Text('Sync with Firebase'),
                 trailing: const Icon(Icons.chevron_right),
                 onTap: () {
-                  // TODO: Implement sync
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text('Sync feature coming soon!')),
                   );
@@ -134,9 +256,7 @@ class SettingsScreen extends ConsumerWidget {
                 title: const Text('Clear Local Data'),
                 subtitle: const Text('Delete all cached data'),
                 trailing: const Icon(Icons.chevron_right),
-                onTap: () {
-                  _showClearDataDialog(context);
-                },
+                onTap: () => _showClearDataDialog(context),
               ),
             ],
           ),
@@ -158,7 +278,9 @@ class SettingsScreen extends ConsumerWidget {
                 title: const Text('Help & Support'),
                 trailing: const Icon(Icons.chevron_right),
                 onTap: () {
-                  // TODO: Open help page
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(content: Text('Help page coming soon!')),
+                  );
                 },
               ),
             ],
@@ -196,11 +318,14 @@ class SettingsScreen extends ConsumerWidget {
         actions: [
           TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel')),
           TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Local data cleared')),
-              );
+            onPressed: () async {
+              await HiveService.clearAllCaches();
+              if (context.mounted) Navigator.pop(context);
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Local data cleared')),
+                );
+              }
             },
             child: const Text('Clear', style: TextStyle(color: AppColors.error)),
           ),
@@ -218,11 +343,14 @@ class SettingsScreen extends ConsumerWidget {
         actions: [
           TextButton(onPressed: () => Navigator.pop(context), child: const Text('Cancel')),
           TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Progress reset')),
-              );
+            onPressed: () async {
+              await HiveService.clearAllCaches();
+              if (context.mounted) Navigator.pop(context);
+              if (context.mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Progress reset')),
+                );
+              }
             },
             child: const Text('Reset', style: TextStyle(color: AppColors.error)),
           ),

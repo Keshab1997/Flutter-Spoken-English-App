@@ -1,4 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
+import 'hive_service.dart';
 
 enum GameSoundEffect {
   correct,
@@ -18,19 +19,30 @@ class SoundService {
   bool _muted = false;
   double _volume = 1.0;
 
+  SoundService() {
+    // Restore previously saved sound preferences so the setting survives
+    // app restarts instead of resetting to "on" every launch.
+    _muted = HiveService.isSoundMuted();
+    _volume = HiveService.getSoundVolume();
+    _player.setVolume(_muted ? 0.0 : _volume);
+  }
+
   bool get isMuted => _muted;
   double get volume => _volume;
 
   void setMuted(bool value) {
     _muted = value;
+    HiveService.setSoundMuted(value);
+    _player.setVolume(_muted ? 0.0 : _volume);
   }
 
   void toggleMute() {
-    _muted = !_muted;
+    setMuted(!_muted);
   }
 
   void setVolume(double volume) {
     _volume = volume.clamp(0.0, 1.0);
+    HiveService.setSoundVolume(_volume);
     _player.setVolume(_muted ? 0.0 : _volume);
   }
 

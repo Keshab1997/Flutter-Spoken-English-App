@@ -226,7 +226,7 @@ class TenseCategoriesScreen extends ConsumerWidget {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  'প্রতিটি tense এর নিচে "📖 Rules দেখুন" বাটনে ক্লিক করো।',
+                  'প্রতিটি tense-এর নিচে "Rules দেখুন" বা "Practice" বাটনে চাপ দাও।',
                   style: TextStyle(
                     fontSize: 11,
                     color: isDark ? AppColors.textSecondaryDark : AppColors.textSecondaryLight,
@@ -320,6 +320,17 @@ class _TenseCard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _startPractice(BuildContext context) {
+    ref.read(soundProvider.notifier).playButtonTap();
+    // tense.id is the snake_case key; GameService normalises it to the JSON
+    // tenseType label automatically.
+    ref.read(gameProvider.notifier).loadQuestions(
+      tenseType: tense.id,
+      limit: 15,
+    );
+    Navigator.push(context, MaterialPageRoute(builder: (_) => const QuestionScreen()));
   }
 
   @override
@@ -427,7 +438,31 @@ class _TenseCard extends StatelessWidget {
                     ),
                   ),
                 ),
-
+                const SizedBox(width: 10),
+                // Practice Button
+                Expanded(
+                  child: ElevatedButton.icon(
+                    onPressed: () => _startPractice(context),
+                    icon: const Icon(Icons.play_arrow_rounded, size: 16, color: Colors.white),
+                    label: const Text(
+                      'Practice',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: color,
+                      foregroundColor: Colors.white,
+                      elevation: 0,
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

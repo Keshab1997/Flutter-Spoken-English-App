@@ -161,6 +161,48 @@ class HiveService {
     return _settings.get('notifications', defaultValue: true) as bool;
   }
 
+  // ── Game Settings ──
+  static Future<void> setGameTimerSeconds(int value) async {
+    await _settings.put('game_timer_seconds', value);
+  }
+
+  static int getGameTimerSeconds() {
+    return _settings.get('game_timer_seconds', defaultValue: 60) as int;
+  }
+
+  static Future<void> setGameQuestionCount(int value) async {
+    await _settings.put('game_question_count', value);
+  }
+
+  static int getGameQuestionCount() {
+    return _settings.get('game_question_count', defaultValue: 10) as int;
+  }
+
+  static Future<void> setGameDifficulty(String value) async {
+    await _settings.put('game_difficulty', value);
+  }
+
+  static String getGameDifficulty() {
+    return _settings.get('game_difficulty', defaultValue: 'easy') as String;
+  }
+
+  // ── Sound Settings ──
+  static Future<void> setSoundMuted(bool value) async {
+    await _settings.put('sound_muted', value);
+  }
+
+  static bool isSoundMuted() {
+    return _settings.get('sound_muted', defaultValue: false) as bool;
+  }
+
+  static Future<void> setSoundVolume(double value) async {
+    await _settings.put('sound_volume', value);
+  }
+
+  static double getSoundVolume() {
+    return _settings.get('sound_volume', defaultValue: 0.8) as double;
+  }
+
   // AI Settings — Multiple Keys
   static Future<void> saveAiKey(Map<String, dynamic> keyConfig) async {
     final keys = getAiKeys();

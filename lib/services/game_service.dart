@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import '../core/constants/tense_constants.dart';
 import '../models/game/game_question_model.dart';
 import '../models/game/game_result_model.dart';
 import '../models/game/game_level_model.dart';
@@ -58,7 +59,21 @@ class GameService {
 
     // Apply filters
     if (tenseType != null && tenseType.isNotEmpty) {
-      questions = questions.where((q) => q.tenseType == tenseType).toList();
+      if (_isSpecialCategory(tenseType)) {
+        // "comparison" / "special_usage" are cross-tense categories — they
+        // deliberately mix questions from every tense rather than filtering
+        // to one. No tenseType filter is applied here.
+      } else {
+        // Normalise so a snake_case id (e.g. "present_indefinite") still
+        // matches questions whose tenseType is the readable label
+        // ("Present Indefinite").
+        final canonical = TenseConstants.nameFromId(tenseType);
+        final id = TenseConstants.idFromName(tenseType);
+        questions = questions.where((q) {
+          final qt = q.tenseType;
+          return qt == tenseType || qt == canonical || qt == id;
+        }).toList();
+      }
     }
     if (effectiveDifficulty != null && effectiveDifficulty.isNotEmpty) {
       questions = questions.where((q) => q.difficulty == effectiveDifficulty).toList();
@@ -71,6 +86,13 @@ class GameService {
     }
 
     return questions;
+  }
+
+  /// Special categories that mix questions across tenses instead of filtering
+  /// to a single tense. These have no dedicated question file.
+  bool _isSpecialCategory(String tenseType) {
+    const special = {'comparison', 'special_usage', 'mixed', 'all'};
+    return special.contains(tenseType.toLowerCase());
   }
 
   Future<List<GameQuestionModel>> loadQuestionsByTenseType(String tenseType) {

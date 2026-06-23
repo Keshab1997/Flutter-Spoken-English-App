@@ -49,6 +49,11 @@ class SoundNotifier extends StateNotifier<SoundState> {
     state = state.copyWith(isMuted: !state.isMuted);
   }
 
+  void setMuted(bool muted) {
+    _soundService.setMuted(muted);
+    state = state.copyWith(isMuted: muted);
+  }
+
   void setVolume(double volume) {
     _soundService.setVolume(volume);
     state = state.copyWith(volume: volume);

@@ -84,7 +84,9 @@ class CategorySelectionScreen extends ConsumerWidget {
               onTap: () {
                 ref.read(soundProvider.notifier).playButtonTap();
                 if (category.unlocked) {
-                  // Load questions for this category and navigate
+                  // Load questions for this category and navigate.
+                  // category.name is a readable label ("Present Indefinite");
+                  // GameService now normalises both id and label forms.
                   ref.read(gameProvider.notifier).loadQuestions(
                     tenseType: category.name,
                     limit: category.questionCount,
