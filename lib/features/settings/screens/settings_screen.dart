@@ -5,6 +5,7 @@ import '../../../services/hive_service.dart';
 import '../../../services/ai_service.dart';
 import '../../../providers/theme_provider.dart';
 import 'api_setup_guide_screen.dart';
+import 'privacy_security_screen.dart';
 
 class SettingsScreen extends ConsumerStatefulWidget {
   const SettingsScreen({super.key});
@@ -135,7 +136,12 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                 leading: const Icon(Icons.security_rounded, color: AppColors.primary),
                 title: const Text('Privacy & Security'),
                 trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 14),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const PrivacySecurityScreen()),
+                  );
+                },
               ),
             ]),
             const SizedBox(height: 24),

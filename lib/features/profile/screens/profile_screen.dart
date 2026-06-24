@@ -1,5 +1,7 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:image_picker/image_picker.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/progress_provider.dart';
@@ -21,6 +23,7 @@ class ProfileScreen extends ConsumerStatefulWidget {
 
 class _ProfileScreenState extends ConsumerState<ProfileScreen> {
   bool _notificationsEnabled = true;
+  bool _isUploadingPhoto = false;
 
   @override
   void initState() {
@@ -48,6 +51,75 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
           SnackBar(content: Text('Sign out failed: $e'), behavior: SnackBarBehavior.floating),
         );
       }
+    }
+  }
+
+  Future<void> _showPhotoSourceSheet() async {
+    if (_isUploadingPhoto) return;
+
+    final source = await showModalBottomSheet<ImageSource>(
+      context: context,
+      showDragHandle: true,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ListTile(
+              leading: const Icon(Icons.photo_camera_rounded, color: AppColors.primary),
+              title: const Text('Take Photo'),
+              subtitle: const Text('Use camera to capture a new profile photo'),
+              onTap: () => Navigator.pop(ctx, ImageSource.camera),
+            ),
+            ListTile(
+              leading: const Icon(Icons.photo_library_rounded, color: AppColors.primary),
+              title: const Text('Choose from Gallery'),
+              subtitle: const Text('Select an existing image from your device'),
+              onTap: () => Navigator.pop(ctx, ImageSource.gallery),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    if (source == null) return;
+    await _pickAndUploadPhoto(source);
+  }
+
+  Future<void> _pickAndUploadPhoto(ImageSource source) async {
+    try {
+      final pickedImage = await ImagePicker().pickImage(
+        source: source,
+        imageQuality: 82,
+        maxWidth: 1000,
+        maxHeight: 1000,
+      );
+
+      if (pickedImage == null) return;
+
+      setState(() => _isUploadingPhoto = true);
+      final bytes = await pickedImage.readAsBytes();
+      await ref.read(authProvider.notifier).updateProfilePhoto(
+            bytes: bytes,
+            fileName: pickedImage.name,
+          );
+
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Profile photo updated successfully'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } catch (e) {
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Failed to update profile photo: $e'),
+          behavior: SnackBarBehavior.floating,
+        ),
+      );
+    } finally {
+      if (mounted) setState(() => _isUploadingPhoto = false);
     }
   }
 
@@ -123,24 +195,44 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                   Stack(
                     alignment: Alignment.bottomRight,
                     children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(color: AppColors.primary.withOpacity(0.2), width: 4),
-                        ),
-                        child: CircleAvatar(
-                          radius: 50,
-                          backgroundColor: AppColors.primary,
-                          child: Text(
-                            initial,
-                            style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white),
+                      InkWell(
+                        onTap: _showPhotoSourceSheet,
+                        customBorder: const CircleBorder(),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(color: AppColors.primary.withOpacity(0.2), width: 4),
+                          ),
+                          child: _buildProfileAvatar(
+                            photoUrl: user?.photoUrl ?? '',
+                            initial: initial,
                           ),
                         ),
                       ),
-                      Container(
-                        padding: const EdgeInsets.all(6),
-                        decoration: const BoxDecoration(color: AppColors.secondary, shape: BoxShape.circle),
-                        child: const Icon(Icons.camera_alt_rounded, color: Colors.white, size: 16),
+                      Positioned(
+                        right: 2,
+                        bottom: 2,
+                        child: Material(
+                          color: AppColors.secondary,
+                          shape: const CircleBorder(),
+                          child: InkWell(
+                            onTap: _showPhotoSourceSheet,
+                            customBorder: const CircleBorder(),
+                            child: Padding(
+                              padding: const EdgeInsets.all(7),
+                              child: _isUploadingPhoto
+                                  ? const SizedBox(
+                                      width: 16,
+                                      height: 16,
+                                      child: CircularProgressIndicator(
+                                        strokeWidth: 2,
+                                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                      ),
+                                    )
+                                  : const Icon(Icons.camera_alt_rounded, color: Colors.white, size: 16),
+                            ),
+                          ),
+                        ),
                       ),
                     ],
                   ),
@@ -276,7 +368,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                         await HiveService.clearAllCaches();
                         await ref.read(progressProvider.notifier).fetchProgress();
 
-                        if (!mounted) return;
+                        if (!context.mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
                             content: Text('Cache cleared successfully'),
@@ -284,7 +376,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                           ),
                         );
                       } catch (_) {
-                        if (!mounted) return;
+                        if (!context.mounted) return;
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
                             content: Text('Failed to clear cache'),
@@ -318,6 +410,41 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             const SizedBox(height: 32),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildProfileAvatar({required String photoUrl, required String initial}) {
+    if (photoUrl.trim().isEmpty) {
+      return _buildInitialAvatar(initial);
+    }
+
+    return CachedNetworkImage(
+      imageUrl: photoUrl,
+      imageBuilder: (context, imageProvider) => CircleAvatar(
+        radius: 50,
+        backgroundColor: AppColors.primary,
+        backgroundImage: imageProvider,
+      ),
+      placeholder: (context, url) => const CircleAvatar(
+        radius: 50,
+        backgroundColor: AppColors.primary,
+        child: CircularProgressIndicator(
+          strokeWidth: 2,
+          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+        ),
+      ),
+      errorWidget: (context, url, error) => _buildInitialAvatar(initial),
+    );
+  }
+
+  Widget _buildInitialAvatar(String initial) {
+    return CircleAvatar(
+      radius: 50,
+      backgroundColor: AppColors.primary,
+      child: Text(
+        initial,
+        style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white),
       ),
     );
   }

@@ -1,6 +1,9 @@
+import 'dart:typed_data';
+
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import '../models/user_model.dart';
 
@@ -11,6 +14,7 @@ final authProvider = StateNotifierProvider<AuthNotifier, AsyncValue<UserModel?>>
 class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+  final FirebaseStorage _storage = FirebaseStorage.instance;
   final GoogleSignIn _googleSignIn = GoogleSignIn();
 
   AuthNotifier() : super(const AsyncValue.loading()) {
@@ -39,7 +43,17 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
     try {
       final doc = await _firestore.collection('users').doc(uid).get();
       if (doc.exists && doc.data() != null) {
-        final userModel = UserModel.fromMap(doc.data()!, uid);
+        var userModel = UserModel.fromMap(doc.data()!, uid);
+        final authPhotoUrl = _auth.currentUser?.photoURL ?? '';
+
+        if (userModel.photoUrl.isEmpty && authPhotoUrl.isNotEmpty) {
+          userModel = userModel.copyWith(photoUrl: authPhotoUrl);
+          await _firestore.collection('users').doc(uid).set(
+            {'photoUrl': authPhotoUrl},
+            SetOptions(merge: true),
+          );
+        }
+
         state = AsyncValue.data(userModel);
       } else {
         // Fallback or if document doesn't exist yet
@@ -173,6 +187,61 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
     } catch (e) {
       rethrow;
     }
+  }
+
+  Future<String> updateProfilePhoto({
+    required Uint8List bytes,
+    required String fileName,
+  }) async {
+    final firebaseUser = _auth.currentUser;
+    if (firebaseUser == null) {
+      throw Exception('No signed-in user found.');
+    }
+
+    try {
+      final safeFileName = fileName.replaceAll(RegExp(r'[^a-zA-Z0-9._-]'), '_');
+      final timestamp = DateTime.now().millisecondsSinceEpoch;
+      final ref = _storage
+          .ref()
+          .child('profile_photos')
+          .child(firebaseUser.uid)
+          .child('${timestamp}_$safeFileName');
+
+      final metadata = SettableMetadata(contentType: _contentTypeForFile(safeFileName));
+      final uploadTask = await ref.putData(bytes, metadata);
+      final downloadUrl = await uploadTask.ref.getDownloadURL();
+
+      await firebaseUser.updatePhotoURL(downloadUrl);
+      await _firestore.collection('users').doc(firebaseUser.uid).set(
+        {'photoUrl': downloadUrl},
+        SetOptions(merge: true),
+      );
+
+      final currentUser = state.asData?.value;
+      if (currentUser != null) {
+        state = AsyncValue.data(currentUser.copyWith(photoUrl: downloadUrl));
+      } else {
+        await fetchUserData(firebaseUser.uid);
+      }
+
+      return downloadUrl;
+    } catch (e, stack) {
+      final currentUser = state.asData?.value;
+      if (currentUser != null) {
+        state = AsyncValue.data(currentUser);
+      } else {
+        state = AsyncValue.error(e, stack);
+      }
+      rethrow;
+    }
+  }
+
+  String _contentTypeForFile(String fileName) {
+    final lower = fileName.toLowerCase();
+    if (lower.endsWith('.png')) return 'image/png';
+    if (lower.endsWith('.webp')) return 'image/webp';
+    if (lower.endsWith('.gif')) return 'image/gif';
+    return 'image/jpeg';
   }
 
   Future<void> signOut() async {
