@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../services/hive_service.dart';
 import '../../../services/ai_service.dart';
+import '../../../services/notification_service.dart';
 import '../../../providers/theme_provider.dart';
 import 'api_setup_guide_screen.dart';
 import 'privacy_security_screen.dart';
@@ -17,6 +18,9 @@ class SettingsScreen extends ConsumerStatefulWidget {
 class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _darkMode = false;
   bool _notifications = true;
+  bool _dailyWordNotification = true;
+  bool _practiceReminderNotification = true;
+  bool _streakNotification = true;
   String _selectedLanguage = 'English (US)';
   List<Map<String, dynamic>> _aiKeys = [];
 
@@ -25,6 +29,9 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     super.initState();
     _darkMode = HiveService.isDarkMode();
     _notifications = HiveService.isNotificationEnabled();
+    _dailyWordNotification = HiveService.isDailyWordNotification();
+    _practiceReminderNotification = HiveService.isPracticeReminderNotification();
+    _streakNotification = HiveService.isStreakNotification();
     _loadAiKeys();
   }
 
@@ -68,16 +75,64 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             _buildSettingsCard([
               SwitchListTile(
                 title: const Text('Push Notifications'),
-                subtitle: const Text('Daily word and practice reminders'),
+                subtitle: const Text('Master toggle for all notifications'),
                 secondary: const Icon(Icons.notifications_none_rounded, color: AppColors.primary),
                 value: _notifications,
-                onChanged: (val) {
+                onChanged: (val) async {
                   setState(() => _notifications = val);
-                  HiveService.setNotificationEnabled(val);
+                  await NotificationService().updateNotificationEnabled(val);
                 },
                 activeColor: AppColors.primary,
               ),
+              if (_notifications) ...[
+                const Divider(height: 1),
+                SwitchListTile(
+                  title: const Text('📖 Word of the Day'),
+                  subtitle: const Text('Daily vocabulary at 9:00 AM'),
+                  value: _dailyWordNotification,
+                  onChanged: (val) {
+                    setState(() => _dailyWordNotification = val);
+                    HiveService.setDailyWordNotification(val);
+                    NotificationService().rescheduleOnAppOpen();
+                  },
+                  activeColor: AppColors.primary,
+                ),
+                const Divider(height: 1),
+                SwitchListTile(
+                  title: const Text('⏰ Practice Reminder'),
+                  subtitle: const Text('Reminder to practice at 7:00 PM'),
+                  value: _practiceReminderNotification,
+                  onChanged: (val) {
+                    setState(() => _practiceReminderNotification = val);
+                    HiveService.setPracticeReminderNotification(val);
+                    NotificationService().rescheduleOnAppOpen();
+                  },
+                  activeColor: AppColors.primary,
+                ),
+                const Divider(height: 1),
+                SwitchListTile(
+                  title: const Text('🔥 Streak Reminder'),
+                  subtitle: const Text('Milestone streak celebrations'),
+                  value: _streakNotification,
+                  onChanged: (val) {
+                    setState(() => _streakNotification = val);
+                    HiveService.setStreakNotification(val);
+                    NotificationService().rescheduleOnAppOpen();
+                  },
+                  activeColor: AppColors.primary,
+                ),
+              ],
             ]),
+            if (!_notifications && !isDark) ...[
+              const SizedBox(height: 4),
+              Padding(
+                padding: const EdgeInsets.only(left: 16),
+                child: Text(
+                  'Enable notifications to get daily vocabulary words and practice reminders.',
+                  style: TextStyle(fontSize: 12, color: Colors.grey.shade500),
+                ),
+              ),
+            ],
             const SizedBox(height: 24),
             Text('Language', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: isDark ? Colors.white60 : Colors.black45)),
             const SizedBox(height: 8),

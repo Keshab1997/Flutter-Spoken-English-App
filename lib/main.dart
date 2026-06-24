@@ -5,6 +5,7 @@ import 'firebase_options.dart';
 import 'core/theme/light_theme.dart';
 import 'core/theme/dark_theme.dart';
 import 'services/hive_service.dart';
+import 'services/notification_service.dart';
 import 'providers/theme_provider.dart';
 import 'features/auth/screens/splash_screen.dart';
 
@@ -27,6 +28,10 @@ void main() async {
 
   await HiveService.initialize();
 
+  // Initialize local notification system (uses native AlarmManager/UNUserNotificationCenter)
+  await NotificationService().initialize();
+  // Reschedule daily notifications on app open
+  await NotificationService().rescheduleOnAppOpen();
   runApp(
     const ProviderScope(
       child: MyApp(),

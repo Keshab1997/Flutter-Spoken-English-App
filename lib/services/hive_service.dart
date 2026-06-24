@@ -169,6 +169,40 @@ class HiveService {
     return _settings.get('notifications', defaultValue: true) as bool;
   }
 
+  // Notification sub-preferences
+  static Future<void> setDailyWordNotification(bool value) async {
+    await _settings.put('notify_daily_word', value);
+  }
+
+  static bool isDailyWordNotification() {
+    return _settings.get('notify_daily_word', defaultValue: true) as bool;
+  }
+
+  static Future<void> setPracticeReminderNotification(bool value) async {
+    await _settings.put('notify_practice_reminder', value);
+  }
+
+  static bool isPracticeReminderNotification() {
+    return _settings.get('notify_practice_reminder', defaultValue: true) as bool;
+  }
+
+  static Future<void> setStreakNotification(bool value) async {
+    await _settings.put('notify_streak', value);
+  }
+
+  static bool isStreakNotification() {
+    return _settings.get('notify_streak', defaultValue: true) as bool;
+  }
+
+  // Streak (for notifications)
+  static Future<void> setStreak(int value) async {
+    await _settings.put('notification_streak', value);
+  }
+
+  static int getStreak() {
+    return _settings.get('notification_streak', defaultValue: 0) as int;
+  }
+
   // ── Homework History ──
 
   static Future<void> saveHomeworkSession(Map<String, dynamic> session) async {
