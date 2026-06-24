@@ -10,6 +10,7 @@ class HiveService {
   static const String _studyPlanBox = 'study_plan';
   static const String _translatorHistoryBox = 'translator_history';
   static const String _homeworkHistoryBox = 'homework_history';
+  static const String _sentenceAnalysisHistoryBox = 'sentence_analysis_history';
   static const String _gameProgressBox = 'game_progress';
   static const String _gameStatisticsBox = 'game_statistics';
 
@@ -24,6 +25,7 @@ class HiveService {
     await Hive.openBox(_studyPlanBox);
     await Hive.openBox(_translatorHistoryBox);
     await Hive.openBox(_homeworkHistoryBox);
+    await Hive.openBox(_sentenceAnalysisHistoryBox);
     await Hive.openBox(_gameProgressBox);
     await Hive.openBox(_gameStatisticsBox);
   }
@@ -205,6 +207,40 @@ class HiveService {
   static Future<void> clearAllHomeworkSessions() async {
     if (!Hive.isBoxOpen(_homeworkHistoryBox)) return;
     await Hive.box(_homeworkHistoryBox).put('sessions', <Map<String, dynamic>>[]);
+  }
+
+  // ── Sentence Analyzer History ──
+
+  static Future<void> saveSentenceAnalysis(Map<String, dynamic> entry) async {
+    if (!Hive.isBoxOpen(_sentenceAnalysisHistoryBox)) {
+      await Hive.openBox(_sentenceAnalysisHistoryBox);
+    }
+    final box = Hive.box(_sentenceAnalysisHistoryBox);
+    final history = getSentenceAnalysisHistory();
+    history.insert(0, entry);
+    if (history.length > 100) history.removeLast();
+    await box.put('entries', history);
+  }
+
+  static List<Map<String, dynamic>> getSentenceAnalysisHistory() {
+    if (!Hive.isBoxOpen(_sentenceAnalysisHistoryBox)) return [];
+    final box = Hive.box(_sentenceAnalysisHistoryBox);
+    final raw = box.get('entries', defaultValue: []) as List;
+    return raw.map((e) => Map<String, dynamic>.from(e as Map)).toList();
+  }
+
+  static Future<void> deleteSentenceAnalysis(int index) async {
+    if (!Hive.isBoxOpen(_sentenceAnalysisHistoryBox)) return;
+    final box = Hive.box(_sentenceAnalysisHistoryBox);
+    final history = getSentenceAnalysisHistory();
+    if (index < 0 || index >= history.length) return;
+    history.removeAt(index);
+    await box.put('entries', history);
+  }
+
+  static Future<void> clearSentenceAnalysisHistory() async {
+    if (!Hive.isBoxOpen(_sentenceAnalysisHistoryBox)) return;
+    await Hive.box(_sentenceAnalysisHistoryBox).put('entries', <Map<String, dynamic>>[]);
   }
 
   // ── Game Settings ──
@@ -518,6 +554,11 @@ class HiveService {
     // Homework history
     if (Hive.isBoxOpen(_homeworkHistoryBox)) {
       await Hive.box(_homeworkHistoryBox).clear();
+    }
+
+    // Sentence analyzer history
+    if (Hive.isBoxOpen(_sentenceAnalysisHistoryBox)) {
+      await Hive.box(_sentenceAnalysisHistoryBox).clear();
     }
 
     // Vocabulary test history

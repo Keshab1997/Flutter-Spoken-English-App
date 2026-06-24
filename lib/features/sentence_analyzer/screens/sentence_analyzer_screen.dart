@@ -4,7 +4,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../services/ai_service.dart';
+import '../../../services/hive_service.dart';
 import '../models/sentence_analysis_model.dart';
+import 'sentence_analysis_history_screen.dart';
 
 class SentenceAnalyzerScreen extends ConsumerStatefulWidget {
   const SentenceAnalyzerScreen({super.key});
@@ -17,8 +19,8 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
   AnalyzerStep _currentStep = AnalyzerStep.topic;
   final _answerController = TextEditingController();
   bool _isLoading = false;
+  bool _isSaved = false;
   String _error = '';
-  String _selectedTense = '';
 
   SentenceAnalysis? _analysis;
   PracticeTask? _task;
@@ -49,14 +51,13 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
       _analysis = null;
       _task = null;
       _review = null;
-      _selectedTense = '';
+      _isSaved = false;
       _error = '';
     });
   }
 
   Future<void> _analyzeSentence(String tense) async {
     setState(() {
-      _selectedTense = tense;
       _currentStep = AnalyzerStep.analyzing;
       _isLoading = true;
       _error = '';
@@ -80,23 +81,24 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
         maxTokens: 2048,
       );
 
-      final cleaned = _extractJson(response);
-      final data = jsonDecode(cleaned) as Map<String, dynamic>;
-      _analysis = SentenceAnalysis.fromJson(data);
-
-      if (_analysis!.banglaSentence.isEmpty) {
-        throw Exception('Empty analysis response');
-      }
+      final data = _decodeJsonObject(response);
+      final analysis = SentenceAnalysis.fromJson(data);
+      if (!analysis.isValid) throw Exception('Invalid analysis response');
 
       setState(() {
+        _analysis = analysis;
+        _isSaved = false;
         _currentStep = AnalyzerStep.explanation;
         _isLoading = false;
+        _error = '';
       });
-    } catch (e) {
+    } catch (_) {
       setState(() {
-        _error = '$tense এর জন্য বাক্য বিশ্লেষণ করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।';
+        _analysis = _buildLocalAnalysis(tense);
+        _isSaved = false;
+        _error = 'AI এখন unavailable, তাই offline example দেখানো হচ্ছে।';
         _isLoading = false;
-        _currentStep = AnalyzerStep.topic;
+        _currentStep = AnalyzerStep.explanation;
       });
     }
   }
@@ -107,6 +109,7 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
     setState(() {
       _currentStep = AnalyzerStep.generatingTask;
       _isLoading = true;
+      _error = '';
     });
 
     try {
@@ -126,20 +129,24 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
         maxTokens: 1024,
       );
 
-      final cleaned = _extractJson(response);
-      final data = jsonDecode(cleaned) as Map<String, dynamic>;
-      _task = PracticeTask.fromJson(data);
+      final data = _decodeJsonObject(response);
+      final task = PracticeTask.fromJson(data);
+      if (!task.isValid) throw Exception('Invalid task response');
 
       setState(() {
+        _task = task;
         _answerController.clear();
         _currentStep = AnalyzerStep.practicing;
         _isLoading = false;
+        _error = '';
       });
-    } catch (e) {
+    } catch (_) {
       setState(() {
-        _error = 'টাস্ক তৈরি করতে সমস্যা হয়েছে। আবার চেষ্টা করুন।';
+        _task = _buildLocalTask(_analysis!);
+        _answerController.clear();
+        _error = 'AI task তৈরি করতে পারেনি, তাই offline practice দেওয়া হলো।';
         _isLoading = false;
-        _currentStep = AnalyzerStep.explanation;
+        _currentStep = AnalyzerStep.practicing;
       });
     }
   }
@@ -147,16 +154,23 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
   Future<void> _submitAnswer() async {
     if (_task == null) return;
 
+    final userAnswer = _answerController.text.trim();
+    if (userAnswer.isEmpty) {
+      setState(() => _error = 'দয়া করে আগে তোমার উত্তর লিখো।');
+      return;
+    }
+
     setState(() {
       _currentStep = AnalyzerStep.reviewing;
       _isLoading = true;
+      _error = '';
     });
 
     try {
       final response = await AIService().sendMessageWithSystem(
         'Task: ${_task!.instruction}\n'
         'Expected correct answer: ${_task!.correctAnswer}\n'
-        'User\'s answer: ${_answerController.text.trim()}\n\n'
+        'User\'s answer: $userAnswer\n\n'
         'Review the user\'s answer. Is it correct? '
         'Return ONLY valid JSON with keys:\n'
         '- isCorrect: true/false (be generous - accept variations)\n'
@@ -169,42 +183,257 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
         maxTokens: 1024,
       );
 
-      final cleaned = _extractJson(response);
-      final data = jsonDecode(cleaned) as Map<String, dynamic>;
-      _review = AnswerReview.fromJson(data);
+      final data = _decodeJsonObject(response);
+      final review = AnswerReview.fromJson(data);
 
       setState(() {
+        _review = review.feedback.isEmpty
+            ? _buildLocalReview(userAnswer, _task!.correctAnswer)
+            : review;
         _currentStep = AnalyzerStep.completed;
         _isLoading = false;
       });
 
       HapticFeedback.mediumImpact();
-    } catch (e) {
+    } catch (_) {
       setState(() {
-        _error = 'উত্তর পর্যালোচনা করতে সমস্যা হয়েছে।';
+        _review = _buildLocalReview(userAnswer, _task!.correctAnswer);
+        _error = 'AI review unavailable, offline feedback দেখানো হচ্ছে।';
         _isLoading = false;
-        _currentStep = AnalyzerStep.practicing;
+        _currentStep = AnalyzerStep.completed;
       });
+      HapticFeedback.mediumImpact();
     }
   }
 
-  String _extractJson(String text) {
-    text = text.trim();
-    if (text.startsWith('```')) {
-      text = text.replaceAll(RegExp(r'```(json)?'), '').trim();
-    }
-    final braceStart = text.indexOf('{');
-    final braceEnd = text.lastIndexOf('}');
-    if (braceStart != -1 && braceEnd != -1 && braceEnd > braceStart) {
-      return text.substring(braceStart, braceEnd + 1);
-    }
-    final arrStart = text.indexOf('[');
-    final arrEnd = text.lastIndexOf(']');
-    if (arrStart != -1 && arrEnd != -1 && arrEnd > arrStart) {
-      return text.substring(arrStart, arrEnd + 1);
-    }
-    return text;
+  Future<void> _openHistory() async {
+    await Navigator.push(
+      context,
+      MaterialPageRoute(builder: (_) => const SentenceAnalysisHistoryScreen()),
+    );
   }
+
+  Future<void> _saveCurrentAnalysis() async {
+    final analysis = _analysis;
+    if (analysis == null || _isSaved) return;
+
+    await HiveService.saveSentenceAnalysis({
+      'date': DateTime.now().toIso8601String(),
+      'banglaSentence': analysis.banglaSentence,
+      'tense': analysis.tense,
+      'subject': analysis.subject,
+      'object': analysis.object,
+      'wordBreakdown': analysis.wordBreakdown,
+      'englishTranslation': analysis.englishTranslation,
+      'explanation': analysis.explanation,
+      if (_task != null)
+        'practiceTask': {
+          'instruction': _task!.instruction,
+          'correctAnswer': _task!.correctAnswer,
+        },
+      if (_answerController.text.trim().isNotEmpty) 'userAnswer': _answerController.text.trim(),
+      if (_review != null)
+        'answerReview': {
+          'isCorrect': _review!.isCorrect,
+          'feedback': _review!.feedback,
+        },
+    });
+
+    if (!mounted) return;
+    setState(() => _isSaved = true);
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: const Row(
+          children: [
+            Icon(Icons.check_circle_rounded, color: Colors.white, size: 20),
+            SizedBox(width: 8),
+            Text('Saved to list!'),
+          ],
+        ),
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: AppColors.success,
+        action: SnackBarAction(
+          label: 'View',
+          textColor: Colors.white,
+          onPressed: _openHistory,
+        ),
+      ),
+    );
+  }
+
+  Map<String, dynamic> _decodeJsonObject(String response) {
+    final cleaned = _extractJson(response);
+    final decoded = jsonDecode(cleaned);
+    if (decoded is Map<String, dynamic>) return decoded;
+    if (decoded is Map) return Map<String, dynamic>.from(decoded);
+    throw const FormatException('Expected a JSON object');
+  }
+
+  String _extractJson(String text) {
+    final cleaned = text
+        .replaceAll(RegExp(r'```json', caseSensitive: false), '')
+        .replaceAll('```', '')
+        .trim();
+
+    final objectJson = _extractBalancedJson(cleaned, '{', '}');
+    if (objectJson != null) return objectJson;
+
+    final arrayJson = _extractBalancedJson(cleaned, '[', ']');
+    if (arrayJson != null) return arrayJson;
+
+    return cleaned;
+  }
+
+  String? _extractBalancedJson(String text, String open, String close) {
+    final start = text.indexOf(open);
+    if (start == -1) return null;
+
+    var depth = 0;
+    var inString = false;
+    var escaped = false;
+    for (var i = start; i < text.length; i++) {
+      final char = text[i];
+      if (escaped) {
+        escaped = false;
+        continue;
+      }
+      if (char == '\\') {
+        escaped = true;
+        continue;
+      }
+      if (char == '"') {
+        inString = !inString;
+        continue;
+      }
+      if (inString) continue;
+      if (char == open) depth++;
+      if (char == close) depth--;
+      if (depth == 0) return text.substring(start, i + 1);
+    }
+    return null;
+  }
+
+  SentenceAnalysis _buildLocalAnalysis(String tense) {
+    final data = _localAnalysisData[tense] ?? _localAnalysisData['Present Simple']!;
+    return SentenceAnalysis.fromJson(data);
+  }
+
+  PracticeTask _buildLocalTask(SentenceAnalysis analysis) {
+    final expected = analysis.englishTranslation.trim().isNotEmpty
+        ? analysis.englishTranslation.trim()
+        : 'I eat rice every day.';
+    return PracticeTask(
+      instruction: 'এখন তুমি চেষ্টা করো: "${analysis.banglaSentence}" বাক্যটি ইংরেজিতে অনুবাদ করো।',
+      correctAnswer: expected,
+    );
+  }
+
+  AnswerReview _buildLocalReview(String userAnswer, String correctAnswer) {
+    final normalizedUser = _normalizeAnswer(userAnswer);
+    final normalizedCorrect = _normalizeAnswer(correctAnswer);
+    final isCorrect = normalizedUser == normalizedCorrect ||
+        normalizedCorrect.contains(normalizedUser) ||
+        normalizedUser.contains(normalizedCorrect);
+
+    return AnswerReview(
+      isCorrect: isCorrect,
+      feedback: isCorrect
+          ? 'ধন্যবাদ! তোমার উত্তরটি সঠিক। এভাবেই tense pattern মনে রেখে practice চালিয়ে যাও।'
+          : 'ভালো চেষ্টা! সঠিক উত্তর হবে: $correctAnswer। Subject + Verb + Object order এবং tense marker ভালোভাবে মিলিয়ে দেখো।',
+    );
+  }
+
+  String _normalizeAnswer(String value) {
+    return value
+        .toLowerCase()
+        .replaceAll(RegExp(r'[^a-z0-9\s]'), '')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
+  }
+
+  static final Map<String, Map<String, dynamic>> _localAnalysisData = {
+    'Present Simple': {
+      'banglaSentence': 'আমি প্রতিদিন ভাত খাই।',
+      'tense': 'Present Simple — নিয়মিত কাজ বা অভ্যাস বোঝাতে ব্যবহার হয়।',
+      'subject': 'আমি (I)',
+      'object': 'ভাত (rice)',
+      'wordBreakdown': 'আমি = Subject\nপ্রতিদিন = Time expression\nভাত = Object\nখাই = Present simple verb idea',
+      'englishTranslation': 'I eat rice every day.',
+      'explanation': 'এই বাক্যে কাজটি নিয়মিত হয়। English-এ Subject + base verb + object + time ব্যবহার করা হয়েছে।',
+    },
+    'Present Continuous': {
+      'banglaSentence': 'সে এখন বই পড়ছে।',
+      'tense': 'Present Continuous — এখন ঘটছে এমন কাজ বোঝায়।',
+      'subject': 'সে (He/She)',
+      'object': 'বই (book)',
+      'wordBreakdown': 'সে = Subject\nএখন = এখন/now\nবই = Object\nপড়ছে = is reading',
+      'englishTranslation': 'She is reading a book now.',
+      'explanation': 'বাংলায় “ছে” থাকলে অনেক সময় English-এ am/is/are + verb-ing ব্যবহার হয়।',
+    },
+    'Present Perfect': {
+      'banglaSentence': 'আমি কাজটি শেষ করেছি।',
+      'tense': 'Present Perfect — অতীতে শেষ হয়েছে কিন্তু বর্তমানের সাথে সম্পর্ক আছে।',
+      'subject': 'আমি (I)',
+      'object': 'কাজটি (the work)',
+      'wordBreakdown': 'আমি = Subject\nকাজটি = Object\nশেষ করেছি = have finished',
+      'englishTranslation': 'I have finished the work.',
+      'explanation': 'এই tense-এ have/has + past participle ব্যবহার হয়। কাজ শেষ হওয়ার ফল এখন গুরুত্বপূর্ণ।',
+    },
+    'Past Simple': {
+      'banglaSentence': 'রাহিম গতকাল স্কুলে গেল।',
+      'tense': 'Past Simple — অতীতে শেষ হওয়া কাজ বোঝায়।',
+      'subject': 'রাহিম (Rahim)',
+      'object': '',
+      'wordBreakdown': 'রাহিম = Subject\nগতকাল = Past time\nস্কুলে = Place\nগেল = went',
+      'englishTranslation': 'Rahim went to school yesterday.',
+      'explanation': 'Past Simple-এ verb-এর past form ব্যবহার হয়। এখানে went হলো go-এর past form।',
+    },
+    'Past Continuous': {
+      'banglaSentence': 'আমি তখন গান শুনছিলাম।',
+      'tense': 'Past Continuous — অতীতের কোনো সময়ে কাজ চলছিল বোঝায়।',
+      'subject': 'আমি (I)',
+      'object': 'গান (music/song)',
+      'wordBreakdown': 'আমি = Subject\nতখন = at that time\nগান = Object\nশুনছিলাম = was listening',
+      'englishTranslation': 'I was listening to music then.',
+      'explanation': 'Past Continuous-এ was/were + verb-ing ব্যবহার হয়।',
+    },
+    'Past Perfect': {
+      'banglaSentence': 'সে আসার আগে আমি খেয়ে নিয়েছিলাম।',
+      'tense': 'Past Perfect — অতীতের আরেকটি ঘটনার আগেই শেষ হওয়া কাজ।',
+      'subject': 'আমি (I)',
+      'object': '',
+      'wordBreakdown': 'সে আসার আগে = before he came\nআমি = Subject\nখেয়ে নিয়েছিলাম = had eaten',
+      'englishTranslation': 'I had eaten before he came.',
+      'explanation': 'Past Perfect-এ had + past participle ব্যবহার হয়। আগে শেষ হওয়া কাজটি had eaten।',
+    },
+    'Future Simple': {
+      'banglaSentence': 'আমি কাল বাজারে যাব।',
+      'tense': 'Future Simple — ভবিষ্যতের কাজ বোঝায়।',
+      'subject': 'আমি (I)',
+      'object': '',
+      'wordBreakdown': 'আমি = Subject\nকাল = Tomorrow\nবাজারে = Place\nযাব = will go',
+      'englishTranslation': 'I will go to the market tomorrow.',
+      'explanation': 'Future Simple-এ সাধারণত will + base verb ব্যবহার হয়।',
+    },
+    'Future Continuous': {
+      'banglaSentence': 'সে সন্ধ্যায় পড়তে থাকবে।',
+      'tense': 'Future Continuous — ভবিষ্যতের কোনো সময়ে কাজ চলতে থাকবে।',
+      'subject': 'সে (He/She)',
+      'object': '',
+      'wordBreakdown': 'সে = Subject\nসন্ধ্যায় = in the evening\nপড়তে থাকবে = will be studying',
+      'englishTranslation': 'She will be studying in the evening.',
+      'explanation': 'Future Continuous-এ will be + verb-ing ব্যবহার হয়।',
+    },
+    'Future Perfect': {
+      'banglaSentence': 'আমি রাতের আগে কাজটি শেষ করে ফেলব।',
+      'tense': 'Future Perfect — ভবিষ্যতের নির্দিষ্ট সময়ের আগে কাজ শেষ হবে।',
+      'subject': 'আমি (I)',
+      'object': 'কাজটি (the work)',
+      'wordBreakdown': 'আমি = Subject\nরাতের আগে = before night\nকাজটি = Object\nশেষ করে ফেলব = will have finished',
+      'englishTranslation': 'I will have finished the work before night.',
+      'explanation': 'Future Perfect-এ will have + past participle ব্যবহার হয়।',
+    },
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -233,6 +462,17 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
           ],
         ),
         actions: [
+          IconButton(
+            onPressed: _openHistory,
+            icon: const Icon(Icons.bookmarks_rounded),
+            tooltip: 'Saved Analyses',
+          ),
+          if (_analysis != null)
+            IconButton(
+              onPressed: _isSaved ? null : _saveCurrentAnalysis,
+              icon: Icon(_isSaved ? Icons.bookmark_added_rounded : Icons.bookmark_add_outlined),
+              tooltip: _isSaved ? 'Already Saved' : 'Save Analysis',
+            ),
           if (_currentStep != AnalyzerStep.topic)
             TextButton.icon(
               onPressed: _reset,
@@ -403,9 +643,9 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
+          const SizedBox(
             width: 64, height: 64,
-            child: CircularProgressIndicator(strokeWidth: 4, color: const Color(0xFF8B5CF6)),
+            child: CircularProgressIndicator(strokeWidth: 4, color: Color(0xFF8B5CF6)),
           ),
           const SizedBox(height: 24),
           Text(message,
@@ -553,9 +793,33 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
           if (_error.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 12),
-              child: Text(_error, style: const TextStyle(color: Colors.red, fontWeight: FontWeight.w500)),
+              child: Text(
+                _error,
+                style: TextStyle(
+                  color: _error.contains('offline') || _error.contains('unavailable')
+                      ? const Color(0xFFF59E0B)
+                      : Colors.red,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
             ),
           const SizedBox(height: 24),
+          SizedBox(
+            width: double.infinity,
+            height: 50,
+            child: OutlinedButton.icon(
+              onPressed: _isSaved ? null : _saveCurrentAnalysis,
+              icon: Icon(_isSaved ? Icons.bookmark_added_rounded : Icons.bookmark_add_outlined),
+              label: Text(_isSaved ? 'Saved to List' : 'Save This Analysis',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: const Color(0xFF8B5CF6),
+                side: const BorderSide(color: Color(0xFF8B5CF6), width: 1.4),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
           SizedBox(
             width: double.infinity, height: 52,
             child: FilledButton.icon(
@@ -690,7 +954,15 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
           if (_error.isNotEmpty)
             Padding(
               padding: const EdgeInsets.only(top: 12),
-              child: Text(_error, style: const TextStyle(color: Colors.red, fontWeight: FontWeight.w500)),
+              child: Text(
+                _error,
+                style: TextStyle(
+                  color: _error.contains('offline') || _error.contains('unavailable')
+                      ? const Color(0xFFF59E0B)
+                      : Colors.red,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
             ),
           const SizedBox(height: 20),
           SizedBox(
@@ -815,6 +1087,22 @@ class _SentenceAnalyzerScreenState extends ConsumerState<SentenceAnalyzerScreen>
             ),
           ],
           const SizedBox(height: 24),
+          SizedBox(
+            width: double.infinity,
+            height: 50,
+            child: OutlinedButton.icon(
+              onPressed: _isSaved ? null : _saveCurrentAnalysis,
+              icon: Icon(_isSaved ? Icons.bookmark_added_rounded : Icons.bookmark_add_outlined),
+              label: Text(_isSaved ? 'Saved to List' : 'Save Full Result',
+                style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: AppColors.primary,
+                side: const BorderSide(color: AppColors.primary, width: 1.4),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
           SizedBox(
             width: double.infinity, height: 52,
             child: FilledButton.icon(
