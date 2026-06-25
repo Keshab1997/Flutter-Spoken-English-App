@@ -6,6 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import '../models/user_model.dart';
+import '../models/game/game_progress_model.dart';
 import '../services/hive_service.dart';
 import '../services/game_data_sync_service.dart';
 
@@ -61,6 +62,8 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
         // Load user's game data from Firebase after successful auth
         final syncService = GameDataSyncService();
         await syncService.loadUserDataFromFirebase();
+        
+        print('✅ User data loaded from Firebase: ${userModel.name}');
       } else {
         // Fallback or if document doesn't exist yet
         state = AsyncValue.data(UserModel(
@@ -109,6 +112,29 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
 
         // Store user in Firestore
         await _firestore.collection('users').doc(firebaseUser.uid).set(newUser.toMap());
+        
+        // 🔥 Create initial game progress for new user
+        final initialProgress = GameProgressModel(
+          userId: firebaseUser.uid,
+          currentLevel: 1,
+          currentXP: 0,
+          totalCoins: 0,
+          streak: 1, // Start with 1-day streak!
+          unlockedModes: const [],
+          weeklyStreak: 1,
+          longestStreak: 1,
+          missedDays: 0,
+          totalActiveDays: 1,
+          lastActiveDate: DateTime.now(),
+        );
+        
+        // Upload to Firebase
+        await _firestore
+            .collection('game_progress')
+            .doc(firebaseUser.uid)
+            .set(initialProgress.toFirestoreMap());
+        
+        print('✅ Initial game progress created for new user: $name');
         
         state = AsyncValue.data(newUser);
       } else {
@@ -177,6 +203,29 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
             currentLevel: 'Beginner',
           );
           await _firestore.collection('users').doc(firebaseUser.uid).set(userModel.toMap());
+          
+          // 🔥 Create initial game progress for new Google user
+          final initialProgress = GameProgressModel(
+            userId: firebaseUser.uid,
+            currentLevel: 1,
+            currentXP: 0,
+            totalCoins: 0,
+            streak: 1, // Start with 1-day streak!
+            unlockedModes: const [],
+            weeklyStreak: 1,
+            longestStreak: 1,
+            missedDays: 0,
+            totalActiveDays: 1,
+            lastActiveDate: DateTime.now(),
+          );
+          
+          // Upload to Firebase
+          await _firestore
+              .collection('game_progress')
+              .doc(firebaseUser.uid)
+              .set(initialProgress.toFirestoreMap());
+          
+          print('✅ Initial game progress created for new Google user: ${userModel.name}');
         } else {
           userModel = UserModel.fromMap(doc.data()!, firebaseUser.uid);
         }
