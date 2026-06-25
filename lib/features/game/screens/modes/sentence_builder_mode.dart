@@ -36,6 +36,7 @@ class _SentenceBuilderModeScreenState extends ConsumerState<SentenceBuilderModeS
   bool _showHint = false;
   bool _isAnswerSubmitted = false;
   bool _isCorrect = false;
+  int _nextQuestionCountdown = 0;
   
   late AnimationController _shakeController;
   late Animation<double> _shakeAnimation;
@@ -165,9 +166,27 @@ class _SentenceBuilderModeScreenState extends ConsumerState<SentenceBuilderModeS
       _saveWrongAnswer(question, userAnswer, correctAnswer);
     }
     
-    // Move to next question after delay
-    Future.delayed(const Duration(milliseconds: 2500), () {
-      if (mounted) {
+    // Move to next question after delay with countdown
+    // Wrong answer: 5 seconds to read explanation
+    // Correct answer: 2.5 seconds
+    final delaySeconds = isCorrect ? 3 : 5;
+    setState(() {
+      _nextQuestionCountdown = delaySeconds;
+    });
+    
+    // Start countdown timer
+    Timer.periodic(const Duration(seconds: 1), (timer) {
+      if (!mounted) {
+        timer.cancel();
+        return;
+      }
+      
+      setState(() {
+        _nextQuestionCountdown--;
+      });
+      
+      if (_nextQuestionCountdown <= 0) {
+        timer.cancel();
         if (_currentQuestionIndex < _selectedQuestions.length - 1) {
           setState(() {
             _currentQuestionIndex++;
@@ -702,62 +721,100 @@ class _SentenceBuilderModeScreenState extends ConsumerState<SentenceBuilderModeS
   }
 
   Widget _buildFeedback(Map<String, dynamic> question) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withOpacity(0.1),
-            blurRadius: 10,
-            offset: const Offset(0, 4),
-          ),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          if (!_isCorrect) ...[
-            const Row(
-              children: [
-                Icon(Icons.check_circle, color: Colors.green, size: 20),
-                SizedBox(width: 8),
-                Text(
-                  'Correct Answer:',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-                ),
-              ],
-            ),
-            const SizedBox(height: 8),
-            Text(
-              question['correct'],
-              style: const TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.w600,
-                color: Colors.green,
-              ),
-            ),
-            const SizedBox(height: 16),
-          ],
-          const Row(
-            children: [
-              Icon(Icons.info_outline, color: AppColors.primary, size: 20),
-              SizedBox(width: 8),
-              Text(
-                'Explanation:',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+    return Column(
+      children: [
+        Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.1),
+                blurRadius: 10,
+                offset: const Offset(0, 4),
               ),
             ],
           ),
-          const SizedBox(height: 8),
-          Text(
-            question['explanation'] ?? '',
-            style: const TextStyle(fontSize: 14, color: Colors.black87, height: 1.5),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (!_isCorrect) ...[
+                const Row(
+                  children: [
+                    Icon(Icons.check_circle, color: Colors.green, size: 20),
+                    SizedBox(width: 8),
+                    Text(
+                      'Correct Answer:',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  question['correct'],
+                  style: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.green,
+                  ),
+                ),
+                const SizedBox(height: 16),
+              ],
+              const Row(
+                children: [
+                  Icon(Icons.info_outline, color: AppColors.primary, size: 20),
+                  SizedBox(width: 8),
+                  Text(
+                    'Explanation:',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 8),
+              Text(
+                question['explanation'] ?? '',
+                style: const TextStyle(fontSize: 14, color: Colors.black87, height: 1.5),
+              ),
+            ],
+          ),
+        ),
+        
+        // Countdown indicator
+        if (_nextQuestionCountdown > 0) ...[
+          const SizedBox(height: 16),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+            decoration: BoxDecoration(
+              color: _isCorrect ? Colors.green.shade50 : Colors.orange.shade50,
+              borderRadius: BorderRadius.circular(12),
+              border: Border.all(
+                color: _isCorrect ? Colors.green.shade200 : Colors.orange.shade200,
+              ),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.timer_outlined,
+                  color: _isCorrect ? Colors.green : Colors.orange,
+                  size: 20,
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  'Next question in $_nextQuestionCountdown second${_nextQuestionCountdown > 1 ? 's' : ''}',
+                  style: TextStyle(
+                    color: _isCorrect ? Colors.green.shade700 : Colors.orange.shade700,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
           ),
         ],
-      ),
+      ],
     );
   }
 
