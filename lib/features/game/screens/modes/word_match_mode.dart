@@ -70,30 +70,51 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
   late Animation<double> _scoreAnim;
   late AnimationController _pulseAnimCtrl;
   late Animation<double> _pulseAnim;
+  late AnimationController _celebrationAnimCtrl;
+  late Animation<double> _celebrationAnim;
+  late AnimationController _shakeAnimCtrl;
+  late Animation<double> _shakeAnim;
 
   final List<Color> _gradientColors = [
-    const Color(0xFF6366F1),
-    const Color(0xFF8B5CF6),
-    const Color(0xFF6D28D9),
+    const Color(0xFF667eea),
+    const Color(0xFF764ba2),
   ];
 
   @override
   void initState() {
     super.initState();
     _scoreAnimCtrl = AnimationController(
-      duration: const Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 400),
       vsync: this,
     );
     _scoreAnim = Tween<double>(begin: 1.0, end: 1.3).animate(
-      CurvedAnimation(parent: _scoreAnimCtrl, curve: Curves.easeInOut),
+      CurvedAnimation(parent: _scoreAnimCtrl, curve: Curves.elasticOut),
     );
+    
     _pulseAnimCtrl = AnimationController(
-      duration: const Duration(milliseconds: 1500),
+      duration: const Duration(milliseconds: 1200),
       vsync: this,
     )..repeat(reverse: true);
-    _pulseAnim = Tween<double>(begin: 0.95, end: 1.05).animate(
+    _pulseAnim = Tween<double>(begin: 0.95, end: 1.08).animate(
       CurvedAnimation(parent: _pulseAnimCtrl, curve: Curves.easeInOut),
     );
+
+    _celebrationAnimCtrl = AnimationController(
+      duration: const Duration(milliseconds: 600),
+      vsync: this,
+    );
+    _celebrationAnim = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _celebrationAnimCtrl, curve: Curves.elasticOut),
+    );
+
+    _shakeAnimCtrl = AnimationController(
+      duration: const Duration(milliseconds: 500),
+      vsync: this,
+    );
+    _shakeAnim = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _shakeAnimCtrl, curve: Curves.elasticIn),
+    );
+
     _loadWords();
   }
 
@@ -101,6 +122,8 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
   void dispose() {
     _scoreAnimCtrl.dispose();
     _pulseAnimCtrl.dispose();
+    _celebrationAnimCtrl.dispose();
+    _shakeAnimCtrl.dispose();
     super.dispose();
   }
 
@@ -187,11 +210,12 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
 
       ref.read(soundServiceProvider).playCorrect();
       _scoreAnimCtrl.forward().then((_) => _scoreAnimCtrl.reverse());
+      _celebrationAnimCtrl.forward().then((_) => _celebrationAnimCtrl.reverse());
       _tts.speak(_selectedRight!.text);
 
       setState(() {});
 
-      Future.delayed(const Duration(milliseconds: 400), () async {
+      Future.delayed(const Duration(milliseconds: 500), () async {
         _clearSelection();
         _isChecking = false;
 
@@ -205,10 +229,11 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
 
       _selectedLeft!.isWrong = true;
       _selectedRight!.isWrong = true;
+      _shakeAnimCtrl.forward().then((_) => _shakeAnimCtrl.reverse());
 
       setState(() {});
 
-      Future.delayed(const Duration(milliseconds: 600), () {
+      Future.delayed(const Duration(milliseconds: 700), () {
         _clearSelection();
         _isChecking = false;
       });
@@ -238,7 +263,7 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
 
     _saveProgress(xpEarned, coinsEarned, accuracy);
 
-    await Future.delayed(const Duration(milliseconds: 600));
+    await Future.delayed(const Duration(milliseconds: 800));
     if (mounted) {
       Navigator.pushReplacement(
         context,
@@ -297,88 +322,89 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
 
     return Scaffold(
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : Column(
-              children: [
-                // ── Gradient Header ──
-                _buildHeader(theme),
-
-                // ── Progress bar ──
-                _buildProgressBar(),
-
-                // ── Instruction ──
-                _buildInstruction(),
-
-                // ── Game Grid ──
-                Expanded(
-                  child: Container(
+          ? Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: [
-                          Colors.grey.shade50,
-                          Colors.indigo.shade50.withOpacity(0.3),
-                        ],
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                      ),
+                      gradient: LinearGradient(colors: _gradientColors),
+                      shape: BoxShape.circle,
                     ),
-                    child: Row(
-                      children: [
-                        // Left column — Bangla
-                        Expanded(
-                          child: Padding(
-                            padding:
-                                const EdgeInsets.only(left: 8, right: 4, top: 8),
-                            child: _buildCardColumn(
+                    child: const CircularProgressIndicator(color: Colors.white),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Loading words...',
+                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                  ),
+                ],
+              ),
+            )
+          : Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [
+                    Colors.grey.shade50,
+                    Colors.purple.shade50.withOpacity(0.3),
+                  ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                ),
+              ),
+              child: Column(
+                children: [
+                  // ── Enhanced Gradient Header ──
+                  _buildEnhancedHeader(theme),
+
+                  // ── Progress Section ──
+                  _buildProgressSection(),
+
+                  // ── Enhanced Instruction ──
+                  _buildEnhancedInstruction(),
+
+                  // ── Game Grid ──
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
+                      child: Row(
+                        children: [
+                          // Left column — Bangla
+                          Expanded(
+                            child: _buildEnhancedCardColumn(
                               _leftCards,
                               isLeft: true,
                               theme: theme,
                             ),
                           ),
-                        ),
-                        // Center divider
-                        Container(
-                          width: 2,
-                          margin:
-                              const EdgeInsets.symmetric(vertical: 12),
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [
-                                Colors.transparent,
-                                Colors.indigo.withOpacity(0.3),
-                                Colors.transparent,
-                              ],
-                            ),
-                          ),
-                        ),
-                        // Right column — English
-                        Expanded(
-                          child: Padding(
-                            padding:
-                                const EdgeInsets.only(left: 4, right: 8, top: 8),
-                            child: _buildCardColumn(
+                          // Center animated divider
+                          _buildCenterDivider(),
+                          // Right column — English
+                          Expanded(
+                            child: _buildEnhancedCardColumn(
                               _rightCards,
                               isLeft: false,
                               theme: theme,
                             ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
     );
   }
 
-  Widget _buildHeader(ThemeData theme) {
+  Widget _buildEnhancedHeader(ThemeData theme) {
     return Container(
       padding: EdgeInsets.only(
-        top: MediaQuery.of(context).padding.top + 8,
-        left: 16,
-        right: 16,
-        bottom: 20,
+        top: MediaQuery.of(context).padding.top + 12,
+        left: 20,
+        right: 20,
+        bottom: 24,
       ),
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -387,42 +413,56 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
           end: Alignment.bottomRight,
         ),
         borderRadius: const BorderRadius.only(
-          bottomLeft: Radius.circular(30),
-          bottomRight: Radius.circular(30),
+          bottomLeft: Radius.circular(32),
+          bottomRight: Radius.circular(32),
         ),
         boxShadow: [
           BoxShadow(
-            color: _gradientColors[0].withOpacity(0.4),
-            blurRadius: 20,
-            offset: const Offset(0, 8),
+            color: _gradientColors[0].withOpacity(0.5),
+            blurRadius: 24,
+            offset: const Offset(0, 10),
           ),
         ],
       ),
       child: Column(
         children: [
-          // Back button + title
+          // Back button + title + stats
           Row(
             children: [
               Container(
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.white.withOpacity(0.25),
+                  borderRadius: BorderRadius.circular(14),
+                  border: Border.all(color: Colors.white.withOpacity(0.3), width: 1.5),
                 ),
                 child: IconButton(
-                  icon: const Icon(Icons.arrow_back_rounded,
-                      color: Colors.white),
+                  icon: const Icon(Icons.arrow_back_ios_new_rounded,
+                      color: Colors.white, size: 20),
                   onPressed: () => Navigator.pop(context),
                 ),
               ),
-              const SizedBox(width: 12),
-              const Expanded(
-                child: Text(
-                  'Word Match',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                  ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Word Match',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: -0.5,
+                      ),
+                    ),
+                    Text(
+                      'Match the pairs',
+                      style: TextStyle(
+                        color: Colors.white.withOpacity(0.8),
+                        fontSize: 13,
+                      ),
+                    ),
+                  ],
                 ),
               ),
               // Score
@@ -432,25 +472,44 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
                   scale: _scoreAnim.value,
                   child: Container(
                     padding:
-                        const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                     decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.2),
-                      borderRadius: BorderRadius.circular(16),
+                      gradient: LinearGradient(
+                        colors: [
+                          Colors.amber.shade300,
+                          Colors.orange.shade400,
+                        ],
+                      ),
+                      borderRadius: BorderRadius.circular(20),
                       border: Border.all(
-                          color: Colors.white.withOpacity(0.3)),
+                          color: Colors.white.withOpacity(0.4), width: 2),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.orange.withOpacity(0.4),
+                          blurRadius: 12,
+                          offset: const Offset(0, 4),
+                        ),
+                      ],
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.star_rounded,
-                            color: Colors.amberAccent, size: 20),
+                        const Icon(Icons.stars_rounded,
+                            color: Colors.white, size: 22),
                         const SizedBox(width: 6),
                         Text(
                           '$_score',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                            fontSize: 20,
+                            shadows: [
+                              Shadow(
+                                color: Colors.black26,
+                                offset: Offset(0, 1),
+                                blurRadius: 2,
+                              ),
+                            ],
                           ),
                         ),
                       ],
@@ -458,253 +517,389 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
                   ),
                 ),
               ),
-              const SizedBox(width: 8),
-              // Streak
-              if (_streak > 1)
-                AnimatedBuilder(
-                  animation: _pulseAnim,
-                  builder: (context, child) => Transform.scale(
-                    scale: _pulseAnim.value,
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 10, vertical: 8),
-                      decoration: BoxDecoration(
-                        color: Colors.orange.withOpacity(0.3),
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(
-                            color: Colors.orange.withOpacity(0.5)),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          const Icon(
-                            Icons.local_fire_department_rounded,
-                            color: Colors.deepOrange,
-                            size: 18,
-                          ),
-                          const SizedBox(width: 4),
-                          Text(
-                            '$_streak',
-                            style: const TextStyle(
-                              color: Colors.deepOrange,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16,
-                            ),
-                          ),
-                        ],
-                      ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          // Streak indicator
+          if (_streak > 1)
+            AnimatedBuilder(
+              animation: _pulseAnim,
+              builder: (context, child) => Transform.scale(
+                scale: _pulseAnim.value,
+                child: Container(
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 16, vertical: 10),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [Colors.orange.shade400, Colors.red.shade400],
                     ),
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                        color: Colors.white.withOpacity(0.4), width: 2),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.orange.withOpacity(0.5),
+                        blurRadius: 16,
+                        offset: const Offset(0, 4),
+                      ),
+                    ],
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Icon(
+                        Icons.local_fire_department_rounded,
+                        color: Colors.white,
+                        size: 22,
+                      ),
+                      const SizedBox(width: 8),
+                      Text(
+                        '$_streak Streak!',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 16,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        '+${(_streak - 1) * 2} bonus',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.9),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildProgressSection() {
+    return Container(
+      margin: const EdgeInsets.fromLTRB(20, 16, 20, 12),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.08),
+            blurRadius: 16,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(colors: _gradientColors),
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Icon(Icons.emoji_events_rounded,
+                        color: Colors.white, size: 18),
+                  ),
+                  const SizedBox(width: 10),
+                  const Text(
+                    'Progress',
+                    style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(colors: _gradientColors),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: Text(
+                  '$_matchedCount / $_totalPairs',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
             ],
           ),
           const SizedBox(height: 12),
-          // Pairs count
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: LinearProgressIndicator(
+              value: _matchedCount / _totalPairs,
+              minHeight: 10,
+              backgroundColor: Colors.grey.shade200,
+              valueColor: AlwaysStoppedAnimation<Color>(
+                _matchedCount == _totalPairs
+                    ? Colors.green
+                    : _gradientColors[0],
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ...List.generate(_totalPairs, (i) {
-                final isMatched = i < _matchedCount;
-                return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 3),
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 300),
-                    width: 32,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: isMatched
-                          ? Colors.amberAccent
-                          : Colors.white.withOpacity(0.3),
-                      borderRadius: BorderRadius.circular(2),
-                    ),
+            children: List.generate(_totalPairs, (i) {
+              final isMatched = i < _matchedCount;
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 3),
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 400),
+                  width: 8,
+                  height: 8,
+                  decoration: BoxDecoration(
+                    color: isMatched ? Colors.green : Colors.grey.shade300,
+                    shape: BoxShape.circle,
+                    boxShadow: isMatched
+                        ? [
+                            BoxShadow(
+                              color: Colors.green.withOpacity(0.5),
+                              blurRadius: 6,
+                            ),
+                          ]
+                        : null,
                   ),
-                );
-              }),
-            ],
+                ),
+              );
+            }),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildProgressBar() {
+  Widget _buildEnhancedInstruction() {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 16),
-      transform: Matrix4.translationValues(0, -10, 0),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(8),
-        child: LinearProgressIndicator(
-          value: _matchedCount / _totalPairs,
-          minHeight: 6,
-          backgroundColor: Colors.grey.shade200,
-          valueColor: AlwaysStoppedAnimation<Color>(
-            _matchedCount == _totalPairs
-                ? Colors.green
-                : _gradientColors[0],
-          ),
+      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.blue.shade50,
+            Colors.purple.shade50,
+          ],
         ),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.purple.shade100, width: 1.5),
       ),
-    );
-  }
-
-  Widget _buildInstruction() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(4),
+            padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.indigo.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(8),
+              color: Colors.purple.shade100,
+              borderRadius: BorderRadius.circular(10),
             ),
-            child: const Icon(Icons.touch_app_rounded,
-                color: Colors.indigo, size: 16),
+            child: Icon(Icons.touch_app_rounded,
+                color: _gradientColors[1], size: 20),
           ),
-          const SizedBox(width: 8),
+          const SizedBox(width: 12),
           Expanded(
             child: Text(
-              'Tap a বাংলা word, then its English match',
+              'Tap a বাংলা word, then tap its English match',
               style: TextStyle(
-                color: Colors.grey.shade600,
-                fontSize: 12,
-                fontWeight: FontWeight.w500,
+                color: Colors.grey.shade700,
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
               ),
             ),
           ),
-          Container(
-            padding:
-                const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-            decoration: BoxDecoration(
-              color: Colors.indigo.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Text(
-              '$_matchedCount/$_totalPairs',
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 12,
-                color: Colors.indigo,
-              ),
-            ),
-          ),
+          Icon(Icons.arrow_forward_rounded,
+              color: _gradientColors[1], size: 18),
         ],
       ),
     );
   }
 
-  Widget _buildCardColumn(List<_MatchCard> cards,
+  Widget _buildCenterDivider() {
+    return Container(
+      width: 3,
+      margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 8),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            Colors.transparent,
+            _gradientColors[0].withOpacity(0.4),
+            _gradientColors[1].withOpacity(0.4),
+            Colors.transparent,
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+        ),
+        borderRadius: BorderRadius.circular(2),
+      ),
+    );
+  }
+
+  Widget _buildEnhancedCardColumn(List<_MatchCard> cards,
       {required bool isLeft, required ThemeData theme}) {
-    return ListView.builder(
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      physics: const BouncingScrollPhysics(),
-      itemCount: cards.length,
-      itemBuilder: (_, i) {
-        final card = cards[i];
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 8),
-          child: GestureDetector(
-            onTap: () =>
-                isLeft ? _onLeftTap(card) : _onRightTap(card),
-            child: AnimatedContainer(
-              duration: const Duration(milliseconds: 250),
-              curve: Curves.easeOutBack,
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 12, vertical: 16),
-              decoration: BoxDecoration(
-                color: _getCardColor(card),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                  color: _getBorderColor(card),
-                  width: card.isSelected || card.isMatched || card.isWrong
-                      ? 2.5
-                      : 1.5,
-                ),
-                boxShadow: [
-                  if (card.isSelected)
-                    BoxShadow(
-                      color: Colors.indigo.withOpacity(0.2),
-                      blurRadius: 12,
-                      offset: const Offset(0, 4),
-                    )
-                  else if (card.isMatched)
-                    BoxShadow(
-                      color: Colors.green.withOpacity(0.2),
-                      blurRadius: 8,
-                      offset: const Offset(0, 2),
-                    )
-                  else
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
-                      blurRadius: 4,
-                      offset: const Offset(0, 2),
-                    ),
-                ],
-              ),
-              child: Row(
-                children: [
-                  if (!isLeft && card.isMatched)
-                    _buildStatusIcon(),
-                  Expanded(
-                    child: Text(
-                      card.text,
-                      style: TextStyle(
-                        fontSize: isLeft ? 18 : 15,
-                        fontWeight: card.isMatched
-                            ? FontWeight.w600
-                            : card.isSelected
-                                ? FontWeight.bold
-                                : FontWeight.w500,
-                        color: _getTextColor(card),
-                        decoration:
-                            card.isMatched ? TextDecoration.lineThrough : null,
-                      ),
-                      textAlign: isLeft ? TextAlign.right : TextAlign.left,
-                    ),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: cards.map((card) {
+        return AnimatedBuilder(
+          animation: _shakeAnim,
+          builder: (context, child) {
+            final shouldShake = card.isWrong;
+            final shakeOffset = shouldShake
+                ? sin(_shakeAnim.value * pi * 3) * 10
+                : 0.0;
+            return Transform.translate(
+              offset: Offset(shakeOffset, 0),
+              child: child,
+            );
+          },
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 6),
+            child: GestureDetector(
+              onTap: () =>
+                  isLeft ? _onLeftTap(card) : _onRightTap(card),
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 300),
+                curve: Curves.easeOutBack,
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 12, vertical: 10),
+                decoration: BoxDecoration(
+                  gradient: _getCardGradient(card),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(
+                    color: _getBorderColor(card),
+                    width: card.isSelected || card.isMatched || card.isWrong
+                        ? 3.0
+                        : 2.0,
                   ),
-                  if (isLeft && card.isMatched) _buildStatusIcon(),
-                ],
+                  boxShadow: [
+                    if (card.isSelected)
+                      BoxShadow(
+                        color: _gradientColors[0].withOpacity(0.4),
+                        blurRadius: 16,
+                        offset: const Offset(0, 6),
+                      )
+                    else if (card.isMatched)
+                      BoxShadow(
+                        color: Colors.green.withOpacity(0.3),
+                        blurRadius: 12,
+                        offset: const Offset(0, 4),
+                      )
+                    else
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.06),
+                        blurRadius: 8,
+                        offset: const Offset(0, 3),
+                      ),
+                  ],
+                ),
+                child: Row(
+                  children: [
+                    if (!isLeft && card.isMatched)
+                      _buildEnhancedStatusIcon(),
+                    Expanded(
+                      child: Text(
+                        card.text,
+                        style: TextStyle(
+                          fontSize: isLeft ? 15 : 14,
+                          fontWeight: card.isMatched
+                              ? FontWeight.w700
+                              : card.isSelected
+                                  ? FontWeight.bold
+                                  : FontWeight.w600,
+                          color: _getTextColor(card),
+                          decoration:
+                              card.isMatched ? TextDecoration.lineThrough : null,
+                          decorationThickness: 2,
+                        ),
+                        textAlign: isLeft ? TextAlign.right : TextAlign.left,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                    if (isLeft && card.isMatched) _buildEnhancedStatusIcon(),
+                  ],
+                ),
               ),
             ),
           ),
         );
-      },
+      }).toList(),
     );
   }
 
-  Widget _buildStatusIcon() {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 4),
-      child: Container(
-        padding: const EdgeInsets.all(2),
-        decoration: const BoxDecoration(
-          color: Colors.green,
-          shape: BoxShape.circle,
+  Widget _buildEnhancedStatusIcon() {
+    return AnimatedBuilder(
+      animation: _celebrationAnim,
+      builder: (context, child) => Transform.scale(
+        scale: _celebrationAnim.value,
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 6),
+          padding: const EdgeInsets.all(6),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.green.shade400, Colors.green.shade600],
+            ),
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.green.withOpacity(0.4),
+                blurRadius: 8,
+                offset: const Offset(0, 2),
+              ),
+            ],
+          ),
+          child: const Icon(Icons.check_rounded,
+              color: Colors.white, size: 16),
         ),
-        child: const Icon(Icons.check_rounded,
-            color: Colors.white, size: 14),
       ),
     );
   }
 
-  Color _getCardColor(_MatchCard card) {
-    if (card.isMatched) return Colors.green.shade50;
-    if (card.isWrong) return Colors.red.shade50;
-    if (card.isSelected) return Colors.indigo.shade50;
-    return Colors.white;
+  LinearGradient _getCardGradient(_MatchCard card) {
+    if (card.isMatched) {
+      return LinearGradient(
+        colors: [Colors.green.shade50, Colors.green.shade100],
+      );
+    }
+    if (card.isWrong) {
+      return LinearGradient(
+        colors: [Colors.red.shade50, Colors.red.shade100],
+      );
+    }
+    if (card.isSelected) {
+      return LinearGradient(
+        colors: [Colors.purple.shade50, Colors.indigo.shade50],
+      );
+    }
+    return const LinearGradient(
+      colors: [Colors.white, Colors.white],
+    );
   }
 
   Color _getBorderColor(_MatchCard card) {
-    if (card.isMatched) return Colors.green;
+    if (card.isMatched) return Colors.green.shade500;
     if (card.isWrong) return Colors.red.shade400;
-    if (card.isSelected) return Colors.indigo;
-    return Colors.grey.shade200;
+    if (card.isSelected) return _gradientColors[0];
+    return Colors.grey.shade300;
   }
 
   Color _getTextColor(_MatchCard card) {
     if (card.isMatched) return Colors.green.shade700;
     if (card.isWrong) return Colors.red.shade700;
-    if (card.isSelected) return Colors.indigo;
-    return Colors.black87;
+    if (card.isSelected) return _gradientColors[1];
+    return Colors.grey.shade800;
   }
 }
