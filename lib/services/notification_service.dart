@@ -56,8 +56,9 @@ class NotificationService {
   Future<void> initialize() async {
     if (_initialized) return;
 
-    // Initialize timezone data (required for zonedSchedule)
+    // Initialize timezone data and use India time for the daily reminder clock.
     tz_data.initializeTimeZones();
+    tz.setLocalLocation(tz.getLocation('Asia/Kolkata'));
 
     const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
     const iosSettings = DarwinInitializationSettings(
@@ -79,7 +80,7 @@ class NotificationService {
 
     // Schedule daily repeating notifications using native scheduler
     if (HiveService.isNotificationEnabled()) {
-      _scheduleAll();
+      await _scheduleAll();
     }
   }
 
@@ -132,6 +133,11 @@ class NotificationService {
         if (granted != true) {
           return false;
         }
+
+        final canScheduleExact = await androidPlatform.canScheduleExactNotifications();
+        if (canScheduleExact == false) {
+          await androidPlatform.requestExactAlarmsPermission();
+        }
       }
 
       final iosPlatform = _plugin.resolvePlatformSpecificImplementation<
@@ -157,9 +163,9 @@ class NotificationService {
   Future<void> showStreakMilestoneNotification(int streak) async {
     try {
       final title = '🔥 $streak Day Streak!';
-      final body = 'Amazing! Keep up your daily practice to maintain your streak.';
+      const body = 'Amazing! Keep up your daily practice to maintain your streak.';
       
-      final androidDetails = AndroidNotificationDetails(
+      const androidDetails = AndroidNotificationDetails(
         'streak_milestone',
         'Streak Milestone',
         channelDescription: 'Celebrate your streak milestones',
@@ -167,7 +173,7 @@ class NotificationService {
         priority: Priority.defaultPriority,
         icon: '@mipmap/ic_launcher',
       );
-      final details = NotificationDetails(android: androidDetails);
+      const details = NotificationDetails(android: androidDetails);
       await _plugin.show(
         _streakMilestoneId,
         title,
@@ -197,15 +203,15 @@ class NotificationService {
   }
 
   /// Schedule all notifications (respects sub-toggles from Hive)
-  void _scheduleAll() {
+  Future<void> _scheduleAll() async {
     // Cancel old scheduled ones first, then reschedule
-    cancelAllScheduled();
+    await cancelAllScheduled();
 
     if (!HiveService.isNotificationEnabled()) return;
 
     // Schedule Word of the Day at 9:00 AM (if enabled)
     if (HiveService.isDailyWordNotification()) {
-      _scheduleDailyAt(
+      await _scheduleDailyAt(
         id: _dailyWordId,
         hour: 9,
         minute: 0,
@@ -220,7 +226,7 @@ class NotificationService {
 
     // Schedule Practice Reminder at 7:00 PM (if enabled)
     if (HiveService.isPracticeReminderNotification()) {
-      _scheduleDailyAt(
+      await _scheduleDailyAt(
         id: _practiceReminderId,
         hour: 19,
         minute: 0,
@@ -235,7 +241,7 @@ class NotificationService {
   }
 
   /// Schedule a notification that repeats daily at a specific time
-  void _scheduleDailyAt({
+  Future<void> _scheduleDailyAt({
     required int id,
     required int hour,
     required int minute,
@@ -245,7 +251,7 @@ class NotificationService {
     required String body,
     required bool isHighPriority,
     String? payload,
-  }) {
+  }) async {
     final now = tz.TZDateTime.now(tz.local);
     var scheduledDate = tz.TZDateTime(
       tz.local,
@@ -270,7 +276,7 @@ class NotificationService {
       icon: '@mipmap/ic_launcher',
     );
 
-    final iosDetails = DarwinNotificationDetails(
+    const iosDetails = DarwinNotificationDetails(
       presentAlert: true,
       presentBadge: true,
       presentSound: true,
@@ -281,7 +287,7 @@ class NotificationService {
       iOS: iosDetails,
     );
 
-    _plugin.zonedSchedule(
+    await _plugin.zonedSchedule(
       id,
       title,
       body,
@@ -312,7 +318,7 @@ class NotificationService {
     await HiveService.setNotificationEnabled(enabled);
     if (enabled) {
       await requestPermissions();
-      _scheduleAll();
+      await _scheduleAll();
     } else {
       await cancelAllScheduled();
     }
@@ -323,7 +329,7 @@ class NotificationService {
     if (!HiveService.isNotificationEnabled()) return;
     // Request permissions again if needed (in case user revoked)
     await requestPermissions();
-    _scheduleAll();
+    await _scheduleAll();
   }
 
   /// Show custom notification immediately (for in-app use)
@@ -334,7 +340,7 @@ class NotificationService {
     String? payload,
   }) async {
     try {
-      final androidDetails = AndroidNotificationDetails(
+      const androidDetails = AndroidNotificationDetails(
         'general',
         'General Notifications',
         channelDescription: 'General app notifications',
@@ -342,7 +348,7 @@ class NotificationService {
         priority: Priority.defaultPriority,
         icon: '@mipmap/ic_launcher',
       );
-      final details = NotificationDetails(android: androidDetails);
+      const details = NotificationDetails(android: androidDetails);
       await _plugin.show(id, title, body, details, payload: payload);
       
       // Save to history

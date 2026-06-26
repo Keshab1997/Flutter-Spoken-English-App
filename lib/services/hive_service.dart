@@ -631,6 +631,17 @@ class HiveService {
     await box.put('notifications', history);
   }
 
+  static Future<bool> saveNotificationToHistoryIfNew(Map<String, dynamic> notification) async {
+    if (!Hive.isBoxOpen(_notificationHistoryBox)) {
+      await Hive.openBox(_notificationHistoryBox);
+    }
+    final history = getNotificationHistory();
+    final id = notification['id'];
+    if (history.any((item) => item['id'] == id)) return false;
+    await saveNotificationToHistory(notification);
+    return true;
+  }
+
   static List<Map<String, dynamic>> getNotificationHistory() {
     if (!Hive.isBoxOpen(_notificationHistoryBox)) return [];
     final box = Hive.box(_notificationHistoryBox);

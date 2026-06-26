@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/widgets/streak_widget.dart';
 import '../../../services/hive_service.dart';
+import '../../../services/admin_notification_sync_service.dart';
 import '../../../services/tts_service.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/progress_provider.dart';
@@ -71,6 +72,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       ref.read(xpProvider.notifier).refresh();
       ref.read(coinProvider.notifier).refresh();
       ref.read(statisticsProvider.notifier).refresh();
+      await _syncAdminNotifications();
 
       // 🔥 STREAK CALCULATION — called every time the app opens:
       final now = DateTime.now();
@@ -111,6 +113,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     setState(() {
       _unreadNotificationCount = HiveService.getUnreadNotificationCount();
     });
+  }
+
+  Future<void> _syncAdminNotifications() async {
+    try {
+      final added = await AdminNotificationSyncService.syncLatest();
+      if (mounted && added > 0) _updateNotificationCount();
+    } catch (_) {}
   }
 
   void _speakWord(String word) {
@@ -369,13 +378,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
             ),
           ),
           IconButton(
-            onPressed: () {
-              Navigator.push(
+            onPressed: () async {
+              await Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => const SettingsScreen(),
                 ),
               );
+              await _syncAdminNotifications();
+              _updateNotificationCount();
             },
             icon: const Icon(Icons.settings_outlined, size: 26),
           ),

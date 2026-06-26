@@ -69,6 +69,8 @@ class NotificationHistoryItem {
         return 'Practice Reminder';
       case 'streak_milestone':
         return 'Streak Milestone';
+      case 'admin_announcement':
+        return 'Admin Notice';
       default:
         return 'Notification';
     }
@@ -82,6 +84,8 @@ class NotificationHistoryItem {
         return '⏰';
       case 'streak_milestone':
         return '🔥';
+      case 'admin_announcement':
+        return '📢';
       default:
         return '🔔';
     }

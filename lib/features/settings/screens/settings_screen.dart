@@ -4,7 +4,9 @@ import '../../../core/constants/app_colors.dart';
 import '../../../services/hive_service.dart';
 import '../../../services/ai_service.dart';
 import '../../../services/notification_service.dart';
+import '../../../providers/auth_provider.dart';
 import '../../../providers/theme_provider.dart';
+import '../../admin/screens/admin_dashboard_screen.dart';
 import 'api_setup_guide_screen.dart';
 import 'privacy_security_screen.dart';
 
@@ -42,6 +44,8 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
+    final currentUser = ref.watch(authProvider).asData?.value;
+    final isAdmin = currentUser?.role == 'admin';
 
     return Scaffold(
       appBar: AppBar(
@@ -52,6 +56,25 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            if (isAdmin) ...[
+              Text('Admin', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: isDark ? Colors.white60 : Colors.black45)),
+              const SizedBox(height: 8),
+              _buildSettingsCard([
+                ListTile(
+                  leading: const Icon(Icons.admin_panel_settings_rounded, color: AppColors.primary),
+                  title: const Text('Admin Panel'),
+                  subtitle: const Text('Manage students, roles, and notifications'),
+                  trailing: const Icon(Icons.arrow_forward_ios_rounded, size: 14),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const AdminDashboardScreen()),
+                    );
+                  },
+                ),
+              ]),
+              const SizedBox(height: 24),
+            ],
             Text('Appearance', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: isDark ? Colors.white60 : Colors.black45)),
             const SizedBox(height: 8),
             _buildSettingsCard([
@@ -90,10 +113,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   title: const Text('📖 Word of the Day'),
                   subtitle: const Text('Daily vocabulary at 9:00 AM'),
                   value: _dailyWordNotification,
-                  onChanged: (val) {
+                  onChanged: (val) async {
                     setState(() => _dailyWordNotification = val);
-                    HiveService.setDailyWordNotification(val);
-                    NotificationService().rescheduleOnAppOpen();
+                    await HiveService.setDailyWordNotification(val);
+                    await NotificationService().rescheduleOnAppOpen();
                   },
                   activeColor: AppColors.primary,
                 ),
@@ -102,10 +125,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   title: const Text('⏰ Practice Reminder'),
                   subtitle: const Text('Reminder to practice at 7:00 PM'),
                   value: _practiceReminderNotification,
-                  onChanged: (val) {
+                  onChanged: (val) async {
                     setState(() => _practiceReminderNotification = val);
-                    HiveService.setPracticeReminderNotification(val);
-                    NotificationService().rescheduleOnAppOpen();
+                    await HiveService.setPracticeReminderNotification(val);
+                    await NotificationService().rescheduleOnAppOpen();
                   },
                   activeColor: AppColors.primary,
                 ),
@@ -114,10 +137,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   title: const Text('🔥 Streak Reminder'),
                   subtitle: const Text('Milestone streak celebrations'),
                   value: _streakNotification,
-                  onChanged: (val) {
+                  onChanged: (val) async {
                     setState(() => _streakNotification = val);
-                    HiveService.setStreakNotification(val);
-                    NotificationService().rescheduleOnAppOpen();
+                    await HiveService.setStreakNotification(val);
+                    await NotificationService().rescheduleOnAppOpen();
                   },
                   activeColor: AppColors.primary,
                 ),
@@ -378,6 +401,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
       await HiveService.setActiveAiKey(id);
       _loadAiKeys();
     }
+    if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(content: Text('Testing connection...'), behavior: SnackBarBehavior.floating),
     );
@@ -461,8 +485,6 @@ class _ApiKeyFormState extends State<_ApiKeyForm> {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-
     return Padding(
       padding: EdgeInsets.only(
         left: 20, right: 20, top: 20,

@@ -8,6 +8,7 @@ class UserModel {
   final DateTime joinedAt;
   final int streak;
   final String currentLevel; // 'Beginner', 'Intermediate', 'Advanced'
+  final String role; // 'student', 'admin'
 
   UserModel({
     required this.id,
@@ -17,6 +18,7 @@ class UserModel {
     required this.joinedAt,
     this.streak = 0,
     this.currentLevel = 'Beginner',
+    this.role = 'student',
   });
 
   factory UserModel.fromMap(Map<String, dynamic> map, String docId) {
@@ -28,6 +30,7 @@ class UserModel {
       joinedAt: (map['joinedAt'] as Timestamp?)?.toDate() ?? DateTime.now(),
       streak: map['streak'] ?? 0,
       currentLevel: map['currentLevel'] ?? 'Beginner',
+      role: map['role'] ?? 'student',
     );
   }
 
@@ -39,6 +42,7 @@ class UserModel {
       'joinedAt': Timestamp.fromDate(joinedAt),
       'streak': streak,
       'currentLevel': currentLevel,
+      'role': role,
     };
   }
 
@@ -50,6 +54,7 @@ class UserModel {
     DateTime? joinedAt,
     int? streak,
     String? currentLevel,
+    String? role,
   }) {
     return UserModel(
       id: id ?? this.id,
@@ -59,6 +64,7 @@ class UserModel {
       joinedAt: joinedAt ?? this.joinedAt,
       streak: streak ?? this.streak,
       currentLevel: currentLevel ?? this.currentLevel,
+      role: role ?? this.role,
     );
   }
 }

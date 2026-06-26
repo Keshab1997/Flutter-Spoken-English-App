@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
+import '../../../services/admin_notification_sync_service.dart';
 import '../../../services/hive_service.dart';
 import '../../../models/notification_history_model.dart';
 import 'package:intl/intl.dart';
@@ -18,6 +19,14 @@ class _NotificationHistoryScreenState extends State<NotificationHistoryScreen> {
   void initState() {
     super.initState();
     _loadNotifications();
+    _syncAdminNotifications();
+  }
+
+  Future<void> _syncAdminNotifications() async {
+    try {
+      final added = await AdminNotificationSyncService.syncLatest();
+      if (mounted && added > 0) _loadNotifications();
+    } catch (_) {}
   }
 
   void _loadNotifications() {
@@ -392,6 +401,8 @@ class _NotificationHistoryScreenState extends State<NotificationHistoryScreen> {
         return Colors.orange;
       case 'streak_milestone':
         return Colors.red;
+      case 'admin_announcement':
+        return AppColors.primary;
       default:
         return Colors.grey;
     }
