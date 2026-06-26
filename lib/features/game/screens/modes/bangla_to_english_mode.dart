@@ -6,6 +6,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../../models/game/wrong_question_model.dart';
 import '../../../../repositories/wrong_question_repository.dart';
+import '../../../../providers/game/sound_provider.dart';
+import '../../../../providers/game/tts_provider.dart';
 import '../result_screen.dart';
 
 class BanglaToEnglishModeScreen extends ConsumerStatefulWidget {
@@ -159,6 +161,21 @@ class _BanglaToEnglishModeScreenState extends ConsumerState<BanglaToEnglishModeS
 
   void _prepareOptions() {
     _shuffledOptions = _currentQuestion.options.toList()..shuffle(_random);
+    _speakCurrentQuestion();
+  }
+
+  Future<void> _speakCurrentQuestion() async {
+    try {
+      // Using speakBangla for proper Bengali TTS
+      await ref.read(ttsServiceProvider.notifier).speakBangla(_currentQuestion.bangla);
+    } catch (_) {}
+  }
+
+  Future<void> _speakCorrectAnswer() async {
+    try {
+      // Speak the correct English translation
+      await ref.read(ttsServiceProvider.notifier).speak(_currentQuestion.correct);
+    } catch (_) {}
   }
 
   void _selectAnswer(String answer) {
@@ -174,9 +191,11 @@ class _BanglaToEnglishModeScreenState extends ConsumerState<BanglaToEnglishModeS
       _correctCount++;
       _score += 10;
       HapticFeedback.lightImpact();
+      ref.read(soundServiceProvider).playCorrect();
     } else {
       _wrongCount++;
       HapticFeedback.heavyImpact();
+      ref.read(soundServiceProvider).playWrong();
       _saveWrongAnswer(answer);
     }
 
@@ -586,17 +605,35 @@ class _BanglaToEnglishModeScreenState extends ConsumerState<BanglaToEnglishModeS
                               ],
                             ),
                             const SizedBox(height: 12),
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: _getDifficultyColor(q.difficulty).withOpacity(0.1),
-                                borderRadius: BorderRadius.circular(8),
-                                border: Border.all(color: _getDifficultyColor(q.difficulty)),
-                              ),
-                              child: Text(
-                                q.difficulty.toUpperCase(),
-                                style: TextStyle(color: _getDifficultyColor(q.difficulty), fontSize: 9, fontWeight: FontWeight.bold),
-                              ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Container(
+                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                  decoration: BoxDecoration(
+                                    color: _getDifficultyColor(q.difficulty).withOpacity(0.1),
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all(color: _getDifficultyColor(q.difficulty)),
+                                  ),
+                                  child: Text(
+                                    q.difficulty.toUpperCase(),
+                                    style: TextStyle(color: _getDifficultyColor(q.difficulty), fontSize: 9, fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                // Speaker button to replay question audio
+                                InkWell(
+                                  onTap: _speakCurrentQuestion,
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: Container(
+                                    padding: const EdgeInsets.all(8),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF2E7D32).withOpacity(0.1),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child: const Icon(Icons.volume_up, color: Color(0xFF2E7D32), size: 22),
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),

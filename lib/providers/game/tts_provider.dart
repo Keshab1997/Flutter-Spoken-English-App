@@ -23,4 +23,7 @@ class TtsNotifier extends StateNotifier<bool> {
   }
 
   Future<void> speak(String text) => _tts.speak(text);
+
+  /// Speak text in Bengali (Bangla) language
+  Future<void> speakBangla(String text) => _tts.speakBangla(text);
 }
