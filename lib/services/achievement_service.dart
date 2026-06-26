@@ -1,4 +1,5 @@
 import '../models/game/achievement_model.dart';
+import '../models/game/game_progress_model.dart';
 import '../repositories/achievement_repository.dart';
 import '../repositories/progress_repository.dart';
 import '../repositories/statistics_repository.dart';
@@ -175,5 +176,20 @@ class AchievementService {
     final total = getTotalCount();
     if (total == 0) return 0.0;
     return getUnlockedCount() / total;
+  }
+
+  /// Sync statistics from Firestore to Hive so local reads are up-to-date.
+  Future<void> syncStatisticsFromFirestore(String userId) async {
+    await _statisticsRepository.syncFromFirestoreToHive(userId);
+  }
+
+  /// Sync progress from Firestore to Hive so local reads are up-to-date.
+  Future<void> syncProgressFromFirestore(String userId) async {
+    await _progressRepository.syncProgressFromFirestoreToHive(userId);
+  }
+
+  /// Get cached progress from Hive (may be null if never saved).
+  GameProgressModel? getCachedProgress() {
+    return _progressRepository.getProgress();
   }
 }

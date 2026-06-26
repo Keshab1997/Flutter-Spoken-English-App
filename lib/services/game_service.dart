@@ -219,7 +219,9 @@ class GameService {
         await _statisticsRepository.uploadMetaToFirestore(userId);
         final progress = _progressRepository.getProgress();
         if (progress != null) {
-          await _progressRepository.uploadProgressToFirestore(progress);
+          await _progressRepository.uploadProgressToFirestore(
+            progress.copyWith(userId: userId),
+          );
         }
       } catch (e) {
         print('Failed to upload result to Firestore: $e');

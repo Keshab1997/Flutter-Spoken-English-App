@@ -1,8 +1,11 @@
+import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../services/statistics_service.dart';
 import '../../services/streak_service.dart';
 import '../../repositories/statistics_repository.dart';
 import '../../repositories/progress_repository.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 // ── Statistics State ──
 
@@ -111,9 +114,16 @@ class StatisticsState {
 
 class StatisticsNotifier extends StateNotifier<StatisticsState> {
   final StatisticsService _statisticsService;
+  
+  // Real-time stream subscriptions
+  StreamSubscription<DocumentSnapshot>? _progressSubscription;
+  StreamSubscription<DocumentSnapshot>? _metaSubscription;
+  StreamSubscription<QuerySnapshot>? _resultsSubscription;
+  String? _currentUserId;
 
   StatisticsNotifier(this._statisticsService) : super(const StatisticsState()) {
     _refresh();
+    _startRealtimeListeners();
   }
 
   Future<void> _refresh() async {
@@ -141,11 +151,82 @@ class StatisticsNotifier extends StateNotifier<StatisticsState> {
     );
   }
 
+  void _startRealtimeListeners() {
+    _currentUserId = FirebaseAuth.instance.currentUser?.uid;
+    if (_currentUserId == null || _currentUserId!.isEmpty) return;
+
+    // Listen to progress updates
+    _progressSubscription = FirebaseFirestore.instance
+        .collection('game_progress')
+        .doc(_currentUserId!)
+        .snapshots()
+        .listen((snapshot) {
+      if (snapshot.exists && snapshot.data() != null) {
+        final data = snapshot.data() as Map<String, dynamic>;
+        state = state.copyWith(
+          currentLevel: data['currentLevel'] as int? ?? state.currentLevel,
+          currentXP: data['currentXP'] as int? ?? state.currentXP,
+          currentCoins: data['totalCoins'] as int? ?? state.currentCoins,
+          currentStreak: data['streak'] as int? ?? state.currentStreak,
+          bestStreak: data['longestStreak'] as int? ?? state.bestStreak,
+        );
+      }
+    });
+
+    // Listen to meta statistics updates
+    _metaSubscription = FirebaseFirestore.instance
+        .collection('game_statistics_meta')
+        .doc(_currentUserId!)
+        .snapshots()
+        .listen((snapshot) {
+      if (snapshot.exists && snapshot.data() != null) {
+        final data = snapshot.data() as Map<String, dynamic>;
+        final timePlayedSec = data['timePlayedSeconds'] as int? ?? 0;
+        
+        state = state.copyWith(
+          bossWins: data['bossWins'] as int? ?? 0,
+          dailyChallengeWins: data['dailyChallengeWins'] as int? ?? 0,
+          timePlayedSeconds: timePlayedSec,
+          timePlayedFormatted: _formatDuration(timePlayedSec),
+        );
+      }
+    });
+
+    // Listen to new game results
+    _resultsSubscription = FirebaseFirestore.instance
+        .collection('game_statistics')
+        .where('userId', isEqualTo: _currentUserId!)
+        .snapshots()
+        .listen((snapshot) {
+      // When a new result is added, we refresh the whole summary to ensure
+      // all aggregated stats (accuracy, total games, etc.) are correct.
+      _refresh();
+    });
+  }
+
+  String _formatDuration(int seconds) {
+    if (seconds <= 0) return '0m';
+    final hours = seconds ~/ 3600;
+    final minutes = (seconds % 3600) ~/ 60;
+    if (hours > 0) {
+      return '${hours}h ${minutes}m';
+    }
+    return '${minutes}m';
+  }
+
   /// Public refresh hook so providers that mutate progress (XP, coins,
   /// streak, achievements) can call this after their own refresh to
   /// keep the statistics view in sync.
   void refresh() {
     _refresh();
+  }
+
+  @override
+  void dispose() {
+    _progressSubscription?.cancel();
+    _metaSubscription?.cancel();
+    _resultsSubscription?.cancel();
+    super.dispose();
   }
 
   // Recording helpers — UI / other providers can call these to keep
