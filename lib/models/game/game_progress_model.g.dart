@@ -18,17 +18,16 @@ class GameProgressModelAdapter extends TypeAdapter<GameProgressModel> {
     };
     return GameProgressModel(
       userId: fields[0] as String,
-      currentLevel: fields[1] as int? ?? 1,
-      currentXP: fields[2] as int? ?? 0,
-      totalCoins: fields[3] as int? ?? 0,
-      streak: fields[4] as int? ?? 0,
-      unlockedModes:
-          (fields[5] as List?)?.cast<String>() ?? const <String>[],
-      weeklyStreak: fields[6] as int? ?? 0,
-      longestStreak: fields[7] as int? ?? 0,
-      missedDays: fields[8] as int? ?? 0,
-      totalActiveDays: fields[9] as int? ?? 0,
-      lastActiveDate: fields[10] as DateTime? ?? DateTime.now(),
+      currentLevel: fields[1] as int,
+      currentXP: fields[2] as int,
+      totalCoins: fields[3] as int,
+      streak: fields[4] as int,
+      unlockedModes: (fields[5] as List).cast<String>(),
+      weeklyStreak: fields[6] as int,
+      longestStreak: fields[7] as int,
+      missedDays: fields[8] as int,
+      totalActiveDays: fields[9] as int,
+      lastActiveDate: fields[10] as DateTime?,
     );
   }
 

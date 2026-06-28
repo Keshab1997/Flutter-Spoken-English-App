@@ -27,13 +27,14 @@ class GameQuestionModelAdapter extends TypeAdapter<GameQuestionModel> {
       mode: fields[7] as String,
       xpReward: fields[8] as int,
       coinReward: fields[9] as int,
+      optionBangla: (fields[10] as List).cast<String>(),
     );
   }
 
   @override
   void write(BinaryWriter writer, GameQuestionModel obj) {
     writer
-      ..writeByte(10)
+      ..writeByte(11)
       ..writeByte(0)
       ..write(obj.id)
       ..writeByte(1)
@@ -53,7 +54,9 @@ class GameQuestionModelAdapter extends TypeAdapter<GameQuestionModel> {
       ..writeByte(8)
       ..write(obj.xpReward)
       ..writeByte(9)
-      ..write(obj.coinReward);
+      ..write(obj.coinReward)
+      ..writeByte(10)
+      ..write(obj.optionBangla);
   }
 
   @override

@@ -1,3 +1,4 @@
+import 'dart:ui' show Color;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:hive/hive.dart';
 
@@ -32,6 +33,22 @@ class AchievementModel {
   @HiveField(8)
   final int coinReward;
 
+  /// NEW: Game mode type this achievement belongs to (null = any/all games)
+  @HiveField(9)
+  final String? gameType;
+
+  /// NEW: Condition description for how to unlock (e.g., "score >= 100")
+  @HiveField(10)
+  final String? condition;
+
+  /// NEW: Display order for sorting
+  @HiveField(11)
+  final int order;
+
+  /// NEW: Rarity tier for visual styling
+  @HiveField(12)
+  final String rarity; // 'Common', 'Uncommon', 'Rare', 'Epic', 'Legendary'
+
   AchievementModel({
     required this.id,
     required this.title,
@@ -42,7 +59,587 @@ class AchievementModel {
     this.category = 'General',
     this.xpReward = 0,
     this.coinReward = 0,
+    this.gameType,
+    this.condition,
+    this.order = 0,
+    this.rarity = 'Common',
   });
+
+  // ── Static Achievements Map (ID → AchievementModel) ──
+
+  static final Map<String, AchievementModel> achievementsMap = {
+    for (final a in _defaultAchievements) a.id: a,
+  };
+
+  /// Returns all achievement definitions grouped by game type
+  static Map<String?, List<AchievementModel>> get groupedByGameType {
+    final map = <String?, List<AchievementModel>>{};
+    for (final a in _defaultAchievements) {
+      map.putIfAbsent(a.gameType, () => []).add(a);
+    }
+    return map;
+  }
+
+  /// Returns achievements filtered by game type (null = general/all)
+  static List<AchievementModel> getByGameType(String? gameType) {
+    return _defaultAchievements
+        .where((a) => a.gameType == gameType)
+        .toList()
+      ..sort((a, b) => a.order.compareTo(b.order));
+  }
+
+  /// Returns achievements for a specific category
+  static List<AchievementModel> getByCategory(String category) {
+    return _defaultAchievements
+        .where((a) => a.category == category)
+        .toList()
+      ..sort((a, b) => a.order.compareTo(b.order));
+  }
+
+  /// Default achievement definitions organized by game type
+  static final List<AchievementModel> _defaultAchievements = [
+    // ── 🎯 GENERAL / MILESTONE (any game) ──
+    AchievementModel(
+      id: 'first_win',
+      title: 'First Win',
+      description: 'Win your very first game',
+      icon: '🎉',
+      category: 'Milestone',
+      xpReward: 50,
+      coinReward: 25,
+      gameType: null,
+      condition: 'games_played >= 1',
+      order: 1,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'ten_correct',
+      title: '10 Correct Answers',
+      description: 'Answer 10 questions correctly in total',
+      icon: '🎯',
+      category: 'Milestone',
+      xpReward: 75,
+      coinReward: 40,
+      gameType: null,
+      condition: 'total_correct >= 10',
+      order: 2,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'xp_100',
+      title: '100 XP',
+      description: 'Earn a total of 100 XP',
+      icon: '⚡',
+      category: 'XP',
+      xpReward: 0,
+      coinReward: 30,
+      gameType: null,
+      condition: 'total_xp >= 100',
+      order: 3,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'xp_1000',
+      title: '1,000 XP',
+      description: 'Earn a total of 1,000 XP',
+      icon: '⚡',
+      category: 'XP',
+      xpReward: 0,
+      coinReward: 100,
+      gameType: null,
+      condition: 'total_xp >= 1000',
+      order: 4,
+      rarity: 'Uncommon',
+    ),
+    AchievementModel(
+      id: 'xp_5000',
+      title: '5,000 XP',
+      description: 'Earn a total of 5,000 XP',
+      icon: '💎',
+      category: 'XP',
+      xpReward: 0,
+      coinReward: 250,
+      gameType: null,
+      condition: 'total_xp >= 5000',
+      order: 5,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'streak_7',
+      title: '7-Day Streak',
+      description: 'Keep a 7-day learning streak',
+      icon: '🔥',
+      category: 'Streak',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: null,
+      condition: 'streak >= 7',
+      order: 6,
+      rarity: 'Uncommon',
+    ),
+    AchievementModel(
+      id: 'streak_30',
+      title: '30-Day Streak',
+      description: 'Keep a 30-day learning streak',
+      icon: '🔥',
+      category: 'Streak',
+      xpReward: 300,
+      coinReward: 150,
+      gameType: null,
+      condition: 'streak >= 30',
+      order: 7,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'perfect_round',
+      title: 'Perfect Round',
+      description: 'Finish a round with 100% accuracy',
+      icon: '💯',
+      category: 'Skill',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: null,
+      condition: 'accuracy >= 1.0 && correct_answers > 0',
+      order: 8,
+      rarity: 'Uncommon',
+    ),
+    AchievementModel(
+      id: 'speed_master',
+      title: 'Speed Master',
+      description: 'Answer 5 questions in a row with full time bonus',
+      icon: '💨',
+      category: 'Skill',
+      xpReward: 120,
+      coinReward: 60,
+      gameType: null,
+      condition: 'speed_bonus_count >= 5',
+      order: 9,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'games_50',
+      title: '50 Games Played',
+      description: 'Play 50 games in total',
+      icon: '🎮',
+      category: 'Milestone',
+      xpReward: 150,
+      coinReward: 75,
+      gameType: null,
+      condition: 'games_played >= 50',
+      order: 10,
+      rarity: 'Uncommon',
+    ),
+    AchievementModel(
+      id: 'games_200',
+      title: '200 Games Played',
+      description: 'Play 200 games in total',
+      icon: '🎮',
+      category: 'Milestone',
+      xpReward: 300,
+      coinReward: 200,
+      gameType: null,
+      condition: 'games_played >= 200',
+      order: 11,
+      rarity: 'Rare',
+    ),
+
+    // ── 🧩 FILL IN THE BLANK ──
+    AchievementModel(
+      id: 'fill_blank_pro',
+      title: 'Blank Filler Pro',
+      description: 'Answer 50 Fill in the Blank questions correctly',
+      icon: '✏️',
+      category: 'Game Mode',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: 'fillInBlank',
+      condition: 'fillInBlank_correct >= 50',
+      order: 20,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'fill_blank_master',
+      title: 'Blank Filler Master',
+      description: 'Answer 200 Fill in the Blank questions correctly',
+      icon: '✏️',
+      category: 'Game Mode',
+      xpReward: 250,
+      coinReward: 125,
+      gameType: 'fillInBlank',
+      condition: 'fillInBlank_correct >= 200',
+      order: 21,
+      rarity: 'Rare',
+    ),
+
+    // ── ✅ CHOOSE CORRECT TENSE ──
+    AchievementModel(
+      id: 'tense_picker_pro',
+      title: 'Tense Picker Pro',
+      description: 'Answer 50 Tense questions correctly',
+      icon: '⏱️',
+      category: 'Game Mode',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: 'chooseCorrectTense',
+      condition: 'chooseCorrectTense_correct >= 50',
+      order: 30,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'tense_picker_master',
+      title: 'Tense Picker Master',
+      description: 'Answer 200 Tense questions correctly',
+      icon: '⏱️',
+      category: 'Game Mode',
+      xpReward: 250,
+      coinReward: 125,
+      gameType: 'chooseCorrectTense',
+      condition: 'chooseCorrectTense_correct >= 200',
+      order: 31,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'present_tense_master',
+      title: 'Present Tense Master',
+      description: 'Complete all Present Tense levels',
+      icon: '⏳',
+      category: 'Tense',
+      xpReward: 150,
+      coinReward: 75,
+      gameType: 'chooseCorrectTense',
+      condition: 'present_tense_levels_complete',
+      order: 32,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'past_tense_master',
+      title: 'Past Tense Master',
+      description: 'Complete all Past Tense levels',
+      icon: '📜',
+      category: 'Tense',
+      xpReward: 150,
+      coinReward: 75,
+      gameType: 'chooseCorrectTense',
+      condition: 'past_tense_levels_complete',
+      order: 33,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'future_tense_master',
+      title: 'Future Tense Master',
+      description: 'Complete all Future Tense levels',
+      icon: '🔮',
+      category: 'Tense',
+      xpReward: 150,
+      coinReward: 75,
+      gameType: 'chooseCorrectTense',
+      condition: 'future_tense_levels_complete',
+      order: 34,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'tense_champion',
+      title: 'Tense Champion',
+      description: 'Master Present, Past, and Future tenses',
+      icon: '👑',
+      category: 'Tense',
+      xpReward: 300,
+      coinReward: 150,
+      gameType: 'chooseCorrectTense',
+      condition: 'all_tenses_levels_complete',
+      order: 35,
+      rarity: 'Epic',
+    ),
+
+    // ── 🏗️ SENTENCE BUILDER ──
+    AchievementModel(
+      id: 'builder_pro',
+      title: 'Sentence Builder Pro',
+      description: 'Build 50 correct sentences',
+      icon: '🧱',
+      category: 'Game Mode',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: 'sentenceBuilder',
+      condition: 'sentenceBuilder_correct >= 50',
+      order: 40,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'builder_master',
+      title: 'Sentence Builder Master',
+      description: 'Build 200 correct sentences',
+      icon: '🧱',
+      category: 'Game Mode',
+      xpReward: 250,
+      coinReward: 125,
+      gameType: 'sentenceBuilder',
+      condition: 'sentenceBuilder_correct >= 200',
+      order: 41,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'builder_speedster',
+      title: 'Speed Builder',
+      description: 'Build a sentence in under 10 seconds',
+      icon: '⚡',
+      category: 'Game Mode',
+      xpReward: 80,
+      coinReward: 40,
+      gameType: 'sentenceBuilder',
+      condition: 'sentenceBuilder_time < 10',
+      order: 42,
+      rarity: 'Uncommon',
+    ),
+
+    // ── 🔍 ERROR DETECTION ──
+    AchievementModel(
+      id: 'error_hunter_pro',
+      title: 'Error Hunter Pro',
+      description: 'Detect 50 errors correctly',
+      icon: '🔍',
+      category: 'Game Mode',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: 'errorDetection',
+      condition: 'errorDetection_correct >= 50',
+      order: 50,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'error_hunter_master',
+      title: 'Error Hunter Master',
+      description: 'Detect 200 errors correctly',
+      icon: '🔍',
+      category: 'Game Mode',
+      xpReward: 250,
+      coinReward: 125,
+      gameType: 'errorDetection',
+      condition: 'errorDetection_correct >= 200',
+      order: 51,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'error_perfect_round',
+      title: 'Perfect Eye',
+      description: 'Finish an Error Detection round with 100% accuracy',
+      icon: '👁️',
+      category: 'Game Mode',
+      xpReward: 120,
+      coinReward: 60,
+      gameType: 'errorDetection',
+      condition: 'errorDetection_accuracy >= 1.0 && questions > 0',
+      order: 52,
+      rarity: 'Epic',
+    ),
+
+    // ── 🌐 TRANSLATION CHALLENGE ──
+    AchievementModel(
+      id: 'translator_pro',
+      title: 'Translator Pro',
+      description: 'Complete 50 translations correctly',
+      icon: '🌐',
+      category: 'Game Mode',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: 'translationChallenge',
+      condition: 'translationChallenge_correct >= 50',
+      order: 60,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'translator_master',
+      title: 'Translator Master',
+      description: 'Complete 200 translations correctly',
+      icon: '🌐',
+      category: 'Game Mode',
+      xpReward: 250,
+      coinReward: 125,
+      gameType: 'translationChallenge',
+      condition: 'translationChallenge_correct >= 200',
+      order: 61,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'translator_bilingual',
+      title: 'Bilingual Champion',
+      description: 'Translate 500 sentences between English and Bengali',
+      icon: '🗣️',
+      category: 'Game Mode',
+      xpReward: 400,
+      coinReward: 200,
+      gameType: 'translationChallenge',
+      condition: 'translationChallenge_correct >= 500',
+      order: 62,
+      rarity: 'Epic',
+    ),
+
+    // ── ⚡ SPEED QUIZ ──
+    AchievementModel(
+      id: 'speed_demon',
+      title: 'Speed Demon',
+      description: 'Answer 20 questions in Speed Quiz',
+      icon: '💨',
+      category: 'Game Mode',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: 'speedQuiz',
+      condition: 'speedQuiz_answered >= 20',
+      order: 70,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'speed_lightning',
+      title: 'Lightning Strikes',
+      description: 'Answer 50 questions in Speed Quiz',
+      icon: '⚡',
+      category: 'Game Mode',
+      xpReward: 200,
+      coinReward: 100,
+      gameType: 'speedQuiz',
+      condition: 'speedQuiz_answered >= 50',
+      order: 71,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'speed_perfect',
+      title: 'Speed Perfectionist',
+      description: 'Get 100% accuracy in a Speed Quiz round',
+      icon: '🏆',
+      category: 'Game Mode',
+      xpReward: 150,
+      coinReward: 75,
+      gameType: 'speedQuiz',
+      condition: 'speedQuiz_accuracy >= 1.0 && questions >= 10',
+      order: 72,
+      rarity: 'Epic',
+    ),
+
+    // ── 🎮 WORD MATCH ──
+    AchievementModel(
+      id: 'word_match_pro',
+      title: 'Word Match Pro',
+      description: 'Match 50 word pairs correctly',
+      icon: '🔄',
+      category: 'Game Mode',
+      xpReward: 100,
+      coinReward: 50,
+      gameType: 'wordMatch',
+      condition: 'wordMatch_correct >= 50',
+      order: 80,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'word_match_master',
+      title: 'Word Match Master',
+      description: 'Match 200 word pairs correctly',
+      icon: '🔄',
+      category: 'Game Mode',
+      xpReward: 250,
+      coinReward: 125,
+      gameType: 'wordMatch',
+      condition: 'wordMatch_correct >= 200',
+      order: 81,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'word_match_lightning',
+      title: 'Lightning Matcher',
+      description: 'Match 5 pairs in under 30 seconds',
+      icon: '⚡',
+      category: 'Game Mode',
+      xpReward: 120,
+      coinReward: 60,
+      gameType: 'wordMatch',
+      condition: 'wordMatch_time < 30 && pairs >= 5',
+      order: 82,
+      rarity: 'Epic',
+    ),
+
+    // ── 🏆 BOSS BATTLE ──
+    AchievementModel(
+      id: 'boss_slayer',
+      title: 'Boss Slayer',
+      description: 'Defeat your first Boss Battle',
+      icon: '⚔️',
+      category: 'Battle',
+      xpReward: 200,
+      coinReward: 100,
+      gameType: 'bossBattle',
+      condition: 'boss_battle_wins >= 1',
+      order: 90,
+      rarity: 'Rare',
+    ),
+    AchievementModel(
+      id: 'boss_conqueror',
+      title: 'Boss Conqueror',
+      description: 'Win 10 Boss Battles',
+      icon: '🛡️',
+      category: 'Battle',
+      xpReward: 500,
+      coinReward: 250,
+      gameType: 'bossBattle',
+      condition: 'boss_battle_wins >= 10',
+      order: 91,
+      rarity: 'Epic',
+    ),
+    AchievementModel(
+      id: 'boss_immortal',
+      title: 'Boss Immortal',
+      description: 'Win a Boss Battle without losing a life',
+      icon: '💀',
+      category: 'Battle',
+      xpReward: 300,
+      coinReward: 150,
+      gameType: 'bossBattle',
+      condition: 'boss_battle_perfect >= 1',
+      order: 92,
+      rarity: 'Legendary',
+    ),
+
+    // ── 📅 DAILY CHALLENGE ──
+    AchievementModel(
+      id: 'daily_starter',
+      title: 'Daily Challenger',
+      description: 'Complete your first Daily Challenge',
+      icon: '📅',
+      category: 'Daily',
+      xpReward: 50,
+      coinReward: 25,
+      gameType: 'dailyChallenge',
+      condition: 'daily_challenge_completed >= 1',
+      order: 100,
+      rarity: 'Common',
+    ),
+    AchievementModel(
+      id: 'daily_7',
+      title: 'Week Warrior',
+      description: 'Complete 7 Daily Challenges',
+      icon: '📅',
+      category: 'Daily',
+      xpReward: 200,
+      coinReward: 100,
+      gameType: 'dailyChallenge',
+      condition: 'daily_challenge_completed >= 7',
+      order: 101,
+      rarity: 'Uncommon',
+    ),
+    AchievementModel(
+      id: 'daily_30',
+      title: 'Monthly Master',
+      description: 'Complete 30 Daily Challenges',
+      icon: '📅',
+      category: 'Daily',
+      xpReward: 500,
+      coinReward: 250,
+      gameType: 'dailyChallenge',
+      condition: 'daily_challenge_completed >= 30',
+      order: 102,
+      rarity: 'Epic',
+    ),
+  ];
+
+  // ── Factory & Helpers ──
 
   factory AchievementModel.fromMap(Map<String, dynamic> map, String docId) {
     return AchievementModel(
@@ -55,6 +652,10 @@ class AchievementModel {
       category: map['category'] as String? ?? 'General',
       xpReward: map['xpReward'] as int? ?? 0,
       coinReward: map['coinReward'] as int? ?? 0,
+      gameType: map['gameType'] as String?,
+      condition: map['condition'] as String?,
+      order: map['order'] as int? ?? 0,
+      rarity: map['rarity'] as String? ?? 'Common',
     );
   }
 
@@ -76,6 +677,10 @@ class AchievementModel {
       'category': category,
       'xpReward': xpReward,
       'coinReward': coinReward,
+      'gameType': gameType,
+      'condition': condition,
+      'order': order,
+      'rarity': rarity,
     };
   }
 
@@ -89,6 +694,10 @@ class AchievementModel {
     String? category,
     int? xpReward,
     int? coinReward,
+    String? gameType,
+    String? condition,
+    int? order,
+    String? rarity,
   }) {
     return AchievementModel(
       id: id ?? this.id,
@@ -100,12 +709,61 @@ class AchievementModel {
       category: category ?? this.category,
       xpReward: xpReward ?? this.xpReward,
       coinReward: coinReward ?? this.coinReward,
+      gameType: gameType ?? this.gameType,
+      condition: condition ?? this.condition,
+      order: order ?? this.order,
+      rarity: rarity ?? this.rarity,
     );
+  }
+
+  /// Get rarity color for UI
+  Color get rarityColor {
+    switch (rarity) {
+      case 'Common':
+        return const Color(0xFF9E9E9E);
+      case 'Uncommon':
+        return const Color(0xFF4CAF50);
+      case 'Rare':
+        return const Color(0xFF2196F3);
+      case 'Epic':
+        return const Color(0xFF9C27B0);
+      case 'Legendary':
+        return const Color(0xFFFF9800);
+      default:
+        return const Color(0xFF9E9E9E);
+    }
+  }
+
+  /// Get game type display name
+  String? get gameTypeDisplay {
+    if (gameType == null) return null;
+    switch (gameType) {
+      case 'fillInBlank':
+        return 'Fill in the Blank';
+      case 'chooseCorrectTense':
+        return 'Choose Correct Tense';
+      case 'sentenceBuilder':
+        return 'Sentence Builder';
+      case 'errorDetection':
+        return 'Error Detection';
+      case 'translationChallenge':
+        return 'Translation Challenge';
+      case 'speedQuiz':
+        return 'Speed Quiz';
+      case 'wordMatch':
+        return 'Word Match';
+      case 'bossBattle':
+        return 'Boss Battle';
+      case 'dailyChallenge':
+        return 'Daily Challenge';
+      default:
+        return gameType;
+    }
   }
 
   @override
   String toString() {
-    return 'AchievementModel(id: $id, title: $title, unlocked: $unlocked)';
+    return 'AchievementModel(id: $id, title: $title, unlocked: $unlocked, gameType: $gameType, rarity: $rarity)';
   }
 
   @override
