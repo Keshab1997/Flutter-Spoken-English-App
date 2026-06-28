@@ -92,6 +92,15 @@ class StatisticsRepository {
     return results.fold<int>(0, (sum, r) => sum + r.earnedCoins);
   }
 
+  /// Returns the sum of correct answers for a specific game mode.
+  /// Used by AchievementService to check game-mode-specific achievements.
+  Future<int> getGameModeCorrect(String gameType) async {
+    final results = await getResults();
+    return results
+        .where((r) => r.gameType == gameType)
+        .fold<int>(0, (sum, r) => sum + r.correctAnswers);
+  }
+
   Future<GameResultModel?> getBestResult() async {
     final results = await getResults();
     if (results.isEmpty) return null;

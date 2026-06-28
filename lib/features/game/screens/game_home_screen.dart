@@ -139,9 +139,16 @@ class _GameHomeScreenState extends ConsumerState<GameHomeScreen>
                                   color: Colors.white,
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold)),
-                          Text(xpState.levelTitle,
-                              style: const TextStyle(
-                                  color: Colors.white70, fontSize: 14)),
+                          Row(
+                            children: [
+                              Text(xpState.levelEmoji,
+                                  style: const TextStyle(fontSize: 16)),
+                              const SizedBox(width: 6),
+                              Text(xpState.levelTitle,
+                                  style: const TextStyle(
+                                      color: Colors.white70, fontSize: 14)),
+                            ],
+                          ),
                         ],
                       ),
                       Column(

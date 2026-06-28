@@ -173,6 +173,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
             xp: xpState.currentXP,
             score: widget.score,
             level: xpState.currentLevel,
+            photoUrl: user.photoURL ?? '',
           );
 
       print('✅ Game data synced to Firebase after game completion');

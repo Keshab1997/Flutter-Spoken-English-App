@@ -206,7 +206,7 @@ class _StatisticsScreenState extends ConsumerState<StatisticsScreen> {
                   _StatusRowData(
                     label: 'Current Level',
                     value:
-                        '${stats.currentLevel} - ${xpState.levelTitle}',
+                        '${xpState.levelEmoji}  ${stats.currentLevel} - ${xpState.levelTitle}',
                   ),
                   _StatusRowData(
                     label: 'Total XP Earned',

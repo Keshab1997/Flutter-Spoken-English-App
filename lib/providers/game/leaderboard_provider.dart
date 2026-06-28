@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../repositories/leaderboard_repository.dart';
 
@@ -39,12 +40,31 @@ class LeaderboardState {
 enum LeaderboardType { global, weekly, daily }
 
 class LeaderboardNotifier extends AsyncNotifier<LeaderboardState> {
-  late final LeaderboardRepository _leaderboardRepository;
+  late LeaderboardRepository _leaderboardRepository;
+  StreamSubscription<List<LeaderboardEntry>>? _globalSubscription;
 
   @override
   Future<LeaderboardState> build() async {
     _leaderboardRepository = LeaderboardRepository();
 
+    // Show cached data immediately while Firestore loads
+    final cached = _leaderboardRepository.getCachedLeaderboard();
+    if (cached.isNotEmpty) {
+      state = AsyncValue.data(LeaderboardState(
+        entries: cached,
+        type: LeaderboardType.global,
+      ));
+    }
+
+    // Start real-time Firestore listener for global leaderboard
+    _startGlobalStream();
+
+    // Cancel stream when this provider is disposed
+    ref.onDispose(() {
+      _stopStream();
+    });
+
+    // One-shot fetch in case cache is empty
     final entries = await _leaderboardRepository.fetchGlobalLeaderboard();
 
     return LeaderboardState(
@@ -53,8 +73,36 @@ class LeaderboardNotifier extends AsyncNotifier<LeaderboardState> {
     );
   }
 
+  /// Listens to the [leaderboard] collection in real time.
+  /// Updates state automatically whenever any user's XP/score changes.
+  void _startGlobalStream({int limit = 100}) {
+    _globalSubscription?.cancel();
+    _globalSubscription = _leaderboardRepository
+        .watchGlobalLeaderboard(limit: limit)
+        .listen((entries) {
+      // Only update if we're still on the global tab
+      if (state.value?.type == LeaderboardType.global) {
+        state = AsyncValue.data(LeaderboardState(
+          entries: entries,
+          type: LeaderboardType.global,
+        ));
+      }
+    }, onError: (e, stack) {
+      // Don't override a valid state on transient errors
+      if (state.value == null) {
+        state = AsyncValue.error(e, stack);
+      }
+    });
+  }
+
+  void _stopStream() {
+    _globalSubscription?.cancel();
+    _globalSubscription = null;
+  }
+
   Future<void> loadGlobalLeaderboard({int limit = 100}) async {
     state = const AsyncValue.loading();
+    _startGlobalStream(limit: limit);
 
     try {
       final entries =
@@ -69,6 +117,7 @@ class LeaderboardNotifier extends AsyncNotifier<LeaderboardState> {
   }
 
   Future<void> loadWeeklyLeaderboard({int limit = 100}) async {
+    _stopStream();
     state = const AsyncValue.loading();
 
     try {
@@ -84,6 +133,7 @@ class LeaderboardNotifier extends AsyncNotifier<LeaderboardState> {
   }
 
   Future<void> loadDailyLeaderboard({int limit = 100}) async {
+    _stopStream();
     state = const AsyncValue.loading();
 
     try {
@@ -112,6 +162,7 @@ class LeaderboardNotifier extends AsyncNotifier<LeaderboardState> {
     required int xp,
     required int score,
     required int level,
+    String photoUrl = '',
   }) async {
     try {
       await _leaderboardRepository.updateUserStats(
@@ -120,18 +171,22 @@ class LeaderboardNotifier extends AsyncNotifier<LeaderboardState> {
         xp: xp,
         score: score,
         level: level,
+        photoUrl: photoUrl,
       );
 
-      // Refresh current leaderboard
-      switch (state.value?.type) {
-        case LeaderboardType.weekly:
-          await loadWeeklyLeaderboard();
-          break;
-        case LeaderboardType.daily:
-          await loadDailyLeaderboard();
-          break;
-        default:
-          await loadGlobalLeaderboard();
+      // For global: the stream listener picks up the change automatically.
+      // For weekly/daily: manual refresh is still needed.
+      if (state.value?.type != LeaderboardType.global) {
+        switch (state.value?.type) {
+          case LeaderboardType.weekly:
+            await loadWeeklyLeaderboard();
+            break;
+          case LeaderboardType.daily:
+            await loadDailyLeaderboard();
+            break;
+          default:
+            break;
+        }
       }
     } catch (e, stack) {
       state = AsyncValue.error(e, stack);

@@ -1,4 +1,7 @@
+import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../services/coin_service.dart';
 import '../../repositories/statistics_repository.dart';
 import 'game_provider.dart';
@@ -41,13 +44,43 @@ class CoinState {
 
 class CoinNotifier extends StateNotifier<CoinState> {
   final CoinService _coinService;
+  StreamSubscription<DocumentSnapshot>? _progressSubscription;
 
   CoinNotifier(this._coinService) : super(const CoinState()) {
     _init();
+    _startFirestoreListener();
   }
 
   Future<void> _init() async {
     await _refresh();
+  }
+
+  /// Listens to Firestore [game_progress] for real-time coin updates.
+  /// Same document as XpNotifier — reads [totalCoins] directly from Firebase.
+  void _startFirestoreListener() {
+    final userId = FirebaseAuth.instance.currentUser?.uid;
+    if (userId == null || userId.isEmpty) return;
+
+    _progressSubscription = FirebaseFirestore.instance
+        .collection('game_progress')
+        .doc(userId)
+        .snapshots()
+        .listen((snapshot) {
+      _updateFromFirestore(snapshot);
+    }, onError: (_) {
+      // Firestore unavailable — stay with current Hive-backed state
+    });
+  }
+
+  void _updateFromFirestore(DocumentSnapshot snapshot) {
+    if (!snapshot.exists) return;
+
+    final data = snapshot.data() as Map<String, dynamic>?;
+    if (data == null) return;
+
+    final int coins = data['totalCoins'] as int? ?? 0;
+
+    state = state.copyWith(currentCoins: coins);
   }
 
   Future<void> _refresh() async {
@@ -144,6 +177,12 @@ class CoinNotifier extends StateNotifier<CoinState> {
 
   void refresh() {
     _refresh();
+  }
+
+  @override
+  void dispose() {
+    _progressSubscription?.cancel();
+    super.dispose();
   }
 }
 

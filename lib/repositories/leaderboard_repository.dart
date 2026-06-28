@@ -8,6 +8,7 @@ class LeaderboardEntry {
   final int xp;
   final int level;
   final int rank;
+  final String photoUrl;
 
   LeaderboardEntry({
     required this.userId,
@@ -16,6 +17,7 @@ class LeaderboardEntry {
     this.xp = 0,
     this.level = 1,
     this.rank = 0,
+    this.photoUrl = '',
   });
 
   factory LeaderboardEntry.fromMap(Map<String, dynamic> map, {int? rank}) {
@@ -26,6 +28,7 @@ class LeaderboardEntry {
       xp: map['xp'] as int? ?? 0,
       level: map['level'] as int? ?? 1,
       rank: rank ?? map['rank'] as int? ?? 0,
+      photoUrl: map['photoUrl'] as String? ?? '',
     );
   }
 
@@ -36,6 +39,7 @@ class LeaderboardEntry {
       'score': score,
       'xp': xp,
       'level': level,
+      'photoUrl': photoUrl,
     };
   }
 }
@@ -86,7 +90,24 @@ class LeaderboardRepository {
         .orderBy('xp', descending: true)
         .limit(limit)
         .get();
-    return snapshot.docs.asMap().entries.map((entry) {
+    return _docsToEntries(snapshot.docs);
+  }
+
+  /// Real-time stream equivalent of [fetchGlobalLeaderboard].
+  /// Emits a new list every time any document in the collection changes.
+  Stream<List<LeaderboardEntry>> watchGlobalLeaderboard({int limit = 100}) {
+    return FirebaseFirestore.instance
+        .collection(_firestoreCollection)
+        .orderBy('xp', descending: true)
+        .limit(limit)
+        .snapshots()
+        .map((snapshot) => _docsToEntries(snapshot.docs));
+  }
+
+  /// Converts Firestore QueryDocumentSnapshots to ranked LeaderboardEntries.
+  List<LeaderboardEntry> _docsToEntries(
+      List<QueryDocumentSnapshot<Map<String, dynamic>>> docs) {
+    return docs.asMap().entries.map((entry) {
       return LeaderboardEntry.fromMap(
         entry.value.data(),
         rank: entry.key + 1,
@@ -96,14 +117,21 @@ class LeaderboardRepository {
 
   Future<List<LeaderboardEntry>> fetchWeeklyLeaderboard({int limit = 100}) async {
     final weekAgo = DateTime.now().subtract(const Duration(days: 7));
+    // Fetch top users by XP (global), then filter by lastActive on client side.
+    // This avoids Firestore's range-filter + orderBy limitation which would sort
+    // by lastActive first instead of by XP.
     final snapshot = await FirebaseFirestore.instance
         .collection(_firestoreCollection)
-        .where('lastActive', isGreaterThan: weekAgo)
-        .orderBy('lastActive', descending: false)
         .orderBy('xp', descending: true)
         .limit(limit)
         .get();
-    return snapshot.docs.asMap().entries.map((entry) {
+
+    final filteredDocs = snapshot.docs.where((doc) {
+      final lastActive = (doc.data()['lastActive'] as Timestamp?)?.toDate();
+      return lastActive != null && lastActive.isAfter(weekAgo);
+    }).toList();
+
+    return filteredDocs.asMap().entries.map((entry) {
       return LeaderboardEntry.fromMap(
         entry.value.data(),
         rank: entry.key + 1,
@@ -113,14 +141,19 @@ class LeaderboardRepository {
 
   Future<List<LeaderboardEntry>> fetchDailyLeaderboard({int limit = 100}) async {
     final today = DateTime(DateTime.now().year, DateTime.now().month, DateTime.now().day);
+    // Fetch top users by XP (global), then filter by lastActive on client side.
     final snapshot = await FirebaseFirestore.instance
         .collection(_firestoreCollection)
-        .where('lastActive', isGreaterThan: today)
-        .orderBy('lastActive', descending: false)
         .orderBy('xp', descending: true)
         .limit(limit)
         .get();
-    return snapshot.docs.asMap().entries.map((entry) {
+
+    final filteredDocs = snapshot.docs.where((doc) {
+      final lastActive = (doc.data()['lastActive'] as Timestamp?)?.toDate();
+      return lastActive != null && lastActive.isAfter(today);
+    }).toList();
+
+    return filteredDocs.asMap().entries.map((entry) {
       return LeaderboardEntry.fromMap(
         entry.value.data(),
         rank: entry.key + 1,
@@ -154,6 +187,7 @@ class LeaderboardRepository {
     required int xp,
     required int score,
     required int level,
+    String photoUrl = '',
   }) async {
     await FirebaseFirestore.instance
         .collection(_firestoreCollection)
@@ -164,6 +198,7 @@ class LeaderboardRepository {
       'xp': xp,
       'score': score,
       'level': level,
+      'photoUrl': photoUrl,
       'lastActive': DateTime.now(),
     });
   }
