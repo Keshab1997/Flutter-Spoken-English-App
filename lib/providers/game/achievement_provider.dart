@@ -114,14 +114,36 @@ class AchievementState {
 }
 
 class AchievementNotifier extends AsyncNotifier<AchievementState> {
-  late AchievementService _achievementService;
-  late AchievementRepository _achievementRepository;
+  AchievementService? _achievementService;
+  AchievementRepository? _achievementRepository;
 
   // Real-time stream subscriptions
   StreamSubscription<DocumentSnapshot>? _progressSubscription;
   StreamSubscription<QuerySnapshot>? _statsSubscription;
   StreamSubscription<DocumentSnapshot>? _metaSubscription;
   String? _currentUserId;
+
+  /// Ensures the service and repository are initialized.
+  /// This can be called before [build()] completes (e.g. when
+  /// [checkGameAchievements] is triggered from a game result screen
+  /// before the provider's build() finishes).
+  Future<void> _ensureInitialized() async {
+    if (_achievementService != null) return;
+
+    _achievementRepository = AchievementRepository();
+    _achievementService = AchievementService(
+      achievementRepository: _achievementRepository!,
+      progressRepository: ProgressRepository(),
+      statisticsRepository: StatisticsRepository(),
+    );
+
+    // Load default achievements from JSON so we have data to unlock
+    final cached = _achievementRepository!.getCachedAchievements();
+    if (cached.isEmpty) {
+      final jsonAchievements = await _achievementRepository!.loadFromJson();
+      await _achievementRepository!.cacheAchievements(jsonAchievements);
+    }
+  }
 
   @override
   Future<AchievementState> build() async {
@@ -130,20 +152,16 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
     _statsSubscription?.cancel();
     _metaSubscription?.cancel();
 
-    final progressRepo = ProgressRepository();
-    _achievementRepository = AchievementRepository();
-    _achievementService = AchievementService(
-      achievementRepository: _achievementRepository,
-      progressRepository: progressRepo,
-      statisticsRepository: StatisticsRepository(),
-    );
+    await _ensureInitialized();
+    final repo = _achievementRepository!;
+    final service = _achievementService!;
 
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
 
     // ── 1. Load achievements from Hive (fast, for immediate display) ──
-    final achievements = await _achievementService.loadAchievements();
-    final unlocked = _achievementService.getUnlockedAchievements();
-    final locked = _achievementService.getLockedAchievements();
+    final achievements = await service.loadAchievements();
+    final unlocked = service.getUnlockedAchievements();
+    final locked = service.getLockedAchievements();
 
     var currentState = AchievementState(
       allAchievements: achievements,
@@ -214,10 +232,10 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
     // ── 3. Sync achievements from Firestore (overrides Hive) ──
     if (_currentUserId != null && _currentUserId!.isNotEmpty) {
       try {
-        await _achievementRepository.syncFromFirestoreToHive(_currentUserId!);
-        final firestoreAchievements = await _achievementService.loadAchievements();
-        final firestoreUnlocked = _achievementService.getUnlockedAchievements();
-        final firestoreLocked = _achievementService.getLockedAchievements();
+        await repo.syncFromFirestoreToHive(_currentUserId!);
+        final firestoreAchievements = await service.loadAchievements();
+        final firestoreUnlocked = service.getUnlockedAchievements();
+        final firestoreLocked = service.getLockedAchievements();
 
         // Use current state (which has Hive stats) — DON'T reset to initialState!
         currentState = state.value ?? currentState;
@@ -273,11 +291,11 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
           ));
         }
         // Background sync to Hive
-        await _achievementService.syncProgressFromFirestore(_currentUserId!);
+        await _achievementService!.syncProgressFromFirestore(_currentUserId!);
       }
     } catch (_) {
       // Fallback: try Hive cache
-      final cached = _achievementService.getCachedProgress();
+      final cached = _achievementService!.getCachedProgress();
       if (cached != null) {
         final current = state.value;
         if (current != null) {
@@ -331,7 +349,7 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
         ));
       }
       // Background sync to Hive
-      await _achievementService.syncStatisticsFromFirestore(_currentUserId!);
+      await _achievementService!.syncStatisticsFromFirestore(_currentUserId!);
     } catch (_) {}
   }
 
@@ -413,7 +431,7 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
   Future<void> _syncProgressToHive() async {
     if (_currentUserId == null || _currentUserId!.isEmpty) return;
     try {
-      await _achievementService.syncProgressFromFirestore(_currentUserId!);
+      await _achievementService!.syncProgressFromFirestore(_currentUserId!);
     } catch (_) {}
   }
 
@@ -456,7 +474,7 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
   Future<void> _syncToHive() async {
     if (_currentUserId == null || _currentUserId!.isEmpty) return;
     try {
-      await _achievementService.syncStatisticsFromFirestore(_currentUserId!);
+      await _achievementService!.syncStatisticsFromFirestore(_currentUserId!);
     } catch (_) {}
   }
 
@@ -479,7 +497,10 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
     bool isBossBattle = false,
     int speedBonusCount = 0,
   }) async {
-    final newlyUnlocked = await _achievementService.checkGameAchievements(
+    // Ensure service is initialized even if build() hasn't run yet
+    await _ensureInitialized();
+
+    final newlyUnlocked = await _achievementService!.checkGameAchievements(
       score: score,
       correctAnswers: correctAnswers,
       accuracy: accuracy,
@@ -497,7 +518,7 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
 
   Future<List<AchievementModel>> checkStreakAchievements(int streak) async {
     final newlyUnlocked =
-        await _achievementService.checkStreakAchievements(streak);
+        await _achievementService!.checkStreakAchievements(streak);
 
     if (newlyUnlocked.isNotEmpty) {
       _refreshState();
@@ -512,7 +533,7 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
     required bool pastComplete,
     required bool futureComplete,
   }) async {
-    final newlyUnlocked = await _achievementService.checkTenseMastery(
+    final newlyUnlocked = await _achievementService!.checkTenseMastery(
       presentComplete: presentComplete,
       pastComplete: pastComplete,
       futureComplete: futureComplete,
@@ -527,7 +548,7 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
   }
 
   Future<AchievementModel?> unlockAchievement(String achievementId) async {
-    final achievement = await _achievementService.checkAndUnlock(achievementId);
+    final achievement = await _achievementService!.checkAndUnlock(achievementId);
 
     if (achievement != null) {
       _refreshState();
@@ -540,22 +561,22 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
   Future<void> _syncAchievementsToFirestore() async {
     if (_currentUserId == null || _currentUserId!.isEmpty) return;
     try {
-      final achievements = _achievementService.getAllAchievements();
+      final achievements = _achievementService!.getAllAchievements();
       if (achievements.isNotEmpty) {
-        await _achievementRepository.batchUploadToFirestore(_currentUserId!, achievements);
+        await _achievementRepository!.batchUploadToFirestore(_currentUserId!, achievements);
       }
     } catch (_) {}
   }
 
   void _refreshState() {
-    final unlocked = _achievementService.getUnlockedAchievements();
-    final locked = _achievementService.getLockedAchievements();
+    final unlocked = _achievementService!.getUnlockedAchievements();
+    final locked = _achievementService!.getLockedAchievements();
 
     final currentState = state.value;
     if (currentState == null) return;
 
     state = AsyncValue.data(currentState.copyWith(
-      allAchievements: _achievementService.getAllAchievements(),
+      allAchievements: _achievementService!.getAllAchievements(),
       unlockedAchievements: unlocked,
       lockedAchievements: locked,
     ));
