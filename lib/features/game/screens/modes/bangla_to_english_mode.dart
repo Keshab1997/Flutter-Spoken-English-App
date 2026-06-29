@@ -263,7 +263,7 @@ class _BanglaToEnglishModeScreenState extends ConsumerState<BanglaToEnglishModeS
           wrongAnswers: _wrongCount,
           earnedXP: earnedXP,
           earnedCoins: earnedCoins,
-          gameMode: 'bangla_to_english',
+          gameMode: 'banglaToEnglish',
         ),
       ),
     );

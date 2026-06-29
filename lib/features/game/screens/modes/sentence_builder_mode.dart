@@ -231,7 +231,7 @@ class _SentenceBuilderModeScreenState extends ConsumerState<SentenceBuilderModeS
           wrongAnswers: _wrongCount,
           earnedXP: earnedXP,
           earnedCoins: earnedCoins,
-          gameMode: 'sentence_builder',
+          gameMode: 'sentenceBuilder',
         ),
       ),
     );

@@ -52,9 +52,33 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
   @override
   void initState() {
     super.initState();
-    _updateLeaderboard();
-    _checkAchievements();
-    _syncGameDataToFirebase();
+    // Run all async init in order inside a single microtask.
+    // We save the result FIRST so achievement checks can read the current game's data.
+    Future.microtask(() async {
+      await _saveLocalResult();
+      _updateLeaderboard();
+      await _checkAchievements();
+      await _syncGameDataToFirebase();
+    });
+  }
+
+  /// Saves the current game result to Hive (StatisticsRepository) before
+  /// checking achievements, so the check sees the current game's stats.
+  Future<void> _saveLocalResult() async {
+    try {
+      final repo = StatisticsRepository();
+      await repo.saveResult(GameResultModel(
+        score: widget.score,
+        correctAnswers: widget.correctAnswers,
+        wrongAnswers: widget.wrongAnswers,
+        earnedXP: widget.earnedXP,
+        earnedCoins: widget.earnedCoins,
+        gameType: widget.gameMode,
+        completedTime: DateTime.now(),
+      ));
+    } catch (_) {
+      // Best-effort save
+    }
   }
 
   Future<void> _checkAchievements() async {
@@ -62,21 +86,19 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
     final accuracy = total > 0 ? widget.correctAnswers / total : 0.0;
     final isBossBattle = widget.gameMode == 'boss';
     
-    Future.microtask(() async {
-      try {
-        final newlyUnlocked = await ref.read(achievementProvider.notifier).checkGameAchievements(
-          score: widget.score,
-          correctAnswers: widget.correctAnswers,
-          accuracy: accuracy,
-          isBossBattle: isBossBattle,
-        );
-        if (newlyUnlocked.isNotEmpty && mounted) {
-          _showAchievementNotification(newlyUnlocked);
-        }
-      } catch (_) {
-        // Silently fail - achievement check is best-effort
+    try {
+      final newlyUnlocked = await ref.read(achievementProvider.notifier).checkGameAchievements(
+        score: widget.score,
+        correctAnswers: widget.correctAnswers,
+        accuracy: accuracy,
+        isBossBattle: isBossBattle,
+      );
+      if (newlyUnlocked.isNotEmpty && mounted) {
+        _showAchievementNotification(newlyUnlocked);
       }
-    });
+    } catch (_) {
+      // Silently fail - achievement check is best-effort
+    }
   }
 
   void _showAchievementNotification(List<dynamic> achievements) {
@@ -130,7 +152,22 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
       // gameType, difficulty, etc. — unlike the old approach that created a new
       // incomplete GameResultModel from widget params.
       final results = await statisticsRepo.getResults();
-      final result = results.isNotEmpty ? results.first : null;
+      var result = results.isNotEmpty ? results.first : null;
+
+      // Fallback for mode screens that did not save to StatisticsRepository locally.
+      // E.g., Grammar Detective, Story Completion without repo call, etc.
+      if (result == null || DateTime.now().difference(result.completedTime).inSeconds > 10) {
+        result = GameResultModel(
+          score: widget.score,
+          correctAnswers: widget.correctAnswers,
+          wrongAnswers: widget.wrongAnswers,
+          earnedXP: widget.earnedXP,
+          earnedCoins: widget.earnedCoins,
+          gameType: widget.gameMode,
+          completedTime: DateTime.now(),
+        );
+        await statisticsRepo.saveResult(result);
+      }
 
       if (result != null) {
         // Upload complete result with ALL 11 fields preserved
@@ -351,35 +388,35 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
 
   void _retryGame(BuildContext context, WidgetRef ref) {
     // If coming from a special game mode, go back to it
-    if (widget.gameMode == 'word_match') {
+    if (widget.gameMode == 'wordMatch') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const WordMatchModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'quick_quiz') {
+    if (widget.gameMode == 'quickQuiz') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const QuickQuizModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'fill_in_blanks') {
+    if (widget.gameMode == 'fillInBlank') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const FillInBlanksModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'sentence_builder') {
+    if (widget.gameMode == 'sentenceBuilder') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const SentenceBuilderModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'grammar_detective') {
+    if (widget.gameMode == 'grammarDetective') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const GrammarDetectiveModeScreen()),
@@ -393,7 +430,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
       );
       return;
     }
-    if (widget.gameMode == 'verb_learning') {
+    if (widget.gameMode == 'verbLearning') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const VerbLearningModeScreen()),

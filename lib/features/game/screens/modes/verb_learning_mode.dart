@@ -376,7 +376,7 @@ class _VerbLearningModeScreenState
             wrongAnswers: _wrongCount,
             earnedXP: xpEarned,
             earnedCoins: coinsEarned,
-            gameMode: 'verb_learning',
+            gameMode: 'verbLearning',
           ),
         ),
       );
@@ -404,17 +404,17 @@ class _VerbLearningModeScreenState
           );
     } catch (_) {}
     try {
-      final repo = StatisticsRepository();
-      await repo.saveResult(GameResultModel(
-        earnedXP: xp,
-        earnedCoins: coins,
-        correctAnswers: _correctCount,
-        wrongAnswers: _wrongCount,
-        accuracy: accuracy,
-        score: _score,
-        gameType: 'verb_learning',
-        completedTime: DateTime.now(),
-      ));
+	      final repo = StatisticsRepository();
+	      await repo.saveResult(GameResultModel(
+	        earnedXP: xp,
+	        earnedCoins: coins,
+	        correctAnswers: _correctCount,
+	        wrongAnswers: _wrongCount,
+	        accuracy: accuracy,
+	        score: _score,
+	        gameType: 'verbLearning',
+	        completedTime: DateTime.now(),
+	      ));
     } catch (_) {}
     try {
       final progressRepo = ref.read(progressRepositoryProvider);

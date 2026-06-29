@@ -249,7 +249,7 @@ class _FlashcardsModeScreenState extends ConsumerState<FlashcardsModeScreen>
           wrongAnswers: unknownCount,
           earnedXP: earnedXP,
           earnedCoins: earnedCoins,
-          gameMode: 'Flashcards',
+          gameMode: 'flashcard',
         ),
       ),
     ).then((_) {

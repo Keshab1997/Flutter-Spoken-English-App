@@ -311,7 +311,7 @@ class _GrammarDetectiveModeScreenState extends ConsumerState<GrammarDetectiveMod
           wrongAnswers: _wrongCount,
           earnedXP: earnedXP,
           earnedCoins: earnedCoins,
-          gameMode: 'grammar_detective',
+          gameMode: 'grammarDetective',
         ),
       ),
     );

@@ -284,7 +284,7 @@ class _StoryCompletionModeScreenState extends ConsumerState<StoryCompletionModeS
             wrongAnswers: _wrongCount,
             earnedXP: xpEarned,
             earnedCoins: coinsEarned,
-            gameMode: 'story_completion',
+            gameMode: 'storyCompletion',
           ),
         ),
       );
@@ -312,17 +312,17 @@ class _StoryCompletionModeScreenState extends ConsumerState<StoryCompletionModeS
       );
     } catch (_) {}
     try {
-      final repo = StatisticsRepository();
-      await repo.saveResult(GameResultModel(
-        earnedXP: xp,
-        earnedCoins: coins,
-        correctAnswers: _correctCount,
-        wrongAnswers: _wrongCount,
-        accuracy: accuracy,
-        score: _score,
-        gameType: 'story_completion',
-        completedTime: DateTime.now(),
-      ));
+	      final repo = StatisticsRepository();
+	      await repo.saveResult(GameResultModel(
+	        earnedXP: xp,
+	        earnedCoins: coins,
+	        correctAnswers: _correctCount,
+	        wrongAnswers: _wrongCount,
+	        accuracy: accuracy,
+	        score: _score,
+	        gameType: 'storyCompletion',
+	        completedTime: DateTime.now(),
+	      ));
     } catch (_) {}
 
     // 🔥 Upload updated streak/progress to Firestore

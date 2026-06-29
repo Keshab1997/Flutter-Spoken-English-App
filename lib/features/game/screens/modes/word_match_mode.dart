@@ -263,7 +263,7 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
             wrongAnswers: 0,
             earnedXP: xpEarned,
             earnedCoins: coinsEarned,
-            gameMode: 'word_match',
+            gameMode: 'wordMatch',
           ),
         ),
       );
@@ -292,17 +292,17 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
       );
     } catch (_) {}
     try {
-      final repo = StatisticsRepository();
-      await repo.saveResult(GameResultModel(
-        earnedXP: xp,
-        earnedCoins: coins,
-        correctAnswers: _matchedCount,
-        wrongAnswers: 0,
-        accuracy: accuracy,
-        score: _score,
-        gameType: 'word_match',
-        completedTime: DateTime.now(),
-      ));
+	      final repo = StatisticsRepository();
+	      await repo.saveResult(GameResultModel(
+	        earnedXP: xp,
+	        earnedCoins: coins,
+	        correctAnswers: _matchedCount,
+	        wrongAnswers: 0,
+	        accuracy: accuracy,
+	        score: _score,
+	        gameType: 'wordMatch',
+	        completedTime: DateTime.now(),
+	      ));
     } catch (_) {}
 
     // 🔥 Upload updated streak/progress to Firestore

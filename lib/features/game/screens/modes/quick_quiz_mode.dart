@@ -274,7 +274,7 @@ class _QuickQuizModeScreenState extends ConsumerState<QuickQuizModeScreen>
           wrongAnswers: _wrongCount,
           earnedXP: xpEarned,
           earnedCoins: coinsEarned,
-          gameMode: 'quick_quiz',
+          gameMode: 'quickQuiz',
         ),
       ),
     );
@@ -301,14 +301,15 @@ class _QuickQuizModeScreenState extends ConsumerState<QuickQuizModeScreen>
       );
     } catch (_) {}
     try {
-      final repo = StatisticsRepository();
-      await repo.saveResult(GameResultModel(
-        earnedXP: xp,
-        earnedCoins: coins,
-        correctAnswers: _correctCount,
-        wrongAnswers: _wrongCount,
-        score: _score,
-      ));
+	      final repo = StatisticsRepository();
+	      await repo.saveResult(GameResultModel(
+	        earnedXP: xp,
+	        earnedCoins: coins,
+	        correctAnswers: _correctCount,
+	        wrongAnswers: _wrongCount,
+	        score: _score,
+	        gameType: 'quickQuiz',
+	      ));
     } catch (_) {}
 
     // 🔥 Upload updated streak/progress to Firestore

@@ -284,7 +284,7 @@ class _FillInBlanksModeScreenState extends ConsumerState<FillInBlanksModeScreen>
             wrongAnswers: _wrongCount,
             earnedXP: xpEarned,
             earnedCoins: coinsEarned,
-            gameMode: 'fill_in_blanks',
+            gameMode: 'fillInBlank',
           ),
         ),
       );
@@ -312,17 +312,17 @@ class _FillInBlanksModeScreenState extends ConsumerState<FillInBlanksModeScreen>
       );
     } catch (_) {}
     try {
-      final repo = StatisticsRepository();
-      await repo.saveResult(GameResultModel(
-        earnedXP: xp,
-        earnedCoins: coins,
-        correctAnswers: _correctCount,
-        wrongAnswers: _wrongCount,
-        accuracy: accuracy,
-        score: _score,
-        gameType: 'fill_in_blanks',
-        completedTime: DateTime.now(),
-      ));
+	      final repo = StatisticsRepository();
+	      await repo.saveResult(GameResultModel(
+	        earnedXP: xp,
+	        earnedCoins: coins,
+	        correctAnswers: _correctCount,
+	        wrongAnswers: _wrongCount,
+	        accuracy: accuracy,
+	        score: _score,
+	        gameType: 'fillInBlank',
+	        completedTime: DateTime.now(),
+	      ));
     } catch (_) {}
 
     // 🔥 Upload updated streak/progress to Firestore
