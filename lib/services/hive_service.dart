@@ -14,6 +14,7 @@ class HiveService {
   static const String _gameProgressBox = 'game_progress';
   static const String _gameStatisticsBox = 'game_statistics';
   static const String _notificationHistoryBox = 'notification_history';
+  static const String _mockTestProgressBox = 'mock_test_progress';
 
   static Future<void> initialize() async {
     await Hive.initFlutter();
@@ -30,6 +31,7 @@ class HiveService {
     await Hive.openBox(_gameProgressBox);
     await Hive.openBox(_gameStatisticsBox);
     await Hive.openBox(_notificationHistoryBox);
+    await Hive.openBox(_mockTestProgressBox);
   }
 
   static Box get _vocabProgress => Hive.box(_vocabProgressBox);
@@ -688,6 +690,27 @@ class HiveService {
     await Hive.box(_notificationHistoryBox).put('notifications', <Map<String, dynamic>>[]);
   }
 
+  // ── Mock Test Progress ──
+
+  static Future<void> saveMockTestProgress(Map<String, dynamic> progress) async {
+    if (!Hive.isBoxOpen(_mockTestProgressBox)) {
+      await Hive.openBox(_mockTestProgressBox);
+    }
+    await Hive.box(_mockTestProgressBox).put('progress', progress);
+  }
+
+  static Map<String, dynamic>? getMockTestProgress() {
+    if (!Hive.isBoxOpen(_mockTestProgressBox)) return null;
+    final raw = Hive.box(_mockTestProgressBox).get('progress');
+    if (raw == null) return null;
+    return Map<String, dynamic>.from(raw as Map);
+  }
+
+  static Future<void> clearMockTestProgress() async {
+    if (!Hive.isBoxOpen(_mockTestProgressBox)) return;
+    await Hive.box(_mockTestProgressBox).clear();
+  }
+
   /// Clears all locally cached/stored data used by the app (Hive boxes).
   /// Note: Firebase-backed progress will reload/sync again on next fetch/login.
   static Future<void> clearAllCaches() async {
@@ -760,6 +783,11 @@ class HiveService {
     // Clear game achievements box (if exists)
     if (Hive.isBoxOpen('game_achievements')) {
       await Hive.box('game_achievements').clear();
+    }
+
+    // Mock test progress
+    if (Hive.isBoxOpen(_mockTestProgressBox)) {
+      await Hive.box(_mockTestProgressBox).clear();
     }
   }
 }

@@ -166,6 +166,7 @@ flutter:
     - assets/json/verb_forms/
     - assets/json/bangla_to_english/
     - assets/json/listening_practice/
+    - assets/json/mock_tests/
     - assets/audio/
     - assets/icon/
     - assets/pdfs/

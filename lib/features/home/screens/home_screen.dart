@@ -43,6 +43,7 @@ import '../../guides/screens/guides_screen.dart';
 import '../../verb_forms/screens/verb_forms_screen.dart';
 import '../../verb_forms/screens/verb_form_practice_screen.dart';
 import '../../practice/screens/bangla_english_practice_screen.dart';
+import '../../mock_test/screens/mock_test_list_screen.dart';
 import '../../homework/screens/homework_screen.dart';
 import '../../sentence_analyzer/screens/sentence_analyzer_screen.dart';
 
@@ -488,24 +489,28 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 theme, isDark, studyState, allGrammarChapters, allVocabChapters, lastOpenedChapter,
               ),
               const SizedBox(height: 24),
-              
-              // 5. Today's Word
+
+              // 5. Study Plan (To-Do)
+              const StudyPlanSection(),
+              const SizedBox(height: 24),
+
+              // 6. Today's Word
               _buildTodaysWordCard(theme, isDark, todayWords, isLoading: chaptersAsync.isLoading),
               const SizedBox(height: 24),
-              
-              // 6. AI Features (Important for modern learning)
+
+              // 7. AI Features (Important for modern learning)
               _buildAIFeaturesSection(theme, isDark),
               const SizedBox(height: 24),
-              
-              // 7. Learning Modules
+
+              // 8. Learning Modules
               _buildHomeLearningSection(theme, isDark),
               const SizedBox(height: 24),
-              
-              // 8. Practice Section
+
+              // 9. Practice Section
               _buildHomePracticeSection(theme, isDark),
               const SizedBox(height: 24),
 
-              // 9. Game Section
+              // 10. Game Section
               FeatureGateWidget(
                 featureKey: 'games',
                 child: _buildGameCard(theme, isDark),
@@ -1617,6 +1622,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget _buildHomePracticeSection(ThemeData theme, bool isDark) {
     final items = [
       {'title': 'Vocab Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()))},
+      {'title': 'Mock Test', 'icon': Icons.assignment_rounded, 'gradient': AppColors.primaryGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const MockTestListScreen()))},
       {'title': 'Verb Quiz', 'icon': Icons.transform_rounded, 'gradient': AppColors.accentGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VerbFormPracticeScreen()))},
       {'title': 'Grammar Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.infoGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarTestListScreen()))},
       {'title': 'Bangla English', 'icon': Icons.translate_rounded, 'gradient': [const Color(0xFF6366F1), const Color(0xFF8B5CF6)], 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const BanglaEnglishCategoryScreen()))},
