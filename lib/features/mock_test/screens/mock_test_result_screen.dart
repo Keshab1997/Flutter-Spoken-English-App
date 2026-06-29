@@ -6,13 +6,23 @@ import '../../../providers/mock_test_provider.dart';
 import 'mock_test_quiz_screen.dart';
 import 'mock_test_list_screen.dart';
 
+// ignore_for_file: prefer_const_constructors
+
 class MockTestResultScreen extends ConsumerWidget {
   final int testNumber;
   final String testTitle;
   final int score;
   final int total;
   final List<MockTestQuestion> questions;
+
+  /// questionIndex → user-এর selected shuffledOptionIndex
   final Map<int, int> answers;
+
+  /// questionIndex → shuffled option text list (review তে দেখানোর জন্য)
+  final Map<int, List<String>>? shuffledOptionsMap;
+
+  /// questionIndex → shuffle-এর পর correct option এর index
+  final Map<int, int>? shuffledCorrectIndexMap;
 
   const MockTestResultScreen({
     super.key,
@@ -22,6 +32,8 @@ class MockTestResultScreen extends ConsumerWidget {
     required this.total,
     required this.questions,
     required this.answers,
+    this.shuffledOptionsMap,
+    this.shuffledCorrectIndexMap,
   });
 
   @override
@@ -112,6 +124,28 @@ class MockTestResultScreen extends ConsumerWidget {
               ),
             ),
             const SizedBox(height: 16),
+
+            // ── Shuffle Badge ──
+            if (shuffledOptionsMap != null)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                decoration: BoxDecoration(
+                  color: Colors.grey.withOpacity(0.1),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.shuffle_rounded, size: 14, color: Colors.grey),
+                    SizedBox(width: 6),
+                    Text(
+                      'Options were shuffled in this attempt',
+                      style: TextStyle(color: Colors.grey, fontSize: 12),
+                    ),
+                  ],
+                ),
+              ),
+            if (shuffledOptionsMap != null) const SizedBox(height: 12),
 
             // ── Message ──
             Container(
@@ -219,13 +253,31 @@ class MockTestResultScreen extends ConsumerWidget {
             const SizedBox(height: 24),
 
             // ── Answer Review ──
-            Text('Review Answers', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+            Row(
+              children: [
+                Text('Review Answers', style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.bold)),
+                const Spacer(),
+                Text(
+                  '${answers.length} of $total answered',
+                  style: TextStyle(color: isDark ? Colors.white38 : Colors.black38, fontSize: 12),
+                ),
+              ],
+            ),
             const SizedBox(height: 12),
             ...questions.asMap().entries.map((entry) {
               final idx = entry.key;
               final q = entry.value;
+
+              // Shuffle info থাকলে সেটা ব্যবহার করি, না হলে original use করি
+              final displayOptions = shuffledOptionsMap != null
+                  ? shuffledOptionsMap![idx]!
+                  : q.options;
+              final correctIdx = shuffledCorrectIndexMap != null
+                  ? shuffledCorrectIndexMap![idx]!
+                  : q.correctIndex;
+
               final userAnswer = answers[idx];
-              final isCorrect = userAnswer == q.correctIndex;
+              final isCorrect = userAnswer == correctIdx;
 
               return Container(
                 margin: const EdgeInsets.only(bottom: 12),
@@ -293,7 +345,7 @@ class MockTestResultScreen extends ConsumerWidget {
                               ),
                               Expanded(
                                 child: Text(
-                                  userAnswer != null ? q.options[userAnswer] : 'Not answered',
+                                  userAnswer != null ? displayOptions[userAnswer] : 'Not answered',
                                   style: TextStyle(
                                     color: isCorrect ? AppColors.secondary : Colors.redAccent,
                                     fontWeight: FontWeight.w600,
@@ -315,7 +367,7 @@ class MockTestResultScreen extends ConsumerWidget {
                                 ),
                                 Expanded(
                                   child: Text(
-                                    q.options[q.correctIndex],
+                                    displayOptions[correctIdx],
                                     style: const TextStyle(
                                       color: AppColors.secondary,
                                       fontWeight: FontWeight.w600,

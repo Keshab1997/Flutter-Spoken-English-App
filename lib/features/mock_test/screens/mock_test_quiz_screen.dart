@@ -1,9 +1,21 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../models/mock_test_model.dart';
 import '../../../providers/mock_test_provider.dart';
 import 'mock_test_result_screen.dart';
+
+/// একটি প্রশ্নের জন্য shuffled options ট্র্যাক রাখে
+class _ShuffledQuestion {
+  final List<String> shuffledOptions;
+  final int shuffledCorrectIndex; // shuffle-এর পর correct option এর নতুন index
+
+  _ShuffledQuestion({
+    required this.shuffledOptions,
+    required this.shuffledCorrectIndex,
+  });
+}
 
 class MockTestQuizScreen extends ConsumerStatefulWidget {
   final int testNumber;
@@ -22,8 +34,11 @@ class MockTestQuizScreen extends ConsumerStatefulWidget {
 class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
   int _currentQuestion = 0;
   int? _selectedAnswer;
-  final Map<int, int> _answers = {};
+  final Map<int, int> _answers = {}; // questionIndex -> selected shuffledOptionIndex
   bool _isSubmitting = false;
+
+  // shuffle-এর পর প্রতিটি প্রশ্নের options ও correct index সংরক্ষণ
+  late final List<_ShuffledQuestion> _shuffledQuestions;
 
   MockTestModel? get _test {
     final tests = ref.read(mockTestListProvider);
@@ -32,6 +47,46 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
     } catch (_) {
       return null;
     }
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _shuffledQuestions = [];
+    _shuffleAllQuestions();
+  }
+
+  /// প্রতিটি প্রশ্নের options shuffle করে এবং নতুন correctIndex ট্র্যাক করে
+  void _shuffleAllQuestions() {
+    final test = _test;
+    if (test == null || test.questions.isEmpty) return;
+
+    final random = Random();
+    _shuffledQuestions = test.questions.map((q) {
+      // options ও correctIndex নিয়ে একটি তালিকা তৈরি করি
+      final List<_IndexedOption> indexedOptions = [];
+      for (int i = 0; i < q.options.length; i++) {
+        indexedOptions.add(_IndexedOption(text: q.options[i], originalIndex: i));
+      }
+
+      // তালিকাটি shuffle করি
+      indexedOptions.shuffle(random);
+
+      // shuffle-এর পর নতুন correctIndex খুঁজে বের করি
+      int newCorrectIndex = 0;
+      final List<String> shuffledTexts = [];
+      for (int i = 0; i < indexedOptions.length; i++) {
+        shuffledTexts.add(indexedOptions[i].text);
+        if (indexedOptions[i].originalIndex == q.correctIndex) {
+          newCorrectIndex = i;
+        }
+      }
+
+      return _ShuffledQuestion(
+        shuffledOptions: shuffledTexts,
+        shuffledCorrectIndex: newCorrectIndex,
+      );
+    }).toList();
   }
 
   @override
@@ -48,6 +103,7 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
     final isDark = theme.brightness == Brightness.dark;
     final questions = test.questions;
     final question = questions[_currentQuestion];
+    final shuffled = _shuffledQuestions[_currentQuestion];
     final progress = (_currentQuestion + 1) / questions.length;
 
     return Scaffold(
@@ -91,9 +147,20 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
                       'Question ${_currentQuestion + 1}/${questions.length}',
                       style: TextStyle(fontWeight: FontWeight.bold, color: isDark ? Colors.white70 : Colors.black54),
                     ),
-                    Text(
-                      '${_answers.length} answered',
-                      style: TextStyle(color: isDark ? Colors.white38 : Colors.black38, fontSize: 13),
+                    Row(
+                      children: [
+                        const Icon(Icons.shuffle_rounded, size: 14, color: Colors.grey),
+                        const SizedBox(width: 4),
+                        Text(
+                          'Options shuffled',
+                          style: TextStyle(color: isDark ? Colors.white38 : Colors.black38, fontSize: 12),
+                        ),
+                        const SizedBox(width: 12),
+                        Text(
+                          '${_answers.length} answered',
+                          style: TextStyle(color: isDark ? Colors.white38 : Colors.black38, fontSize: 13),
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -156,8 +223,8 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
                   ),
                   const SizedBox(height: 24),
 
-                  // Options
-                  ...question.options.asMap().entries.map((entry) {
+                  // Shuffled Options
+                  ...shuffled.shuffledOptions.asMap().entries.map((entry) {
                     final idx = entry.key;
                     final option = entry.value;
                     final isSelected = _selectedAnswer == idx;
@@ -305,13 +372,27 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
     final test = _test!;
     int correct = 0;
     for (final entry in _answers.entries) {
-      if (entry.value == test.questions[entry.key].correctIndex) {
+      final questionIndex = entry.key;
+      final selectedShuffledIndex = entry.value;
+      // shuffle-এর পরের correctIndex-এর সাথে compare করি
+      if (selectedShuffledIndex == _shuffledQuestions[questionIndex].shuffledCorrectIndex) {
         correct++;
       }
     }
 
-    // Save result
+    // Result screen-এ পাঠানোর জন্য original questions-ই পাঠাই
+    // কিন্তু _answers-এ shuffled index সংরক্ষিত আছে।
+    // Result screen-এ review করার সময় shuffle-এর বিষয়টি handle করতে হবে।
+    // আমরা result screen-এ shuffled info পাঠাবো।
     ref.read(mockTestProvider.notifier).saveResult(widget.testNumber, correct);
+
+    // shuffle info maps তৈরি করে result screen-এ পাঠাই
+    final Map<int, List<String>> shuffledOptionsMap = {};
+    final Map<int, int> shuffledCorrectIndexMap = {};
+    for (int i = 0; i < _shuffledQuestions.length; i++) {
+      shuffledOptionsMap[i] = _shuffledQuestions[i].shuffledOptions;
+      shuffledCorrectIndexMap[i] = _shuffledQuestions[i].shuffledCorrectIndex;
+    }
 
     Navigator.pushReplacement(
       context,
@@ -323,8 +404,18 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
           total: test.questions.length,
           questions: test.questions,
           answers: _answers,
+          shuffledOptionsMap: shuffledOptionsMap,
+          shuffledCorrectIndexMap: shuffledCorrectIndexMap,
         ),
       ),
     );
   }
+}
+
+/// shuffle-এর সময় originalIndex ট্র্যাক রাখার জন্য ক্ষণস্থায়ী হেলপার
+class _IndexedOption {
+  final String text;
+  final int originalIndex;
+
+  _IndexedOption({required this.text, required this.originalIndex});
 }
