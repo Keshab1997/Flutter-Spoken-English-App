@@ -1,0 +1,3 @@
+1. Modify `shouldResetStreak()` to use calendar days logic.
+2. Modify `checkAndUpdateStreak()` to use calendar days, and only reset or increment when the difference in days is >= 2 or == 1.
+3. Modify `recordActiveDay()` to check if today is a DIFFERENT calendar day before incrementing `totalActiveDays`, `weeklyStreak`, and `longestStreak`. Oh wait, `recordActiveDay` needs to know what the previous `lastActiveDate` was before it updates it! BUT wait! `checkAndUpdateStreak()` ALREADY updates the streak! We could just have `checkAndUpdateStreak()` do everything, but let's keep the split if we must, or we can examine the dates.

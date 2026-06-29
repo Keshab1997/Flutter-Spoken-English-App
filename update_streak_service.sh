@@ -1,3 +1,4 @@
+cat << 'INNER' > lib/services/streak_service.dart
 import '../repositories/progress_repository.dart';
 
 class StreakService {
@@ -362,3 +363,4 @@ class StreakStats {
     return 'Needs Improvement';
   }
 }
+INNER

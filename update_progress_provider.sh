@@ -1,3 +1,4 @@
+cat << 'INNER' > lib/providers/progress_provider.dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -104,3 +105,4 @@ class ProgressNotifier extends StateNotifier<AsyncValue<ProgressModel?>> {
     } catch (_) {}
   }
 }
+INNER

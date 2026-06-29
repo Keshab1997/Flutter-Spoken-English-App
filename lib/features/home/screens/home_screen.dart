@@ -104,7 +104,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       
       // 2. Check if streak should increment (new day) or reset (missed >48h)
       final newStreak = await streakNotifier.checkAndUpdateStreak();
-
+      
       // 3. Record today as active (updates lastActiveDate, totalActiveDays)
       await streakNotifier.recordActiveDay();
 
@@ -122,6 +122,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           }
         }
       }
+      
+      // 4.5 Sync the final streak back to the main progress provider (Firestore 'progress' collection)
+      
+      // if it wasn't refreshed yet use the one from service directly or 
+      await ref.read(progressProvider.notifier).syncStreak(ref.read(streakServiceProvider).getCurrentStreak());
 
       // 5. Upload streak data to Firestore for persistent storage
       if (authUser?.id.isNotEmpty == true) {
