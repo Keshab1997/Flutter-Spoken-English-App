@@ -39,6 +39,7 @@ import '../widgets/spoken_rules_screen.dart';
 import '../widgets/notification_dialog.dart';
 import '../widgets/notification_history_screen.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../guides/screens/guides_screen.dart';
 import '../../verb_forms/screens/verb_forms_screen.dart';
 import '../../verb_forms/screens/verb_form_practice_screen.dart';
 import '../../practice/screens/bangla_english_practice_screen.dart';
@@ -477,30 +478,34 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 onShare: () => _shareStreak(context, currentStreak),
               ),
               const SizedBox(height: 24),
-              
-              // 3. Continue Learning (Most Important - Keep at top)
+
+              // 3. Guides & Resources (Student Guide & Study Routine)
+              _buildGuidesSection(theme, isDark),
+              const SizedBox(height: 24),
+
+              // 4. Continue Learning (Most Important - Keep at top)
               _buildContinueLearningSection(
                 theme, isDark, studyState, allGrammarChapters, allVocabChapters, lastOpenedChapter,
               ),
               const SizedBox(height: 24),
               
-              // 4. Today's Word
+              // 5. Today's Word
               _buildTodaysWordCard(theme, isDark, todayWords, isLoading: chaptersAsync.isLoading),
               const SizedBox(height: 24),
               
-              // 5. AI Features (Important for modern learning)
+              // 6. AI Features (Important for modern learning)
               _buildAIFeaturesSection(theme, isDark),
               const SizedBox(height: 24),
               
-              // 6. Learning Modules
+              // 7. Learning Modules
               _buildHomeLearningSection(theme, isDark),
               const SizedBox(height: 24),
               
-              // 7. Practice Section
+              // 8. Practice Section
               _buildHomePracticeSection(theme, isDark),
               const SizedBox(height: 24),
-              
-              // 8. Game Section
+
+              // 9. Game Section
               FeatureGateWidget(
                 featureKey: 'games',
                 child: _buildGameCard(theme, isDark),
@@ -1762,6 +1767,118 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           Text(
                             item['subtitle'] as String,
                             style: TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 12),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  // GUIDES SECTION — Student Guide & Study Routine PDFs
+  Widget _buildGuidesSection(ThemeData theme, bool isDark) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Icon(Icons.library_books_rounded, color: AppColors.accent, size: 22),
+            const SizedBox(width: 8),
+            Text('Guides & Resources',
+                style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+          ],
+        ),
+        const SizedBox(height: 12),
+        SizedBox(
+          height: 150,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
+            itemCount: 2,
+            separatorBuilder: (_, __) => const SizedBox(width: 16),
+            itemBuilder: (_, i) {
+              final items = [
+                {
+                  'title': 'Student Guide',
+                  'subtitle': 'Complete learning guide with tips & instructions',
+                  'icon': Icons.school_rounded,
+                  'asset': 'assets/pdfs/STUDENT_GUIDE.pdf',
+                  'gradient': AppColors.accentGradient,
+                },
+                {
+                  'title': 'Study Routine',
+                  'subtitle': 'Daily & weekly study plan for best results',
+                  'icon': Icons.calendar_today_rounded,
+                  'asset': 'assets/pdfs/STUDY_ROUTINE.pdf',
+                  'gradient': AppColors.secondaryGradient,
+                },
+              ];
+              final item = items[i];
+              final grad = item['gradient'] as List<Color>;
+              return GestureDetector(
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const GuidesScreen()),
+                ),
+                child: Container(
+                  width: 220,
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight),
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [BoxShadow(color: grad[0].withOpacity(0.25), blurRadius: 10, offset: const Offset(0, 4))],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.2),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Icon(item['icon'] as IconData, color: Colors.white, size: 26),
+                          ),
+                          const Spacer(),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.picture_as_pdf_rounded, color: Colors.white, size: 12),
+                                SizedBox(width: 4),
+                                Text('PDF', style: TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold)),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            item['title'] as String,
+                            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 16),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            item['subtitle'] as String,
+                            style: TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 12),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ],
                       ),

@@ -1,0 +1,128 @@
+{
+  "title": "Study Routine",
+  "subtitle": "শিক্ষার্থীদের জন্য রুটিন — দৈনিক এবং সাপ্তাহিক প্রয়োজনীয় রুটিন",
+  "icon": "calendar",
+  "sections": [
+    {
+      "title": "রুটিন ব্যবহারের নির্দেশিকা (How to Use)",
+      "content": "এই রুটিন আপনাকে সাহায্য করবে কীভাবে SpeakEasy অ্যাপটি ব্যবহার করে নিয়মিতভাবে ইংরেজি শিখতে পারেন।",
+      "bullets": [
+        "প্রতিদিন নির্দিষ্ট সময় দিন — সকালে বা সন্ধ্যায়, যেটা আপনার সুবিধামত",
+        "নির্দিষ্ট সময়ের চেয়ে কম না দিন — কম সময় পাইলেও অন্তত 5 মিনিট দিন",
+        "সপ্তাহের রুটিন ফলো করুন — প্রতি দিনের আলাদা ফোকাস আছে",
+        "গেম খেলুন এবং মজা নিন — শিখতে গেলে গেম সর্বশ্রেষ্ঠ উপায়",
+        "প্রতি সপ্তাহে কম পক্ষে 6 দিন প্রয়োগ করুন — Streak বাঁচতে",
+        "আপনার পছন্দের অনুযায়ী রুটিন কাস্টমাইজ করুন"
+      ]
+    },
+    {
+      "title": "দৈনিক Streak রুটিন (Daily 5-min)",
+      "content": "এটি আপনার সবচেয়ে গুরুত্বপূর্ণ রুটিন। মাত্র 5 মিনিটেই আপনি আপনার Streak বাঁচিয়ে রাখতে পারেন!",
+      "subsections": [
+        {
+          "title": "Step-by-Step (5-Minute Routine)",
+          "bullets": [
+            "📱 অ্যাপ ওপেন করুন — শুধু অ্যাপ ওপেন করলেই আপনার Streak auto-আপডেট হয়। হোম স্ক্রিনে গ্রীটিং এবং Streak count দেখুন।",
+            "🎮 গেম খেলুন — প্র্যাক্টিস ট্যাবে যান এবং Quick Quiz বা Word Match খেলুন। একটি গেমই যথেষ্ট।",
+            "📚 লেসন সম্পন্ন করুন — হোমে Study Plan থেকে একটি চ্যাপ্টার কমপ্লিট করুন — Grammar বা Vocabulary যেকোনো।",
+            "🔥 Streak চেক করুন — হোম স্ক্রিনে Streak আইকনে ক্লিক করে আপনার বর্তমান Streak দেখুন।",
+            "📖 Today's Words দেখুন — হোমে 5টি নতুন শব্দ দেখুন, সেগুলো জোরে জোরে পড়ুন, এবং মনে রাখার চেষ্টা করুন।"
+          ]
+        },
+        {
+          "title": "Streak টিপস",
+          "bullets": [
+            "প্রতিদিন একই সময়ে প্রয়োগ করুন",
+            "রিমাইন্ডার সেট করুন Settings থেকে",
+            "Streak Freeze কিনুন (50 Coins) নিজেকে রাখতে"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "সাপ্তাহিক রুটিন (Weekly Chart)",
+      "content": "নিচের টেবিলটি ফলো করুন। প্রতি দিনের আলাদা ফোকাস আছে যা আপনাকে সব দিক থেকে ইংরেজি শিখতে সাহায্য করবে।",
+      "table": {
+        "headers": ["দিন", "ফোকাস", "সময়", "কী করবেন"],
+        "rows": [
+          ["Day 1", "Vocabulary + Streak", "30 min", "Study Plan → Vocabulary Ch.1 → Quick Quiz"],
+          ["Day 2", "Grammar Basics", "35 min", "Study Plan → Grammar Ch.1 → Listening Practice"],
+          ["Day 3", "Speaking", "40 min", "Speaking → Read Aloud → Listen & Repeat → Flashcard"],
+          ["Day 4", "Tense Mastery", "35 min", "Learning → Tense Rules → Sentence Builder Game"],
+          ["Day 5", "Conversation", "40 min", "Practice → Conversation → Word Match Game"],
+          ["Day 6", "AI + Review", "45 min", "AI Teacher chat (10min) → Study Plan → Grammar Test"],
+          ["Day 7", "Test + Fun", "30 min", "Weekly Test → Boss Battle / Speed Quiz → Achievements"]
+        ]
+      },
+      "note": "প্রতি দিনের শুরুতে অ্যাপ ওপেন করুন — Streak auto-আপডেট হবে।"
+    },
+    {
+      "title": "দীর্ঘমেয়াদী লার্নিং পাথ (10-Week Plan)",
+      "content": "এটি একটি 10 সপ্তাহের প্ল্যান যা আপনাকে Beginner থেকে আস্তে আস্তে ইংরেজিতে দক্ষ করে তুলবে।",
+      "table": {
+        "headers": ["Week", "Focus Area", "Key Activities"],
+        "rows": [
+          ["1-2", "Vocabulary (Beginner) + Grammar Basics", "Learn basic words (family, colors, numbers)\nComplete Grammar chapters 1-5\nPlay: Flashcard, Word Match"],
+          ["3-4", "Present Tenses + Speaking", "Master Present Simple, Continuous, Perfect\nSpeaking: Read Aloud practice\nPlay: Quick Quiz, Fill in Blanks"],
+          ["5-6", "Past/Future Tenses + Conversation", "Master Past & Future tenses\nConversation: Daily topics\nPlay: Sentence Builder, Story Completion"],
+          ["7-8", "Advanced Grammar + Free Speaking", "Complete Advanced Grammar chapters\nSpeaking: Free Speaking mode\nPlay: Boss Battle, Grammar Detective"],
+          ["9-10", "Full Practice + AI Teacher", "Weekly Tests + AI Teacher conversations\nReview all weak areas\nPlay: All games, earn achievements"]
+        ]
+      },
+      "bullets": [
+        "প্রতি সপ্তাহের শুরুতে লক্ষ্য নির্ধারণ করুন",
+        "সপ্তাহের শেষে শেখা জিনিসগুলো রিভিউ করুন",
+        "যদি কোনো টপিক কঠিন লাগে, তাহলে AI Teacher-এর সাহায্য নিন"
+      ]
+    },
+    {
+      "title": "গেম প্রোগ্রেশন পাথ (Game Progression)",
+      "content": "গেম খেলে আপনি দ্রুত ইংরেজি শিখতে পারবেন। নিচের গেমগুলো দিয়ে শুরু করে আস্তে আস্তে উচ্চ লেভেলে যান।",
+      "table": {
+        "headers": ["Level", "Games", "Skills You Learn"],
+        "rows": [
+          ["1 - Beginner", "Flashcard → Word Match → Quick Quiz", "Basic vocabulary, word recognition"],
+          ["2 - Easy", "Fill in Blanks → Sentence Builder → Grammar Detective", "Sentence structure, grammar rules"],
+          ["3 - Medium", "Bangla to English → Translation Challenge → Speed Quiz", "Translation skills, quick thinking"],
+          ["4 - Hard", "Story Completion → Error Detection → Choose Tense", "Reading comprehension, tense mastery"],
+          ["5 - Expert", "Verb Learning → Boss Battle → Daily Challenge", "Advanced grammar, all skills combined"]
+        ]
+      },
+      "bullets": [
+        "প্রতিটি গেমে বেশি XP এবং Coins আর্জনের সুযোগ আছে",
+        "বার বার গেম খেলে আপনার Score এবং Rank বাড়বে",
+        "প্রতিদিনের Daily Challenge সম্পন্ন করুন এক্সট্রা বোনাসের জন্য",
+        "Boss Battle শুধু উচ্চ লেভেলের জন্য, প্রথমে অন্যান্য গেম সম্পন্ন করুন"
+      ]
+    },
+    {
+      "title": "অগ্রগতি ট্র্যাকিং (Progress Tracking)",
+      "content": "আপনার অগ্রগতি ট্র্যাক করার জন্য SpeakEasy-এ বেশ কয়েকটি উপায় আছে। এগুলো নিয়মিত চেক করুন।",
+      "subsections": [
+        {
+          "title": "1. Study Plan Progress",
+          "content": "হোম স্ক্রিনের Study Plan সেকশনে আপনি গ্রামার এবং ভোকাবুলারি চ্যাপ্টারের পৃথক প্রোগ্রেস বার দেখতে পাবেন। প্রতিটি চ্যাপ্টারের পাশে একটি চেকমার্ক আছে — সম্পন্ন হলে টিক করুন।"
+        },
+        {
+          "title": "2. Profile Statistics",
+          "bullets": [
+            "Streak Days — কত দিন টানা প্রয়োগ করছেন",
+            "XP — মোট অভিজ্ঞতা পয়েন্ট",
+            "Coins — সঞ্চিত কয়েন",
+            "Achievements — আনলক করা ব্যাজের সংখ্যা",
+            "Level — বর্তমান লেভেল এবং Gamer Rank"
+          ]
+        },
+        {
+          "title": "3. Achievements & Leaderboard",
+          "content": "আপনি যত বেশি শিখবেন এবং গেম খেলবেন, তত বেশি Achievements আনলক হবে। লিডারবোর্ডে আপনি অন্যান্য শিক্ষার্থীদের সাথে আপনার অগ্রগতি তুলনা করতে পারবেন।"
+        },
+        {
+          "title": "Weekly Test",
+          "content": "প্রতি সপ্তাহে Study Plan আপনাকে একটি Weekly Mock Test দিতে রিমাইন্ড করবে। এটি দিয়ে আপনি আপনার সপ্তাহের শেখা সব কিছু রিভিউ করতে পারবেন।"
+        }
+      ],
+      "footer": "আপনার সাফল্যের জন্য শুভকামনা! 🎯\n\nমনে রাখবেন:\n\"প্রতিদিন একটু পড়ুন, তবে প্রতিদিন পড়ুন।\"\nধৈর্য এবং অনুশীলনই সাফল্যের চাবিকাঠি! 💪"
+    }
+  ]
+}

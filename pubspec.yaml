@@ -168,6 +168,7 @@ flutter:
     - assets/json/listening_practice/
     - assets/audio/
     - assets/icon/
+    - assets/pdfs/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
