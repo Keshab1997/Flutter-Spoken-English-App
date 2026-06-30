@@ -100,6 +100,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         }
       }
       
+      // 0.5 Restore weekly activity from game_progress (Firebase-synced) to settings
+      //    so the weekly calendar survives cache clears
+      HiveService.restoreWeeklyActivityFromProgress();
+
       // 1. Update HiveService weekly activity + last practice date FIRST
       await HiveService.markDayActive(now.weekday);
       await HiveService.setLastPracticeDate(now);

@@ -1,4 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
+import '../models/game/game_progress_model.dart';
 
 class HiveService {
   static const String _favoritesBox = 'favorites';
@@ -240,6 +241,9 @@ class HiveService {
     final map = getWeeklyActivity();
     map[weekday.toString()] = true;
     await _settings.put('weekly_activity', map);
+
+    // Also persist to game_progress box so it gets synced to Firebase
+    await _saveWeeklyActivityToGameProgress(map);
   }
 
   static Map<String, dynamic> getWeeklyActivity() {
@@ -262,6 +266,62 @@ class HiveService {
   /// Reset weekly activity (call at start of new week)
   static Future<void> resetWeeklyActivity() async {
     await _settings.put('weekly_activity', <String, dynamic>{});
+    // Also reset in game_progress box
+    await _saveWeeklyActivityToGameProgress(<String, dynamic>{});
+  }
+
+  /// Get the Monday of current week as "YYYY-MM-DD" string
+  static String _getCurrentWeekStart() {
+    final now = DateTime.now();
+    final daysSinceMonday = now.weekday - 1;
+    final monday = now.subtract(Duration(days: daysSinceMonday));
+    return '${monday.year}-${monday.month.toString().padLeft(2, '0')}-${monday.day.toString().padLeft(2, '0')}';
+  }
+
+  /// Save weekly activity map to game_progress box (for Firebase sync)
+  static Future<void> _saveWeeklyActivityToGameProgress(Map<String, dynamic> activity) async {
+    if (!Hive.isBoxOpen(_gameProgressBox)) return;
+    final box = Hive.box(_gameProgressBox);
+    final raw = box.get('user_progress');
+    if (raw == null) return;
+    try {
+      final progress = GameProgressModel.fromMap(
+        Map<String, dynamic>.from(raw as Map),
+        '',
+      );
+      final updated = progress.copyWith(
+        weeklyActivity: activity.map((k, v) => MapEntry(k, v == true)),
+        weeklyActivityWeekStart: _getCurrentWeekStart(),
+      );
+      await box.put('user_progress', updated.toMap());
+    } catch (_) {
+      // Silently ignore parse errors
+    }
+  }
+
+  /// Restore weekly activity from game_progress box to settings box.
+  /// Call this after syncing progress from Firestore to Hive.
+  static void restoreWeeklyActivityFromProgress() {
+    if (!Hive.isBoxOpen(_gameProgressBox)) return;
+    final box = Hive.box(_gameProgressBox);
+    final raw = box.get('user_progress');
+    if (raw == null) return;
+
+    try {
+      final progress = GameProgressModel.fromMap(
+        Map<String, dynamic>.from(raw as Map),
+        '',
+      );
+
+      // Only restore if the stored week matches the current week
+      if (progress.weeklyActivityWeekStart == _getCurrentWeekStart()) {
+        final restoredMap = progress.weeklyActivity
+            .map((k, v) => MapEntry(k, v as dynamic));
+        _settings.put('weekly_activity', restoredMap);
+      }
+    } catch (_) {
+      // Silently ignore parse errors
+    }
   }
 
   // ── Streak Freeze Shop / Cost ──

@@ -28,13 +28,15 @@ class GameProgressModelAdapter extends TypeAdapter<GameProgressModel> {
       missedDays: fields[8] as int,
       totalActiveDays: fields[9] as int,
       lastActiveDate: fields[10] as DateTime?,
+      weeklyActivity: (fields[11] as Map?)?.cast<String, bool>() ?? {},
+      weeklyActivityWeekStart: fields[12] as String?,
     );
   }
 
   @override
   void write(BinaryWriter writer, GameProgressModel obj) {
     writer
-      ..writeByte(11)
+      ..writeByte(13)
       ..writeByte(0)
       ..write(obj.userId)
       ..writeByte(1)
@@ -56,7 +58,11 @@ class GameProgressModelAdapter extends TypeAdapter<GameProgressModel> {
       ..writeByte(9)
       ..write(obj.totalActiveDays)
       ..writeByte(10)
-      ..write(obj.lastActiveDate);
+      ..write(obj.lastActiveDate)
+      ..writeByte(11)
+      ..write(obj.weeklyActivity)
+      ..writeByte(12)
+      ..write(obj.weeklyActivityWeekStart);
   }
 
   @override

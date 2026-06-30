@@ -38,6 +38,12 @@ class GameProgressModel {
   @HiveField(10)
   final DateTime lastActiveDate;
 
+  @HiveField(11)
+  final Map<String, bool> weeklyActivity;
+
+  @HiveField(12)
+  final String? weeklyActivityWeekStart;
+
   GameProgressModel({
     required this.userId,
     this.currentLevel = 1,
@@ -50,6 +56,8 @@ class GameProgressModel {
     this.missedDays = 0,
     this.totalActiveDays = 0,
     DateTime? lastActiveDate,
+    this.weeklyActivity = const {},
+    this.weeklyActivityWeekStart,
   }) : lastActiveDate = lastActiveDate ?? DateTime.now();
 
   factory GameProgressModel.fromMap(Map<String, dynamic> map, String userId) {
@@ -65,6 +73,11 @@ class GameProgressModel {
       missedDays: map['missedDays'] as int? ?? 0,
       totalActiveDays: map['totalActiveDays'] as int? ?? 0,
       lastActiveDate: _parseDate(map['lastActiveDate']),
+      weeklyActivity: map['weeklyActivity'] != null
+          ? Map<String, bool>.from(
+              (map['weeklyActivity'] as Map).map((k, v) => MapEntry(k.toString(), v == true)))
+          : {},
+      weeklyActivityWeekStart: map['weeklyActivityWeekStart'] as String?,
     );
   }
 
@@ -87,6 +100,8 @@ class GameProgressModel {
       'missedDays': missedDays,
       'totalActiveDays': totalActiveDays,
       'lastActiveDate': lastActiveDate.toIso8601String(), // Use ISO string for Hive
+      'weeklyActivity': weeklyActivity,
+      'weeklyActivityWeekStart': weeklyActivityWeekStart,
     };
   }
   
@@ -103,6 +118,8 @@ class GameProgressModel {
       'missedDays': missedDays,
       'totalActiveDays': totalActiveDays,
       'lastActiveDate': Timestamp.fromDate(lastActiveDate), // Firestore Timestamp
+      'weeklyActivity': weeklyActivity,
+      'weeklyActivityWeekStart': weeklyActivityWeekStart,
     };
   }
 
@@ -118,6 +135,8 @@ class GameProgressModel {
     int? missedDays,
     int? totalActiveDays,
     DateTime? lastActiveDate,
+    Map<String, bool>? weeklyActivity,
+    String? weeklyActivityWeekStart,
   }) {
     return GameProgressModel(
       userId: userId ?? this.userId,
@@ -131,6 +150,8 @@ class GameProgressModel {
       missedDays: missedDays ?? this.missedDays,
       totalActiveDays: totalActiveDays ?? this.totalActiveDays,
       lastActiveDate: lastActiveDate ?? this.lastActiveDate,
+      weeklyActivity: weeklyActivity ?? this.weeklyActivity,
+      weeklyActivityWeekStart: weeklyActivityWeekStart ?? this.weeklyActivityWeekStart,
     );
   }
 
