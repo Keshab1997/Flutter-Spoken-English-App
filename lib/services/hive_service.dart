@@ -13,6 +13,7 @@ class HiveService {
   static const String _sentenceAnalysisHistoryBox = 'sentence_analysis_history';
   static const String _gameProgressBox = 'game_progress';
   static const String _gameStatisticsBox = 'game_statistics';
+  static const String _gameAchievementsBox = 'game_achievements';
   static const String _notificationHistoryBox = 'notification_history';
   static const String _mockTestProgressBox = 'mock_test_progress';
 
@@ -30,6 +31,7 @@ class HiveService {
     await Hive.openBox(_sentenceAnalysisHistoryBox);
     await Hive.openBox(_gameProgressBox);
     await Hive.openBox(_gameStatisticsBox);
+    await Hive.openBox(_gameAchievementsBox);
     await Hive.openBox(_notificationHistoryBox);
     await Hive.openBox(_mockTestProgressBox);
   }
@@ -780,9 +782,8 @@ class HiveService {
       await Hive.box(_gameStatisticsBox).clear();
     }
     
-    // Clear game achievements box (if exists)
-    if (Hive.isBoxOpen('game_achievements')) {
-      await Hive.box('game_achievements').clear();
+    if (Hive.isBoxOpen(_gameAchievementsBox)) {
+      await Hive.box(_gameAchievementsBox).clear();
     }
 
     // Mock test progress

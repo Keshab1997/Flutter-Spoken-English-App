@@ -297,24 +297,26 @@ class _GrammarDetectiveModeScreenState extends ConsumerState<GrammarDetectiveMod
     }
   }
 
-  void _endGame() {
+  Future<void> _endGame() async {
     _questionTimer?.cancel();
     final earnedXP = _score * 2;
     final earnedCoins = _score + min(_bestStreak * 5, 50).toInt();
 
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (_) => ResultScreen(
-          score: _score,
-          correctAnswers: _correctCount,
-          wrongAnswers: _wrongCount,
-          earnedXP: earnedXP,
-          earnedCoins: earnedCoins,
-          gameMode: 'grammarDetective',
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => ResultScreen(
+            score: _score,
+            correctAnswers: _correctCount,
+            wrongAnswers: _wrongCount,
+            earnedXP: earnedXP,
+            earnedCoins: earnedCoins,
+            gameMode: 'grammarDetective',
+          ),
         ),
-      ),
-    );
+      );
+    }
   }
 
   /// Total questions that have been or will be shown (new + wrong + current displayed count)

@@ -4,6 +4,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/game/game_result_model.dart';
+import '../utils/hive_safe.dart';
 
 class StatisticsRepository {
   static const String _boxName = 'game_statistics';
@@ -40,7 +41,7 @@ class StatisticsRepository {
     final box = await _ensureBox();
     final results = await getResults();
     results.insert(0, result);
-    await box.put(_resultsKey, results.map((r) => r.toMap()).toList());
+    await box.put(_resultsKey, results.map((r) => HiveSafe.sanitizeMap(r.toMap())).toList());
   }
 
   Future<List<GameResultModel>> getResults() async {
@@ -187,7 +188,7 @@ class StatisticsRepository {
   Future<void> syncFromFirestoreToHive(String userId) async {
     final results = await fetchFromFirestore(userId);
     final box = await _ensureBox();
-    await box.put(_resultsKey, results.map((r) => r.toMap()).toList());
+    await box.put(_resultsKey, results.map((r) => HiveSafe.sanitizeMap(r.toMap())).toList());
   }
 
   /// Sync meta counters (boss wins, daily wins, time played) from Firestore → Hive.

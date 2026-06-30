@@ -4,15 +4,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../providers/game/xp_provider.dart';
-import '../../../../providers/game/coin_provider.dart';
-import '../../../../providers/game/streak_provider.dart';
-import '../../../../providers/game/achievement_provider.dart';
 import '../../../../providers/game/sound_provider.dart';
-import '../../../../providers/game/game_provider.dart';
 import '../../../../services/tts_service.dart';
-import '../../../../repositories/statistics_repository.dart';
-import '../../../../models/game/game_result_model.dart';
 import '../result_screen.dart';
 
 // ─────────────────────────────────────────────────────────────
@@ -356,16 +349,9 @@ class _VerbLearningModeScreenState
   }
 
   Future<void> _endGame() async {
-    final totalQuestions = _quizQuestions.length;
-    final accuracy =
-        totalQuestions > 0 ? _correctCount / totalQuestions : 0.0;
     final int xpEarned = _score * 2 + (_bestStreak >= 3 ? 20 : 0);
     final int coinsEarned = _score + (_bestStreak >= 5 ? 15 : 0);
 
-    // Save progress
-    _saveProgress(xpEarned, coinsEarned, accuracy);
-
-    await Future.delayed(const Duration(milliseconds: 600));
     if (mounted) {
       Navigator.pushReplacement(
         context,
@@ -381,48 +367,6 @@ class _VerbLearningModeScreenState
         ),
       );
     }
-  }
-
-  Future<void> _saveProgress(int xp, int coins, double accuracy) async {
-    try {
-      await ref.read(xpProvider.notifier).addXP(xp);
-    } catch (_) {}
-    try {
-      await ref.read(coinProvider.notifier).addCoins(coins);
-    } catch (_) {}
-    try {
-      await ref.read(streakProvider.notifier).checkAndUpdateStreak();
-    } catch (_) {}
-    try {
-      await ref.read(streakProvider.notifier).recordActiveDay();
-    } catch (_) {}
-    try {
-      await ref.read(achievementProvider.notifier).checkGameAchievements(
-            score: _score,
-            correctAnswers: _correctCount,
-            accuracy: accuracy,
-          );
-    } catch (_) {}
-    try {
-	      final repo = StatisticsRepository();
-	      await repo.saveResult(GameResultModel(
-	        earnedXP: xp,
-	        earnedCoins: coins,
-	        correctAnswers: _correctCount,
-	        wrongAnswers: _wrongCount,
-	        accuracy: accuracy,
-	        score: _score,
-	        gameType: 'verbLearning',
-	        completedTime: DateTime.now(),
-	      ));
-    } catch (_) {}
-    try {
-      final progressRepo = ref.read(progressRepositoryProvider);
-      final gameProgress = progressRepo.getProgress();
-      if (gameProgress != null) {
-        await progressRepo.uploadProgressToFirestore(gameProgress);
-      }
-    } catch (_) {}
   }
 
   // ─────────────────────────────────────────────────────────

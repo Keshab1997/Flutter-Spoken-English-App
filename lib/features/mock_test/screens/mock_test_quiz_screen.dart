@@ -38,7 +38,7 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
   bool _isSubmitting = false;
 
   // shuffle-এর পর প্রতিটি প্রশ্নের options ও correct index সংরক্ষণ
-  late final List<_ShuffledQuestion> _shuffledQuestions;
+  late List<_ShuffledQuestion> _shuffledQuestions;
 
   MockTestModel? get _test {
     final tests = ref.read(mockTestListProvider);

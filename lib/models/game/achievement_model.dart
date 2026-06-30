@@ -1179,7 +1179,7 @@ class AchievementModel {
 
   factory AchievementModel.fromMap(Map<String, dynamic> map, String docId) {
     return AchievementModel(
-      id: docId.isEmpty ? (map['id'] as String? ?? '') : docId,
+      id: map['id'] as String? ?? docId,
       title: map['title'] as String? ?? '',
       description: map['description'] as String? ?? '',
       unlocked: map['unlocked'] as bool? ?? false,

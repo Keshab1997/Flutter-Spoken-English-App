@@ -9,6 +9,7 @@ import '../../../providers/game/score_provider.dart';
 import '../../../services/game_service.dart';
 import '../../../providers/game/xp_provider.dart';
 import '../../../providers/game/coin_provider.dart';
+import '../../../providers/game/streak_provider.dart';
 import '../../../providers/game/sound_provider.dart';
 import '../../../providers/game/leaderboard_provider.dart';
 import '../../../providers/game/achievement_provider.dart';
@@ -57,6 +58,7 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
     // We save the result FIRST so achievement checks can read the current game's data.
     Future.microtask(() async {
       await _saveLocalResult();
+      await _addRewards();
       _updateLeaderboard();
       await _checkAchievements();
       await _syncGameDataToFirebase();
@@ -77,8 +79,34 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
         gameType: widget.gameMode,
         completedTime: DateTime.now(),
       ));
-    } catch (_) {
-      // Best-effort save
+    } catch (e) {
+      debugPrint('❌ Error saving game result: $e');
+    }
+  }
+
+  /// Adds XP, coins, and updates streak for the completed game.
+  /// This runs AFTER saving the result but BEFORE checking achievements,
+  /// so that the cumulative stats include this game's rewards.
+  Future<void> _addRewards() async {
+    try {
+      await ref.read(xpProvider.notifier).addXP(widget.earnedXP);
+    } catch (e) {
+      debugPrint('❌ Error adding XP: $e');
+    }
+    try {
+      await ref.read(coinProvider.notifier).addCoins(widget.earnedCoins);
+    } catch (e) {
+      debugPrint('❌ Error adding coins: $e');
+    }
+    try {
+      await ref.read(streakProvider.notifier).checkAndUpdateStreak();
+    } catch (e) {
+      debugPrint('❌ Error updating streak: $e');
+    }
+    try {
+      await ref.read(streakProvider.notifier).recordActiveDay();
+    } catch (e) {
+      debugPrint('❌ Error recording active day: $e');
     }
   }
 
@@ -86,6 +114,16 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
     final total = widget.correctAnswers + widget.wrongAnswers;
     final accuracy = total > 0 ? widget.correctAnswers / total : 0.0;
     final isBossBattle = widget.gameMode == 'boss';
+
+    int durationSeconds = 0;
+    try {
+      final results = await StatisticsRepository().getResults();
+      if (results.isNotEmpty) {
+        durationSeconds = results.first.durationSeconds;
+      }
+    } catch (e) {
+      debugPrint('❌ Error reading duration: $e');
+    }
     
     try {
       final newlyUnlocked = await ref.read(achievementProvider.notifier).checkGameAchievements(
@@ -93,12 +131,14 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
         correctAnswers: widget.correctAnswers,
         accuracy: accuracy,
         isBossBattle: isBossBattle,
+        gameMode: widget.gameMode,
+        durationSeconds: durationSeconds,
       );
       if (newlyUnlocked.isNotEmpty && mounted) {
         _showAchievementNotification(newlyUnlocked);
       }
-    } catch (_) {
-      // Silently fail - achievement check is best-effort
+    } catch (e) {
+      debugPrint('❌ Error checking achievements: $e');
     }
   }
 

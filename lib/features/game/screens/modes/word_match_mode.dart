@@ -4,15 +4,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../providers/game/xp_provider.dart';
-import '../../../../providers/game/coin_provider.dart';
-import '../../../../providers/game/streak_provider.dart';
-import '../../../../providers/game/achievement_provider.dart';
 import '../../../../providers/game/sound_provider.dart';
-import '../../../../providers/game/game_provider.dart';
 import '../../../../services/tts_service.dart';
-import '../../../../repositories/statistics_repository.dart';
-import '../../../../models/game/game_result_model.dart';
 import '../result_screen.dart';
 
 class WordPair {
@@ -246,13 +239,9 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
   Future<void> _endGame() async {
     setState(() => _isGameOver = true);
 
-    final accuracy = _totalPairs > 0 ? 1.0 : 0.0;
     final int xpEarned = _score * 2 + (_bestStreak >= 3 ? 20 : 0);
     final int coinsEarned = _score + (_bestStreak >= 5 ? 15 : 0);
 
-    _saveProgress(xpEarned, coinsEarned, accuracy);
-
-    await Future.delayed(const Duration(milliseconds: 800));
     if (mounted) {
       Navigator.pushReplacement(
         context,
@@ -268,51 +257,6 @@ class _WordMatchModeScreenState extends ConsumerState<WordMatchModeScreen>
         ),
       );
     }
-  }
-
-  Future<void> _saveProgress(int xp, int coins, double accuracy) async {
-    try {
-      await ref.read(xpProvider.notifier).addXP(xp);
-    } catch (_) {}
-    try {
-      await ref.read(coinProvider.notifier).addCoins(coins);
-    } catch (_) {}
-    try {
-      // First check/update streak (increment if new day), then record active day
-      await ref.read(streakProvider.notifier).checkAndUpdateStreak();
-    } catch (_) {}
-    try {
-      await ref.read(streakProvider.notifier).recordActiveDay();
-    } catch (_) {}
-    try {
-      await ref.read(achievementProvider.notifier).checkGameAchievements(
-        score: _score,
-        correctAnswers: _matchedCount,
-        accuracy: accuracy,
-      );
-    } catch (_) {}
-    try {
-	      final repo = StatisticsRepository();
-	      await repo.saveResult(GameResultModel(
-	        earnedXP: xp,
-	        earnedCoins: coins,
-	        correctAnswers: _matchedCount,
-	        wrongAnswers: 0,
-	        accuracy: accuracy,
-	        score: _score,
-	        gameType: 'wordMatch',
-	        completedTime: DateTime.now(),
-	      ));
-    } catch (_) {}
-
-    // 🔥 Upload updated streak/progress to Firestore
-    try {
-      final progressRepo = ref.read(progressRepositoryProvider);
-      final gameProgress = progressRepo.getProgress();
-      if (gameProgress != null) {
-        await progressRepo.uploadProgressToFirestore(gameProgress);
-      }
-    } catch (_) {}
   }
 
   @override

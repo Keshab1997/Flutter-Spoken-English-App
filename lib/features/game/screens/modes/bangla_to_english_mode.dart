@@ -250,23 +250,25 @@ class _BanglaToEnglishModeScreenState extends ConsumerState<BanglaToEnglishModeS
     _prepareOptions();
   }
 
-  void _endGame() {
+  Future<void> _endGame() async {
     _countdownTimer?.cancel();
     final earnedXP = _score * 2;
     final earnedCoins = _score;
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (_) => ResultScreen(
-          score: _score,
-          correctAnswers: _correctCount,
-          wrongAnswers: _wrongCount,
-          earnedXP: earnedXP,
-          earnedCoins: earnedCoins,
-          gameMode: 'banglaToEnglish',
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => ResultScreen(
+            score: _score,
+            correctAnswers: _correctCount,
+            wrongAnswers: _wrongCount,
+            earnedXP: earnedXP,
+            earnedCoins: earnedCoins,
+            gameMode: 'banglaToEnglish',
+          ),
         ),
-      ),
-    );
+      );
+    }
   }
 
   void _goBackToTopics() {

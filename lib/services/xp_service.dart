@@ -90,12 +90,13 @@ class XpService {
   // ── XP Management ──
 
   Future<int> getCurrentXP() async {
-    // Prefer cumulative total from statistics (game_statistics box)
-    final totalEarned = await _statisticsRepository.getTotalEarnedXP();
-    if (totalEarned > 0) return totalEarned;
-    // Fall back to progress box
+    // ProgressRepository is the source of truth for current balance —
+    // it tracks ALL XP (game earnings + achievement rewards + bonuses).
     final progress = _progressRepository.getProgress();
-    return progress?.currentXP ?? 0;
+    if (progress != null && progress.currentXP > 0) return progress.currentXP;
+    // Fall back to statistics box (game-only XP) if progress isn't set yet
+    final totalEarned = await _statisticsRepository.getTotalEarnedXP();
+    return totalEarned;
   }
 
   Future<int> getCurrentLevel() async {

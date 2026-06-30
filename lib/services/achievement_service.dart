@@ -20,7 +20,7 @@ class AchievementService {
   // ── Achievement Loading ──
 
   Future<List<AchievementModel>> loadAchievements() async {
-    var achievements = _achievementRepository.getCachedAchievements();
+    var achievements = await _achievementRepository.getAchievementsFromCache();
     if (achievements.isEmpty) {
       achievements = await _achievementRepository.loadFromJson();
       await _achievementRepository.cacheAchievements(achievements);

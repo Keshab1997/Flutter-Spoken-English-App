@@ -13,7 +13,7 @@
         "সব জায়গায়"
       ],
       "correctIndex": 0,
-      "explanation": "বাংলা অর্থ: 'A' কোথায় বসে? ব্যাখ্যা: 'A' বসে consonant sound (ব্যঞ্জনধ্বনি) এর আগে। যেমন: a book, a university, a one-taka note। University এবং one-এর শুরুতে vowel থাকলেও উচ্চারণ consonant-এর মতো, তাই a বসে।"
+      "explanation": "'A' বসে consonant sound (ব্যঞ্জনধ্বনি) এর আগে। যেমন: a book, a university, a one-taka note। University এবং one-এর শুরুতে vowel থাকলেও উচ্চারণ consonant-এর মতো, তাই a বসে।"
     },
     {
       "question": "'An' কোথায় বসে? (Where is 'an' used?)",
@@ -24,7 +24,7 @@
         "বহুবচনের আগে"
       ],
       "correctIndex": 1,
-      "explanation": "বাংলা অর্থ: 'An' কোথায় বসে? ব্যাখ্যা: 'An' বসে vowel sound (স্বরধ্বনি) এর আগে। যেমন: an apple, an honest man, an hour। মনে রাখবেন: vowel letter নয়, vowel sound দেখতে হবে। Honest ও hour-এ 'h' silent, তাই vowel sound, তাই an।"
+      "explanation": "'An' বসে vowel sound (স্বরধ্বনি) এর আগে। যেমন: an apple, an honest man, an hour। মনে রাখবেন: vowel letter নয়, vowel sound দেখতে হবে। Honest ও hour-এ 'h' silent, তাই vowel sound, তাই an।"
     },
     {
       "question": "'The' কোথায় বসে? (Where is 'the' used?)",
@@ -35,7 +35,7 @@
         "শুধু বহুবচনের আগে"
       ],
       "correctIndex": 1,
-      "explanation": "বাংলা অর্থ: 'The' কোথায় বসে? ব্যাখ্যা: 'The' বসে নির্দিষ্ট (specific) বা অদ্বিতীয় (unique) বস্তুর আগে। যেমন: the sun (একটাই), the book I read (নির্দিষ্ট বই), the tallest boy (superlative)।"
+      "explanation": "'The' বসে নির্দিষ্ট (specific) বা অদ্বিতীয় (unique) বস্তুর আগে। যেমন: the sun (একটাই), the book I read (নির্দিষ্ট বই), the tallest boy (superlative)।"
     },
     {
       "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
@@ -46,43 +46,73 @@
         "She is the honest girl."
       ],
       "correctIndex": 1,
-      "explanation": "বাংলা অর্থ: সে একজন সৎ মেয়ে। ব্যাখ্যা: Honest-এর 'h' silent, উচ্চারণ 'অনেস্ট' (vowel sound), তাই an হবে। সাধারণভাবে বললে a/an বসে, the নয়।"
+      "explanation": "Honest-এর 'h' silent, উচ্চারণ 'অনেস্ট' (vowel sound), তাই an হবে। সাধারণভাবে বললে a/an বসে, the নয়।"
     },
     {
       "question": "_____ sun rises in the east. (সূর্য পূর্ব দিকে ওঠে)",
-      "options": ["A", "An", "The", "No article"],
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
       "correctIndex": 2,
-      "explanation": "বাংলা অর্থ: সূর্য পূর্ব দিকে ওঠে। ব্যাখ্যা: পৃথিবীতে সূর্য (sun), চাঁদ (moon), আকাশ (sky) — এগুলো একটিই আছে (unique), তাই এদের আগে 'the' বসে।"
+      "explanation": "পৃথিবীতে সূর্য (sun), চাঁদ (moon), আকাশ (sky) — এগুলো একটিই আছে (unique), তাই এদের আগে 'the' বসে।"
     },
     {
       "question": "He wants to be _____ engineer. (সে ইঞ্জিনিয়ার হতে চায়)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 1,
-      "explanation": "বাংলা অর্থ: সে ইঞ্জিনিয়ার হতে চায়। ব্যাখ্যা: Engineer শব্দটি vowel 'e' দিয়ে শুরু, উচ্চারণও vowel sound, তাই 'an engineer' হবে।"
+      "explanation": "Engineer শব্দটি vowel 'e' দিয়ে শুরু, উচ্চারণও vowel sound, তাই 'an engineer' হবে।"
     },
     {
       "question": "I have _____ one-taka note. (আমার কাছে একটি এক টাকার নোট আছে)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 0,
-      "explanation": "বাংলা অর্থ: আমার কাছে একটি এক টাকার নোট আছে। ব্যাখ্যা: 'One' লেখা হয় 'o' দিয়ে কিন্তু পড়া হয় 'ওয়ান' (consonant sound 'w')। তাই a one-taka note হবে, an নয়।"
+      "explanation": "'One' লেখা হয় 'o' দিয়ে কিন্তু পড়া হয় 'ওয়ান' (consonant sound 'w')। তাই a one-taka note হবে, an নয়।"
     },
     {
       "question": "She is _____ university student. (সে একজন বিশ্ববিদ্যালয়ের ছাত্রী)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 0,
-      "explanation": "বাংলা অর্থ: সে একজন বিশ্ববিদ্যালয়ের ছাত্রী। ব্যাখ্যা: University পড়া হয় 'ইউনিভার্সিটি' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a university হবে। মনে রাখবেন: vowel LETTER দেখবেন না, vowel SOUND দেখবেন।"
+      "explanation": "University পড়া হয় 'ইউনিভার্সিটি' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a university হবে। মনে রাখবেন: vowel LETTER দেখবেন না, vowel SOUND দেখবেন।"
     },
     {
       "question": "_____ Taj Mahal is very beautiful. (তাজমহল খুবই সুন্দর)",
-      "options": ["A", "An", "The", "No article"],
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
       "correctIndex": 2,
-      "explanation": "বাংলা অর্থ: তাজমহল খুবই সুন্দর। ব্যাখ্যা: বিখ্যাত স্থাপনা, স্মৃতিস্তম্ভ, জাদুঘর ইত্যাদির নামের আগে 'the' বসে। যেমন: the Taj Mahal, the British Museum।"
+      "explanation": "বিখ্যাত স্থাপনা, স্মৃতিস্তম্ভ, জাদুঘর ইত্যাদির নামের আগে 'the' বসে। যেমন: the Taj Mahal, the British Museum।"
     },
     {
       "question": "He will come back in _____ hour. (সে এক ঘণ্টার মধ্যে ফিরে আসবে)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 1,
-      "explanation": "বাংলা অর্থ: সে এক ঘণ্টার মধ্যে ফিরে আসবে। ব্যাখ্যা: Hour-এ 'h' silent (উচ্চারিত হয় না), পড়া হয় 'আওয়ার' (vowel sound)। তাই an hour হবে। Important exception!"
+      "explanation": "Hour-এ 'h' silent (উচ্চারিত হয় না), পড়া হয় 'আওয়ার' (vowel sound)। তাই an hour হবে। Important exception!"
     },
     {
       "question": "I saw _____ bird. _____ bird was blue. (আমি একটি পাখি দেখলাম। পাখিটি ছিল নীল)",
@@ -93,31 +123,51 @@
         "an, the"
       ],
       "correctIndex": 1,
-      "explanation": "বাংলা অর্থ: আমি একটি পাখি দেখলাম। পাখিটি ছিল নীল। ব্যাখ্যা: প্রথমবার উল্লেখ করলে 'a bird' (অনির্দিষ্ট), দ্বিতীয়বার একই পাখির কথা বললে 'the bird' (নির্দিষ্ট) হয়।"
+      "explanation": "প্রথমবার উল্লেখ করলে 'a bird' (অনির্দিষ্ট), দ্বিতীয়বার একই পাখির কথা বললে 'the bird' (নির্দিষ্ট) হয়।"
     },
     {
       "question": "He is _____ European. (তিনি একজন ইউরোপীয়)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 0,
-      "explanation": "বাংলা অর্থ: তিনি একজন ইউরোপীয়। ব্যাখ্যা: European পড়া হয় 'ইউরোপিয়ান' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a European হবে।"
+      "explanation": "European পড়া হয় 'ইউরোপিয়ান' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a European হবে।"
     },
     {
       "question": "_____ Ganga is a holy river. (গঙ্গা একটি পবিত্র নদী)",
-      "options": ["A", "An", "The", "No article"],
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
       "correctIndex": 2,
-      "explanation": "বাংলা অর্থ: গঙ্গা একটি পবিত্র নদী। ব্যাখ্যা: নদী (river), সাগর (sea), মহাসাগর (ocean), পর্বতমালা (mountain range) — এদের নামের আগে 'the' বসে। যেমন: the Ganga, the Bay of Bengal।"
+      "explanation": "নদী (river), সাগর (sea), মহাসাগর (ocean), পর্বতমালা (mountain range) — এদের নামের আগে 'the' বসে। যেমন: the Ganga, the Bay of Bengal।"
     },
     {
       "question": "_____ Quran is a holy book for Muslims. (কোরআন মুসলমানদের পবিত্র গ্রন্থ)",
-      "options": ["A", "An", "The", "No article"],
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
       "correctIndex": 2,
-      "explanation": "বাংলা অর্থ: কোরআন মুসলমানদের জন্য একটি পবিত্র গ্রন্থ। ব্যাখ্যা: ধর্মগ্রন্থ (religious book) ও সংবাদপত্রের নামের আগে 'the' বসে। যেমন: the Quran, the Bible, the Daily Star।"
+      "explanation": "ধর্মগ্রন্থ (religious book) ও সংবাদপত্রের নামের আগে 'the' বসে। যেমন: the Quran, the Bible, the Daily Star।"
     },
     {
       "question": "Everest is _____ highest peak in the world. (এভারেস্ট বিশ্বের সর্বোচ্চ শৃঙ্গ)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 2,
-      "explanation": "বাংলা অর্থ: এভারেস্ট বিশ্বের সর্বোচ্চ শৃঙ্গ। ব্যাখ্যা: Superlative degree (সর্বোচ্চ) — highest, best, tallest, most beautiful — এদের আগে সবসময় 'the' বসে। the highest peak।"
+      "explanation": "Superlative degree (সর্বোচ্চ) — highest, best, tallest, most beautiful — এদের আগে সবসময় 'the' বসে। the highest peak।"
     },
     {
       "question": "নিচের কোন বাক্যটি ভুল? (Which sentence is wrong?)",
@@ -128,13 +178,18 @@
         "She is a apple."
       ],
       "correctIndex": 3,
-      "explanation": "বাংলা অর্থ: কোন বাক্যটি ভুল? ব্যাখ্যা: 'Apple' vowel 'a' দিয়ে শুরু এবং উচ্চারণও vowel sound, তাই 'an apple' হবে, 'a apple' নয়। বাকি তিনটি বাক্যই সঠিক: M.A. পড়া 'এম এ' (vowel sound → an), B.A. পড়া 'বি এ' (consonant sound start → a), honest-এ 'h' silent (vowel sound → an)।"
+      "explanation": "'Apple' vowel 'a' দিয়ে শুরু এবং উচ্চারণও vowel sound, তাই 'an apple' হবে, 'a apple' নয়। বাকি তিনটি বাক্যই সঠিক: M.A. পড়া 'এম এ' (vowel sound → an), B.A. পড়া 'বি এ' (consonant sound start → a), honest-এ 'h' silent (vowel sound → an)।"
     },
     {
       "question": "This is _____ unique opportunity. (এটি একটি অনন্য সুযোগ)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 0,
-      "explanation": "বাংলা অর্থ: এটি একটি অনন্য সুযোগ। ব্যাখ্যা: Unique পড়া হয় 'ইউনিক' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a unique opportunity হবে, an নয়।"
+      "explanation": "Unique পড়া হয় 'ইউনিক' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a unique opportunity হবে, an নয়।"
     },
     {
       "question": "_____ rich should help _____ poor. (ধনীদের গরিবদের সাহায্য করা উচিত)",
@@ -145,19 +200,29 @@
         "No article, no article"
       ],
       "correctIndex": 2,
-      "explanation": "বাংলা অর্থ: ধনীদের গরিবদের সাহায্য করা উচিত। ব্যাখ্যা: 'The + Adjective' = একটি সম্পূর্ণ গোষ্ঠীকে (group of people) বোঝায়। যেমন: the rich = ধনী ব্যক্তিরা, the poor = গরিব ব্যক্তিরা, the elderly = বয়স্ক ব্যক্তিরা।"
+      "explanation": "'The + Adjective' = একটি সম্পূর্ণ গোষ্ঠীকে (group of people) বোঝায়। যেমন: the rich = ধনী ব্যক্তিরা, the poor = গরিব ব্যক্তিরা, the elderly = বয়স্ক ব্যক্তিরা।"
     },
     {
       "question": "My brother is _____ B.A. student. (আমার ভাই একজন বি.এ. ছাত্র)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 0,
-      "explanation": "বাংলা অর্থ: আমার ভাই একজন বি.এ. ছাত্র। ব্যাখ্যা: B.A. পড়া হয় 'বি এ' — 'বি' (consonant sound), তাই a B.A. student হবে। মনে রাখবেন: abbreviation-এর প্রথম অক্ষরের উচ্চারণ দেখতে হবে। M.A. → 'এম' (vowel) → an। B.A. → 'বি' (consonant) → a।"
+      "explanation": "B.A. পড়া হয় 'বি এ' — 'বি' (consonant sound), তাই a B.A. student হবে। মনে রাখবেন: abbreviation-এর প্রথম অক্ষরের উচ্চারণ দেখতে হবে। M.A. → 'এম' (vowel) → an। B.A. → 'বি' (consonant) → a।"
     },
     {
       "question": "What _____ beautiful flower it is! (কী চমৎকার ফুল এটি!)",
-      "options": ["a", "an", "the", "no article"],
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
       "correctIndex": 0,
-      "explanation": "বাংলা অর্থ: কী চমৎকার ফুল এটি! ব্যাখ্যা: Exclamatory sentence-এ 'What' এর পরে singular countable noun থাকলে 'a' বা 'an' বসে। What a beautiful flower! What an amazing view! Beautiful consonant sound দিয়ে শুরু, তাই a।"
+      "explanation": "Exclamatory sentence-এ 'What' এর পরে singular countable noun থাকলে 'a' বা 'an' বসে। What a beautiful flower! What an amazing view! Beautiful consonant sound দিয়ে শুরু, তাই a।"
     }
   ]
 }

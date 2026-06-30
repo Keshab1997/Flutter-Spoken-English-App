@@ -4,9 +4,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../providers/game/xp_provider.dart';
-import '../../../../providers/game/coin_provider.dart';
-import '../../../../providers/game/streak_provider.dart';
 import '../../../../providers/game/sound_provider.dart';
 import '../../../../services/tts_service.dart';
 import '../result_screen.dart';
@@ -235,11 +232,7 @@ class _FlashcardsModeScreenState extends ConsumerState<FlashcardsModeScreen>
     final earnedCoins = knownCount * 2 + (accuracy >= 0.8 ? 10 : 0);
     final score = knownCount * 10;
 
-    // Fire-and-forget the async calls so we don't block navigation
-    ref.read(xpProvider.notifier).addXP(earnedXP);
-    ref.read(coinProvider.notifier).addCoins(earnedCoins);
-    ref.read(streakProvider.notifier).incrementStreak();
-
+    // ResultScreen handles XP/coin addition, streak update, and stats saving
     Navigator.push(
       context,
       MaterialPageRoute(

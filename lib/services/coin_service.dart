@@ -74,12 +74,13 @@ class CoinService {
   // ── Coin Management ──
 
   Future<int> getCurrentCoins() async {
-    // Prefer cumulative total from statistics (game_statistics box)
-    final totalEarned = await _statisticsRepository.getTotalEarnedCoins();
-    if (totalEarned > 0) return totalEarned;
-    // Fall back to progress box
+    // ProgressRepository is the source of truth for current balance —
+    // it tracks ALL coins (game earnings + achievement rewards + bonuses).
     final progress = _progressRepository.getProgress();
-    return progress?.totalCoins ?? 0;
+    if (progress != null && progress.totalCoins > 0) return progress.totalCoins;
+    // Fall back to statistics box (game-only coins) if progress isn't set yet
+    final totalEarned = await _statisticsRepository.getTotalEarnedCoins();
+    return totalEarned;
   }
 
   Future<int> addCoins(int coins) async {

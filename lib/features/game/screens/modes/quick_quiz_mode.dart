@@ -4,10 +4,6 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../../../providers/game/xp_provider.dart';
-import '../../../../providers/game/coin_provider.dart';
-import '../../../../providers/game/streak_provider.dart';
-import '../../../../providers/game/achievement_provider.dart';
 import '../../../../services/tts_service.dart';
 import '../../../../repositories/statistics_repository.dart';
 import '../../../../models/game/game_result_model.dart';
@@ -252,17 +248,13 @@ class _QuickQuizModeScreenState extends ConsumerState<QuickQuizModeScreen>
     }
   }
 
-  void _endGame() {
+  Future<void> _endGame() async {
     _questionTimer?.cancel();
     _autoAdvanceTimer?.cancel();
-
-    final accuracy = _totalQuestions > 0 ? _correctCount / _totalQuestions : 0.0;
 
     // Calculate XP and coins
     final xpEarned = (_correctCount * 20) + (_streak * 5);
     final coinsEarned = (_correctCount * 5) + (_streak * 2);
-
-    _saveProgress(xpEarned, coinsEarned, accuracy);
 
     if (!mounted) return;
     Navigator.pushReplacement(
@@ -278,48 +270,6 @@ class _QuickQuizModeScreenState extends ConsumerState<QuickQuizModeScreen>
         ),
       ),
     );
-  }
-
-  Future<void> _saveProgress(int xp, int coins, double accuracy) async {
-    try {
-      await ref.read(xpProvider.notifier).addXP(xp);
-    } catch (_) {}
-    try {
-      await ref.read(coinProvider.notifier).addCoins(coins);
-    } catch (_) {}
-    try {
-      await ref.read(streakProvider.notifier).checkAndUpdateStreak();
-    } catch (_) {}
-    try {
-      await ref.read(streakProvider.notifier).recordActiveDay();
-    } catch (_) {}
-    try {
-      await ref.read(achievementProvider.notifier).checkGameAchievements(
-        score: _score,
-        correctAnswers: _correctCount,
-        accuracy: accuracy,
-      );
-    } catch (_) {}
-    try {
-	      final repo = StatisticsRepository();
-	      await repo.saveResult(GameResultModel(
-	        earnedXP: xp,
-	        earnedCoins: coins,
-	        correctAnswers: _correctCount,
-	        wrongAnswers: _wrongCount,
-	        score: _score,
-	        gameType: 'quickQuiz',
-	      ));
-    } catch (_) {}
-
-    // 🔥 Upload updated streak/progress to Firestore
-    try {
-      final progressRepo = ref.read(progressRepositoryProvider);
-      final gameProgress = progressRepo.getProgress();
-      if (gameProgress != null) {
-        await progressRepo.uploadProgressToFirestore(gameProgress);
-      }
-    } catch (_) {}
   }
 
   @override

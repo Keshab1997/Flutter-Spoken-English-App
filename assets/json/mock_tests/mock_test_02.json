@@ -1,228 +1,228 @@
 {
   "id": "mock_test_02",
   "testNumber": 2,
-  "title": "Mock Test 2",
-  "description": "Comprehensive test covering Tenses - Present and Tenses - Past for spoken English practice.",
+  "title": "Mock Test 2 - This, That, These, Those",
+  "description": "এই টেস্টে This, That, These, Those-এর সঠিক ব্যবহার নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথমে জানবো 'কোথায় কী বসে', তারপর fill in the blanks ও error detection দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "'This' কোথায় বসে? (Where is 'this' used?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "কাছে থাকা একক বস্তু/ব্যক্তির আগে",
+        "দূরে থাকা একক বস্তু/ব্যক্তির আগে",
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "explanation": "'This' বসে কাছে থাকা একক (singular) বস্তু বা ব্যক্তির আগে। যেমন: this book (এই বইটি — যা আমার হাতে আছে), this man (এই লোকটি — যিনি আমার পাশে দাঁড়িয়ে)।"
     },
     {
-      "question": "Question 2: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "'That' কোথায় বসে? (Where is 'that' used?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "কাছে থাকা একক বস্তু/ব্যক্তির আগে",
+        "দূরে থাকা একক বস্তু/ব্যক্তির আগে",
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'That' বসে দূরে থাকা একক (singular) বস্তু বা ব্যক্তির আগে। যেমন: that book (ঐ বইটি — যা দূরে রাখা), that man (ঐ লোকটি — যিনি দূরে দাঁড়িয়ে)।"
     },
     {
-      "question": "Question 3: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "'These' কোথায় বসে? (Where is 'these' used?)",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "কাছে থাকা একক বস্তুর আগে",
+        "দূরে থাকা একক বস্তুর আগে",
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'These' বসে কাছে থাকা একাধিক (plural) বস্তু বা ব্যক্তির আগে। 'This'-এর plural হলো 'These'। যেমন: these books (এই বইগুলো), these men (এই লোকেরা)।"
     },
     {
-      "question": "Question 4: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "'Those' কোথায় বসে? (Where is 'those' used?)",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একক বস্তুর আগে",
+        "সব জায়গায়"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Those' বসে দূরে থাকা একাধিক (plural) বস্তু বা ব্যক্তির আগে। 'That'-এর plural হলো 'Those'। যেমন: those books (ঐ বইগুলো), those men (ঐ লোকেরা)।"
     },
     {
-      "question": "Question 5: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ is my pen in my hand. (এই যে আমার হাতে কলমটি)",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "'In my hand' = আমার হাতে (কাছে)। আর pen একটি মাত্র (singular)। কাছে থাকা একক বস্তু বোঝাতে 'This' বসে।"
     },
     {
-      "question": "Question 6: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ is our school across the road. (ঐ যে রাস্তার ওপারে আমাদের স্কুল)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Across the road' = রাস্তার ওপারে (দূরে)। School একটি মাত্র (singular)। দূরে থাকা একক বস্তু বোঝাতে 'That' বসে।"
     },
     {
-      "question": "Question 7: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ books on my desk are mine. (আমার টেবিলের এই বইগুলো আমার)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'On my desk' = আমার টেবিলের উপরে (কাছে)। Books একাধিক (plural)। কাছে থাকা একাধিক বস্তু বোঝাতে 'These' বসে।"
     },
     {
-      "question": "Question 8: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ birds on the tree are crows. (ঐ গাছের পাখিগুলো দাঁড়কাক)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'On the tree' = গাছের উপরে (দূরে)। Birds একাধিক (plural)। দূরে থাকা একাধিক বস্তু বোঝাতে 'Those' বসে।"
     },
     {
-      "question": "Question 9: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ is my friend, Rahim. (ইনি আমার বন্ধু রহিম — কাছে দাঁড়ানো)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "explanation": "কাউকে পরিচয় করানোর সময় (introduce) কাছে থাকলে 'This is...' বলা হয়। 'This is my friend, Rahim.' Singular হওয়ায় This।"
     },
     {
-      "question": "Question 10: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "Hello, _____ is Rahim speaking. (হ্যালো, আমি রহিম বলছি — ফোনে)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "explanation": "ফোনে নিজেকে পরিচয় দেওয়ার সময় 'This is...' ব্যবহার করা হয়। 'This is Rahim speaking.' অথবা 'This is he/she.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "Is _____ Mr. Khan? (ঐ কী জনাব খান? — ফোনে জিজ্ঞাসা)",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "this",
+        "that",
+        "these",
+        "those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "ফোনে অন্য প্রান্তের ব্যক্তি সম্পর্কে জিজ্ঞাসা করতে 'Is that...?' ব্যবহার করা হয়। 'Is that Mr. Khan?' অথবা 'Who is that speaking?'"
     },
     {
-      "question": "Question 12: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ are my books. (এই হলো আমার বইগুলো — কাছে দেখিয়ে)",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "কাছে থাকা একাধিক বই (plural) বোঝাতে 'These are...' হবে। মনে রাখবেন: This → singular, These → plural।"
     },
     {
-      "question": "Question 13: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ were the good old days. (ঐ ছিল ভালো পুরনো দিনগুলো)",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "অতীতের কোনো সময়কে (days) বোঝাতে 'Those were the days' একটি fixed phrase। দূরে (সময়ের দিক থেকে) এবং plural (days) → Those।"
     },
     {
-      "question": "Question 14: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ is my car parked over there. (ঐ যে ওখানে পার্ক করা গাড়িটি)",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Over there' = ওখানে (দূরে)। Car একটি মাত্র (singular)। দূরে থাকা একক বস্তু → That।"
     },
     {
-      "question": "Question 15: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "This books are interesting.",
+        "These book is interesting.",
+        "These books are interesting.",
+        "That books are interesting."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Books' plural, তাই 'These' (plural determiner) এবং 'are' (plural verb) বসবে। This/That → singular noun + is। These/Those → plural noun + are।"
     },
     {
-      "question": "Question 16: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ is a long story. (এটা একটা লম্বা গল্প)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "explanation": "কোনো ঘটনা বা বিষয় সম্পর্কে বলতে শুরু করার সময় 'This is...' বলা হয়। Story singular → This। 'This is a long story' একটি common expression।"
     },
     {
-      "question": "Question 17: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ shoes I am wearing are new. (আমার পায়ের এই জুতোগুলো নতুন)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'I am wearing' = আমি পরেছি (আমার গায়ে/পায়ে = কাছে)। Shoes plural → These। মনে রাখবেন: পরা অবস্থায় জিনিস 'কাছে' থাকে।"
     },
     {
-      "question": "Question 18: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ pen on the floor is yours? (মেঝেতে ঐ কলমটি কি তোমার?)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'On the floor' = মেঝেতে (স্পিকারের থেকে দূরে)। Pen singular → That।"
     },
     {
-      "question": "Question 19: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "Could you please pass me _____ salt? (দয়া করে লবণটা দেবে? — কাছে থাকা)",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "this",
+        "that",
+        "these",
+        "those"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "explanation": "টেবিলে খাবারের সময় কাছে থাকা জিনিস চাইতে 'this' ব্যবহার করা হয়। Salt uncountable হলেও 'this' singular determiner হিসেবে বসে।"
     },
     {
-      "question": "Question 20: Replace this with your actual Tenses - Present / Tenses - Past question for Mock Test 2.",
+      "question": "_____ are the moments I will never forget. (এই সেই মুহূর্তগুলো যা আমি কখনো ভুলব না)",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "বর্তমান বা সামনের মুহূর্তগুলোর (moments) কথা বলছি, যা কাছে (সময়ের দিক থেকে)। Moments plural → These are... হবে।"
     }
   ]
 }
