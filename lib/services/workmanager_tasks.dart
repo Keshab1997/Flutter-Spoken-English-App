@@ -1,0 +1,67 @@
+import 'package:workmanager/workmanager.dart';
+import 'admin_notification_sync_service.dart';
+import 'notification_service.dart';
+import 're_engagement_service.dart';
+
+/// Unique task names registered with WorkManager
+const String adminSyncTaskName = 'adminSyncTask';
+const String reEngagementTaskName = 'reEngagementTask';
+
+/// Unique notification IDs used by background tasks (avoid conflicts with
+/// daily word (1000), practice reminder (1001), streak milestone (1002))
+const int _adminBgNotifId = 2000;
+const int _reEngagementNotifId = 2001;
+
+/// Entry point called by WorkManager for all background tasks.
+/// Must be tagged with @pragma('vm:entry-point') so the Dart VM
+/// keeps it during tree-shaking.
+@pragma('vm:entry-point')
+void workmanagerCallbackDispatcher() {
+  Workmanager().executeTask((task, inputData) async {
+    try {
+      switch (task) {
+        case adminSyncTaskName:
+          return await _handleAdminSync();
+        case reEngagementTaskName:
+          return await _handleReEngagement();
+        default:
+          return false;
+      }
+    } catch (_) {
+      return false;
+    }
+  });
+}
+
+/// Fetches new admin notifications from Firestore and shows a local
+/// notification if any were found.
+Future<bool> _handleAdminSync() async {
+  final newCount = await AdminNotificationSyncService.syncLatest();
+  if (newCount > 0) {
+    final notifService = NotificationService();
+    await notifService.showLocalNotification(
+      id: _adminBgNotifId,
+      title: '📢 নতুন ঘোষণা',
+      body: 'অ্যাডমিন একটি নতুন নোটিফিকেশন পাঠিয়েছেন',
+      payload: 'type=admin_announcement',
+    );
+  }
+  return true;
+}
+
+/// Checks user inactivity and sends a motivational notification if the
+/// user hasn't opened the app today.
+Future<bool> _handleReEngagement() async {
+  final result = await ReEngagementService.checkInactivity();
+  if (result.shouldNotify) {
+    final message = ReEngagementService.getMessage(result.daysInactive);
+    final notifService = NotificationService();
+    await notifService.showLocalNotification(
+      id: _reEngagementNotifId,
+      title: '⏰ ফিরে আসুন!',
+      body: message,
+      payload: 'type=re_engagement',
+    );
+  }
+  return true;
+}
