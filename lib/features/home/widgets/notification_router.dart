@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../models/notification_history_model.dart';
 import '../../../routes/route_names.dart';
-import '../../grammar/screens/grammar_list_screen.dart';
-import '../../vocabulary/screens/vocabulary_screen.dart';
 import '../../homework/screens/homework_screen.dart';
 import '../../game/screens/game_home_screen.dart';
 
@@ -16,10 +14,10 @@ class NotificationRouter {
   static void navigate(BuildContext context, NotificationHistoryItem item) {
     switch (item.actionType) {
       case 'grammar':
-        _openGrammar(context, item.actionPayload);
+        _openGrammar(context);
         break;
       case 'vocabulary':
-        _openVocabulary(context, item.actionPayload);
+        _openVocabulary(context);
         break;
       case 'settings':
         Navigator.pushNamed(context, RouteNames.settings);
@@ -42,23 +40,17 @@ class NotificationRouter {
     }
   }
 
-  static void _openGrammar(BuildContext context, String? payload) {
+  static void _openGrammar(BuildContext context) {
     // Navigate to the grammar list screen so the user can pick the chapter.
     // GrammarDetailScreen requires a full GrammarChapter object which we
     // cannot reconstruct from a plain chapter number in the payload.
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (_) => const GrammarListScreen()),
-    );
+    Navigator.pushNamed(context, RouteNames.grammarList);
   }
 
-  static void _openVocabulary(BuildContext context, String? payload) {
+  static void _openVocabulary(BuildContext context) {
     // Navigate to the vocabulary list screen so the user can pick the chapter.
     // ChapterWordsScreen requires a full VocabularyChapter object which we
     // cannot reconstruct from a plain chapter number in the payload.
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (_) => const VocabularyScreen()),
-    );
+    Navigator.pushNamed(context, RouteNames.vocabulary);
   }
 }
