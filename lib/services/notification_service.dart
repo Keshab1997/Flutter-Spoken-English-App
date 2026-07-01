@@ -1,8 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/timezone.dart' as tz;
 import 'package:timezone/data/latest.dart' as tz_data;
 import 'hive_service.dart';
 import 'dart:math';
+import '../models/notification_history_model.dart';
+import '../features/home/widgets/notification_router.dart'; // ignore: unused_import
 
 class NotificationService {
   static final NotificationService _instance = NotificationService._();
@@ -53,6 +56,8 @@ class NotificationService {
 
   bool get isInitialized => _initialized;
 
+  FlutterLocalNotificationsPlugin get plugin => _plugin;
+
   Future<void> initialize() async {
     if (_initialized) return;
 
@@ -85,13 +90,29 @@ class NotificationService {
   }
 
   void _onNotificationTap(NotificationResponse response) {
-    // Handle notification tap - could navigate to specific screen
     final payload = response.payload;
     if (payload == null) return;
-    
+
     // Mark notification as read when tapped
     _markNotificationAsReadByPayload(payload);
-    // Future: Navigate based on payload
+
+    // Try to navigate based on payload
+    _navigateFromPayload(payload);
+  }
+
+  void _navigateFromPayload(String payload) {
+    final history = HiveService.getNotificationHistory();
+    for (final json in history) {
+      if (json['payload'] == payload) {
+        final item = NotificationHistoryItem.fromJson(json);
+        // Navigation from system tray requires a global navigator key.
+        // Since the app doesn't have one, navigation is handled when the user
+        // opens the notification from the in-app history screen.
+        // Log the intent for debugging.
+        debugPrint('NotificationRouter would navigate to: ${item.actionType}');
+        break;
+      }
+    }
   }
 
   void _markNotificationAsReadByPayload(String payload) {
