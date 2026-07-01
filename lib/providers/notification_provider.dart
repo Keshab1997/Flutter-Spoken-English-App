@@ -21,27 +21,30 @@ class NotificationState {
     List<NotificationHistoryItem>? notifications,
     bool? isLoading,
     int? newSyncCount,
-    bool clearNewSyncCount = false,
   }) {
     return NotificationState(
       unreadCount: unreadCount ?? this.unreadCount,
       notifications: notifications ?? this.notifications,
       isLoading: isLoading ?? this.isLoading,
-      newSyncCount: clearNewSyncCount ? null : newSyncCount ?? this.newSyncCount,
+      newSyncCount: newSyncCount ?? this.newSyncCount,
     );
   }
 }
 
 class NotificationStateNotifier extends StateNotifier<NotificationState> {
   NotificationStateNotifier() : super(const NotificationState()) {
-    _load();
+    load();
   }
 
-  void _load() {
-    final history = HiveService.getNotificationHistory();
-    final items = history.map((json) => NotificationHistoryItem.fromJson(json)).toList();
-    final unread = items.where((n) => !n.isRead).length;
-    state = NotificationState(unreadCount: unread, notifications: items);
+  void load() {
+    try {
+      final history = HiveService.getNotificationHistory();
+      final items = history.map((json) => NotificationHistoryItem.fromJson(json)).toList();
+      final unread = items.where((n) => !n.isRead).length;
+      state = NotificationState(unreadCount: unread, notifications: items);
+    } catch (e) {
+      state = const NotificationState();
+    }
   }
 
   Future<void> refresh() async {
@@ -49,32 +52,34 @@ class NotificationStateNotifier extends StateNotifier<NotificationState> {
     int? added;
     try {
       added = await AdminNotificationSyncService.syncLatest();
-    } catch (_) {}
-    _load();
+    } catch (_) {
+      // Firestore sync failure — notifications still load from Hive below
+    }
+    load();
     state = state.copyWith(isLoading: false, newSyncCount: added);
   }
 
   Future<void> markAsRead(String id) async {
     await HiveService.markNotificationAsRead(id);
-    _load();
+    load();
   }
 
   Future<void> markAllAsRead() async {
     await HiveService.markAllNotificationsAsRead();
-    _load();
+    load();
   }
 
   Future<void> deleteNotification(String id) async {
     await HiveService.deleteNotification(id);
-    _load();
+    load();
   }
 
   Future<void> clearAll() async {
     await HiveService.clearNotificationHistory();
-    _load();
+    load();
   }
 }
 
-final notificationStateProvider = StateNotifierProvider<NotificationStateNotifier, NotificationState>((ref) {
+final notificationProvider = StateNotifierProvider<NotificationStateNotifier, NotificationState>((ref) {
   return NotificationStateNotifier();
 });
