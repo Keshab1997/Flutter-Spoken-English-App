@@ -24,6 +24,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
   bool _dailyWordNotification = true;
   bool _practiceReminderNotification = true;
   bool _streakNotification = true;
+  bool _reEngagementNotification = true;
   String _selectedLanguage = 'English (US)';
   List<Map<String, dynamic>> _aiKeys = [];
 
@@ -35,6 +36,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
     _dailyWordNotification = HiveService.isDailyWordNotification();
     _practiceReminderNotification = HiveService.isPracticeReminderNotification();
     _streakNotification = HiveService.isStreakNotification();
+    _reEngagementNotification = HiveService.isReEngagementEnabled();
     _loadAiKeys();
   }
 
@@ -142,6 +144,17 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                     setState(() => _streakNotification = val);
                     await HiveService.setStreakNotification(val);
                     await NotificationService().rescheduleOnAppOpen();
+                  },
+                  activeColor: AppColors.primary,
+                ),
+                const Divider(height: 1),
+                SwitchListTile(
+                  title: const Text('🔔 Re-engagement'),
+                  subtitle: const Text('Get notified to return when inactive'),
+                  value: _reEngagementNotification,
+                  onChanged: (val) async {
+                    setState(() => _reEngagementNotification = val);
+                    await HiveService.setReEngagementEnabled(val);
                   },
                   activeColor: AppColors.primary,
                 ),
