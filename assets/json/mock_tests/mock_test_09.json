@@ -1,228 +1,228 @@
 {
   "id": "mock_test_09",
   "testNumber": 9,
-  "title": "Mock Test 9",
-  "description": "Comprehensive test covering Direct & Indirect Speech and Conditional Sentences for spoken English practice.",
+  "title": "Mock Test 9 - Future Indefinite (will + V1)",
+  "description": "এই টেস্টে Future Indefinite Tense (will + V1) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Future Indefinite Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Future Indefinite Tense?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "Subject + V1 + s/es",
+        "Subject + will + V1",
+        "Subject + am/is/are + V+ing",
+        "Subject + have/has + V3"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Future Indefinite Tense-এর গঠন: Subject + will + V1 (base form)। সবার জন্য will একই। যেমন: I will go, He will eat, They will play। বাংলায় 'will' মানে 'ইবে' বা 'য়' — আমি যাব, সে খাবে, তারা খেলবে।"
     },
     {
-      "question": "Question 2: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Future Indefinite Tense কখন ব্যবহার করা হয়? (When is Future Indefinite Tense used?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "অতীতের কাজ বুঝাতে",
+        "বর্তমানের অভ্যাস বুঝাতে",
+        "ভবিষ্যতে ঘটবে এমন কাজ, প্রতিশ্রুতি, spontaneous decision বুঝাতে",
+        "চলমান কাজ বুঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Future Indefinite ব্যবহার হয়: (১) ভবিষ্যতের কাজ — I will go to Dhaka tomorrow, (২) প্রতিশ্রুতি (promise) — I will help you, (৩) হঠাৎ সিদ্ধান্ত (spontaneous decision) — 'The phone is ringing.' 'I will answer it.', (৪) ভবিষ্যদ্বাণী (prediction) — It will rain tomorrow।"
     },
     {
-      "question": "Question 3: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Future Indefinite-এ Negative বাক্য কিভাবে তৈরি হয়?",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "Subject + will + not + V1",
+        "Subject + do/does + not + V1",
+        "Subject + will + not + V2",
+        "Subject + not + will + V1"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "explanation": "Future Indefinite Negative: Subject + will + not + V1 (base form)। যেমন: I will not go, He will not come। সংক্ষেপে: won't (will not)। মনে রাখবেন: will not = won't (একটি contraction)।"
     },
     {
-      "question": "Question 4: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Future Indefinite-এ Question কিভাবে তৈরি হয়?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "Do/Does + Subject + V1?",
+        "Will + Subject + V1?",
+        "Is/Are + Subject + V+ing?",
+        "Subject + will + V1?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Future Indefinite Question: Will + Subject + V1 (base form)? যেমন: Will you come? Will he help us? Will they play? 'Will' প্রথমে বসে।"
     },
     {
-      "question": "Question 5: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "'Will' আর 'Shall'-এর মধ্যে পার্থক্য কী?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Will = সবার জন্য, Shall = শুধু I/We-এর সাথে (প্রস্তাব/সাজেশন)",
+        "Shall = সবার জন্য, Will = শুধু I/We-এর সাথে",
+        "দুটোর কোনো পার্থক্য নেই",
+        "Will = অতীত, Shall = ভবিষ্যৎ"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "Will = সব subject-এর সাথে ব্যবহার হয় (I will, You will, He will)। Shall = শুধু I/We-এর সাথে ব্যবহার হয়, বিশেষ করে প্রস্তাব (suggestion) বোঝাতে — 'Shall I open the window?' (আমি কি জানালা খুলব?), 'Shall we go?' (আমরা কি যাব?)।"
     },
     {
-      "question": "Question 6: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "I ___ you tomorrow. (আমি আগামীকাল তোমাকে সাহায্য করব)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "help",
+        "helps",
+        "will help",
+        "am helping"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Tomorrow' = ভবিষ্যৎ। 'Will help' = প্রতিশ্রুতি (promise)। সঠিক: 'I will help you tomorrow.' Future Indefinite: will + V1।"
     },
     {
-      "question": "Question 7: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Don't worry, I ___ the door. (চিন্তা করো না, আমি দরজাটা খুলব)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "open",
+        "opens",
+        "will open",
+        "opened"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "এটি একটি spontaneous decision (হঠাৎ সিদ্ধান্ত) — কেউ দরজায় নক করলে সাথে সাথে বলল 'I will open the door.' 'Will open' = Future Indefinite।"
     },
     {
-      "question": "Question 8: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "It ___ very cold tomorrow. (আগামীকাল খুব ঠান্ডা হবে)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "is",
+        "was",
+        "will be",
+        "has been"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Tomorrow' = ভবিষ্যৎ। It + will + be। এটি একটি ভবিষ্যদ্বাণী (prediction)। সঠিক: 'It will be very cold tomorrow.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "I think he ___ the exam. (আমি মনে করি সে পরীক্ষায় পাস করবে)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "pass",
+        "passes",
+        "will pass",
+        "passed"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'I think' = opinion/prediction। ভবিষ্যৎ সম্পর্কে মতামত দিতে Future Indefinite। He + will + pass। সঠিক: 'I think he will pass the exam.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "We ___ a party next Saturday. (আমরা আগামী শনিবার একটি পার্টি দেব)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "have",
+        "has",
+        "will have",
+        "had"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Next Saturday' = ভবিষ্যতের নির্দিষ্ট সময়। Future Indefinite: will + have। সঠিক: 'We will have a party next Saturday.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Error Detection: 'He will goes to market tomorrow.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "He",
+        "will goes",
+        "to market",
+        "tomorrow"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Will' এর পরে সবসময় V1 (base form) হয়, V2 বা V+s/es নয়। 'Goes' → 'go' হবে। সঠিক: 'He will go to market tomorrow.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Error Detection: 'She will not came to the party.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "will not",
+        "came",
+        "to the party"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Will not (won't) এর পরে V1 (base form) হয়। 'Came' (V2) → 'come' (V1) হবে। সঠিক: 'She will not come to the party.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Error Detection: 'Will you goes with me?' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "Will",
+        "you",
+        "goes",
+        "with me"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Will দিয়ে Question করলে মূল verb-এর V1 (base form) হয়। 'Goes' → 'go' হবে। সঠিক: 'Will you go with me?'"
     },
     {
-      "question": "Question 14: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Error Detection: 'I shall meet you yesterday.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "I",
+        "shall",
+        "meet",
+        "yesterday"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'Yesterday' = অতীত, Future Indefinite-এ ব্যবহৃত হয় না। Future Indefinite-এ 'tomorrow', 'next week', 'soon' ইত্যাদি সময় ব্যবহার হয়। সঠিক: 'I shall meet you tomorrow.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Fill in the blank: 'The bus ___ in 10 minutes.' (বাসটি ১০ মিনিটের মধ্যে আসবে)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "arrive",
+        "arrives",
+        "will arrive",
+        "arrived"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'In 10 minutes' = ভবিষ্যৎ। Future Indefinite: will + arrive। সঠিক: 'The bus will arrive in 10 minutes.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Fill in the blank: 'I ___ you if I have time.' (সময় পেলে আমি তোমাকে ফোন করব)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "call",
+        "calls",
+        "will call",
+        "called"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "এটি একটি প্রতিশ্রুতি (promise) — সময় পেলে ফোন করব। Future Indefinite: will + call। সঠিক: 'I will call you if I have time.'"
     },
     {
-      "question": "Question 17: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Fill in the blank: 'She ___ a doctor when she grows up.' (সে বড় হয়ে ডাক্তার হবে)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "is",
+        "was",
+        "will be",
+        "has been"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'When she grows up' = ভবিষ্যৎ। Future Indefinite: will + be। এটি একটি prediction/aspiration। সঠিক: 'She will be a doctor when she grows up.'"
     },
     {
-      "question": "Question 18: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "Fill in the blank: '___ we ___ for a walk?' (আমরা কি বেড়াতে যাব?)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "Will / go",
+        "Shall / go",
+        "Do / go",
+        "Are / going"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Shall we...?' = suggestion/offer (প্রস্তাব)। I/We-এর সাথে shall ব্যবহার হয় proposal বোঝাতে। সঠিক: 'Shall we go for a walk?'"
     },
     {
-      "question": "Question 19: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি আগামীকাল তাকে ফোন করব।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "I call him tomorrow.",
+        "I will call him tomorrow.",
+        "I called him tomorrow.",
+        "I am calling him tomorrow."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'আগামীকাল' (tomorrow) = ভবিষ্যৎ। Future Indefinite: will + call। সঠিক: 'I will call him tomorrow.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Direct & Indirect Speech / Conditional Sentences question for Mock Test 9.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তুমি কি আগামীকাল আসবে?'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "Do you come tomorrow?",
+        "Will you come tomorrow?",
+        "Did you come tomorrow?",
+        "Are you coming tomorrow?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'আগামীকাল' (tomorrow) = ভবিষ্যৎ। Question: Will + Subject + V1। সঠিক: 'Will you come tomorrow?' (Present Continuous দিয়ে future plan বোঝালেও 'Are you coming tomorrow?' ঠিক, কিন্তু এখানে 'Will you come' Future Indefinite question-এর সঠিক উদাহরণ)"
     }
   ]
 }

@@ -1,228 +1,228 @@
 {
   "id": "mock_test_16",
   "testNumber": 16,
-  "title": "Mock Test 16",
-  "description": "Comprehensive test covering Question Tags and Punctuation for spoken English practice.",
+  "title": "Mock Test 16 - Preposition of Place (in, on, at, under, behind, etc.)",
+  "description": "এই টেস্টে Preposition of Place (in, on, at, under, behind, next to, between, etc.) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "'In' সাধারণত কখন ব্যবহার করা হয়? (When is 'in' used for place?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "কোনো কিছুর উপর/পৃষ্ঠে থাকলে",
+        "কোনো কিছুর ভিতরে/অভ্যন্তরে থাকলে",
+        "নির্দিষ্ট জায়গায় থাকলে",
+        "দুই জিনিসের মাঝখানে থাকলে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'In' ব্যবহার হয় কোনো কিছু বন্ধ/ঘেরা জায়গার ভিতরে (inside) বুঝাতে: in the room, in the box, in the city, in Bangladesh, in the park। যেমন: 'The book is in the bag.'"
     },
     {
-      "question": "Question 2: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "'On' সাধারণত কখন ব্যবহার করা হয়? (When is 'on' used for place?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "কোনো কিছুর ভিতরে থাকলে",
+        "কোনো কিছুর পৃষ্ঠে/উপরে স্পর্শ করে থাকলে",
+        "নির্দিষ্ট জায়গায় থাকলে",
+        "কোনো কিছুর নিচে থাকলে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'On' ব্যবহার হয় কোনো কিছুর পৃষ্ঠে/উপরে স্পর্শ করে থাকলে: on the table, on the wall, on the floor, on the page। যেমন: 'The cat is on the roof.'"
     },
     {
-      "question": "Question 3: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "'At' সাধারণত কখন ব্যবহার করা হয়? (When is 'at' used for place?)",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "বড় এলাকা বোঝাতে",
+        "নির্দিষ্ট/নির্ধারিত জায়গা বা পয়েন্ট বোঝাতে",
+        "কোনো কিছুর নিচে বোঝাতে",
+        "কোনো কিছুর পিছনে বোঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'At' ব্যবহার হয় নির্দিষ্ট জায়গা বা পয়েন্ট বোঝাতে: at the door, at the bus stop, at the station, at home, at school, at work। যেমন: 'I am at the bus stop.'"
     },
     {
-      "question": "Question 4: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "নিচের কোনটি 'Under'-এর সঠিক ব্যবহার?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "কোনো কিছুর উপরে থাকলে",
+        "কোনো কিছুর নিচে ঢাকা/আচ্ছাদিত থাকলে",
+        "কোনো কিছুর পাশে থাকলে",
+        "কোনো কিছুর ভিতরে থাকলে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Under' ব্যবহার হয় কোনো কিছুর নিচে ঢাকা/আচ্ছাদিত থাকলে (covered by): under the bed, under the table, under the water, under the tree। যেমন: 'The cat is under the bed.'"
     },
     {
-      "question": "Question 5: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "'Between' আর 'Among'-এর মধ্যে পার্থক্য কী?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Between = দুটির মাঝে, Among = তিন বা তার বেশি",
+        "Between = তিনের মাঝে, Among = দুটির মাঝে",
+        "দুটোর মানে একই",
+        "Between = পাশে, Among = উপরে"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "'Between' = দুটি জিনিস/ব্যক্তির মাঝে: between you and me, between the two buildings। 'Among' = তিন বা তার বেশি জিনিসের মধ্যে: among the students, among the crowd।"
     },
     {
-      "question": "Question 6: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "The cat is sleeping ___ the bed. (বিড়ালটি বিছানার নিচে ঘুমাচ্ছে)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "in",
+        "on",
+        "under",
+        "at"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "বিছানার নিচে (covered by the bed) → 'under'। 'The cat is sleeping under the bed.'"
     },
     {
-      "question": "Question 7: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "The book is ___ the table. (বইটি টেবিলের উপর আছে)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "in",
+        "on",
+        "under",
+        "at"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "টেবিলের পৃষ্ঠে (surface) → 'on'। 'The book is on the table.'"
     },
     {
-      "question": "Question 8: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "She is ___ the door. (সে দরজায় আছে)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "in",
+        "on",
+        "under",
+        "at"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "নির্দিষ্ট জায়গা/পয়েন্ট → 'at'। 'She is at the door.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "The pen is ___ the drawer. (কলমটি ড্রয়ারের ভিতরে আছে)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "in",
+        "on",
+        "under",
+        "at"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "explanation": "ড্রয়ারের ভিতরে (inside) → 'in'। 'The pen is in the drawer.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "He is sitting ___ two girls. (সে দুই মেয়ের মাঝে বসে আছে)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "between",
+        "among",
+        "under",
+        "on"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "explanation": "'Two girls' = দুইজন → 'between'। 'He is sitting between two girls.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Error Detection: 'The cat is in the roof.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "The cat",
+        "is",
+        "in",
+        "the roof"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'On the roof' হবে, 'in the roof' নয়। ছাদের উপর (surface) → on। সঠিক: 'The cat is on the roof.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Error Detection: 'She is at home.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "is",
+        "at home",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'At home' ঠিক আছে। 'At' নির্দিষ্ট জায়গা বোঝাতে ব্যবহার হয়। 'She is at home' সঠিক।"
     },
     {
-      "question": "Question 13: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Error Detection: 'He is sitting among his two friends.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "He",
+        "is sitting",
+        "among",
+        "his two friends"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Two friends' = দুইজন → 'between' হবে, 'among' নয়। 'Among' তিন বা তার বেশি জন্য। সঠিক: 'He is sitting between his two friends.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Error Detection: 'The keys are under the table.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "The keys",
+        "are",
+        "under",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'Under the table' = টেবিলের নিচে → সঠিক। কোনো ভুল নেই।"
     },
     {
-      "question": "Question 15: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Fill in the blank: 'My house is ___ the bank and the hospital.' (আমার বাড়ি ব্যাংক আর হাসপাতালের মাঝে)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "in",
+        "on",
+        "between",
+        "under"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "দুই জায়গার মাঝে → 'between'। 'My house is between the bank and the hospital.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Fill in the blank: 'There is a small garden ___ our house.' (আমাদের বাড়ির পিছনে একটি ছোট বাগান আছে)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "in front of",
+        "behind",
+        "on",
+        "under"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "বাড়ির পিছনে → 'behind'। 'There is a small garden behind our house.'"
     },
     {
-      "question": "Question 17: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Fill in the blank: 'The school is ___ the park.' (স্কুলটি পার্কের পাশে)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "next to",
+        "under",
+        "in",
+        "behind"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "explanation": "পাশে/সংলগ্ন → 'next to' (beside-ও বলা যায়)। 'The school is next to the park.'"
     },
     {
-      "question": "Question 18: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "Fill in the blank: 'She is standing ___ the mirror.' (সে আয়নার সামনে দাঁড়িয়ে আছে)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "behind",
+        "in front of",
+        "under",
+        "on"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "আয়নার সামনে → 'in front of'। 'She is standing in front of the mirror.'"
     },
     {
-      "question": "Question 19: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'বিড়ালটি চেয়ারের নিচে আছে।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "The cat is in the chair.",
+        "The cat is on the chair.",
+        "The cat is under the chair.",
+        "The cat is at the chair."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'চেয়ারের নিচে' → under the chair। 'The cat is under the chair.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Question Tags / Punctuation question for Mock Test 16.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে দুটি গাছের মাঝে দাঁড়িয়ে আছে।'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "She is standing among two trees.",
+        "She is standing between two trees.",
+        "She is standing under two trees.",
+        "She is standing on two trees."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'দুটি গাছের মাঝে' = two trees → 'between'। 'She is standing between two trees.'"
     }
   ]
 }

@@ -1,228 +1,228 @@
 {
   "id": "mock_test_15",
   "testNumber": 15,
-  "title": "Mock Test 15",
-  "description": "Comprehensive test covering Verbs and Question Tags for spoken English practice.",
+  "title": "Mock Test 15 - Can/Cannot (Ability)",
+  "description": "এই টেস্টে Can/Cannot (Ability) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "'Can'-এর সঠিক ব্যবহার কোনটি? (What is the correct use of 'can'?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "ক্ষমতা/সামর্থ্য বোঝাতে (ability)",
+        "অতীতের অভ্যাস বোঝাতে",
+        "ভবিষ্যতের পরিকল্পনা বোঝাতে",
+        "বাধ্যবাধকতা বোঝাতে"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "explanation": "'Can' ব্যবহার হয়: (১) ক্ষমতা/সামর্থ্য (ability) — I can swim, (২) অনুমতি (permission) — Can I go? (৩) সম্ভাবনা (possibility) — It can rain today।"
     },
     {
-      "question": "Question 2: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "'Cannot'-এর সংক্ষিপ্ত রূপ কী? (What is the contraction of 'cannot'?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "can't",
+        "cannot't",
+        "cann't",
+        "ca'nt"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "explanation": "Cannot-এর সংক্ষিপ্ত রূপ: can't। যেমন: I cannot swim = I can't swim। মনে রাখবেন: can not (দুই শব্দ) → cannot (এক শব্দ) → can't (সংক্ষিপ্ত)।"
     },
     {
-      "question": "Question 3: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "'Can' দিয়ে Question কিভাবে তৈরি হয়?",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "Do + Subject + can?",
+        "Can + Subject + V1?",
+        "Is + Subject + can?",
+        "Subject + can + V1?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Can Question: Can + Subject + V1 (base form)? যেমন: Can you swim? Can he drive? Can I come in? 'Can' সরাসরি subject-এর আগে বসে।"
     },
     {
-      "question": "Question 4: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "'Can' এবং 'Can't' উচ্চারণে পার্থক্য কী?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "একই রকম উচ্চারণ",
+        "Can-এর 'a' লম্বা, Can't-এর 'a' ছোট",
+        "Can't-এ 't' স্পষ্ট উচ্চারিত হয়",
+        "শুধু বানানে পার্থক্য"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Can (সক্ষম) - উচ্চারণে 'a' লম্বা হয় (ক্যান)। Can't (না পারা) - উচ্চারণে 'a' ছোট হয় (কান্ট)। 't' স্পষ্ট করে বলতে হয় যাতে Can আর Can't-এর মধ্যে পার্থক্য বোঝা যায়।"
     },
     {
-      "question": "Question 5: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "'Could' আর 'Can'-এর মধ্যে পার্থক্য কী?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Could = অতীতের ক্ষমতা, Can = বর্তমানের ক্ষমতা",
+        "Could = বর্তমান, Can = অতীত",
+        "দুটোর মানে একই",
+        "Could = ভবিষ্যৎ, Can = বর্তমান"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "Can = বর্তমানের ক্ষমতা (I can swim now)। Could = অতীতের ক্ষমতা (I could swim when I was five)। Could বর্তমানেও polite request-এর জন্য ব্যবহার হয়: Could you help me?"
     },
     {
-      "question": "Question 6: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "I ___ swim very well. (আমি খুব ভালো সাঁতার কাটতে পারি)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "can",
+        "cannot",
+        "can't",
+        "am"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "explanation": "'Very well' = খুব ভালো → ability/সক্ষমতা। সঠিক: 'I can swim very well.'"
     },
     {
-      "question": "Question 7: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "She is only two years old. She ___ read. (সে মাত্র দুই বছরের। সে পড়তে পারে না)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "can",
+        "cannot",
+        "could",
+        "will"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "২ বছরের শিশু পড়তে পারে না → inability। Cannot/can't সঠিক। 'She cannot read.' বা 'She can't read.'"
     },
     {
-      "question": "Question 8: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "___ you help me with this bag? (তুমি কি আমাকে এই ব্যাগটি নিয়ে সাহায্য করতে পার?)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "Can",
+        "Cannot",
+        "Am",
+        "Do"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "explanation": "এটি একটি polite request। Question: Can + subject + V1? 'Can you help me with this bag?'"
     },
     {
-      "question": "Question 9: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "I'm sorry, I ___ come to the party tonight. (আমি দুঃখিত, আজ রাতে পার্টিতে আসতে পারছি না)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "can",
+        "cannot",
+        "could",
+        "am"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'I'm sorry' = excuse দেওয়া। 'Cannot' = inability/অসমর্থতা। 'I cannot (can't) come to the party tonight.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "He ___ speak three languages: Bangla, English and Hindi. (সে তিনটি ভাষায় কথা বলতে পারে: বাংলা, ইংরেজি ও হিন্দি)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "can",
+        "cannot",
+        "can't",
+        "is"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "explanation": "তিনটি ভাষায় কথা বলার ability/ক্ষমতা আছে → can। 'He can speak three languages.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Error Detection: 'I can to swim very fast.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "I",
+        "can to swim",
+        "very",
+        "fast"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Can-এর পরে সবসময় V1 (base form) হয়, 'to + V1' নয়। 'Can to swim' → 'can swim' হবে। সঠিক: 'I can swim very fast.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Error Detection: 'She can sings very well.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "can sings",
+        "very",
+        "well"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Can-এর পরে সবসময় V1 (base form) হয়, V+s/es নয়। 'Sings' → 'sing' হবে। সঠিক: 'She can sing very well.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Error Detection: 'He can't not come to the meeting.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "He",
+        "can't not",
+        "come",
+        "to the meeting"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Double negative (can't not) → ভুল। শুধু 'can't' বা 'cannot' ব্যবহার করতে হবে। সঠিক: 'He can't come to the meeting.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Error Detection: 'Does he can drive a car?' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "Does",
+        "he",
+        "can",
+        "drive"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "explanation": "Can দিয়ে Question করতে 'do/does' লাগে না। 'Does he can' → 'Can he' হবে। সঠিক: 'Can he drive a car?'"
     },
     {
-      "question": "Question 15: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Fill in the blank: 'I ___ see you tomorrow.' (আমি আগামীকাল তোমাকে দেখতে পারি)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "can",
+        "cannot",
+        "can't",
+        "could"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "explanation": "'Tomorrow' = ভবিষ্যৎ, কিন্তু Can দিয়ে ভবিষ্যতের ability-ও বোঝানো যায়। 'I can see you tomorrow.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Fill in the blank: 'We ___ solve this problem.' (আমরা এই সমস্যা সমাধান করতে পারি)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "can",
+        "cannot",
+        "can't",
+        "am"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "explanation": "Ability/ক্ষমতা বোঝাচ্ছে → can। 'We can solve this problem.'"
     },
     {
-      "question": "Question 17: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Fill in the blank: '___ I use your pen, please?' (আমি কি তোমার কলম ব্যবহার করতে পারি, দয়া করে?)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "Can",
+        "Cannot",
+        "Am",
+        "Do"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "explanation": "এটি permission চাওয়া (asking for permission)। 'Can I use your pen, please?'"
     },
     {
-      "question": "Question 18: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "Fill in the blank: 'I ___ hear you. Please speak louder.' (আমি তোমাকে শুনতে পাচ্ছি না। দয়া করে জোরে বল)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "can",
+        "cannot",
+        "could",
+        "am"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Please speak louder' = শুনতে পাচ্ছে না → cannot/can't। 'I cannot hear you.'"
     },
     {
-      "question": "Question 19: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে খুব ভালো গান গাইতে পারে।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "She can sing very well.",
+        "She can sings very well.",
+        "She can to sing very well.",
+        "She is sing very well."
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "explanation": "Ability → can + V1 (sing, sings নয়)। 'She can sing very well.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Verbs / Question Tags question for Mock Test 15.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তুমি কি আমাকে সাহায্য করতে পার?'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "Do you can help me?",
+        "Can you help me?",
+        "You can help me?",
+        "Are you can help me?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Question: Can + subject + V1? 'Can you help me?' ('Do you can' → ভুল)"
     }
   ]
 }

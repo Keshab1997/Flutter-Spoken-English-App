@@ -1,228 +1,228 @@
 {
   "id": "mock_test_06",
   "testNumber": 6,
-  "title": "Mock Test 6",
-  "description": "Comprehensive test covering Conjunctions and Modals for spoken English practice.",
+  "title": "Mock Test 6 - Present Perfect Tense",
+  "description": "এই টেস্টে Present Perfect Tense (have/has + V3) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Present Perfect Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Present Perfect Tense?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "Subject + V1 + s/es",
+        "Subject + am/is/are + V+ing",
+        "Subject + have/has + V3",
+        "Subject + will + V1"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Present Perfect Tense-এর গঠন: Subject + have/has + V3 (Past Participle)। I/You/We/They → have, He/She/It → has। যেমন: I have eaten, She has gone, They have finished।"
     },
     {
-      "question": "Question 2: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Present Perfect Tense কখন ব্যবহার করা হয়? (When is Present Perfect Tense used?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "শুধু অতীতের নির্দিষ্ট সময়ের কাজ বুঝাতে",
+        "অতীতে ঘটেছে কিন্তু বর্তমানের সাথে সম্পর্ক আছে এমন কাজ বুঝাতে",
+        "ভবিষ্যতের কাজ বুঝাতে",
+        "নিয়মিত অভ্যাস বুঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Present Perfect ব্যবহার হয়: (১) সম্প্রতি শেষ হওয়া কাজ — I have just finished dinner, (২) অভিজ্ঞতা (experience) — I have been to London, (৩) অতীতে শুরু হয়ে এখনও চলছে — I have lived here for 5 years, (৪) ফল এখন দেখা যাচ্ছে — I have lost my keys (so I can't enter)।"
     },
     {
-      "question": "Question 3: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Present Perfect-এ 'Just', 'Already', 'Yet' কিভাবে ব্যবহার হয়?",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "Just = negative, Already = question, Yet = affirmative",
+        "Just = এইমাত্র, Already = ইতিমধ্যে, Yet = এখনও (negative/question)",
+        "Just = ভবিষ্যতে, Already = অতীতে, Yet = বর্তমানে",
+        "এগুলো Present Perfect-এ ব্যবহার করা যায় না"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Just = এইমাত্র ('I have just arrived'), Already = ইতিমধ্যে ('She has already eaten'), Yet = এখনও ('Have you finished yet?' / 'I haven't finished yet')। Yet শুধু negative ও question-এ ব্যবহার হয়।"
     },
     {
-      "question": "Question 4: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Present Perfect-এ 'Ever' ও 'Never' কিভাবে ব্যবহার হয়?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "Ever = question-এ (কখনো), Never = affirmative-এ (কখনো না)",
+        "Ever = affirmative-এ, Never = negative-এ",
+        "Ever = negative-এ, Never = question-এ",
+        "Ever = অতীতে, Never = বর্তমানে"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "explanation": "Ever = question-এ ('Have you ever been to London?'), Never = affirmative-এ কিন্তু negative অর্থে ('I have never seen that movie')। Never মানে 'কখনো না', তাই negative verb-এর দরকার নেই।"
     },
     {
-      "question": "Question 5: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Past Indefinite আর Present Perfect-এর পার্থক্য কী?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "কোনো পার্থক্য নেই, দুটোই একই",
+        "Past Indefinite-এ নির্দিষ্ট সময় উল্লেখ থাকে, Present Perfect-এ সময় অনির্দিষ্ট",
+        "Present Perfect-এ নির্দিষ্ট সময় উল্লেখ থাকে",
+        "Past Indefinite বর্তমানের সাথে সম্পর্কিত"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Past Indefinite → নির্দিষ্ট অতীত সময় (yesterday, last year, in 2020) — 'I saw him yesterday.' Present Perfect → সময় অনির্দিষ্ট বা বর্তমানের সাথে সম্পর্ক — 'I have seen him.' নির্দিষ্ট সময় থাকলে Present Perfect ব্যবহার করা যায় না।"
     },
     {
-      "question": "Question 6: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "I have already ___ my homework. (আমি ইতিমধ্যে আমার বাড়ির কাজ শেষ করেছি)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "do",
+        "did",
+        "done",
+        "doing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Present Perfect = have/has + V3। 'Done' হলো do-এর past participle (V3)। 'Already' = ইতিমধ্যে। সঠিক: 'I have already done my homework.'"
     },
     {
-      "question": "Question 7: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "She ___ never ___ to Japan. (সে কখনো জাপানে যায়নি)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "has / go",
+        "has / went",
+        "has / been",
+        "have / been"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "She (singular) → has। 'Been to' = কোনো জায়গায় গিয়েছে (এবং ফিরে এসেছে)। 'Never' = কখনো না। সঠিক: 'She has never been to Japan.'"
     },
     {
-      "question": "Question 8: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "They ___ just ___ the train. (তারা এইমাত্র ট্রেন ধরেছে)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "have / catch",
+        "have / caught",
+        "has / caught",
+        "have / catching"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "They (plural) → have। 'Catch' এর V3 = 'caught'। 'Just' = এইমাত্র। সঠিক: 'They have just caught the train.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "___ you ever ___ Thai food? (তুমি কি কখনো থাই খাবার খেয়েছ?)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "Have / eat",
+        "Have / eaten",
+        "Has / eaten",
+        "Did / eat"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "You → have। Question: Have + subject + V3? 'Eat' এর V3 = 'eaten'। 'Ever' = কখনো (experience জানতে চাচ্ছে)। সঠিক: 'Have you ever eaten Thai food?'"
     },
     {
-      "question": "Question 10: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "He ___ not ___ his work yet. (সে এখনও তার কাজ শেষ করেনি)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "has / finish",
+        "have / finished",
+        "has / finished",
+        "is / finishing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "He → has। Negative: has + not + V3। 'Yet' = এখনও (negative sentence-এ)। 'Finish' এর V3 = 'finished'। সঠিক: 'He has not finished his work yet.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Error Detection: 'I have saw that movie.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "I",
+        "have",
+        "saw",
+        "that movie"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Present Perfect-এ have/has + V3 (past participle) হয়। 'Saw' হলো V2 (past indefinite), V3 হলো 'seen'। সঠিক: 'I have seen that movie.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Error Detection: 'She has went to market.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "has",
+        "went",
+        "to market"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Go' এর V3 = 'gone'। 'Went' হলো V2, Present Perfect-এ V3 লাগে। সঠিক: 'She has gone to market.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Error Detection: 'They have ate their dinner.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "They",
+        "have",
+        "ate",
+        "their dinner"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Eat' এর V3 = 'eaten'। 'Ate' হলো V2। Present Perfect-এ সবসময় V3 ব্যবহার করতে হবে। সঠিক: 'They have eaten their dinner.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Error Detection: 'I have visited the museum yesterday.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "I",
+        "have visited",
+        "the museum",
+        "yesterday"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "নির্দিষ্ট অতীত সময় (yesterday, last week, in 2020) থাকলে Present Perfect ব্যবহার করা যায় না। 'Yesterday' এর সাথে Past Indefinite হবে: 'I visited the museum yesterday.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Fill in the blank: 'I ___ my keys. I can't find them.' (আমি আমার চাবি হারিয়ে ফেলেছি। আমি সেগুলো খুঁজে পাচ্ছি না)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "lost",
+        "have lost",
+        "am losing",
+        "lose"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "চাবি হারানোর ফল এখন দেখা যাচ্ছে (I can't find them), তাই Present Perfect। 'I have lost my keys.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Fill in the blank: 'She ___ English for 5 years.' (সে ৫ বছর ধরে ইংরেজি শিখছে)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "learns",
+        "learned",
+        "has learned",
+        "is learning"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'For 5 years' = অতীতে শুরু হয়ে এখন পর্যন্ত চলছে। Present Perfect: 'She has learned English for 5 years.' (অথবা has been learning)"
     },
     {
-      "question": "Question 17: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Fill in the blank: 'We ___ each other since 2020.' (আমরা ২০২০ সাল থেকে একে অপরকে চিনি)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "know",
+        "knew",
+        "have known",
+        "are knowing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Since 2020' = ২০২০ থেকে শুরু হয়ে এখন পর্যন্ত। Present Perfect: 'We have known each other since 2020.' 'Know' এর V3 = 'known'।"
     },
     {
-      "question": "Question 18: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "Fill in the blank: 'The train ___ already ___.' (ট্রেন ইতিমধ্যে ছেড়ে গেছে)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "has / leave",
+        "has / left",
+        "have / left",
+        "has / leaving"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "The train = singular → has। 'Leave' এর V3 = 'left'। 'Already' = ইতিমধ্যে। সঠিক: 'The train has already left.'"
     },
     {
-      "question": "Question 19: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি কখনো হাতি দেখিনি।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "I never saw an elephant.",
+        "I have never seen an elephant.",
+        "I did not see an elephant never.",
+        "I am never seeing an elephant."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'কখনো দেখিনি' = experience (অভিজ্ঞতা) — Present Perfect। 'Never' = কখনো না। 'See' এর V3 = 'seen'। সঠিক: 'I have never seen an elephant.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Conjunctions / Modals question for Mock Test 6.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তুমি কি কখনো ঢাকায় গিয়েছ?'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "Did you ever go to Dhaka?",
+        "Have you ever been to Dhaka?",
+        "Are you going to Dhaka?",
+        "Do you go to Dhaka?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'কখনো গিয়েছ?' = experience জানতে চাচ্ছে — Present Perfect Question। 'Have you ever been to Dhaka?' — 'Been to' = গিয়েছ (এবং ফিরে এসেছ)।"
     }
   ]
 }

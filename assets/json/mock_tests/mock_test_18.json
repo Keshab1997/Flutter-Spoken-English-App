@@ -1,228 +1,228 @@
 {
   "id": "mock_test_18",
   "testNumber": 18,
-  "title": "Mock Test 18",
-  "description": "Comprehensive test covering Sentence Structure and Vocabulary for spoken English practice.",
+  "title": "Mock Test 18 - Conjunctions (and, but, or, because, so)",
+  "description": "এই টেস্টে Conjunctions (and, but, or, because, so, although, unless) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "'And' সাধারণত কখন ব্যবহার করা হয়? (When is 'and' used?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "দুটি বিপরীত ধারণা যুক্ত করতে",
+        "দুটি একই ধরনের ধারণা/বিষয় যুক্ত করতে",
+        "কারণ জানাতে",
+        "শর্ত জানাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'And' = এবং — দুটি একই ধরনের ধারণা, তথ্য বা বাক্য যুক্ত করতে ব্যবহৃত হয়। যেমন: I like tea and coffee. He is smart and hardworking।"
     },
     {
-      "question": "Question 2: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "'But' সাধারণত কখন ব্যবহার করা হয়? (When is 'but' used?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "একই ধরনের তথ্য যোগ করতে",
+        "বিপরীত বাcontrast বোঝাতে",
+        "কারণ বোঝাতে",
+        "ফলাফল বোঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'But' = কিন্তু — দুটি বিপরীত/contrasting idea যুক্ত করতে ব্যবহার হয়। যেমন: I want to go, but I am tired. She is rich but unhappy।"
     },
     {
-      "question": "Question 3: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "'Or' সাধারণত কখন ব্যবহার করা হয়? (When is 'or' used?)",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "দুটি জিনিস একসঙ্গে বুঝাতে",
+        "দুটি option/choice বুঝাতে",
+        "কারণ জানাতে",
+        "ফলাফল জানাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Or' = বা — দুটি option/choice-এর মধ্যে একটি বেছে নিতে ব্যবহার হয়। যেমন: Tea or coffee? You can stay or leave।"
     },
     {
-      "question": "Question 4: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "'Because' আর 'So'-এর মধ্যে পার্থক্য কী?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "Because = কারণ, So = ফলাফল",
+        "Because = ফলাফল, So = কারণ",
+        "দুটোর মানে একই",
+        "Because = সংযোজন, So = বিরোধ"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "explanation": "'Because' = কারণ (reason) — কেন某事 ঘটছে তা বলে। 'So' = তাই (result) — কী ফলাফল হয়েছে তা বলে। যেমন: 'I was tired because I worked hard.' vs 'I worked hard, so I was tired.'"
     },
     {
-      "question": "Question 5: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "'Although' আর 'Unless'-এর মধ্যে পার্থক্য কী?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Although = সত্ত্বেও, Unless = যদি না",
+        "Although = যদি না, Unless = সত্ত্বেও",
+        "দুটোর মানে একই",
+        "Although = কারণ, Unless = ফলাফল"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "'Although' = সত্ত্বেও (despite) — unexpected result দেখায়: 'Although it rained, we went out.' 'Unless' = যদি না (if not) — condition দেখায়: 'I will not go unless you come.'"
     },
     {
-      "question": "Question 6: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "I like tea ___ coffee. (আমি চা আর কফি পছন্দ করি)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "explanation": "দুটি জিনিস (tea, coffee) উভয়ই পছন্দ → 'and'। 'I like tea and coffee.'"
     },
     {
-      "question": "Question 7: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "I was tired, ___ I went to bed early. (আমি ক্লান্ত ছিলাম, তাই তাড়াতাড়ি ঘুমাতে গেলাম)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "ক্লান্ত → তাই (result) ঘুমাতে যাওয়া। 'So' = তাই। 'I was tired, so I went to bed early.'"
     },
     {
-      "question": "Question 8: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "She is rich ___ unhappy. (সে ধনী কিন্তু অসুখী)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "ধনী ↔ অসুখী — বিপরীত ধারণা → 'but'। 'She is rich but unhappy.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Do you want tea ___ coffee? (তুমি চা নাকি কফি চাও?)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "দুটি option থেকে বেছে নেওয়া → 'or'। 'Do you want tea or coffee?'"
     },
     {
-      "question": "Question 10: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "I stayed home ___ it was raining. (বৃষ্টি হওয়ায় আমি বাসায় থাকলাম)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "and",
+        "but",
+        "because",
+        "so"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "বাসায় থাকার কারণ = বৃষ্টি → 'because'। 'I stayed home because it was raining.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Error Detection: 'I like tea but coffee.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "I",
+        "like",
+        "tea but coffee",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "দুটি জিনিস (tea, coffee) উভয়ই পছন্দ → 'and' হবে, 'but' নয়। 'But' বিপরীত ধারণার জন্য। সঠিক: 'I like tea and coffee.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Error Detection: 'He was tired, so he didn't go to bed.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "He was tired",
+        "so",
+        "he didn't go to bed",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "এখানে 'so'-এর ব্যবহার ভুল। Tired → so should go to bed, not didn't go। সঠিক: 'He was tired, so he went to bed.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Error Detection: 'Although he was sick, but he went to work.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "Although",
+        "he was sick",
+        "but",
+        "he went to work"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Although' এবং 'but' একসঙ্গে ব্যবহার করা যায় না। Either 'Although...' or '...but' — উভয় নয়। সঠিক: 'Although he was sick, he went to work.' বা 'He was sick, but he went to work.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Error Detection: 'I will not go unless you don't come.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "I will not go",
+        "unless",
+        "you don't come",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Unless' এর অর্থ = if not। 'Unless you don't come' = double negative → ভুল। সঠিক: 'I will not go unless you come.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Fill in the blank: 'He is smart ___ hardworking.' (সে স্মার্ট এবং পরিশ্রমী)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "explanation": "দুটি positive quality → 'and'। 'He is smart and hardworking.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Fill in the blank: 'I will call you ___ I arrive.' (আমি পৌঁছালে তোমাকে ফোন করব)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "and",
+        "but",
+        "or",
+        "when"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "সময় বোঝাতে 'when' ব্যবহার হয় (যদিও 'when' conjunction)। 'I will call you when I arrive.'"
     },
     {
-      "question": "Question 17: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Fill in the blank: 'Study hard, ___ you will fail.' (কঠোর পড়াশোনা করো, নাহলে ফেল করবে)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "সতর্কতা/নতুবা বোঝাতে → 'or' (otherwise অর্থে)। 'Study hard, or you will fail.'"
     },
     {
-      "question": "Question 18: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "Fill in the blank: 'I want to buy the car, ___ I don't have enough money.' (আমি গাড়িটি কিনতে চাই, কিন্তু যথেষ্ট টাকা নেই)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "চাওয়া ↔ না পারা — বিপরীত → 'but'। 'I want to buy the car, but I don't have enough money.'"
     },
     {
-      "question": "Question 19: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে পরিশ্রমী কিন্তু ভাগ্যবান নয়।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "He is hardworking and not lucky.",
+        "He is hardworking or not lucky.",
+        "He is hardworking but not lucky.",
+        "He is hardworking so not lucky."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "পরিশ্রমী ↔ ভাগ্যবান নয় — বিপরীত → 'but'। 'He is hardworking but not lucky.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Sentence Structure / Vocabulary question for Mock Test 18.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'যেহেতু তুমি ক্লান্ত, তাই বিশ্রাম নাও।'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "You are tired and take rest.",
+        "Since you are tired, take rest.",
+        "You are tired or take rest.",
+        "You are tired but take rest."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'যেহেতু... তাই' → Since/Because... so। 'Since you are tired, take rest.' ('Since' = কারণ দেখানো)"
     }
   ]
 }

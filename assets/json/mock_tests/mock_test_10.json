@@ -1,228 +1,228 @@
 {
   "id": "mock_test_10",
   "testNumber": 10,
-  "title": "Mock Test 10",
-  "description": "Comprehensive test covering Conditional Sentences and Subject-Verb Agreement for spoken English practice.",
+  "title": "Mock Test 10 - Future Continuous + Future Perfect",
+  "description": "এই টেস্টে Future Continuous (will be + V+ing) ও Future Perfect (will have + V3) Tense নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Future Continuous Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Future Continuous Tense?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "Subject + will + V1",
+        "Subject + will be + V+ing",
+        "Subject + will have + V3",
+        "Subject + am/is/are + V+ing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Future Continuous Tense-এর গঠন: Subject + will be + V+ing। যেমন: I will be waiting, He will be sleeping, They will be playing। এটি ভবিষ্যতের কোনো নির্দিষ্ট সময়ে চলমান কাজ বোঝায়।"
     },
     {
-      "question": "Question 2: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Future Perfect Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Future Perfect Tense?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "Subject + will + V1",
+        "Subject + will be + V+ing",
+        "Subject + will have + V3",
+        "Subject + had + V3"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Future Perfect Tense-এর গঠন: Subject + will have + V3 (Past Participle)। যেমন: I will have finished, He will have arrived, They will have left। এটি ভবিষ্যতের কোনো নির্দিষ্ট সময়ের আগে শেষ হবে এমন কাজ বোঝায়।"
     },
     {
-      "question": "Question 3: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Future Continuous কখন ব্যবহার করা হয়? (When is Future Continuous used?)",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "ভবিষ্যতে সম্পূর্ণ শেষ হয়ে যাওয়া কাজ বুঝাতে",
+        "ভবিষ্যতের কোনো নির্দিষ্ট সময়ে চলমান কাজ বুঝাতে",
+        "অতীতের অভ্যাস বুঝাতে",
+        "বর্তমানের চলমান কাজ বুঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Future Continuous ব্যবহার হয়: (১) ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ — I will be watching TV at 8 PM tonight, (২) ভবিষ্যতে কিছু সময় ধরে চলবে এমন কাজ — I will be traveling all day tomorrow, (৩) ভদ্রভাবে জিজ্ঞাসা — Will you be using the car tonight?"
     },
     {
-      "question": "Question 4: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Future Perfect কখন ব্যবহার করা হয়? (When is Future Perfect used?)",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "ভবিষ্যতে শুরু হবে এমন কাজ বুঝাতে",
+        "ভবিষ্যতের নির্দিষ্ট সময়ের আগে শেষ হবে এমন কাজ বুঝাতে",
+        "অতীতে শেষ হওয়া কাজ বুঝাতে",
+        "বর্তমানে চলমান কাজ বুঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Future Perfect ব্যবহার হয়: ভবিষ্যতের কোনো নির্দিষ্ট সময়ের আগে কোন কাজ শেষ হবে (complete) বুঝাতে। সাধারণত 'by then', 'by next week', 'by 2028' ইত্যাদি সময় ব্যবহার হয়। যেমন: 'By 2028, I will have graduated.' — ২০২৮-এর আগেই গ্রাজুয়েশন শেষ হয়ে যাবে।"
     },
     {
-      "question": "Question 5: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Future Continuous আর Future Perfect-এর মধ্যে মূল পার্থক্য কী?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Future Continuous = চলমান কাজ, Future Perfect = শেষ হয়ে যাওয়া কাজ",
+        "Future Continuous = অতীত, Future Perfect = বর্তমান",
+        "দুটোর মধ্যে কোনো পার্থক্য নেই",
+        "Future Continuous = V3, Future Perfect = V+ing"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "Future Continuous (will be + V+ing) = ভবিষ্যতে চলমান/'ongoing' কাজ — 'This time tomorrow, I will be flying to Dhaka.' Future Perfect (will have + V3) = ভবিষ্যতে শেষ/'completed' কাজ — 'By next month, I will have saved enough money.'"
     },
     {
-      "question": "Question 6: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "This time tomorrow, I ___ to Dhaka. (আগামীকাল এই সময়ে, আমি ঢাকায় উড়ে যাচ্ছি)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "fly",
+        "will fly",
+        "will be flying",
+        "will have flown"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'This time tomorrow' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ। Future Continuous: will be + flying। সঠিক: 'This time tomorrow, I will be flying to Dhaka.'"
     },
     {
-      "question": "Question 7: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "By 2028, I ___ my university degree. (২০২৮ সালের মধ্যে, আমি আমার বিশ্ববিদ্যালয় ডিগ্রি শেষ করেছি)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "complete",
+        "will complete",
+        "will be completing",
+        "will have completed"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'By 2028' = ২০২৮-এর আগে শেষ হবে। Future Perfect: will have + V3 (completed)। সঠিক: 'By 2028, I will have completed my university degree.'"
     },
     {
-      "question": "Question 8: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Don't call me at 8 PM, I ___ dinner then. (আমাকে রাত ৮টায় ডেকো না, আমি তখন ডিনার খাচ্ছি)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "have",
+        "will have",
+        "will be having",
+        "will have had"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'At 8 PM then' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ। Future Continuous: will be + having। সঠিক: 'I will be having dinner then.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "By the time you arrive, I ___ my work. (তুমি পৌঁছানোর আগেই আমি আমার কাজ শেষ করে ফেলব)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "finish",
+        "will finish",
+        "will be finishing",
+        "will have finished"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'By the time you arrive' = তুমি পৌঁছানোর আগেই শেষ। Future Perfect: will have + V3 (finished)। সঠিক: 'I will have finished my work by the time you arrive.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "At 9 PM tonight, we ___ a movie. (আজ রাত ৯টায়, আমরা সিনেমা দেখছি)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "watch",
+        "will watch",
+        "will be watching",
+        "will have watched"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'At 9 PM tonight' = ভবিষ্যতের নির্দিষ্ট সময়। Future Continuous: will be + watching। সঠিক: 'At 9 PM tonight, we will be watching a movie.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Error Detection: 'I will be go to school at 8 AM tomorrow.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "I",
+        "will be go",
+        "to school",
+        "tomorrow"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Future Continuous-এ will be + V+ing (V1+ing) হয়। 'Will be go' → 'will be going' হবে। সঠিক: 'I will be going to school at 8 AM tomorrow.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Error Detection: 'She will have finish her project by Friday.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "will have finish",
+        "her project",
+        "by Friday"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Future Perfect-এ will have + V3 (Past Participle) হয়। 'Finish' → 'finished' হবে। সঠিক: 'She will have finished her project by Friday.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Error Detection: 'They will be playing cricket at 5 PM yesterday.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "They",
+        "will be playing",
+        "cricket",
+        "yesterday"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'Yesterday' = অতীত, Future Tense-এর সাথে ব্যবহার করা যায় না। Future Continuous-এর সাথে 'tomorrow', 'next week', 'tonight' ইত্যাদি ভবিষ্যৎ সময় ব্যবহার হয়। সঠিক: 'They will be playing cricket at 5 PM tomorrow.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Error Detection: 'By next month, he will be saved enough money.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "By next month",
+        "he",
+        "will be saved",
+        "enough money"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'By next month' = ভবিষ্যতে শেষ হওয়া কাজ → Future Perfect লাগবে। 'Will be saved' → 'will have saved' হবে। Future Continuous-এ 'will be + V+ing', কিন্তু এখানে শেষ হওয়া কাজ বোঝাচ্ছে। সঠিক: 'By next month, he will have saved enough money.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Fill in the blank: 'Please don't call me after 10 PM. I ___ by then.' (দয়া করে রাত ১০টার পর ফোন করো না। আমি ততক্ষণে ঘুমিয়ে পড়ব)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "sleep",
+        "will sleep",
+        "will be sleeping",
+        "will have slept"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'After 10 PM' = সময়কাল, 'by then' = ততক্ষণে। ১০টার পর ফোন না করতে বলছে কারণ তখন ঘুমের মধ্যে থাকবে। চলমান কাজ → Future Continuous: will be sleeping।"
     },
     {
-      "question": "Question 16: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Fill in the blank: 'By next year, they ___ here for 10 years.' (আগামী বছরের মধ্যে, তারা এখানে ১০ বছর থাকবে)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "live",
+        "will live",
+        "will be living",
+        "will have lived"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'By next year' = নির্দিষ্ট সময়ের আগে। Future Perfect: will have + V3 (lived)। সঠিক: 'By next year, they will have lived here for 10 years.'"
     },
     {
-      "question": "Question 17: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Fill in the blank: 'I hope I ___ the report before the deadline.' (আশা করি ডেডলাইনের আগেই আমি রিপোর্ট শেষ করে ফেলব)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "finish",
+        "will finish",
+        "will be finishing",
+        "will have finished"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'Before the deadline' = ডেডলাইনের আগে শেষ হবে। Future Perfect: will have + V3 (finished)। সঠিক: 'I hope I will have finished the report before the deadline.'"
     },
     {
-      "question": "Question 18: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "Fill in the blank: 'Tomorrow morning, I ___ for my exam.' (আগামীকাল সকালে, আমি আমার পরীক্ষার জন্য পড়ছি)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "study",
+        "will study",
+        "will be studying",
+        "will have studied"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Tomorrow morning' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ। Future Continuous: will be + studying। সঠিক: 'Tomorrow morning, I will be studying for my exam.'"
     },
     {
-      "question": "Question 19: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আগামীকাল এই সময়ে, আমি অফিসে কাজ করছি।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "Tomorrow this time, I work at office.",
+        "Tomorrow this time, I will work at office.",
+        "Tomorrow this time, I will be working at office.",
+        "Tomorrow this time, I will have worked at office."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'আগামীকাল এই সময়ে' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ → Future Continuous। 'Will be working' সঠিক।"
     },
     {
-      "question": "Question 20: Replace this with your actual Conditional Sentences / Subject-Verb Agreement question for Mock Test 10.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? '২০২৭ সালের মধ্যে, আমি আমার ব্যবসা শুরু করেছি।'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "By 2027, I start my business.",
+        "By 2027, I will start my business.",
+        "By 2027, I will be starting my business.",
+        "By 2027, I will have started my business."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'২০২৭ সালের মধ্যে' (By 2027) = ভবিষ্যতের নির্দিষ্ট সময়ের আগে শেষ হবে → Future Perfect। 'Will have started' সঠিক।"
     }
   ]
 }

@@ -1,228 +1,228 @@
 {
   "id": "mock_test_14",
   "testNumber": 14,
-  "title": "Mock Test 14",
-  "description": "Comprehensive test covering Adverbs and Verbs for spoken English practice.",
+  "title": "Mock Test 14 - Has/Have/Had",
+  "description": "এই টেস্টে Has/Have/Had-এর সঠিক ব্যবহার নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "'Have' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'have' used?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "He, She, It-এর সাথে",
+        "I, We, You, They-এর সাথে",
+        "শুধু I-এর সাথে",
+        "শুধু plural noun-এর সাথে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Have' ব্যবহার হয়: I, We, You, They (plural subjects) এর সাথে। যেমন: I have a book, We have time, You have a car, They have money। 'He have' → ভুল।"
     },
     {
-      "question": "Question 2: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "'Has' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'has' used?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "I, We, You, They-এর সাথে",
+        "He, She, It ও singular noun-এর সাথে",
+        "শুধু I-এর সাথে",
+        "সব subject-এর সাথে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Has' ব্যবহার হয়: He, She, It এবং singular noun (The boy, My mother, The book) এর সাথে। যেমন: He has a car, She has a cat, The book has 200 pages।"
     },
     {
-      "question": "Question 3: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "'Had' কখন ব্যবহার করা হয়? (When is 'had' used?)",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "শুধু Present Tense-এ",
+        "শুধু Future Tense-এ",
+        "Past Tense-এ (সব subject-এর জন্য)",
+        "শুধু He/She-এর সাথে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Had' Past Tense-এ সব subject-এর জন্য ব্যবহার হয় (I had, He had, They had)। এটি possession/ownership অতীতে ছিল বোঝায়। যেমন: I had a bicycle when I was young। Present Perfect-এও had বসে (had + V3)।"
     },
     {
-      "question": "Question 4: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Has/Have দিয়ে Negative বাক্য কিভাবে তৈরি হয়?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "Subject + has/have + not + V1",
+        "Subject + do/does + not + has/have",
+        "Subject + has/have + not + object",
+        "Subject + not + has/have"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Has/Have Negative: Subject + has/have + not + object। যেমন: I have not (haven't) a car, He has not (hasn't) any money। তবে সাধারণত 'do/does + not + have' বেশি ব্যবহৃত হয়: I don't have a car।"
     },
     {
-      "question": "Question 5: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Has/Have দিয়ে Question কিভাবে তৈরি হয়?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Do/Does + Subject + have?",
+        "Has/Have + Subject + object?",
+        "Is/Are + Subject + having?",
+        "Subject + has/have + object?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Has/Have Question: Has/Have + Subject + object? যেমন: Has he a car? Have you any money? তবে বেশি প্রচলিত: Does he have a car? Do you have any money?"
     },
     {
-      "question": "Question 6: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "I ___ a new phone. (আমার একটি নতুন ফোন আছে)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "has",
+        "have",
+        "had",
+        "am"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "I → have। 'I have a new phone' — বর্তমানে possession বোঝাচ্ছে।"
     },
     {
-      "question": "Question 7: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "She ___ two pet dogs. (তার দুটি পোষা কুকুর আছে)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "have",
+        "has",
+        "had",
+        "is"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She (3rd person singular) → has। 'She has two pet dogs' — বর্তমানে possession।"
     },
     {
-      "question": "Question 8: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "They ___ a big house in Dhaka. (ঢাকায় তাদের একটি বড় বাড়ি আছে)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "have",
+        "has",
+        "had",
+        "are"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "explanation": "They (plural) → have। 'They have a big house in Dhaka' — বর্তমানে possession।"
     },
     {
-      "question": "Question 9: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "I ___ a bicycle when I was a child. (ছোটবেলায় আমার একটি সাইকেল ছিল)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "have",
+        "has",
+        "had",
+        "am"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'When I was a child' = অতীত। Past-এ সব subject-এর সাথে 'had' হয়। 'I had a bicycle when I was a child.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "My brother ___ a car, but now he doesn't. (আমার ভাইয়ের একটি গাড়ি ছিল, কিন্তু এখন নেই)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "have",
+        "has",
+        "had",
+        "is"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'But now he doesn't' = আগে ছিল, এখন নেই → Past। My brother = singular → had।"
     },
     {
-      "question": "Question 11: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Error Detection: 'He have a lot of money.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "He",
+        "have",
+        "a lot of",
+        "money"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → has, have নয়। সঠিক: 'He has a lot of money.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Error Detection: 'They has a beautiful garden.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "They",
+        "has",
+        "a beautiful",
+        "garden"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "They (plural) → have, has নয়। সঠিক: 'They have a beautiful garden.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Error Detection: 'She have went to school.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "She",
+        "have went",
+        "to school",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Present Perfect: She + has + gone (V3)। 'She have went' → 'She has gone' হবে। 'Have went' → ভুল, 'has gone' সঠিক।"
     },
     {
-      "question": "Question 14: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Error Detection: 'I has already finished my work.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "I",
+        "has",
+        "already finished",
+        "my work"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "I এর সাথে Present Perfect-এ 'have' হয়, 'has' নয়। সঠিক: 'I have already finished my work.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Fill in the blank: 'He ___ a meeting right now.' (তার এখন একটি মিটিং আছে)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "have",
+        "has",
+        "had",
+        "is"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Right now' = বর্তমান। He → has। 'He has a meeting right now.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Fill in the blank: 'We ___ a great time at the party last night.' (গত রাতে পার্টিতে আমরা খুব মজা করেছি)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "have",
+        "has",
+        "had",
+        "are"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Last night' = অতীত। We → had। 'We had a great time at the party last night.'"
     },
     {
-      "question": "Question 17: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Fill in the blank: '___ you any brothers or sisters?' (তোমার কোনো ভাইবােেন আছে কি?)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "Has",
+        "Have",
+        "Had",
+        "Are"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "You → have। Question: Have + subject + object? 'Have you any brothers or sisters?' (Do you have... বেশি common)"
     },
     {
-      "question": "Question 18: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "Fill in the blank: 'She ___ already eaten lunch.' (সে ইতিমধ্যে লাঞ্চ খেয়ে ফেলেছে)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "have",
+        "has",
+        "had",
+        "is"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Present Perfect: She + has + V3 (eaten)। 'She has already eaten lunch.'"
     },
     {
-      "question": "Question 19: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তার একটি সুন্দর বাগান আছে।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "She have a beautiful garden.",
+        "She has a beautiful garden.",
+        "She had a beautiful garden.",
+        "She is a beautiful garden."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She → has। বর্তমানে possession বোঝাচ্ছে। 'She has a beautiful garden.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Adverbs / Verbs question for Mock Test 14.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তোমার কি কোনো প্রশ্ন আছে?'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "Has you any questions?",
+        "Have you any questions?",
+        "Had you any questions?",
+        "You have any questions?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "You → have। Question: Have + subject + object? 'Have you any questions?'"
     }
   ]
 }

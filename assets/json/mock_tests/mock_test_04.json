@@ -1,228 +1,228 @@
 {
   "id": "mock_test_04",
   "testNumber": 4,
-  "title": "Mock Test 4",
-  "description": "Comprehensive test covering Tenses - Future and Prepositions for spoken English practice.",
+  "title": "Mock Test 4 - Present Indefinite Tense",
+  "description": "এই টেস্টে Present Indefinite Tense (Subject + V1 + s/es) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Present Indefinite Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Present Indefinite Tense?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "Subject + V1 + s/es",
+        "Subject + V2",
+        "Subject + am/is/are + V+ing",
+        "Subject + have/has + V3"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "explanation": "Present Indefinite Tense-এর গঠন: Subject + V1 (+ s/es)। He/She/It (3rd person singular) এর সাথে verb-এর সাথে s/es যোগ হয়। যেমন: I eat, He eats, They eat।"
     },
     {
-      "question": "Question 2: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Present Indefinite Tense কখন ব্যবহার করা হয়? (When is Present Indefinite Tense used?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "শুধু এখন happening কাজ বুঝাতে",
+        "নিয়মিত অভ্যাস, সাধারণ সত্য, চিরন্তন সত্য বুঝাতে",
+        "শুধু অতীতের কাজ বুঝাতে",
+        "শুধু ভবিষ্যতের কাজ বুঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Present Indefinite ব্যবহার হয়: (১) নিয়মিত অভ্যাস — I wake up at 6 AM daily, (২) সাধারণ সত্য — The sun rises in the east, (৩) চিরন্তন সত্য — Water boils at 100°C।"
     },
     {
-      "question": "Question 3: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "He/She/It (3rd person singular) এর সাথে verb-এর কী পরিবর্তন হয়?",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "verb-এর সাথে s/es যোগ হয়",
+        "verb-এর সাথে ing যোগ হয়",
+        "verb-এর সাথে ed যোগ হয়",
+        "verb-এর কোনো পরিবর্তন হয় না"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "explanation": "Present Indefinite-এ He/She/It (3rd person singular) এর সাথে verb-এর শেষে s/es যোগ হয়। যেমন: eat → eats, go → goes, play → plays, study → studies।"
     },
     {
-      "question": "Question 4: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Present Indefinite-এ Negative বাক্য কিভাবে তৈরি হয়?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "Subject + do/does + not + V1",
+        "Subject + am/is/are + not + V+ing",
+        "Subject + have/has + not + V3",
+        "Subject + not + V1"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "explanation": "Present Indefinite Negative: Subject + do/does + not + V1 (base form)। I/You/We/They → do not (don't), He/She/It → does not (doesn't)। মনে রাখবেন: does not এর পরে V1 হয়, s/es যোগ হয় না।"
     },
     {
-      "question": "Question 5: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Present Indefinite-এ Question কিভাবে তৈরি হয়?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Do/Does + Subject + V1?",
+        "Is/Are + Subject + V+ing?",
+        "Have/Has + Subject + V3?",
+        "Subject + Do/Does + V1?"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "Present Indefinite Question: Do/Does + Subject + V1 (base form)? যেমন: Do you like tea? Does he play cricket? Does-এর পরেও V1 হয়, s/es নয়।"
     },
     {
-      "question": "Question 6: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "He ___ to school every day. (সে প্রতিদিন স্কুলে যায়)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "go",
+        "goes",
+        "going",
+        "gone"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) + Present Indefinite → go → goes। 'Every day' নিয়মিত কাজ বোঝাচ্ছে। সঠিক: 'He goes to school every day.'"
     },
     {
-      "question": "Question 7: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "They ___ cricket in the afternoon. (তারা বিকেলে ক্রিকেট খেলে)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "plays",
+        "play",
+        "playing",
+        "played"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "They (plural subject) এর সাথে Present Indefinite-এ verb-এর base form (play) হয়, s/es যোগ হয় না। 'In the afternoon' নিয়মিত কাজ বোঝাচ্ছে।"
     },
     {
-      "question": "Question 8: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "The sun ___ in the east. (সূর্য পূর্ব দিকে ওঠে — চিরন্তন সত্য)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "rise",
+        "rises",
+        "rising",
+        "rose"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "The sun = 3rd person singular, তাই rise → rises। এটি একটি চিরন্তন সত্য (universal truth), তাই Present Indefinite Tense।"
     },
     {
-      "question": "Question 9: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "She ___ her work very well. (সে তার কাজ খুব ভালো করে)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "do",
+        "does",
+        "doing",
+        "done"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She (3rd person singular) + Present Indefinite → do → does। মনে রাখবেন: 'does' শুধু do-এর রূপ নয়, এটি main verb হিসেবেও কাজ করে। সঠিক: 'She does her work very well.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "I ___ coffee every morning. (আমি প্রতিদিন সকালে কফি খাই)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "drink",
+        "drinks",
+        "drinking",
+        "drank"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "explanation": "I (1st person singular) এর সাথে Present Indefinite-এ verb-এর base form (drink) হয়, s/es যোগ হয় না। 'Every morning' নিয়মিত কাজ বোঝাচ্ছে।"
     },
     {
-      "question": "Question 11: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Error Detection: 'He don't like tea.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "He",
+        "don't",
+        "like",
+        "tea"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) এর সাথে negative-এ 'does not (doesn't)' হবে, 'do not (don't)' নয়। সঠিক: 'He doesn't like tea.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Error Detection: 'She go to market every Friday.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "go",
+        "to market",
+        "every Friday"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She (3rd person singular) এর সাথে verb-এর সাথে s/es যোগ করতে হবে: go → goes। সঠিক: 'She goes to market every Friday.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Error Detection: 'Does he plays cricket?' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "Does",
+        "he",
+        "plays",
+        "cricket"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Does দিয়ে Question করলে মূল verb-এর base form (V1) হয়, s/es যোগ হয় না। 'Does' ইতিমধ্যে 3rd person singular নির্দেশ করছে। সঠিক: 'Does he play cricket?'"
     },
     {
-      "question": "Question 14: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Error Detection: 'The teacher don't give homework today.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "The teacher",
+        "don't",
+        "give",
+        "homework"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "The teacher = 3rd person singular, তাই 'doesn't' হবে, 'don't' নয়। সঠিক: 'The teacher doesn't give homework today.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Fill in the blank: 'My mother ___ delicious food.' (আমার মা সুস্বাদু খাবার রান্না করেন)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "cook",
+        "cooks",
+        "cooking",
+        "cooked"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "My mother = 3rd person singular, তাই cook → cooks। এটি একটি সাধারণ সত্য/অভ্যাস বোঝাচ্ছে, তাই Present Indefinite।"
     },
     {
-      "question": "Question 16: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Fill in the blank: 'The students ___ in the library.' (ছাত্ররা লাইব্রেরিতে পড়ে)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "study",
+        "studies",
+        "studying",
+        "studied"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "explanation": "The students = plural subject, তাই verb-এর base form (study) হবে, s/es যোগ হবে না। 'In the library' স্থান নির্দেশ করছে।"
     },
     {
-      "question": "Question 17: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Fill in the blank: 'A good student ___ his lessons regularly.' (একজন ভালো ছাত্র নিয়মিত তার পাঠ পড়ে)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "learn",
+        "learns",
+        "learning",
+        "learnt"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "A good student = 3rd person singular, তাই learn → learns। 'Regularly' নিয়মিত অভ্যাস বোঝাচ্ছে, তাই Present Indefinite।"
     },
     {
-      "question": "Question 18: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "Fill in the blank: 'We ___ Bangla in our daily life.' (আমরা দৈনন্দিন জীবনে বাংলায় কথা বলি)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "speak",
+        "speaks",
+        "speaking",
+        "spoke"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "explanation": "We (1st person plural) এর সাথে verb-এর base form (speak) হয়। 'In our daily life' নিয়মিত কাজ বোঝাচ্ছে, তাই Present Indefinite।"
     },
     {
-      "question": "Question 19: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে প্রতিদিন ভোর ৫টায় ঘুম থেকে ওঠে।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "She wake up at 5 AM every day.",
+        "She wakes up at 5 AM every day.",
+        "She is waking up at 5 AM every day.",
+        "She woke up at 5 AM every day."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She (3rd person singular) + Present Indefinite → wake → wakes। 'Every day' ও 'প্রতিদিন' নিয়মিত অভ্যাস বোঝাচ্ছে। সঠিক: 'She wakes up at 5 AM every day.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Tenses - Future / Prepositions question for Mock Test 4.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তারা কি প্রতিদিন ফুটবল খেলে?'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "Do they play football every day?",
+        "Does they play football every day?",
+        "Are they playing football every day?",
+        "They play football every day?"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "explanation": "They (plural) + Present Indefinite Question → Do + Subject + V1। 'Do they play football every day?' — 'প্রতিদিন' নিয়মিত কাজ বোঝাচ্ছে, তাই Present Indefinite Question।"
     }
   ]
 }

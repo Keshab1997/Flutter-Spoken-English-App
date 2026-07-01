@@ -1,228 +1,228 @@
 {
   "id": "mock_test_08",
   "testNumber": 8,
-  "title": "Mock Test 8",
-  "description": "Comprehensive test covering Active & Passive Voice and Direct & Indirect Speech for spoken English practice.",
+  "title": "Mock Test 8 - Past Continuous + Past Perfect Tense",
+  "description": "এই টেস্টে Past Continuous (was/were + V+ing) ও Past Perfect (had + V3) Tense নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Past Continuous Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Past Continuous Tense?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "Subject + V2",
+        "Subject + was/were + V+ing",
+        "Subject + had + V3",
+        "Subject + have/has + V3"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Past Continuous Tense-এর গঠন: Subject + was/were + V+ing। I/He/She/It → was, We/You/They → were। যেমন: I was sleeping, They were playing। এটি অতীতে চলমান কাজ বোঝায়।"
     },
     {
-      "question": "Question 2: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Past Perfect Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Past Perfect Tense?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "Subject + V2",
+        "Subject + was/were + V+ing",
+        "Subject + had + V3",
+        "Subject + have/has + V3"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Past Perfect Tense-এর গঠন: Subject + had + V3 (Past Participle)। সবার জন্য had একই (I had, He had, They had)। যেমন: I had eaten, She had gone। এটি অতীতের আগে ঘটে যাওয়া কাজ বোঝায় (past of past)।"
     },
     {
-      "question": "Question 3: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Past Continuous কখন ব্যবহার করা হয়? (When is Past Continuous used?)",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "অতীতে সম্পূর্ণ শেষ হয়ে যাওয়া কাজ বুঝাতে",
+        "অতীতের কোনো নির্দিষ্ট সময়ে চলমান কাজ বুঝাতে",
+        "বর্তমানের চলমান কাজ বুঝাতে",
+        "ভবিষ্যতের পরিকল্পনা বুঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Past Continuous ব্যবহার হয়: (১) অতীতের কোনো নির্দিষ্ট সময়ে চলমান কাজ — I was watching TV at 8 PM yesterday, (২) দুইটি অতীত কাজ একসাথে চলছিল — I was reading while she was cooking, (৩) একটি কাজ চলছিল এমন সময় আরেকটি কাজ ঘটল — I was sleeping when the phone rang।"
     },
     {
-      "question": "Question 4: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Past Perfect কখন ব্যবহার করা হয়? (When is Past Perfect used?)",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "অতীতে শুরু হয়ে বর্তমানে চলছে এমন কাজ বুঝাতে",
+        "অতীতের দুইটি কাজের মধ্যে আগে ঘটে যাওয়া কাজটি বুঝাতে",
+        "ভবিষ্যতে ঘটবে এমন কাজ বুঝাতে",
+        "শুধু নিয়মিত অতীত অভ্যাস বুঝাতে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Past Perfect = 'Past of Past'। অতীতের দুইটি কাজের মধ্যে যে কাজটি আগে ঘটেছিল সেটি Past Perfect-এ হয়, আর পরে ঘটেছিল সেটি Past Indefinite-এ। যেমন: 'When I arrived, the train had already left.' (train left first, then I arrived)"
     },
     {
-      "question": "Question 5: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Past Continuous আর Past Perfect-এর মধ্যে মূল পার্থক্য কী?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Past Continuous = চলমান কাজ, Past Perfect = আগে শেষ হওয়া কাজ",
+        "Past Continuous = ভবিষ্যৎ, Past Perfect = বর্তমান",
+        "দুটোর মধ্যে কোনো পার্থক্য নেই",
+        "Past Continuous = V3, Past Perfect = V+ing"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "explanation": "Past Continuous (was/were + V+ing) = অতীতে চলমান/প্রগতিশীল কাজ — 'I was reading when you called.' Past Perfect (had + V3) = অতীতের আরেকটি কাজের আগে ঘটে যাওয়া কাজ — 'I had already read the book before the class started.'"
     },
     {
-      "question": "Question 6: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "When I called him, he ___ dinner. (আমি যখন তাকে ফোন করলাম, সে ডিনার খাচ্ছিল)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "has",
+        "had",
+        "was having",
+        "is having"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "ফোন করার সময় dinner চলমান ছিল, তাই Past Continuous। He (singular) → was having। 'When I called' = নির্দিষ্ট সময়, তখন 'he was having dinner'।"
     },
     {
-      "question": "Question 7: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "The light ___ out while I ___ a book. (আমি বই পড়ছিলাম তখন লাইট বন্ধ হয়ে গেল)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "went / was reading",
+        "was going / read",
+        "goes / am reading",
+        "had gone / read"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "explanation": "একটি কাজ চলছিল (was reading) আর হঠাৎ আরেকটি কাজ ঘটল (went out)। Past Continuous + Past Indefinite-এর ক্লাসিক ব্যবহার।"
     },
     {
-      "question": "Question 8: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "She ___ already ___ when I reached the station. (আমি স্টেশনে পৌঁছানোর আগেই সে চলে গিয়েছিল)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "has / left",
+        "had / left",
+        "was / leaving",
+        "did / leave"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She left (first) → I reached (later)। আগের কাজটির জন্য Past Perfect: had + left। 'Already' = ইতিমধ্যে। সঠিক: 'She had already left when I reached the station.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "I ___ for two hours before the bus arrived. (বাস আসার আগে আমি দুই ঘণ্টা অপেক্ষা করছিলাম)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "waited",
+        "was waiting",
+        "had been waiting",
+        "have waited"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "অতীতে দুই ঘণ্টা ধরে চলমান কাজ (waiting) যা bus arrival-এর সময়ও চলছিল। Past Continuous: was waiting। 'For two hours' সময়কাল নির্দেশ করছে।"
     },
     {
-      "question": "Question 10: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "After I ___ my homework, I went to bed. (বাড়ির কাজ শেষ করার পর আমি ঘুমাতে গেলাম)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "finish",
+        "finished",
+        "had finished",
+        "was finishing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Homework finish (first) → went to bed (later)। আগের কাজটির জন্য Past Perfect: 'had finished'। 'After' দ্বারা আগে-পরে বোঝাচ্ছে।"
     },
     {
-      "question": "Question 11: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Error Detection: 'I was go to school when I saw him.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "I",
+        "was go",
+        "to school",
+        "saw him"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Past Continuous-এ was/were + V+ing হয়। 'Was go' → 'was going' হবে। সঠিক: 'I was going to school when I saw him.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Error Detection: 'They were play cricket at 5 PM yesterday.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "They",
+        "were play",
+        "cricket",
+        "at 5 PM yesterday"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Past Continuous-এ were + V+ing হয়। 'Were play' → 'were playing' হবে। সঠিক: 'They were playing cricket at 5 PM yesterday.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Error Detection: 'When I arrived, she already left.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "When I arrived",
+        "she",
+        "already left",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "She left আগে, I arrived পরে। আগের কাজটির জন্য Past Perfect লাগবে: 'had left'। সঠিক: 'When I arrived, she had already left.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Error Detection: 'I had saw that movie before.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "I",
+        "had saw",
+        "that movie",
+        "before"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Past Perfect-এ had + V3 (past participle) হয়। 'Saw' (V2) → 'seen' (V3) হবে। সঠিক: 'I had seen that movie before.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Fill in the blank: 'I ___ TV when the phone rang.' (ফোন বাজার সময় আমি টিভি দেখছিলাম)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "watched",
+        "was watching",
+        "had watched",
+        "am watching"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "ফোন বাজার সময় TV দেখা চলমান ছিল, তাই Past Continuous। I → was watching। 'When the phone rang' = হঠাৎ ঘটনা।"
     },
     {
-      "question": "Question 16: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Fill in the blank: 'The patient ___ before the doctor came.' (ডাক্তার আসার আগেই রোগী মারা গিয়েছিল)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "died",
+        "was dying",
+        "had died",
+        "has died"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "রোগী মারা গিয়েছিল (first) → ডাক্তার আসলেন (later)। আগের কাজ: Past Perfect — 'had died'। 'Before' দ্বারা আগে-পরে বোঝাচ্ছে।"
     },
     {
-      "question": "Question 17: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Fill in the blank: 'They ___ football when it started raining.' (বৃষ্টি শুরু হলে তারা ফুটবল খেলছিল)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "played",
+        "were playing",
+        "had played",
+        "play"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "বৃষ্টি শুরু হওয়ার সময় football খেলা চলমান ছিল। They → were playing। Past Continuous + Past Indefinite-এর ব্যবহার।"
     },
     {
-      "question": "Question 18: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "Fill in the blank: 'By the time we arrived, the movie ___ already ___.' (আমরা পৌঁছানোর আগেই সিনেমা শুরু হয়ে গিয়েছিল)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "has / started",
+        "had / started",
+        "was / starting",
+        "did / start"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Movie started (first) → we arrived (later)। 'By the time' = আগেই। Past Perfect: had + started। সঠিক: 'By the time we arrived, the movie had already started.'"
     },
     {
-      "question": "Question 19: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি যখন বাসায় পৌঁছালাম, তখন আমার মা রান্না করছিলেন।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "When I reached home, my mother cooked.",
+        "When I reached home, my mother was cooking.",
+        "When I reached home, my mother had cooked.",
+        "When I reached home, my mother is cooking."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "আমি পৌঁছানোর সময় মায়ের রান্না চলমান ছিল। Past Continuous: was cooking। 'When I reached' আর 'was cooking' একই সময়ে ঘটছে।"
     },
     {
-      "question": "Question 20: Replace this with your actual Active & Passive Voice / Direct & Indirect Speech question for Mock Test 8.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমার পরীক্ষা শেষ হওয়ার আগেই সে চলে গিয়েছিল।'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "He left before my exam finished.",
+        "He had left before my exam finished.",
+        "He was leaving before my exam finished.",
+        "He has left before my exam finished."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "He left (first) → exam finished (later)। আগের কাজটির জন্য Past Perfect: 'had left'। 'Before' দ্বারা আগে-পরে বোঝাচ্ছে। সঠিক: 'He had left before my exam finished.'"
     }
   ]
 }

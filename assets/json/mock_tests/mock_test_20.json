@@ -1,228 +1,228 @@
 {
   "id": "mock_test_20",
   "testNumber": 20,
-  "title": "Mock Test 20",
-  "description": "Comprehensive test covering Spoken English Phrases and Articles for spoken English practice.",
+  "title": "Mock Test 20 - Beginner Mixed Review",
+  "description": "এই টেস্টে Level 1 (Test 01-19) থেকে মিশ্র ২০টি প্রশ্ন রয়েছে। Articles, This/That, Sentence Structure, Tenses, To be, Do/Does/Did, Has/Have/Had, Can, Prepositions, Conjunctions, Countable/Uncountable — সব টপিক থেকে প্রশ্ন আছে। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "She is ___ honest woman. (সে একজন সৎ মহিলা)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "a",
+        "an",
+        "the",
+        "no article"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Honest' এ 'h' silent, তাই vowel sound (o) এর জন্য 'an' হবে। 'An honest woman' — সঠিক।"
     },
     {
-      "question": "Question 2: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "___ are my books over there on the table. (ওই টেবিলের উপর ওগুলো আমার বই)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "This",
+        "That",
+        "These",
+        "Those"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "'Over there' = দূরে বোঝাচ্ছে। 'Books' = plural। দূরে + plural → 'Those'।"
     },
     {
-      "question": "Question 3: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "Which sentence is correct? (কোন বাক্যটি সঠিক?)",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "Rice I eat every day.",
+        "I eat rice every day.",
+        "Every day rice I eat.",
+        "I rice eat every day."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "ইংরেজিতে বাক্যের গঠন: Subject + Verb + Object + Extra। 'I (S) eat (V) rice (O) every day (Extra)' — দ্বিতীয় অপশনটি সঠিক।"
     },
     {
-      "question": "Question 4: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "He ___ to school every day. (সে প্রতিদিন স্কুলে যায়)",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "go",
+        "goes",
+        "going",
+        "gone"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → Present Indefinite-এ verb-এর সাথে s/es যোগ হয় go → goes।"
     },
     {
-      "question": "Question 5: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "They ___ football right now. (তারা এখন ফুটবল খেলছে)",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "play",
+        "plays",
+        "are playing",
+        "is playing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Right now' = এখন চলছে → Present Continuous। They (plural) → are playing।"
     },
     {
-      "question": "Question 6: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "I have already ___ my homework. (আমি ইতিমধ্যে বাড়ির কাজ শেষ করেছি)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "do",
+        "did",
+        "done",
+        "doing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Present Perfect = have + V3। Do → did → done। 'I have already done my homework.'"
     },
     {
-      "question": "Question 7: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "She ___ a beautiful dress yesterday. (সে গতকাল একটি সুন্দর জামা পরেছিল)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "wear",
+        "wears",
+        "wore",
+        "wearing"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Yesterday' = অতীত → Past Indefinite = V2। Wear → wore। 'She wore a beautiful dress yesterday.'"
     },
     {
-      "question": "Question 8: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "Don't worry, I ___ you with the work. (চিন্তা করো না, আমি তোমাকে কাজে সাহায্য করব)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "help",
+        "helps",
+        "will help",
+        "am helping"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "প্রতিশ্রুতি (promise) → Future Indefinite = will + V1। 'I will help you with the work.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "The children ___ very tired after the game. (বাচ্চারা খেলার পর খুব ক্লান্ত ছিল)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "am",
+        "is",
+        "are",
+        "be"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "The children = plural → Present-এ 'are'। 'The children are very tired after the game.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "I ___ sick yesterday. (আমি গতকাল অসুস্থ ছিলাম)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "was",
+        "were",
+        "am",
+        "is"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "explanation": "'Yesterday' = অতীত। I → was। 'I was sick yesterday.'"
     },
     {
-      "question": "Question 11: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "He ___ not speak Bangla. (সে বাংলা বলে না)",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "do",
+        "does",
+        "did",
+        "is"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → does not (doesn't) + V1। 'He does not speak Bangla.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "My brother ___ two pet dogs. (আমার ভাইয়ের দুটি পোষা কুকুর আছে)",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "have",
+        "has",
+        "had",
+        "having"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "My brother = 3rd person singular present → has। 'My brother has two pet dogs.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "She is only two years old. She ___ read. (সে মাত্র দুই বছরের। সে পড়তে পারে না)",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "can",
+        "cannot",
+        "could",
+        "will"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "২ বছরের শিশু পড়তে পারে না → inability। 'She cannot read.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "The cat is sleeping ___ the bed. (বিড়ালটি বিছানার নিচে ঘুমাচ্ছে)",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "in",
+        "on",
+        "under",
+        "at"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "বিছানার নিচে (covered by bed) → 'under'। 'The cat is sleeping under the bed.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "I have been learning English ___ three years. (আমি তিন বছর ধরে ইংরেজি শিখছি)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "since",
+        "for",
+        "in",
+        "at"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Three years' = সময়কাল (duration) → 'for'। 'I have been learning English for three years.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "I was tired, ___ I went to bed early. (আমি ক্লান্ত ছিলাম, তাই তাড়াতাড়ি ঘুমাতে গেলাম)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "and",
+        "but",
+        "or",
+        "so"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 3,
+      "explanation": "ক্লান্ত → তাই (result) ঘুমাতে যাওয়া। 'So' = তাই।"
     },
     {
-      "question": "Question 17: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "How ___ sugar do you want in your tea? (চায়ে কত চিনি চাও?)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "many",
+        "much",
+        "few",
+        "a lot of"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Sugar' = uncountable → 'much'। 'How much sugar do you want?'"
     },
     {
-      "question": "Question 18: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "কোন বাক্যটি সঠিক? (Which sentence is correct?)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "She don't like tea.",
+        "She doesn't like tea.",
+        "She not like tea.",
+        "She no like tea."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She (3rd person) → does not (doesn't) + V1। 'She doesn't like tea' — সঠিক।"
     },
     {
-      "question": "Question 19: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি গতকাল তাকে দেখিনি।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "I do not see him yesterday.",
+        "I does not see him yesterday.",
+        "I did not see him yesterday.",
+        "I did not saw him yesterday."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'গতকাল' = অতীত → Past Negative: did + not + V1 (saw নয়, see)। 'I did not see him yesterday.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Spoken English Phrases / Articles question for Mock Test 20.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে কি প্রতিদিন স্কুলে যায়?'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "Do she go to school every day?",
+        "Does she go to school every day?",
+        "Did she go to school every day?",
+        "Is she go to school every day?"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "She (singular) → Does। Present Indefinite Question: Does + subject + V1? 'Does she go to school every day?'"
     }
   ]
 }

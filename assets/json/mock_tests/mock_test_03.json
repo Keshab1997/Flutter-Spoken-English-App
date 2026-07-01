@@ -1,228 +1,228 @@
 {
   "id": "mock_test_03",
   "testNumber": 3,
-  "title": "Mock Test 3",
-  "description": "Comprehensive test covering Tenses - Past and Tenses - Future for spoken English practice.",
+  "title": "Mock Test 3 - Subject + Verb + Object (Basic Sentence Structure)",
+  "description": "এই টেস্টে ইংরেজি বাক্যের সঠিক গঠন (Subject + Verb + Object) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো বাক্যের সঠিক ক্রম ও গঠন, তারপর fill in the blanks ও error detection দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "ইংরেজি বাক্যের সঠিক গঠন কোনটি? (What is the correct structure of an English sentence?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "Subject + Object + Verb",
+        "Subject + Verb + Object",
+        "Verb + Subject + Object",
+        "Object + Subject + Verb"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "ইংরেজি বাক্যের সঠিক গঠন হলো Subject + Verb + Object (SVO)। যেমন: I (Subject) eat (Verb) rice (Object)। বাংলায় SOV হয় (আমি ভাত খাই), কিন্তু ইংরেজিতে SVO হয়।"
     },
     {
-      "question": "Question 2: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "Rice I eat every day.",
+        "I eat rice every day.",
+        "Every day rice I eat.",
+        "I rice eat every day."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "সঠিক বাক্য: 'I eat rice every day.' এখানে I = Subject, eat = Verb, rice = Object, every day = Extra/Time। ইংরেজিতে সবসময় Subject + Verb + Object বজায় রাখতে হয়।"
     },
     {
-      "question": "Question 3: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "নিচের বাক্যটিতে Subject কোনটি? 'The boy kicked the ball.'",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "The boy",
+        "kicked",
+        "the ball",
+        "ball"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "explanation": "Subject হলো বাক্যে যে কাজটি করে (doer)। এখানে 'The boy' লাথি মেরেছে (kicked), তাই Subject = 'The boy'. Verb = 'kicked', Object = 'the ball'।"
     },
     {
-      "question": "Question 4: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "নিচের বাক্যটিতে Object কোনটি? 'She reads a book.'",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "She",
+        "reads",
+        "a book",
+        "book"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Object হলো যার উপর কাজটি করা হয় (receiver of action)। এখানে 'reads' (পড়ে) কাজটি 'a book' এর উপর হচ্ছে, তাই Object = 'a book'। Verb = 'reads', Subject = 'She'।"
     },
     {
-      "question": "Question 5: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "Mother cooks food delicious.",
+        "Mother cooks delicious food.",
+        "Food mother cooks delicious.",
+        "Delicious mother cooks food."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Adjective (delicious) বসে noun (food) এর আগে। সঠিক গঠন: Subject (Mother) + Verb (cooks) + Adjective (delicious) + Noun/Object (food)।"
     },
     {
-      "question": "Question 6: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "_____ the window. (জানালাটা খোল)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "Open you",
+        "You open",
+        "Open",
+        "Opening"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Imperative sentence (আদেশ/অনুরোধ) এ Subject থাকে না, Verb দিয়ে বাক্য শুরু হয়। 'Open the window.' — এখানে 'You' উহ্য থাকে (understood)।"
     },
     {
-      "question": "Question 7: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "She _____ a song. (সে একটি গান গায়)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "sings",
+        "sing",
+        "singing",
+        "sang"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "explanation": "Present Indefinite tense-এ He/She/It (3rd person singular) এর সাথে verb-এর সাথে s/es যোগ হয়। Subject (She) + Verb (sings) + Object (a song)।"
     },
     {
-      "question": "Question 8: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "They _____ football every Saturday. (তারা প্রতি শনিবার ফুটবল খেলে)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "plays",
+        "play",
+        "playing",
+        "played"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "They (plural subject) এর সাথে Present Indefinite-এ verb-এর base form (play) হয়। 'Every Saturday' নিয়মিত কাজ বুঝাচ্ছে, তাই Present Indefinite।"
     },
     {
-      "question": "Question 9: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "The cat is sleeping the bed on.",
+        "The cat is sleeping on the bed.",
+        "The cat on the bed is sleeping.",
+        "Sleeping is the cat on the bed."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Preposition (on) বসে object (the bed) এর আগে। সঠিক গঠন: Subject (The cat) + Verb (is sleeping) + Preposition (on) + Object (the bed)।"
     },
     {
-      "question": "Question 10: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "_____ you like coffee? (তুমি কি কফি পছন্দ কর?)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "Does",
+        "Do",
+        "Are",
+        "Is"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Question form-এ Do/Does প্রথমে আসে। 'You' এর সাথে 'Do' হয়। সঠিক ক্রম: Do + Subject (you) + Verb (like) + Object (coffee)?"
     },
     {
-      "question": "Question 11: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "নিচের বাক্যটি শুদ্ধ করো: 'He go to school every day.'",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "He goes to school every day.",
+        "He go to school every day.",
+        "He going to school every day.",
+        "He gone to school every day."
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "explanation": "He (3rd person singular) এর সাথে Present Indefinite-এ verb-এর সাথে s/es যোগ হয়: go → goes। সঠিক বাক্য: 'He goes to school every day.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "Error Detection: 'She does not likes coffee.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "does not",
+        "likes",
+        "coffee"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Do/Does দিয়ে Negative করলে মূল verb-এর সাথে আর s/es যোগ হয় না। 'Does not' এর পরে 'like' হবে (base form), 'likes' নয়। সঠিক: 'She does not like coffee.'"
     },
     {
-      "question": "Question 13: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "Error Detection: 'The boys is playing in the field.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "The boys",
+        "is",
+        "playing",
+        "in the field"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Subject 'The boys' = plural। Plural subject এর সাথে 'are' হবে, 'is' নয়। সঠিক: 'The boys are playing in the field.' Subject-Verb Agreement মনে রাখবেন।"
     },
     {
-      "question": "Question 14: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "Error Detection: 'I am go to market.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "I am",
+        "go",
+        "to market",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Am' এর পরে V+ing (Present Continuous) বা V3 (Passive) বসে। 'Go' base form বসতে পারে না। সঠিক: 'I am going to market.' অথবা 'I go to market.'"
     },
     {
-      "question": "Question 15: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "Error Detection: 'They does their work properly.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "They",
+        "does",
+        "their",
+        "properly"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "They (plural subject) এর সাথে 'do' হবে, 'does' নয়। 'Does' শুধু He/She/It (3rd person singular) এর সাথে হয়। সঠিক: 'They do their work properly.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "Fill in the blank: 'He _____ breakfast at 8 AM.' (সে ৮টায় নাস্তা করে)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "take",
+        "takes",
+        "taking",
+        "took"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) + Present Indefinite → verb + s/es। 'Take' এর সাথে 's' যোগ হয়ে 'takes' হয়। Object = 'breakfast'।"
     },
     {
-      "question": "Question 17: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "Fill in the blank: 'The children _____ playing cricket.' (বাচ্চারা ক্রিকেট খেলছে)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "is",
+        "am",
+        "are",
+        "be"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'The children' = plural subject। Present Continuous-এ plural subject এর সাথে 'are' হয়। সঠিক: 'The children are playing cricket.'"
     },
     {
-      "question": "Question 18: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "Fill in the blank: 'We _____ our homework every evening.' (আমরা প্রতি সন্ধ্যায় বাড়ির কাজ করি)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "do",
+        "does",
+        "doing",
+        "did"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "explanation": "We (1st person plural) + Present Indefinite → verb-এর base form (do)। 'Every evening' নিয়মিত কাজ বোঝাচ্ছে। Object = 'our homework'।"
     },
     {
-      "question": "Question 19: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে একটি চিঠি লেখে।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "She a letter writes.",
+        "Writes she a letter.",
+        "She writes a letter.",
+        "A letter she writes."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "ইংরেজিতে SVO order: Subject (She) + Verb (writes) + Object (a letter)। বাংলায় 'সে একটি চিঠি লেখে' = SOV, কিন্তু ইংরেজিতে SVO হবে।"
     },
     {
-      "question": "Question 20: Replace this with your actual Tenses - Past / Tenses - Future question for Mock Test 3.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমার বাবা একটি গাড়ি কিনেছেন।'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "My father a car has bought.",
+        "Has bought my father a car.",
+        "My father has bought a car.",
+        "A car my father has bought."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "Present Perfect-এও SVO order বজায় থাকে: Subject (My father) + has/have + V3 (bought) + Object (a car)। 'Has bought' একসাথে verb phrase."
     }
   ]
 }

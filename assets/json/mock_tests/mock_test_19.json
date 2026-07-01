@@ -1,228 +1,228 @@
 {
   "id": "mock_test_19",
   "testNumber": 19,
-  "title": "Mock Test 19",
-  "description": "Comprehensive test covering Vocabulary and Spoken English Phrases for spoken English practice.",
+  "title": "Mock Test 19 - Countable vs Uncountable Nouns",
+  "description": "এই টেস্টে Countable vs Uncountable Nouns নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
   "questions": [
     {
-      "question": "Question 1: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Countable Noun কী? (What is a countable noun?)",
       "options": [
-        "Option A for Q1",
-        "Option B for Q1",
-        "Option C for Q1",
-        "Option D for Q1"
+        "যে noun গণনা করা যায় না",
+        "যে noun গণনা করা যায় এবং singular/plural হয়",
+        "যে noun সবসময় singular থাকে",
+        "যে noun কেবল plural হয়"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 1. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Countable noun = যে noun গণনা করা যায় এবং এর singular ও plural রূপ আছে। যেমন: book → books, apple → apples, person → people। 'One book, two books' বলা যায়।"
     },
     {
-      "question": "Question 2: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Uncountable Noun কী? (What is an uncountable noun?)",
       "options": [
-        "Option A for Q2",
-        "Option B for Q2",
-        "Option C for Q2",
-        "Option D for Q2"
+        "যে noun গণনা করা যায় এবং plural হয়",
+        "যে noun গণনা করা যায় না এবং সাধারণত plural হয় না",
+        "যে noun সবসময় 'a/an' নেয়",
+        "যে noun কেবল plural হয়"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 2. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "Uncountable noun = যে noun গণনা করা যায় না এবং এর সাধারণত plural form নেই। যেমন: water, rice, air, money, information, advice। 'Two waters' বলা যায় না, 'some water' বলতে হয়।"
     },
     {
-      "question": "Question 3: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "'Many' আর 'Much'-এর মধ্যে পার্থক্য কী?",
       "options": [
-        "Option A for Q3",
-        "Option B for Q3",
-        "Option C for Q3",
-        "Option D for Q3"
+        "Many = countable-এর সাথে, Much = uncountable-এর সাথে",
+        "Many = uncountable-এর সাথে, Much = countable-এর সাথে",
+        "দুটোই সব noun-এর সাথে ব্যবহার করা যায়",
+        "Many = plural, Much = singular"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 3. Correct answer is Option A."
+      "explanation": "'Many' = countable noun-এর সাথে (many books, many people, many chairs)। 'Much' = uncountable noun-এর সাথে (much water, much time, much money)।"
     },
     {
-      "question": "Question 4: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "'Few' আর 'Little'-এর মধ্যে পার্থক্য কী?",
       "options": [
-        "Option A for Q4",
-        "Option B for Q4",
-        "Option C for Q4",
-        "Option D for Q4"
+        "Few = countable-এর সাথে, Little = uncountable-এর সাথে",
+        "Few = uncountable-এর সাথে, Little = countable-এর সাথে",
+        "দুটোর মানে একই",
+        "Few = বেশি, Little = কম"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 4. Correct answer is Option A."
+      "explanation": "'Few' = countable noun-এর সাথে (few people, few books) = অল্প/কম (প্রায় নেই)। 'Little' = uncountable noun-এর সাথে (little water, little time) = অল্প (পর্যাপ্ত নয়)।"
     },
     {
-      "question": "Question 5: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "'A lot of' কোন noun-এর সাথে ব্যবহার করা যায়?",
       "options": [
-        "Option A for Q5",
-        "Option B for Q5",
-        "Option C for Q5",
-        "Option D for Q5"
+        "শুধু countable-এর সাথে",
+        "শুধু uncountable-এর সাথে",
+        "countable ও uncountable উভয়ের সাথেই",
+        "শুধু plural-এর সাথে"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 5. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'A lot of' / 'Lots of' countable ও uncountable উভয় প্রকার noun-এর সাথেই ব্যবহার করা যায়। যেমন: a lot of books (countable), a lot of water (uncountable)।"
     },
     {
-      "question": "Question 6: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "How ___ books do you have? (তোমার কতগুলো বই আছে?)",
       "options": [
-        "Option A for Q6",
-        "Option B for Q6",
-        "Option C for Q6",
-        "Option D for Q6"
+        "many",
+        "much",
+        "a lot of",
+        "little"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 6. Correct answer is Option A."
+      "explanation": "'Books' = countable → 'many'। 'How many books do you have?'"
     },
     {
-      "question": "Question 7: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "How ___ sugar do you want in your tea? (চায়ে কত চিনি চাও?)",
       "options": [
-        "Option A for Q7",
-        "Option B for Q7",
-        "Option C for Q7",
-        "Option D for Q7"
+        "many",
+        "much",
+        "few",
+        "a lot of"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 7. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Sugar' = uncountable → 'much'। 'How much sugar do you want in your tea?'"
     },
     {
-      "question": "Question 8: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "I have ___ friends in this city. (এই শহরে আমার কিছু বন্ধু আছে)",
       "options": [
-        "Option A for Q8",
-        "Option B for Q8",
-        "Option C for Q8",
-        "Option D for Q8"
+        "a little",
+        "a few",
+        "much",
+        "little"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 8. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Friends' = countable → 'a few' (কিছু সংখ্যক, positive অর্থে)। 'I have a few friends in this city.'"
     },
     {
-      "question": "Question 9: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "There is ___ water in the glass. (গ্লাসে অল্প জল আছে)",
       "options": [
-        "Option A for Q9",
-        "Option B for Q9",
-        "Option C for Q9",
-        "Option D for Q9"
+        "a few",
+        "a little",
+        "many",
+        "few"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 9. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Water' = uncountable → 'a little' (কিছুটা, positive অর্থে)। 'There is a little water in the glass.'"
     },
     {
-      "question": "Question 10: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "I need ___ information about the course. (কোর্স সম্পর্কে আমার কিছু তথ্য দরকার)",
       "options": [
-        "Option A for Q10",
-        "Option B for Q10",
-        "Option C for Q10",
-        "Option D for Q10"
+        "an",
+        "some",
+        "a few",
+        "many"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 10. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Information' = uncountable → 'some' ব্যবহার হয়। 'I need some information about the course.' (An information বা many information → ভুল)"
     },
     {
-      "question": "Question 11: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Error Detection: 'I have many money.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q11",
-        "Option B for Q11",
-        "Option C for Q11",
-        "Option D for Q11"
+        "I",
+        "have",
+        "many",
+        "money"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 11. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Money' = uncountable → 'much' বা 'a lot of' হবে, 'many' নয়। সঠিক: 'I have much money.' বা 'I have a lot of money.'"
     },
     {
-      "question": "Question 12: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Error Detection: 'She gave me an advice.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q12",
-        "Option B for Q12",
-        "Option C for Q12",
-        "Option D for Q12"
+        "She",
+        "gave me",
+        "an",
+        "advice"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 12. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Advice' = uncountable → 'an' (article) ব্যবহার করা যায় না। 'An advice' ×, 'some advice' ✓ বা 'a piece of advice' ✓।"
     },
     {
-      "question": "Question 13: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Error Detection: 'There are few water in the bottle.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q13",
-        "Option B for Q13",
-        "Option C for Q13",
-        "Option D for Q13"
+        "There are",
+        "few",
+        "water",
+        "in the bottle"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 13. Correct answer is Option A."
+      "explanation": "'Water' = uncountable → 'There is' হবে, 'There are' নয়। সঠিক: 'There is little water in the bottle.' বা 'There is a little water in the bottle.'"
     },
     {
-      "question": "Question 14: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Error Detection: 'I bought three furnitures.' — ভুল অংশ কোনটি?",
       "options": [
-        "Option A for Q14",
-        "Option B for Q14",
-        "Option C for Q14",
-        "Option D for Q14"
+        "I",
+        "bought",
+        "three furnitures",
+        "কোনো ভুল নেই"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 14. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Furniture' = uncountable noun → এর plural 'furnitures' হয় না। 'Three furniture' × → 'three pieces of furniture' ✓।"
     },
     {
-      "question": "Question 15: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Fill in the blank: 'She has ___ knowledge of English.' (তার ইংরেজিতে সামান্য জ্ঞান আছে)",
       "options": [
-        "Option A for Q15",
-        "Option B for Q15",
-        "Option C for Q15",
-        "Option D for Q15"
+        "a few",
+        "a little",
+        "many",
+        "few"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 15. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Knowledge' = uncountable → 'a little'। 'She has a little knowledge of English.'"
     },
     {
-      "question": "Question 16: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Fill in the blank: 'How ___ people attended the meeting?' (মিটিংয়ে কতজন লোক উপস্থিত ছিল?)",
       "options": [
-        "Option A for Q16",
-        "Option B for Q16",
-        "Option C for Q16",
-        "Option D for Q16"
+        "many",
+        "much",
+        "a lot of",
+        "little"
       ],
       "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 16. Correct answer is Option A."
+      "explanation": "'People' = countable → 'many'। 'How many people attended the meeting?'"
     },
     {
-      "question": "Question 17: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Fill in the blank: 'I have ___ work to do.' (আমার অনেক কাজ আছে)",
       "options": [
-        "Option A for Q17",
-        "Option B for Q17",
-        "Option C for Q17",
-        "Option D for Q17"
+        "many",
+        "a lot of",
+        "a few",
+        "few"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 17. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Work' = uncountable → 'a lot of' বা 'much' ব্যবহার হয়। 'I have a lot of work to do.'"
     },
     {
-      "question": "Question 18: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "Fill in the blank: 'Can you give me ___ water?' (তুমি কি আমাকে কিছু জল দিতে পার?)",
       "options": [
-        "Option A for Q18",
-        "Option B for Q18",
-        "Option C for Q18",
-        "Option D for Q18"
+        "a",
+        "an",
+        "some",
+        "many"
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 18. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Water' = uncountable → 'some' ব্যবহার হয়। 'Can you give me some water?'"
     },
     {
-      "question": "Question 19: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'টেবিলে কয়েকটি বই আছে।'",
       "options": [
-        "Option A for Q19",
-        "Option B for Q19",
-        "Option C for Q19",
-        "Option D for Q19"
+        "There is a little book on the table.",
+        "There are a few books on the table.",
+        "There is few book on the table.",
+        "There are many books on the table."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 19. Correct answer is Option A."
+      "correctIndex": 1,
+      "explanation": "'Books' = countable plural → 'a few' (কয়েকটি)। 'There are a few books on the table.'"
     },
     {
-      "question": "Question 20: Replace this with your actual Vocabulary / Spoken English Phrases question for Mock Test 19.",
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমার খুব কম সময় আছে।'",
       "options": [
-        "Option A for Q20",
-        "Option B for Q20",
-        "Option C for Q20",
-        "Option D for Q20"
+        "I have a few time.",
+        "I have many time.",
+        "I have little time.",
+        "I have few time."
       ],
-      "correctIndex": 0,
-      "explanation": "Replace this with explanation for Question 20. Correct answer is Option A."
+      "correctIndex": 2,
+      "explanation": "'Time' = uncountable → 'little' (অল্প, প্রায় নেই)। 'I have little time.' (a little = কিছু, কিন্তু 'little' = প্রায় নেই)"
     }
   ]
 }
