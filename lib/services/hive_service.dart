@@ -232,6 +232,28 @@ class HiveService {
     return true;
   }
 
+  // ── Last App Open Date (for re-engagement tracking) ──
+
+  static Future<void> setLastAppOpenDate(DateTime date) async {
+    await _settings.put('last_app_open_date', date.toIso8601String());
+  }
+
+  static DateTime? getLastAppOpenDate() {
+    final raw = _settings.get('last_app_open_date');
+    if (raw == null) return null;
+    return DateTime.tryParse(raw as String);
+  }
+
+  // ── Re-engagement Notification Toggle ──
+
+  static Future<void> setReEngagementEnabled(bool value) async {
+    await _settings.put('re_engagement_notifications', value);
+  }
+
+  static bool isReEngagementEnabled() {
+    return _settings.get('re_engagement_notifications', defaultValue: true) as bool;
+  }
+
   // ── Weekly Activity Calendar (7 days) ──
   // Tracks which days this week the user practiced
   // Keys: '0'=Monday ... '6'=Sunday, value=true if practiced
