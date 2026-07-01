@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../models/mock_test_model.dart';
 import '../../../providers/mock_test_provider.dart';
+import '../widgets/question_palette_bottom_sheet.dart';
 import 'mock_test_result_screen.dart';
 
 /// একটি প্রশ্নের জন্য shuffled options ট্র্যাক রাখে
@@ -131,6 +132,30 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
                     ),
                   ),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.grid_view_rounded),
+            onPressed: _isSubmitting
+                ? null
+                : () => showModalBottomSheet(
+                      context: context,
+                      isScrollControlled: true,
+                      backgroundColor: Colors.transparent,
+                      builder: (_) => QuestionPaletteBottomSheet(
+                        totalQuestions: test.questions.length,
+                        currentQuestion: _currentQuestion,
+                        answers: _answers,
+                        onQuestionSelected: (index) {
+                          _pageController.animateToPage(
+                            index,
+                            duration: const Duration(milliseconds: 300),
+                            curve: Curves.easeInOut,
+                          );
+                        },
+                      ),
+                    ),
+          ),
+        ],
       ),
       body: Column(
         children: [
