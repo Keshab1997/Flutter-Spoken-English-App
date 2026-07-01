@@ -49,6 +49,7 @@ class QuestionPaletteBottomSheet extends StatelessWidget {
                 IconButton(
                   icon: const Icon(Icons.close_rounded),
                   onPressed: () => Navigator.pop(context),
+                  tooltip: 'Close palette',
                 ),
               ],
             ),
@@ -73,7 +74,7 @@ class QuestionPaletteBottomSheet extends StatelessWidget {
                     Navigator.pop(context);
                     onQuestionSelected(index);
                   },
-                  borderRadius: BorderRadius.circular(20),
+                  customBorder: const CircleBorder(),
                   child: AnimatedScale(
                     scale: isCurrent ? 1.1 : 1.0,
                     duration: const Duration(milliseconds: 200),
