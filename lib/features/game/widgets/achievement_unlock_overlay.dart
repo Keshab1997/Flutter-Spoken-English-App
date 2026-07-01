@@ -171,21 +171,26 @@ class _AchievementUnlockOverlayState extends State<AchievementUnlockOverlay>
             ),
           ),
 
-          // ── Achievement card ──
+          // ── Achievement card (wrapped to absorb taps on
+          //    rounded corners and margin area) ──
           Center(
-            child: AnimatedBuilder(
-              animation: _entryController,
-              builder: (context, _) {
-                final scale = _scaleAnimation.value;
-                final opacity = _fadeAnimation.value;
-                return Transform.scale(
-                  scale: scale,
-                  child: Opacity(
-                    opacity: opacity,
-                    child: _buildCard(context, a, rarityColor, config),
-                  ),
-                );
-              },
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () {}, // prevent taps from passing to backdrop
+              child: AnimatedBuilder(
+                animation: _entryController,
+                builder: (context, _) {
+                  final scale = _scaleAnimation.value;
+                  final opacity = _fadeAnimation.value;
+                  return Transform.scale(
+                    scale: scale,
+                    child: Opacity(
+                      opacity: opacity,
+                      child: _buildCard(context, a, rarityColor, config),
+                    ),
+                  );
+                },
+              ),
             ),
           ),
         ],
@@ -251,8 +256,10 @@ class _AchievementUnlockOverlayState extends State<AchievementUnlockOverlay>
 
             // ── Achievement title ──
             Text(
-              '${a.icon}  ${a.title}',
+              a.title,
               textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
               style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
@@ -264,6 +271,8 @@ class _AchievementUnlockOverlayState extends State<AchievementUnlockOverlay>
             Text(
               a.description,
               textAlign: TextAlign.center,
+              maxLines: 3,
+              overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 fontSize: 14,
                 color: theme.textTheme.bodyMedium?.color?.withOpacity(0.7),
