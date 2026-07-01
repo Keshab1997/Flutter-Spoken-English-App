@@ -7,6 +7,7 @@ import '../../../providers/game/game_provider.dart';
 import '../../../providers/game/timer_provider.dart';
 import '../../../providers/game/score_provider.dart';
 import '../../../services/game_service.dart';
+import '../../../services/achievement_service.dart';
 import '../../../providers/game/xp_provider.dart';
 import '../../../providers/game/coin_provider.dart';
 import '../../../providers/game/streak_provider.dart';
@@ -17,6 +18,7 @@ import '../../../repositories/progress_repository.dart';
 import '../../../repositories/statistics_repository.dart';
 import '../../../repositories/achievement_repository.dart';
 import '../../../models/game/game_result_model.dart';
+import '../../../models/game/achievement_model.dart';
 import 'game_home_screen.dart';
 import 'answer_review_screen.dart';
 import 'question_screen.dart';
@@ -27,6 +29,7 @@ import 'modes/sentence_builder_mode.dart';
 import 'modes/grammar_detective_mode.dart';
 import 'modes/verb_learning_mode.dart';
 import 'modes/flashcard_mode.dart';
+import '../widgets/achievement_unlock_overlay.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -136,39 +139,35 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
         durationSeconds: durationSeconds,
       );
       if (newlyUnlocked.isNotEmpty && mounted) {
-        _showAchievementNotification(newlyUnlocked);
+        _showAchievementUnlock(newlyUnlocked);
       }
     } catch (e) {
       debugPrint('❌ Error checking achievements: $e');
     }
   }
 
-  void _showAchievementNotification(List<dynamic> achievements) {
-    for (final achievement in achievements) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Row(
-            children: [
-              Text(achievement.icon ?? '🏆'),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text('Achievement Unlocked!', style: TextStyle(fontWeight: FontWeight.bold)),
-                    Text(achievement.title),
-                  ],
-                ),
-              ),
-            ],
-          ),
-          backgroundColor: AppColors.success,
-          behavior: SnackBarBehavior.floating,
-          duration: const Duration(seconds: 3),
-        ),
-      );
+  void _showAchievementUnlock(List<AchievementModel> achievements) {
+    final rarest = AchievementService.getRarestAchievement(achievements);
+    if (rarest == null) return;
+
+    // Play achievement sound
+    try {
+      final soundService = ref.read(soundServiceProvider);
+      soundService.playAchievement();
+    } catch (_) {
+      // Sound service not available — overlay still shows
     }
+
+    // Show full-screen celebration overlay
+    showGeneralDialog(
+      context: context,
+      barrierDismissible: false,
+      barrierColor: Colors.transparent,
+      pageBuilder: (context, anim, secondaryAnim) => AchievementUnlockOverlay(
+        achievement: rarest,
+        onDismiss: () => Navigator.of(context).pop(),
+      ),
+    );
   }
 
   /// Syncs all locally-saved game data to Firestore so everything
