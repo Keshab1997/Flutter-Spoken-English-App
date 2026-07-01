@@ -39,6 +39,7 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
 
   // shuffle-এর পর প্রতিটি প্রশ্নের options ও correct index সংরক্ষণ
   late List<_ShuffledQuestion> _shuffledQuestions;
+  late final PageController _pageController;
 
   MockTestModel? get _test {
     final tests = ref.read(mockTestListProvider);
@@ -53,6 +54,7 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
   void initState() {
     super.initState();
     _shuffledQuestions = [];
+    _pageController = PageController();
     _shuffleAllQuestions();
   }
 
@@ -364,6 +366,12 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
         ],
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
 
   void _submitQuiz() {
