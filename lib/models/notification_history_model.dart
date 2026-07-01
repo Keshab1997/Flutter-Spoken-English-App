@@ -64,8 +64,6 @@ class NotificationHistoryItem {
     String? actionUrl,
     String? actionType,
     String? actionPayload,
-    bool clearActionType = false,
-    bool clearActionPayload = false,
   }) {
     return NotificationHistoryItem(
       id: id ?? this.id,
@@ -76,8 +74,8 @@ class NotificationHistoryItem {
       isRead: isRead ?? this.isRead,
       payload: payload ?? this.payload,
       actionUrl: actionUrl ?? this.actionUrl,
-      actionType: clearActionType ? null : actionType ?? this.actionType,
-      actionPayload: clearActionPayload ? null : actionPayload ?? this.actionPayload,
+      actionType: actionType ?? this.actionType,
+      actionPayload: actionPayload ?? this.actionPayload,
     );
   }
 
