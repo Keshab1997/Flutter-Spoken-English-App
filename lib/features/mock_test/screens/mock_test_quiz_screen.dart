@@ -369,7 +369,7 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
                   height: 48,
                   child: ElevatedButton(
                     onPressed: _selectedAnswer != null && !_isSubmitting
-                        ? () {
+                        ? () async {
                             _answers[_currentQuestion] = _selectedAnswer!;
                             if (_currentQuestion < questions.length - 1) {
                               _pageController.nextPage(
@@ -377,7 +377,7 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
                                 curve: Curves.easeInOut,
                               );
                             } else {
-                              _submitQuiz();
+                              await _submitQuiz();
                             }
                           }
                         : null,
@@ -412,50 +412,53 @@ class _MockTestQuizScreenState extends ConsumerState<MockTestQuizScreen> {
     super.dispose();
   }
 
-  void _submitQuiz() {
-    setState(() => _isSubmitting = true);
-
-    final test = _test!;
-    int correct = 0;
-    for (final entry in _answers.entries) {
-      final questionIndex = entry.key;
-      final selectedShuffledIndex = entry.value;
-      // shuffle-এর পরের correctIndex-এর সাথে compare করি
-      if (selectedShuffledIndex == _shuffledQuestions[questionIndex].shuffledCorrectIndex) {
-        correct++;
-      }
-    }
-
-    // Result screen-এ পাঠানোর জন্য original questions-ই পাঠাই
-    // কিন্তু _answers-এ shuffled index সংরক্ষিত আছে।
-    // Result screen-এ review করার সময় shuffle-এর বিষয়টি handle করতে হবে।
-    // আমরা result screen-এ shuffled info পাঠাবো।
-    ref.read(mockTestProvider.notifier).saveResult(widget.testNumber, correct);
-
-    // shuffle info maps তৈরি করে result screen-এ পাঠাই
-    final Map<int, List<String>> shuffledOptionsMap = {};
-    final Map<int, int> shuffledCorrectIndexMap = {};
-    for (int i = 0; i < _shuffledQuestions.length; i++) {
-      shuffledOptionsMap[i] = _shuffledQuestions[i].shuffledOptions;
-      shuffledCorrectIndexMap[i] = _shuffledQuestions[i].shuffledCorrectIndex;
-    }
-
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (_) => MockTestResultScreen(
-          testNumber: widget.testNumber,
-          testTitle: widget.testTitle,
-          score: correct,
-          total: test.questions.length,
-          questions: test.questions,
-          answers: _answers,
-          shuffledOptionsMap: shuffledOptionsMap,
-          shuffledCorrectIndexMap: shuffledCorrectIndexMap,
-        ),
-      ),
-    );
-  }
+	  Future<void> _submitQuiz() async {
+	    setState(() => _isSubmitting = true);
+	
+	    final test = _test!;
+	    int correct = 0;
+	    for (final entry in _answers.entries) {
+	      final questionIndex = entry.key;
+	      final selectedShuffledIndex = entry.value;
+	      // shuffle-এর পরের correctIndex-এর সাথে compare করি
+	      if (selectedShuffledIndex == _shuffledQuestions[questionIndex].shuffledCorrectIndex) {
+	        correct++;
+	      }
+	    }
+	
+	    // Hive ও Firestore-এ score save করি (await — যাতে save নিশ্চিত হয়)
+	    try {
+	      await ref.read(mockTestProvider.notifier).saveResult(widget.testNumber, correct);
+	    } catch (e) {
+	      debugPrint('❌ saveResult failed: $e');
+	      // Error হলেও navigation ব্লক করি না
+	    }
+	
+	    // shuffle info maps তৈরি করে result screen-এ পাঠাই
+	    final Map<int, List<String>> shuffledOptionsMap = {};
+	    final Map<int, int> shuffledCorrectIndexMap = {};
+	    for (int i = 0; i < _shuffledQuestions.length; i++) {
+	      shuffledOptionsMap[i] = _shuffledQuestions[i].shuffledOptions;
+	      shuffledCorrectIndexMap[i] = _shuffledQuestions[i].shuffledCorrectIndex;
+	    }
+	
+	    if (!mounted) return;
+	    Navigator.pushReplacement(
+	      context,
+	      MaterialPageRoute(
+	        builder: (_) => MockTestResultScreen(
+	          testNumber: widget.testNumber,
+	          testTitle: widget.testTitle,
+	          score: correct,
+	          total: test.questions.length,
+	          questions: test.questions,
+	          answers: _answers,
+	          shuffledOptionsMap: shuffledOptionsMap,
+	          shuffledCorrectIndexMap: shuffledCorrectIndexMap,
+	        ),
+	      ),
+	    );
+	  }
 }
 
 /// shuffle-এর সময় originalIndex ট্র্যাক রাখার জন্য ক্ষণস্থায়ী হেলপার
