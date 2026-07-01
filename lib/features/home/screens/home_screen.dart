@@ -1022,6 +1022,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final grammarTotal = grammarItems.length;
     final vocabTotal = vocabItems.length;
 
+    // 🔍 DEBUG: Log study plan state to help diagnose "All chapters completed" issue
+    print('📚 [ContinueLearning] items.length: ${items.length}');
+    print('📚 [ContinueLearning] nextGrammarId: ${studyState.nextGrammarId}');
+    print('📚 [ContinueLearning] nextVocabId: ${studyState.nextVocabId}');
+    print('📚 [ContinueLearning] lastOpened: $lastOpened');
+    print('📚 [ContinueLearning] grammarDone: $grammarDone / $grammarTotal');
+    print('📚 [ContinueLearning] vocabDone: $vocabDone / $vocabTotal');
+
     GrammarChapter? findGrammar(int chapterNum) {
       for (final c in allGrammarChapters) {
         if (c.chapter == chapterNum) return c;
@@ -1054,10 +1062,34 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       return null;
     }
 
+    // Fallback: first pending of each type if no resume found
+    TodoItem? firstPendingGrammar;
+    for (var item in items) {
+      if (item.type == 'grammar' && item.status == TodoStatus.pending) {
+        firstPendingGrammar = item;
+        break;
+      }
+    }
+    TodoItem? firstPendingVocab;
+    for (var item in items) {
+      if (item.type == 'vocabulary' && item.status == TodoStatus.pending) {
+        firstPendingVocab = item;
+        break;
+      }
+    }
+
     final resumeGrammar = resumeFromLastOpened('grammar', 'grammar')
-        ?? findById(items, studyState.nextGrammarId);
+        ?? findById(items, studyState.nextGrammarId)
+        ?? firstPendingGrammar;
     final resumeVocab = resumeFromLastOpened('vocabulary', 'vocab')
-        ?? findById(items, studyState.nextVocabId);
+        ?? findById(items, studyState.nextVocabId)
+        ?? firstPendingVocab;
+
+    // 🔍 DEBUG: Log what we resolved
+    print('📚 [ContinueLearning] resumeGrammar: ${resumeGrammar?.id ?? 'null'}');
+    print('📚 [ContinueLearning] resumeVocab: ${resumeVocab?.id ?? 'null'}');
+    print('📚 [ContinueLearning] firstPendingGrammar: ${firstPendingGrammar?.id ?? 'null'}');
+    print('📚 [ContinueLearning] firstPendingVocab: ${firstPendingVocab?.id ?? 'null'}');
 
     final hasAny = resumeGrammar != null || resumeVocab != null;
 
