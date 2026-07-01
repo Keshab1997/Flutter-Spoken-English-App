@@ -42,9 +42,9 @@ class StreakService {
     if (streak == 14) return 'Two weeks strong! Amazing dedication! 💪';
     if (streak == 30) return '30-day streak! You\'re a champion! 🏆';
     if (streak == 100) return '100-day streak! Legendary! 👑';
-    if (streak % 30 == 0) return '$streak-day streak! Unstoppable! 🚀';
-    if (streak % 7 == 0) return '$streak-day streak! Keep it up! ⭐';
-    return 'Streak: $streak days! 🔥';
+    if (streak % 30 == 0) return '\$streak-day streak! Unstoppable! 🚀';
+    if (streak % 7 == 0) return '\$streak-day streak! Keep it up! ⭐';
+    return 'Streak: \$streak days! 🔥';
   }
 
   // ── Daily Streak Check ──
@@ -55,29 +55,38 @@ class StreakService {
 
     final now = DateTime.now();
     final lastActive = progress.lastActiveDate;
-    final difference = now.difference(lastActive);
-
-    // Reset if more than 48 hours have passed
-    return difference.inHours > 48;
+    final today = DateTime(now.year, now.month, now.day);
+    final lastDay = DateTime(lastActive.year, lastActive.month, lastActive.day);
+    
+    return today.difference(lastDay).inDays >= 2;
   }
 
   Future<int> checkAndUpdateStreak() async {
     final progress = _progressRepository.getProgress();
-    if (progress == null) return 0;
+    
+    // First-time user — initialize streak to 1
+    if (progress == null) {
+      await _progressRepository.incrementStreak(); // 0 -> 1
+      await _progressRepository.updateLastActiveDate(DateTime.now());
+      await _progressRepository.incrementTotalActiveDays();
+      return 1;
+    }
 
     final now = DateTime.now();
     final lastActive = progress.lastActiveDate;
-    final difference = now.difference(lastActive);
+    final today = DateTime(now.year, now.month, now.day);
+    final lastActiveDay = DateTime(lastActive.year, lastActive.month, lastActive.day);
+    final daysDifference = today.difference(lastActiveDay).inDays;
 
-    if (difference.inHours > 48) {
+    if (daysDifference >= 2) {
       // Streak broken — reset to 1
       await _progressRepository.resetStreak();
       await _progressRepository.incrementStreak();
       return 1;
     }
 
-    if (difference.inHours >= 24) {
-      // New day — increment streak
+    if (daysDifference == 1) {
+      // New calendar day — increment streak
       await _progressRepository.incrementStreak();
       return getCurrentStreak();
     }
@@ -147,9 +156,17 @@ class StreakService {
     final now = DateTime.now();
     final lastActive = progress.lastActiveDate;
     
-    // Check if it's a new week (more than 7 days since last active)
-    final difference = now.difference(lastActive);
-    return difference.inDays >= 7;
+    // A strict way: see if we are in a different ISO week.
+    // For simplicity: if days difference >= 7 or weekday has wrapped around and enough days passed.
+    // A robust standard approach:
+    final today = DateTime(now.year, now.month, now.day);
+    final lastDay = DateTime(lastActive.year, lastActive.month, lastActive.day);
+    
+    // Find the Monday of the current week (ISO week starts on Monday by default, weekday = 1)
+    final daysSinceMondayToday = today.weekday - 1;
+    final mondayThisWeek = today.subtract(Duration(days: daysSinceMondayToday));
+    
+    return lastDay.isBefore(mondayThisWeek);
   }
 
   Future<int> checkAndUpdateWeeklyStreak() async {
@@ -163,15 +180,9 @@ class StreakService {
       return 1;
     }
 
-    // Same week - increment if active today
-    final now = DateTime.now();
-    final lastActive = progress.lastActiveDate;
-    final difference = now.difference(lastActive);
-
-    if (difference.inHours < 24) {
-      // Active today - increment weekly streak
-      await incrementWeeklyStreak();
-    }
+    // Checking if we already incremented weekly streak for today happens before calling this.
+    // Assuming this is only called once per day!
+    await incrementWeeklyStreak();
 
     return getCurrentWeeklyStreak();
   }
@@ -207,16 +218,13 @@ class StreakService {
 
   int calculateMissedDays({required DateTime lastActiveDate}) {
     final now = DateTime.now();
-    final difference = now.difference(lastActiveDate);
+    final today = DateTime(now.year, now.month, now.day);
+    final lastDay = DateTime(lastActiveDate.year, lastActiveDate.month, lastActiveDate.day);
+    final daysDifference = today.difference(lastDay).inDays;
     
-    // If more than 24 hours but less than 48 hours, count as 1 missed day
-    // If more than 48 hours, count as 2+ missed days
-    if (difference.inHours > 48) {
-      return (difference.inDays ~/ 2).clamp(1, difference.inDays);
-    } else if (difference.inHours > 24) {
-      return 1;
+    if (daysDifference > 1) {
+      return daysDifference - 1; // E.g., if missed yesterday (diff 2), missed 1 day.
     }
-    
     return 0;
   }
 
@@ -244,20 +252,31 @@ class StreakService {
   }
 
   Future<void> recordActiveDay() async {
+    final progress = _progressRepository.getProgress();
     final now = DateTime.now();
 
-    // Update last active date first so subsequent streak checks use fresh data
-    await _progressRepository.updateLastActiveDate(now);
+    if (progress != null) {
+      final lastActive = progress.lastActiveDate;
+      final today = DateTime(now.year, now.month, now.day);
+      final lastActiveDay = DateTime(lastActive.year, lastActive.month, lastActive.day);
+      final daysDifference = today.difference(lastActiveDay).inDays;
 
-    // Update total active days
-    await _progressRepository.incrementTotalActiveDays();
+      if (daysDifference > 0) {
+        // Only increment totalActiveDays if it's a new calendar day
+        // (Don't increment if daysDifference == 0)
+        await _progressRepository.incrementTotalActiveDays();
+        
+        // Update weekly streak only once per day
+        await checkAndUpdateWeeklyStreak();
+      }
+    }
+
+    // Now update last active date (done on every launch, or at least every day)
+    await _progressRepository.updateLastActiveDate(now);
 
     // Update longest streak if current streak is higher
     final currentStreak = getCurrentStreak();
     await updateLongestStreak(currentStreak);
-
-    // Update weekly streak
-    await checkAndUpdateWeeklyStreak();
   }
 
   // ── Streak Recovery ──
@@ -268,10 +287,11 @@ class StreakService {
 
     final now = DateTime.now();
     final lastActive = progress.lastActiveDate;
-    final difference = now.difference(lastActive);
-
-    // Can recover if streak was lost within last 24 hours
-    return difference.inHours > 24 && difference.inHours <= 48;
+    final today = DateTime(now.year, now.month, now.day);
+    final lastDay = DateTime(lastActive.year, lastActive.month, lastActive.day);
+    
+    // Can recover if exactly 1 day was missed (daysDifference == 2)
+    return today.difference(lastDay).inDays == 2;
   }
 
   Future<bool> recoverStreak({int coinCost = 50}) async {
@@ -288,7 +308,7 @@ class StreakService {
     // Reset missed days
     await resetMissedDays();
 
-    // Streak will be reset to 1 on next check
+    // Streak will be restored
     return true;
   }
 }
@@ -296,6 +316,7 @@ class StreakService {
 // ── Streak Statistics Model ──
 
 class StreakStats {
+  // ... (keep the same structure)
   final int currentStreak;
   final int weeklyStreak;
   final int longestStreak;

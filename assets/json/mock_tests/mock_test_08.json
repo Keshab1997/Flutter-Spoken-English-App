@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_08",
+  "testNumber": 8,
+  "title": "Mock Test 8 - Past Continuous + Past Perfect Tense",
+  "description": "এই টেস্টে Past Continuous (was/were + V+ing) ও Past Perfect (had + V3) Tense নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "Past Continuous Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Past Continuous Tense?)",
+      "options": [
+        "Subject + V2",
+        "Subject + was/were + V+ing",
+        "Subject + had + V3",
+        "Subject + have/has + V3"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Continuous Tense-এর গঠন: Subject + was/were + V+ing। I/He/She/It → was, We/You/They → were। যেমন: I was sleeping, They were playing। এটি অতীতে চলমান কাজ বোঝায়।"
+    },
+    {
+      "question": "Past Perfect Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Past Perfect Tense?)",
+      "options": [
+        "Subject + V2",
+        "Subject + was/were + V+ing",
+        "Subject + had + V3",
+        "Subject + have/has + V3"
+      ],
+      "correctIndex": 2,
+      "explanation": "Past Perfect Tense-এর গঠন: Subject + had + V3 (Past Participle)। সবার জন্য had একই (I had, He had, They had)। যেমন: I had eaten, She had gone। এটি অতীতের আগে ঘটে যাওয়া কাজ বোঝায় (past of past)।"
+    },
+    {
+      "question": "Past Continuous কখন ব্যবহার করা হয়? (When is Past Continuous used?)",
+      "options": [
+        "অতীতে সম্পূর্ণ শেষ হয়ে যাওয়া কাজ বুঝাতে",
+        "অতীতের কোনো নির্দিষ্ট সময়ে চলমান কাজ বুঝাতে",
+        "বর্তমানের চলমান কাজ বুঝাতে",
+        "ভবিষ্যতের পরিকল্পনা বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Continuous ব্যবহার হয়: (১) অতীতের কোনো নির্দিষ্ট সময়ে চলমান কাজ — I was watching TV at 8 PM yesterday, (২) দুইটি অতীত কাজ একসাথে চলছিল — I was reading while she was cooking, (৩) একটি কাজ চলছিল এমন সময় আরেকটি কাজ ঘটল — I was sleeping when the phone rang।"
+    },
+    {
+      "question": "Past Perfect কখন ব্যবহার করা হয়? (When is Past Perfect used?)",
+      "options": [
+        "অতীতে শুরু হয়ে বর্তমানে চলছে এমন কাজ বুঝাতে",
+        "অতীতের দুইটি কাজের মধ্যে আগে ঘটে যাওয়া কাজটি বুঝাতে",
+        "ভবিষ্যতে ঘটবে এমন কাজ বুঝাতে",
+        "শুধু নিয়মিত অতীত অভ্যাস বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Perfect = 'Past of Past'। অতীতের দুইটি কাজের মধ্যে যে কাজটি আগে ঘটেছিল সেটি Past Perfect-এ হয়, আর পরে ঘটেছিল সেটি Past Indefinite-এ। যেমন: 'When I arrived, the train had already left.' (train left first, then I arrived)"
+    },
+    {
+      "question": "Past Continuous আর Past Perfect-এর মধ্যে মূল পার্থক্য কী?",
+      "options": [
+        "Past Continuous = চলমান কাজ, Past Perfect = আগে শেষ হওয়া কাজ",
+        "Past Continuous = ভবিষ্যৎ, Past Perfect = বর্তমান",
+        "দুটোর মধ্যে কোনো পার্থক্য নেই",
+        "Past Continuous = V3, Past Perfect = V+ing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Past Continuous (was/were + V+ing) = অতীতে চলমান/প্রগতিশীল কাজ — 'I was reading when you called.' Past Perfect (had + V3) = অতীতের আরেকটি কাজের আগে ঘটে যাওয়া কাজ — 'I had already read the book before the class started.'"
+    },
+    {
+      "question": "When I called him, he ___ dinner. (আমি যখন তাকে ফোন করলাম, সে ডিনার খাচ্ছিল)",
+      "options": [
+        "has",
+        "had",
+        "was having",
+        "is having"
+      ],
+      "correctIndex": 2,
+      "explanation": "ফোন করার সময় dinner চলমান ছিল, তাই Past Continuous। He (singular) → was having। 'When I called' = নির্দিষ্ট সময়, তখন 'he was having dinner'।"
+    },
+    {
+      "question": "The light ___ out while I ___ a book. (আমি বই পড়ছিলাম তখন লাইট বন্ধ হয়ে গেল)",
+      "options": [
+        "went / was reading",
+        "was going / read",
+        "goes / am reading",
+        "had gone / read"
+      ],
+      "correctIndex": 0,
+      "explanation": "একটি কাজ চলছিল (was reading) আর হঠাৎ আরেকটি কাজ ঘটল (went out)। Past Continuous + Past Indefinite-এর ক্লাসিক ব্যবহার।"
+    },
+    {
+      "question": "She ___ already ___ when I reached the station. (আমি স্টেশনে পৌঁছানোর আগেই সে চলে গিয়েছিল)",
+      "options": [
+        "has / left",
+        "had / left",
+        "was / leaving",
+        "did / leave"
+      ],
+      "correctIndex": 1,
+      "explanation": "She left (first) → I reached (later)। আগের কাজটির জন্য Past Perfect: had + left। 'Already' = ইতিমধ্যে। সঠিক: 'She had already left when I reached the station.'"
+    },
+    {
+      "question": "I ___ for two hours before the bus arrived. (বাস আসার আগে আমি দুই ঘণ্টা অপেক্ষা করছিলাম)",
+      "options": [
+        "waited",
+        "was waiting",
+        "had been waiting",
+        "have waited"
+      ],
+      "correctIndex": 1,
+      "explanation": "অতীতে দুই ঘণ্টা ধরে চলমান কাজ (waiting) যা bus arrival-এর সময়ও চলছিল। Past Continuous: was waiting। 'For two hours' সময়কাল নির্দেশ করছে।"
+    },
+    {
+      "question": "After I ___ my homework, I went to bed. (বাড়ির কাজ শেষ করার পর আমি ঘুমাতে গেলাম)",
+      "options": [
+        "finish",
+        "finished",
+        "had finished",
+        "was finishing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Homework finish (first) → went to bed (later)। আগের কাজটির জন্য Past Perfect: 'had finished'। 'After' দ্বারা আগে-পরে বোঝাচ্ছে।"
+    },
+    {
+      "question": "Error Detection: 'I was go to school when I saw him.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "was go",
+        "to school",
+        "saw him"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Continuous-এ was/were + V+ing হয়। 'Was go' → 'was going' হবে। সঠিক: 'I was going to school when I saw him.'"
+    },
+    {
+      "question": "Error Detection: 'They were play cricket at 5 PM yesterday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "They",
+        "were play",
+        "cricket",
+        "at 5 PM yesterday"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Continuous-এ were + V+ing হয়। 'Were play' → 'were playing' হবে। সঠিক: 'They were playing cricket at 5 PM yesterday.'"
+    },
+    {
+      "question": "Error Detection: 'When I arrived, she already left.' — ভুল অংশ কোনটি?",
+      "options": [
+        "When I arrived",
+        "she",
+        "already left",
+        "কোনো ভুল নেই"
+      ],
+      "correctIndex": 2,
+      "explanation": "She left আগে, I arrived পরে। আগের কাজটির জন্য Past Perfect লাগবে: 'had left'। সঠিক: 'When I arrived, she had already left.'"
+    },
+    {
+      "question": "Error Detection: 'I had saw that movie before.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "had saw",
+        "that movie",
+        "before"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Perfect-এ had + V3 (past participle) হয়। 'Saw' (V2) → 'seen' (V3) হবে। সঠিক: 'I had seen that movie before.'"
+    },
+    {
+      "question": "Fill in the blank: 'I ___ TV when the phone rang.' (ফোন বাজার সময় আমি টিভি দেখছিলাম)",
+      "options": [
+        "watched",
+        "was watching",
+        "had watched",
+        "am watching"
+      ],
+      "correctIndex": 1,
+      "explanation": "ফোন বাজার সময় TV দেখা চলমান ছিল, তাই Past Continuous। I → was watching। 'When the phone rang' = হঠাৎ ঘটনা।"
+    },
+    {
+      "question": "Fill in the blank: 'The patient ___ before the doctor came.' (ডাক্তার আসার আগেই রোগী মারা গিয়েছিল)",
+      "options": [
+        "died",
+        "was dying",
+        "had died",
+        "has died"
+      ],
+      "correctIndex": 2,
+      "explanation": "রোগী মারা গিয়েছিল (first) → ডাক্তার আসলেন (later)। আগের কাজ: Past Perfect — 'had died'। 'Before' দ্বারা আগে-পরে বোঝাচ্ছে।"
+    },
+    {
+      "question": "Fill in the blank: 'They ___ football when it started raining.' (বৃষ্টি শুরু হলে তারা ফুটবল খেলছিল)",
+      "options": [
+        "played",
+        "were playing",
+        "had played",
+        "play"
+      ],
+      "correctIndex": 1,
+      "explanation": "বৃষ্টি শুরু হওয়ার সময় football খেলা চলমান ছিল। They → were playing। Past Continuous + Past Indefinite-এর ব্যবহার।"
+    },
+    {
+      "question": "Fill in the blank: 'By the time we arrived, the movie ___ already ___.' (আমরা পৌঁছানোর আগেই সিনেমা শুরু হয়ে গিয়েছিল)",
+      "options": [
+        "has / started",
+        "had / started",
+        "was / starting",
+        "did / start"
+      ],
+      "correctIndex": 1,
+      "explanation": "Movie started (first) → we arrived (later)। 'By the time' = আগেই। Past Perfect: had + started। সঠিক: 'By the time we arrived, the movie had already started.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি যখন বাসায় পৌঁছালাম, তখন আমার মা রান্না করছিলেন।'",
+      "options": [
+        "When I reached home, my mother cooked.",
+        "When I reached home, my mother was cooking.",
+        "When I reached home, my mother had cooked.",
+        "When I reached home, my mother is cooking."
+      ],
+      "correctIndex": 1,
+      "explanation": "আমি পৌঁছানোর সময় মায়ের রান্না চলমান ছিল। Past Continuous: was cooking। 'When I reached' আর 'was cooking' একই সময়ে ঘটছে।"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমার পরীক্ষা শেষ হওয়ার আগেই সে চলে গিয়েছিল।'",
+      "options": [
+        "He left before my exam finished.",
+        "He had left before my exam finished.",
+        "He was leaving before my exam finished.",
+        "He has left before my exam finished."
+      ],
+      "correctIndex": 1,
+      "explanation": "He left (first) → exam finished (later)। আগের কাজটির জন্য Past Perfect: 'had left'। 'Before' দ্বারা আগে-পরে বোঝাচ্ছে। সঠিক: 'He had left before my exam finished.'"
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_07",
+  "testNumber": 7,
+  "title": "Mock Test 7 - Past Indefinite Tense",
+  "description": "এই টেস্টে Past Indefinite Tense (Subject + V2) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "Past Indefinite Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Past Indefinite Tense?)",
+      "options": [
+        "Subject + V1 + s/es",
+        "Subject + V2",
+        "Subject + had + V3",
+        "Subject + was/were + V+ing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Indefinite Tense-এর গঠন: Subject + V2 (Past form)। যেমন: I ate, He went, They played। Regular verb-এর সাথে ed/add যোগ হয় (play → played), আর irregular verb-এর আলাদা form থাকে (go → went, eat → ate)।"
+    },
+    {
+      "question": "Past Indefinite Tense কখন ব্যবহার করা হয়? (When is Past Indefinite Tense used?)",
+      "options": [
+        "বর্তমানের কাজ বুঝাতে",
+        "অতীতে সম্পূর্ণভাবে শেষ হয়ে যাওয়া কাজ বুঝাতে",
+        "ভবিষ্যতের পরিকল্পনা বুঝাতে",
+        "চলমান কাজ বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Indefinite ব্যবহার হয় অতীতে সম্পূর্ণভাবে শেষ হয়ে যাওয়া কাজ বুঝাতে। সাধারণত নির্দিষ্ট সময় উল্লেখ থাকে: yesterday, last week, in 2020, ago ইত্যাদি। যেমন: I met him yesterday."
+    },
+    {
+      "question": "Past Indefinite-এ Negative বাক্য কিভাবে তৈরি হয়?",
+      "options": [
+        "Subject + did + not + V1",
+        "Subject + did + not + V2",
+        "Subject + was/were + not + V+ing",
+        "Subject + not + V2"
+      ],
+      "correctIndex": 0,
+      "explanation": "Past Indefinite Negative: Subject + did + not + V1 (base form)। 'Did' ইতিমধ্যে past tense নির্দেশ করছে, তাই মূল verb-এর base form (V1) হয়। যেমন: 'I did not go' (went না), 'He did not eat' (ate না)। সংক্ষেপে: didn't।"
+    },
+    {
+      "question": "Past Indefinite-এ Question কিভাবে তৈরি হয়?",
+      "options": [
+        "Did + Subject + V1?",
+        "Did + Subject + V2?",
+        "Was/Were + Subject + V+ing?",
+        "Do/Does + Subject + V1?"
+      ],
+      "correctIndex": 0,
+      "explanation": "Past Indefinite Question: Did + Subject + V1 (base form)? যেমন: Did you go? Did he eat? Did they play? 'Did' ইতিমধ্যে past দেখাচ্ছে, তাই V2-এর দরকার নেই।"
+    },
+    {
+      "question": "Regular verb আর Irregular verb-এর পার্থক্য কী?",
+      "options": [
+        "Regular verb-এর V2 ও V3 একই হয় (+ed), Irregular verb-এর আলাদা form থাকে",
+        "Irregular verb-এর সাথে ed যোগ হয়",
+        "Regular verb-এর আলাদা form থাকে",
+        "কোনো পার্থক্য নেই"
+      ],
+      "correctIndex": 0,
+      "explanation": "Regular verb: V2 = V1 + ed (play → played, walk → walked)। Irregular verb: V2 আলাদা (go → went, eat → ate, see → saw, buy → bought)। Irregular verb-গুলোর form মুখস্থ করতে হয়।"
+    },
+    {
+      "question": "She ___ a beautiful dress yesterday. (সে গতকাল একটি সুন্দর পোশাক পরেছিল)",
+      "options": [
+        "wear",
+        "wears",
+        "wore",
+        "wearing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Yesterday' = নির্দিষ্ট অতীত সময়। Past Indefinite → V2। 'Wear' এর V2 = 'wore'। সঠিক: 'She wore a beautiful dress yesterday.'"
+    },
+    {
+      "question": "I ___ him at the station last night. (আমি গত রাতে স্টেশনে তাকে দেখেছিলাম)",
+      "options": [
+        "see",
+        "saw",
+        "seen",
+        "seeing"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Last night' = নির্দিষ্ট অতীত সময়। 'See' এর V2 = 'saw'। সঠিক: 'I saw him at the station last night.'"
+    },
+    {
+      "question": "They ___ football yesterday afternoon. (তারা গতকাল বিকেলে ফুটবল খেলেছিল)",
+      "options": [
+        "play",
+        "plays",
+        "played",
+        "playing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Yesterday afternoon' = নির্দিষ্ট অতীত সময়। 'Play' = regular verb, তাই V2 = played। সঠিক: 'They played football yesterday afternoon.'"
+    },
+    {
+      "question": "He ___ a glass of milk last night. (সে গত রাতে এক গ্লাস দুধ পান করেছিল)",
+      "options": [
+        "drink",
+        "drinks",
+        "drank",
+        "drunk"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Last night' = নির্দিষ্ট অতীত সময়। 'Drink' এর V2 = 'drank' (irregular)। সঠিক: 'He drank a glass of milk last night.'"
+    },
+    {
+      "question": "We ___ to Cox's Bazar last summer. (আমরা গত গ্রীষ্মে কক্সবাজারে গিয়েছিলাম)",
+      "options": [
+        "go",
+        "goes",
+        "went",
+        "gone"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Last summer' = নির্দিষ্ট অতীত সময়। 'Go' এর V2 = 'went'। সঠিক: 'We went to Cox's Bazar last summer.'"
+    },
+    {
+      "question": "Error Detection: 'He didn't went to school yesterday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "He",
+        "didn't",
+        "went",
+        "to school yesterday"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Didn't' (did not) এর পরে V1 (base form) হয়, V2 নয়। 'Went' → 'go' হবে। সঠিক: 'He didn't go to school yesterday.'"
+    },
+    {
+      "question": "Error Detection: 'Did you saw him last night?' — ভুল অংশ কোনটি?",
+      "options": [
+        "Did",
+        "you",
+        "saw",
+        "last night"
+      ],
+      "correctIndex": 2,
+      "explanation": "Did দিয়ে question করলে মূল verb-এর V1 (base form) হয়, V2 নয়। 'Saw' → 'see' হবে। সঠিক: 'Did you see him last night?'"
+    },
+    {
+      "question": "Error Detection: 'She do not like the movie yesterday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "do not",
+        "like",
+        "the movie"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Yesterday' = অতীত, তাই 'do not' → 'did not (didn't)' হবে। Present Indefinite-এর do/does past-এ did হয়। সঠিক: 'She didn't like the movie yesterday.'"
+    },
+    {
+      "question": "Error Detection: 'I buyed a new phone last week.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "buyed",
+        "a new phone",
+        "last week"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Buy' একটি irregular verb। এর V2 'bought', 'buyed' নয়। সঠিক: 'I bought a new phone last week.' Irregular verb-গুলোর form মনে রাখতে হবে।"
+    },
+    {
+      "question": "Fill in the blank: 'The movie ___ at 9 PM last night.' (সিনেমাটি গত রাত ৯টায় শুরু হয়েছিল)",
+      "options": [
+        "start",
+        "starts",
+        "started",
+        "starting"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Last night at 9 PM' = নির্দিষ্ট অতীত সময়। 'Start' = regular verb → V2 = started। সঠিক: 'The movie started at 9 PM last night.'"
+    },
+    {
+      "question": "Fill in the blank: 'She ___ a letter to her mother yesterday.' (সে গতকাল তার মাকে একটি চিঠি লিখেছিল)",
+      "options": [
+        "write",
+        "writes",
+        "wrote",
+        "writing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Yesterday' = নির্দিষ্ট অতীত সময়। 'Write' এর V2 = 'wrote' (irregular)। সঠিক: 'She wrote a letter to her mother yesterday.'"
+    },
+    {
+      "question": "Fill in the blank: 'I ___ my keys this morning.' (আমি আজ সকালে আমার চাবি হারিয়ে ফেলেছিলাম)",
+      "options": [
+        "lose",
+        "lost",
+        "loses",
+        "losing"
+      ],
+      "correctIndex": 1,
+      "explanation": "'This morning' = অতীত (এখন সকাল পেরিয়ে গেছে)। 'Lose' এর V2 = 'lost' (irregular)। সঠিক: 'I lost my keys this morning.'"
+    },
+    {
+      "question": "Fill in the blank: 'The children ___ a good time at the party.' (বাচ্চারা পার্টিতে খুব মজা পেয়েছিল)",
+      "options": [
+        "have",
+        "has",
+        "had",
+        "having"
+      ],
+      "correctIndex": 2,
+      "explanation": "এটি অতীতে ঘটে যাওয়া ঘটনা। 'Have' এর V2 = 'had'। সঠিক: 'The children had a good time at the party.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি গতকাল তাকে ফোন করেছিলাম।'",
+      "options": [
+        "I call him yesterday.",
+        "I called him yesterday.",
+        "I have called him yesterday.",
+        "I am calling him yesterday."
+      ],
+      "correctIndex": 1,
+      "explanation": "'গতকাল' (yesterday) = নির্দিষ্ট অতীত সময় → Past Indefinite। 'Call' = regular verb → V2 = called। 'Yesterday' এর সাথে Present Perfect ব্যবহার করা যায় না।"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে কি গতকাল অফিসে এসেছিল?'",
+      "options": [
+        "Does she come to office yesterday?",
+        "Did she came to office yesterday?",
+        "Did she come to office yesterday?",
+        "Has she come to office yesterday?"
+      ],
+      "correctIndex": 2,
+      "explanation": "'গতকাল' (yesterday) = নির্দিষ্ট অতীত সময় → Past Indefinite Question। Did + Subject + V1 (come)। 'Came' V2 হবে না, কারণ Did ইতিমধ্যে past দেখাচ্ছে।"
+    }
+  ]
+}

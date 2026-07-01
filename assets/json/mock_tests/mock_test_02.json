@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_02",
+  "testNumber": 2,
+  "title": "Mock Test 2 - This, That, These, Those",
+  "description": "এই টেস্টে This, That, These, Those-এর সঠিক ব্যবহার নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথমে জানবো 'কোথায় কী বসে', তারপর fill in the blanks ও error detection দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "'This' কোথায় বসে? (Where is 'this' used?)",
+      "options": [
+        "কাছে থাকা একক বস্তু/ব্যক্তির আগে",
+        "দূরে থাকা একক বস্তু/ব্যক্তির আগে",
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে"
+      ],
+      "correctIndex": 0,
+      "explanation": "'This' বসে কাছে থাকা একক (singular) বস্তু বা ব্যক্তির আগে। যেমন: this book (এই বইটি — যা আমার হাতে আছে), this man (এই লোকটি — যিনি আমার পাশে দাঁড়িয়ে)।"
+    },
+    {
+      "question": "'That' কোথায় বসে? (Where is 'that' used?)",
+      "options": [
+        "কাছে থাকা একক বস্তু/ব্যক্তির আগে",
+        "দূরে থাকা একক বস্তু/ব্যক্তির আগে",
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'That' বসে দূরে থাকা একক (singular) বস্তু বা ব্যক্তির আগে। যেমন: that book (ঐ বইটি — যা দূরে রাখা), that man (ঐ লোকটি — যিনি দূরে দাঁড়িয়ে)।"
+    },
+    {
+      "question": "'These' কোথায় বসে? (Where is 'these' used?)",
+      "options": [
+        "কাছে থাকা একক বস্তুর আগে",
+        "দূরে থাকা একক বস্তুর আগে",
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে"
+      ],
+      "correctIndex": 2,
+      "explanation": "'These' বসে কাছে থাকা একাধিক (plural) বস্তু বা ব্যক্তির আগে। 'This'-এর plural হলো 'These'। যেমন: these books (এই বইগুলো), these men (এই লোকেরা)।"
+    },
+    {
+      "question": "'Those' কোথায় বসে? (Where is 'those' used?)",
+      "options": [
+        "কাছে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একাধিক বস্তুর আগে",
+        "দূরে থাকা একক বস্তুর আগে",
+        "সব জায়গায়"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Those' বসে দূরে থাকা একাধিক (plural) বস্তু বা ব্যক্তির আগে। 'That'-এর plural হলো 'Those'। যেমন: those books (ঐ বইগুলো), those men (ঐ লোকেরা)।"
+    },
+    {
+      "question": "_____ is my pen in my hand. (এই যে আমার হাতে কলমটি)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 0,
+      "explanation": "'In my hand' = আমার হাতে (কাছে)। আর pen একটি মাত্র (singular)। কাছে থাকা একক বস্তু বোঝাতে 'This' বসে।"
+    },
+    {
+      "question": "_____ is our school across the road. (ঐ যে রাস্তার ওপারে আমাদের স্কুল)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Across the road' = রাস্তার ওপারে (দূরে)। School একটি মাত্র (singular)। দূরে থাকা একক বস্তু বোঝাতে 'That' বসে।"
+    },
+    {
+      "question": "_____ books on my desk are mine. (আমার টেবিলের এই বইগুলো আমার)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 2,
+      "explanation": "'On my desk' = আমার টেবিলের উপরে (কাছে)। Books একাধিক (plural)। কাছে থাকা একাধিক বস্তু বোঝাতে 'These' বসে।"
+    },
+    {
+      "question": "_____ birds on the tree are crows. (ঐ গাছের পাখিগুলো দাঁড়কাক)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 3,
+      "explanation": "'On the tree' = গাছের উপরে (দূরে)। Birds একাধিক (plural)। দূরে থাকা একাধিক বস্তু বোঝাতে 'Those' বসে।"
+    },
+    {
+      "question": "_____ is my friend, Rahim. (ইনি আমার বন্ধু রহিম — কাছে দাঁড়ানো)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 0,
+      "explanation": "কাউকে পরিচয় করানোর সময় (introduce) কাছে থাকলে 'This is...' বলা হয়। 'This is my friend, Rahim.' Singular হওয়ায় This।"
+    },
+    {
+      "question": "Hello, _____ is Rahim speaking. (হ্যালো, আমি রহিম বলছি — ফোনে)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 0,
+      "explanation": "ফোনে নিজেকে পরিচয় দেওয়ার সময় 'This is...' ব্যবহার করা হয়। 'This is Rahim speaking.' অথবা 'This is he/she.'"
+    },
+    {
+      "question": "Is _____ Mr. Khan? (ঐ কী জনাব খান? — ফোনে জিজ্ঞাসা)",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "correctIndex": 1,
+      "explanation": "ফোনে অন্য প্রান্তের ব্যক্তি সম্পর্কে জিজ্ঞাসা করতে 'Is that...?' ব্যবহার করা হয়। 'Is that Mr. Khan?' অথবা 'Who is that speaking?'"
+    },
+    {
+      "question": "_____ are my books. (এই হলো আমার বইগুলো — কাছে দেখিয়ে)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 2,
+      "explanation": "কাছে থাকা একাধিক বই (plural) বোঝাতে 'These are...' হবে। মনে রাখবেন: This → singular, These → plural।"
+    },
+    {
+      "question": "_____ were the good old days. (ঐ ছিল ভালো পুরনো দিনগুলো)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 3,
+      "explanation": "অতীতের কোনো সময়কে (days) বোঝাতে 'Those were the days' একটি fixed phrase। দূরে (সময়ের দিক থেকে) এবং plural (days) → Those।"
+    },
+    {
+      "question": "_____ is my car parked over there. (ঐ যে ওখানে পার্ক করা গাড়িটি)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Over there' = ওখানে (দূরে)। Car একটি মাত্র (singular)। দূরে থাকা একক বস্তু → That।"
+    },
+    {
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
+      "options": [
+        "This books are interesting.",
+        "These book is interesting.",
+        "These books are interesting.",
+        "That books are interesting."
+      ],
+      "correctIndex": 2,
+      "explanation": "'Books' plural, তাই 'These' (plural determiner) এবং 'are' (plural verb) বসবে। This/That → singular noun + is। These/Those → plural noun + are।"
+    },
+    {
+      "question": "_____ is a long story. (এটা একটা লম্বা গল্প)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 0,
+      "explanation": "কোনো ঘটনা বা বিষয় সম্পর্কে বলতে শুরু করার সময় 'This is...' বলা হয়। Story singular → This। 'This is a long story' একটি common expression।"
+    },
+    {
+      "question": "_____ shoes I am wearing are new. (আমার পায়ের এই জুতোগুলো নতুন)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 2,
+      "explanation": "'I am wearing' = আমি পরেছি (আমার গায়ে/পায়ে = কাছে)। Shoes plural → These। মনে রাখবেন: পরা অবস্থায় জিনিস 'কাছে' থাকে।"
+    },
+    {
+      "question": "_____ pen on the floor is yours? (মেঝেতে ঐ কলমটি কি তোমার?)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 1,
+      "explanation": "'On the floor' = মেঝেতে (স্পিকারের থেকে দূরে)। Pen singular → That।"
+    },
+    {
+      "question": "Could you please pass me _____ salt? (দয়া করে লবণটা দেবে? — কাছে থাকা)",
+      "options": [
+        "this",
+        "that",
+        "these",
+        "those"
+      ],
+      "correctIndex": 0,
+      "explanation": "টেবিলে খাবারের সময় কাছে থাকা জিনিস চাইতে 'this' ব্যবহার করা হয়। Salt uncountable হলেও 'this' singular determiner হিসেবে বসে।"
+    },
+    {
+      "question": "_____ are the moments I will never forget. (এই সেই মুহূর্তগুলো যা আমি কখনো ভুলব না)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 2,
+      "explanation": "বর্তমান বা সামনের মুহূর্তগুলোর (moments) কথা বলছি, যা কাছে (সময়ের দিক থেকে)। Moments plural → These are... হবে।"
+    }
+  ]
+}

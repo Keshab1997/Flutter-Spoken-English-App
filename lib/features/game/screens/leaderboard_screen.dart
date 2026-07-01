@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
@@ -9,8 +10,6 @@ class LeaderboardScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final theme = Theme.of(context);
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Leaderboard',
@@ -78,13 +77,14 @@ class LeaderboardScreen extends ConsumerWidget {
                             score: entry.score,
                             xp: entry.xp,
                             level: entry.level,
+                            photoUrl: entry.photoUrl,
                           );
                         },
                       ),
                     ),
                   
                   // If less than 3 entries, show them in a list
-                  if (leaderboardState.entries.length > 0 && leaderboardState.entries.length < 3)
+                  if (leaderboardState.entries.isNotEmpty && leaderboardState.entries.length < 3)
                     Expanded(
                       child: ListView.builder(
                         padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -97,6 +97,7 @@ class LeaderboardScreen extends ConsumerWidget {
                             score: entry.score,
                             xp: entry.xp,
                             level: entry.level,
+                            photoUrl: entry.photoUrl,
                           );
                         },
                       ),
@@ -192,12 +193,22 @@ class _PodiumCard extends StatelessWidget {
                       fontSize: 20,
                       fontWeight: FontWeight.bold)),
               const SizedBox(height: 8),
+              // Profile picture with fallback to initial letter
               CircleAvatar(
                 radius: isFirst ? 24 : 20,
                 backgroundColor: Colors.white,
-                child: Text(entry.userName.isNotEmpty ? entry.userName[0].toUpperCase() : '?',
-                    style: TextStyle(
-                        color: medalColor, fontWeight: FontWeight.bold)),
+                backgroundImage: entry.photoUrl.trim().isNotEmpty
+                    ? CachedNetworkImageProvider(entry.photoUrl)
+                    : null,
+                child: entry.photoUrl.trim().isEmpty
+                    ? Text(
+                        entry.userName.isNotEmpty
+                            ? entry.userName[0].toUpperCase()
+                            : '?',
+                        style: TextStyle(
+                            color: medalColor, fontWeight: FontWeight.bold),
+                      )
+                    : null,
               ),
               const SizedBox(height: 8),
               Padding(
@@ -236,6 +247,7 @@ class _LeaderboardTile extends StatelessWidget {
   final int score;
   final int xp;
   final int level;
+  final String photoUrl;
 
   const _LeaderboardTile({
     required this.rank,
@@ -243,6 +255,7 @@ class _LeaderboardTile extends StatelessWidget {
     required this.score,
     required this.xp,
     required this.level,
+    this.photoUrl = '',
   });
 
   @override
@@ -259,6 +272,7 @@ class _LeaderboardTile extends StatelessWidget {
       ),
       child: Row(
         children: [
+          // Rank circle
           Container(
             width: 32,
             height: 32,
@@ -273,11 +287,20 @@ class _LeaderboardTile extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 12),
+          // Profile picture with fallback to initial letter
           CircleAvatar(
             radius: 20,
             backgroundColor: AppColors.primary,
-            child: Text(userName.isNotEmpty ? userName[0].toUpperCase() : '?',
-                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+            backgroundImage: photoUrl.trim().isNotEmpty
+                ? CachedNetworkImageProvider(photoUrl)
+                : null,
+            child: photoUrl.trim().isEmpty
+                ? Text(
+                    userName.isNotEmpty ? userName[0].toUpperCase() : '?',
+                    style: const TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.bold),
+                  )
+                : null,
           ),
           const SizedBox(width: 12),
           Expanded(

@@ -129,6 +129,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                           _PlayerStatsCard(
                             level: xpState.currentLevel,
                             levelTitle: xpState.levelTitle,
+                            levelEmoji: xpState.levelEmoji,
                             xp: xpState.currentXP,
                             xpForNextLevel: xpState.xpForNextLevel,
                             levelProgress: xpState.levelProgress,
@@ -207,6 +208,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
                           _LevelProgressCard(
                             level: xpState.currentLevel,
                             title: xpState.levelTitle,
+                            emoji: xpState.levelEmoji,
                             progress: xpState.levelProgress,
                             currentXP: xpState.currentXP,
                             nextLevelXP: xpState.xpForNextLevel,
@@ -320,6 +322,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
 class _PlayerStatsCard extends StatelessWidget {
   final int level;
   final String levelTitle;
+  final String levelEmoji;
   final int xp;
   final int xpForNextLevel;
   final double levelProgress;
@@ -330,6 +333,7 @@ class _PlayerStatsCard extends StatelessWidget {
   const _PlayerStatsCard({
     required this.level,
     required this.levelTitle,
+    required this.levelEmoji,
     required this.xp,
     required this.xpForNextLevel,
     required this.levelProgress,
@@ -374,12 +378,21 @@ class _PlayerStatsCard extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 4),
-                    Text(
-                      levelTitle,
-                      style: const TextStyle(
-                        color: Colors.white70,
-                        fontSize: 16,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          levelEmoji,
+                          style: const TextStyle(fontSize: 18),
+                        ),
+                        const SizedBox(width: 6),
+                        Text(
+                          levelTitle,
+                          style: const TextStyle(
+                            color: Colors.white70,
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -629,6 +642,7 @@ class _DailyChallengeCard extends StatelessWidget {
 class _LevelProgressCard extends StatelessWidget {
   final int level;
   final String title;
+  final String emoji;
   final double progress;
   final int currentXP;
   final int nextLevelXP;
@@ -636,6 +650,7 @@ class _LevelProgressCard extends StatelessWidget {
   const _LevelProgressCard({
     required this.level,
     required this.title,
+    required this.emoji,
     required this.progress,
     required this.currentXP,
     required this.nextLevelXP,
@@ -668,9 +683,19 @@ class _LevelProgressCard extends StatelessWidget {
                       color: AppColors.primary,
                     ),
                   ),
-                  Text(
-                    title,
-                    style: theme.textTheme.bodyMedium,
+                  const SizedBox(height: 2),
+                  Row(
+                    children: [
+                      Text(
+                        emoji,
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                      const SizedBox(width: 4),
+                      Text(
+                        title,
+                        style: theme.textTheme.bodyMedium,
+                      ),
+                    ],
                   ),
                 ],
               ),

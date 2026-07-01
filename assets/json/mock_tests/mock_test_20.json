@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_20",
+  "testNumber": 20,
+  "title": "Mock Test 20 - Beginner Mixed Review",
+  "description": "এই টেস্টে Level 1 (Test 01-19) থেকে মিশ্র ২০টি প্রশ্ন রয়েছে। Articles, This/That, Sentence Structure, Tenses, To be, Do/Does/Did, Has/Have/Had, Can, Prepositions, Conjunctions, Countable/Uncountable — সব টপিক থেকে প্রশ্ন আছে। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "She is ___ honest woman. (সে একজন সৎ মহিলা)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Honest' এ 'h' silent, তাই vowel sound (o) এর জন্য 'an' হবে। 'An honest woman' — সঠিক।"
+    },
+    {
+      "question": "___ are my books over there on the table. (ওই টেবিলের উপর ওগুলো আমার বই)",
+      "options": [
+        "This",
+        "That",
+        "These",
+        "Those"
+      ],
+      "correctIndex": 3,
+      "explanation": "'Over there' = দূরে বোঝাচ্ছে। 'Books' = plural। দূরে + plural → 'Those'।"
+    },
+    {
+      "question": "Which sentence is correct? (কোন বাক্যটি সঠিক?)",
+      "options": [
+        "Rice I eat every day.",
+        "I eat rice every day.",
+        "Every day rice I eat.",
+        "I rice eat every day."
+      ],
+      "correctIndex": 1,
+      "explanation": "ইংরেজিতে বাক্যের গঠন: Subject + Verb + Object + Extra। 'I (S) eat (V) rice (O) every day (Extra)' — দ্বিতীয় অপশনটি সঠিক।"
+    },
+    {
+      "question": "He ___ to school every day. (সে প্রতিদিন স্কুলে যায়)",
+      "options": [
+        "go",
+        "goes",
+        "going",
+        "gone"
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → Present Indefinite-এ verb-এর সাথে s/es যোগ হয় go → goes।"
+    },
+    {
+      "question": "They ___ football right now. (তারা এখন ফুটবল খেলছে)",
+      "options": [
+        "play",
+        "plays",
+        "are playing",
+        "is playing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Right now' = এখন চলছে → Present Continuous। They (plural) → are playing।"
+    },
+    {
+      "question": "I have already ___ my homework. (আমি ইতিমধ্যে বাড়ির কাজ শেষ করেছি)",
+      "options": [
+        "do",
+        "did",
+        "done",
+        "doing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Present Perfect = have + V3। Do → did → done। 'I have already done my homework.'"
+    },
+    {
+      "question": "She ___ a beautiful dress yesterday. (সে গতকাল একটি সুন্দর জামা পরেছিল)",
+      "options": [
+        "wear",
+        "wears",
+        "wore",
+        "wearing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Yesterday' = অতীত → Past Indefinite = V2। Wear → wore। 'She wore a beautiful dress yesterday.'"
+    },
+    {
+      "question": "Don't worry, I ___ you with the work. (চিন্তা করো না, আমি তোমাকে কাজে সাহায্য করব)",
+      "options": [
+        "help",
+        "helps",
+        "will help",
+        "am helping"
+      ],
+      "correctIndex": 2,
+      "explanation": "প্রতিশ্রুতি (promise) → Future Indefinite = will + V1। 'I will help you with the work.'"
+    },
+    {
+      "question": "The children ___ very tired after the game. (বাচ্চারা খেলার পর খুব ক্লান্ত ছিল)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 2,
+      "explanation": "The children = plural → Present-এ 'are'। 'The children are very tired after the game.'"
+    },
+    {
+      "question": "I ___ sick yesterday. (আমি গতকাল অসুস্থ ছিলাম)",
+      "options": [
+        "was",
+        "were",
+        "am",
+        "is"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Yesterday' = অতীত। I → was। 'I was sick yesterday.'"
+    },
+    {
+      "question": "He ___ not speak Bangla. (সে বাংলা বলে না)",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "is"
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → does not (doesn't) + V1। 'He does not speak Bangla.'"
+    },
+    {
+      "question": "My brother ___ two pet dogs. (আমার ভাইয়ের দুটি পোষা কুকুর আছে)",
+      "options": [
+        "have",
+        "has",
+        "had",
+        "having"
+      ],
+      "correctIndex": 1,
+      "explanation": "My brother = 3rd person singular present → has। 'My brother has two pet dogs.'"
+    },
+    {
+      "question": "She is only two years old. She ___ read. (সে মাত্র দুই বছরের। সে পড়তে পারে না)",
+      "options": [
+        "can",
+        "cannot",
+        "could",
+        "will"
+      ],
+      "correctIndex": 1,
+      "explanation": "২ বছরের শিশু পড়তে পারে না → inability। 'She cannot read.'"
+    },
+    {
+      "question": "The cat is sleeping ___ the bed. (বিড়ালটি বিছানার নিচে ঘুমাচ্ছে)",
+      "options": [
+        "in",
+        "on",
+        "under",
+        "at"
+      ],
+      "correctIndex": 2,
+      "explanation": "বিছানার নিচে (covered by bed) → 'under'। 'The cat is sleeping under the bed.'"
+    },
+    {
+      "question": "I have been learning English ___ three years. (আমি তিন বছর ধরে ইংরেজি শিখছি)",
+      "options": [
+        "since",
+        "for",
+        "in",
+        "at"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Three years' = সময়কাল (duration) → 'for'। 'I have been learning English for three years.'"
+    },
+    {
+      "question": "I was tired, ___ I went to bed early. (আমি ক্লান্ত ছিলাম, তাই তাড়াতাড়ি ঘুমাতে গেলাম)",
+      "options": [
+        "and",
+        "but",
+        "or",
+        "so"
+      ],
+      "correctIndex": 3,
+      "explanation": "ক্লান্ত → তাই (result) ঘুমাতে যাওয়া। 'So' = তাই।"
+    },
+    {
+      "question": "How ___ sugar do you want in your tea? (চায়ে কত চিনি চাও?)",
+      "options": [
+        "many",
+        "much",
+        "few",
+        "a lot of"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Sugar' = uncountable → 'much'। 'How much sugar do you want?'"
+    },
+    {
+      "question": "কোন বাক্যটি সঠিক? (Which sentence is correct?)",
+      "options": [
+        "She don't like tea.",
+        "She doesn't like tea.",
+        "She not like tea.",
+        "She no like tea."
+      ],
+      "correctIndex": 1,
+      "explanation": "She (3rd person) → does not (doesn't) + V1। 'She doesn't like tea' — সঠিক।"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি গতকাল তাকে দেখিনি।'",
+      "options": [
+        "I do not see him yesterday.",
+        "I does not see him yesterday.",
+        "I did not see him yesterday.",
+        "I did not saw him yesterday."
+      ],
+      "correctIndex": 2,
+      "explanation": "'গতকাল' = অতীত → Past Negative: did + not + V1 (saw নয়, see)। 'I did not see him yesterday.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে কি প্রতিদিন স্কুলে যায়?'",
+      "options": [
+        "Do she go to school every day?",
+        "Does she go to school every day?",
+        "Did she go to school every day?",
+        "Is she go to school every day?"
+      ],
+      "correctIndex": 1,
+      "explanation": "She (singular) → Does। Present Indefinite Question: Does + subject + V1? 'Does she go to school every day?'"
+    }
+  ]
+}

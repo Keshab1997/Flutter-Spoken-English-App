@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../core/widgets/streak_widget.dart';
+import '../../../core/widgets/feature_gate_widget.dart';
 import '../../../services/hive_service.dart';
-import '../../../services/admin_notification_sync_service.dart';
 import '../../../services/tts_service.dart';
 import '../../../providers/auth_provider.dart';
 import '../../../providers/progress_provider.dart';
@@ -20,6 +20,8 @@ import '../../../providers/game/xp_provider.dart';
 import '../../../providers/game/coin_provider.dart';
 import '../../../providers/game/streak_provider.dart';
 import '../../../providers/game/statistics_provider.dart';
+import '../../../providers/game/game_provider.dart';
+import '../../../providers/notification_provider.dart';
 import '../../grammar/screens/grammar_detail_screen.dart';
 import '../../grammar/screens/grammar_list_screen.dart';
 import '../../grammar/screens/grammar_test_list_screen.dart';
@@ -37,9 +39,11 @@ import '../widgets/spoken_rules_screen.dart';
 import '../widgets/notification_dialog.dart';
 import '../widgets/notification_history_screen.dart';
 import '../../settings/screens/settings_screen.dart';
+import '../../guides/screens/guides_screen.dart';
 import '../../verb_forms/screens/verb_forms_screen.dart';
 import '../../verb_forms/screens/verb_form_practice_screen.dart';
 import '../../practice/screens/bangla_english_practice_screen.dart';
+import '../../mock_test/screens/mock_test_list_screen.dart';
 import '../../homework/screens/homework_screen.dart';
 import '../../sentence_analyzer/screens/sentence_analyzer_screen.dart';
 
@@ -60,31 +64,51 @@ class HomeScreen extends ConsumerStatefulWidget {
 class _HomeScreenState extends ConsumerState<HomeScreen> {
   final _tts = TtsService();
   bool _isSpeaking = false;
-  int _unreadNotificationCount = 0;
 
   @override
   void initState() {
     super.initState();
-    _updateNotificationCount();
     // Fetch progress & game stats on load
     WidgetsBinding.instance.addPostFrameCallback((_) async {
+      ref.read(notificationProvider.notifier).refresh();
       ref.read(progressProvider.notifier).fetchProgress();
       ref.read(xpProvider.notifier).refresh();
       ref.read(coinProvider.notifier).refresh();
       ref.read(statisticsProvider.notifier).refresh();
-      await _syncAdminNotifications();
 
       // 🔥 STREAK CALCULATION — called every time the app opens:
       final now = DateTime.now();
+      final authUser = ref.read(authProvider).asData?.value;
       
+      // 0. If user is authenticated, first try to sync progress FROM Firestore
+      //    so streak persists across reinstalls
+      final streakNotifier = ref.read(streakProvider.notifier);
+      if (authUser?.id.isNotEmpty == true) {
+        try {
+          final progressRepo = ref.read(progressRepositoryProvider);
+          final hiveProgress = progressRepo.getProgress();
+          // If Hive is empty or has no userId, fetch from Firestore
+          if (hiveProgress == null || hiveProgress.userId.isEmpty) {
+            await progressRepo.syncProgressFromFirestoreToHive(authUser!.id);
+            // Refresh the streak provider with restored data
+            streakNotifier.refresh();
+          }
+        } catch (_) {
+          // Silently handle Firestore fetch failure
+        }
+      }
+      
+      // 0.5 Restore weekly activity from game_progress (Firebase-synced) to settings
+      //    so the weekly calendar survives cache clears
+      HiveService.restoreWeeklyActivityFromProgress();
+
       // 1. Update HiveService weekly activity + last practice date FIRST
       await HiveService.markDayActive(now.weekday);
       await HiveService.setLastPracticeDate(now);
       
       // 2. Check if streak should increment (new day) or reset (missed >48h)
-      final streakNotifier = ref.read(streakProvider.notifier);
       final newStreak = await streakNotifier.checkAndUpdateStreak();
-
+      
       // 3. Record today as active (updates lastActiveDate, totalActiveDays)
       await streakNotifier.recordActiveDay();
 
@@ -102,24 +126,33 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           }
         }
       }
+      
+      // 4.5 Sync the final streak back to the main progress provider (Firestore 'progress' collection)
+      
+      // if it wasn't refreshed yet use the one from service directly or 
+      await ref.read(progressProvider.notifier).syncStreak(ref.read(streakServiceProvider).getCurrentStreak());
 
-      // 5. Refresh ALL providers after streak updates
+      // 5. Upload streak data to Firestore for persistent storage
+      if (authUser?.id.isNotEmpty == true) {
+        try {
+          final progressRepo = ref.read(progressRepositoryProvider);
+          var gameProgress = progressRepo.getProgress();
+          if (gameProgress != null) {
+            // Ensure progress has the correct userId before uploading
+            final uploadProgress = gameProgress.userId.isEmpty
+                ? gameProgress.copyWith(userId: authUser!.id)
+                : gameProgress;
+            await progressRepo.uploadProgressToFirestore(uploadProgress);
+          }
+        } catch (_) {
+          // Silently handle Firestore upload failure
+        }
+      }
+
+      // 6. Refresh ALL providers after streak updates
       streakNotifier.refresh();
       ref.read(progressProvider.notifier).fetchProgress();
     });
-  }
-
-  void _updateNotificationCount() {
-    setState(() {
-      _unreadNotificationCount = HiveService.getUnreadNotificationCount();
-    });
-  }
-
-  Future<void> _syncAdminNotifications() async {
-    try {
-      await AdminNotificationSyncService.syncLatest();
-      if (mounted) _updateNotificationCount();
-    } catch (_) {}
   }
 
   void _speakWord(String word) {
@@ -275,6 +308,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final xpState = ref.watch(xpProvider);
     final coinState = ref.watch(coinProvider);
     final streakState = ref.watch(streakProvider);
+    final notificationState = ref.watch(notificationProvider);
 
     final user = authAsync.asData?.value;
     if (user?.name != null && user!.name.isNotEmpty) {
@@ -341,12 +375,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 ),
               );
               // Update notification count when returning from history screen
-              _updateNotificationCount();
+              ref.read(notificationProvider.notifier).refresh();
             },
             icon: Stack(
               children: [
                 const Icon(Icons.notifications_outlined, size: 28),
-                if (_unreadNotificationCount > 0)
+                if (notificationState.unreadCount > 0)
                   Positioned(
                     right: 0,
                     top: 0,
@@ -363,7 +397,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       ),
                       child: Center(
                         child: Text(
-                          '$_unreadNotificationCount',
+                          '${notificationState.unreadCount}',
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 10,
@@ -385,8 +419,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                   builder: (context) => const SettingsScreen(),
                 ),
               );
-              await _syncAdminNotifications();
-              _updateNotificationCount();
+              ref.read(notificationProvider.notifier).refresh();
             },
             icon: const Icon(Icons.settings_outlined, size: 26),
           ),
@@ -435,31 +468,42 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 onShare: () => _shareStreak(context, currentStreak),
               ),
               const SizedBox(height: 24),
-              
-              // 3. Continue Learning (Most Important - Keep at top)
+
+              // 3. Guides & Resources (Student Guide & Study Routine)
+              _buildGuidesSection(theme, isDark),
+              const SizedBox(height: 24),
+
+              // 4. Continue Learning (Most Important - Keep at top)
               _buildContinueLearningSection(
                 theme, isDark, studyState, allGrammarChapters, allVocabChapters, lastOpenedChapter,
               ),
               const SizedBox(height: 24),
-              
-              // 4. Today's Word
+
+              // 5. Study Plan (To-Do)
+              const StudyPlanSection(),
+              const SizedBox(height: 24),
+
+              // 6. Today's Word
               _buildTodaysWordCard(theme, isDark, todayWords, isLoading: chaptersAsync.isLoading),
               const SizedBox(height: 24),
-              
-              // 5. AI Features (Important for modern learning)
+
+              // 7. AI Features (Important for modern learning)
               _buildAIFeaturesSection(theme, isDark),
               const SizedBox(height: 24),
-              
-              // 6. Learning Modules
+
+              // 8. Learning Modules
               _buildHomeLearningSection(theme, isDark),
               const SizedBox(height: 24),
-              
-              // 7. Practice Section
+
+              // 9. Practice Section
               _buildHomePracticeSection(theme, isDark),
               const SizedBox(height: 24),
-              
-              // 8. Game Section
-              _buildGameCard(theme, isDark),
+
+              // 10. Game Section
+              FeatureGateWidget(
+                featureKey: 'games',
+                child: _buildGameCard(theme, isDark),
+              ),
               const SizedBox(height: 32),
             ],
           ),
@@ -963,6 +1007,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final grammarTotal = grammarItems.length;
     final vocabTotal = vocabItems.length;
 
+    // 🔍 DEBUG: Log study plan state to help diagnose "All chapters completed" issue
+    print('📚 [ContinueLearning] items.length: ${items.length}');
+    print('📚 [ContinueLearning] nextGrammarId: ${studyState.nextGrammarId}');
+    print('📚 [ContinueLearning] nextVocabId: ${studyState.nextVocabId}');
+    print('📚 [ContinueLearning] lastOpened: $lastOpened');
+    print('📚 [ContinueLearning] grammarDone: $grammarDone / $grammarTotal');
+    print('📚 [ContinueLearning] vocabDone: $vocabDone / $vocabTotal');
+
     GrammarChapter? findGrammar(int chapterNum) {
       for (final c in allGrammarChapters) {
         if (c.chapter == chapterNum) return c;
@@ -995,10 +1047,34 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       return null;
     }
 
+    // Fallback: first pending of each type if no resume found
+    TodoItem? firstPendingGrammar;
+    for (var item in items) {
+      if (item.type == 'grammar' && item.status == TodoStatus.pending) {
+        firstPendingGrammar = item;
+        break;
+      }
+    }
+    TodoItem? firstPendingVocab;
+    for (var item in items) {
+      if (item.type == 'vocabulary' && item.status == TodoStatus.pending) {
+        firstPendingVocab = item;
+        break;
+      }
+    }
+
     final resumeGrammar = resumeFromLastOpened('grammar', 'grammar')
-        ?? findById(items, studyState.nextGrammarId);
+        ?? findById(items, studyState.nextGrammarId)
+        ?? firstPendingGrammar;
     final resumeVocab = resumeFromLastOpened('vocabulary', 'vocab')
-        ?? findById(items, studyState.nextVocabId);
+        ?? findById(items, studyState.nextVocabId)
+        ?? firstPendingVocab;
+
+    // 🔍 DEBUG: Log what we resolved
+    print('📚 [ContinueLearning] resumeGrammar: ${resumeGrammar?.id ?? 'null'}');
+    print('📚 [ContinueLearning] resumeVocab: ${resumeVocab?.id ?? 'null'}');
+    print('📚 [ContinueLearning] firstPendingGrammar: ${firstPendingGrammar?.id ?? 'null'}');
+    print('📚 [ContinueLearning] firstPendingVocab: ${firstPendingVocab?.id ?? 'null'}');
 
     final hasAny = resumeGrammar != null || resumeVocab != null;
 
@@ -1567,6 +1643,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget _buildHomePracticeSection(ThemeData theme, bool isDark) {
     final items = [
       {'title': 'Vocab Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.accentGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()))},
+      {'title': 'Mock Test', 'icon': Icons.assignment_rounded, 'gradient': AppColors.primaryGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const MockTestListScreen()))},
       {'title': 'Verb Quiz', 'icon': Icons.transform_rounded, 'gradient': AppColors.accentGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const VerbFormPracticeScreen()))},
       {'title': 'Grammar Test', 'icon': Icons.quiz_rounded, 'gradient': AppColors.infoGradient, 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const GrammarTestListScreen()))},
       {'title': 'Bangla English', 'icon': Icons.translate_rounded, 'gradient': [const Color(0xFF6366F1), const Color(0xFF8B5CF6)], 'onTap': () => Navigator.push(context, MaterialPageRoute(builder: (_) => const BanglaEnglishCategoryScreen()))},
@@ -1717,6 +1794,118 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           Text(
                             item['subtitle'] as String,
                             style: TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 12),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  // GUIDES SECTION — Student Guide & Study Routine PDFs
+  Widget _buildGuidesSection(ThemeData theme, bool isDark) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Icon(Icons.library_books_rounded, color: AppColors.accent, size: 22),
+            const SizedBox(width: 8),
+            Text('Guides & Resources',
+                style: theme.textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
+          ],
+        ),
+        const SizedBox(height: 12),
+        SizedBox(
+          height: 150,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
+            itemCount: 2,
+            separatorBuilder: (_, __) => const SizedBox(width: 16),
+            itemBuilder: (_, i) {
+              final items = [
+                {
+                  'title': 'Student Guide',
+                  'subtitle': 'Complete learning guide with tips & instructions',
+                  'icon': Icons.school_rounded,
+                  'asset': 'assets/pdfs/STUDENT_GUIDE.pdf',
+                  'gradient': AppColors.accentGradient,
+                },
+                {
+                  'title': 'Study Routine',
+                  'subtitle': 'Daily & weekly study plan for best results',
+                  'icon': Icons.calendar_today_rounded,
+                  'asset': 'assets/pdfs/STUDY_ROUTINE.pdf',
+                  'gradient': AppColors.secondaryGradient,
+                },
+              ];
+              final item = items[i];
+              final grad = item['gradient'] as List<Color>;
+              return GestureDetector(
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const GuidesScreen()),
+                ),
+                child: Container(
+                  width: 220,
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(colors: grad, begin: Alignment.topLeft, end: Alignment.bottomRight),
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [BoxShadow(color: grad[0].withOpacity(0.25), blurRadius: 10, offset: const Offset(0, 4))],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.2),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Icon(item['icon'] as IconData, color: Colors.white, size: 26),
+                          ),
+                          const Spacer(),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: Colors.white.withOpacity(0.15),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: const Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.picture_as_pdf_rounded, color: Colors.white, size: 12),
+                                SizedBox(width: 4),
+                                Text('PDF', style: TextStyle(color: Colors.white, fontSize: 10, fontWeight: FontWeight.bold)),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            item['title'] as String,
+                            style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w900, fontSize: 16),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            item['subtitle'] as String,
+                            style: TextStyle(color: Colors.white.withOpacity(0.85), fontSize: 12),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ],
                       ),

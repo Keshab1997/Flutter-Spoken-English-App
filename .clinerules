@@ -1,0 +1,44 @@
+# ⚡ Token-Saving Rules — এইগুলো FOLLOW করা MUST
+
+## ১. ByteRover First (token save er main key)
+
+**আগে ByteRover query করো, file read কখনোই আগে না।**
+
+- `brv-query(cwd: "project-path")` → check context tree
+- File read **only** if brv-query fails
+- `brv-curate` → new knowledge save koro (file re-read prevent)
+- Provider: oc/deepseek-v4-flash-free @ http://localhost:20128/v1
+
+## ২. File Read → Token Minimize
+
+| Situation | Do This Instead |
+|-----------|----------------|
+| Full file read | `read_lines(start:1, end:50)` — first 50 lines enough usually |
+| Many files | `read_files([a,b,c])` — ekbar e shob |
+| Search code | `search_codebase` regex — fastest, lowest token |
+| Check changes | `git diff` — full file na, shudu changes |
+| Structure | `tree` or `ls -R` — full content na |
+
+## ৩. Prompt → Bangla + Short
+
+- **Bangla use koro** — 30-40% kom token lage
+- **Combined task** — 5 alada prompt na, 1 prompt e 5 task
+- **Specific hote hobe** — "X file e Y change koro" (no fluff)
+- **Parallel call** — independent tool gulo ek shathe call koro
+
+## ৪. Analysis → Partial
+
+- `flutter analyze` full project → **expensive**. Use `dart analyze file1.dart`
+- `flutter build` → **expensive**. Use `dart compile` or skip
+- Large file tree → specific folder e `tree`, never root
+
+## ৫. Workflow Pattern
+
+```
+User query → brv-query → found? → answer from context
+                         → not found? → read_lines(1:50) → do task → brv-curate
+```
+
+---
+
+**Motto:** File read = token loss. ByteRover = token save. Bangla prompt = extra save.

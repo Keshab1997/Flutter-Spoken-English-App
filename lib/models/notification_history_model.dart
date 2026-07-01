@@ -7,6 +7,8 @@ class NotificationHistoryItem {
   final bool isRead;
   final String? payload;
   final String? actionUrl; // Optional URL to open when tapped (e.g. Play Store link)
+  final String? actionType; // 'vocabulary', 'grammar', 'settings', 'homework', 'game', 'admin'
+  final String? actionPayload; // e.g. '3' for chapter 3, screen param
 
   NotificationHistoryItem({
     required this.id,
@@ -17,6 +19,8 @@ class NotificationHistoryItem {
     this.isRead = false,
     this.payload,
     this.actionUrl,
+    this.actionType,
+    this.actionPayload,
   });
 
   Map<String, dynamic> toJson() {
@@ -29,6 +33,8 @@ class NotificationHistoryItem {
       'isRead': isRead,
       'payload': payload,
       'actionUrl': actionUrl,
+      'actionType': actionType,
+      'actionPayload': actionPayload,
     };
   }
 
@@ -42,6 +48,8 @@ class NotificationHistoryItem {
       isRead: json['isRead'] as bool? ?? false,
       payload: json['payload'] as String?,
       actionUrl: json['actionUrl'] as String?,
+      actionType: json['actionType'] as String?,
+      actionPayload: json['actionPayload'] as String?,
     );
   }
 
@@ -54,6 +62,8 @@ class NotificationHistoryItem {
     bool? isRead,
     String? payload,
     String? actionUrl,
+    String? actionType,
+    String? actionPayload,
   }) {
     return NotificationHistoryItem(
       id: id ?? this.id,
@@ -64,6 +74,8 @@ class NotificationHistoryItem {
       isRead: isRead ?? this.isRead,
       payload: payload ?? this.payload,
       actionUrl: actionUrl ?? this.actionUrl,
+      actionType: actionType ?? this.actionType,
+      actionPayload: actionPayload ?? this.actionPayload,
     );
   }
 

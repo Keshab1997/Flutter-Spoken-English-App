@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_10",
+  "testNumber": 10,
+  "title": "Mock Test 10 - Future Continuous + Future Perfect",
+  "description": "এই টেস্টে Future Continuous (will be + V+ing) ও Future Perfect (will have + V3) Tense নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "Future Continuous Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Future Continuous Tense?)",
+      "options": [
+        "Subject + will + V1",
+        "Subject + will be + V+ing",
+        "Subject + will have + V3",
+        "Subject + am/is/are + V+ing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Future Continuous Tense-এর গঠন: Subject + will be + V+ing। যেমন: I will be waiting, He will be sleeping, They will be playing। এটি ভবিষ্যতের কোনো নির্দিষ্ট সময়ে চলমান কাজ বোঝায়।"
+    },
+    {
+      "question": "Future Perfect Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Future Perfect Tense?)",
+      "options": [
+        "Subject + will + V1",
+        "Subject + will be + V+ing",
+        "Subject + will have + V3",
+        "Subject + had + V3"
+      ],
+      "correctIndex": 2,
+      "explanation": "Future Perfect Tense-এর গঠন: Subject + will have + V3 (Past Participle)। যেমন: I will have finished, He will have arrived, They will have left। এটি ভবিষ্যতের কোনো নির্দিষ্ট সময়ের আগে শেষ হবে এমন কাজ বোঝায়।"
+    },
+    {
+      "question": "Future Continuous কখন ব্যবহার করা হয়? (When is Future Continuous used?)",
+      "options": [
+        "ভবিষ্যতে সম্পূর্ণ শেষ হয়ে যাওয়া কাজ বুঝাতে",
+        "ভবিষ্যতের কোনো নির্দিষ্ট সময়ে চলমান কাজ বুঝাতে",
+        "অতীতের অভ্যাস বুঝাতে",
+        "বর্তমানের চলমান কাজ বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "Future Continuous ব্যবহার হয়: (১) ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ — I will be watching TV at 8 PM tonight, (২) ভবিষ্যতে কিছু সময় ধরে চলবে এমন কাজ — I will be traveling all day tomorrow, (৩) ভদ্রভাবে জিজ্ঞাসা — Will you be using the car tonight?"
+    },
+    {
+      "question": "Future Perfect কখন ব্যবহার করা হয়? (When is Future Perfect used?)",
+      "options": [
+        "ভবিষ্যতে শুরু হবে এমন কাজ বুঝাতে",
+        "ভবিষ্যতের নির্দিষ্ট সময়ের আগে শেষ হবে এমন কাজ বুঝাতে",
+        "অতীতে শেষ হওয়া কাজ বুঝাতে",
+        "বর্তমানে চলমান কাজ বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "Future Perfect ব্যবহার হয়: ভবিষ্যতের কোনো নির্দিষ্ট সময়ের আগে কোন কাজ শেষ হবে (complete) বুঝাতে। সাধারণত 'by then', 'by next week', 'by 2028' ইত্যাদি সময় ব্যবহার হয়। যেমন: 'By 2028, I will have graduated.' — ২০২৮-এর আগেই গ্রাজুয়েশন শেষ হয়ে যাবে।"
+    },
+    {
+      "question": "Future Continuous আর Future Perfect-এর মধ্যে মূল পার্থক্য কী?",
+      "options": [
+        "Future Continuous = চলমান কাজ, Future Perfect = শেষ হয়ে যাওয়া কাজ",
+        "Future Continuous = অতীত, Future Perfect = বর্তমান",
+        "দুটোর মধ্যে কোনো পার্থক্য নেই",
+        "Future Continuous = V3, Future Perfect = V+ing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Future Continuous (will be + V+ing) = ভবিষ্যতে চলমান/'ongoing' কাজ — 'This time tomorrow, I will be flying to Dhaka.' Future Perfect (will have + V3) = ভবিষ্যতে শেষ/'completed' কাজ — 'By next month, I will have saved enough money.'"
+    },
+    {
+      "question": "This time tomorrow, I ___ to Dhaka. (আগামীকাল এই সময়ে, আমি ঢাকায় উড়ে যাচ্ছি)",
+      "options": [
+        "fly",
+        "will fly",
+        "will be flying",
+        "will have flown"
+      ],
+      "correctIndex": 2,
+      "explanation": "'This time tomorrow' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ। Future Continuous: will be + flying। সঠিক: 'This time tomorrow, I will be flying to Dhaka.'"
+    },
+    {
+      "question": "By 2028, I ___ my university degree. (২০২৮ সালের মধ্যে, আমি আমার বিশ্ববিদ্যালয় ডিগ্রি শেষ করেছি)",
+      "options": [
+        "complete",
+        "will complete",
+        "will be completing",
+        "will have completed"
+      ],
+      "correctIndex": 3,
+      "explanation": "'By 2028' = ২০২৮-এর আগে শেষ হবে। Future Perfect: will have + V3 (completed)। সঠিক: 'By 2028, I will have completed my university degree.'"
+    },
+    {
+      "question": "Don't call me at 8 PM, I ___ dinner then. (আমাকে রাত ৮টায় ডেকো না, আমি তখন ডিনার খাচ্ছি)",
+      "options": [
+        "have",
+        "will have",
+        "will be having",
+        "will have had"
+      ],
+      "correctIndex": 2,
+      "explanation": "'At 8 PM then' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ। Future Continuous: will be + having। সঠিক: 'I will be having dinner then.'"
+    },
+    {
+      "question": "By the time you arrive, I ___ my work. (তুমি পৌঁছানোর আগেই আমি আমার কাজ শেষ করে ফেলব)",
+      "options": [
+        "finish",
+        "will finish",
+        "will be finishing",
+        "will have finished"
+      ],
+      "correctIndex": 3,
+      "explanation": "'By the time you arrive' = তুমি পৌঁছানোর আগেই শেষ। Future Perfect: will have + V3 (finished)। সঠিক: 'I will have finished my work by the time you arrive.'"
+    },
+    {
+      "question": "At 9 PM tonight, we ___ a movie. (আজ রাত ৯টায়, আমরা সিনেমা দেখছি)",
+      "options": [
+        "watch",
+        "will watch",
+        "will be watching",
+        "will have watched"
+      ],
+      "correctIndex": 2,
+      "explanation": "'At 9 PM tonight' = ভবিষ্যতের নির্দিষ্ট সময়। Future Continuous: will be + watching। সঠিক: 'At 9 PM tonight, we will be watching a movie.'"
+    },
+    {
+      "question": "Error Detection: 'I will be go to school at 8 AM tomorrow.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "will be go",
+        "to school",
+        "tomorrow"
+      ],
+      "correctIndex": 1,
+      "explanation": "Future Continuous-এ will be + V+ing (V1+ing) হয়। 'Will be go' → 'will be going' হবে। সঠিক: 'I will be going to school at 8 AM tomorrow.'"
+    },
+    {
+      "question": "Error Detection: 'She will have finish her project by Friday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "will have finish",
+        "her project",
+        "by Friday"
+      ],
+      "correctIndex": 1,
+      "explanation": "Future Perfect-এ will have + V3 (Past Participle) হয়। 'Finish' → 'finished' হবে। সঠিক: 'She will have finished her project by Friday.'"
+    },
+    {
+      "question": "Error Detection: 'They will be playing cricket at 5 PM yesterday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "They",
+        "will be playing",
+        "cricket",
+        "yesterday"
+      ],
+      "correctIndex": 3,
+      "explanation": "'Yesterday' = অতীত, Future Tense-এর সাথে ব্যবহার করা যায় না। Future Continuous-এর সাথে 'tomorrow', 'next week', 'tonight' ইত্যাদি ভবিষ্যৎ সময় ব্যবহার হয়। সঠিক: 'They will be playing cricket at 5 PM tomorrow.'"
+    },
+    {
+      "question": "Error Detection: 'By next month, he will be saved enough money.' — ভুল অংশ কোনটি?",
+      "options": [
+        "By next month",
+        "he",
+        "will be saved",
+        "enough money"
+      ],
+      "correctIndex": 2,
+      "explanation": "'By next month' = ভবিষ্যতে শেষ হওয়া কাজ → Future Perfect লাগবে। 'Will be saved' → 'will have saved' হবে। Future Continuous-এ 'will be + V+ing', কিন্তু এখানে শেষ হওয়া কাজ বোঝাচ্ছে। সঠিক: 'By next month, he will have saved enough money.'"
+    },
+    {
+      "question": "Fill in the blank: 'Please don't call me after 10 PM. I ___ by then.' (দয়া করে রাত ১০টার পর ফোন করো না। আমি ততক্ষণে ঘুমিয়ে পড়ব)",
+      "options": [
+        "sleep",
+        "will sleep",
+        "will be sleeping",
+        "will have slept"
+      ],
+      "correctIndex": 2,
+      "explanation": "'After 10 PM' = সময়কাল, 'by then' = ততক্ষণে। ১০টার পর ফোন না করতে বলছে কারণ তখন ঘুমের মধ্যে থাকবে। চলমান কাজ → Future Continuous: will be sleeping।"
+    },
+    {
+      "question": "Fill in the blank: 'By next year, they ___ here for 10 years.' (আগামী বছরের মধ্যে, তারা এখানে ১০ বছর থাকবে)",
+      "options": [
+        "live",
+        "will live",
+        "will be living",
+        "will have lived"
+      ],
+      "correctIndex": 3,
+      "explanation": "'By next year' = নির্দিষ্ট সময়ের আগে। Future Perfect: will have + V3 (lived)। সঠিক: 'By next year, they will have lived here for 10 years.'"
+    },
+    {
+      "question": "Fill in the blank: 'I hope I ___ the report before the deadline.' (আশা করি ডেডলাইনের আগেই আমি রিপোর্ট শেষ করে ফেলব)",
+      "options": [
+        "finish",
+        "will finish",
+        "will be finishing",
+        "will have finished"
+      ],
+      "correctIndex": 3,
+      "explanation": "'Before the deadline' = ডেডলাইনের আগে শেষ হবে। Future Perfect: will have + V3 (finished)। সঠিক: 'I hope I will have finished the report before the deadline.'"
+    },
+    {
+      "question": "Fill in the blank: 'Tomorrow morning, I ___ for my exam.' (আগামীকাল সকালে, আমি আমার পরীক্ষার জন্য পড়ছি)",
+      "options": [
+        "study",
+        "will study",
+        "will be studying",
+        "will have studied"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Tomorrow morning' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ। Future Continuous: will be + studying। সঠিক: 'Tomorrow morning, I will be studying for my exam.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আগামীকাল এই সময়ে, আমি অফিসে কাজ করছি।'",
+      "options": [
+        "Tomorrow this time, I work at office.",
+        "Tomorrow this time, I will work at office.",
+        "Tomorrow this time, I will be working at office.",
+        "Tomorrow this time, I will have worked at office."
+      ],
+      "correctIndex": 2,
+      "explanation": "'আগামীকাল এই সময়ে' = ভবিষ্যতের নির্দিষ্ট সময়ে চলমান কাজ → Future Continuous। 'Will be working' সঠিক।"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? '২০২৭ সালের মধ্যে, আমি আমার ব্যবসা শুরু করেছি।'",
+      "options": [
+        "By 2027, I start my business.",
+        "By 2027, I will start my business.",
+        "By 2027, I will be starting my business.",
+        "By 2027, I will have started my business."
+      ],
+      "correctIndex": 3,
+      "explanation": "'২০২৭ সালের মধ্যে' (By 2027) = ভবিষ্যতের নির্দিষ্ট সময়ের আগে শেষ হবে → Future Perfect। 'Will have started' সঠিক।"
+    }
+  ]
+}

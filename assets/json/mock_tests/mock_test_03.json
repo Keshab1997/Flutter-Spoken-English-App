@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_03",
+  "testNumber": 3,
+  "title": "Mock Test 3 - Subject + Verb + Object (Basic Sentence Structure)",
+  "description": "এই টেস্টে ইংরেজি বাক্যের সঠিক গঠন (Subject + Verb + Object) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো বাক্যের সঠিক ক্রম ও গঠন, তারপর fill in the blanks ও error detection দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "ইংরেজি বাক্যের সঠিক গঠন কোনটি? (What is the correct structure of an English sentence?)",
+      "options": [
+        "Subject + Object + Verb",
+        "Subject + Verb + Object",
+        "Verb + Subject + Object",
+        "Object + Subject + Verb"
+      ],
+      "correctIndex": 1,
+      "explanation": "ইংরেজি বাক্যের সঠিক গঠন হলো Subject + Verb + Object (SVO)। যেমন: I (Subject) eat (Verb) rice (Object)। বাংলায় SOV হয় (আমি ভাত খাই), কিন্তু ইংরেজিতে SVO হয়।"
+    },
+    {
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
+      "options": [
+        "Rice I eat every day.",
+        "I eat rice every day.",
+        "Every day rice I eat.",
+        "I rice eat every day."
+      ],
+      "correctIndex": 1,
+      "explanation": "সঠিক বাক্য: 'I eat rice every day.' এখানে I = Subject, eat = Verb, rice = Object, every day = Extra/Time। ইংরেজিতে সবসময় Subject + Verb + Object বজায় রাখতে হয়।"
+    },
+    {
+      "question": "নিচের বাক্যটিতে Subject কোনটি? 'The boy kicked the ball.'",
+      "options": [
+        "The boy",
+        "kicked",
+        "the ball",
+        "ball"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subject হলো বাক্যে যে কাজটি করে (doer)। এখানে 'The boy' লাথি মেরেছে (kicked), তাই Subject = 'The boy'. Verb = 'kicked', Object = 'the ball'।"
+    },
+    {
+      "question": "নিচের বাক্যটিতে Object কোনটি? 'She reads a book.'",
+      "options": [
+        "She",
+        "reads",
+        "a book",
+        "book"
+      ],
+      "correctIndex": 2,
+      "explanation": "Object হলো যার উপর কাজটি করা হয় (receiver of action)। এখানে 'reads' (পড়ে) কাজটি 'a book' এর উপর হচ্ছে, তাই Object = 'a book'। Verb = 'reads', Subject = 'She'।"
+    },
+    {
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
+      "options": [
+        "Mother cooks food delicious.",
+        "Mother cooks delicious food.",
+        "Food mother cooks delicious.",
+        "Delicious mother cooks food."
+      ],
+      "correctIndex": 1,
+      "explanation": "Adjective (delicious) বসে noun (food) এর আগে। সঠিক গঠন: Subject (Mother) + Verb (cooks) + Adjective (delicious) + Noun/Object (food)।"
+    },
+    {
+      "question": "_____ the window. (জানালাটা খোল)",
+      "options": [
+        "Open you",
+        "You open",
+        "Open",
+        "Opening"
+      ],
+      "correctIndex": 2,
+      "explanation": "Imperative sentence (আদেশ/অনুরোধ) এ Subject থাকে না, Verb দিয়ে বাক্য শুরু হয়। 'Open the window.' — এখানে 'You' উহ্য থাকে (understood)।"
+    },
+    {
+      "question": "She _____ a song. (সে একটি গান গায়)",
+      "options": [
+        "sings",
+        "sing",
+        "singing",
+        "sang"
+      ],
+      "correctIndex": 0,
+      "explanation": "Present Indefinite tense-এ He/She/It (3rd person singular) এর সাথে verb-এর সাথে s/es যোগ হয়। Subject (She) + Verb (sings) + Object (a song)।"
+    },
+    {
+      "question": "They _____ football every Saturday. (তারা প্রতি শনিবার ফুটবল খেলে)",
+      "options": [
+        "plays",
+        "play",
+        "playing",
+        "played"
+      ],
+      "correctIndex": 1,
+      "explanation": "They (plural subject) এর সাথে Present Indefinite-এ verb-এর base form (play) হয়। 'Every Saturday' নিয়মিত কাজ বুঝাচ্ছে, তাই Present Indefinite।"
+    },
+    {
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
+      "options": [
+        "The cat is sleeping the bed on.",
+        "The cat is sleeping on the bed.",
+        "The cat on the bed is sleeping.",
+        "Sleeping is the cat on the bed."
+      ],
+      "correctIndex": 1,
+      "explanation": "Preposition (on) বসে object (the bed) এর আগে। সঠিক গঠন: Subject (The cat) + Verb (is sleeping) + Preposition (on) + Object (the bed)।"
+    },
+    {
+      "question": "_____ you like coffee? (তুমি কি কফি পছন্দ কর?)",
+      "options": [
+        "Does",
+        "Do",
+        "Are",
+        "Is"
+      ],
+      "correctIndex": 1,
+      "explanation": "Question form-এ Do/Does প্রথমে আসে। 'You' এর সাথে 'Do' হয়। সঠিক ক্রম: Do + Subject (you) + Verb (like) + Object (coffee)?"
+    },
+    {
+      "question": "নিচের বাক্যটি শুদ্ধ করো: 'He go to school every day.'",
+      "options": [
+        "He goes to school every day.",
+        "He go to school every day.",
+        "He going to school every day.",
+        "He gone to school every day."
+      ],
+      "correctIndex": 0,
+      "explanation": "He (3rd person singular) এর সাথে Present Indefinite-এ verb-এর সাথে s/es যোগ হয়: go → goes। সঠিক বাক্য: 'He goes to school every day.'"
+    },
+    {
+      "question": "Error Detection: 'She does not likes coffee.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "does not",
+        "likes",
+        "coffee"
+      ],
+      "correctIndex": 2,
+      "explanation": "Do/Does দিয়ে Negative করলে মূল verb-এর সাথে আর s/es যোগ হয় না। 'Does not' এর পরে 'like' হবে (base form), 'likes' নয়। সঠিক: 'She does not like coffee.'"
+    },
+    {
+      "question": "Error Detection: 'The boys is playing in the field.' — ভুল অংশ কোনটি?",
+      "options": [
+        "The boys",
+        "is",
+        "playing",
+        "in the field"
+      ],
+      "correctIndex": 1,
+      "explanation": "Subject 'The boys' = plural। Plural subject এর সাথে 'are' হবে, 'is' নয়। সঠিক: 'The boys are playing in the field.' Subject-Verb Agreement মনে রাখবেন।"
+    },
+    {
+      "question": "Error Detection: 'I am go to market.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I am",
+        "go",
+        "to market",
+        "কোনো ভুল নেই"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Am' এর পরে V+ing (Present Continuous) বা V3 (Passive) বসে। 'Go' base form বসতে পারে না। সঠিক: 'I am going to market.' অথবা 'I go to market.'"
+    },
+    {
+      "question": "Error Detection: 'They does their work properly.' — ভুল অংশ কোনটি?",
+      "options": [
+        "They",
+        "does",
+        "their",
+        "properly"
+      ],
+      "correctIndex": 1,
+      "explanation": "They (plural subject) এর সাথে 'do' হবে, 'does' নয়। 'Does' শুধু He/She/It (3rd person singular) এর সাথে হয়। সঠিক: 'They do their work properly.'"
+    },
+    {
+      "question": "Fill in the blank: 'He _____ breakfast at 8 AM.' (সে ৮টায় নাস্তা করে)",
+      "options": [
+        "take",
+        "takes",
+        "taking",
+        "took"
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) + Present Indefinite → verb + s/es। 'Take' এর সাথে 's' যোগ হয়ে 'takes' হয়। Object = 'breakfast'।"
+    },
+    {
+      "question": "Fill in the blank: 'The children _____ playing cricket.' (বাচ্চারা ক্রিকেট খেলছে)",
+      "options": [
+        "is",
+        "am",
+        "are",
+        "be"
+      ],
+      "correctIndex": 2,
+      "explanation": "'The children' = plural subject। Present Continuous-এ plural subject এর সাথে 'are' হয়। সঠিক: 'The children are playing cricket.'"
+    },
+    {
+      "question": "Fill in the blank: 'We _____ our homework every evening.' (আমরা প্রতি সন্ধ্যায় বাড়ির কাজ করি)",
+      "options": [
+        "do",
+        "does",
+        "doing",
+        "did"
+      ],
+      "correctIndex": 0,
+      "explanation": "We (1st person plural) + Present Indefinite → verb-এর base form (do)। 'Every evening' নিয়মিত কাজ বোঝাচ্ছে। Object = 'our homework'।"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে একটি চিঠি লেখে।'",
+      "options": [
+        "She a letter writes.",
+        "Writes she a letter.",
+        "She writes a letter.",
+        "A letter she writes."
+      ],
+      "correctIndex": 2,
+      "explanation": "ইংরেজিতে SVO order: Subject (She) + Verb (writes) + Object (a letter)। বাংলায় 'সে একটি চিঠি লেখে' = SOV, কিন্তু ইংরেজিতে SVO হবে।"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমার বাবা একটি গাড়ি কিনেছেন।'",
+      "options": [
+        "My father a car has bought.",
+        "Has bought my father a car.",
+        "My father has bought a car.",
+        "A car my father has bought."
+      ],
+      "correctIndex": 2,
+      "explanation": "Present Perfect-এও SVO order বজায় থাকে: Subject (My father) + has/have + V3 (bought) + Object (a car)। 'Has bought' একসাথে verb phrase."
+    }
+  ]
+}

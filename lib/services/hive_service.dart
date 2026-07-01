@@ -1,4 +1,5 @@
 import 'package:hive_flutter/hive_flutter.dart';
+import '../models/game/game_progress_model.dart';
 
 class HiveService {
   static const String _favoritesBox = 'favorites';
@@ -13,7 +14,9 @@ class HiveService {
   static const String _sentenceAnalysisHistoryBox = 'sentence_analysis_history';
   static const String _gameProgressBox = 'game_progress';
   static const String _gameStatisticsBox = 'game_statistics';
+  static const String _gameAchievementsBox = 'game_achievements';
   static const String _notificationHistoryBox = 'notification_history';
+  static const String _mockTestProgressBox = 'mock_test_progress';
 
   static Future<void> initialize() async {
     await Hive.initFlutter();
@@ -29,7 +32,9 @@ class HiveService {
     await Hive.openBox(_sentenceAnalysisHistoryBox);
     await Hive.openBox(_gameProgressBox);
     await Hive.openBox(_gameStatisticsBox);
+    await Hive.openBox(_gameAchievementsBox);
     await Hive.openBox(_notificationHistoryBox);
+    await Hive.openBox(_mockTestProgressBox);
   }
 
   static Box get _vocabProgress => Hive.box(_vocabProgressBox);
@@ -227,6 +232,28 @@ class HiveService {
     return true;
   }
 
+  // ── Last App Open Date (for re-engagement tracking) ──
+
+  static Future<void> setLastAppOpenDate(DateTime date) async {
+    await _settings.put('last_app_open_date', date.toIso8601String());
+  }
+
+  static DateTime? getLastAppOpenDate() {
+    final raw = _settings.get('last_app_open_date');
+    if (raw == null) return null;
+    return DateTime.tryParse(raw as String);
+  }
+
+  // ── Re-engagement Notification Toggle ──
+
+  static Future<void> setReEngagementEnabled(bool value) async {
+    await _settings.put('re_engagement_notifications', value);
+  }
+
+  static bool isReEngagementEnabled() {
+    return _settings.get('re_engagement_notifications', defaultValue: true) as bool;
+  }
+
   // ── Weekly Activity Calendar (7 days) ──
   // Tracks which days this week the user practiced
   // Keys: '0'=Monday ... '6'=Sunday, value=true if practiced
@@ -236,6 +263,9 @@ class HiveService {
     final map = getWeeklyActivity();
     map[weekday.toString()] = true;
     await _settings.put('weekly_activity', map);
+
+    // Also persist to game_progress box so it gets synced to Firebase
+    await _saveWeeklyActivityToGameProgress(map);
   }
 
   static Map<String, dynamic> getWeeklyActivity() {
@@ -258,6 +288,62 @@ class HiveService {
   /// Reset weekly activity (call at start of new week)
   static Future<void> resetWeeklyActivity() async {
     await _settings.put('weekly_activity', <String, dynamic>{});
+    // Also reset in game_progress box
+    await _saveWeeklyActivityToGameProgress(<String, dynamic>{});
+  }
+
+  /// Get the Monday of current week as "YYYY-MM-DD" string
+  static String _getCurrentWeekStart() {
+    final now = DateTime.now();
+    final daysSinceMonday = now.weekday - 1;
+    final monday = now.subtract(Duration(days: daysSinceMonday));
+    return '${monday.year}-${monday.month.toString().padLeft(2, '0')}-${monday.day.toString().padLeft(2, '0')}';
+  }
+
+  /// Save weekly activity map to game_progress box (for Firebase sync)
+  static Future<void> _saveWeeklyActivityToGameProgress(Map<String, dynamic> activity) async {
+    if (!Hive.isBoxOpen(_gameProgressBox)) return;
+    final box = Hive.box(_gameProgressBox);
+    final raw = box.get('user_progress');
+    if (raw == null) return;
+    try {
+      final progress = GameProgressModel.fromMap(
+        Map<String, dynamic>.from(raw as Map),
+        '',
+      );
+      final updated = progress.copyWith(
+        weeklyActivity: activity.map((k, v) => MapEntry(k, v == true)),
+        weeklyActivityWeekStart: _getCurrentWeekStart(),
+      );
+      await box.put('user_progress', updated.toMap());
+    } catch (_) {
+      // Silently ignore parse errors
+    }
+  }
+
+  /// Restore weekly activity from game_progress box to settings box.
+  /// Call this after syncing progress from Firestore to Hive.
+  static void restoreWeeklyActivityFromProgress() {
+    if (!Hive.isBoxOpen(_gameProgressBox)) return;
+    final box = Hive.box(_gameProgressBox);
+    final raw = box.get('user_progress');
+    if (raw == null) return;
+
+    try {
+      final progress = GameProgressModel.fromMap(
+        Map<String, dynamic>.from(raw as Map),
+        '',
+      );
+
+      // Only restore if the stored week matches the current week
+      if (progress.weeklyActivityWeekStart == _getCurrentWeekStart()) {
+        final restoredMap = progress.weeklyActivity
+            .map((k, v) => MapEntry(k, v as dynamic));
+        _settings.put('weekly_activity', restoredMap);
+      }
+    } catch (_) {
+      // Silently ignore parse errors
+    }
   }
 
   // ── Streak Freeze Shop / Cost ──
@@ -688,6 +774,27 @@ class HiveService {
     await Hive.box(_notificationHistoryBox).put('notifications', <Map<String, dynamic>>[]);
   }
 
+  // ── Mock Test Progress ──
+
+  static Future<void> saveMockTestProgress(Map<String, dynamic> progress) async {
+    if (!Hive.isBoxOpen(_mockTestProgressBox)) {
+      await Hive.openBox(_mockTestProgressBox);
+    }
+    await Hive.box(_mockTestProgressBox).put('progress', progress);
+  }
+
+  static Map<String, dynamic>? getMockTestProgress() {
+    if (!Hive.isBoxOpen(_mockTestProgressBox)) return null;
+    final raw = Hive.box(_mockTestProgressBox).get('progress');
+    if (raw == null) return null;
+    return Map<String, dynamic>.from(raw as Map);
+  }
+
+  static Future<void> clearMockTestProgress() async {
+    if (!Hive.isBoxOpen(_mockTestProgressBox)) return;
+    await Hive.box(_mockTestProgressBox).clear();
+  }
+
   /// Clears all locally cached/stored data used by the app (Hive boxes).
   /// Note: Firebase-backed progress will reload/sync again on next fetch/login.
   static Future<void> clearAllCaches() async {
@@ -757,9 +864,13 @@ class HiveService {
       await Hive.box(_gameStatisticsBox).clear();
     }
     
-    // Clear game achievements box (if exists)
-    if (Hive.isBoxOpen('game_achievements')) {
-      await Hive.box('game_achievements').clear();
+    if (Hive.isBoxOpen(_gameAchievementsBox)) {
+      await Hive.box(_gameAchievementsBox).clear();
+    }
+
+    // Mock test progress
+    if (Hive.isBoxOpen(_mockTestProgressBox)) {
+      await Hive.box(_mockTestProgressBox).clear();
     }
   }
 }

@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import '../repositories/mock_test_repository.dart';
 import '../repositories/progress_repository.dart';
 import '../repositories/statistics_repository.dart';
 import '../repositories/achievement_repository.dart';
@@ -9,16 +11,19 @@ class GameDataSyncService {
   final ProgressRepository _progressRepository;
   final StatisticsRepository _statisticsRepository;
   final AchievementRepository _achievementRepository;
+  final MockTestRepository _mockTestRepository;
   final FirebaseAuth _auth;
 
   GameDataSyncService({
     ProgressRepository? progressRepository,
     StatisticsRepository? statisticsRepository,
     AchievementRepository? achievementRepository,
+    MockTestRepository? mockTestRepository,
     FirebaseAuth? auth,
   })  : _progressRepository = progressRepository ?? ProgressRepository(),
         _statisticsRepository = statisticsRepository ?? StatisticsRepository(),
         _achievementRepository = achievementRepository ?? AchievementRepository(),
+        _mockTestRepository = mockTestRepository ?? MockTestRepository(),
         _auth = auth ?? FirebaseAuth.instance;
 
   /// Get current user ID
@@ -42,9 +47,12 @@ class GameDataSyncService {
       // Load achievements
       await _achievementRepository.syncFromFirestoreToHive(userId);
 
-      print('✅ Game data loaded from Firebase for user: $userId');
+      // Load mock test progress
+      await _mockTestRepository.syncFromFirestoreToHive(userId);
+
+      debugPrint('✅ Game data loaded from Firebase for user: $userId');
     } catch (e) {
-      print('❌ Error loading game data from Firebase: $e');
+      debugPrint('❌ Error loading game data from Firebase: $e');
       // If no data exists in Firebase, that's okay - new user
     }
   }
@@ -71,14 +79,46 @@ class GameDataSyncService {
         await _achievementRepository.batchUploadToFirestore(userId, achievements);
       }
 
-      print('✅ Game data saved to Firebase for user: $userId');
+      // Save levels (was previously missing — levels were only saved to Hive!)
+      final levels = _progressRepository.getLevels();
+      if (levels.isNotEmpty) {
+        await _progressRepository.batchUploadLevelsToFirestore(userId, levels);
+      }
+
+      // Save mock test progress
+      await saveMockTestDataToFirebase();
+
+      debugPrint('✅ Game data saved to Firebase for user: $userId');
     } catch (e) {
-      print('❌ Error saving game data to Firebase: $e');
+      debugPrint('❌ Error saving game data to Firebase: $e');
     }
   }
 
-  /// Auto-sync after game completion (call this after each game)
-  Future<void> autoSyncAfterGame() async {
+  /// Load mock test progress from Firestore to local Hive.
+  Future<void> loadMockTestDataFromFirebase() async {
+    final userId = currentUserId;
+    if (userId == null) return;
+
+    try {
+      await _mockTestRepository.syncFromFirestoreToHive(userId);
+      debugPrint('✅ Mock test data loaded from Firebase for user: $userId');
+    } catch (e) {
+      debugPrint('❌ Error loading mock test data from Firebase: $e');
+    }
+  }
+
+  /// Save mock test progress from local Hive to Firestore.
+  Future<void> saveMockTestDataToFirebase() async {
+    try {
+      await _mockTestRepository.syncFromHiveToFirestore();
+      debugPrint('✅ Mock test data saved to Firebase');
+    } catch (e) {
+      debugPrint('❌ Error saving mock test data to Firebase: $e');
+    }
+  }
+
+  /// Sync all local data to Firebase after a game (called by ResultScreen).
+  Future<void> syncAfterGame() async {
     await saveUserDataToFirebase();
   }
 

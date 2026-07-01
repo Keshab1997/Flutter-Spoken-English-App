@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_12",
+  "testNumber": 12,
+  "title": "Mock Test 12 - Was/Were (Past of To be)",
+  "description": "এই টেস্টে To be verb-এর Past রূপ was/were নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "'To be' verb-এর Past রূপগুলো কী কী? (What are the past forms of 'To be' verb?)",
+      "options": [
+        "am, is, are",
+        "was, were",
+        "be, being, been",
+        "do, does, did"
+      ],
+      "correctIndex": 1,
+      "explanation": "'To be' verb-এর Past রূপ: I/He/She/It → was, We/You/They → were। যেমন: I was happy, She was a student, They were in the park।"
+    },
+    {
+      "question": "'Was' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'was' used?)",
+      "options": [
+        "We/You/They-এর সাথে",
+        "I, He, She, It ও singular noun-এর সাথে",
+        "সব subject-এর সাথে",
+        "শুধু plural noun-এর সাথে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Was' ব্যবহার হয়: I, He, She, It এবং singular noun (The boy, The book, My mother) এর সাথে। যেমন: I was tired, He was late, She was sick, The book was interesting।"
+    },
+    {
+      "question": "'Were' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'were' used?)",
+      "options": [
+        "I/He/She-এর সাথে",
+        "We, You, They ও plural noun-এর সাথে",
+        "শুধু আমি-এর সাথে",
+        "শুধু singular noun-এর সাথে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Were' ব্যবহার হয়: We, You, They এবং plural noun (The boys, The books, The students) এর সাথে। যেমন: We were friends, You were late, They were happy, The books were new।"
+    },
+    {
+      "question": "Was/Were দিয়ে Negative বাক্য কিভাবে তৈরি হয়?",
+      "options": [
+        "Subject + was/were + not",
+        "Subject + did + not + was/were",
+        "Subject + was/were + not + be",
+        "Subject + not + was/were"
+      ],
+      "correctIndex": 0,
+      "explanation": "Was/Were Negative: Subject + was/were + not। যেমন: I was not (wasn't) there, They were not (weren't) happy। সংক্ষেপে: was not = wasn't, were not = weren't।"
+    },
+    {
+      "question": "Was/Were দিয়ে Question কিভাবে তৈরি হয়?",
+      "options": [
+        "Did + Subject + be?",
+        "Was/Were + Subject?",
+        "Do/Does + Subject + be?",
+        "Subject + was/were?"
+      ],
+      "correctIndex": 1,
+      "explanation": "Was/Were Question: Was/Were + Subject? যেমন: Was he there? Were they happy? Were you at home? 'Was/Were' প্রথমে বসে।"
+    },
+    {
+      "question": "I ___ sick yesterday. (আমি গতকাল অসুস্থ ছিলাম)",
+      "options": [
+        "was",
+        "were",
+        "am",
+        "is"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Yesterday' = অতীত। I-এর সাথে Past-এ 'was' হয়। 'I was sick yesterday' — অতীতের অবস্থা বোঝাচ্ছে।"
+    },
+    {
+      "question": "They ___ very happy last night. (তারা গত রাতে খুব খুশি ছিল)",
+      "options": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Last night' = অতীত। They (plural) → were। 'They were very happy last night' — অতীতের অবস্থা।"
+    },
+    {
+      "question": "She ___ at home yesterday evening. (সে গতকাল সন্ধ্যায় বাসায় ছিল)",
+      "options": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Yesterday evening' = অতীত। She (singular) → was। 'She was at home yesterday evening' — অতীতের অবস্থান।"
+    },
+    {
+      "question": "The children ___ in the park this morning. (বাচ্চারা আজ সকালে পার্কে ছিল)",
+      "options": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "correctIndex": 1,
+      "explanation": "'This morning' = অতীত (সকাল পেরিয়ে গেছে)। The children = plural → were।"
+    },
+    {
+      "question": "We ___ very tired after the game. (আমরা খেলার পর খুব ক্লান্ত ছিলাম)",
+      "options": [
+        "was",
+        "were",
+        "are",
+        "am"
+      ],
+      "correctIndex": 1,
+      "explanation": "We (plural) → were। 'After the game' = অতীতের ঘটনা। 'We were very tired after the game.'"
+    },
+    {
+      "question": "Error Detection: 'I were very happy yesterday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "were",
+        "very happy",
+        "yesterday"
+      ],
+      "correctIndex": 1,
+      "explanation": "I-এর সাথে Past-এ 'was' হয়, 'were' নয়। সঠিক: 'I was very happy yesterday.'"
+    },
+    {
+      "question": "Error Detection: 'They was playing in the garden.' — ভুল অংশ কোনটি?",
+      "options": [
+        "They",
+        "was",
+        "playing",
+        "in the garden"
+      ],
+      "correctIndex": 1,
+      "explanation": "They (plural) → 'were' হবে, 'was' নয়। সঠিক: 'They were playing in the garden.'"
+    },
+    {
+      "question": "Error Detection: 'She weren't at home last night.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "weren't",
+        "at home",
+        "last night"
+      ],
+      "correctIndex": 1,
+      "explanation": "She (singular) → wasn't (was not), weren't নয়। সঠিক: 'She wasn't at home last night.'"
+    },
+    {
+      "question": "Error Detection: 'Was you at the party?' — ভুল অংশ কোনটি?",
+      "options": [
+        "Was",
+        "you",
+        "at the party",
+        "কোনো ভুল নেই"
+      ],
+      "correctIndex": 0,
+      "explanation": "You-এর সাথে Question-এ 'Were' হবে, 'Was' নয়। সঠিক: 'Were you at the party?'"
+    },
+    {
+      "question": "Fill in the blank: 'The movie ___ very boring, so I left early.' (সিনেমাটি খুব boring ছিল, তাই আমি তাড়াতাড়ি চলে গেলাম)",
+      "options": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "correctIndex": 0,
+      "explanation": "The movie = singular → was। অতীতের ঘটনা (I left early), তাই past tense।"
+    },
+    {
+      "question": "Fill in the blank: 'Where ___ you last night?' (গত রাতে তুমি কোথায় ছিলে?)",
+      "options": [
+        "was",
+        "were",
+        "are",
+        "is"
+      ],
+      "correctIndex": 1,
+      "explanation": "You-এর সাথে past question-এ 'were' হয়। 'Where were you last night?' — অতীতের অবস্থান জানতে চাচ্ছে।"
+    },
+    {
+      "question": "Fill in the blank: 'He ___ not at home when I called.' (আমি ফোন করার সময় সে বাসায় ছিল না)",
+      "options": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "correctIndex": 0,
+      "explanation": "He (singular) → was। Negative: was not (wasn't)। 'When I called' = অতীত।"
+    },
+    {
+      "question": "Fill in the blank: 'There ___ many people at the concert.' (কনসার্টে অনেক লোক ছিল)",
+      "options": [
+        "was",
+        "were",
+        "is",
+        "are"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Many people' = plural → were। 'There were many people at the concert' — অতীতের ঘটনা।"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি গতকাল অফিসে ছিলাম।'",
+      "options": [
+        "I am at office yesterday.",
+        "I were at office yesterday.",
+        "I was at office yesterday.",
+        "I is at office yesterday."
+      ],
+      "correctIndex": 2,
+      "explanation": "'গতকাল' (yesterday) = অতীত। I → was। সঠিক: 'I was at office yesterday.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তারা কি পরীক্ষার জন্য প্রস্তুত ছিল?'",
+      "options": [
+        "Was they ready for the exam?",
+        "Were they ready for the exam?",
+        "Are they ready for the exam?",
+        "They were ready for the exam?"
+      ],
+      "correctIndex": 1,
+      "explanation": "They (plural) → Were। Question: Were + subject + ready? সঠিক: 'Were they ready for the exam?'"
+    }
+  ]
+}

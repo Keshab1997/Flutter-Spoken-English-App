@@ -90,12 +90,13 @@ class XpService {
   // ── XP Management ──
 
   Future<int> getCurrentXP() async {
-    // Prefer cumulative total from statistics (game_statistics box)
-    final totalEarned = await _statisticsRepository.getTotalEarnedXP();
-    if (totalEarned > 0) return totalEarned;
-    // Fall back to progress box
+    // ProgressRepository is the source of truth for current balance —
+    // it tracks ALL XP (game earnings + achievement rewards + bonuses).
     final progress = _progressRepository.getProgress();
-    return progress?.currentXP ?? 0;
+    if (progress != null && progress.currentXP > 0) return progress.currentXP;
+    // Fall back to statistics box (game-only XP) if progress isn't set yet
+    final totalEarned = await _statisticsRepository.getTotalEarnedXP();
+    return totalEarned;
   }
 
   Future<int> getCurrentLevel() async {
@@ -112,6 +113,12 @@ class XpService {
   Future<double> getLevelProgress() async {
     final xp = await getCurrentXP();
     final level = await getCurrentLevel();
+    return getLevelProgressFor(level, xp);
+  }
+
+  /// Synchronous version — computes progress from given level & XP values
+  /// without hitting any async storage. Used by Firestore listener callbacks.
+  double getLevelProgressFor(int level, int xp) {
     final xpForNext = getXPForNextLevel(level);
     final xpForCurrent = getXPForNextLevel(level - 1);
     final xpInCurrentLevel = xp - xpForCurrent;
@@ -142,20 +149,41 @@ class XpService {
     return await getCurrentLevel();
   }
 
-  // ── Level Titles ──
+  // ── Level Titles (Gamer Ranks) ──
 
+  /// Returns a gaming-style rank title based on the player's level.
+  /// Wider ranges = each rank feels more meaningful to achieve.
   String getLevelTitle(int level) {
-    if (level <= 3) return 'Beginner';
-    if (level <= 6) return 'Learner';
-    if (level <= 10) return 'Intermediate';
-    if (level <= 15) return 'Advanced';
-    if (level <= 20) return 'Expert';
-    if (level <= 30) return 'Master';
-    return 'Grandmaster';
+    if (level <= 5) return 'Rookie';
+    if (level <= 12) return 'Bronze';
+    if (level <= 21) return 'Silver';
+    if (level <= 32) return 'Gold';
+    if (level <= 45) return 'Platinum';
+    if (level <= 60) return 'Diamond';
+    if (level <= 77) return 'Elite';
+    if (level <= 95) return 'Master';
+    return 'Legend';
+  }
+
+  /// Returns an emoji matching the player's rank.
+  String getLevelEmoji(int level) {
+    if (level <= 5) return '🎯';
+    if (level <= 12) return '🥉';
+    if (level <= 21) return '🥈';
+    if (level <= 32) return '🥇';
+    if (level <= 45) return '💎';
+    if (level <= 60) return '💠';
+    if (level <= 77) return '⚡';
+    if (level <= 95) return '🏅';
+    return '👑';
   }
 
   Future<String> getCurrentLevelTitle() async {
     return getLevelTitle(await getCurrentLevel());
+  }
+
+  Future<String> getCurrentLevelEmoji() async {
+    return getLevelEmoji(await getCurrentLevel());
   }
 
   // ── Streak XP ──

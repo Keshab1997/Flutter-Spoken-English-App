@@ -1,8 +1,10 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/game/game_result_model.dart';
+import '../utils/hive_safe.dart';
 
 class StatisticsRepository {
   static const String _boxName = 'game_statistics';
@@ -39,7 +41,7 @@ class StatisticsRepository {
     final box = await _ensureBox();
     final results = await getResults();
     results.insert(0, result);
-    await box.put(_resultsKey, results.map((r) => r.toMap()).toList());
+    await box.put(_resultsKey, results.map((r) => HiveSafe.sanitizeMap(r.toMap())).toList());
   }
 
   Future<List<GameResultModel>> getResults() async {
@@ -90,6 +92,15 @@ class StatisticsRepository {
   Future<int> getTotalEarnedCoins() async {
     final results = await getResults();
     return results.fold<int>(0, (sum, r) => sum + r.earnedCoins);
+  }
+
+  /// Returns the sum of correct answers for a specific game mode.
+  /// Used by AchievementService to check game-mode-specific achievements.
+  Future<int> getGameModeCorrect(String gameType) async {
+    final results = await getResults();
+    return results
+        .where((r) => r.gameType == gameType)
+        .fold<int>(0, (sum, r) => sum + r.correctAnswers);
   }
 
   Future<GameResultModel?> getBestResult() async {
@@ -177,6 +188,33 @@ class StatisticsRepository {
   Future<void> syncFromFirestoreToHive(String userId) async {
     final results = await fetchFromFirestore(userId);
     final box = await _ensureBox();
-    await box.put(_resultsKey, results.map((r) => r.toMap()).toList());
+    await box.put(_resultsKey, results.map((r) => HiveSafe.sanitizeMap(r.toMap())).toList());
+  }
+
+  /// Sync meta counters (boss wins, daily wins, time played) from Firestore → Hive.
+  /// This is needed for cross-device sync — when another device writes to Firestore,
+  /// this method updates the local Hive values.
+  Future<void> syncMetaFromFirestoreToHive(String userId) async {
+    try {
+      final doc = await FirebaseFirestore.instance
+          .collection('${_firestoreCollection}_meta')
+          .doc(userId)
+          .get();
+      if (!doc.exists) return;
+
+      final data = doc.data()!;
+      final box = await _ensureBox();
+      if (data.containsKey('bossWins')) {
+        await box.put(_bossWinsKey, data['bossWins'] as int);
+      }
+      if (data.containsKey('dailyChallengeWins')) {
+        await box.put(_dailyWinsKey, data['dailyChallengeWins'] as int);
+      }
+      if (data.containsKey('timePlayedSeconds')) {
+        await box.put(_timePlayedKey, data['timePlayedSeconds'] as int);
+      }
+    } catch (e) {
+      debugPrint('❌ syncMetaFromFirestoreToHive error: $e');
+    }
   }
 }

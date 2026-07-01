@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_06",
+  "testNumber": 6,
+  "title": "Mock Test 6 - Present Perfect Tense",
+  "description": "এই টেস্টে Present Perfect Tense (have/has + V3) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "Present Perfect Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Present Perfect Tense?)",
+      "options": [
+        "Subject + V1 + s/es",
+        "Subject + am/is/are + V+ing",
+        "Subject + have/has + V3",
+        "Subject + will + V1"
+      ],
+      "correctIndex": 2,
+      "explanation": "Present Perfect Tense-এর গঠন: Subject + have/has + V3 (Past Participle)। I/You/We/They → have, He/She/It → has। যেমন: I have eaten, She has gone, They have finished।"
+    },
+    {
+      "question": "Present Perfect Tense কখন ব্যবহার করা হয়? (When is Present Perfect Tense used?)",
+      "options": [
+        "শুধু অতীতের নির্দিষ্ট সময়ের কাজ বুঝাতে",
+        "অতীতে ঘটেছে কিন্তু বর্তমানের সাথে সম্পর্ক আছে এমন কাজ বুঝাতে",
+        "ভবিষ্যতের কাজ বুঝাতে",
+        "নিয়মিত অভ্যাস বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Perfect ব্যবহার হয়: (১) সম্প্রতি শেষ হওয়া কাজ — I have just finished dinner, (২) অভিজ্ঞতা (experience) — I have been to London, (৩) অতীতে শুরু হয়ে এখনও চলছে — I have lived here for 5 years, (৪) ফল এখন দেখা যাচ্ছে — I have lost my keys (so I can't enter)।"
+    },
+    {
+      "question": "Present Perfect-এ 'Just', 'Already', 'Yet' কিভাবে ব্যবহার হয়?",
+      "options": [
+        "Just = negative, Already = question, Yet = affirmative",
+        "Just = এইমাত্র, Already = ইতিমধ্যে, Yet = এখনও (negative/question)",
+        "Just = ভবিষ্যতে, Already = অতীতে, Yet = বর্তমানে",
+        "এগুলো Present Perfect-এ ব্যবহার করা যায় না"
+      ],
+      "correctIndex": 1,
+      "explanation": "Just = এইমাত্র ('I have just arrived'), Already = ইতিমধ্যে ('She has already eaten'), Yet = এখনও ('Have you finished yet?' / 'I haven't finished yet')। Yet শুধু negative ও question-এ ব্যবহার হয়।"
+    },
+    {
+      "question": "Present Perfect-এ 'Ever' ও 'Never' কিভাবে ব্যবহার হয়?",
+      "options": [
+        "Ever = question-এ (কখনো), Never = affirmative-এ (কখনো না)",
+        "Ever = affirmative-এ, Never = negative-এ",
+        "Ever = negative-এ, Never = question-এ",
+        "Ever = অতীতে, Never = বর্তমানে"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ever = question-এ ('Have you ever been to London?'), Never = affirmative-এ কিন্তু negative অর্থে ('I have never seen that movie')। Never মানে 'কখনো না', তাই negative verb-এর দরকার নেই।"
+    },
+    {
+      "question": "Past Indefinite আর Present Perfect-এর পার্থক্য কী?",
+      "options": [
+        "কোনো পার্থক্য নেই, দুটোই একই",
+        "Past Indefinite-এ নির্দিষ্ট সময় উল্লেখ থাকে, Present Perfect-এ সময় অনির্দিষ্ট",
+        "Present Perfect-এ নির্দিষ্ট সময় উল্লেখ থাকে",
+        "Past Indefinite বর্তমানের সাথে সম্পর্কিত"
+      ],
+      "correctIndex": 1,
+      "explanation": "Past Indefinite → নির্দিষ্ট অতীত সময় (yesterday, last year, in 2020) — 'I saw him yesterday.' Present Perfect → সময় অনির্দিষ্ট বা বর্তমানের সাথে সম্পর্ক — 'I have seen him.' নির্দিষ্ট সময় থাকলে Present Perfect ব্যবহার করা যায় না।"
+    },
+    {
+      "question": "I have already ___ my homework. (আমি ইতিমধ্যে আমার বাড়ির কাজ শেষ করেছি)",
+      "options": [
+        "do",
+        "did",
+        "done",
+        "doing"
+      ],
+      "correctIndex": 2,
+      "explanation": "Present Perfect = have/has + V3। 'Done' হলো do-এর past participle (V3)। 'Already' = ইতিমধ্যে। সঠিক: 'I have already done my homework.'"
+    },
+    {
+      "question": "She ___ never ___ to Japan. (সে কখনো জাপানে যায়নি)",
+      "options": [
+        "has / go",
+        "has / went",
+        "has / been",
+        "have / been"
+      ],
+      "correctIndex": 2,
+      "explanation": "She (singular) → has। 'Been to' = কোনো জায়গায় গিয়েছে (এবং ফিরে এসেছে)। 'Never' = কখনো না। সঠিক: 'She has never been to Japan.'"
+    },
+    {
+      "question": "They ___ just ___ the train. (তারা এইমাত্র ট্রেন ধরেছে)",
+      "options": [
+        "have / catch",
+        "have / caught",
+        "has / caught",
+        "have / catching"
+      ],
+      "correctIndex": 1,
+      "explanation": "They (plural) → have। 'Catch' এর V3 = 'caught'। 'Just' = এইমাত্র। সঠিক: 'They have just caught the train.'"
+    },
+    {
+      "question": "___ you ever ___ Thai food? (তুমি কি কখনো থাই খাবার খেয়েছ?)",
+      "options": [
+        "Have / eat",
+        "Have / eaten",
+        "Has / eaten",
+        "Did / eat"
+      ],
+      "correctIndex": 1,
+      "explanation": "You → have। Question: Have + subject + V3? 'Eat' এর V3 = 'eaten'। 'Ever' = কখনো (experience জানতে চাচ্ছে)। সঠিক: 'Have you ever eaten Thai food?'"
+    },
+    {
+      "question": "He ___ not ___ his work yet. (সে এখনও তার কাজ শেষ করেনি)",
+      "options": [
+        "has / finish",
+        "have / finished",
+        "has / finished",
+        "is / finishing"
+      ],
+      "correctIndex": 2,
+      "explanation": "He → has। Negative: has + not + V3। 'Yet' = এখনও (negative sentence-এ)। 'Finish' এর V3 = 'finished'। সঠিক: 'He has not finished his work yet.'"
+    },
+    {
+      "question": "Error Detection: 'I have saw that movie.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "have",
+        "saw",
+        "that movie"
+      ],
+      "correctIndex": 2,
+      "explanation": "Present Perfect-এ have/has + V3 (past participle) হয়। 'Saw' হলো V2 (past indefinite), V3 হলো 'seen'। সঠিক: 'I have seen that movie.'"
+    },
+    {
+      "question": "Error Detection: 'She has went to market.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "has",
+        "went",
+        "to market"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Go' এর V3 = 'gone'। 'Went' হলো V2, Present Perfect-এ V3 লাগে। সঠিক: 'She has gone to market.'"
+    },
+    {
+      "question": "Error Detection: 'They have ate their dinner.' — ভুল অংশ কোনটি?",
+      "options": [
+        "They",
+        "have",
+        "ate",
+        "their dinner"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Eat' এর V3 = 'eaten'। 'Ate' হলো V2। Present Perfect-এ সবসময় V3 ব্যবহার করতে হবে। সঠিক: 'They have eaten their dinner.'"
+    },
+    {
+      "question": "Error Detection: 'I have visited the museum yesterday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "have visited",
+        "the museum",
+        "yesterday"
+      ],
+      "correctIndex": 3,
+      "explanation": "নির্দিষ্ট অতীত সময় (yesterday, last week, in 2020) থাকলে Present Perfect ব্যবহার করা যায় না। 'Yesterday' এর সাথে Past Indefinite হবে: 'I visited the museum yesterday.'"
+    },
+    {
+      "question": "Fill in the blank: 'I ___ my keys. I can't find them.' (আমি আমার চাবি হারিয়ে ফেলেছি। আমি সেগুলো খুঁজে পাচ্ছি না)",
+      "options": [
+        "lost",
+        "have lost",
+        "am losing",
+        "lose"
+      ],
+      "correctIndex": 1,
+      "explanation": "চাবি হারানোর ফল এখন দেখা যাচ্ছে (I can't find them), তাই Present Perfect। 'I have lost my keys.'"
+    },
+    {
+      "question": "Fill in the blank: 'She ___ English for 5 years.' (সে ৫ বছর ধরে ইংরেজি শিখছে)",
+      "options": [
+        "learns",
+        "learned",
+        "has learned",
+        "is learning"
+      ],
+      "correctIndex": 2,
+      "explanation": "'For 5 years' = অতীতে শুরু হয়ে এখন পর্যন্ত চলছে। Present Perfect: 'She has learned English for 5 years.' (অথবা has been learning)"
+    },
+    {
+      "question": "Fill in the blank: 'We ___ each other since 2020.' (আমরা ২০২০ সাল থেকে একে অপরকে চিনি)",
+      "options": [
+        "know",
+        "knew",
+        "have known",
+        "are knowing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Since 2020' = ২০২০ থেকে শুরু হয়ে এখন পর্যন্ত। Present Perfect: 'We have known each other since 2020.' 'Know' এর V3 = 'known'।"
+    },
+    {
+      "question": "Fill in the blank: 'The train ___ already ___.' (ট্রেন ইতিমধ্যে ছেড়ে গেছে)",
+      "options": [
+        "has / leave",
+        "has / left",
+        "have / left",
+        "has / leaving"
+      ],
+      "correctIndex": 1,
+      "explanation": "The train = singular → has। 'Leave' এর V3 = 'left'। 'Already' = ইতিমধ্যে। সঠিক: 'The train has already left.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি কখনো হাতি দেখিনি।'",
+      "options": [
+        "I never saw an elephant.",
+        "I have never seen an elephant.",
+        "I did not see an elephant never.",
+        "I am never seeing an elephant."
+      ],
+      "correctIndex": 1,
+      "explanation": "'কখনো দেখিনি' = experience (অভিজ্ঞতা) — Present Perfect। 'Never' = কখনো না। 'See' এর V3 = 'seen'। সঠিক: 'I have never seen an elephant.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তুমি কি কখনো ঢাকায় গিয়েছ?'",
+      "options": [
+        "Did you ever go to Dhaka?",
+        "Have you ever been to Dhaka?",
+        "Are you going to Dhaka?",
+        "Do you go to Dhaka?"
+      ],
+      "correctIndex": 1,
+      "explanation": "'কখনো গিয়েছ?' = experience জানতে চাচ্ছে — Present Perfect Question। 'Have you ever been to Dhaka?' — 'Been to' = গিয়েছ (এবং ফিরে এসেছ)।"
+    }
+  ]
+}

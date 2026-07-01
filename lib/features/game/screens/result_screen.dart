@@ -1,15 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../../../core/constants/app_colors.dart';
 import '../../../providers/game/game_provider.dart';
 import '../../../providers/game/timer_provider.dart';
 import '../../../providers/game/score_provider.dart';
 import '../../../services/game_service.dart';
+import '../../../services/achievement_service.dart';
 import '../../../providers/game/xp_provider.dart';
 import '../../../providers/game/coin_provider.dart';
+import '../../../providers/game/streak_provider.dart';
 import '../../../providers/game/sound_provider.dart';
 import '../../../providers/game/leaderboard_provider.dart';
+import '../../../providers/game/achievement_provider.dart';
+import '../../../repositories/progress_repository.dart';
+import '../../../repositories/statistics_repository.dart';
+import '../../../repositories/achievement_repository.dart';
+import '../../../models/game/game_result_model.dart';
+import '../../../models/game/achievement_model.dart';
 import 'game_home_screen.dart';
 import 'answer_review_screen.dart';
 import 'question_screen.dart';
@@ -18,7 +27,9 @@ import 'modes/quick_quiz_mode.dart';
 import 'modes/fill_in_blanks_mode.dart';
 import 'modes/sentence_builder_mode.dart';
 import 'modes/grammar_detective_mode.dart';
+import 'modes/verb_learning_mode.dart';
 import 'modes/flashcard_mode.dart';
+import '../widgets/achievement_unlock_overlay.dart';
 
 class ResultScreen extends ConsumerStatefulWidget {
   final int score;
@@ -46,24 +57,209 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
   @override
   void initState() {
     super.initState();
-    _updateLeaderboard();
+    // Run all async init in order inside a single microtask.
+    // We save the result FIRST so achievement checks can read the current game's data.
+    Future.microtask(() async {
+      await _saveLocalResult();
+      await _addRewards();
+      _updateLeaderboard();
+      await _checkAchievements();
+      _updateLeaderboard(); // Refresh XP/coin providers after achievement rewards are added
+      await _syncGameDataToFirebase();
+    });
   }
 
-  Future<void> _updateLeaderboard() async {
+  /// Saves the current game result to Hive (StatisticsRepository) before
+  /// checking achievements, so the check sees the current game's stats.
+  Future<void> _saveLocalResult() async {
+    try {
+      final repo = StatisticsRepository();
+      await repo.saveResult(GameResultModel(
+        score: widget.score,
+        correctAnswers: widget.correctAnswers,
+        wrongAnswers: widget.wrongAnswers,
+        earnedXP: widget.earnedXP,
+        earnedCoins: widget.earnedCoins,
+        gameType: widget.gameMode,
+        completedTime: DateTime.now(),
+      ));
+    } catch (e) {
+      debugPrint('❌ Error saving game result: $e');
+    }
+  }
+
+  /// Adds XP, coins, and updates streak for the completed game.
+  /// This runs AFTER saving the result but BEFORE checking achievements,
+  /// so that the cumulative stats include this game's rewards.
+  Future<void> _addRewards() async {
+    try {
+      await ref.read(xpProvider.notifier).addXP(widget.earnedXP);
+    } catch (e) {
+      debugPrint('❌ Error adding XP: $e');
+    }
+    try {
+      await ref.read(coinProvider.notifier).addCoins(widget.earnedCoins);
+    } catch (e) {
+      debugPrint('❌ Error adding coins: $e');
+    }
+    try {
+      await ref.read(streakProvider.notifier).checkAndUpdateStreak();
+    } catch (e) {
+      debugPrint('❌ Error updating streak: $e');
+    }
+    try {
+      await ref.read(streakProvider.notifier).recordActiveDay();
+    } catch (e) {
+      debugPrint('❌ Error recording active day: $e');
+    }
+  }
+
+  Future<void> _checkAchievements() async {
+    final total = widget.correctAnswers + widget.wrongAnswers;
+    final accuracy = total > 0 ? widget.correctAnswers / total : 0.0;
+    final isBossBattle = widget.gameMode == 'boss';
+
+    int durationSeconds = 0;
+    try {
+      final results = await StatisticsRepository().getResults();
+      if (results.isNotEmpty) {
+        durationSeconds = results.first.durationSeconds;
+      }
+    } catch (e) {
+      debugPrint('❌ Error reading duration: $e');
+    }
+    
+    try {
+      final newlyUnlocked = await ref.read(achievementProvider.notifier).checkGameAchievements(
+        score: widget.score,
+        correctAnswers: widget.correctAnswers,
+        accuracy: accuracy,
+        isBossBattle: isBossBattle,
+        gameMode: widget.gameMode,
+        durationSeconds: durationSeconds,
+      );
+      if (newlyUnlocked.isNotEmpty && mounted) {
+        _showAchievementUnlock(newlyUnlocked);
+      }
+    } catch (e) {
+      debugPrint('❌ Error checking achievements: $e');
+    }
+  }
+
+  void _showAchievementUnlock(List<AchievementModel> achievements) {
+    final rarest = AchievementService.getRarestAchievement(achievements);
+    if (rarest == null) return;
+
+    // Play achievement sound
+    try {
+      final soundService = ref.read(soundServiceProvider);
+      soundService.playAchievement();
+    } catch (_) {
+      // Sound service not available — overlay still shows
+    }
+
+    // Show full-screen celebration overlay
+    showGeneralDialog(
+      context: context,
+      barrierDismissible: false,
+      barrierColor: Colors.transparent,
+      pageBuilder: (context, anim, secondaryAnim) => AchievementUnlockOverlay(
+        achievement: rarest,
+        onDismiss: () => Navigator.of(context).pop(),
+      ),
+    );
+  }
+
+  /// Syncs all locally-saved game data to Firestore so everything
+  /// (progress, statistics, achievements, leaderboard) is consistent
+  /// across devices and the Firestore real-time listeners show the
+  /// correct values.
+  ///
+  /// Uses the LAST saved GameResultModel from Hive (which contains ALL
+  /// fields: durationSeconds, isBossWin, isDailyChallengeWin, gameType, etc.)
+  /// instead of creating a new incomplete model from widget parameters.
+  Future<void> _syncGameDataToFirebase() async {
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return;
 
+    final userId = user.uid;
     final userName = user.displayName ?? user.email?.split('@').first ?? 'User';
-    final xpState = ref.read(xpProvider);
 
-    await ref.read(leaderboardProvider.notifier).updateUserStats(
-      userId: user.uid,
-      userName: userName,
-      xp: xpState.currentXP,
-      score: widget.score,
-      level: xpState.currentLevel,
-    );
+    try {
+      final statisticsRepo = StatisticsRepository();
 
+      // ── 1. Read the FULL result from Hive (saved by GameService or mode screens) ──
+      // This preserves ALL fields: durationSeconds, isBossWin, isDailyChallengeWin,
+      // gameType, difficulty, etc. — unlike the old approach that created a new
+      // incomplete GameResultModel from widget params.
+      final results = await statisticsRepo.getResults();
+      var result = results.isNotEmpty ? results.first : null;
+
+      // Fallback for mode screens that did not save to StatisticsRepository locally.
+      // E.g., Grammar Detective, Story Completion without repo call, etc.
+      if (result == null || DateTime.now().difference(result.completedTime).inSeconds > 10) {
+        result = GameResultModel(
+          score: widget.score,
+          correctAnswers: widget.correctAnswers,
+          wrongAnswers: widget.wrongAnswers,
+          earnedXP: widget.earnedXP,
+          earnedCoins: widget.earnedCoins,
+          gameType: widget.gameMode,
+          completedTime: DateTime.now(),
+        );
+        await statisticsRepo.saveResult(result);
+      }
+
+      if (result != null) {
+        // Upload complete result with ALL 11 fields preserved
+        final data = result.toFirestoreMap();
+        data['userId'] = userId;
+        await FirebaseFirestore.instance
+            .collection('game_statistics')
+            .add(data);
+
+	        debugPrint('✅ Game result uploaded to Firebase (score: ${result.score}, '
+            'correct: ${result.correctAnswers}, wrong: ${result.wrongAnswers}, '
+            'xp: ${result.earnedXP}, coins: ${result.earnedCoins}, '
+            'gameType: ${result.gameType}, duration: ${result.durationSeconds}s, '
+            'isBossWin: ${result.isBossWin}, isDailyChallengeWin: ${result.isDailyChallengeWin})');
+      }
+
+      // ── 2. Upload meta statistics (boss wins, daily wins, time played) ──
+      await statisticsRepo.uploadMetaToFirestore(userId);
+
+      // ── 3. Save game_progress (XP, coins, level, streak) ──
+      final progressRepo = ProgressRepository();
+      final localProgress = progressRepo.getProgress();
+      if (localProgress != null) {
+        final updatedProgress = localProgress.copyWith(userId: userId);
+        await progressRepo.uploadProgressToFirestore(updatedProgress);
+      }
+
+      // ── 4. Save achievements to Firestore ──
+      final achievementRepo = AchievementRepository();
+      final localAchievements = achievementRepo.getCachedAchievements();
+      if (localAchievements.isNotEmpty) {
+        await achievementRepo.batchUploadToFirestore(userId, localAchievements);
+      }
+
+      // ── 5. Update leaderboard ──
+      await ref.read(leaderboardProvider.notifier).updateUserStats(
+            userId: userId,
+            userName: userName,
+            xp: localProgress?.currentXP ?? widget.earnedXP,
+            score: widget.score,
+            level: localProgress?.currentLevel ?? 1,
+            photoUrl: user.photoURL ?? '',
+          );
+
+      debugPrint('✅ Game data synced to Firebase after game completion');
+    } catch (e) {
+      debugPrint('❌ Error syncing game data to Firebase: $e');
+    }
+  }
+
+  void _updateLeaderboard() async {
     // Refresh XP & coin providers so stats are up-to-date
     if (mounted) {
       ref.read(xpProvider.notifier).refresh();
@@ -232,35 +428,35 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
 
   void _retryGame(BuildContext context, WidgetRef ref) {
     // If coming from a special game mode, go back to it
-    if (widget.gameMode == 'word_match') {
+    if (widget.gameMode == 'wordMatch') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const WordMatchModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'quick_quiz') {
+    if (widget.gameMode == 'quickQuiz') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const QuickQuizModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'fill_in_blanks') {
+    if (widget.gameMode == 'fillInBlank') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const FillInBlanksModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'sentence_builder') {
+    if (widget.gameMode == 'sentenceBuilder') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const SentenceBuilderModeScreen()),
       );
       return;
     }
-    if (widget.gameMode == 'grammar_detective') {
+    if (widget.gameMode == 'grammarDetective') {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const GrammarDetectiveModeScreen()),
@@ -271,6 +467,13 @@ class _ResultScreenState extends ConsumerState<ResultScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const FlashcardsModeScreen()),
+      );
+      return;
+    }
+    if (widget.gameMode == 'verbLearning') {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const VerbLearningModeScreen()),
       );
       return;
     }

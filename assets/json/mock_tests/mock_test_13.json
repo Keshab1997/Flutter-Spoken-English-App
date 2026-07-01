@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_13",
+  "testNumber": 13,
+  "title": "Mock Test 13 - Do/Does/Did",
+  "description": "এই টেস্টে Do/Does/Did-এর সঠিক ব্যবহার নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "'Do' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'do' used?)",
+      "options": [
+        "He, She, It-এর সাথে",
+        "I, We, You, They-এর সাথে",
+        "শুধু I-এর সাথে",
+        "সব subject-এর সাথে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Do' ব্যবহার হয়: I, We, You, They (plural subjects) এর সাথে। যেমন: I do my work, They do their homework, We do exercise। 'He do' → ভুল।"
+    },
+    {
+      "question": "'Does' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'does' used?)",
+      "options": [
+        "I, We, You, They-এর সাথে",
+        "He, She, It ও singular noun-এর সাথে",
+        "শুধু plural noun-এর সাথে",
+        "সব subject-এর সাথে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Does' ব্যবহার হয়: He, She, It এবং singular noun (The boy, My mother) এর সাথে। যেমন: He does his work, She does cooking, The boy does well।"
+    },
+    {
+      "question": "Present Indefinite-এ Negative বাক্য তৈরি করতে 'do/does' এর পর কী বসে?",
+      "options": [
+        "V1 (base form)",
+        "V2 (past form)",
+        "V+ing",
+        "to + V1"
+      ],
+      "correctIndex": 0,
+      "explanation": "Do/Does + not + V1 (base form)। 'Do/Does' ইতিমধ্যে tense ও person নির্দেশ করে, তাই মূল verb-এর V1 (base form) হয়। যেমন: I do not (don't) like, He does not (doesn't) go।"
+    },
+    {
+      "question": "Present Indefinite-এ Question করতে 'do/does' কোথায় বসে?",
+      "options": [
+        "বাক্যের শেষে",
+        "Subject-এর পরে",
+        "বাক্যের শুরুতে (Subject-এর আগে)",
+        "কোনোটিই নয়"
+      ],
+      "correctIndex": 2,
+      "explanation": "Question: Do/Does + Subject + V1? যেমন: Do you like tea? Does he play cricket? 'Do/Does' বাক্যের শুরুতে বসে।"
+    },
+    {
+      "question": "'Did' কখন ব্যবহার করা হয়? (When is 'did' used?)",
+      "options": [
+        "Present Tense-এ",
+        "Past Tense-এ (সব subject-এর জন্য)",
+        "Future Tense-এ",
+        "শুধু I-এর সাথে Past-এ"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Did' Past Indefinite-এ সব subject-এর জন্য ব্যবহার হয় (I did, He did, They did)। এটি ইতিমধ্যে past tense নির্দেশ করে, তাই মূল verb V1 (base form) হয়। যেমন: I did not go, Did he come?"
+    },
+    {
+      "question": "I ___ not like cold weather. (আমি ঠান্ডা আবহাওয়া পছন্দ করি না)",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "am"
+      ],
+      "correctIndex": 0,
+      "explanation": "I → do। Negative: I do not (don't) like। Present Indefinite-এ I-এর সাথে 'do' হয়।"
+    },
+    {
+      "question": "He ___ not speak Bangla. (সে বাংলা বলে না)",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "is"
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → does। Negative: He does not (doesn't) speak। Verb 'speak' V1-এ আছে (speak → speaks না, কারণ does-এর পরে V1 হয়)।"
+    },
+    {
+      "question": "___ you like coffee? (তুমি কি কফি পছন্দ কর?)",
+      "options": [
+        "Do",
+        "Does",
+        "Did",
+        "Are"
+      ],
+      "correctIndex": 0,
+      "explanation": "You → do। Question: Do + subject + V1? 'Do you like coffee?' — Present Indefinite question।"
+    },
+    {
+      "question": "___ she go to school every day? (সে কি প্রতিদিন স্কুলে যায়?)",
+      "options": [
+        "Do",
+        "Does",
+        "Did",
+        "Is"
+      ],
+      "correctIndex": 1,
+      "explanation": "She (singular) → does। Question: Does + subject + V1? 'Does she go to school every day?'"
+    },
+    {
+      "question": "I ___ not see him yesterday. (আমি গতকাল তাকে দেখিনি)",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "am"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Yesterday' = অতীত। Past Indefinite Negative: did + not + V1। 'I did not (didn't) see him yesterday.'"
+    },
+    {
+      "question": "Error Detection: 'He don't like tea.' — ভুল অংশ কোনটি?",
+      "options": [
+        "He",
+        "don't",
+        "like",
+        "tea"
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → doesn't (does not), don't নয়। সঠিক: 'He doesn't like tea.'"
+    },
+    {
+      "question": "Error Detection: 'Does they play football?' — ভুল অংশ কোনটি?",
+      "options": [
+        "Does",
+        "they",
+        "play",
+        "football"
+      ],
+      "correctIndex": 0,
+      "explanation": "They (plural) → Do, Does নয়। সঠিক: 'Do they play football?'"
+    },
+    {
+      "question": "Error Detection: 'She did not went to school yesterday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "did not",
+        "went",
+        "to school"
+      ],
+      "correctIndex": 2,
+      "explanation": "Did (past) এর পরে V1 (base form) হয়, V2 নয়। 'Went' → 'go' হবে। সঠিক: 'She did not go to school yesterday.'"
+    },
+    {
+      "question": "Error Detection: 'Did you saw him last night?' — ভুল অংশ কোনটি?",
+      "options": [
+        "Did",
+        "you",
+        "saw",
+        "last night"
+      ],
+      "correctIndex": 2,
+      "explanation": "Did দিয়ে question করলে V1 (base form) হয়। 'Saw' (V2) → 'see' (V1) হবে। সঠিক: 'Did you see him last night?'"
+    },
+    {
+      "question": "Fill in the blank: 'She ___ not like spicy food.' (সে মশলাদার খাবার পছন্দ করে না)",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "is"
+      ],
+      "correctIndex": 1,
+      "explanation": "She (3rd person singular) → does। 'She does not (doesn't) like spicy food.'"
+    },
+    {
+      "question": "Fill in the blank: '___ you finish your homework last night?' (তুমি কি গত রাতে বাড়ির কাজ শেষ করেছিলে?)",
+      "options": [
+        "Do",
+        "Does",
+        "Did",
+        "Are"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Last night' = অতীত। Past question: Did + subject + V1? 'Did you finish your homework last night?'"
+    },
+    {
+      "question": "Fill in the blank: 'We ___ not have any money right now.' (আমাদের কাছে এখন কোনো টাকা নেই)",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "are"
+      ],
+      "correctIndex": 0,
+      "explanation": "We → do। Present Indefinite Negative: do + not + V1। 'We do not (don't) have any money right now.'"
+    },
+    {
+      "question": "Fill in the blank: 'Why ___ he look so tired?' (সে এত ক্লান্ত দেখাচ্ছে কেন?)",
+      "options": [
+        "do",
+        "does",
+        "did",
+        "is"
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → does। Wh-question: Why + does + subject + V1? 'Why does he look so tired?'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে কি প্রতিদিন সকালে ওঠে?'",
+      "options": [
+        "Do she wake up every morning?",
+        "Does she wake up every morning?",
+        "Did she wake up every morning?",
+        "Is she wake up every morning?"
+      ],
+      "correctIndex": 1,
+      "explanation": "She → does। Present Indefinite Question: Does + subject + V1? 'Does she wake up every morning?' (wakes না, কারণ does-এর পরে V1)"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি গতকাল তাকে ফোন করিনি।'",
+      "options": [
+        "I do not call him yesterday.",
+        "I does not call him yesterday.",
+        "I did not call him yesterday.",
+        "I did not called him yesterday."
+      ],
+      "correctIndex": 2,
+      "explanation": "'গতকাল' (yesterday) = অতীত। Past Negative: did + not + V1 (call, called নয়)। সঠিক: 'I did not call him yesterday.'"
+    }
+  ]
+}

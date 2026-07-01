@@ -6,8 +6,12 @@ import 'core/theme/light_theme.dart';
 import 'core/theme/dark_theme.dart';
 import 'services/hive_service.dart';
 import 'services/notification_service.dart';
+import 'package:workmanager/workmanager.dart';
+import 'services/workmanager_tasks.dart';
+import 'services/remote_config_service.dart';
 import 'providers/theme_provider.dart';
 import 'features/auth/screens/splash_screen.dart';
+import 'routes/app_routes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,6 +36,41 @@ void main() async {
   await NotificationService().initialize();
   // Reschedule daily notifications on app open
   await NotificationService().rescheduleOnAppOpen();
+
+  // Initialize WorkManager for background notification tasks
+  await Workmanager().initialize(
+    workmanagerCallbackDispatcher,
+    isInDebugMode: false,
+  );
+
+  // Register periodic admin sync task
+  await Workmanager().registerPeriodicTask(
+    'adminSync',
+    adminSyncTaskName,
+    frequency: const Duration(minutes: 15),
+    constraints: Constraints(
+      networkType: NetworkType.connected,
+    ),
+    existingWorkPolicy: ExistingWorkPolicy.keep,
+  );
+
+  // Register daily re-engagement check task
+  await Workmanager().registerPeriodicTask(
+    'reEngagement',
+    reEngagementTaskName,
+    frequency: const Duration(hours: 24),
+    constraints: Constraints(
+      networkType: NetworkType.connected,
+    ),
+    existingWorkPolicy: ExistingWorkPolicy.keep,
+  );
+
+  // Track app open for re-engagement logic
+  await HiveService.setLastAppOpenDate(DateTime.now());
+
+  // Pre-warm remote config cache on app start
+  RemoteConfigService.seedDefaultConfig();
+
   runApp(
     const ProviderScope(
       child: MyApp(),
@@ -52,6 +91,7 @@ class MyApp extends ConsumerWidget {
       darkTheme: darkTheme,
       themeMode: themeMode,
       home: const SplashScreen(),
+      onGenerateRoute: AppRoutes.generateRoute,
     );
   }
 }

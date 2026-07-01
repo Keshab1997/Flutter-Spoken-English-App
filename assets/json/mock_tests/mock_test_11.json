@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_11",
+  "testNumber": 11,
+  "title": "Mock Test 11 - Am/Is/Are (To be)",
+  "description": "এই টেস্টে To be verb (am, is, are) এর সঠিক ব্যবহার নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "'To be' verb-এর Present রূপগুলো কী কী? (What are the present forms of 'To be' verb?)",
+      "options": [
+        "am, is, are",
+        "was, were",
+        "be, being, been",
+        "do, does, did"
+      ],
+      "correctIndex": 0,
+      "explanation": "'To be' verb-এর Present রূপ: I → am, He/She/It → is, We/You/They → are। যেমন: I am a student, She is a teacher, They are happy।"
+    },
+    {
+      "question": "'To be' verb কখন ব্যবহার করা হয়? (When is 'To be' verb used?)",
+      "options": [
+        "কাজ করার সময়",
+        "অবস্থা, পরিচয়, অবস্থান, বর্ণনা বুঝাতে",
+        "অতীতের কাজ বুঝাতে",
+        "ভবিষ্যতের পরিকল্পনা বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'To be' verb ব্যবহার হয়: (১) পরিচয় — I am a doctor, (২) অবস্থা/অবস্থান — He is in the room, (৩) বর্ণনা — She is beautiful, (৪) পেশা — They are teachers, (৫) বয়স — I am 25 years old।"
+    },
+    {
+      "question": "'Am' কাদের সাথে ব্যবহার করা হয়? (With which subject is 'am' used?)",
+      "options": [
+        "He/She/It-এর সাথে",
+        "We/You/They-এর সাথে",
+        "I-এর সাথে",
+        "সব subject-এর সাথে"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Am' শুধু 'I' (1st person singular) এর সাথে ব্যবহার হয়। যেমন: I am happy, I am a student, I am tired। 'I are' বা 'I is' → ভুল।"
+    },
+    {
+      "question": "'Is' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'is' used?)",
+      "options": [
+        "I-এর সাথে",
+        "He, She, It ও singular noun-এর সাথে",
+        "We, You, They-এর সাথে",
+        "সব subject-এর সাথে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Is' ব্যবহার হয়: He, She, It এবং singular noun (The boy, The book, My mother) এর সাথে। যেমন: He is tall, She is kind, The book is interesting."
+    },
+    {
+      "question": "'Are' কাদের সাথে ব্যবহার করা হয়? (With which subjects is 'are' used?)",
+      "options": [
+        "I-এর সাথে",
+        "He/She/It-এর সাথে",
+        "We, You, They ও plural noun-এর সাথে",
+        "কোনোটির সাথেই না"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Are' ব্যবহার হয়: We, You, They এবং plural noun (The boys, The books, The students) এর সাথে। যেমন: We are friends, You are kind, The books are new।"
+    },
+    {
+      "question": "I ___ a student. (আমি একজন ছাত্র)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 0,
+      "explanation": "I (1st person singular) এর সাথে 'am' হয়। 'I am a student' — এটি পরিচয় বোঝাচ্ছে।"
+    },
+    {
+      "question": "She ___ very intelligent. (সে খুবই বুদ্ধিমান)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 1,
+      "explanation": "She (3rd person singular) এর সাথে 'is' হয়। 'She is very intelligent' — এটি একটি বর্ণনা (description)।"
+    },
+    {
+      "question": "They ___ in the park. (তারা পার্কে আছে)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 2,
+      "explanation": "They (3rd person plural) এর সাথে 'are' হয়। 'They are in the park' — এটি অবস্থান (location) বোঝাচ্ছে।"
+    },
+    {
+      "question": "The children ___ very happy today. (বাচ্চারা আজ খুব খুশি)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 2,
+      "explanation": "The children = plural subject, তাই 'are' হবে। 'The children are very happy' — এটি অবস্থা/অবস্থা বোঝাচ্ছে।"
+    },
+    {
+      "question": "My mother ___ a teacher. (আমার মা একজন শিক্ষিকা)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 1,
+      "explanation": "My mother = singular noun (3rd person singular) → is। 'My mother is a teacher' — এটি পেশা/পরিচয় বোঝাচ্ছে।"
+    },
+    {
+      "question": "Error Detection: 'I is very tired.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "is",
+        "very",
+        "tired"
+      ],
+      "correctIndex": 1,
+      "explanation": "I এর সাথে সবসময় 'am' হয়, 'is' নয়। সঠিক: 'I am very tired.'"
+    },
+    {
+      "question": "Error Detection: 'She are a good student.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "are",
+        "a good student",
+        "কোনো ভুল নেই"
+      ],
+      "correctIndex": 1,
+      "explanation": "She (3rd person singular) এর সাথে 'is' হবে, 'are' নয়। সঠিক: 'She is a good student.'"
+    },
+    {
+      "question": "Error Detection: 'They is playing in the garden.' — ভুল অংশ কোনটি?",
+      "options": [
+        "They",
+        "is",
+        "playing",
+        "in the garden"
+      ],
+      "correctIndex": 1,
+      "explanation": "They (plural) এর সাথে 'are' হবে, 'is' নয়। সঠিক: 'They are playing in the garden.'"
+    },
+    {
+      "question": "Error Detection: 'You is my best friend.' — ভুল অংশ কোনটি?",
+      "options": [
+        "You",
+        "is",
+        "my best",
+        "friend"
+      ],
+      "correctIndex": 1,
+      "explanation": "You (singular/plural উভয়ই) এর সাথে সবসময় 'are' হয়। 'You is' → ভুল। সঠিক: 'You are my best friend.'"
+    },
+    {
+      "question": "Fill in the blank: 'I ___ not afraid of anything.' (আমি কোনোকিছুতে ভয় পাই না)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 0,
+      "explanation": "I এর সাথে 'am'। Negative: I am not। সঠিক: 'I am not afraid of anything.'"
+    },
+    {
+      "question": "Fill in the blank: '___ he your brother?' (সে কি তোমার ভাই?)",
+      "options": [
+        "Am",
+        "Is",
+        "Are",
+        "Be"
+      ],
+      "correctIndex": 1,
+      "explanation": "Question form: Is + subject? He (singular) → Is। সঠিক: 'Is he your brother?'"
+    },
+    {
+      "question": "Fill in the blank: 'The weather ___ beautiful today.' (আজকের আবহাওয়া সুন্দর)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 1,
+      "explanation": "The weather = uncountable/singular noun → is। 'The weather is beautiful today' — এটি বর্ণনা (description)।"
+    },
+    {
+      "question": "Fill in the blank: 'Where ___ you from?' (তুমি কোথায় থেকে এসেছ?)",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "correctIndex": 2,
+      "explanation": "You এর সাথে 'are' হয়। Question: Where + are + subject? সঠিক: 'Where are you from?'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে একজন সৎ লোক।'",
+      "options": [
+        "He am an honest man.",
+        "He is an honest man.",
+        "He are an honest man.",
+        "He be an honest man."
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) → is। 'An honest man' — honest-এ 'h' silent, তাই 'an'। সঠিক: 'He is an honest man.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তারা কি প্রস্তুত?'",
+      "options": [
+        "Is they ready?",
+        "Am they ready?",
+        "Are they ready?",
+        "They are ready?"
+      ],
+      "correctIndex": 2,
+      "explanation": "They (plural) → are। Question: Are + subject + adjective? সঠিক: 'Are they ready?'"
+    }
+  ]
+}

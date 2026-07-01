@@ -29,6 +29,23 @@ class ProgressNotifier extends StateNotifier<AsyncValue<ProgressModel?>> {
     }
   }
 
+  Future<void> syncStreak(int streak) async {
+    final user = _auth.currentUser;
+    if (user == null) return;
+
+    try {
+      final currentProgress = state.asData?.value;
+      if (currentProgress?.streakDays == streak) return;
+
+      await _firestore.collection('progress').doc(user.uid).set({
+        'streakDays': streak,
+        'lastActiveDate': Timestamp.fromDate(DateTime.now()),
+      }, SetOptions(merge: true));
+
+      await fetchProgress();
+    } catch (_) {}
+  }
+
   Future<void> updateStreak() async {
     final user = _auth.currentUser;
     if (user == null) return;
@@ -46,9 +63,13 @@ class ProgressNotifier extends StateNotifier<AsyncValue<ProgressModel?>> {
           currentProgress.lastActiveDate.day,
         );
         final diff = today.difference(lastActive).inDays;
-        if (diff == 1) {
-          newStreak++;
-        } else if (diff > 1) {
+        
+        // 🐛 FIX: Proper calendar day logic
+        if (diff >= 2) {
+          newStreak = 1;
+        } else if (diff == 1) {
+          newStreak = newStreak == 0 ? 1 : newStreak + 1;
+        } else if (diff == 0 && newStreak == 0) {
           newStreak = 1;
         }
       } else {
@@ -63,7 +84,7 @@ class ProgressNotifier extends StateNotifier<AsyncValue<ProgressModel?>> {
         'speakingScore': currentProgress?.speakingScore ?? 0,
         'studyTime': currentProgress?.studyTime ?? 0,
         'completedLessonIds': currentProgress?.completedLessonIds ?? [],
-      });
+      }, SetOptions(merge: true)); // Use merge to prevent overwriting missing fields
 
       await fetchProgress();
     } catch (_) {}

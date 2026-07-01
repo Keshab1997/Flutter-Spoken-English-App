@@ -18,8 +18,12 @@ final grammarAssetPathsProvider = FutureProvider<List<String>>((ref) async {
     ..sort();
 });
 
+/// Loads all grammar chapters from local JSON assets.
+/// JSON files contain full structured data (topics, formulas, rules, etc.),
+/// unlike Firestore which only stores simplified content.
 final allGrammarChaptersProvider =
     FutureProvider<List<GrammarChapter>>((ref) async {
+  debugPrint('📚 Loading grammar from JSON assets');
   await _bustOldCache();
   final paths = await ref.watch(grammarAssetPathsProvider.future);
 
@@ -34,6 +38,7 @@ final allGrammarChaptersProvider =
 
   final chapters = results.whereType<GrammarChapter>().toList();
   chapters.sort((a, b) => a.chapter.compareTo(b.chapter));
+  debugPrint('📚 Loaded ${chapters.length} grammar chapters from JSON assets');
   return chapters;
 });
 
@@ -62,3 +67,9 @@ final chaptersByLevelProvider =
     return map;
   });
 });
+
+/// Reloads grammar chapters by invalidating the provider.
+Future<void> refreshGrammarChapters(WidgetRef ref) async {
+  ref.invalidate(allGrammarChaptersProvider);
+  await ref.read(allGrammarChaptersProvider.future);
+}

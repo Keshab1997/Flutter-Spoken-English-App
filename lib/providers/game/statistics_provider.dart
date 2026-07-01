@@ -126,6 +126,7 @@ class StatisticsNotifier extends StateNotifier<StatisticsState> {
     _startRealtimeListeners();
   }
 
+  /// Initial load from Hive (fast startup).
   Future<void> _refresh() async {
     final summary = await _statisticsService.getFullSummary();
     state = StatisticsState(
@@ -155,63 +156,144 @@ class StatisticsNotifier extends StateNotifier<StatisticsState> {
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
     if (_currentUserId == null || _currentUserId!.isEmpty) return;
 
-    // Listen to progress updates
+    // ── 1. game_progress listener ──
+    // Reads currentXP, currentLevel, totalCoins, streak directly from Firebase.
     _progressSubscription = FirebaseFirestore.instance
         .collection('game_progress')
         .doc(_currentUserId!)
         .snapshots()
-        .listen((snapshot) {
-      if (snapshot.exists && snapshot.data() != null) {
-        final data = snapshot.data() as Map<String, dynamic>;
-        state = state.copyWith(
-          currentLevel: data['currentLevel'] as int? ?? state.currentLevel,
-          currentXP: data['currentXP'] as int? ?? state.currentXP,
-          currentCoins: data['totalCoins'] as int? ?? state.currentCoins,
-          currentStreak: data['streak'] as int? ?? state.currentStreak,
-          bestStreak: data['longestStreak'] as int? ?? state.bestStreak,
-        );
+        .listen((snapshot) async {
+      if (!snapshot.exists) {
+        _refresh();
+        return;
       }
+      final data = snapshot.data();
+      if (data == null) {
+        _refresh();
+        return;
+      }
+
+      // Update state directly from Firestore snapshot
+      state = state.copyWith(
+        currentXP: data['currentXP'] as int? ?? state.currentXP,
+        currentLevel: data['currentLevel'] as int? ?? state.currentLevel,
+        currentCoins: data['totalCoins'] as int? ?? state.currentCoins,
+        currentStreak: data['streak'] as int? ?? state.currentStreak,
+        bestStreak: data['longestStreak'] as int? ?? state.bestStreak,
+      );
+
+      // Background sync to Hive for offline support
+      try {
+        await _statisticsService.syncProgressFromFirestoreToHive(_currentUserId!);
+      } catch (_) {}
     });
 
-    // Listen to meta statistics updates
+    // ── 2. game_statistics_meta listener ──
+    // Reads bossWins, dailyChallengeWins, timePlayedSeconds directly.
     _metaSubscription = FirebaseFirestore.instance
         .collection('game_statistics_meta')
         .doc(_currentUserId!)
         .snapshots()
-        .listen((snapshot) {
-      if (snapshot.exists && snapshot.data() != null) {
-        final data = snapshot.data() as Map<String, dynamic>;
-        final timePlayedSec = data['timePlayedSeconds'] as int? ?? 0;
-        
-        state = state.copyWith(
-          bossWins: data['bossWins'] as int? ?? 0,
-          dailyChallengeWins: data['dailyChallengeWins'] as int? ?? 0,
-          timePlayedSeconds: timePlayedSec,
-          timePlayedFormatted: _formatDuration(timePlayedSec),
-        );
+        .listen((snapshot) async {
+      if (!snapshot.exists) {
+        _refresh();
+        return;
       }
+      final data = snapshot.data();
+      if (data == null) {
+        _refresh();
+        return;
+      }
+
+      final int timeSecs = data['timePlayedSeconds'] as int? ?? 0;
+
+      state = state.copyWith(
+        bossWins: data['bossWins'] as int? ?? state.bossWins,
+        dailyChallengeWins: data['dailyChallengeWins'] as int? ?? state.dailyChallengeWins,
+        timePlayedSeconds: timeSecs,
+        timePlayedFormatted: _formatTimePlayed(timeSecs),
+      );
+
+      // Background sync to Hive
+      try {
+        await _statisticsService.syncMetaFromFirestoreToHive(_currentUserId!);
+      } catch (_) {}
     });
 
-    // Listen to new game results
+    // ── 3. game_statistics listener ──
+    // Aggregates game results (total games, XP, coins, accuracy) directly.
     _resultsSubscription = FirebaseFirestore.instance
         .collection('game_statistics')
         .where('userId', isEqualTo: _currentUserId!)
         .snapshots()
-        .listen((snapshot) {
-      // When a new result is added, we refresh the whole summary to ensure
-      // all aggregated stats (accuracy, total games, etc.) are correct.
-      _refresh();
+        .listen((snapshot) async {
+      if (snapshot.docChanges.isEmpty) {
+        _refresh();
+        return;
+      }
+
+      // Aggregate directly from Firestore snapshot data
+      final docs = snapshot.docs;
+      int totalGames = docs.length;
+      int totalCorrect = 0;
+      int totalWrong = 0;
+      int totalXP = 0;
+      int totalCoins = 0;
+      int highestScore = 0;
+
+      for (final doc in docs) {
+        final d = doc.data();
+        final correct = d['correctAnswers'] as int? ?? 0;
+        final wrong = d['wrongAnswers'] as int? ?? 0;
+        totalCorrect += correct;
+        totalWrong += wrong;
+        totalXP += d['earnedXP'] as int? ?? 0;
+        totalCoins += d['earnedCoins'] as int? ?? 0;
+        final score = d['score'] as int? ?? 0;
+        if (score > highestScore) highestScore = score;
+      }
+
+      final totalQuestions = totalCorrect + totalWrong;
+      final accuracy = totalQuestions > 0 ? totalCorrect / totalQuestions : 0.0;
+      final avgScore = totalGames > 0 ? (totalXP / totalGames) : 0.0;
+      final rating = _computeRating(accuracy);
+
+      state = state.copyWith(
+        totalGamesPlayed: totalGames,
+        totalCorrectAnswers: totalCorrect,
+        totalWrongAnswers: totalWrong,
+        overallAccuracy: accuracy,
+        totalEarnedXP: totalXP,
+        totalEarnedCoins: totalCoins,
+        highestScore: highestScore,
+        averageScore: avgScore,
+        performanceRating: rating,
+      );
+
+      // Background sync to Hive
+      try {
+        await _statisticsService.syncResultsFromFirestoreToHive(_currentUserId!);
+      } catch (_) {}
     });
   }
 
-  String _formatDuration(int seconds) {
-    if (seconds <= 0) return '0m';
-    final hours = seconds ~/ 3600;
-    final minutes = (seconds % 3600) ~/ 60;
+  /// Formats seconds into a human-readable string like "12m 30s".
+  String _formatTimePlayed(int totalSeconds) {
+    if (totalSeconds <= 0) return '0m';
+    final hours = totalSeconds ~/ 3600;
+    final minutes = (totalSeconds % 3600) ~/ 60;
     if (hours > 0) {
       return '${hours}h ${minutes}m';
     }
     return '${minutes}m';
+  }
+
+  String _computeRating(double accuracy) {
+    if (accuracy >= 0.95) return 'Excellent';
+    if (accuracy >= 0.85) return 'Great';
+    if (accuracy >= 0.70) return 'Good';
+    if (accuracy >= 0.50) return 'Fair';
+    return 'Needs Practice';
   }
 
   /// Public refresh hook so providers that mutate progress (XP, coins,

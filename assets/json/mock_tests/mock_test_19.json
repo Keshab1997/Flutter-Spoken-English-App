@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_19",
+  "testNumber": 19,
+  "title": "Mock Test 19 - Countable vs Uncountable Nouns",
+  "description": "এই টেস্টে Countable vs Uncountable Nouns নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "Countable Noun কী? (What is a countable noun?)",
+      "options": [
+        "যে noun গণনা করা যায় না",
+        "যে noun গণনা করা যায় এবং singular/plural হয়",
+        "যে noun সবসময় singular থাকে",
+        "যে noun কেবল plural হয়"
+      ],
+      "correctIndex": 1,
+      "explanation": "Countable noun = যে noun গণনা করা যায় এবং এর singular ও plural রূপ আছে। যেমন: book → books, apple → apples, person → people। 'One book, two books' বলা যায়।"
+    },
+    {
+      "question": "Uncountable Noun কী? (What is an uncountable noun?)",
+      "options": [
+        "যে noun গণনা করা যায় এবং plural হয়",
+        "যে noun গণনা করা যায় না এবং সাধারণত plural হয় না",
+        "যে noun সবসময় 'a/an' নেয়",
+        "যে noun কেবল plural হয়"
+      ],
+      "correctIndex": 1,
+      "explanation": "Uncountable noun = যে noun গণনা করা যায় না এবং এর সাধারণত plural form নেই। যেমন: water, rice, air, money, information, advice। 'Two waters' বলা যায় না, 'some water' বলতে হয়।"
+    },
+    {
+      "question": "'Many' আর 'Much'-এর মধ্যে পার্থক্য কী?",
+      "options": [
+        "Many = countable-এর সাথে, Much = uncountable-এর সাথে",
+        "Many = uncountable-এর সাথে, Much = countable-এর সাথে",
+        "দুটোই সব noun-এর সাথে ব্যবহার করা যায়",
+        "Many = plural, Much = singular"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Many' = countable noun-এর সাথে (many books, many people, many chairs)। 'Much' = uncountable noun-এর সাথে (much water, much time, much money)।"
+    },
+    {
+      "question": "'Few' আর 'Little'-এর মধ্যে পার্থক্য কী?",
+      "options": [
+        "Few = countable-এর সাথে, Little = uncountable-এর সাথে",
+        "Few = uncountable-এর সাথে, Little = countable-এর সাথে",
+        "দুটোর মানে একই",
+        "Few = বেশি, Little = কম"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Few' = countable noun-এর সাথে (few people, few books) = অল্প/কম (প্রায় নেই)। 'Little' = uncountable noun-এর সাথে (little water, little time) = অল্প (পর্যাপ্ত নয়)।"
+    },
+    {
+      "question": "'A lot of' কোন noun-এর সাথে ব্যবহার করা যায়?",
+      "options": [
+        "শুধু countable-এর সাথে",
+        "শুধু uncountable-এর সাথে",
+        "countable ও uncountable উভয়ের সাথেই",
+        "শুধু plural-এর সাথে"
+      ],
+      "correctIndex": 2,
+      "explanation": "'A lot of' / 'Lots of' countable ও uncountable উভয় প্রকার noun-এর সাথেই ব্যবহার করা যায়। যেমন: a lot of books (countable), a lot of water (uncountable)।"
+    },
+    {
+      "question": "How ___ books do you have? (তোমার কতগুলো বই আছে?)",
+      "options": [
+        "many",
+        "much",
+        "a lot of",
+        "little"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Books' = countable → 'many'। 'How many books do you have?'"
+    },
+    {
+      "question": "How ___ sugar do you want in your tea? (চায়ে কত চিনি চাও?)",
+      "options": [
+        "many",
+        "much",
+        "few",
+        "a lot of"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Sugar' = uncountable → 'much'। 'How much sugar do you want in your tea?'"
+    },
+    {
+      "question": "I have ___ friends in this city. (এই শহরে আমার কিছু বন্ধু আছে)",
+      "options": [
+        "a little",
+        "a few",
+        "much",
+        "little"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Friends' = countable → 'a few' (কিছু সংখ্যক, positive অর্থে)। 'I have a few friends in this city.'"
+    },
+    {
+      "question": "There is ___ water in the glass. (গ্লাসে অল্প জল আছে)",
+      "options": [
+        "a few",
+        "a little",
+        "many",
+        "few"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Water' = uncountable → 'a little' (কিছুটা, positive অর্থে)। 'There is a little water in the glass.'"
+    },
+    {
+      "question": "I need ___ information about the course. (কোর্স সম্পর্কে আমার কিছু তথ্য দরকার)",
+      "options": [
+        "an",
+        "some",
+        "a few",
+        "many"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Information' = uncountable → 'some' ব্যবহার হয়। 'I need some information about the course.' (An information বা many information → ভুল)"
+    },
+    {
+      "question": "Error Detection: 'I have many money.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "have",
+        "many",
+        "money"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Money' = uncountable → 'much' বা 'a lot of' হবে, 'many' নয়। সঠিক: 'I have much money.' বা 'I have a lot of money.'"
+    },
+    {
+      "question": "Error Detection: 'She gave me an advice.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "gave me",
+        "an",
+        "advice"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Advice' = uncountable → 'an' (article) ব্যবহার করা যায় না। 'An advice' ×, 'some advice' ✓ বা 'a piece of advice' ✓।"
+    },
+    {
+      "question": "Error Detection: 'There are few water in the bottle.' — ভুল অংশ কোনটি?",
+      "options": [
+        "There are",
+        "few",
+        "water",
+        "in the bottle"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Water' = uncountable → 'There is' হবে, 'There are' নয়। সঠিক: 'There is little water in the bottle.' বা 'There is a little water in the bottle.'"
+    },
+    {
+      "question": "Error Detection: 'I bought three furnitures.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "bought",
+        "three furnitures",
+        "কোনো ভুল নেই"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Furniture' = uncountable noun → এর plural 'furnitures' হয় না। 'Three furniture' × → 'three pieces of furniture' ✓।"
+    },
+    {
+      "question": "Fill in the blank: 'She has ___ knowledge of English.' (তার ইংরেজিতে সামান্য জ্ঞান আছে)",
+      "options": [
+        "a few",
+        "a little",
+        "many",
+        "few"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Knowledge' = uncountable → 'a little'। 'She has a little knowledge of English.'"
+    },
+    {
+      "question": "Fill in the blank: 'How ___ people attended the meeting?' (মিটিংয়ে কতজন লোক উপস্থিত ছিল?)",
+      "options": [
+        "many",
+        "much",
+        "a lot of",
+        "little"
+      ],
+      "correctIndex": 0,
+      "explanation": "'People' = countable → 'many'। 'How many people attended the meeting?'"
+    },
+    {
+      "question": "Fill in the blank: 'I have ___ work to do.' (আমার অনেক কাজ আছে)",
+      "options": [
+        "many",
+        "a lot of",
+        "a few",
+        "few"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Work' = uncountable → 'a lot of' বা 'much' ব্যবহার হয়। 'I have a lot of work to do.'"
+    },
+    {
+      "question": "Fill in the blank: 'Can you give me ___ water?' (তুমি কি আমাকে কিছু জল দিতে পার?)",
+      "options": [
+        "a",
+        "an",
+        "some",
+        "many"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Water' = uncountable → 'some' ব্যবহার হয়। 'Can you give me some water?'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'টেবিলে কয়েকটি বই আছে।'",
+      "options": [
+        "There is a little book on the table.",
+        "There are a few books on the table.",
+        "There is few book on the table.",
+        "There are many books on the table."
+      ],
+      "correctIndex": 1,
+      "explanation": "'Books' = countable plural → 'a few' (কয়েকটি)। 'There are a few books on the table.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমার খুব কম সময় আছে।'",
+      "options": [
+        "I have a few time.",
+        "I have many time.",
+        "I have little time.",
+        "I have few time."
+      ],
+      "correctIndex": 2,
+      "explanation": "'Time' = uncountable → 'little' (অল্প, প্রায় নেই)। 'I have little time.' (a little = কিছু, কিন্তু 'little' = প্রায় নেই)"
+    }
+  ]
+}

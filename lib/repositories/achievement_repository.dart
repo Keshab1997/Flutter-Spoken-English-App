@@ -3,6 +3,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/game/achievement_model.dart';
+import '../utils/hive_safe.dart';
 
 class AchievementRepository {
   static const String _boxName = 'game_achievements';
@@ -32,8 +33,16 @@ class AchievementRepository {
 
   Future<void> cacheAchievements(List<AchievementModel> achievements) async {
     final box = await _ensureBox();
-    final maps = achievements.map((a) => a.toMap()).toList();
+    final maps = achievements.map((a) => HiveSafe.sanitizeMap(a.toMap())).toList();
     await box.put(_achievementsKey, maps);
+  }
+
+  Future<List<AchievementModel>> getAchievementsFromCache() async {
+    final box = await _ensureBox();
+    final raw = box.get(_achievementsKey, defaultValue: <Map<String, dynamic>>[]) as List;
+    return raw
+        .map((e) => AchievementModel.fromMap(Map<String, dynamic>.from(e as Map), ''))
+        .toList();
   }
 
   List<AchievementModel> getCachedAchievements() {
@@ -99,7 +108,7 @@ class AchievementRepository {
     data['userId'] = userId;
     await FirebaseFirestore.instance
         .collection(_firestoreCollection)
-        .doc(achievement.id)
+        .doc('${userId}_${achievement.id}')
         .set(data);
   }
 
@@ -108,7 +117,7 @@ class AchievementRepository {
     for (final achievement in achievements) {
       final ref = FirebaseFirestore.instance
           .collection(_firestoreCollection)
-          .doc(achievement.id);
+          .doc('${userId}_${achievement.id}');
       final data = achievement.toMap();
       data['userId'] = userId;
       batch.set(ref, data);
@@ -124,7 +133,33 @@ class AchievementRepository {
   }
 
   Future<void> syncFromFirestoreToHive(String userId) async {
-    final achievements = await fetchFromFirestore(userId);
-    await cacheAchievements(achievements);
+    // 1. Read local cache (always open box first — closed box ≠ empty cache)
+    var localAchievements = await getAchievementsFromCache();
+    if (localAchievements.isEmpty) {
+      localAchievements = await loadFromJson();
+      await cacheAchievements(localAchievements);
+    }
+    
+    // 2. Fetch achievements from Firestore (may have unlock status from other devices)
+    final firestoreAchievements = await fetchFromFirestore(userId);
+    if (firestoreAchievements.isEmpty) return;
+    
+    // 3. MERGE: For each Firestore achievement, update local copy's unlock status
+    for (final fa in firestoreAchievements) {
+      final index = localAchievements.indexWhere((la) => la.id == fa.id);
+      if (index >= 0) {
+        if (fa.unlocked) {
+          localAchievements[index] = localAchievements[index].copyWith(
+            unlocked: true,
+            unlockDate: fa.unlockDate,
+          );
+        }
+      } else {
+        localAchievements.add(fa);
+      }
+    }
+    
+    // 4. Save merged result back to Hive
+    await cacheAchievements(localAchievements);
   }
 }

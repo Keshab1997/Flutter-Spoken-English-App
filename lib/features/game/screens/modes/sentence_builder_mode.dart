@@ -216,25 +216,27 @@ class _SentenceBuilderModeScreenState extends ConsumerState<SentenceBuilderModeS
     await WrongQuestionRepository().saveWrongQuestions([wrongQuestion]);
   }
 
-  void _showResults() {
+  Future<void> _showResults() async {
     _timer?.cancel();
     
     final earnedXP = _score * 2;
     final earnedCoins = _score + min(_streak * 5, 50).toInt();
     
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (_) => ResultScreen(
-          score: _score,
-          correctAnswers: _correctCount,
-          wrongAnswers: _wrongCount,
-          earnedXP: earnedXP,
-          earnedCoins: earnedCoins,
-          gameMode: 'sentence_builder',
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => ResultScreen(
+            score: _score,
+            correctAnswers: _correctCount,
+            wrongAnswers: _wrongCount,
+            earnedXP: earnedXP,
+            earnedCoins: earnedCoins,
+            gameMode: 'sentenceBuilder',
+          ),
         ),
-      ),
-    );
+      );
+    }
   }
 
   @override

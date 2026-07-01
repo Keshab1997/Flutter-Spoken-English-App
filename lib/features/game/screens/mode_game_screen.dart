@@ -10,6 +10,8 @@ import '../../../../providers/game/achievement_provider.dart';
 import '../../../../providers/game/game_provider.dart';
 import '../../../../providers/game/sound_provider.dart';
 import '../../../../providers/game/streak_provider.dart';
+import '../../../../repositories/statistics_repository.dart';
+import '../../../../models/game/game_result_model.dart';
 import '../../../../core/widgets/explanation_widget.dart';
 import '../../../../core/widgets/game_widgets.dart';
 import '../../../../models/game/game_question_model.dart';
@@ -152,16 +154,16 @@ class _ModeGameScreenState extends ConsumerState<ModeGameScreen> with TickerProv
     }
   }
 
-  void _endGame() {
+  Future<void> _endGame() async {
     setState(() => _gameState = _gameState.copyWith(isGameOver: true, isTimerRunning: false));
     ref.read(timerProvider.notifier).resetTimer();
 
-    // Get game state for calculations
-    final gameState = ref.read(gameProvider);
-    final answeredCount = gameState.answeredCount;
-    final correctCount = _gameState.correctAnswers;
-    final wrongCount = answeredCount - correctCount;
+    final scoreState = ref.read(scoreProvider);
+    final correctCount = scoreState.correctCount;
+    final wrongCount = scoreState.wrongCount;
+    final answeredCount = correctCount + wrongCount;
     final accuracy = answeredCount > 0 ? correctCount / answeredCount : 0.0;
+    final gameMode = widget.modeType.name;
 
     // Calculate base rewards
     int xpEarned = (_gameState.score * 2) + (accuracy * 50).round();
@@ -219,30 +221,44 @@ class _ModeGameScreenState extends ConsumerState<ModeGameScreen> with TickerProv
     ref.read(streakProvider.notifier).recordActiveDay();
     ref.read(streakProvider.notifier).checkAndUpdateStreak();
 
+    // Save stats before checking achievements
+    try {
+      final repo = StatisticsRepository();
+      await repo.saveResult(GameResultModel(
+        score: _gameState.score,
+        correctAnswers: correctCount,
+        wrongAnswers: wrongCount,
+        earnedXP: xpEarned,
+        earnedCoins: coinsEarned,
+        gameType: gameMode,
+        completedTime: DateTime.now(),
+      ));
+    } catch (_) {}
+
     // Check achievements
-    ref.read(achievementProvider.notifier).checkGameAchievements(
+    await ref.read(achievementProvider.notifier).checkGameAchievements(
       score: _gameState.score,
       correctAnswers: correctCount,
       accuracy: accuracy,
+      gameMode: gameMode,
     );
 
     // Navigate to result screen
-    Future.delayed(const Duration(milliseconds: 500), () {
-      if (mounted) {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (_) => ResultScreen(
-              score: _gameState.score,
-              correctAnswers: correctCount,
-              wrongAnswers: wrongCount,
-              earnedXP: xpEarned,
-              earnedCoins: coinsEarned,
-            ),
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => ResultScreen(
+            score: _gameState.score,
+            correctAnswers: correctCount,
+            wrongAnswers: wrongCount,
+            earnedXP: xpEarned,
+            earnedCoins: coinsEarned,
+            gameMode: gameMode,
           ),
-        );
-      }
-    });
+        ),
+      );
+    }
   }
 
   @override

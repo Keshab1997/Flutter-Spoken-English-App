@@ -1,4 +1,7 @@
+import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import '../../services/xp_service.dart';
 import '../../repositories/statistics_repository.dart';
 import 'game_provider.dart';
@@ -11,13 +14,15 @@ class XpState {
   final int xpForNextLevel;
   final double levelProgress;
   final String levelTitle;
+  final String levelEmoji;
 
   const XpState({
     this.currentXP = 0,
     this.currentLevel = 1,
     this.xpForNextLevel = 100,
     this.levelProgress = 0.0,
-    this.levelTitle = 'Beginner',
+    this.levelTitle = 'Rookie',
+    this.levelEmoji = '🎯',
   });
 
   XpState copyWith({
@@ -26,6 +31,7 @@ class XpState {
     int? xpForNextLevel,
     double? levelProgress,
     String? levelTitle,
+    String? levelEmoji,
   }) {
     return XpState(
       currentXP: currentXP ?? this.currentXP,
@@ -33,19 +39,69 @@ class XpState {
       xpForNextLevel: xpForNextLevel ?? this.xpForNextLevel,
       levelProgress: levelProgress ?? this.levelProgress,
       levelTitle: levelTitle ?? this.levelTitle,
+      levelEmoji: levelEmoji ?? this.levelEmoji,
     );
   }
 }
 
 class XpNotifier extends StateNotifier<XpState> {
   final XpService _xpService;
+  StreamSubscription<DocumentSnapshot>? _progressSubscription;
 
   XpNotifier(this._xpService) : super(const XpState()) {
     _init();
+    _startFirestoreListener();
   }
 
   Future<void> _init() async {
+    // Initial load from Hive (fast, for immediate display)
     await _refresh();
+  }
+
+  /// Listens to Firestore [game_progress] document for real-time updates.
+  /// When data changes (e.g. from another device or after a game syncs),
+  /// the state is updated directly from Firebase — bypassing Hive.
+  void _startFirestoreListener() {
+    final userId = FirebaseAuth.instance.currentUser?.uid;
+    if (userId == null || userId.isEmpty) return;
+
+    _progressSubscription = FirebaseFirestore.instance
+        .collection('game_progress')
+        .doc(userId)
+        .snapshots()
+        .listen((snapshot) {
+      _updateFromFirestore(snapshot);
+    }, onError: (_) {
+      // Firestore unavailable — stay with current Hive-backed state
+    });
+  }
+
+  /// Reads XP/level directly from the Firestore snapshot and computes
+  /// derived values (progress, title, emoji) on the fly.
+  void _updateFromFirestore(DocumentSnapshot snapshot) {
+    if (!snapshot.exists) return;
+
+    final data = snapshot.data() as Map<String, dynamic>?;
+    if (data == null) return;
+
+    final int currentXP = data['currentXP'] as int? ?? 0;
+    final int currentLevel = data['currentLevel'] as int? ?? 1;
+
+    // Recompute level from XP (matches XpService logic)
+    final int computedLevel = currentXP > 0 ? (currentXP ~/ 100) + 1 : currentLevel;
+    final int xpForNextLevel = _xpService.getXPForNextLevel(computedLevel);
+    final double levelProgress = _xpService.getLevelProgressFor(computedLevel, currentXP);
+    final String levelTitle = _xpService.getLevelTitle(computedLevel);
+    final String levelEmoji = _xpService.getLevelEmoji(computedLevel);
+
+    state = XpState(
+      currentXP: currentXP,
+      currentLevel: computedLevel,
+      xpForNextLevel: xpForNextLevel,
+      levelProgress: levelProgress,
+      levelTitle: levelTitle,
+      levelEmoji: levelEmoji,
+    );
   }
 
   Future<void> _refresh() async {
@@ -53,12 +109,14 @@ class XpNotifier extends StateNotifier<XpState> {
     final currentLevel = await _xpService.getCurrentLevel();
     final levelProgress = await _xpService.getLevelProgress();
     final levelTitle = await _xpService.getCurrentLevelTitle();
+    final levelEmoji = await _xpService.getCurrentLevelEmoji();
     state = XpState(
       currentXP: currentXP,
       currentLevel: currentLevel,
       xpForNextLevel: _xpService.getXPForNextLevel(currentLevel),
       levelProgress: levelProgress,
       levelTitle: levelTitle,
+      levelEmoji: levelEmoji,
     );
   }
 
@@ -109,6 +167,12 @@ class XpNotifier extends StateNotifier<XpState> {
 
   void refresh() {
     _refresh();
+  }
+
+  @override
+  void dispose() {
+    _progressSubscription?.cancel();
+    super.dispose();
   }
 }
 

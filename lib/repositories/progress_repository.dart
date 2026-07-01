@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../models/game/game_progress_model.dart';
 import '../models/game/game_level_model.dart';
+import '../utils/hive_safe.dart';
 
 class ProgressRepository {
   static const String _boxName = 'game_progress';
@@ -47,7 +48,7 @@ class ProgressRepository {
 
   Future<void> saveProgress(GameProgressModel progress) async {
     final box = await _ensureBox();
-    await box.put(_progressKey, progress.toMap());
+    await box.put(_progressKey, HiveSafe.sanitizeMap(progress.toMap()));
   }
 
   GameProgressModel? getProgress() {

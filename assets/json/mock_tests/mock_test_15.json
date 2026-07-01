@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_15",
+  "testNumber": 15,
+  "title": "Mock Test 15 - Can/Cannot (Ability)",
+  "description": "এই টেস্টে Can/Cannot (Ability) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "'Can'-এর সঠিক ব্যবহার কোনটি? (What is the correct use of 'can'?)",
+      "options": [
+        "ক্ষমতা/সামর্থ্য বোঝাতে (ability)",
+        "অতীতের অভ্যাস বোঝাতে",
+        "ভবিষ্যতের পরিকল্পনা বোঝাতে",
+        "বাধ্যবাধকতা বোঝাতে"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Can' ব্যবহার হয়: (১) ক্ষমতা/সামর্থ্য (ability) — I can swim, (২) অনুমতি (permission) — Can I go? (৩) সম্ভাবনা (possibility) — It can rain today।"
+    },
+    {
+      "question": "'Cannot'-এর সংক্ষিপ্ত রূপ কী? (What is the contraction of 'cannot'?)",
+      "options": [
+        "can't",
+        "cannot't",
+        "cann't",
+        "ca'nt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cannot-এর সংক্ষিপ্ত রূপ: can't। যেমন: I cannot swim = I can't swim। মনে রাখবেন: can not (দুই শব্দ) → cannot (এক শব্দ) → can't (সংক্ষিপ্ত)।"
+    },
+    {
+      "question": "'Can' দিয়ে Question কিভাবে তৈরি হয়?",
+      "options": [
+        "Do + Subject + can?",
+        "Can + Subject + V1?",
+        "Is + Subject + can?",
+        "Subject + can + V1?"
+      ],
+      "correctIndex": 1,
+      "explanation": "Can Question: Can + Subject + V1 (base form)? যেমন: Can you swim? Can he drive? Can I come in? 'Can' সরাসরি subject-এর আগে বসে।"
+    },
+    {
+      "question": "'Can' এবং 'Can't' উচ্চারণে পার্থক্য কী?",
+      "options": [
+        "একই রকম উচ্চারণ",
+        "Can-এর 'a' লম্বা, Can't-এর 'a' ছোট",
+        "Can't-এ 't' স্পষ্ট উচ্চারিত হয়",
+        "শুধু বানানে পার্থক্য"
+      ],
+      "correctIndex": 1,
+      "explanation": "Can (সক্ষম) - উচ্চারণে 'a' লম্বা হয় (ক্যান)। Can't (না পারা) - উচ্চারণে 'a' ছোট হয় (কান্ট)। 't' স্পষ্ট করে বলতে হয় যাতে Can আর Can't-এর মধ্যে পার্থক্য বোঝা যায়।"
+    },
+    {
+      "question": "'Could' আর 'Can'-এর মধ্যে পার্থক্য কী?",
+      "options": [
+        "Could = অতীতের ক্ষমতা, Can = বর্তমানের ক্ষমতা",
+        "Could = বর্তমান, Can = অতীত",
+        "দুটোর মানে একই",
+        "Could = ভবিষ্যৎ, Can = বর্তমান"
+      ],
+      "correctIndex": 0,
+      "explanation": "Can = বর্তমানের ক্ষমতা (I can swim now)। Could = অতীতের ক্ষমতা (I could swim when I was five)। Could বর্তমানেও polite request-এর জন্য ব্যবহার হয়: Could you help me?"
+    },
+    {
+      "question": "I ___ swim very well. (আমি খুব ভালো সাঁতার কাটতে পারি)",
+      "options": [
+        "can",
+        "cannot",
+        "can't",
+        "am"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Very well' = খুব ভালো → ability/সক্ষমতা। সঠিক: 'I can swim very well.'"
+    },
+    {
+      "question": "She is only two years old. She ___ read. (সে মাত্র দুই বছরের। সে পড়তে পারে না)",
+      "options": [
+        "can",
+        "cannot",
+        "could",
+        "will"
+      ],
+      "correctIndex": 1,
+      "explanation": "২ বছরের শিশু পড়তে পারে না → inability। Cannot/can't সঠিক। 'She cannot read.' বা 'She can't read.'"
+    },
+    {
+      "question": "___ you help me with this bag? (তুমি কি আমাকে এই ব্যাগটি নিয়ে সাহায্য করতে পার?)",
+      "options": [
+        "Can",
+        "Cannot",
+        "Am",
+        "Do"
+      ],
+      "correctIndex": 0,
+      "explanation": "এটি একটি polite request। Question: Can + subject + V1? 'Can you help me with this bag?'"
+    },
+    {
+      "question": "I'm sorry, I ___ come to the party tonight. (আমি দুঃখিত, আজ রাতে পার্টিতে আসতে পারছি না)",
+      "options": [
+        "can",
+        "cannot",
+        "could",
+        "am"
+      ],
+      "correctIndex": 1,
+      "explanation": "'I'm sorry' = excuse দেওয়া। 'Cannot' = inability/অসমর্থতা। 'I cannot (can't) come to the party tonight.'"
+    },
+    {
+      "question": "He ___ speak three languages: Bangla, English and Hindi. (সে তিনটি ভাষায় কথা বলতে পারে: বাংলা, ইংরেজি ও হিন্দি)",
+      "options": [
+        "can",
+        "cannot",
+        "can't",
+        "is"
+      ],
+      "correctIndex": 0,
+      "explanation": "তিনটি ভাষায় কথা বলার ability/ক্ষমতা আছে → can। 'He can speak three languages.'"
+    },
+    {
+      "question": "Error Detection: 'I can to swim very fast.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "can to swim",
+        "very",
+        "fast"
+      ],
+      "correctIndex": 1,
+      "explanation": "Can-এর পরে সবসময় V1 (base form) হয়, 'to + V1' নয়। 'Can to swim' → 'can swim' হবে। সঠিক: 'I can swim very fast.'"
+    },
+    {
+      "question": "Error Detection: 'She can sings very well.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "can sings",
+        "very",
+        "well"
+      ],
+      "correctIndex": 1,
+      "explanation": "Can-এর পরে সবসময় V1 (base form) হয়, V+s/es নয়। 'Sings' → 'sing' হবে। সঠিক: 'She can sing very well.'"
+    },
+    {
+      "question": "Error Detection: 'He can't not come to the meeting.' — ভুল অংশ কোনটি?",
+      "options": [
+        "He",
+        "can't not",
+        "come",
+        "to the meeting"
+      ],
+      "correctIndex": 1,
+      "explanation": "Double negative (can't not) → ভুল। শুধু 'can't' বা 'cannot' ব্যবহার করতে হবে। সঠিক: 'He can't come to the meeting.'"
+    },
+    {
+      "question": "Error Detection: 'Does he can drive a car?' — ভুল অংশ কোনটি?",
+      "options": [
+        "Does",
+        "he",
+        "can",
+        "drive"
+      ],
+      "correctIndex": 0,
+      "explanation": "Can দিয়ে Question করতে 'do/does' লাগে না। 'Does he can' → 'Can he' হবে। সঠিক: 'Can he drive a car?'"
+    },
+    {
+      "question": "Fill in the blank: 'I ___ see you tomorrow.' (আমি আগামীকাল তোমাকে দেখতে পারি)",
+      "options": [
+        "can",
+        "cannot",
+        "can't",
+        "could"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Tomorrow' = ভবিষ্যৎ, কিন্তু Can দিয়ে ভবিষ্যতের ability-ও বোঝানো যায়। 'I can see you tomorrow.'"
+    },
+    {
+      "question": "Fill in the blank: 'We ___ solve this problem.' (আমরা এই সমস্যা সমাধান করতে পারি)",
+      "options": [
+        "can",
+        "cannot",
+        "can't",
+        "am"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ability/ক্ষমতা বোঝাচ্ছে → can। 'We can solve this problem.'"
+    },
+    {
+      "question": "Fill in the blank: '___ I use your pen, please?' (আমি কি তোমার কলম ব্যবহার করতে পারি, দয়া করে?)",
+      "options": [
+        "Can",
+        "Cannot",
+        "Am",
+        "Do"
+      ],
+      "correctIndex": 0,
+      "explanation": "এটি permission চাওয়া (asking for permission)। 'Can I use your pen, please?'"
+    },
+    {
+      "question": "Fill in the blank: 'I ___ hear you. Please speak louder.' (আমি তোমাকে শুনতে পাচ্ছি না। দয়া করে জোরে বল)",
+      "options": [
+        "can",
+        "cannot",
+        "could",
+        "am"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Please speak louder' = শুনতে পাচ্ছে না → cannot/can't। 'I cannot hear you.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে খুব ভালো গান গাইতে পারে।'",
+      "options": [
+        "She can sing very well.",
+        "She can sings very well.",
+        "She can to sing very well.",
+        "She is sing very well."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ability → can + V1 (sing, sings নয়)। 'She can sing very well.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তুমি কি আমাকে সাহায্য করতে পার?'",
+      "options": [
+        "Do you can help me?",
+        "Can you help me?",
+        "You can help me?",
+        "Are you can help me?"
+      ],
+      "correctIndex": 1,
+      "explanation": "Question: Can + subject + V1? 'Can you help me?' ('Do you can' → ভুল)"
+    }
+  ]
+}

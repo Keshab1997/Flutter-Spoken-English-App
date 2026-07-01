@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_05",
+  "testNumber": 5,
+  "title": "Mock Test 5 - Present Continuous Tense",
+  "description": "এই টেস্টে Present Continuous Tense (am/is/are + V+ing) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "Present Continuous Tense-এর সঠিক গঠন কোনটি? (What is the correct structure of Present Continuous Tense?)",
+      "options": [
+        "Subject + V1 + s/es",
+        "Subject + am/is/are + V+ing",
+        "Subject + have/has + V3",
+        "Subject + will + V1"
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Continuous Tense-এর গঠন: Subject + am/is/are + V+ing। I → am, He/She/It → is, We/You/They → are। যেমন: I am eating, She is sleeping, They are playing।"
+    },
+    {
+      "question": "Present Continuous Tense কখন ব্যবহার করা হয়? (When is Present Continuous Tense used?)",
+      "options": [
+        "নিয়মিত অভ্যাস বুঝাতে",
+        "এই মুহূর্তে চলমান কাজ বুঝাতে",
+        "অতীতের কাজ বুঝাতে",
+        "ভবিষ্যতের পরিকল্পনা বুঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Continuous ব্যবহার হয়: (১) এই মুহূর্তে চলমান কাজ — I am reading now, (২) সাময়িক কাজ — She is staying with us this week, (৩) বর্তমান সময়ের চলমান পরিস্থিতি — The world is changing rapidly।"
+    },
+    {
+      "question": "Present Continuous-এ Negative বাক্য কিভাবে তৈরি হয়?",
+      "options": [
+        "Subject + do/does + not + V1",
+        "Subject + am/is/are + not + V+ing",
+        "Subject + have/has + not + V3",
+        "Subject + not + am/is/are + V+ing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Continuous Negative: Subject + am/is/are + not + V+ing। যেমন: I am not sleeping, He is not eating, They are not playing। সংক্ষেপে: isn't, aren't।"
+    },
+    {
+      "question": "Present Continuous-এ Question কিভাবে তৈরি হয়?",
+      "options": [
+        "Do/Does + Subject + V1?",
+        "Am/Is/Are + Subject + V+ing?",
+        "Have/Has + Subject + V3?",
+        "Subject + am/is/are + V+ing?"
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Continuous Question: Am/Is/Are + Subject + V+ing? যেমন: Are you coming? Is he sleeping? Am I disturbing you? Be verb প্রথমে বসে।"
+    },
+    {
+      "question": "নিচের কোন বাক্যটি Present Continuous-এ সঠিক?",
+      "options": [
+        "She is go to school.",
+        "She is going to school.",
+        "She going to school.",
+        "She is goes to school."
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Continuous-এর সঠিক গঠন: Subject + is + V+ing। 'She is going to school' — এখানে is + going (V+ing) সঠিকভাবে ব্যবহার হয়েছে।"
+    },
+    {
+      "question": "Look! The children ___ in the garden. (দেখো! বাচ্চারা বাগানে খেলছে)",
+      "options": [
+        "play",
+        "plays",
+        "are playing",
+        "is playing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Look!' দিয়ে বোঝাচ্ছে এই মুহূর্তে কিছু happening। The children = plural, তাই 'are playing' হবে। Present Continuous: are + V+ing।"
+    },
+    {
+      "question": "Listen! Someone ___ at the door. (শোনো! কেউ দরজায় নক করছে)",
+      "options": [
+        "knocks",
+        "is knocking",
+        "knock",
+        "knocked"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Listen!' দিয়ে বোঝাচ্ছে এই মুহূর্তে ঘটছে। Someone = singular, তাই 'is knocking' হবে। Present Continuous: is + V+ing।"
+    },
+    {
+      "question": "Right now, I ___ my homework. (এই মুহূর্তে, আমি আমার বাড়ির কাজ করছি)",
+      "options": [
+        "do",
+        "does",
+        "am doing",
+        "is doing"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Right now' = এই মুহূর্তে চলমান কাজ। I এর সাথে 'am' হয়। সঠিক: 'I am doing my homework.'"
+    },
+    {
+      "question": "She ___ a book at the moment. (সে এই মুহূর্তে একটি বই পড়ছে)",
+      "options": [
+        "reads",
+        "read",
+        "is reading",
+        "are reading"
+      ],
+      "correctIndex": 2,
+      "explanation": "'At the moment' = এই মুহূর্তে। She (singular) এর সাথে 'is' হয়। সঠিক: 'She is reading a book at the moment.'"
+    },
+    {
+      "question": "They ___ for the exam this week. (তারা এই সপ্তাহে পরীক্ষার জন্য পড়ছে)",
+      "options": [
+        "study",
+        "studies",
+        "is studying",
+        "are studying"
+      ],
+      "correctIndex": 3,
+      "explanation": "'This week' সাময়িক সময় বোঝাচ্ছে। They (plural) এর সাথে 'are' হয়। সঠিক: 'They are studying for the exam this week.'"
+    },
+    {
+      "question": "Error Detection: 'He are playing football now.' — ভুল অংশ কোনটি?",
+      "options": [
+        "He",
+        "are",
+        "playing",
+        "now"
+      ],
+      "correctIndex": 1,
+      "explanation": "He (3rd person singular) এর সাথে 'is' হবে, 'are' নয়। সঠিক: 'He is playing football now.' Subject-Verb Agreement মনে রাখবেন।"
+    },
+    {
+      "question": "Error Detection: 'I is going to market.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "is",
+        "going",
+        "to market"
+      ],
+      "correctIndex": 1,
+      "explanation": "I এর সাথে সবসময় 'am' হয়, 'is' নয়। সঠিক: 'I am going to market.'"
+    },
+    {
+      "question": "Error Detection: 'The boys is playing in the field.' — ভুল অংশ কোনটি?",
+      "options": [
+        "The boys",
+        "is",
+        "playing",
+        "in the field"
+      ],
+      "correctIndex": 1,
+      "explanation": "The boys = plural subject, তাই 'are' হবে, 'is' নয়। সঠিক: 'The boys are playing in the field.'"
+    },
+    {
+      "question": "Error Detection: 'She doesn't going to school today.' — ভুল অংশ কোনটি?",
+      "options": [
+        "She",
+        "doesn't",
+        "going",
+        "to school"
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Continuous-এ negative করতে 'is not (isn't)' ব্যবহার করতে হবে, 'doesn't' নয়। 'Doesn't' Present Indefinite-এর জন্য। সঠিক: 'She isn't going to school today.'"
+    },
+    {
+      "question": "Fill in the blank: 'The baby ___ now.' (বাচ্চাটি এখন ঘুমাচ্ছে)",
+      "options": [
+        "sleep",
+        "sleeps",
+        "is sleeping",
+        "are sleeping"
+      ],
+      "correctIndex": 2,
+      "explanation": "The baby = singular, 'now' = এই মুহূর্তে চলমান কাজ। তাই 'is sleeping' হবে। Present Continuous: is + V+ing।"
+    },
+    {
+      "question": "Fill in the blank: 'We ___ a party tonight.' (আমরা আজ রাতে একটি পার্টি করছি)",
+      "options": [
+        "have",
+        "has",
+        "is having",
+        "are having"
+      ],
+      "correctIndex": 3,
+      "explanation": "We (plural) + 'tonight' = পরিকল্পিত ভবিষ্যৎ ঘটনা (Present Continuous future use)। সঠিক: 'We are having a party tonight.'"
+    },
+    {
+      "question": "Fill in the blank: 'It ___ outside. Take an umbrella.' (বাইরে বৃষ্টি হচ্ছে। একটি ছাতা নাও)",
+      "options": [
+        "rains",
+        "is raining",
+        "rain",
+        "rained"
+      ],
+      "correctIndex": 1,
+      "explanation": "এই মুহূর্তে বৃষ্টি হচ্ছে বোঝাতে Present Continuous। It (singular) + is + raining। 'Take an umbrella' = এখনই বৃষ্টি হচ্ছে।"
+    },
+    {
+      "question": "Fill in the blank: 'What ___ you ___ right now?' (তুমি এই মুহূর্তে কী করছ?)",
+      "options": [
+        "do / do",
+        "are / doing",
+        "is / doing",
+        "does / do"
+      ],
+      "correctIndex": 1,
+      "explanation": "Present Continuous Question: Am/Is/Are + Subject + V+ing? You এর সাথে 'are' হয়। সঠিক: 'What are you doing right now?'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'সে এখন গোসল করছে।'",
+      "options": [
+        "She takes a shower now.",
+        "She is taking a shower now.",
+        "She take a shower now.",
+        "She has taken a shower now."
+      ],
+      "correctIndex": 1,
+      "explanation": "'এখন' (now) = এই মুহূর্তে চলমান কাজ। She (singular) + is + taking (V+ing)। সঠিক: 'She is taking a shower now.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'তারা কি এখন ক্রিকেট খেলছে?'",
+      "options": [
+        "Do they play cricket now?",
+        "Are they playing cricket now?",
+        "Does they play cricket now?",
+        "They are playing cricket now?"
+      ],
+      "correctIndex": 1,
+      "explanation": "'এখন' (now) = এই মুহূর্তে চলমান কাজ। Question form: Are + they + playing? সঠিক: 'Are they playing cricket now?'"
+    }
+  ]
+}

@@ -18,17 +18,14 @@ class LevelModelAdapter extends TypeAdapter<LevelModel> {
     };
     return LevelModel(
       id: fields[0] as String,
-      name: fields[1] as String? ?? '',
-      description: fields[2] as String? ?? '',
-      order: fields[3] as int? ?? 0,
-      unlocked: fields[4] as bool? ?? false,
-      completed: fields[5] as bool? ?? false,
-      totalStars: fields[6] as int? ?? 0,
-      requiredXP: fields[7] as int? ?? 0,
-      categories: (fields[8] as List?)
-              ?.map((c) => TenseCategory.fromMap(Map<String, dynamic>.from(c as Map)))
-              .toList() ??
-          const <TenseCategory>[],
+      name: fields[1] as String,
+      description: fields[2] as String,
+      order: fields[3] as int,
+      unlocked: fields[4] as bool,
+      completed: fields[5] as bool,
+      totalStars: fields[6] as int,
+      requiredXP: fields[7] as int,
+      categories: (fields[8] as List).cast<TenseCategory>(),
     );
   }
 
@@ -53,7 +50,7 @@ class LevelModelAdapter extends TypeAdapter<LevelModel> {
       ..writeByte(7)
       ..write(obj.requiredXP)
       ..writeByte(8)
-      ..write(obj.categories.map((c) => c.toMap()).toList());
+      ..write(obj.categories);
   }
 
   @override
@@ -79,12 +76,12 @@ class TenseCategoryAdapter extends TypeAdapter<TenseCategory> {
     };
     return TenseCategory(
       id: fields[0] as String,
-      name: fields[1] as String? ?? '',
-      description: fields[2] as String? ?? '',
-      questionCount: fields[3] as int? ?? 0,
-      unlocked: fields[4] as bool? ?? false,
-      completed: fields[5] as bool? ?? false,
-      stars: fields[6] as int? ?? 0,
+      name: fields[1] as String,
+      description: fields[2] as String,
+      questionCount: fields[3] as int,
+      unlocked: fields[4] as bool,
+      completed: fields[5] as bool,
+      stars: fields[6] as int,
     );
   }
 

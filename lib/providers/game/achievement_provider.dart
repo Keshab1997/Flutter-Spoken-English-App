@@ -114,40 +114,64 @@ class AchievementState {
 }
 
 class AchievementNotifier extends AsyncNotifier<AchievementState> {
-  late final AchievementService _achievementService;
-  
+  AchievementService? _achievementService;
+  AchievementRepository? _achievementRepository;
+
   // Real-time stream subscriptions
   StreamSubscription<DocumentSnapshot>? _progressSubscription;
   StreamSubscription<QuerySnapshot>? _statsSubscription;
   StreamSubscription<DocumentSnapshot>? _metaSubscription;
-  String? _currentUserId;
+	  String? _currentUserId;
+	  bool _buildComplete = false;
 
-  @override
-  Future<AchievementState> build() async {
-    final progressRepo = ProgressRepository();
+  /// Ensures the service and repository are initialized.
+  /// This can be called before [build()] completes (e.g. when
+  /// [checkGameAchievements] is triggered from a game result screen
+  /// before the provider's build() finishes).
+  Future<void> _ensureInitialized() async {
+    if (_achievementService != null) return;
+
+    _achievementRepository = AchievementRepository();
     _achievementService = AchievementService(
-      achievementRepository: AchievementRepository(),
-      progressRepository: progressRepo,
+      achievementRepository: _achievementRepository!,
+      progressRepository: ProgressRepository(),
       statisticsRepository: StatisticsRepository(),
     );
 
-    final achievements = await _achievementService.loadAchievements();
-    final unlocked = _achievementService.getUnlockedAchievements();
-    final locked = _achievementService.getLockedAchievements();
+    // Load default achievements from JSON so we have data to unlock
+    final cached = await _achievementRepository!.getAchievementsFromCache();
+    if (cached.isEmpty) {
+      final jsonAchievements = await _achievementRepository!.loadFromJson();
+      await _achievementRepository!.cacheAchievements(jsonAchievements);
+    }
+  }
 
-    // Get current user ID from Firebase Auth
+  @override
+  Future<AchievementState> build() async {
+    // Cancel old subscriptions before re-initializing (important for refresh())
+    _progressSubscription?.cancel();
+    _statsSubscription?.cancel();
+    _metaSubscription?.cancel();
+
+    await _ensureInitialized();
+    final repo = _achievementRepository!;
+    final service = _achievementService!;
+
     _currentUserId = FirebaseAuth.instance.currentUser?.uid;
 
-    // Build initial state with achievements
-    final initialState = AchievementState(
+    // ── 1. Load achievements from Hive (fast, for immediate display) ──
+    final achievements = await service.loadAchievements();
+    final unlocked = service.getUnlockedAchievements();
+    final locked = service.getLockedAchievements();
+
+    var currentState = AchievementState(
       allAchievements: achievements,
       unlockedAchievements: unlocked,
       lockedAchievements: locked,
     );
 
-    // ── First, load cached progress from Hive (so we never show all 0s) ──
+    // ── 2. Try to load cached stats from Hive (so we never show all 0s) ──
     try {
-      // Ensure the Hive box is opened before trying to read from it
       final box = await Hive.openBox('game_progress');
       final cachedProgress = box.get('user_progress');
       if (cachedProgress != null) {
@@ -155,17 +179,16 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
           Map<String, dynamic>.from(cachedProgress as Map),
           '',
         );
-        state = AsyncValue.data(initialState.copyWith(
+        currentState = currentState.copyWith(
           currentLevel: progress.currentLevel,
           currentXP: progress.currentXP,
           totalCoins: progress.totalCoins,
           currentStreak: progress.streak,
           longestStreak: progress.longestStreak,
           weeklyStreak: progress.weeklyStreak,
-        ));
+        );
       }
 
-      // Also load cached statistics from Hive
       final statsBox = await Hive.openBox('game_statistics');
       final cachedStats = statsBox.get('game_results');
       if (cachedStats != null && cachedStats is List && cachedStats.isNotEmpty) {
@@ -180,81 +203,165 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
         final totalXP = results.fold<int>(0, (s, r) => s + r.earnedXP);
         final totalCoins = results.fold<int>(0, (s, r) => s + r.earnedCoins);
 
-        final current = state.value ?? initialState;
-        state = AsyncValue.data(current.copyWith(
+        currentState = currentState.copyWith(
           totalGamesPlayed: totalGames,
           totalCorrectAnswers: totalCorrect,
           totalWrongAnswers: totalWrong,
           overallAccuracy: accuracy,
           totalEarnedXP: totalXP,
           totalEarnedCoins: totalCoins,
-        ));
+        );
       }
 
-      // Load cached meta (boss wins, daily wins, time played)
       final bossWins = statsBox.get('boss_wins', defaultValue: 0) as int;
       final dailyWins = statsBox.get('daily_challenge_wins', defaultValue: 0) as int;
       final timePlayed = statsBox.get('time_played_seconds', defaultValue: 0) as int;
       if (bossWins > 0 || dailyWins > 0 || timePlayed > 0) {
-        final current = state.value ?? initialState;
-        state = AsyncValue.data(current.copyWith(
+        currentState = currentState.copyWith(
           bossWins: bossWins,
           dailyChallengeWins: dailyWins,
           timePlayedSeconds: timePlayed,
-        ));
+        );
       }
     } catch (_) {
-      // Hive read failed silently
+      // Hive read failed — stay with defaults
     }
 
-    // ── Fetch initial data from Firestore to override Hive cache ──
+    // Emit Hive-cached state immediately so the UI never shows all-zero
+    state = AsyncValue.data(currentState);
+
+    // ── 2b. Retroactively unlock achievements based on saved stats ──
+    try {
+      final missed = await service.checkGameAchievements(
+        score: 0,
+        correctAnswers: 0,
+        accuracy: 0,
+      );
+	      if (missed.isNotEmpty) {
+	        final refreshed = await service.loadAchievements();
+	        currentState = currentState.copyWith(
+	          allAchievements: refreshed,
+	          unlockedAchievements: service.getUnlockedAchievements(),
+	          lockedAchievements: service.getLockedAchievements(),
+	        );
+	        state = AsyncValue.data(currentState);
+	        await _syncAchievementsToFirestore();
+	        await _syncProgressToFirestore(); // also push XP/coin rewards to Firestore
+	      }
+    } catch (_) {}
+
+    // ── 3. Sync achievements from Firestore (overrides Hive) ──
     if (_currentUserId != null && _currentUserId!.isNotEmpty) {
       try {
-        // 1. Fetch progress (Level, XP, Coins, Streaks)
-        final progressDoc = await FirebaseFirestore.instance
-            .collection('game_progress')
-            .doc(_currentUserId!)
-            .get();
-        if (progressDoc.exists && progressDoc.data() != null) {
-          final data = progressDoc.data()!;
-          // Sync to Hive so AchievementService reads correct values
-          await _achievementService.syncProgressFromFirestore(_currentUserId!);
-          // Build updated state
-          state = AsyncValue.data(initialState.copyWith(
-            currentLevel: data['currentLevel'] as int? ?? 1,
-            currentXP: data['currentXP'] as int? ?? 0,
-            totalCoins: data['totalCoins'] as int? ?? 0,
-            currentStreak: data['streak'] as int? ?? 0,
-            longestStreak: data['longestStreak'] as int? ?? 0,
-            weeklyStreak: data['weeklyStreak'] as int? ?? 0,
+        await repo.syncFromFirestoreToHive(_currentUserId!);
+        final firestoreAchievements = await service.loadAchievements();
+        final firestoreUnlocked = service.getUnlockedAchievements();
+        final firestoreLocked = service.getLockedAchievements();
+
+        // Use current state (which has Hive stats) — DON'T reset to initialState!
+        currentState = state.value ?? currentState;
+        currentState = currentState.copyWith(
+          allAchievements: firestoreAchievements,
+          unlockedAchievements: firestoreUnlocked,
+          lockedAchievements: firestoreLocked,
+        );
+        state = AsyncValue.data(currentState);
+      } catch (_) {}
+    }
+
+    // ── 4. Start real-time Firestore listeners ──
+    _startRealtimeListeners();
+
+    // Cancel streams when provider is disposed
+    ref.onDispose(() {
+      _progressSubscription?.cancel();
+      _statsSubscription?.cancel();
+      _metaSubscription?.cancel();
+    });
+
+    // ── 5. One-shot Firestore fetch for the remaining data ──
+    // This runs after listeners are set up, so subsequent updates are real-time.
+    if (_currentUserId != null && _currentUserId!.isNotEmpty) {
+      await _fetchProgressFromFirestore();
+      await _fetchStatsFromFirestore();
+      await _fetchMetaFromFirestore();
+    }
+
+    _buildComplete = true;
+    return state.value ?? currentState;
+  }
+
+  /// Fetches [game_progress] (Level, XP, Coins, Streaks) from Firestore.
+  Future<void> _fetchProgressFromFirestore() async {
+    if (_currentUserId == null || _currentUserId!.isEmpty) return;
+    try {
+      final progressDoc = await FirebaseFirestore.instance
+          .collection('game_progress')
+          .doc(_currentUserId!)
+          .get();
+      if (progressDoc.exists && progressDoc.data() != null) {
+        final data = progressDoc.data()!;
+        final current = state.value;
+        if (current != null) {
+          state = AsyncValue.data(current.copyWith(
+            currentLevel: data['currentLevel'] as int? ?? current.currentLevel,
+            currentXP: data['currentXP'] as int? ?? current.currentXP,
+            totalCoins: data['totalCoins'] as int? ?? current.totalCoins,
+            currentStreak: data['streak'] as int? ?? current.currentStreak,
+            longestStreak: data['longestStreak'] as int? ?? current.longestStreak,
+            weeklyStreak: data['weeklyStreak'] as int? ?? current.weeklyStreak,
           ));
         }
-
-        // 2. Fetch statistics (Games, Correct, Wrong, XP, Coins)
-        final statsSnapshot = await FirebaseFirestore.instance
-            .collection('game_statistics')
-            .where('userId', isEqualTo: _currentUserId!)
-            .get();
-        int totalGames = 0;
-        int totalCorrect = 0;
-        int totalWrong = 0;
-        int totalXP = 0;
-        int totalCoins = 0;
-        for (final doc in statsSnapshot.docs) {
-          final d = doc.data();
-          totalGames++;
-          totalCorrect += d['correctAnswers'] as int? ?? 0;
-          totalWrong += d['wrongAnswers'] as int? ?? 0;
-          totalXP += d['earnedXP'] as int? ?? 0;
-          totalCoins += d['earnedCoins'] as int? ?? 0;
+        // Background sync to Hive
+        await _achievementService!.syncProgressFromFirestore(_currentUserId!);
+      }
+    } catch (_) {
+      // Fallback: try Hive cache
+      final cached = _achievementService!.getCachedProgress();
+      if (cached != null) {
+        final current = state.value;
+        if (current != null) {
+          state = AsyncValue.data(current.copyWith(
+            currentLevel: cached.currentLevel,
+            currentXP: cached.currentXP,
+            totalCoins: cached.totalCoins,
+            currentStreak: cached.streak,
+            longestStreak: cached.longestStreak,
+            weeklyStreak: cached.weeklyStreak,
+          ));
         }
-        final totalQuestions = totalCorrect + totalWrong;
-        final accuracy = totalQuestions > 0 ? totalCorrect / totalQuestions : 0.0;
-        await _achievementService.syncStatisticsFromFirestore(_currentUserId!);
+      }
+    }
+  }
 
-        // Merge with current state
-        final currentState = state.value ?? initialState;
-        state = AsyncValue.data(currentState.copyWith(
+  /// Fetches [game_statistics] (games played, correct/wrong, XP, coins) from Firestore.
+  Future<void> _fetchStatsFromFirestore() async {
+    if (_currentUserId == null || _currentUserId!.isEmpty) return;
+    try {
+      final statsSnapshot = await FirebaseFirestore.instance
+          .collection('game_statistics')
+          .where('userId', isEqualTo: _currentUserId!)
+          .get();
+
+      int totalGames = 0;
+      int totalCorrect = 0;
+      int totalWrong = 0;
+      int totalXP = 0;
+      int totalCoins = 0;
+      for (final doc in statsSnapshot.docs) {
+        final d = doc.data();
+        totalGames++;
+        totalCorrect += d['correctAnswers'] as int? ?? 0;
+        totalWrong += d['wrongAnswers'] as int? ?? 0;
+        totalXP += d['earnedXP'] as int? ?? 0;
+        totalCoins += d['earnedCoins'] as int? ?? 0;
+      }
+      final totalQuestions = totalCorrect + totalWrong;
+      final accuracy = totalQuestions > 0 ? totalCorrect / totalQuestions : 0.0;
+
+      final current = state.value;
+      if (current != null) {
+        state = AsyncValue.data(current.copyWith(
           totalGamesPlayed: totalGames,
           totalCorrectAnswers: totalCorrect,
           totalWrongAnswers: totalWrong,
@@ -262,85 +369,58 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
           totalEarnedXP: totalXP,
           totalEarnedCoins: totalCoins,
         ));
+      }
+      // Background sync to Hive
+      await _achievementService!.syncStatisticsFromFirestore(_currentUserId!);
+    } catch (_) {}
+  }
 
-        // 3. Fetch meta (Boss Wins, Daily Wins, Time Played)
-        final metaDoc = await FirebaseFirestore.instance
-            .collection('game_statistics_meta')
-            .doc(_currentUserId!)
-            .get();
-        if (metaDoc.exists && metaDoc.data() != null) {
-          final d = metaDoc.data()!;
-          final currentState2 = state.value ?? initialState;
-          state = AsyncValue.data(currentState2.copyWith(
-            bossWins: d['bossWins'] as int? ?? 0,
-            dailyChallengeWins: d['dailyChallengeWins'] as int? ?? 0,
-            timePlayedSeconds: d['timePlayedSeconds'] as int? ?? 0,
-          ));
-        }
-      } catch (_) {
-        // If Firestore fails, try loading from Hive cache directly
-        final cached = _achievementService.getCachedProgress();
-        if (cached != null) {
-          state = AsyncValue.data((state.value ?? initialState).copyWith(
-            currentLevel: cached.currentLevel,
-            currentXP: cached.currentXP,
-            totalCoins: cached.totalCoins,
-            currentStreak: cached.streak,
-            longestStreak: cached.longestStreak,
-            weeklyStreak: cached.weeklyStreak,
+  /// Fetches [game_statistics_meta] (Boss Wins, Daily Wins, Time Played) from Firestore.
+  Future<void> _fetchMetaFromFirestore() async {
+    if (_currentUserId == null || _currentUserId!.isEmpty) return;
+    try {
+      final metaDoc = await FirebaseFirestore.instance
+          .collection('game_statistics_meta')
+          .doc(_currentUserId!)
+          .get();
+      if (metaDoc.exists && metaDoc.data() != null) {
+        final d = metaDoc.data()!;
+        final current = state.value;
+        if (current != null) {
+          state = AsyncValue.data(current.copyWith(
+            bossWins: d['bossWins'] as int? ?? current.bossWins,
+            dailyChallengeWins: d['dailyChallengeWins'] as int? ?? current.dailyChallengeWins,
+            timePlayedSeconds: d['timePlayedSeconds'] as int? ?? current.timePlayedSeconds,
           ));
         }
       }
-    } else {
-      // No user ID — try Hive cache
-      try {
-        final cached = _achievementService.getCachedProgress();
-        if (cached != null) {
-          state = AsyncValue.data(initialState.copyWith(
-            currentLevel: cached.currentLevel,
-            currentXP: cached.currentXP,
-            totalCoins: cached.totalCoins,
-            currentStreak: cached.streak,
-            longestStreak: cached.longestStreak,
-            weeklyStreak: cached.weeklyStreak,
-          ));
-        }
-      } catch (_) {}
-    }
-
-    // Start listening to real-time updates
-    _startRealtimeListeners();
-
-    return state.value ?? initialState;
+    } catch (_) {}
   }
 
   void _startRealtimeListeners() {
     if (_currentUserId == null || _currentUserId!.isEmpty) return;
 
-    // Listen to progress updates
+    // Listen to progress updates from Firestore
     _progressSubscription = FirebaseFirestore.instance
         .collection('game_progress')
         .doc(_currentUserId!)
         .snapshots()
         .listen((snapshot) {
       if (snapshot.exists && snapshot.data() != null) {
-        final progress = GameProgressModel.fromMap(snapshot.data()!, _currentUserId!);
-        _updateProgressStats(progress);
+        _updateProgressStats(snapshot.data()!);
       }
     });
 
-    // Listen to statistics updates
+    // Listen to statistics updates from Firestore
     _statsSubscription = FirebaseFirestore.instance
         .collection('game_statistics')
         .where('userId', isEqualTo: _currentUserId!)
         .snapshots()
         .listen((snapshot) {
-      // Even if snapshot.docs is empty (e.g. after a clear), 
-      // we should update the state to reflect 0s.
       _updateStatisticsFromFirestore(snapshot.docs);
     });
 
-    // Listen to meta statistics updates
+    // Listen to meta statistics updates from Firestore
     _metaSubscription = FirebaseFirestore.instance
         .collection('game_statistics_meta')
         .doc(_currentUserId!)
@@ -352,33 +432,33 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
     });
   }
 
-  void _updateProgressStats(GameProgressModel progress) {
+  /// Reads progress (Level, XP, Coins, Streaks) directly from Firestore snapshot data.
+  void _updateProgressStats(Map<String, dynamic> data) {
     final currentState = state.value;
     if (currentState == null) return;
 
     state = AsyncValue.data(currentState.copyWith(
-      currentLevel: progress.currentLevel,
-      currentXP: progress.currentXP,
-      totalCoins: progress.totalCoins,
-      currentStreak: progress.streak,
-      longestStreak: progress.longestStreak,
-      weeklyStreak: progress.weeklyStreak,
+      currentLevel: data['currentLevel'] as int? ?? currentState.currentLevel,
+      currentXP: data['currentXP'] as int? ?? currentState.currentXP,
+      totalCoins: data['totalCoins'] as int? ?? currentState.totalCoins,
+      currentStreak: data['streak'] as int? ?? currentState.currentStreak,
+      longestStreak: data['longestStreak'] as int? ?? currentState.longestStreak,
+      weeklyStreak: data['weeklyStreak'] as int? ?? currentState.weeklyStreak,
     ));
 
-    // Sync progress to Hive so AchievementService reads correct XP/coins
+    // Background sync to Hive for offline
     _syncProgressToHive();
   }
 
   Future<void> _syncProgressToHive() async {
     if (_currentUserId == null || _currentUserId!.isEmpty) return;
     try {
-      await _achievementService.syncProgressFromFirestore(_currentUserId!);
-    } catch (_) {
-      // Silently fail - Hive sync is best-effort
-    }
+      await _achievementService!.syncProgressFromFirestore(_currentUserId!);
+    } catch (_) {}
   }
 
-  void _updateStatisticsFromFirestore(List<QueryDocumentSnapshot> docs) {
+  /// Aggregates game result stats directly from Firestore QuerySnapshot docs.
+  void _updateStatisticsFromFirestore(List<QueryDocumentSnapshot<Map<String, dynamic>>> docs) {
     final currentState = state.value;
     if (currentState == null) return;
 
@@ -389,7 +469,7 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
     int totalCoins = 0;
 
     for (final doc in docs) {
-      final data = doc.data() as Map<String, dynamic>;
+      final data = doc.data();
       totalGames++;
       totalCorrect += data['correctAnswers'] as int? ?? 0;
       totalWrong += data['wrongAnswers'] as int? ?? 0;
@@ -409,27 +489,26 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
       totalEarnedCoins: totalCoins,
     ));
 
-    // Sync Firestore data to Hive so AchievementService reads correct stats
+    // Background sync to Hive
     _syncToHive();
   }
 
   Future<void> _syncToHive() async {
     if (_currentUserId == null || _currentUserId!.isEmpty) return;
     try {
-      await _achievementService.syncStatisticsFromFirestore(_currentUserId!);
-    } catch (_) {
-      // Silently fail - Hive sync is best-effort
-    }
+      await _achievementService!.syncStatisticsFromFirestore(_currentUserId!);
+    } catch (_) {}
   }
 
+  /// Reads meta stats directly from Firestore snapshot data.
   void _updateMetaStats(Map<String, dynamic> data) {
     final currentState = state.value;
     if (currentState == null) return;
 
     state = AsyncValue.data(currentState.copyWith(
-      bossWins: data['bossWins'] as int? ?? 0,
-      dailyChallengeWins: data['dailyChallengeWins'] as int? ?? 0,
-      timePlayedSeconds: data['timePlayedSeconds'] as int? ?? 0,
+      bossWins: data['bossWins'] as int? ?? currentState.bossWins,
+      dailyChallengeWins: data['dailyChallengeWins'] as int? ?? currentState.dailyChallengeWins,
+      timePlayedSeconds: data['timePlayedSeconds'] as int? ?? currentState.timePlayedSeconds,
     ));
   }
 
@@ -439,70 +518,119 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
     required double accuracy,
     bool isBossBattle = false,
     int speedBonusCount = 0,
+    String gameMode = '',
+    int durationSeconds = 0,
   }) async {
-    final newlyUnlocked = await _achievementService.checkGameAchievements(
+    // Wait for build() to complete before checking achievements,
+    // so that Hive boxes & cached stats are available and real-time
+    // listeners are active. This prevents race conditions where
+    // achievement checks run on stale or empty data.
+    while (!_buildComplete) {
+      await Future.delayed(const Duration(milliseconds: 50));
+    }
+
+    // Ensure service is initialized even if build() hasn't run yet
+    await _ensureInitialized();
+
+    final newlyUnlocked = await _achievementService!.checkGameAchievements(
       score: score,
       correctAnswers: correctAnswers,
       accuracy: accuracy,
       isBossBattle: isBossBattle,
       speedBonusCount: speedBonusCount,
+      gameMode: gameMode,
+      durationSeconds: durationSeconds,
     );
 
-    if (newlyUnlocked.isNotEmpty) {
-      _refreshState();
-    }
+	    if (newlyUnlocked.isNotEmpty) {
+	      _refreshState();
+	      await _syncAchievementsToFirestore();
+	      await _syncProgressToFirestore();
+	    }
 
-    return newlyUnlocked;
-  }
+	    return newlyUnlocked;
+	  }
 
-  Future<List<AchievementModel>> checkStreakAchievements(int streak) async {
-    final newlyUnlocked =
-        await _achievementService.checkStreakAchievements(streak);
+	  Future<List<AchievementModel>> checkStreakAchievements(int streak) async {
+	    final newlyUnlocked =
+	        await _achievementService!.checkStreakAchievements(streak);
 
-    if (newlyUnlocked.isNotEmpty) {
-      _refreshState();
-    }
+	    if (newlyUnlocked.isNotEmpty) {
+	      _refreshState();
+	      await _syncAchievementsToFirestore();
+	      await _syncProgressToFirestore();
+	    }
 
-    return newlyUnlocked;
-  }
+	    return newlyUnlocked;
+	  }
 
-  Future<List<AchievementModel>> checkTenseMastery({
-    required bool presentComplete,
-    required bool pastComplete,
-    required bool futureComplete,
-  }) async {
-    final newlyUnlocked = await _achievementService.checkTenseMastery(
-      presentComplete: presentComplete,
-      pastComplete: pastComplete,
-      futureComplete: futureComplete,
-    );
+	  Future<List<AchievementModel>> checkTenseMastery({
+	    required bool presentComplete,
+	    required bool pastComplete,
+	    required bool futureComplete,
+	  }) async {
+	    final newlyUnlocked = await _achievementService!.checkTenseMastery(
+	      presentComplete: presentComplete,
+	      pastComplete: pastComplete,
+	      futureComplete: futureComplete,
+	    );
 
-    if (newlyUnlocked.isNotEmpty) {
-      _refreshState();
-    }
+	    if (newlyUnlocked.isNotEmpty) {
+	      _refreshState();
+	      await _syncAchievementsToFirestore();
+	      await _syncProgressToFirestore();
+	    }
 
-    return newlyUnlocked;
-  }
+	    return newlyUnlocked;
+	  }
 
-  Future<AchievementModel?> unlockAchievement(String achievementId) async {
-    final achievement = await _achievementService.checkAndUnlock(achievementId);
+	  Future<AchievementModel?> unlockAchievement(String achievementId) async {
+	    final achievement = await _achievementService!.checkAndUnlock(achievementId);
 
-    if (achievement != null) {
-      _refreshState();
-    }
+	    if (achievement != null) {
+	      _refreshState();
+	      await _syncAchievementsToFirestore();
+	      await _syncProgressToFirestore();
+	    }
 
     return achievement;
   }
 
+  /// Uploads current XP/coin progress to Firestore so that
+  /// [xpProvider] and [coinProvider] (which listen to the
+  /// `game_progress` document) reflect achievement rewards in real time.
+  Future<void> _syncProgressToFirestore() async {
+    if (_currentUserId == null || _currentUserId!.isEmpty) return;
+    try {
+      final progress = _achievementService!.getCachedProgress();
+      if (progress != null) {
+        await FirebaseFirestore.instance
+            .collection('game_progress')
+            .doc(_currentUserId!)
+            .set(progress.toFirestoreMap());
+      }
+    } catch (_) {}
+  }
+
+  Future<void> _syncAchievementsToFirestore() async {
+    if (_currentUserId == null || _currentUserId!.isEmpty) return;
+    try {
+      final achievements = _achievementService!.getAllAchievements();
+      if (achievements.isNotEmpty) {
+        await _achievementRepository!.batchUploadToFirestore(_currentUserId!, achievements);
+      }
+    } catch (_) {}
+  }
+
   void _refreshState() {
-    final unlocked = _achievementService.getUnlockedAchievements();
-    final locked = _achievementService.getLockedAchievements();
+    final unlocked = _achievementService!.getUnlockedAchievements();
+    final locked = _achievementService!.getLockedAchievements();
 
     final currentState = state.value;
     if (currentState == null) return;
 
     state = AsyncValue.data(currentState.copyWith(
-      allAchievements: _achievementService.getAllAchievements(),
+      allAchievements: _achievementService!.getAllAchievements(),
       unlockedAchievements: unlocked,
       lockedAchievements: locked,
     ));
@@ -511,12 +639,6 @@ class AchievementNotifier extends AsyncNotifier<AchievementState> {
   Future<void> refresh() async {
     state = const AsyncValue.loading();
     state = await AsyncValue.guard(() => build());
-  }
-
-  void dispose() {
-    _progressSubscription?.cancel();
-    _statsSubscription?.cancel();
-    _metaSubscription?.cancel();
   }
 }
 
@@ -536,7 +658,7 @@ final achievementProvider =
 // Real-time stats provider for live updates
 final realtimeStatsProvider = StreamProvider<Map<String, dynamic>>((ref) {
   final userId = FirebaseAuth.instance.currentUser?.uid;
-  
+
   if (userId == null || userId.isEmpty) return Stream.value({});
 
   return FirebaseFirestore.instance
@@ -552,7 +674,7 @@ final realtimeStatsProvider = StreamProvider<Map<String, dynamic>>((ref) {
 // Real-time game results provider
 final realtimeGameResultsProvider = StreamProvider<List<Map<String, dynamic>>>((ref) {
   final userId = FirebaseAuth.instance.currentUser?.uid;
-  
+
   if (userId == null || userId.isEmpty) return Stream.value([]);
 
   return FirebaseFirestore.instance

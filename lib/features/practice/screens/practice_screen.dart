@@ -7,12 +7,20 @@ import '../../listening/screens/listening_screen.dart';
 import '../../speaking/screens/speaking_screen.dart';
 import '../../translator/screens/banglish_translator_screen.dart';
 import '../../verb_forms/screens/verb_form_practice_screen.dart';
+import '../../mock_test/screens/mock_test_list_screen.dart';
 import 'bangla_english_practice_screen.dart';
 
 class PracticeScreen extends StatelessWidget {
   const PracticeScreen({super.key});
 
   static const _categories = [
+    _Category(
+      title: 'Mock Test',
+      subtitle: '70 tests · Progressive',
+      icon: Icons.assignment_rounded,
+      gradient: AppColors.primaryGradient,
+      target: _Target.mockTest,
+    ),
     _Category(
       title: 'Vocab Test',
       subtitle: 'Test your vocabulary',
@@ -171,6 +179,8 @@ class PracticeScreen extends StatelessWidget {
 
   void _navigate(BuildContext context, _Target target) {
     switch (target) {
+      case _Target.mockTest:
+        Navigator.push(context, MaterialPageRoute(builder: (_) => const MockTestListScreen()));
       case _Target.vocabTest:
         Navigator.push(context, MaterialPageRoute(builder: (_) => const VocabularyTestScreen()));
       case _Target.grammarTest:
@@ -192,6 +202,7 @@ class PracticeScreen extends StatelessWidget {
 }
 
 enum _Target {
+  mockTest,
   vocabTest,
   verbFormsQuiz,
   grammarTest,

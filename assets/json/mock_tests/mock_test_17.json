@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_17",
+  "testNumber": 17,
+  "title": "Mock Test 17 - Preposition of Time (in, on, at, since, for)",
+  "description": "এই টেস্টে Preposition of Time (in, on, at, since, for) নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো নিয়ম ও গঠন, তারপর fill in the blanks, error detection ও অনুবাদ দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "'At' সময় বোঝাতে কখন ব্যবহার করা হয়? (When is 'at' used for time?)",
+      "options": [
+        "মাস/বছরের সাথে",
+        "দিন/তারিখের সাথে",
+        "নির্দিষ্ট সময় (ঘন্টা/মিনিট) বোঝাতে",
+        "কোনো সময়কাল বোঝাতে"
+      ],
+      "correctIndex": 2,
+      "explanation": "'At' নির্দিষ্ট সময় (clock time) বোঝাতে ব্যবহার হয়: at 5 o'clock, at 7:30 PM, at midnight, at noon, at sunrise। যেমন: 'The meeting is at 3 PM.'"
+    },
+    {
+      "question": "'On' সময় বোঝাতে কখন ব্যবহার করা হয়? (When is 'on' used for time?)",
+      "options": [
+        "নির্দিষ্ট সময় বোঝাতে",
+        "দিন/তারিখের সাথে",
+        "মাস/বছরের সাথে",
+        "সময়কাল বোঝাতে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'On' দিন ও তারিখের সাথে ব্যবহার হয়: on Monday, on 10 January, on my birthday, on Sunday morning, on New Year's Day। যেমন: 'I will come on Friday.'"
+    },
+    {
+      "question": "'In' সময় বোঝাতে কখন ব্যবহার করা হয়? (When is 'in' used for time?)",
+      "options": [
+        "নির্দিষ্ট সময় বোঝাতে",
+        "দিন বোঝাতে",
+        "মাস, বছর, ঋতু, দীর্ঘ সময় বোঝাতে",
+        "ঘন্টা বোঝাতে"
+      ],
+      "correctIndex": 2,
+      "explanation": "'In' ব্যবহার হয় দীর্ঘ সময়ের জন্য: in July (মাস), in 2024 (বছর), in summer (ঋতু), in the morning (দিনের অংশ), in the 21st century। যেমন: 'I was born in 1998.'"
+    },
+    {
+      "question": "'Since' আর 'For'-এর মধ্যে পার্থক্য কী?",
+      "options": [
+        "Since = নির্দিষ্ট সময় থেকে, For = সময়কাল ধরে",
+        "Since = সময়কাল, For = নির্দিষ্ট সময় থেকে",
+        "দুটোর মানে একই",
+        "Since = অতীত, For = ভবিষৎ"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Since' = নির্দিষ্ট পয়েন্ট/সময় থেকে শুরু (since 2020, since Monday, since 5 PM)। 'For' = সময়কাল/দৈর্ঘ্য (for 2 hours, for 3 years, for a long time)। যেমন: 'I have been here since 10 AM' vs 'I have been here for 3 hours.'"
+    },
+    {
+      "question": "নিচের কোনটি 'Since'-এর সাথে ব্যবহার করা যায় না?",
+      "options": [
+        "2020",
+        "Monday",
+        "two hours",
+        "last week"
+      ],
+      "correctIndex": 2,
+      "explanation": "'Since' = নির্দিষ্ট সময় পয়েন্ট (since 2020, since Monday, since last week)। 'Two hours' একটি সময়কাল (duration), তাই 'for two hours' হবে। 'For' = সময়কাল, 'Since' = নির্দিষ্ট পয়েন্ট।"
+    },
+    {
+      "question": "I wake up ___ 6 AM every day. (আমি প্রতিদিন সকাল ৬টায় ঘুম থেকে উঠি)",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "since"
+      ],
+      "correctIndex": 2,
+      "explanation": "নির্দিষ্ট সময় (6 AM) → 'at'। 'I wake up at 6 AM every day.'"
+    },
+    {
+      "question": "I will visit you ___ Sunday. (আমি রবিবার তোমাকে দেখতে আসব)",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "since"
+      ],
+      "correctIndex": 1,
+      "explanation": "দিন (Sunday) → 'on'। 'I will visit you on Sunday.'"
+    },
+    {
+      "question": "I was born ___ 1998. (আমি ১৯৯৮ সালে জন্মগ্রহণ করি)",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "since"
+      ],
+      "correctIndex": 0,
+      "explanation": "বছর (1998) → 'in'। 'I was born in 1998.'"
+    },
+    {
+      "question": "I have been learning English ___ three years. (আমি তিন বছর ধরে ইংরেজি শিখছি)",
+      "options": [
+        "since",
+        "for",
+        "in",
+        "at"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Three years' = সময়কাল (duration) → 'for'। 'I have been learning English for three years.'"
+    },
+    {
+      "question": "I have been waiting here ___ 10 AM. (আমি সকাল ১০টা থেকে এখানে অপেক্ষা করছি)",
+      "options": [
+        "since",
+        "for",
+        "in",
+        "at"
+      ],
+      "correctIndex": 0,
+      "explanation": "'10 AM' = নির্দিষ্ট সময় পয়েন্ট → 'since'। 'I have been waiting here since 10 AM.'"
+    },
+    {
+      "question": "Error Detection: 'I will meet you in Monday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "will meet",
+        "you",
+        "in Monday"
+      ],
+      "correctIndex": 3,
+      "explanation": "দিনের (Monday) সাথে 'on' হয়, 'in' নয়। সঠিক: 'I will meet you on Monday.'"
+    },
+    {
+      "question": "Error Detection: 'The meeting is at 5 PM in Friday.' — ভুল অংশ কোনটি?",
+      "options": [
+        "The meeting",
+        "is",
+        "at 5 PM",
+        "in Friday"
+      ],
+      "correctIndex": 3,
+      "explanation": "দিনের (Friday) সাথে 'on' হয়। 'At 5 PM' ঠিক আছে (নির্দিষ্ট সময়)। সঠিক: 'The meeting is at 5 PM on Friday.'"
+    },
+    {
+      "question": "Error Detection: 'I have known him for 2019.' — ভুল অংশ কোনটি?",
+      "options": [
+        "I",
+        "have known",
+        "him",
+        "for 2019"
+      ],
+      "correctIndex": 3,
+      "explanation": "2019 = নির্দিষ্ট বছর (specific point) → 'since' হবে, 'for' নয়। সঠিক: 'I have known him since 2019.'"
+    },
+    {
+      "question": "Error Detection: 'He goes to office in the morning.' — ভুল অংশ কোনটি?",
+      "options": [
+        "He",
+        "goes",
+        "to office",
+        "কোনো ভুল নেই"
+      ],
+      "correctIndex": 3,
+      "explanation": "'In the morning' ঠিক আছে। 'In' দিনের অংশ (morning, afternoon, evening) এর সাথে ব্যবহার হয়। কোনো ভুল নেই।"
+    },
+    {
+      "question": "Fill in the blank: 'I will call you ___ the evening.' (আমি সন্ধ্যায় তোমাকে ফোন করব)",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "since"
+      ],
+      "correctIndex": 0,
+      "explanation": "দিনের অংশ (the evening) → 'in'। 'I will call you in the evening.'"
+    },
+    {
+      "question": "Fill in the blank: 'The class starts ___ 9 AM sharp.' (ক্লাসটি ৯টায় sharp শুরু হয়)",
+      "options": [
+        "in",
+        "on",
+        "at",
+        "since"
+      ],
+      "correctIndex": 2,
+      "explanation": "নির্দিষ্ট সময় (9 AM) → 'at'। 'The class starts at 9 AM sharp.'"
+    },
+    {
+      "question": "Fill in the blank: 'She has been sick ___ last week.' (সে গত সপ্তাহ থেকে অসুস্থ)",
+      "options": [
+        "since",
+        "for",
+        "in",
+        "at"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Last week' = নির্দিষ্ট সময় পয়েন্ট → 'since'। 'She has been sick since last week.'"
+    },
+    {
+      "question": "Fill in the blank: 'We stayed there ___ two days.' (আমরা সেখানে দুই দিন থাকলাম)",
+      "options": [
+        "since",
+        "for",
+        "in",
+        "at"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Two days' = সময়কাল (duration) → 'for'। 'We stayed there for two days.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি ২০১৮ সাল থেকে এখানে থাকি।'",
+      "options": [
+        "I live here for 2018.",
+        "I live here since 2018.",
+        "I have lived here since 2018.",
+        "I have lived here for 2018."
+      ],
+      "correctIndex": 2,
+      "explanation": "'২০১৮ সাল থেকে' = নির্দিষ্ট পয়েন্ট → since। Present Perfect হয় (have lived)। 'I have lived here since 2018.'"
+    },
+    {
+      "question": "বাংলা বাক্যটির সঠিক ইংরেজি অনুবাদ কোনটি? 'আমি ২৫শে ডিসেম্বর ঢাকায় যাব।'",
+      "options": [
+        "I will go to Dhaka in 25 December.",
+        "I will go to Dhaka at 25 December.",
+        "I will go to Dhaka on 25 December.",
+        "I will go to Dhaka since 25 December."
+      ],
+      "correctIndex": 2,
+      "explanation": "নির্দিষ্ট তারিখ (25 December) → 'on'। 'I will go to Dhaka on 25 December.'"
+    }
+  ]
+}

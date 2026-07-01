@@ -1,0 +1,167 @@
+{
+  "title": "Student Guide",
+  "subtitle": "ছাত্রদের জন্য সম্পূর্ণ গাইড — Complete Student Guide",
+  "icon": "school",
+  "sections": [
+    {
+      "title": "অ্যাপের পরিচিতি (Introduction)",
+      "content": "SpeakEasy হলো একটি মোবাইল অ্যাপ যা বাংলাভাষী শিক্ষার্থীদের ইংরেজি শেখার জন্য তৈরি করা হয়েছে। এখানে আপনি গ্রামার, ভোকাবুলারি, স্পিকিং, লিসনিং — সবকিছুই একসাথে প্র্যাক্টিস করতে পারবেন। গেম খেলে, AI-এর সাথে কথা বলে, এবং দৈনিক streak ধরে রেখে আপনি খুব সহজেই ইংরেজিতে দক্ষ হয়ে উঠতে পারেন।",
+      "bullets": [
+        "সম্পূর্ণ বাংলায় ব্যাখ্যা — ইংরেজি শেখা এখন সহজ",
+        "গেম খেলে শেখা — পড়তে হবে না, খেলতে হবে",
+        "AI টিচার — আপনার নিজস্ব ইংরেজি শিক্ষক",
+        "Streak System — প্রতিদিন চর্চার অভ্যাস গড়ে তোলা",
+        "সব লেভেলের জন্য — Beginner থেকে Advanced"
+      ]
+    },
+    {
+      "title": "শুরু করা (Getting Started)",
+      "subsections": [
+        {
+          "title": "অ্যাপ ডাউনলোড ও ইনস্টল",
+          "content": "SpeakEasy অ্যাপটি Google Play Store থেকে ডাউনলোড করতে পারেন। শুধু Play Store-এ গিয়ে \"SpeakEasy\" সার্চ করুন এবং Install বটনে ক্লিক করুন।"
+        },
+        {
+          "title": "সাইন আপ / লগইন",
+          "bullets": [
+            "অ্যাপ ওপেন করলে Splash Screen দেখাবে",
+            "\"Sign Up\" বাটনে ক্লিক করুন",
+            "আপনার নাম এবং ইমেইল দিন",
+            "একটি পাসওয়ার্ড সেট করুন",
+            "অথবা Google দিয়ে সাইন ইন করুন",
+            "এরপর আপনি হোম স্ক্রিনে পৌঁছে যাবেন"
+          ]
+        },
+        {
+          "title": "হোম স্ক্রিনের পরিচিতি",
+          "content": "হোম স্ক্রিনে আপনি 5টি ট্যাব দেখতে পাবেন নিচের দিকে: Home, Learning, Practice, AI Teacher, এবং Profile। পরবর্তী অংশগুলোয় প্রতিটি ট্যাবের বিস্তারিত ব্যাখ্যা দেওয়া হলো।"
+        }
+      ]
+    },
+    {
+      "title": "হোম ট্যাব (Home Tab)",
+      "subsections": [
+        {
+          "title": "Streak System",
+          "content": "Streak হলো আপনার টানা কত দিন ধরে আপনি অ্যাপে প্র্যাক্টিস করছেন তার হিসাব। এটি আপনাকে প্রতিদিন প্র্যাক্টিস করার জন্য উৎসাহিত করে।",
+          "bullets": [
+            "প্রতিদিন অ্যাপ ওপেন করলে Streak অটোমেটিক আপডেট হয়",
+            "Streak না হারাতে প্রতিদিন অন্তত 1টি লেসন সম্পন্ন করুন",
+            "আপনার Streak বাঁচাতে Streak Freeze কিনতে পারেন (50 Coins)",
+            "Streak যত বড় হবে, তত বেশি XP এবং Coins বোনাস",
+            "Streak মাইলেস্টোন: 1, 7, 30, 100 দিনে বিশেষ পুরস্কার"
+          ]
+        },
+        {
+          "title": "Study Plan",
+          "content": "Study Plan-এ আপনি আপনার Grammar এবং Vocabulary Chapter-গুলোর প্রোগ্রেস দেখতে পারবেন। এটি আপনার Todo List হিসেবে কাজ করে। প্রতি সপ্তাহে Weekly Mock Test দেওয়ার রিমাইন্ডার পাবেন।"
+        }
+      ]
+    },
+    {
+      "title": "লার্নিং ট্যাব (Learning Tab)",
+      "content": "Learning ট্যাবে আপনি ইংরেজির তত্ত্বীয় অংশগুলো শিখতে পারবেন। এখানে 5টি প্রধান সেকশন আছে:",
+      "subsections": [
+        {
+          "title": "Tense Rules",
+          "content": "এখানে 12টি Tense (Present, Past, Future — প্রতিটির 4টি করে ভাগ) বিস্তারিত নিয়ম ও উদাহরণসহ শেখানো হয়েছে।"
+        },
+        {
+          "title": "Spoken Rules",
+          "content": "দৈনন্দিন ইংরেজি কথোপকথনের জন্য প্রয়োজনীয় নিয়ম ও এক্সপ্রেশন।"
+        },
+        {
+          "title": "Vocabulary",
+          "content": "শব্দভাণ্ডার বাড়ানোর জন্য 3টি লেভেলে ভাগ করা হয়েছে:",
+          "bullets": [
+            "Beginner — মৌলিক শব্দ (পরিবার, রং, সংখ্যা, ফল, প্রাণী)",
+            "Intermediate — দৈনন্দিন শব্দ (পেশা, ভ্রমণ, শিক্ষা, স্বাস্থ্য)",
+            "Advanced — উচ্চতর শব্দ (প্রযুক্তি, ব্যবসা, আইন, বিজ্ঞান)"
+          ]
+        },
+        {
+          "title": "Verb Forms (V1-V5)",
+          "content": "ইংরেজি Verb-গুলোর 5টি রূপ (Base Form, Past, Past Participle, Present Participle, 3rd Person Singular) শিখুন।"
+        },
+        {
+          "title": "Grammar (70+ Chapters)",
+          "content": "70টির অধিক গ্রামার চ্যাপ্টার Beginner থেকে Advanced লেভেল পর্যন্ত। ট্যাবের মাধ্যমে Beginner → Intermediate → Advanced লেভেল সিলেক্ট করুন।"
+        }
+      ]
+    },
+    {
+      "title": "প্র্যাক্টিস ট্যাব (Practice Tab)",
+      "content": "Practice ট্যাবে আপনি যা শিখেছেন তা প্র্যাক্টিস করতে পারবেন বিভিন্ন মোডে। এখানে 8টি ক্যাটাগরি আছে: Vocab Test, Grammar Test, Verb Forms Quiz, Speaking (4 modes), Conversation (3 types), Listening, 15+ Games, Banglish Translator এবং Sentence Analyzer।",
+      "bullets": [
+        "ভোকাবুলারি শেখার পর Vocab Test দিন",
+        "গ্রামার শেখার পর Grammar Test দিন",
+        "প্রতিদিন Speaking প্র্যাক্টিস করুন",
+        "গেম খেলে XP এবং Coins আর্জন করুন"
+      ]
+    },
+    {
+      "title": "AI টিচার ট্যাব (AI Teacher Tab)",
+      "content": "AI Teacher ট্যাবে আপনি একটি AI-এর সাথে ইংরেজি কথোপকথন করতে পারবেন। এটি আপনার ব্যক্তিগত ইংরেজি শিক্ষকের মতো কাজ করে।",
+      "bullets": [
+        "Settings → API Setup Guide থেকে একটি API Key নিন (OpenRouter বা অন্যান্য provider থেকে) এবং সেটি অ্যাপে বসিয়ে দিন।"
+      ]
+    },
+    {
+      "title": "প্রোফাইল ট্যাব (Profile Tab)",
+      "content": "প্রোফাইল ট্যাবে আপনি আপনার সম্পূর্ণ স্ট্যাটিস্টিক্স দেখতে পারবেন: Streak Days, XP, Coins, Achievements, Games Played, এবং বিস্তারিত পরিসংখ্যান। এখান থেকে আপনি সেটিংসে যেতে পারেন, ডার্ক মোড চালু করতে পারেন, এবং ফিডব্যাক পাঠাতে পারেন।"
+    },
+    {
+      "title": "গেমিফিকেশন সিস্টেম (Gamification)",
+      "subsections": [
+        {
+          "title": "Coins সিস্টেম",
+          "bullets": [
+            "গেম খেলে Coins অর্জন করুন",
+            "Streak Freeze কিনতে Coins ব্যবহার করুন (50 Coins)",
+            "প্রতিটি সঠিক উত্তরের জন্য Coins বোনাস"
+          ]
+        },
+        {
+          "title": "XP (Experience Points)",
+          "bullets": [
+            "সঠিক উত্তর = 10 XP",
+            "একটানা সঠিক উত্তর = Accuracy Bonus",
+            "Perfect Score = পারফেক্ট বোনাস",
+            "XP বাড়লে Level বাড়ে"
+          ]
+        },
+        {
+          "title": "Gamer Ranks (9 টি Tier)",
+          "content": "XP-এর উপর ভিত্তি করে আপনার Rank নির্ধারিত: Rookie → Bronze → Silver → Gold → Platinum → Diamond → Master → Grandmaster → Legend।"
+        },
+        {
+          "title": "Achievements",
+          "content": "80টির অধিক অ্যাচিভমেন্ট 4টি Rarity Tier-এ: Common, Rare, Epic, এবং Legendary।"
+        }
+      ]
+    },
+    {
+      "title": "টিপস ও ট্রিকস (Tips & Tricks)",
+      "bullets": [
+        "প্রতিদিন অন্তত 5 মিনিট অ্যাপে দিন — অ্যাপ ওপেন করুন, একটি গেম খেলুন — Streak বাঁচবে",
+        "Study Plan ফলো করুন — এটি আপনার জন্য অধ্যায় নির্ধারণ করে দেয়। নিয়মিত অগ্রগতি হবে",
+        "Speaking প্র্যাক্টিস করুন — শুধু পড়লে হবে না — জোরে জোরে ইংরেজি বলার অভ্যাস করুন",
+        "AI Teacher ব্যবহার করুন — AI আপনার ভুল শুধরে দেবে এবং উত্তর দেবে",
+        "গেম দিয়ে শুরু করুন — একদম নতুন হলে Quick Quiz বা Word Match দিয়ে শুরু করুন",
+        "Streak Freeze ব্যবহার করুন — কোনো দিন অ্যাপ না খোললে Streak Freeze আপনার Streak বাঁচিয়ে রাখবে",
+        "নিয়মিত Weekly Test দিন — প্রতি সপ্তাহে মক টেস্ট দিয়ে আপনার অগ্রগতি যাচাই করুন"
+      ]
+    },
+    {
+      "title": "সমস্যা সমাধান (Troubleshooting)",
+      "bullets": [
+        "Streak কাজ করছে না? → অ্যাপ আপডেট করুন। সমস্যা থাকলে Feedback ফর্ম পূরণ করুন",
+        "AI Teacher কাজ করছে না? → API Key সঠিকভাবে বসানো আছে কিনা চেক করুন",
+        "গেম লোড হচ্ছে না? → ইন্টারনেট কানেকশন চেক করুন",
+        "সাউন্ড কাজ করছে না? → ফোনের সাউন্ড এবং মাইক্রোফোন পারমিশন চেক করুন",
+        "পাসওয়ার্ড ভুলে গেছেন? → লগইন স্ক্রিনে \"Forgot Password\" এ ক্লিক করুন",
+        "সাপোর্টের জন্য যোগাযোগ: অ্যাপের মধ্যে থেকে Feedback ফর্ম পূরণ করুন অথবা গিটহাব ইস্যু খুলুন"
+      ]
+    }
+  ]
+}

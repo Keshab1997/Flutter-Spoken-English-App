@@ -1,5 +1,6 @@
 import 'dart:typed_data';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -63,7 +64,7 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
         final syncService = GameDataSyncService();
         await syncService.loadUserDataFromFirebase();
         
-        print('✅ User data loaded from Firebase: ${userModel.name}');
+        debugPrint('✅ User data loaded from Firebase: ${userModel.name}');
       } else {
         // Fallback or if document doesn't exist yet
         state = AsyncValue.data(UserModel(
@@ -134,7 +135,7 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
             .doc(firebaseUser.uid)
             .set(initialProgress.toFirestoreMap());
         
-        print('✅ Initial game progress created for new user: $name');
+        debugPrint('✅ Initial game progress created for new user: $name');
         
         state = AsyncValue.data(newUser);
       } else {
@@ -225,7 +226,7 @@ class AuthNotifier extends StateNotifier<AsyncValue<UserModel?>> {
               .doc(firebaseUser.uid)
               .set(initialProgress.toFirestoreMap());
           
-          print('✅ Initial game progress created for new Google user: ${userModel.name}');
+          debugPrint('✅ Initial game progress created for new Google user: ${userModel.name}');
         } else {
           userModel = UserModel.fromMap(doc.data()!, firebaseUser.uid);
         }

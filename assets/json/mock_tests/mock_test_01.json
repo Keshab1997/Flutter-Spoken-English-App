@@ -1,0 +1,228 @@
+{
+  "id": "mock_test_01",
+  "testNumber": 1,
+  "title": "Mock Test 1 - Articles (a, an, the)",
+  "description": "এই টেস্টে Articles (a, an, the) এর সঠিক ব্যবহার নিয়ে ২০টি প্রশ্ন রয়েছে। প্রথম কয়েকটি প্রশ্নে জানবো 'কোথায় কী বসে', তারপর fill in the blanks দিয়ে উদাহরণ সহ শেখা। প্রতিটি প্রশ্নের বাংলা অর্থ ও বিস্তারিত ব্যাখ্যা দেওয়া আছে।",
+  "questions": [
+    {
+      "question": "'A' কোথায় বসে? (Where is 'a' used?)",
+      "options": [
+        "Consonant sound এর আগে",
+        "Vowel sound এর আগে",
+        "নির্দিষ্ট বস্তুর আগে",
+        "সব জায়গায়"
+      ],
+      "correctIndex": 0,
+      "explanation": "'A' বসে consonant sound (ব্যঞ্জনধ্বনি) এর আগে। যেমন: a book, a university, a one-taka note। University এবং one-এর শুরুতে vowel থাকলেও উচ্চারণ consonant-এর মতো, তাই a বসে।"
+    },
+    {
+      "question": "'An' কোথায় বসে? (Where is 'an' used?)",
+      "options": [
+        "Consonant sound এর আগে",
+        "Vowel sound এর আগে",
+        "সব জায়গায়",
+        "বহুবচনের আগে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'An' বসে vowel sound (স্বরধ্বনি) এর আগে। যেমন: an apple, an honest man, an hour। মনে রাখবেন: vowel letter নয়, vowel sound দেখতে হবে। Honest ও hour-এ 'h' silent, তাই vowel sound, তাই an।"
+    },
+    {
+      "question": "'The' কোথায় বসে? (Where is 'the' used?)",
+      "options": [
+        "যেকোনো সাধারণ বস্তুর আগে",
+        "নির্দিষ্ট বা অদ্বিতীয় বস্তুর আগে",
+        "সব নামের আগে",
+        "শুধু বহুবচনের আগে"
+      ],
+      "correctIndex": 1,
+      "explanation": "'The' বসে নির্দিষ্ট (specific) বা অদ্বিতীয় (unique) বস্তুর আগে। যেমন: the sun (একটাই), the book I read (নির্দিষ্ট বই), the tallest boy (superlative)।"
+    },
+    {
+      "question": "নিচের কোন বাক্যটি সঠিক? (Which sentence is correct?)",
+      "options": [
+        "She is a honest girl.",
+        "She is an honest girl.",
+        "She is honest girl.",
+        "She is the honest girl."
+      ],
+      "correctIndex": 1,
+      "explanation": "Honest-এর 'h' silent, উচ্চারণ 'অনেস্ট' (vowel sound), তাই an হবে। সাধারণভাবে বললে a/an বসে, the নয়।"
+    },
+    {
+      "question": "_____ sun rises in the east. (সূর্য পূর্ব দিকে ওঠে)",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
+      "correctIndex": 2,
+      "explanation": "পৃথিবীতে সূর্য (sun), চাঁদ (moon), আকাশ (sky) — এগুলো একটিই আছে (unique), তাই এদের আগে 'the' বসে।"
+    },
+    {
+      "question": "He wants to be _____ engineer. (সে ইঞ্জিনিয়ার হতে চায়)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 1,
+      "explanation": "Engineer শব্দটি vowel 'e' দিয়ে শুরু, উচ্চারণও vowel sound, তাই 'an engineer' হবে।"
+    },
+    {
+      "question": "I have _____ one-taka note. (আমার কাছে একটি এক টাকার নোট আছে)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 0,
+      "explanation": "'One' লেখা হয় 'o' দিয়ে কিন্তু পড়া হয় 'ওয়ান' (consonant sound 'w')। তাই a one-taka note হবে, an নয়।"
+    },
+    {
+      "question": "She is _____ university student. (সে একজন বিশ্ববিদ্যালয়ের ছাত্রী)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 0,
+      "explanation": "University পড়া হয় 'ইউনিভার্সিটি' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a university হবে। মনে রাখবেন: vowel LETTER দেখবেন না, vowel SOUND দেখবেন।"
+    },
+    {
+      "question": "_____ Taj Mahal is very beautiful. (তাজমহল খুবই সুন্দর)",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
+      "correctIndex": 2,
+      "explanation": "বিখ্যাত স্থাপনা, স্মৃতিস্তম্ভ, জাদুঘর ইত্যাদির নামের আগে 'the' বসে। যেমন: the Taj Mahal, the British Museum।"
+    },
+    {
+      "question": "He will come back in _____ hour. (সে এক ঘণ্টার মধ্যে ফিরে আসবে)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 1,
+      "explanation": "Hour-এ 'h' silent (উচ্চারিত হয় না), পড়া হয় 'আওয়ার' (vowel sound)। তাই an hour হবে। Important exception!"
+    },
+    {
+      "question": "I saw _____ bird. _____ bird was blue. (আমি একটি পাখি দেখলাম। পাখিটি ছিল নীল)",
+      "options": [
+        "a, a",
+        "a, the",
+        "the, a",
+        "an, the"
+      ],
+      "correctIndex": 1,
+      "explanation": "প্রথমবার উল্লেখ করলে 'a bird' (অনির্দিষ্ট), দ্বিতীয়বার একই পাখির কথা বললে 'the bird' (নির্দিষ্ট) হয়।"
+    },
+    {
+      "question": "He is _____ European. (তিনি একজন ইউরোপীয়)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 0,
+      "explanation": "European পড়া হয় 'ইউরোপিয়ান' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a European হবে।"
+    },
+    {
+      "question": "_____ Ganga is a holy river. (গঙ্গা একটি পবিত্র নদী)",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
+      "correctIndex": 2,
+      "explanation": "নদী (river), সাগর (sea), মহাসাগর (ocean), পর্বতমালা (mountain range) — এদের নামের আগে 'the' বসে। যেমন: the Ganga, the Bay of Bengal।"
+    },
+    {
+      "question": "_____ Quran is a holy book for Muslims. (কোরআন মুসলমানদের পবিত্র গ্রন্থ)",
+      "options": [
+        "A",
+        "An",
+        "The",
+        "No article"
+      ],
+      "correctIndex": 2,
+      "explanation": "ধর্মগ্রন্থ (religious book) ও সংবাদপত্রের নামের আগে 'the' বসে। যেমন: the Quran, the Bible, the Daily Star।"
+    },
+    {
+      "question": "Everest is _____ highest peak in the world. (এভারেস্ট বিশ্বের সর্বোচ্চ শৃঙ্গ)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 2,
+      "explanation": "Superlative degree (সর্বোচ্চ) — highest, best, tallest, most beautiful — এদের আগে সবসময় 'the' বসে। the highest peak।"
+    },
+    {
+      "question": "নিচের কোন বাক্যটি ভুল? (Which sentence is wrong?)",
+      "options": [
+        "He is an M.A. student.",
+        "She is a B.A. student.",
+        "He is an honest man.",
+        "She is a apple."
+      ],
+      "correctIndex": 3,
+      "explanation": "'Apple' vowel 'a' দিয়ে শুরু এবং উচ্চারণও vowel sound, তাই 'an apple' হবে, 'a apple' নয়। বাকি তিনটি বাক্যই সঠিক: M.A. পড়া 'এম এ' (vowel sound → an), B.A. পড়া 'বি এ' (consonant sound start → a), honest-এ 'h' silent (vowel sound → an)।"
+    },
+    {
+      "question": "This is _____ unique opportunity. (এটি একটি অনন্য সুযোগ)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 0,
+      "explanation": "Unique পড়া হয় 'ইউনিক' — শুরুতে 'ইউ' (consonant sound 'y')। তাই a unique opportunity হবে, an নয়।"
+    },
+    {
+      "question": "_____ rich should help _____ poor. (ধনীদের গরিবদের সাহায্য করা উচিত)",
+      "options": [
+        "A, a",
+        "An, an",
+        "The, the",
+        "No article, no article"
+      ],
+      "correctIndex": 2,
+      "explanation": "'The + Adjective' = একটি সম্পূর্ণ গোষ্ঠীকে (group of people) বোঝায়। যেমন: the rich = ধনী ব্যক্তিরা, the poor = গরিব ব্যক্তিরা, the elderly = বয়স্ক ব্যক্তিরা।"
+    },
+    {
+      "question": "My brother is _____ B.A. student. (আমার ভাই একজন বি.এ. ছাত্র)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 0,
+      "explanation": "B.A. পড়া হয় 'বি এ' — 'বি' (consonant sound), তাই a B.A. student হবে। মনে রাখবেন: abbreviation-এর প্রথম অক্ষরের উচ্চারণ দেখতে হবে। M.A. → 'এম' (vowel) → an। B.A. → 'বি' (consonant) → a।"
+    },
+    {
+      "question": "What _____ beautiful flower it is! (কী চমৎকার ফুল এটি!)",
+      "options": [
+        "a",
+        "an",
+        "the",
+        "no article"
+      ],
+      "correctIndex": 0,
+      "explanation": "Exclamatory sentence-এ 'What' এর পরে singular countable noun থাকলে 'a' বা 'an' বসে। What a beautiful flower! What an amazing view! Beautiful consonant sound দিয়ে শুরু, তাই a।"
+    }
+  ]
+}

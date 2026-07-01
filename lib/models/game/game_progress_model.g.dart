@@ -18,24 +18,25 @@ class GameProgressModelAdapter extends TypeAdapter<GameProgressModel> {
     };
     return GameProgressModel(
       userId: fields[0] as String,
-      currentLevel: fields[1] as int? ?? 1,
-      currentXP: fields[2] as int? ?? 0,
-      totalCoins: fields[3] as int? ?? 0,
-      streak: fields[4] as int? ?? 0,
-      unlockedModes:
-          (fields[5] as List?)?.cast<String>() ?? const <String>[],
-      weeklyStreak: fields[6] as int? ?? 0,
-      longestStreak: fields[7] as int? ?? 0,
-      missedDays: fields[8] as int? ?? 0,
-      totalActiveDays: fields[9] as int? ?? 0,
-      lastActiveDate: fields[10] as DateTime? ?? DateTime.now(),
+      currentLevel: fields[1] as int,
+      currentXP: fields[2] as int,
+      totalCoins: fields[3] as int,
+      streak: fields[4] as int,
+      unlockedModes: (fields[5] as List).cast<String>(),
+      weeklyStreak: fields[6] as int,
+      longestStreak: fields[7] as int,
+      missedDays: fields[8] as int,
+      totalActiveDays: fields[9] as int,
+      lastActiveDate: fields[10] as DateTime?,
+      weeklyActivity: (fields[11] as Map?)?.cast<String, bool>() ?? {},
+      weeklyActivityWeekStart: fields[12] as String?,
     );
   }
 
   @override
   void write(BinaryWriter writer, GameProgressModel obj) {
     writer
-      ..writeByte(11)
+      ..writeByte(13)
       ..writeByte(0)
       ..write(obj.userId)
       ..writeByte(1)
@@ -57,7 +58,11 @@ class GameProgressModelAdapter extends TypeAdapter<GameProgressModel> {
       ..writeByte(9)
       ..write(obj.totalActiveDays)
       ..writeByte(10)
-      ..write(obj.lastActiveDate);
+      ..write(obj.lastActiveDate)
+      ..writeByte(11)
+      ..write(obj.weeklyActivity)
+      ..writeByte(12)
+      ..write(obj.weeklyActivityWeekStart);
   }
 
   @override
